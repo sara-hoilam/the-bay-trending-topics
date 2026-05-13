@@ -1,0 +1,37 @@
+GBA Pulse: Top 10 Trending Topics
+Date: REPLACE_ME_DATE
+Generated on: REPLACE_ME_TIME
+
+────────────────────────────────
+
+1. [Ranked Title – Short & Punchy]
+Primary link: https://...
+
+• One-sentence summary
+• Why it’s trending (key drivers + data points)
+• Main regions affected (HK, Macau, Shenzhen, etc.)
+• Sentiment: Positive / Neutral / Negative / Mixed
+
+(Repeat structure for ranks 2–10)
+
+────────────────────────────────
+
+Key Observations
+
+• …
+• …
+• …
+
+────────────────────────────────
+
+Sources
+
+• Platform name — https://...
+• …
+
+────────────────────────────────
+
+Notes for Tomorrow
+
+• …
+• …

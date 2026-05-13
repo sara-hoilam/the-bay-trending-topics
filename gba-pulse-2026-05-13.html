@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trending Topics by AI — 2026-05-13</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f5f0e8;
+    --accent: #c8441b;
+    --accent2: #1b4dc8;
+    --gold: #c8a21b;
+    --muted: #6b6460;
+    --rule: #0d0d0d22;
+    --pos: #1a7a4a;
+    --neg: #c8441b;
+    --mix: #7a5a1a;
+    --neu: #2a4a7a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* ─── MASTHEAD ─── */
+  .masthead {
+    border-bottom: 3px solid var(--ink);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 40px 0;
+  }
+  .masthead-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(44px, 7vw, 88px);
+    font-weight: 900;
+    letter-spacing: -.03em;
+    line-height: 1;
+    text-transform: none;
+  }
+  .masthead h1 span { color: var(--accent); }
+  .masthead-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .masthead-stripe {
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  .masthead-pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-right: 1px solid var(--rule);
+    color: var(--muted);
+  }
+  .masthead-pill.hot { background: var(--accent); color: white; }
+
+  /* ─── LAYOUT ─── */
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  /* ─── SECTION HEADER ─── */
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 48px 0 28px;
+  }
+  .section-head .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1;
+    opacity: .08;
+    min-width: 64px;
+  }
+  .section-head-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  /* ─── TOPIC CARD ─── */
+  .topic {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 0 24px;
+    border-top: 1.5px solid var(--ink);
+    padding: 28px 0 28px;
+    animation: fadeUp .4s ease both;
+  }
+  .topic:last-of-type { border-bottom: 1.5px solid var(--ink); }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .topic-rank {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1.1;
+    text-align: right;
+    padding-top: 2px;
+  }
+
+  .topic-body {}
+  .topic-cat {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 6px;
+  }
+  .topic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .topic-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .topic-title a:hover { color: var(--accent); }
+
+  .topic-summary {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #2a2a2a;
+    margin-bottom: 14px;
+  }
+  .topic-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .topic-meta span { display: flex; align-items: center; gap: 5px; }
+  .topic-meta .icon { font-size: 13px; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+  .badge-pos  { background: #e6f5ed; color: var(--pos); border: 1px solid #a8dbbe; }
+  .badge-neg  { background: #fdeee9; color: var(--neg); border: 1px solid #f5b8a5; }
+  .badge-mix  { background: #fdf6e3; color: var(--mix); border: 1px solid #e8d48a; }
+  .badge-neu  { background: #e8f0fd; color: var(--neu); border: 1px solid #a5bef5; }
+
+  /* ─── WHY TRENDING BOX ─── */
+  .why-box {
+    background: white;
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .why-box strong {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ─── KEY OBSERVATIONS ─── */
+  .observations {
+    background: var(--ink);
+    color: white;
+    padding: 40px;
+    margin-top: 52px;
+  }
+  .observations h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    padding-bottom: 12px;
+  }
+  .observations ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .observations li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.85);
+  }
+  .observations li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* ─── SOURCES ─── */
+  .sources {
+    margin-top: 40px;
+    border-top: 1px solid var(--rule);
+    padding-top: 24px;
+  }
+  .sources h2 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 8px;
+  }
+  .sources a {
+    font-size: 12.5px;
+    color: var(--accent2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    transition: background .15s;
+  }
+  .sources a:hover { background: white; }
+  .sources a::before { content: '↗'; font-size: 11px; color: var(--muted); }
+
+  /* ─── NOTES FOR TOMORROW ─── */
+  .tomorrow {
+    margin-top: 32px;
+    padding: 24px 32px;
+    border: 1.5px solid var(--gold);
+    position: relative;
+  }
+  .tomorrow::before {
+    content: 'Notes for Tomorrow';
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 8px;
+  }
+  .tomorrow ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .tomorrow li {
+    padding-left: 16px;
+    position: relative;
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .tomorrow li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 8px;
+    top: 5px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 16px 40px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 680px) {
+    .wrapper, .masthead-inner { padding-left: 20px; padding-right: 20px; }
+    .topic { grid-template-columns: 44px 1fr; gap: 0 14px; }
+    .topic-rank { font-size: 28px; }
+    .topic-title { font-size: 20px; }
+    .masthead-meta { flex-direction: column; gap: 4px; }
+    footer { flex-direction: column; gap: 6px; }
+    .observations { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-meta">
+      <span>粤港澳大湾区 · Greater Bay Area Intelligence</span>
+      <span>Date: 2026-05-13 &nbsp;|&nbsp; Generated: 09:00 HKT</span>
+    </div>
+    <h1>Trending <span>Topics by AI</span></h1>
+    <p class="masthead-tagline">Please validate all the sources as AI can make mistake</p>
+    <div class="masthead-stripe">
+      <div class="masthead-pill hot">🔥 Live Edition</div>
+      <div class="masthead-pill">Business &amp; Economy</div>
+      <div class="masthead-pill">Culture &amp; Events</div>
+      <div class="masthead-pill">Innovation &amp; Tech</div>
+      <div class="masthead-pill">Cross-Border</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrapper">
+
+  <!-- TOPIC 1 -->
+  <div class="topic" style="animation-delay:.05s">
+    <div class="topic-rank">1</div>
+    <div class="topic-body">
+      <div class="topic-cat">Economy &amp; Finance</div>
+      <h2 class="topic-title">
+        <a href="https://macaonews.org/news/greater-bay-area/hong-kong-q1-2026-gdp/" target="_blank">
+          Hong Kong's GDP Surges 5.9% — Fastest Growth in Nearly Five Years
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Hong Kong's economy opened 2026 with a stunning 5.9% year-on-year expansion in Q1, accelerating from 4% in Q4 2025 and marking the strongest quarterly performance since 2021. The boom was powered by an AI-related electronics export surge, over 14.3 million visitor arrivals, and robust cross-boundary financial activity with the Greater Bay Area.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Advance estimates from the Census and Statistics Department beat analyst forecasts. UBS and Bloomberg Economics both revised 2026 full-year GDP up to 3.3–3.4%. Finance Secretary Paul Chan cited AI-linked trade and GBA integration as twin drivers. Dominates SCMP, RTHK, and international business wire coverage this week.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong</span>
+        <span><span class="icon">📊</span> Q1 2026 GDP +5.9% YoY</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 2 -->
+  <div class="topic" style="animation-delay:.1s">
+    <div class="topic-rank">2</div>
+    <div class="topic-body">
+      <div class="topic-cat">Tourism &amp; Gaming</div>
+      <h2 class="topic-title">
+        <a href="https://www.mundovideo.com.co/en/asia/macau-surges-with-tourism-and-2-46b-casino-revenue/" target="_blank">
+          Macau's Golden Week Record &amp; G2E Asia 2026 Kicks Off
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Macao (澳門) recorded 630,000+ visitor arrivals across May 1–3 alone, with May 2 setting a single-day record of ~247,000 visitors. April gross gaming revenue hit US$2.46 billion (+5.5% YoY), while January–April cumulative GGR reached US$10.7 billion (+12.1% vs 2025). Simultaneously, G2E Asia + Asian IR Expo opened at The Venetian Macao today (May 12–14), drawing 8,000 professionals from 90+ countries to discuss digital innovation in gaming and integrated resorts.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Dual momentum of tourism record-breaking and a major industry expo happening concurrently. GGR 12.1% cumulative growth through April signals 2026 is tracking well above the MOP 236 billion full-year forecast. High-value player segment up 63.2% YoY. G2E keynotes from Sands China and Boston Celtics co-owner generating buzz on LinkedIn and industry forums.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Macao</span>
+        <span><span class="icon">🎰</span> GGR +5.5% YoY April</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 3 -->
+  <div class="topic" style="animation-delay:.15s">
+    <div class="topic-rank">3</div>
+    <div class="topic-body">
+      <div class="topic-cat">Biomedical Innovation</div>
+      <h2 class="topic-title">
+        <a href="https://www.med.hku.hk/en/news/press/20260505-hkumed-develops-world-first-nasal-spray-as-prehospital-emergency-aid-for-ischemic-stroke" target="_blank">
+          HKU Develops World-First Stroke Nasal Spray — Cuts Brain Damage by 80%+
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Researchers at HKUMed and InnoHK Advanced Biomedical Instrumentation Centre unveiled the world's first "NanoPowder nasal spray" as a prehospital emergency treatment for ischemic stroke. Using proprietary "nano-in-micron" technology to bypass the blood-brain barrier, the spray delivered to patients within 30 minutes of stroke onset reduced brain damage by over 80% in preclinical trials. The innovation won the Special Grand Prize and Gold Medal at the 51st International Exhibition of Inventions Geneva.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Breakthrough announced May 5, going viral globally on medical and science news platforms. Stroke is the world's second leading cause of death (US$890B global annual cost). This could become a community-level rescue tool — dramatically relevant for an aging GBA population. Widely covered by SCMP, Knowridge, BioSpectrum, and MedicalXpress.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong (HKU)</span>
+        <span><span class="icon">🧬</span> Brain damage ↓ 80%+ in trials</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 4 -->
+  <div class="topic" style="animation-delay:.2s">
+    <div class="topic-rank">4</div>
+    <div class="topic-body">
+      <div class="topic-cat">Aviation &amp; Infrastructure</div>
+      <h2 class="topic-title">
+        <a href="https://www.timeout.com/hong-kong/news/the-new-terminal-2-at-hong-kong-international-airport-is-opening-in-may-this-year-022226" target="_blank">
+          HKIA Terminal 2 Opens May 27 — GBA's Aviation Hub Gets a Major Upgrade
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Hong Kong International Airport's fully rebuilt Terminal 2 begins passenger operations on May 27, two weeks away — part of the HK$141 billion Three-Runway System. Around 15 regional carriers (including HK Express, Greater Bay Airlines, Hong Kong Airlines) will relocate in phases. T2 features 48 check-in counters, 30 self-bag-drop stations, biometric e-security lanes, and a Coach Hall with 41 bays connecting to 110+ GBA destinations. Capacity adds 2 million annual passengers immediately, with the airport targeting 65 million passengers in 2026.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Countdown to May 27 intensifying; airlines publishing relocation notices. Travel communities on Reddit, Timeout HK, and aviation forums buzzing. 4,000+ frontline staff trained in live-passenger simulations. Timing coincides with summer peak season, Rugby World Cup 2027 buzz, and GBA tourism surge.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong (Lantau)</span>
+        <span><span class="icon">✈️</span> Opens May 27 · +2M pax capacity</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 5 -->
+  <div class="topic" style="animation-delay:.25s">
+    <div class="topic-rank">5</div>
+    <div class="topic-body">
+      <div class="topic-cat">Culture &amp; Events</div>
+      <h2 class="topic-title">
+        <a href="https://www.fifamuseum.com/en/hong-kong/fifa-museum-hong-kong" target="_blank">
+          FIFA Museum Lands in Hong Kong — World Cup Fever Comes to Causeway Bay
+        </a>
+      </h2>
+      <p class="topic-summary">
+        The FIFA Museum opens a six-month special exhibition at Times Square, Causeway Bay, on May 28 — timed to the FIFA World Cup 2026 in Canada, Mexico, and the United States. The 6,000 sq ft showcase features original trophies, multimedia installations, "The Rainbow" jersey installation from all 211 FIFA member associations, interactive penalty shootouts, goalkeeping zones, and an AI photo booth. Standard tickets at HK$180 went on sale April 16. Organizers expect 500,000–600,000 visitors.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Hong Kong's "Mega Events" strategy at work — the FIFA Museum debut is the first major pre-World Cup cultural activation in East Asia. Kai Tak Stadium, Hong Kong Coliseum residencies, and now this creates a stacked May–June entertainment calendar. High social media buzz on Instagram and Threads among 18–35 demographic. HKTB has flagged this as a headline tourism draw for summer 2026.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong (Causeway Bay)</span>
+        <span><span class="icon">⚽</span> May 28 – Nov 2026 · 500K visitors projected</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 6 -->
+  <div class="topic" style="animation-delay:.3s">
+    <div class="topic-rank">6</div>
+    <div class="topic-body">
+      <div class="topic-cat">Real Estate &amp; Finance</div>
+      <h2 class="topic-title">
+        <a href="https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/asf/the-case-for-hong-kong-real-estate" target="_blank">
+          Hong Kong Property Comeback: Home Prices Climb, IPO Pipeline Swells
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Residential property prices rebounded 4.7% in 2025 and continued gaining (+4.3% as of March 2026), supported by declining mortgage rates (3.25–3.5%), an equity market wealth effect from the Hang Seng's 70% rally over two years, and a surge of mainland Chinese buyers (now ~50% of transactions). Morgan Stanley forecasts 10% residential price growth in 2026. Q1 sale-and-purchase agreements rose up to 53% YoY. Hong Kong's stock exchange has 400+ companies in IPO queue, signaling continued capital market depth.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Multiple brokerages (JPMorgan, Morgan Stanley, UBS) all turned constructive on HK property simultaneously in April–May 2026. Property stocks +18% YTD. Mainland buyer activity dominating secondary market transactions. Wealth effect spilling into luxury retail and hospitality. Key concern: office Grade A vacancy remains at 17.5% with abundant new supply.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong, GBA</span>
+        <span><span class="icon">🏠</span> Residential +4.3% YTD · Morgan Stanley: +10% full year</span>
+        <span><span class="badge badge-mix">◈ Mixed</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 7 -->
+  <div class="topic" style="animation-delay:.35s">
+    <div class="topic-rank">7</div>
+    <div class="topic-body">
+      <div class="topic-cat">Green Aviation &amp; Cross-Border</div>
+      <h2 class="topic-title">
+        <a href="https://www.visahq.com/news/2026-05-05/hk/hong-kong-and-dongguan-ink-landmark-agreement-to-build-greater-bay-area-sustainable-aviation-fuel-hub/" target="_blank">
+          HK–Dongguan Sign Landmark Deal for GBA's First Sustainable Aviation Fuel Hub
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Chief Executive John Lee witnessed the signing of a three-way MOU between the Hong Kong SAR Government, Dongguan Municipal Government, and bio-refiner EcoCeres to create the GBA's first end-to-end sustainable aviation fuel (SAF) supply chain. Used cooking oil collected across Hong Kong and nearby mainland cities will be processed in Dongguan into ASTM-certified SAF for use at HKIA. Full production is targeted by 2027, as part of the HK$10 billion SAF project.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Directly ties Hong Kong's aviation decarbonization to GBA cross-boundary industrial cooperation. Aviation sector ESG compliance pressure intensifying from EU carbon rules and airline investor mandates. HK–Dongguan cooperation model praised as a template for other green GBA cross-boundary projects.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong + Dongguan</span>
+        <span><span class="icon">🌿</span> HK$10B SAF project · Production from 2027</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 8 -->
+  <div class="topic" style="animation-delay:.4s">
+    <div class="topic-rank">8</div>
+    <div class="topic-body">
+      <div class="topic-cat">Policy &amp; Healthcare</div>
+      <h2 class="topic-title">
+        <a href="https://opengovasia.com/hong-kong-highlights-innovation-and-greater-bay-area-collaboration-at-hospital-authority-convention-2026/" target="_blank">
+          Hospital Authority Convention 2026: AI in Healthcare &amp; GBA Drug Regulation Push
+        </a>
+      </h2>
+      <p class="topic-summary">
+        At the Hospital Authority Convention's 30th edition (May 11–13, 75 sessions, 210 speakers), Acting Chief Secretary Cheuk Wing-hing announced plans to establish the Hong Kong Centre for Medical Products Regulation by end-2026, expand clinical research across the GBA, and implement AI across hospital services. A phased "primary evaluation" process for new drug registration and an expanded "1+" fast-track mechanism for urgent medicines were also unveiled.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Happening right now (May 11–13). The push to make Hong Kong an internationally recognised biomedical regulatory hub aligns with the National 15th Five-Year Plan. GBA cross-border clinical research expansion could make Hong Kong the regulatory gateway for innovative drugs into China — a massive commercial opportunity. Coverage on RTHK, OpenGov Asia, and health sector publications.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong (GBA-wide implications)</span>
+        <span><span class="icon">🏥</span> HK Medical Products Regulation Centre by end-2026</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 9 -->
+  <div class="topic" style="animation-delay:.45s">
+    <div class="topic-rank">9</div>
+    <div class="topic-body">
+      <div class="topic-cat">Lifestyle &amp; Cross-Border</div>
+      <h2 class="topic-title">
+        <a href="https://macaonews.org/news/greater-bay-area/china-greater-bay-area-yachting-yachts-marinas/" target="_blank">
+          GBA Yacht "Free Flow" Scheme on Verge of Major Expansion — Announcement Due This Month
+        </a>
+      </h2>
+      <p class="topic-summary">
+        New mainland ports are expected to gain direct access to Hong Kong under the GBA free-flow yacht scheme imminently, with a draft consultation paper revealing six Guangdong ports (Nansha, Shekou, Shenzhen Airport Ferry, Zhuhai Wanshan, Zhuhai Jiuzhou, Zhongshan) set to open to Hong Kong- and Macao-flagged leisure craft under a pilot "solo travel" policy. Vessels would obtain 180-day temporary mainland nationality certificates and keep AIS transponders active. Zhuhai has already eased yacht servicing rules, and the Aberdeen Typhoon Shelter expansion (11 hectares, ~200 berths) has been submitted for planning approval.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Announcement expected "as early as May" per insider sources — community watching closely. Policy mirrors the successful northbound car travel scheme via HZMB. GBA's 90 million residents represent massive untapped yachting market. Industry sees parallels to Monaco's yacht economy (€567M revenue). Hong Kong budgeting HK$30B for nautical infrastructure.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> HK, Shenzhen, Zhuhai, Macao</span>
+        <span><span class="icon">⛵</span> 6 new GBA ports imminent · HK$30B infra commitment</span>
+        <span><span class="badge badge-mix">◈ Mixed</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOPIC 10 -->
+  <div class="topic" style="animation-delay:.5s">
+    <div class="topic-rank">10</div>
+    <div class="topic-body">
+      <div class="topic-cat">Entertainment &amp; Pop Culture</div>
+      <h2 class="topic-title">
+        <a href="https://www.hk-cityguide.com/expat-guide/the-ultimate-guide-to-live-events-and-concerts-in-hong-kong-in-2026" target="_blank">
+          MIRROR's 12-Night Kai Tak Residency &amp; Hong Kong's Unstoppable Live Music Summer
+        </a>
+      </h2>
+      <p class="topic-summary">
+        Hong Kong's live entertainment scene is hitting peak momentum for summer 2026. MIRROR — the 12-member Cantopop phenomenon — kicks off a 12-night residency at the Hong Kong Coliseum (May–June 2026), with fan communities mobilizing elaborate coordinated light shows and banner projects. The residency follows Joey Yung's 8-night "ULTIMATE JOEY" run. Meanwhile, Ed Sheeran's one-man loop-pedal show is rumoured for late May at Kai Tak Stadium, and the Hong Kong Indie Music Fest runs free at Southorn Playground, Wan Chai. The GBA entertainment economy — from Macao's concerts driving hotel revenue to Guangzhou's fashion shows — is firing on all cylinders.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        MIRROR tickets famously sell out in minutes; fan culture is a significant social media driver across Instagram, Xiaohongshu (小紅書), and Weibo. Kai Tak Stadium's 2025 opening has transformed Hong Kong into Asia's top live event destination, driving GBA cross-boundary visitor flows. "Mega Events" strategy is measurably boosting retail, F&amp;B, and hotel revenues.
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Hong Kong (Kai Tak, Coliseum, Wan Chai)</span>
+        <span><span class="icon">🎤</span> MIRROR · 12 nights · May–June 2026</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY OBSERVATIONS -->
+  <section class="observations">
+    <h2>🔭 Key Observations</h2>
+    <ul>
+      <li><strong>The GBA's dual-engine economy is firing:</strong> Hong Kong's 5.9% Q1 GDP surge and Macao's record-breaking Golden Week tourism (+12.1% cumulative GGR) signal that the region is on course for a landmark 2026 — with AI-linked trade and mainland visitor inflows acting as twin catalysts for both SARs.</li>
+      <li><strong>Innovation hub narrative is consolidating:</strong> The HKU NanoPowder nasal spray, the Hospital Authority Convention's GBA drug regulation push, and the HK–Dongguan SAF MOU all reinforce a coherent "Hong Kong as InnoHK hub" story — increasingly backed by government policy aligned with the National 15th Five-Year Plan.</li>
+      <li><strong>Infrastructure as identity:</strong> HKIA T2 (May 27), the GBA yacht free-flow expansion (imminent), and the FIFA Museum debut (May 28) collectively represent Hong Kong asserting its position as the GBA's international gateway — for air travel, leisure mobility, and global cultural events simultaneously.</li>
+      <li><strong>Lifestyle and culture are serious GBA business:</strong> MIRROR concerts, FIFA Museum, and the yacht economy are not peripheral stories — they are core to the GBA's HK$10B+ tourism strategy, driving cross-boundary spending, boosting hotel revenues, and giving the region a competitive "liveability" brand versus Singapore.</li>
+    </ul>
+  </section>
+
+  <!-- SOURCES -->
+  <section class="sources">
+    <h2>Sources Consulted</h2>
+    <div class="sources-grid">
+      <a href="https://www.scmp.com/topics/greater-bay-area" target="_blank">South China Morning Post — GBA</a>
+      <a href="https://macaonews.org" target="_blank">The Bay</a>
+      <a href="https://news.rthk.hk/rthk/en/latest-news.htm" target="_blank">RTHK News</a>
+      <a href="https://www.hkeconomy.gov.hk/en/situation/development/index.htm" target="_blank">HK Census &amp; Statistics Dept</a>
+      <a href="https://asianews.network/hong-kong-economy-posts-strongest-growth-in-almost-five-years/" target="_blank">Asia News Network</a>
+      <a href="https://www.med.hku.hk/en/news/press/20260505-hkumed-develops-world-first-nasal-spray-as-prehospital-emergency-aid-for-ischemic-stroke" target="_blank">HKUMed Press Releases</a>
+      <a href="https://www.fifamuseum.com/en/hong-kong/fifa-museum-hong-kong" target="_blank">FIFA Museum Hong Kong</a>
+      <a href="https://opengovasia.com" target="_blank">OpenGov Asia</a>
+      <a href="https://www.thestandard.com.hk/news/article/330578" target="_blank">The Standard HK — Yachts</a>
+      <a href="https://privatebank.jpmorgan.com/apac/en/insights/markets-and-investing/asf/the-case-for-hong-kong-real-estate" target="_blank">J.P. Morgan — HK Real Estate</a>
+      <a href="https://www.mundovideo.com.co/en/asia/macau-surges-with-tourism-and-2-46b-casino-revenue/" target="_blank">Mundo Video — Macao GGR</a>
+      <a href="https://smartinvestor.com.my/g2e-asia-asian-ir-expo-2026-opens-today" target="_blank">G2E Asia 2026 / Smart Investor</a>
+      <a href="https://www.timeout.com/hong-kong" target="_blank">TimeOut Hong Kong</a>
+      <a href="https://www.travelandtourworld.com" target="_blank">Travel &amp; Tour World</a>
+    </div>
+  </section>
+
+  <!-- NOTES FOR TOMORROW -->
+  <section class="tomorrow">
+    <ul>
+      <li>Watch for the official GBA yacht free-flow expansion announcement — sources indicate details could drop "as early as May." Track SCMP, RTHK, and The Standard.</li>
+      <li>Monitor G2E Asia closing keynotes (May 14) for Macao's AI-in-gaming policy signals and operator capex intentions for 2026–2027.</li>
+      <li>Track HKIA Terminal 2 airline migration schedule — official notices from HK Express and Cathay Pacific subsidiaries expected in next 2 weeks before May 27 opening.</li>
+      <li>FIFA Museum Hong Kong ticket demand will be a barometer of 2026 summer tourism strength — watch for sell-out speed once gates open May 28.</li>
+      <li>HKU NanoPowder nasal spray clinical trial timeline and commercialisation partners — any pharma licensing announcement would be a major follow-up story.</li>
+      <li>Keep an eye on Hang Seng Index and property transaction volumes as Q2 2026 data begins to flow — will the 5.9% GDP momentum hold?</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <span>GBA Pulse · 粤港澳大湾区脉搏 · 2026-05-13</span>
+  <span>For informational purposes only — verify all data with primary sources</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Optional: cron at 08:00 Hong Kong time (if you prefer cron over LaunchAgent).
+# Run: crontab -e
+# Paste the two lines below (fix the path to your clone).
+
+TZ=Asia/Hong_Kong
+0 8 * * * /bin/bash -lc '/ABSOLUTE/PATH/TO/AI Editor Listening Tool/scripts/daily-8am-hkt.sh'

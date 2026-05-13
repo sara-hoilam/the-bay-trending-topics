@@ -1,0 +1,23 @@
+GBA Pulse — daily 08:00 Hong Kong time
+
+1) Install LaunchAgent (recommended)
+   cd to this repo, then:
+   bash scheduling/install-launchd.sh
+
+   This loads com.gbapulse.daily: it wakes every hour at :00 and runs
+   scripts/daily-8am-hkt.sh, which only executes new-daily-html.sh when
+   Asia/Hong_Kong is 08:xx (once per day; stamp in output/).
+
+2) Logs
+   - output/scheduler.log — scaffold runs and errors
+   - output/launchd-stdout.log / launchd-stderr.log — agent streams
+
+3) Uninstall
+   launchctl bootout "gui/$(id -u)" ~/Library/LaunchAgents/com.gbapulse.daily.plist
+   rm ~/Library/LaunchAgents/com.gbapulse.daily.plist
+
+4) Cron alternative
+   See scheduling/crontab-fragment.txt (edit path, then crontab -e).
+
+5) Manual test (any time)
+   bash scripts/daily-8am-hkt.sh --force

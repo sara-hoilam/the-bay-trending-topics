@@ -1,0 +1,60 @@
+Use these in **three parallel** Cursor Agent (or Composer) chats. In each chat, attach:
+
+  @prompts/gba-pulse-curator-prompt.md
+  @references/source-links.md
+  @templates/gba-pulse-template.html
+
+Then paste **only** the block for that chat. Ask the model to **write** the fragment to the path shown (Agent with file access), or paste the HTML into that file yourself.
+
+================================================================================
+CHAT A — model: Claude Sonnet 4.6
+Fragment file: orchestration/fragments/claude.html
+================================================================================
+You are producing ONLY the inner HTML for the Claude panel of The Bay “GBA Pulse” (see curator prompt). Follow prompts/gba-pulse-curator-prompt.md exactly: prioritize search & social for trending discovery, then verify with news. For every `.topic-meta`, put the source/date span immediately after the location span: `<span><span class="icon">📰</span> Source: <a href="...">Source Name</a> · Posted: YYYY-MM-DD</span>`. Use the article/source published date; if not visible, write `Posted: date not shown (accessed YYYY-MM-DD)`. For every `.why-box`, use `<strong>Why It’s Trending</strong>` followed by a compact `<ul>` with 1–3 short `<li>` bullets, each focused on factual/data signals (rank, count, percentage, search/social spike, event date, official figure, or sourced observation). No long prose paragraphs in the why-box. Output must use the same CSS classes as templates/gba-pulse-template.html (.topic, .topic-rank, .why-box, .observations, .sources, .tomorrow, etc.). No <html>, <head>, or outer <main>. Write the result to orchestration/fragments/claude.html (create the file).
+
+================================================================================
+CHAT B — model: Cursor Composer 2
+Fragment file: orchestration/fragments/composer.html
+================================================================================
+You are producing ONLY the inner HTML for the Composer panel of The Bay “GBA Pulse” (see curator prompt). Follow prompts/gba-pulse-curator-prompt.md exactly: prioritize search & social for trending discovery, then verify with news. For every `.topic-meta`, put the source/date span immediately after the location span: `<span><span class="icon">📰</span> Source: <a href="...">Source Name</a> · Posted: YYYY-MM-DD</span>`. Use the article/source published date; if not visible, write `Posted: date not shown (accessed YYYY-MM-DD)`. For every `.why-box`, use `<strong>Why It’s Trending</strong>` followed by a compact `<ul>` with 1–3 short `<li>` bullets, each focused on factual/data signals (rank, count, percentage, search/social spike, event date, official figure, or sourced observation). No long prose paragraphs in the why-box. Output must use the same CSS classes as templates/gba-pulse-template.html. No <html>, <head>, or outer <main>. Write the result to orchestration/fragments/composer.html (create the file).
+
+================================================================================
+CHAT C — model: GPT-5.5
+Fragment file: orchestration/fragments/chatgpt.html
+================================================================================
+You are producing ONLY the inner HTML for the GPT-5.5 panel of The Bay “GBA Pulse” (see curator prompt). Follow prompts/gba-pulse-curator-prompt.md exactly: prioritize search & social for trending discovery, then verify with news. For every `.topic-meta`, put the source/date span immediately after the location span: `<span><span class="icon">📰</span> Source: <a href="...">Source Name</a> · Posted: YYYY-MM-DD</span>`. Use the article/source published date; if not visible, write `Posted: date not shown (accessed YYYY-MM-DD)`. For every `.why-box`, use `<strong>Why It’s Trending</strong>` followed by a compact `<ul>` with 1–3 short `<li>` bullets, each focused on factual/data signals (rank, count, percentage, search/social spike, event date, official figure, or sourced observation). No long prose paragraphs in the why-box. Output must use the same CSS classes as templates/gba-pulse-template.html. No <html>, <head>, or outer <main>. Write the result to orchestration/fragments/chatgpt.html (create the file).
+
+================================================================================
+AFTER ALL THREE FINISH (on your machine, repo root)
+================================================================================
+Run a 4th merger task first (below), then:
+
+  node scripts/merge-briefing-panels.mjs
+
+================================================================================
+CHAT D — model: GPT-5.5 or Claude Sonnet 4.6
+Fragment file: orchestration/fragments/overall.html
+================================================================================
+You are the Live Edition / Overall merger for The Bay “GBA Pulse.”
+
+Read:
+  @orchestration/fragments/claude.html
+  @orchestration/fragments/composer.html
+  @orchestration/fragments/chatgpt.html
+  @prompts/gba-pulse-curator-prompt.md
+
+Create the merged Live Edition Top 10 across the three model outputs.
+
+Merge rules:
+1. Normalize duplicate or near-duplicate stories.
+2. Rank by cross-model overlap, search/social momentum, data strength, freshness, source quality, GBA relevance, and editorial impact for The Bay.
+3. Do not simply average rankings. A story mentioned by one model can rank high if it has strong search/social or strategic significance.
+4. Keep the reference mix: innovation/business ~50%, arts/culture/events ~30%, food/drink ~15%, other ~15%; mainland GBA ~50%, Hong Kong ~30%, Macao ~20%.
+5. For every `.topic-meta`, include `<span><span class="icon">📰</span> Source: <a href="...">Source Name</a> · Posted: YYYY-MM-DD</span>` immediately after the location span. Preserve/choose the best source and posted date from the model outputs; if missing, use the primary source’s visible published date or `Posted: date not shown (accessed YYYY-MM-DD)`.
+6. For every `.why-box`, use `<strong>Why It’s Trending</strong>` followed by a compact `<ul>` with 1–3 short factual/data bullets. No long why paragraphs.
+
+Output ONLY the inner HTML for `panel-overall`, starting with `<p class="agg-method">...` and then ten `.topic` blocks, Key Observations, Sources, and Notes for Tomorrow. No `<html>`, `<head>`, `<body>`, or outer `<main>`.
+
+Write the result to orchestration/fragments/overall.html (create the file).
+
+After `overall.html` exists, run `node scripts/merge-briefing-panels.mjs`. It will update Live Edition plus the three model tabs. Commit and deploy.

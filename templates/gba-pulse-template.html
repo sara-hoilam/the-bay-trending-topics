@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trending Topics by AI — REPLACE_ME_DATE</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f5f0e8;
+    --accent: #c8441b;
+    --accent2: #1b4dc8;
+    --gold: #c8a21b;
+    --muted: #6b6460;
+    --rule: #0d0d0d22;
+    --pos: #1a7a4a;
+    --neg: #c8441b;
+    --mix: #7a5a1a;
+    --neu: #2a4a7a;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    border-bottom: 3px solid var(--ink);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .masthead-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 40px 0;
+  }
+  .masthead-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(44px, 7vw, 88px);
+    font-weight: 900;
+    letter-spacing: -.03em;
+    line-height: 1;
+    text-transform: none;
+  }
+  .masthead h1 span { color: var(--accent); }
+  .masthead-tagline {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .masthead-stripe {
+    display: flex;
+    gap: 0;
+    margin-top: 20px;
+    border-top: 1px solid var(--rule);
+    flex-wrap: wrap;
+  }
+  .masthead-pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-right: 1px solid var(--rule);
+    color: var(--muted);
+  }
+  .masthead-pill.hot { background: var(--accent); color: white; }
+
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 80px;
+  }
+
+  .topic {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 0 24px;
+    border-top: 1.5px solid var(--ink);
+    padding: 28px 0 28px;
+    animation: fadeUp .4s ease both;
+  }
+  .topic:last-of-type { border-bottom: 1.5px solid var(--ink); }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .topic-rank {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1.1;
+    text-align: right;
+    padding-top: 2px;
+  }
+
+  .topic-cat {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 6px;
+  }
+  .topic-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .topic-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .topic-title a:hover { color: var(--accent); }
+
+  .topic-source {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    align-items: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: -2px 0 10px;
+  }
+  .topic-source a {
+    color: var(--accent2);
+    text-decoration: none;
+  }
+  .topic-source a:hover { color: var(--accent); }
+
+  .topic-summary {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #2a2a2a;
+    margin-bottom: 14px;
+  }
+  .topic-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .topic-meta span { display: flex; align-items: center; gap: 5px; }
+  .topic-meta .icon { font-size: 13px; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 3px 9px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+  .badge-pos  { background: #e6f5ed; color: var(--pos); border: 1px solid #a8dbbe; }
+  .badge-neg  { background: #fdeee9; color: var(--neg); border: 1px solid #f5b8a5; }
+  .badge-mix  { background: #fdf6e3; color: var(--mix); border: 1px solid #e8d48a; }
+  .badge-neu  { background: #e8f0fd; color: var(--neu); border: 1px solid #a5bef5; }
+
+  .why-box {
+    background: white;
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .why-box strong {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .observations {
+    background: var(--ink);
+    color: white;
+    padding: 40px;
+    margin-top: 52px;
+  }
+  .observations h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    padding-bottom: 12px;
+  }
+  .observations ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .observations li {
+    padding-left: 20px;
+    position: relative;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.85);
+  }
+  .observations li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .sources {
+    margin-top: 40px;
+    border-top: 1px solid var(--rule);
+    padding-top: 24px;
+  }
+  .sources h2 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .sources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 8px;
+  }
+  .sources a {
+    font-size: 12.5px;
+    color: var(--accent2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    transition: background .15s;
+  }
+  .sources a:hover { background: white; }
+  .sources a::before { content: '↗'; font-size: 11px; color: var(--muted); }
+
+  .tomorrow {
+    margin-top: 32px;
+    padding: 24px 32px;
+    border: 1.5px solid var(--gold);
+    position: relative;
+  }
+  .tomorrow::before {
+    content: 'Notes for Tomorrow';
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    background: var(--paper);
+    padding: 0 8px;
+  }
+  .tomorrow ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .tomorrow li {
+    padding-left: 16px;
+    position: relative;
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .tomorrow li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 8px;
+    top: 5px;
+  }
+
+  footer {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    padding: 16px 40px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (max-width: 680px) {
+    .wrapper, .masthead-inner { padding-left: 20px; padding-right: 20px; }
+    .topic { grid-template-columns: 44px 1fr; gap: 0 14px; }
+    .topic-rank { font-size: 28px; }
+    .topic-title { font-size: 20px; }
+    .masthead-meta { flex-direction: column; gap: 4px; }
+    footer { flex-direction: column; gap: 6px; }
+    .observations { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!--
+  LLM / EDITOR INSTRUCTIONS
+  ───────────────────────
+  1. Replace REPLACE_ME_DATE (YYYY-MM-DD) and REPLACE_ME_TIME (e.g. 09:00 HKT) everywhere below.
+  2. Duplicate the TOPIC SKELETON block 10 times (ranks 1–10). Set .topic-rank, increment style="animation-delay" by .05s per topic (.05s, .1s, …).
+  3. topic-cat: short category. topic-title > a: href = best primary URL; anchor text = punchy headline.
+  4. Sentiment badges: span class="badge badge-pos|badge-neg|badge-mix|badge-neu" — labels: Positive, Negative, Mixed, Neutral.
+  5. Fill Key Observations (1–4 <li>), Sources grid (each <a href>…), Notes for Tomorrow (<li> list).
+  6. Do not use The Bay as a discovery source for ranking (per briefing policy); other sources OK in Sources list only if actually consulted.
+-->
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-meta">
+      <span>粤港澳大湾区 · Greater Bay Area Intelligence</span>
+      <span>Date: REPLACE_ME_DATE &nbsp;|&nbsp; Generated: REPLACE_ME_TIME</span>
+    </div>
+    <h1>Trending <span>Topics by AI</span></h1>
+    <p class="masthead-tagline">Please validate all the sources as AI can make mistake</p>
+    <div class="masthead-stripe">
+      <div class="masthead-pill hot">🔥 Live Edition</div>
+      <div class="masthead-pill">Business &amp; Economy</div>
+      <div class="masthead-pill">Culture &amp; Events</div>
+      <div class="masthead-pill">Innovation &amp; Tech</div>
+      <div class="masthead-pill">Cross-Border</div>
+    </div>
+  </div>
+</header>
+
+<main class="wrapper">
+
+  <!-- ═══ TOPIC SKELETON (copy for ranks 1–10) ═══ -->
+  <div class="topic" style="animation-delay:.05s">
+    <div class="topic-rank">1</div>
+    <div class="topic-body">
+      <div class="topic-cat">Category Label</div>
+      <h2 class="topic-title">
+        <a href="https://example.com/article" target="_blank" rel="noopener noreferrer">
+          Short headline — linked to primary source
+        </a>
+      </h2>
+      <p class="topic-summary">
+        One-sentence summary of the story.
+      </p>
+      <div class="why-box">
+        <strong>Why It's Trending</strong>
+        Drivers, data points, and where volume is coming from (news, search, social).
+      </div>
+      <div class="topic-meta">
+        <span><span class="icon">📍</span> Regions (e.g. Hong Kong, Macao, Shenzhen)</span>
+        <span><span class="icon">📰</span> Source: <a href="https://example.com/article" target="_blank" rel="noopener noreferrer">Source Name</a> · Posted: YYYY-MM-DD</span>
+        <span><span class="icon">📊</span> Key metric or anchor fact</span>
+        <span><span class="badge badge-neu">✦ Neutral</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paste or generate topics 2–10 here (same structure). -->
+
+  <section class="observations">
+    <h2>🔭 Key Observations</h2>
+    <ul>
+      <li><strong>Pattern one:</strong> …</li>
+      <li><strong>Pattern two:</strong> …</li>
+    </ul>
+  </section>
+
+  <section class="sources">
+    <h2>Sources Consulted</h2>
+    <div class="sources-grid">
+      <a href="https://www.scmp.com/topics/greater-bay-area" target="_blank" rel="noopener noreferrer">South China Morning Post — GBA</a>
+      <a href="https://trends.google.com/explore?geo=HK" target="_blank" rel="noopener noreferrer">Google Trends — Hong Kong</a>
+    </div>
+  </section>
+
+  <section class="tomorrow">
+    <ul>
+      <li>First item to monitor overnight.</li>
+      <li>Second item.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <span>GBA Pulse · 粤港澳大湾区脉搏 · REPLACE_ME_DATE</span>
+  <span>For informational purposes only — verify all data with primary sources</span>
+</footer>
+
+</body>
+</html>
