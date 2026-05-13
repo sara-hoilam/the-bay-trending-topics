@@ -192,8 +192,8 @@
   .badge-neu  { background: #e8f0fd; color: var(--neu); border: 1px solid #a5bef5; }
 
   .why-box {
-    background: white;
-    border-left: 3px solid var(--accent);
+    background: #faf8f4;
+    border-left: 5px solid var(--accent);
     padding: 12px 16px;
     margin: 12px 0;
     font-size: 13.5px;
@@ -207,7 +207,44 @@
     letter-spacing: .1em;
     color: var(--muted);
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+  }
+  .why-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .why-box li {
+    position: relative;
+    padding-left: 1.35em;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #3a3634;
+  }
+  .why-box li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1em;
+    line-height: inherit;
+  }
+  .why-box li code {
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 500;
+    background: rgba(200, 68, 27, 0.12);
+    color: var(--ink);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid rgba(200, 68, 27, 0.28);
+    white-space: normal;
+    word-break: break-word;
   }
 
   .observations {
@@ -354,7 +391,7 @@
   3. topic-cat: short category. topic-title > a: href = best primary URL; anchor text = punchy headline.
   4. Sentiment badges: span class="badge badge-pos|badge-neg|badge-mix|badge-neu" — labels: Positive, Negative, Mixed, Neutral.
   5. Fill Key Observations (1–4 <li>), Sources grid (each <a href>…), Notes for Tomorrow (<li> list).
-  6. Do not use The Bay as a discovery source for ranking (per briefing policy); other sources OK in Sources list only if actually consulted.
+  6. why-box: 1–3 &lt;li&gt; lines; wrap platforms in &lt;code&gt;…&lt;/code&gt;; orange → bullets come from CSS (do not type →).
 -->
 
 <header class="masthead">
@@ -392,7 +429,10 @@
       </p>
       <div class="why-box">
         <strong>Why It's Trending</strong>
-        Drivers, data points, and where volume is coming from (news, search, social).
+        <ul>
+          <li><code>Google Trends HK</code> …</li>
+          <li><code>Baidu Hot Search</code> …</li>
+        </ul>
       </div>
       <div class="topic-meta">
         <span><span class="icon">📍</span> Regions (e.g. Hong Kong, Macao, Shenzhen)</span>

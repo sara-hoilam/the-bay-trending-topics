@@ -89,16 +89,11 @@ For each of the top 10 topics, output:
    - Example: Source: Hong Kong Free Press · Posted: May 13 2026
 3. One-sentence summary
 4. Why It’s Trending
-   - Use 1–3 short bullet points only
-   - Each bullet must be evidence-led
-   - Prioritize social/search signals, such as:
-     - “#3 on Baidu Hot Search”
-     - “Google Trends HK breakout over the last 7 days”
-     - “TikTok hashtag appearing in Creative Center top hashtags”
-     - “Repeated X/Twitter live-search clusters”
-     - “Reddit r/HongKong thread with high comment velocity”
-     - “Weibo Hot Search appearance on [date]”
-   - Avoid generic wording like “widely covered by media” unless paired with a measurable social/search signal
+   - Use **1–3** bullets only; **tight, scannable** (aim &lt; ~18 words per line where possible)
+   - **Wrap every discovery platform or product name** in inline `<code>...</code>` (renders as a highlighted chip). Examples: `<code>Google Trends HK</code>`, `<code>Baidu Hot Search</code>`, `<code>Weibo Hot Search</code>`, `<code>X/Twitter</code>`, `<code>Reddit</code>`, `<code>TikTok Hashtag</code>`, `<code>Douyin</code>`, `<code>小红书</code>`, `<code>Telegram</code>`
+   - Each bullet = **one** primary data signal (rank, % change, spike window, hashtag, thread velocity) plus minimal context
+   - Do **not** bold entire bullets; avoid long multi-clause sentences and “meta” model text (e.g. “Ranked #1 by Claude”)
+   - Avoid “widely covered by media” unless paired with a measurable social/search signal
 5. Main regions affected
 6. Sentiment
    - Positive / Neutral / Negative / Mixed
@@ -140,6 +135,19 @@ In every `.topic-meta`, put source/date immediately after location:
 <span><span class="icon">📰</span> Source: <a href="...">Source Name</a> · Posted: May 13 2026</span>
 <span><span class="icon">📊</span> Key trend metric or signal</span>
 <span><span class="badge badge-mix">✦ Mixed</span></span>
+```
+
+For every `.why-box`, use `<strong>Why It's Trending</strong>` then a `<ul>` of 1–3 `<li>` items. Lists render with an orange **→** marker via site CSS (do not put `→` in the HTML). Example:
+
+```html
+<div class="why-box">
+  <strong>Why It's Trending</strong>
+  <ul>
+    <li><code>Baidu Hot Search</code> top-5 slot May 13 on summit-related queries.</li>
+    <li><code>Google Trends HK</code> breakout vs prior week on “Trump Xi”.</li>
+    <li><code>Reddit</code> r/HongKong — high comment velocity on trade chip angles.</li>
+  </ul>
+</div>
 ```
 
 ## Important Rules

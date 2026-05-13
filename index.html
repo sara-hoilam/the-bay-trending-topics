@@ -237,8 +237,8 @@
 
   /* ─── WHY TRENDING BOX ─── */
   .why-box {
-    background: white;
-    border-left: 3px solid var(--accent);
+    background: #faf8f4;
+    border-left: 5px solid var(--accent);
     padding: 12px 16px;
     margin: 12px 0;
     font-size: 13.5px;
@@ -252,7 +252,44 @@
     letter-spacing: .1em;
     color: var(--muted);
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+  }
+  .why-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .why-box li {
+    position: relative;
+    padding-left: 1.35em;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #3a3634;
+  }
+  .why-box li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1em;
+    line-height: inherit;
+  }
+  .why-box li code {
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 500;
+    background: rgba(200, 68, 27, 0.12);
+    color: var(--ink);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid rgba(200, 68, 27, 0.28);
+    white-space: normal;
+    word-break: break-word;
   }
 
   /* ─── KEY OBSERVATIONS ─── */
@@ -457,9 +494,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li><strong>Ranked #1 by both Claude and Composer</strong> — highest search/social volume story of the day; "Trump Xi summit" dominated Google Trends HK and Baidu realtime hot board throughout May 12–13; X/Twitter #TrumpXi overwhelmed adjacent GBA keyword clusters; Reddit r/HongKong active on HK financial implications.</li>
-        <li>Bloomberg, Reuters, SCMP, and CNBC Asia all ran lead stories; formal agenda includes Nvidia H20 chip access and a proposed "US–China Board of Trade" — any tariff rollback or rare-earth deal directly affects Guangdong's export manufacturers and HK's re-export hub role.</li>
-        <li>First US presidential China visit since 2017; finance circles on Reddit and X tied the visit to Hang Seng/Connect positioning — divergent tone between Xinhua framing and Reuters/Bloomberg wires requires cross-check before treating any single narrative as settled.</li>
+        <li><code>Google Trends HK</code> + <code>Baidu Hot Search</code> — summit queries led May 12–13; <code>X/Twitter</code> #TrumpXi crowded GBA finance threads.</li>
+        <li><code>Reddit</code> r/HongKong — high comment velocity on tariffs, chips, Hang Seng.</li>
+        <li>First U.S. presidential China visit since 2017; outcomes still pending.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -483,9 +520,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li><strong>Highest cross-model consensus: ranked #1 (GPT-5.5), #2 (Claude and Composer)</strong> — the only story to appear in all three runs; Reddit r/HongKong and X #CanvasHack surged from May 8 and peaked again when PCPD confirmed final institution counts on May 13; Google Trends HK "Canvas hack Hong Kong" rose sharply week-on-week.</li>
-        <li>PolyU alone: 42,000 affected; CityU: 28,000 — HKFP, SCMP, and The Standard corroborate PCPD figures; phishing warnings by HK cyber authorities and campus advisories sustained engagement beyond the initial disclosure; student forum memes on transcript portals and Canvas access kept story alive all week.</li>
-        <li>Global scope (275M users) frames HK's exposure as systemic, elevating PCPD enforcement scrutiny, potential class action discussion, and broader campus IT-policy debate across the GBA.</li>
+        <li><code>Reddit</code> r/HongKong + <code>X/Twitter</code> #CanvasHack — second spike May 13 after PCPD tallies.</li>
+        <li><code>Google Trends HK</code> — “Canvas hack Hong Kong” up week-on-week.</li>
+        <li>72,000+ users, 7 schools; ~275M users breached globally.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -509,9 +546,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li><strong>Covered by all three models</strong> across complementary angles (Claude #5, Composer #6, ChatGPT #2 and #3); Sina Finance publication of 广州市人工智能产业2026年工作要点 on May 11 drove Baidu finance search clusters; Weibo AI verticals amplified the Alliance launch within 24 hours; "embodied AI" and AGIBOT keyword clusters sharply active on May 12.</li>
-        <li>HK AI R&amp;D institute launch target: H2 2026; Guangdong ¥20B AI fund gives the Guangzhou plan funding rather than just slogans; Shenzhen separately launched its "Embodied Intelligence Port" in Bao'an with 11 signed industrial projects (May 9) — GBA-wide AI push is the week's dominant tech narrative.</li>
-        <li><strong>Official-media amplification flag:</strong> apply state-media discount on headline targets (40 models, 450 scenarios); verify against independent technical reporting and third-party audits before treating as achieved milestones.</li>
+        <li><code>Sina Finance</code> + <code>Baidu</code> clusters — Guangzhou AI work plan May 11; <code>Weibo</code> AI verticals picked up Nansha alliance within 24h.</li>
+        <li><code>Google Trends HK</code> — “embodied AI” / AGIBOT uptick May 12.</li>
+        <li>HK AI institute target H2 2026; mainland “40 models” line — verify vs independent tech reporting.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -535,9 +572,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li><strong>Covered by all three models</strong> (Claude #4, Composer #5, ChatGPT #6); Cathay's official announcement landed early morning; RTHK, X/Twitter aviation communities, and LinkedIn business pages amplified immediately; "Cathay Pacific chair" rose on Google Trends HK on announcement day.</li>
-        <li>Thematic cluster: appointment coincides with Trump–Xi summit outcomes potentially reshaping Asian aviation routes (Topic 1) and EcoCeres SAF hub with Cathay as anchor buyer (Topic 10) — three aviation/trade stories reinforcing each other's search volume.</li>
-        <li>Bradley's quote centers HK's "leading international aviation hub" role, making GBA angle explicit; Aviation Business News, The Standard, and Payload Asia confirmed all biographical details and effective date — no verification gaps.</li>
+        <li><code>X/Twitter</code> aviation lists + <code>LinkedIn</code> — spike within an hour of release.</li>
+        <li><code>Google Trends HK</code> — “Cathay Pacific chair” mini-cluster same day.</li>
+        <li>Stacks with summit + SAF stories; effective May 13 per newsroom.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -561,9 +598,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li>RTHK broke the story ~15:17 HKT May 13; "HK space payload" and "Tiangong Hong Kong" broke out as an afternoon Google Trends HK spike; X/Twitter HK tech circles and LinkedIn reshared station imagery faster than general-interest boards — ranked independently by Claude (#3) and Composer (#4).</li>
-        <li>Historic first: first locally designed scientific HK payload to achieve a multi-year orbital mission; 100 m CO₂/CH₄ resolution; China Daily Asia and PolyU newsroom corroborate core claims; Xinhua amplification widely expected.</li>
-        <li><strong>Official-narrative flag:</strong> triangulate with Reuters/Bloomberg and independent technical reporting before treating sentiment as uniformly positive; second media cycle expected when first data relay lands publicly.</li>
+        <li><code>Google Trends HK</code> — “Tiangong Hong Kong” / payload queries spiked afternoon May 13 after RTHK.</li>
+        <li><code>X/Twitter</code> + <code>LinkedIn</code> STEM reshares outpaced text-only policy drops early.</li>
+        <li>First HK scientific payload on multi-year orbit; 100m CO₂/CH₄ mapping claim — cross-check non-official wires.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -587,9 +624,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li>Covered by two models (Claude #6, ChatGPT #4); RTHK and HKFP reported the 10,000-permit figure (May 11–12); SCMP cited calls for 20,500 permits to keep 15,000 cars active daily; Reddit r/HongKong commuter threads and X/Twitter taxi-monopoly debates renewed strongly across the week.</li>
-        <li>The regulatory gap is repeatedly cited in GBA competitiveness rankings — the permit number is the outstanding variable both platforms and taxi unions are lobbying hard on; subsidiary legislation drafting due H1 2026.</li>
-        <li>Active, unresolved policy fight with strong daily-life stakes — commuters strongly backed expansion in Reddit polls; story has legs through LegCo deliberations.</li>
+        <li><code>Reddit</code> r/HongKong + <code>X/Twitter</code> — permit-cap fight (≈10k vs 20k+) reignited mid-week.</li>
+        <li><code>Google Trends HK</code> — ride-hail / Uber queries stayed elevated.</li>
+        <li>Subsidiary rules due H1 2026; HK still lacks legalised framework vs regional peers.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -613,9 +650,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li>Covered by two models (Claude #8, Composer #8); Galaxy Q1 results (May 12) and Sands China Q1 results kept Macao gaming in Baidu finance and Bloomberg/SCMP Asia leads simultaneously; Macau Business and Macau Daily Times circulated on TikTok tourism content and Baidu travel boards; "澳門旅遊 2026" search remains elevated.</li>
-        <li>EBITDA +21% confirms non-gaming spend diversification — Capella at Galaxy Macau ramp, suite upgrades, and resort influencer arcs on Xiaohongshu drive incremental mainland bookings beyond mass-market gaming.</li>
-        <li><strong>Watch signal:</strong> April GGR (MOP 19.89B) decelerated from March's MOP 22.61B — analysts monitoring whether seasonal or structural; Macao May data due early June will be the key next data point.</li>
+        <li><code>Baidu</code> finance + travel — Q1 operator drops (e.g. Galaxy May 12) kept “澳門旅遊” warm.</li>
+        <li><code>TikTok</code> Macao travel + <code>小红书</code> resort arcs — non-gaming narrative.</li>
+        <li>EBITDA +21% YoY headline; watch April GGR dip vs March for debate.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -639,9 +676,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li>Covered by two models on complementary Macao angles (Claude #9 on Westwood; ChatGPT #5 on Arts Festival); Mirror member Anson Lo and (G)I-DLE's Miyeon attended the Westwood Macao opening — drove TikTok #AnsonLo / #Westwood hashtag spike and a Xiaohongshu fashion thread now in its second week; opening-week Arts Festival flash-mobs gave repeat lifestyle-feed visibility.</li>
-        <li>Both events are officially government-supported and well-grounded: Westwood via SJM official site and SCMP Style; Arts Festival via gov.mo releases with full programme and outreach activity counts.</li>
-        <li>Together they bridge Macao's casino-resort identity with contemporary culture curation, directly aligned with the SAR's non-gaming diversification strategy and GBA cultural integration narrative.</li>
+        <li><code>TikTok Hashtag</code> — #AnsonLo / #Westwood spike on opening; <code>小红书</code> fashion thread week 2.</li>
+        <li>Arts Festival May 8–Jun 27 — flash mobs = repeat lifestyle-feed hits.</li>
+        <li>Official gov.mo + SJM programme grounding; non-gaming tourism push.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -665,9 +702,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li>Composer surfaced both signals independently (SZ shopping #3, HZMB #7) from Google Trends HK (Shenzhen shopping–style queries climbing week-on-week) and Douyin clip templates with high save/share rates — UGC and lifestyle content moved before wire summarisation.</li>
-        <li>Telegram deal bots and Douyin haul tags recycle the same SKU comparisons continuously; HZMB Shorts with skyline-transition edits gaining traction as families plan long weekends across the tri-city corridor; TikTok/Douyin cross-platform reposts sustaining reach.</li>
-        <li>Verify with SCMP retail / cross-border foot-traffic reporting and HZMB official throughput notices to ground social hype against actual volume data; social heat can front-run or exaggerate wait times and lane changes.</li>
+        <li><code>Google Trends HK</code> — SZ same-day shopping queries up WoW.</li>
+        <li><code>Douyin</code> / <code>TikTok</code> — HZMB / haul templates; high save/share.</li>
+        <li><code>Telegram</code> deal bots cycling SKU comps — pair hype with port throughput data.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -691,9 +728,9 @@
     <div class="why-box">
       <strong>Why It's Trending</strong>
       <ul>
-        <li>Claude ranked it #10; LinkedIn ESG and aviation communities drove initial virality; X/Twitter sustainability and HK finance accounts amplified; "sustainable aviation fuel Hong Kong" rising on Google Trends HK this week; EcoCeres Newsroom, The Standard HK, and Asian Aviation all confirmed the May 5 signing.</li>
-        <li>HK$10B decade-long investment; 450,000 tonnes SAF/year; 80%+ lifecycle carbon reduction — HKIA mandating SAF blending from 2030, making the Lisha Island plant a strategic infrastructure commitment rather than an aspirational target.</li>
-        <li>Cathay Pacific's anchor-buyer role connects directly to today's Cathay chair-change story (Topic 4) — narrative cluster giving The Bay an aviation–green economy angle; CE John Lee's attendance adds governmental weight to the HK–Mainland co-development framing.</li>
+        <li><code>LinkedIn</code> ESG + <code>X/Twitter</code> SAF threads clustered post–May 5 LoI.</li>
+        <li><code>Google Trends HK</code> — “sustainable aviation fuel Hong Kong” lift mid-week.</li>
+        <li>HK$10B / 450k t/y headline; ties to Cathay chair story same window.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -782,9 +819,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>#1 on Google Trends HK and Baidu realtime hot board throughout Wednesday; "Trump Xi summit" dominates X/Twitter and Reddit r/HongKong — GBA supply-chain and HK equities threads are the highest-engagement sub-topics.</li>
-          <li>First US presidential China visit since 2017; tariffs topped 100% before October 2025 truce; CNBC Asia reports Chinese exporters now more worried about Iran supply-chain disruption than tariffs themselves — dual-risk framing driving heavy search volume.</li>
-          <li>Outcomes are still pending as of 16:40 HKT — BBC, NBC, WashPost, and CBC all flagged muted expectations; any communiqué language on tech decoupling will immediately move GBA equities and Guangdong order books.</li>
+          <li><code>Google Trends HK</code> + <code>Baidu Hot Search</code> — summit at #1 May 13.</li>
+          <li><code>X/Twitter</code> + <code>Reddit</code> r/HongKong — GBA trade / Hang Seng angles.</li>
+          <li>First U.S. presidential China trip since 2017; communiqué still open.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -807,9 +844,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>PCPD published final confirmed institution counts today (May 13) — 7 institutions, 72,000+ affected, including PolyU (42,000) and CityU (28,000); HKFP, SCMP, and The Standard all ran updated stories; X/Twitter #CanvasHack is active again in HK feeds.</li>
-          <li>Google Trends HK: "Canvas hack Hong Kong" search volume rising sharply week-on-week; Reddit r/HongKong thread on potential PCPD enforcement and class-action liability is highly upvoted.</li>
-          <li>Part of a global 3.5 TB breach affecting 275M users; Instructure reportedly paid a ransom against law-enforcement guidance — adds governance scandal angle boosting continued coverage.</li>
+          <li><code>X/Twitter</code> #CanvasHack + PCPD tally May 13 — second spike.</li>
+          <li><code>Google Trends HK</code> — “Canvas hack Hong Kong” up WoW.</li>
+          <li>72,000+ / 7 schools; ~275M-user global breach context.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -832,9 +869,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Two new SCMP deep-dives published today (May 13) — "How many ride-hailing permits should HK allow?" and "What the new regime means for your next Uber trip" — both broke into Google Trends HK top results.</li>
-          <li>Subsidiary legislation due LegCo before summer recess (late July); platform, driver, and vehicle applications in Q3-Q4 2026 — concrete legislative timeline is driving business-community urgency and Reddit r/HongKong debate.</li>
-          <li>HK remains the last major Asia-Pacific city without a legalised ride-hailing framework — framing resonates strongly with commuters on X/Twitter and Xiaohongshu 港漂 community.</li>
+          <li><code>Google Trends HK</code> — two SCMP ride-hail explainers May 13 in top results.</li>
+          <li><code>Reddit</code> r/HongKong + <code>X/Twitter</code> — cap fight (Uber 30k vs gov ~10k).</li>
+          <li>Subsidiary law due late July; HK last major APAC city without legalised ride-hail.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -857,9 +894,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Original Douyin post went viral during Labour Day (May 1–5); story still circulating on Weibo and Reddit r/HongKong as of May 13, anchored by The Standard and Dim Sum Daily follow-up coverage plus AFCD's official investigation statement.</li>
-          <li>710,000+ mainland visitors in the first 3 days of Golden Week — incident became a flashpoint for broader debate on overtourism and visitor conduct; Google Trends HK spike for "MacLehose Trail" and "hiking sign" persists.</li>
-          <li>A before-photo surfaced showing the sign intact in mid-April, contradicting the tourist's account — the credibility dispute is amplifying continued engagement across platforms.</li>
+          <li><code>Douyin</code> viral May Day post; still on <code>Weibo</code> + <code>Reddit</code> r/HongKong May 13.</li>
+          <li><code>Google Trends HK</code> — “MacLehose Trail” / hiking-sign queries sticky.</li>
+          <li>710k+ mainland visitors first 3 days Golden Week; before-photo undercuts tourist claim.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -882,9 +919,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>SCMP exclusive broke this morning (May 13) — "five-year plan" immediately entered Google Trends HK; HKFP follow-up confirmed early June timeline, with large-scale TV ad and banner publicity campaign.</li>
-          <li>Historic first: HK has never published a five-year plan aligned with China's national blueprint — signals a structural shift in governance that business, academic, and policy communities are actively discussing on LinkedIn and X/Twitter.</li>
-          <li>Cross-bureau task force led by CE Lee with Constitutional and Mainland Affairs Bureau coordination; plan finalisation expected by end-2026 — high relevance for GBA integration policy tracking.</li>
+          <li><code>Google Trends HK</code> — “five-year plan” lift on SCMP exclusive May 13.</li>
+          <li><code>LinkedIn</code> + <code>X/Twitter</code> — policy / Finance+ framing.</li>
+          <li>First HK 5-year plan aligned with national blueprint; consult early June.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -907,9 +944,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Sina Finance and Chinanews.cn carried the story on May 12–13; Weibo biotech communities and LinkedIn life-sciences circles amplified the Huangpu "Biomedical 3.0" policy announcement (up to ¥100M/year in clinical subsidies).</li>
-          <li>Huangpu District signed a cooperation framework with Sun Yat-sen University's Third Hospital — creating a formal HK-SZ-GZ R&amp;D-to-clinic pathway directly relevant to the GBA's stated goal of displacing Singapore as the region's biopharma hub.</li>
-          <li>Baidu finance boards picked up the ¥100M annual subsidy figure as a searchable anchor; biomedical searches rose week-on-week in the Guangdong region.</li>
+          <li><code>Baidu</code> finance + <code>Weibo</code> biotech — Huangpu centre May 12–13.</li>
+          <li><code>LinkedIn</code> life-sci reshare — ¥100M/yr clinical subsidy hook.</li>
+          <li>Formal HK–SZ–GZ R&amp;D-to-clinic framing; verify execution vs slogans.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -932,9 +969,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>GGRAsia's May projection piece (published May 13) trended on TikTok Macao gaming content feeds and Baidu travel/finance boards; "澳門賭收" (Macao gaming revenue) searches elevated for a third consecutive week.</li>
-          <li>Galaxy Q1 2026 GGR +14% YoY (HK$64B) and Wynn Palace Q1 +$123M YoY published May 12 — multi-operator earnings week keeps finance search heat high; April GGR (MOP 19.89B, -12% MoM) flagged as potential structural softening vs. seasonal dip.</li>
-          <li>G2E Asia conference analyst warnings about hotel shortage and demographic shift provide counter-narrative to the bullish May projections — driving debate and engagement in finance circles.</li>
+          <li><code>GGRAsia</code> May 13 + <code>Baidu</code> “澳門賭收” — third week elevated.</li>
+          <li><code>TikTok</code> Macao gaming tourism recirculation.</li>
+          <li>CLSA May GGR ~MOP 22.6B call vs April softness debate.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -957,9 +994,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>AP Newswire and PR Newswire both distributed the May 11 launch — picked up by LinkedIn's China tech community and Sznews.com (深圳新聞網); "Shenzhen go global" searches spiked on Baidu business boards.</li>
-          <li>30 founding enterprise signings at launch; Microsoft AI leaders cited "agent-driven systems and digital workforce models" for global marketing — framing resonates strongly with GBA's 出海 (go-global) export push narrative.</li>
-          <li>Launch backed by Luohu District government; 12 professional service providers (finance, tax, cloud, arbitration) already operational — concrete infrastructure distinguishes this from announcement-only initiatives that dominate comparable press coverage.</li>
+          <li><code>Baidu</code> business — “Shenzhen go global” spike on May 11 launch PR.</li>
+          <li><code>LinkedIn</code> China tech — 30 founders / Microsoft AI line.</li>
+          <li>Luohu gov-backed centre; 12 service providers live — concrete ops story.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -982,9 +1019,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>RTHK and SCMP both published the confirmed rollout details today (May 13) — story generated strong engagement on X/Twitter HK transport channels and Xiaohongshu logistics and driver communities.</li>
-          <li>Measure takes effect within 5 days (May 18); no application required — HKeToll system automatically applies the 50% discount; practical immediacy drives high search interest from commercial vehicle operators.</li>
-          <li>Government estimates HK$160M revenue foregone over 2 months; links directly to the Iran conflict's energy price disruption — connects the Trump-Xi summit macro story (Topic 1) to a local cost-of-living data point.</li>
+          <li><code>X/Twitter</code> HK transport + <code>小红书</code> driver posts May 13.</li>
+          <li>50% tunnel discount May 18–Jul 16 — auto via HKeToll.</li>
+          <li>HK$160M forgone; linked narrative to fuel-price shock / Iran risk.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1007,9 +1044,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Macau Daily Times and Macau Business both ran fresh coverage this week; Sands China CEO Grant Chum's G2E Asia remarks about Cotai's "unassailable" USD 50B resort base amplified the tourism-vs-gaming-diversification conversation on TikTok Macao travel hashtags.</li>
-          <li>750,000+ international visitors in Q1 2026 (+11% YoY); Thailand arrivals +71%, India +41% — emerging-market growth data circulated on Baidu travel boards and LinkedIn hospitality circles.</li>
-          <li>MGTO offering free transport from HK and multi-destination GBA itineraries — directly targets HK's 35M+ annual visitor base as a feeder market; aligns with Macao property index softening (Q1 residential index -1.5% QoQ) as a counter-narrative to domestic demand weakness.</li>
+          <li><code>Baidu</code> travel + <code>LinkedIn</code> hospitality — 3M intl visitor target 2026.</li>
+          <li><code>TikTok</code> Macao travel — G2E / Cotai capex chatter.</li>
+          <li>Q1 intl +11% YoY; Thailand +71%, India +41% hooks.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1083,9 +1120,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Reddit r/HongKong thread momentum from 8 May onward; X/Twitter #CanvasHack reaccelerated 13 May when privacy disclosures rounded out the 72,000+ affected tally.</li>
-          <li>Google Trends HK lifted on “Canvas hack Hong Kong” class queries week-on-week — a pure social-and-search signal before the long-tail explainer pieces.</li>
-          <li>Verify: HKFP, SCMP, and PCPD statements anchor names and numbers; phishing follow-ups today add a second engagement wave.</li>
+          <li><code>Reddit</code> r/HongKong — thread velocity from 8 May; <code>X/Twitter</code> #CanvasHack peak May 13.</li>
+          <li><code>Google Trends HK</code> — “Canvas hack Hong Kong” class queries up WoW.</li>
+          <li>72,000+ / 7 schools; verify HKFP / SCMP / PCPD.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1108,9 +1145,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Discovery: “Trump Xi” / summit-class terms topped Google Trends HK and Baidu realtime alongside live X/Twitter search panels through Wednesday morning.</li>
-          <li>Cross-platform: r/HongKong finance threads and bilingual quote-posts outran routine LegCo items for raw velocity — classic geopolitical crowding-out.</li>
-          <li>Verify: Bloomberg, Reuters, SCMP wires; state outlets run constructive framing — discount sentiment until you triangulate.</li>
+          <li><code>Google Trends HK</code> + <code>Baidu Hot Search</code> — “Trump Xi” / summit owned May 12–13.</li>
+          <li><code>Reddit</code> r/HongKong finance threads outpaced routine LegCo items.</li>
+          <li>Verify wires (Bloomberg, Reuters, SCMP); discount state-only sentiment.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1133,9 +1170,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>RTHK’s 11 May cap story was screenshot-heavy on Reddit r/HongKong; X debate on taxi scarcity vs platform volume picked up again mid-week.</li>
-          <li>Search: “Hong Kong Uber” / ride-hail queries stayed elevated on Google HK — recurring policy choke-point for a GBA competitiveness narrative.</li>
-          <li>Verify: RTHK, Bill 2025 track, transport bureau briefings; number not final until subsidiary rules land.</li>
+          <li><code>Reddit</code> r/HongKong — RTHK ~10k cap screenshots May 11.</li>
+          <li><code>Google Trends HK</code> — ride-hail / Uber queries sticky.</li>
+          <li>Bill 2025 track; final cap not locked until subsidiary rules.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1158,9 +1195,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Discovery: Douyin/TikTok travel montages and Telegram forwarding chains extended decay on May Day content into this week — platform half-life longer than single news spike.</li>
-          <li>Baidu travel clusters for 澳門/深圳 routes show lingering elevation vs pre-holiday baseline (pattern signal, not a single rank screenshot).</li>
-          <li>Verify: RTHK reported ~1.19M visitor arrivals to HK over Golden Week; pair influencer clips with port operator data when possible.</li>
+          <li><code>Douyin</code> / <code>TikTok</code> — Golden Week travel montages still re-cut this week.</li>
+          <li><code>Baidu</code> — Macau / Shenzhen route clusters above pre-holiday baseline.</li>
+          <li>RTHK ~1.19M visitor-arrival stat = caption hook for UGC.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1183,9 +1220,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Discovery: “Tiangong Hong Kong” class queries popped on Google Trends HK same-day as RTHK; STEM LinkedIn reposts outpaced general news aggregators for first-hour spread.</li>
-          <li>Visual-forward station imagery travels well on X/Twitter — engagement skew vs text-heavy policy drops.</li>
-          <li>Verify: PolyU/HKUST pages; expect official-media amplification — cross-check independent wires for balance.</li>
+          <li><code>Google Trends HK</code> — “Tiangong Hong Kong” popped same day as RTHK.</li>
+          <li><code>X/Twitter</code> + <code>LinkedIn</code> — station imagery spread faster than wire summaries.</li>
+          <li>Verify PolyU/HKUST releases; expect official-media boost.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1208,9 +1245,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>SCMP’s early-May feature reignited Xiaohongshu and Weibo education panels; Caixin follow (12 May) added a second engagement crest.</li>
-          <li>Google Trends HK shows sticky interest on admission keywords — not a one-day meme, a week-long baseline lift.</li>
-          <li>Verify: HK Education Bureau gazette on non-local quotas; cite official caps when summarising growth.</li>
+          <li><code>小红书</code> + <code>Weibo</code> — HK uni admit threads after SCMP early-May feature.</li>
+          <li><code>Google Trends HK</code> — admission keywords lifted all week (not one-day meme).</li>
+          <li>Cross-check EDB gazette on non-local caps.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1233,9 +1270,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Sina/Finet-style reposts of the municipal AI priorities (11 May) spiked Baidu clusters faster than GBA English Twitter.</li>
-          <li>Shenzhen embodied-AI port signings the same week created a cross-city “AI week” social frame — recurrence across two municipalities.</li>
-          <li>Verify: eguangzhou.gov.cn primary text; model/scenario targets are policy intent, not audited market outcomes yet.</li>
+          <li><code>Baidu</code> finance — Guangzhou AI priorities May 11 ahead of English Twitter.</li>
+          <li><code>Weibo</code> / Sina reposts — “AI week” frame with Shenzhen embodied-AI news.</li>
+          <li>Verify eguangzhou.gov.cn; targets = policy intent not audited outcomes.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1258,9 +1295,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Corporate press drop spiked aviation X lists within an hour; “Cathay chair” mini-cluster on Google Trends HK the same morning.</li>
-          <li>Easy shareable CEO photo + succession headline = high signal-to-length ratio for business social.</li>
-          <li>Verify: Cathay newsroom timestamp; RTHK and trade press match bios and effective date.</li>
+          <li><code>X/Twitter</code> aviation + <code>Google Trends HK</code> — “Cathay chair” spike morning of May 13.</li>
+          <li><code>LinkedIn</code> — succession photo / hub narrative easy reshare.</li>
+          <li>Match Cathay newsroom timestamp + RTHK.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1283,9 +1320,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>GlobeNewswire Q1 factsheet (12 May) re-sparked bilingual finance scrollers; Baidu travel boards recycled the +14% visitor stat as a chyron.</li>
-          <li>Caution: April GGR softness chatter (#s from analyst roundups) is the counter-meme — watch for sentiment split between equity TikTok and mass tourism UGC.</li>
-          <li>Verify: Galaxy release + DICJ monthly prints when tying gaming revenue claims.</li>
+          <li><code>Baidu</code> travel + finance scrollers — GlobeNewswire Q1 +14% visitors hook.</li>
+          <li><code>TikTok</code> Macao weekend vlogs recycle the headline.</li>
+          <li>Counter-meme: April GGR softness in analyst notes.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1308,9 +1345,9 @@
       <div class="why-box">
         <strong>Why It's Trending</strong>
         <ul>
-          <li>Long-form LinkedIn posts and short X threads on “SAF + Cathay” clustered within 48h of The Standard’s 12 May write-up — thematic overlap with Topic 8.</li>
-          <li>“Sustainable aviation fuel Hong Kong” style terms ticked up on Google Trends HK mid-week (supporting but softer signal than geopolitics spikes).</li>
-          <li>Verify: The Standard, EcoCeres comms, Dongguan government ceremony notes; project timelines still subject to FEED/FID milestones.</li>
+          <li><code>LinkedIn</code> ESG + <code>X/Twitter</code> SAF threads — The Standard May 12.</li>
+          <li><code>Google Trends HK</code> — “sustainable aviation fuel Hong Kong” uptick mid-week.</li>
+          <li>HK$10B / 450k t/y cites; milestones still FEED/FID dependent.</li>
         </ul>
       </div>
       <div class="topic-meta">
@@ -1380,9 +1417,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>SCMP and HKFP reported 72,571 Hong Kong users affected on 2026-05-13.</li>
-        <li>Seven institutions reported exposure to the Privacy Commissioner, including PolyU, CityU and HKUST.</li>
-        <li>Reddit/X discussion renewed after police received two reports, including one phishing-scam report.</li>
+        <li><code>HKFP</code> / <code>SCMP</code> — 72,571 HK users; May 13 disclosure wave.</li>
+        <li><code>Reddit</code> + <code>X/Twitter</code> — phishing / campus chatter after police reports.</li>
+        <li>7 institutions on file with PCPD.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1405,9 +1442,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>May 12-13 coverage clustered around &ldquo;embodied AI&rdquo;, AGIBOT and Hong Kong&apos;s AI+ committee.</li>
-        <li>The Hong Kong AI R&amp;D Institute is slated to begin operations in H2 2026.</li>
-        <li>China Daily, Global Times and The Standard all amplified the summit within 24 hours.</li>
+        <li><code>Weibo</code> + <code>Google News</code> cluster May 12–13 on “embodied AI”.</li>
+        <li>AI R&amp;D institute slated H2 2026.</li>
+        <li>State + HK press same 24h — read with official-media discount.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1430,9 +1467,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>Sina Finance pushed the 2026 AI work plan into mainland finance/tech feeds on 2026-05-11.</li>
-        <li>Targets include 40 competitive vertical large models and 450 AI application scenarios.</li>
-        <li>Guangzhou&apos;s 20 billion yuan AI fund keeps the policy tied to visible capital support.</li>
+        <li><code>Sina Finance</code> — Guangzhou 2026 AI work plan pushed May 11.</li>
+        <li><code>Baidu</code> — “40 models / 450 scenarios” searchable anchor.</li>
+        <li>¥20B AI fund line keeps capital visible in scrollers.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1455,9 +1492,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>RTHK, HKFP and SCMP kept the permit-cap debate active across 2026-05-11 to 2026-05-13.</li>
-        <li>Government discussion centered on roughly 10,000 permits; Uber requested 30,000.</li>
-        <li>HKFP cited platform claims that a 10,000-15,000 cap could leave 40% of rush-hour requests unfulfilled.</li>
+        <li><code>RTHK</code> / <code>HKFP</code> / <code>SCMP</code> — cap story active May 11–13.</li>
+        <li><code>Google Trends HK</code> — ride-hail permit debate sustained.</li>
+        <li>~10k mooted vs Uber 30k ask; 40% unmet rush-hour claim per HKFP.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1480,9 +1517,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>The festival runs 2026-05-08 to 2026-06-27 with 15 programmes and 9 outreach activities.</li>
-        <li>Opening-week flash mobs, free-ticket distribution and ticket sales generated repeat local lifestyle visibility.</li>
-        <li>Plataforma reported around 50 community activities, extending the event beyond theatre venues.</li>
+        <li><code>gov.mo</code> — 15 programmes May 8–Jun 27; repeat local lifestyle visibility.</li>
+        <li>Opening flash mobs + free-ticket pushes = second-week feed churn.</li>
+        <li>~50 community activities cited in local coverage.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1505,9 +1542,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>China News reported 3.37 trillion yuan in Jan-Apr trade for the mainland GBA&apos;s nine cities.</li>
-        <li>Imports and exports rose 18.4% year on year, with private enterprises up 24.2%.</li>
-        <li>ASEAN, Hong Kong and EU trade grew 10%, 41.1% and 10.1%, respectively.</li>
+        <li><code>China News Service</code> — ¥3.37T Jan–Apr mainland GBA trade headline.</li>
+        <li><code>Baidu</code> / finance social — +18.4% YoY, private firms +24.2%.</li>
+        <li>HK corridor +41.1% YoY callout in same release.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1530,9 +1567,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>Cathay confirmed Bradley as chair effective 2026-05-13.</li>
-        <li>Aviation Business News, STAT Times and cargo outlets picked up the appointment across industry channels.</li>
-        <li>Bradley explicitly linked the role to strengthening Hong Kong as an international aviation hub.</li>
+        <li><code>LinkedIn</code> + aviation trade press — Guy Bradley effective May 13.</li>
+        <li><code>X/Twitter</code> — hub vs Baiyun/SZX framing resurfaced.</li>
+        <li>Cathay release timestamp is canonical.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1555,9 +1592,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>The symposium took place on 2026-05-08 during a heavy Macao tourism-events cycle.</li>
-        <li>Topics included technological innovation, industrial transformation and industry-academia collaboration.</li>
-        <li>The theme connects to Macao&apos;s upcoming APEC tourism-meeting push and wellness/silver-economy positioning.</li>
+        <li><code>gov.mo</code> symposium May 8 — stacked Macao tourism events week.</li>
+        <li>Smart tourism + AI narrative tied to upcoming APEC tourism PR.</li>
+        <li>Official-read-heavy; pair with operator commentary.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1580,9 +1617,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>Guangdong foreign-affairs channels posted the five-year-plan framing on 2026-05-12.</li>
-        <li>The topic recurs alongside Guangdong&apos;s pledge to put the GBA at the heart of 2026-2030 planning.</li>
-        <li>Policy-feed interest is high, but coverage is official-source dominated and should be read with that bias flag.</li>
+        <li><code>Guangdong FAO</code> site May 12 — HK 5-year plan commentary wave.</li>
+        <li><code>WeChat</code> / policy channels — GBA centre in 2026–2030 framing.</li>
+        <li>Official-source dominated; triangulate independent analysis.</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -1605,9 +1642,9 @@
     <div class="why-box">
       <strong>Why It&rsquo;s Trending</strong>
       <ul>
-        <li>Yicai reported new-home sales up 48% year on year during the Labour Day break.</li>
-        <li>Second-hand home sales rose 62%, giving property accounts a shareable data point.</li>
-        <li>Sentiment stays mixed because the surge may reflect front-loaded demand after policy easing.</li>
+        <li><code>Yicai Global</code> — Labour Day new-home sales +48% YoY.</li>
+        <li><code>Weibo</code> property influencers — resale +62% YoY hook.</li>
+        <li>Suspected front-loaded demand post-easing — label sentiment mixed.</li>
       </ul>
     </div>
     <div class="topic-meta">
