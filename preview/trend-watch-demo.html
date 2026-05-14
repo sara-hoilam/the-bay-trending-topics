@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Watch — preview (standalone)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #ebe6dc;
+    --accent: #c8441b;
+    --muted: #6b6460;
+    --rule: #0d0d0d18;
+    --panel-bg: #f3eee6;
+    --card-bg: #fdfbf7;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--paper);
+    background-image: radial-gradient(circle, #c8c2b8 1px, transparent 1px);
+    background-size: 12px 12px;
+    color: var(--ink);
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+  .preview-ribbon {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    background: #2a4a7a;
+    color: #fff;
+    padding: 8px 24px;
+    text-align: center;
+  }
+  .masthead {
+    border-bottom: 3px solid var(--ink);
+    background: rgba(235, 230, 220, .92);
+  }
+  .masthead-inner {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 26px 32px 22px;
+  }
+  .masthead-meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 900;
+    letter-spacing: -.03em;
+    line-height: 1;
+  }
+  h1 span { color: var(--accent); }
+  .sub {
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--muted);
+    font-weight: 500;
+    max-width: 920px;
+  }
+  .wrapper {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 24px 32px 64px;
+  }
+  .alert {
+    background: #fdf6e3;
+    border-left: 4px solid var(--accent);
+    padding: 14px 18px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    color: #3a3634;
+    border-radius: 0 4px 4px 0;
+  }
+  .alert code {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    background: rgba(200,68,27,.12);
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+
+  .dashboard { width: 100%; }
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    align-items: stretch;
+  }
+  @media (max-width: 1200px) {
+    .platform-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .platform-grid { grid-template-columns: 1fr; }
+  }
+
+  .platform-panel {
+    background: var(--panel-bg);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 16px 14px 18px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+  }
+  .panel-head {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--rule);
+  }
+  .brand-icon-wrap {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #fff;
+    border: 1px solid var(--rule);
+  }
+  .brand-icon-wrap svg { display: block; }
+  .panel-titles h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--ink);
+  }
+  .panel-titles .board {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .panel-titles .sub {
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 400;
+    max-width: none;
+  }
+
+  .panel-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+    margin-bottom: 10px;
+  }
+  .panel-open {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #1b4dc8;
+    text-decoration: none;
+  }
+  .panel-open:hover { text-decoration: underline; }
+
+  .geo-select-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .geo-select-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .geo-select {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 28px 6px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b6460' d='M3 4.5L6 8l3-3.5'/%3E%3C/svg%3E") no-repeat right 8px center;
+    appearance: none;
+    cursor: pointer;
+    color: var(--ink);
+    max-width: 200px;
+  }
+  .geo-select:focus {
+    outline: 2px solid #1b4dc8;
+    outline-offset: 1px;
+  }
+
+  .panel-score-hint {
+    font-size: 10px;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  .panel-score-hint--footer {
+    margin-top: 14px;
+    margin-bottom: 0;
+    padding-top: 12px;
+    border-top: 1px dashed var(--rule);
+  }
+
+  .rank-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .topic-card {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 12px 40px 12px 12px;
+    min-height: 108px;
+  }
+  .topic-card.has-score {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 52px;
+    gap: 4px 10px;
+    align-items: stretch;
+    padding: 12px 10px 12px 12px;
+  }
+  .topic-card.is-empty {
+    opacity: .65;
+  }
+  .topic-card-main { min-width: 0; }
+  .topic-card-score-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: right;
+    padding-top: 2px;
+    border-left: 1px dashed var(--rule);
+    padding-left: 8px;
+    margin-left: 2px;
+  }
+  .topic-pin-abs {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    line-height: 1;
+    user-select: none;
+  }
+  .topic-card.has-score .topic-pin-abs {
+    position: static;
+    margin-bottom: 8px;
+  }
+  .topic-rank {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .topic-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-bottom: 10px;
+    word-break: break-word;
+  }
+  .topic-metric {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+  }
+  .topic-metric .lbl {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .topic-metric .val {
+    font-weight: 600;
+    color: var(--ink);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+  }
+  .topic-metric time {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #444;
+  }
+  .topic-card-score-col .topic-score-val {
+    font-family: 'DM Mono', monospace;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .topic-card-score-col .topic-score-lbl {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  .err {
+    background: #fdeee9;
+    border: 1px solid #f5b8a5;
+    padding: 16px;
+    color: #5c2818;
+    border-radius: 2px;
+  }
+  footer {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 32px 36px;
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+  }
+</style>
+</head>
+<body>
+
+<div class="preview-ribbon">Standalone preview — not linked from GBA Pulse</div>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-meta">
+      <span>Trend watch · dashboard</span>
+      <span id="meta-refresh">Loading…</span>
+    </div>
+    <h1>Trend <span>Watch</span></h1>
+    <p class="sub">Four platforms in columns with ranks <strong>#1–#5</strong>. <strong>Google Trends</strong> adds a location control (default Hong Kong) and a composite <strong>score</strong> from volume, growth, and lift vs the top-50 average for that geo.</p>
+  </div>
+</header>
+
+<main class="wrapper">
+  <div class="alert" id="load-help">
+    <strong>Must use a local server</strong> (opening this file as <code>file://</code> will not load JSON). From the project root run e.g.
+    <code>python3 -m http.server 8765</code>
+ →
+    <code>http://localhost:8765/preview/trend-watch-demo.html</code>
+    <span style="display:block;margin-top:6px;font-size:12px">If port 8765 is busy, try 8766 or another free port and change the URL accordingly.</span>
+  </div>
+
+  <div id="root">
+    <p class="err">Loading <code>trend-watch-sample.json</code>…</p>
+  </div>
+</main>
+
+<footer>preview/ · edit trend-watch-sample.json</footer>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="icon-google-trends" viewBox="0 0 24 24">
+      <path fill="#4285F4" d="M3 17h4v4H3z"/>
+      <path fill="#EA4335" d="M10 12h4v9h-4z"/>
+      <path fill="#FBBC04" d="M17 7h4v14h-4z"/>
+      <path fill="#34A853" d="M3 3h4v11H3z"/>
+    </symbol>
+    <symbol id="icon-baidu" viewBox="0 0 24 24">
+      <rect width="24" height="24" rx="5" fill="#2932E1"/>
+      <text x="12" y="16.5" text-anchor="middle" fill="#fff" font-size="13" font-family="Arial,Helvetica,sans-serif" font-weight="700">B</text>
+    </symbol>
+    <symbol id="icon-tiktok" viewBox="0 0 24 24">
+      <rect width="24" height="24" rx="5" fill="#000"/>
+      <text x="12" y="17" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial,Helvetica,sans-serif">♪</text>
+    </symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<script>
+(function () {
+  var root = document.getElementById('root');
+  var metaRefresh = document.getElementById('meta-refresh');
+  var RANK_SLOTS = 5;
+
+  var BRAND = {
+    google_trends: { title: 'Google Trends', accent: '#4285f4', iconId: 'icon-google-trends' },
+    baidu: { title: 'Baidu', accent: '#2932e1', iconId: 'icon-baidu' },
+    tiktok: { title: 'TikTok', accent: '#000', iconId: 'icon-tiktok' },
+    x_twitter: { title: 'X', accent: '#000', iconId: 'icon-x' },
+  };
+
+  function esc(s) {
+    if (s == null) return '';
+    var d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function iconBlock(id) {
+    return '<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><use href="#' + id + '"/></svg>';
+  }
+
+  function sortItems(items) {
+    return (items || []).slice().sort(function (a, b) {
+      var ra = a.rank != null ? a.rank : 999;
+      var rb = b.rank != null ? b.rank : 999;
+      return ra - rb;
+    });
+  }
+
+  function rowsFromItems(items) {
+    var sorted = sortItems(items);
+    var byRank = {};
+    sorted.forEach(function (it) {
+      var r = it.rank != null ? it.rank : sorted.indexOf(it) + 1;
+      byRank[r] = it;
+    });
+    var out = [];
+    for (var r = 1; r <= RANK_SLOTS; r++) {
+      out.push(byRank[r] || null);
+    }
+    return out;
+  }
+
+  function getGoogleItems(sec, locId) {
+    var map = sec.itemsByLocation || {};
+    if (map[locId] && map[locId].length) return map[locId];
+    return sec.items || [];
+  }
+
+  function googleLocationMeta(sec, id) {
+    var locs = sec.locations || [];
+    for (var i = 0; i < locs.length; i++) {
+      if (locs[i].id === id) return locs[i];
+    }
+    return null;
+  }
+
+  function parseVolumeFromLabel(s) {
+    if (s == null) return null;
+    var t = String(s).replace(/\s/g, '').toUpperCase();
+    var m = t.match(/([\d.]+)([KMB])\+?/);
+    if (!m) return null;
+    var n = parseFloat(m[1], 10);
+    if (isNaN(n)) return null;
+    var mul = { K: 1e3, M: 1e6, B: 1e9 }[m[2]] || 1;
+    return Math.round(n * mul);
+  }
+
+  function volumeNumeric(it) {
+    if (it && it.volumeEstimate != null && Number(it.volumeEstimate) > 0) {
+      return Number(it.volumeEstimate);
+    }
+    return parseVolumeFromLabel(it && it.searchVolume);
+  }
+
+  function volumeForItem(it) {
+    if (!it) return '—';
+    if (it.searchVolume != null && String(it.searchVolume).trim() !== '') return String(it.searchVolume);
+    if (it.volumeLabel != null && String(it.volumeLabel).trim() !== '') return String(it.volumeLabel);
+    if (it.volumeScore != null) return String(it.volumeScore);
+    return '—';
+  }
+
+  function captureIso(data, sec, locMeta, it) {
+    if (it && it.capturedAt) return it.capturedAt;
+    if (locMeta && locMeta.capturedAt) return locMeta.capturedAt;
+    if (sec.capturedAt) return sec.capturedAt;
+    return data.refreshedAt || '';
+  }
+
+  function formatPulled(iso) {
+    if (!iso) return '—';
+    try {
+      var d = new Date(iso);
+      if (isNaN(d.getTime())) return esc(iso);
+      return esc(d.toLocaleString(undefined, {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        timeZoneName: 'short',
+      }));
+    } catch (e) {
+      return esc(iso);
+    }
+  }
+
+  function pinForItem(it) {
+    if (it && it.pin) return it.pin;
+    return '📍';
+  }
+
+  function clamp(x, lo, hi) {
+    return Math.min(hi, Math.max(lo, x));
+  }
+
+  /**
+   * Composite 0–100: estimated search volume (vs max in this top-5),
+   * breakout growth % (capped), lift vs avg top-50 volume for the geo.
+   */
+  function computeGoogleTopicScore(it, locMeta, itemsForLoc) {
+    if (!it) return null;
+    var V = volumeNumeric(it);
+    var A = locMeta && locMeta.avgTop50Volume != null ? Number(locMeta.avgTop50Volume) : 0;
+    var G = it && it.growthPercent != null ? Number(it.growthPercent) : 0;
+    if (!V || V <= 0 || !itemsForLoc || !itemsForLoc.length) return null;
+
+    var vmax = 0;
+    for (var i = 0; i < itemsForLoc.length; i++) {
+      var vi = volumeNumeric(itemsForLoc[i]);
+      if (vi > vmax) vmax = vi;
+    }
+    if (vmax <= 0) return null;
+
+    var normVol = Math.log10(1 + V) / Math.log10(1 + vmax);
+    normVol = clamp(normVol, 0, 1);
+
+    var normGrowth = clamp(G / 1000, 0, 1);
+
+    var ratio = A > 0 ? V / A : 1;
+    var normVsAvg = clamp((ratio - 0.35) / 1.65, 0, 1);
+
+    var score = 100 * (0.35 * normVol + 0.35 * normGrowth + 0.30 * normVsAvg);
+    return Math.round(clamp(score, 0, 100));
+  }
+
+  function isRowEmpty(it) {
+    if (!it || !it.title) return true;
+    var t = String(it.title).trim();
+    return t === '' || t === '—';
+  }
+
+  function renderTopicCard(data, sec, locMeta, rank, it, score) {
+    var empty = isRowEmpty(it);
+    var title = empty ? '—' : it.title;
+    var vol = volumeForItem(it);
+    var pulled = formatPulled(captureIso(data, sec, locMeta, it));
+    var pin = pinForItem(it);
+    var hasScore = score != null && score !== '';
+    var cls = 'topic-card' + (empty ? ' is-empty' : '') + (hasScore ? ' has-score' : '');
+    var html = '<div class="' + cls + '">';
+    html += '<div class="topic-card-main">';
+    html += '<div class="topic-rank">#' + rank + '</div>';
+    html += '<div class="topic-title">' + esc(title) + '</div>';
+    html += '<div class="topic-metric"><span class="lbl">Search volume</span><span class="val">' + esc(vol) + '</span></div>';
+    html += '<div class="topic-metric" style="margin-top:8px"><span class="lbl">Data pulled</span><time datetime="' + esc(captureIso(data, sec, locMeta, it)) + '">' + pulled + '</time></div>';
+    html += '</div>';
+    if (hasScore) {
+      html += '<div class="topic-card-score-col">';
+      html += '<span class="topic-pin-abs" aria-hidden="true">' + esc(pin) + '</span>';
+      html += '<span class="topic-score-val">' + esc(String(score)) + '</span>';
+      html += '<span class="topic-score-lbl">Score</span>';
+      html += '</div>';
+    } else {
+      html += '<span class="topic-pin-abs" aria-hidden="true">' + esc(pin) + '</span>';
+    }
+    html += '</div>';
+    return html;
+  }
+
+  function paintGooglePanel(data, sec) {
+    var panel = document.getElementById('panel-google-trends');
+    if (!panel) return;
+    var select = panel.querySelector('[data-google-geo-select]');
+    var link = panel.querySelector('[data-google-board-link]');
+    var subEl = panel.querySelector('[data-google-subtitle]');
+    var hintEl = panel.querySelector('[data-google-score-hint]');
+    var stack = panel.querySelector('[data-google-rank-stack]');
+    if (!select || !link || !stack) return;
+
+    var locId = select.value;
+    var loc = googleLocationMeta(sec, locId);
+    var items = getGoogleItems(sec, locId);
+    if (loc) {
+      link.href = loc.sourceUrl || '#';
+      link.setAttribute('href', loc.sourceUrl || '#');
+      subEl.textContent = (loc.emoji ? loc.emoji + ' ' : '') + (loc.label || locId);
+    }
+    if (hintEl && sec.scoreHelp) {
+      hintEl.textContent = sec.scoreHelp;
+    }
+
+    var rows = rowsFromItems(items);
+    var html = '';
+    for (var i = 0; i < rows.length; i++) {
+      var it = rows[i];
+      var sc = computeGoogleTopicScore(it, loc, items);
+      var scDisp = sc == null ? null : String(sc);
+      html += renderTopicCard(data, sec, loc, i + 1, it, scDisp);
+    }
+    stack.innerHTML = html;
+  }
+
+  function renderGoogleShell(data, sec) {
+    var b = BRAND.google_trends;
+    var def = sec.defaultLocationId || 'HK';
+    var locs = sec.locations || [];
+    var html = '<article class="platform-panel" id="panel-google-trends" style="--panel-accent:' + esc(b.accent) + '">';
+    html += '<header class="panel-head">';
+    html += '<div class="brand-icon-wrap">' + iconBlock(b.iconId) + '</div>';
+    html += '<div class="panel-titles">';
+    html += '<h2>' + esc(b.title) + '</h2>';
+    html += '<div class="board">' + esc(sec.boardLabel || '') + '</div>';
+    html += '<p class="sub" data-google-subtitle></p>';
+    html += '</div></header>';
+
+    var firstUrl = (locs[0] && locs[0].sourceUrl) || '#';
+    html += '<div class="panel-actions">';
+    html += '<a class="panel-open" data-google-board-link href="' + esc(firstUrl) + '" target="_blank" rel="noopener noreferrer">Open live board ↗</a>';
+    html += '<div class="geo-select-wrap">';
+    html += '<span class="geo-select-label">Location</span>';
+    html += '<select class="geo-select" data-google-geo-select aria-label="Trend location">';
+    for (var i = 0; i < locs.length; i++) {
+      var L = locs[i];
+      var sel = L.id === def ? ' selected' : '';
+      html += '<option value="' + esc(L.id) + '"' + sel + '>' + esc(L.label) + '</option>';
+    }
+    html += '</select></div></div>';
+    html += '<div class="rank-stack" data-google-rank-stack></div>';
+    if (sec.scoreHelp) {
+      html += '<p class="panel-score-hint panel-score-hint--footer" data-google-score-hint>' + esc(sec.scoreHelp) + '</p>';
+    }
+    html += '</article>';
+    return html;
+  }
+
+  function renderPanel(data, sec) {
+    if (sec.id === 'google_trends') {
+      return renderGoogleShell(data, sec);
+    }
+    var b = BRAND[sec.id] || { title: sec.id, iconId: 'icon-google-trends' };
+    var rows = rowsFromItems(sec.items || []);
+    var html = '<article class="platform-panel" id="source-' + esc(sec.id) + '">';
+    html += '<header class="panel-head">';
+    html += '<div class="brand-icon-wrap">' + iconBlock(b.iconId) + '</div>';
+    html += '<div class="panel-titles">';
+    html += '<h2>' + esc(b.title) + '</h2>';
+    html += '<div class="board">' + esc(sec.boardLabel || '') + '</div>';
+    if (sec.subtitle) html += '<p class="sub">' + esc(sec.subtitle) + '</p>';
+    html += '</div></header>';
+    if (sec.sourceUrl) {
+      html += '<div class="panel-actions"><a class="panel-open" href="' + esc(sec.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open live board ↗</a></div>';
+    }
+    html += '<div class="rank-stack">';
+    for (var i = 0; i < rows.length; i++) {
+      html += renderTopicCard(data, sec, null, i + 1, rows[i], null);
+    }
+    html += '</div></article>';
+    return html;
+  }
+
+  function bindGooglePanel(data) {
+    var sec = null;
+    (data.sections || []).forEach(function (s) {
+      if (s.id === 'google_trends') sec = s;
+    });
+    if (!sec) return;
+    var panel = document.getElementById('panel-google-trends');
+    if (!panel) return;
+    var select = panel.querySelector('[data-google-geo-select]');
+    if (!select) return;
+    paintGooglePanel(data, sec);
+    select.addEventListener('change', function () {
+      paintGooglePanel(data, sec);
+    });
+  }
+
+  function render(data) {
+    document.getElementById('load-help').style.display = 'none';
+    metaRefresh.textContent = data.refreshedAtLabel || data.refreshedAt || '';
+
+    var sections = data.sections || [];
+    var html = '';
+
+    if (data.disclaimer) {
+      html += '<div class="alert">' + esc(data.disclaimer) + '</div>';
+    }
+
+    html += '<div class="dashboard"><div class="platform-grid">';
+    sections.forEach(function (sec) {
+      html += renderPanel(data, sec);
+    });
+    html += '</div></div>';
+
+    root.innerHTML = html;
+    bindGooglePanel(data);
+  }
+
+  fetch('trend-watch-sample.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(render)
+    .catch(function (e) {
+      var msg = e && e.message ? e.message : String(e);
+      metaRefresh.textContent = 'Load failed';
+      root.innerHTML = '<div class="err"><strong>Could not load JSON.</strong> Use <code>http://localhost</code> (not <code>file://</code>).<br>' + esc(msg) + '</div>';
+    });
+})();
+</script>
+</body>
+</html>

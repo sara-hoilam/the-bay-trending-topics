@@ -7,6 +7,24 @@ Use these in **three parallel** Cursor Agent (or Composer) chats. In each chat, 
 Then paste **only** the block for that chat. Ask the model to **write** the fragment to the path shown (Agent with file access), or paste the HTML into that file yourself.
 
 ================================================================================
+CHAT T — model: any (browsing-capable recommended)
+Fragment file: orchestration/fragments/trendwatch.html
+================================================================================
+You refresh the **Trend Watch** panel in GBA Pulse.
+
+Read and follow **every** instruction in:
+
+  @prompts/gba-pulse-trend-watch-agent-prompt.md
+
+**Important:** For **Google Trends**, use the **past 48 hours** window only (the site often defaults to ~4h — switch to 48h in the UI; every `sourceUrl` must include `hours=48`). Capture volumes from the **Trending Now** web table per geo — **not** the public RSS feeds (RSS `approx_traffic` shows misleading “100+ searches”-style buckets).
+
+**When this prompt is sent**, pull **real-time** data from the live boards listed in that file (Google Trends per geo, Baidu realtime, TikTok Creative Center hashtags, X/trends proxy). Update **only** the JSON inside `<script type="application/json" id="trend-watch-data">…</script>` in `orchestration/fragments/trendwatch.html`. Keep the `model-tag` line, the `<svg>` sprite (`tw-icon-*` symbols), and `<div id="trend-watch-root"></div>` unchanged.
+
+Do not add the standalone preview ribbon (that exists only on `preview/trend-watch-demo.html`).
+
+After saving, run `node scripts/merge-briefing-panels.mjs` from the repo root so `index.html` includes the new payload.
+
+================================================================================
 CHAT A — model: Claude Sonnet 4.6
 Fragment file: orchestration/fragments/claude.html
 ================================================================================
@@ -57,4 +75,4 @@ Output ONLY the inner HTML for `panel-overall`, starting with `<p class="agg-met
 
 Write the result to orchestration/fragments/overall.html (create the file).
 
-After `overall.html` exists, run `node scripts/merge-briefing-panels.mjs`. It will update Live Edition plus the three model tabs. Commit and deploy.
+After `overall.html` exists, run `node scripts/merge-briefing-panels.mjs`. It will update Live Edition plus the three model tabs **and** the Trend Watch tab (from `orchestration/fragments/trendwatch.html`). Commit and deploy.

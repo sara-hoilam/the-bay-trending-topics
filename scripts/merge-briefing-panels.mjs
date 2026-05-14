@@ -55,11 +55,12 @@ const defaults = {
   claude: path.join(root, "orchestration/fragments/claude.html"),
   composer: path.join(root, "orchestration/fragments/composer.html"),
   chatgpt: path.join(root, "orchestration/fragments/chatgpt.html"),
+  trendwatch: path.join(root, "orchestration/fragments/trendwatch.html"),
 };
 
 let html = fs.readFileSync(args.index, "utf8");
 
-for (const zone of ["overall", "claude", "composer", "chatgpt"]) {
+for (const zone of ["overall", "claude", "composer", "chatgpt", "trendwatch"]) {
   const fragPath = args[zone] ?? defaults[zone];
   if (!fs.existsSync(fragPath)) {
     console.warn(`Skip ${zone}: file not found: ${fragPath}`);
