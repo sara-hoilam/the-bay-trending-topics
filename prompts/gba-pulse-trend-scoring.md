@@ -21,9 +21,9 @@ Source: `orchestration/fragments/trendwatch.html`, JSON in `<script type="applic
 
 If `topicCandidates` is already in the JSON and the `compositeScore` values are present, **use them directly** and skip to Step 3.
 
-Otherwise, collect every non-empty board row:
+Otherwise, collect every non-empty board row from **all geos equally**:
 
-- `sections[id="google_trends"].itemsByLocation` — every geo, every rank
+- `sections[id="google_trends"].itemsByLocation` — **every** geo key: HK, US, GB, MO, JP, SG, IN (and any others present). Do **not** skip or deprioritize any geo at this stage.
 - `sections[id="baidu"].items`
 - `sections[id="tiktok"].items`
 - `sections[id="x_twitter"].items`
@@ -31,8 +31,10 @@ Otherwise, collect every non-empty board row:
 Skip rows where `title` is `"—"` or blank.
 
 **Normalize** synonyms into one candidate entry per real-world story.  
-Examples: `Trump Xi` ≈ `中美元首` ≈ `Trump-Xi summit`; `澳車北上` ≈ `HZMB northbound`.  
-Record every platform hit that maps to that story.
+Examples: `Trump Xi` ≈ `中美元首` ≈ `Trump-Xi summit`; `澳車北上` ≈ `HZMB northbound`; a topic trending as #1 in US and #2 in SG maps to one candidate with two Google geo hits.  
+Record every platform hit (including geo) that maps to that story.
+
+**Why all geos matter:** A story trending in the US, SG, or JP often reaches GBA audiences within hours (financial news, AI releases, geopolitical events). Collecting all geos first lets the cross-platform score correctly reflect that a topic is moving across multiple markets. The GBA relevance filter is applied at Step 3 (ranking), not here.
 
 ---
 
@@ -59,9 +61,12 @@ Record every platform hit that maps to that story.
 ### Cross-platform score (30%)
 
 1. Count **distinct platform families** where the topic appears:  
-   `google_trends`, `baidu`, `tiktok`, `x_twitter` — maximum 4.
+   `google_trends` (any geo counts as one family hit, but multiple geos within Google count as extra signal — see bonus), `baidu`, `tiktok`, `x_twitter` — base maximum 4.
 2. `crossPlatformScore = min(100, 25 × platformCount)`
-3. Bonus: if the topic hits **both** Google HK or MO **and** Baidu, add 10 (cap at 100).
+3. Bonuses (each capped so total ≤ 100):
+   - +10 if topic appears in Google **HK or MO** (directly GBA-relevant geo)
+   - +10 if topic appears in **both** Google (any geo) **and** Baidu (cross-strait signal)
+   - +5 if topic appears in **3 or more** Google geos (broad international traction)
 
 ### Composite
 
@@ -75,9 +80,13 @@ compositeScore = round(0.35 × volumeScore + 0.35 × velocityScore + 0.30 × cro
 
 1. Sort all candidates by `compositeScore` descending.
 2. Tie-break: (a) more platform families, (b) Google HK or MO hit, (c) GBA/HK/Macao editorial relevance.
-3. Take the top 10.
-4. **GBA filter:** Drop candidates with no meaningful GBA, HK, Macao, mainland China, or cross-border relevance unless they are GBA-audience cultural topics (e.g. a music trend that is #1 on Google HK). Replace with the next candidate that passes.
-5. **Never pad** with a topic not on the boards. If only 8 strong candidates exist, write 8.
+3. **GBA relevance filter** — from the sorted list, prefer topics with at least one of:
+   - Appears on Google HK or MO boards
+   - Appears on Baidu
+   - Is a global story (finance, AI, geopolitics, celebrity) with clear GBA audience interest even if trending in US/SG/JP only — note this in `gbaRelevance: "medium"`
+   - Drop topics with **zero** GBA relevance (e.g. a purely local US sports event with no China/HK angle) unless the boards strongly signal GBA audience pickup (e.g. #1 on Google HK).
+4. Take the top 10 after the GBA filter. **Never pad** with a topic not on the boards. If only 8 strong candidates pass, write 8.
+5. **Aim for geographic mix:** don't let all 10 slots go to HK-only Google topics. If candidates from US/SG/JP Google boards have GBA relevance and strong scores, include them — they represent international trends the GBA audience is also tracking.
 
 ---
 

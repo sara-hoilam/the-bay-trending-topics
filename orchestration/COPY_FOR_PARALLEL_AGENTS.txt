@@ -73,6 +73,12 @@ STEP A1 — Parse the Trend Watch JSON from orchestration/fragments/trendwatch.h
   Extract topicCandidates[] if present; otherwise build candidates from sections[] using
   the scoring spec in prompts/gba-pulse-trend-scoring.md.
 
+  ⚠ COLLECT ALL GEOS: google_trends.itemsByLocation contains rows for HK, US, GB, MO,
+  JP, SG, IN and possibly others. You must collect rows from EVERY geo — not just HK.
+  A story trending in US, SG, or JP may be highly GBA-relevant and score high on
+  cross-platform if it also hits Baidu or X. Skipping non-HK geos causes the Top 10
+  to under-represent international trends that GBA audiences are tracking.
+
 STEP A2 — Produce a self-audit table (write it as an HTML comment at the top of the
   fragment, e.g. <!-- TREND AUDIT: ... -->):
 
@@ -118,7 +124,8 @@ orchestration/fragments/composer.html.
 
 The topic list must come from the Trend Watch JSON topicCandidates (or scored from
 sections[]). Every topic must have Trend Watch board evidence in the self-audit table
-before you write HTML.
+before you write HTML. All geos (HK, US, GB, MO, JP, SG, IN) must be included in
+candidate collection — do not limit to HK only.
 
 ================================================================================
 CHAT C — model: GPT-5.5
@@ -142,7 +149,8 @@ orchestration/fragments/chatgpt.html.
 
 The topic list must come from the Trend Watch JSON topicCandidates (or scored from
 sections[]). Every topic must have Trend Watch board evidence in the self-audit table
-before you write HTML.
+before you write HTML. All geos (HK, US, GB, MO, JP, SG, IN) must be included in
+candidate collection — do not limit to HK only.
 
 ================================================================================
 AFTER A, B, C ARE COMPLETE

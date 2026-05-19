@@ -38,7 +38,7 @@ These boards show what people are **actively searching and discussing right now*
 ### Step 1 — Parse Trend Watch JSON
 
 Read every row from `sections`:
-- `google_trends.itemsByLocation` — all geos
+- `google_trends.itemsByLocation` — **all geos without exception**: HK, US, GB, MO, JP, SG, IN (and any others present). Do not skip any geo here. A topic trending only in US or JP may still be highly GBA-relevant (financial news, AI releases, geopolitics).
 - `baidu.items`, `tiktok.items`, `x_twitter.items`
 
 Skip rows where `title` is `—` or blank.
@@ -89,22 +89,26 @@ Use the standard CSS classes: `.topic`, `.topic-rank`, `.topic-cat`, `.topic-tit
 ```html
 <span><span class="icon">📍</span> [Region]</span>
 <span><span class="icon">📰</span> Source: <a href="…">Name</a> · Posted: May 19 2026</span>
-<span><span class="icon">📊</span> Trend score: 84/100 · 2 platforms (Google HK, Baidu)</span>
+<span><span class="icon">📊</span> Trend score: 84/100 · 3 platforms (Google HK + SG, Baidu, X)</span>
 <span><span class="badge badge-pos">✦ Positive</span></span>
 ```
 
-**Every `.why-box` must lead with the Trend Watch chip(s):**
+Note: the platforms line must list **all** the geos and platforms where the topic actually appeared — not just HK. E.g. `Google HK + US + SG, Baidu` if it appeared in those three Google geos.
+
+**Every `.why-box` must lead with the Trend Watch chip(s) from the actual capture:**
 
 ```html
 <div class="why-box">
   <strong>Why It's Trending</strong>
   <ul>
-    <li><code>Google Trends HK</code> #1 · 20K+ searches · 48h board (captured [date]).</li>
-    <li><code>Baidu Hot Search</code> top-3 on same query.</li>
+    <li><code>Google Trends HK</code> #1 · 20K+ searches · 48h board + <code>Google Trends SG</code> #3 · 5K+ searches.</li>
+    <li><code>Baidu Hot Search</code> top-5 on same query (May 19).</li>
     <li>[One line of news context explaining the spike cause.]</li>
   </ul>
 </div>
 ```
+
+If the topic appeared in only one geo (e.g. US only), still cite it — e.g. `<code>Google Trends US</code> #2 · 500K+ searches` — and explain the GBA angle in the summary.
 
 Wrap every platform name in `<code>…</code>`. Do not type `→` — CSS renders it.
 
