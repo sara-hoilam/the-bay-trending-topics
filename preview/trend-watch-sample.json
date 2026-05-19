@@ -1,7 +1,8 @@
 {
   "refreshedAt": "2026-05-14T08:10:00+08:00",
-  "refreshedAtLabel": "Board capture timed below (Asia/Hong_Kong)",
-  "disclaimer": "Google Trends: pick a location to swap boards. Topic **score** is a demo composite (0–100) from estimated volume, breakout growth %, and lift vs the location’s average volume among the top 50 (see panel footnote). Other columns unchanged. Re-verify on live Google before publishing.",
+  "refreshedAtLabel": "Board capture timed below (Asia/Hong_Kong) · 48h window",
+  "windowHours": 48,
+  "disclaimer": "",
   "sections": [
     {
       "id": "google_trends",
@@ -111,6 +112,21 @@
         { "rank": 4, "title": "The CIA", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸" },
         { "rank": 5, "title": "#Survivor50", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸" }
       ]
+    }
+  ],
+  "topicCandidates": [
+    {
+      "id": "example-hk-topic",
+      "displayTitle": "周佩賢",
+      "gbaRelevance": "high",
+      "platformHits": [
+        { "platform": "google_trends", "geo": "HK", "rank": 1, "title": "周佩賢", "searchVolume": "20K+ searches", "volumeEstimate": 20000, "growthPercent": 1000 }
+      ],
+      "volumeScore": 100,
+      "velocityScore": 100,
+      "crossPlatformScore": 25,
+      "compositeScore": 75,
+      "platformCount": 1
     }
   ]
 }

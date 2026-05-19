@@ -50,11 +50,16 @@ You refresh the **Trend Watch** tab in GBA Pulse by editing one HTML fragment. T
 ```json
 {
   "refreshedAt": "ISO-8601 datetime when you finished capture",
-  "refreshedAtLabel": "Short human label, e.g. Board capture · Asia/Hong_Kong",
-  "disclaimer": "Optional one short sentence, or \"\" to hide the banner. Do not paste long RSS/TikTok methodology notes here — keep methodology in your chat log.",
-  "sections": [ ... ]
+  "refreshedAtLabel": "Short human label, e.g. Board capture · Asia/Hong_Kong · 48h window",
+  "windowHours": 48,
+  "disclaimer": "Optional one short sentence, or \"\" to hide the banner.",
+  "sections": [ ... ],
+  "topicCandidates": [ ... ]
 }
 ```
+
+- **`windowHours`**: always **`48`** for this product.
+- **`topicCandidates`** (required): unified, cross-platform scored list for briefing agents. Build using **`prompts/gba-pulse-trend-scoring.md`** after all `sections` are captured. Sort descending by `compositeScore`; include **at least 15** candidates if the boards allow (briefing agents pick Top 10 from this list).
 
 ### Section: `google_trends` (required)
 
@@ -92,9 +97,42 @@ Each has `boardLabel`, `subtitle`, `sourceUrl`, `capturedAt`, and `items` (five 
 
 (X often has no volume; use `"— (not shown on X)"` or similar for `searchVolume`.)
 
+### `topicCandidates` (required array)
+
+Each entry is one **normalized** story across platforms:
+
+```json
+{
+  "id": "short-slug",
+  "displayTitle": "Human-readable topic title",
+  "gbaRelevance": "high | medium | low",
+  "platformHits": [
+    {
+      "platform": "google_trends",
+      "geo": "HK",
+      "rank": 2,
+      "title": "As on board",
+      "searchVolume": "20K+ searches",
+      "volumeEstimate": 20000,
+      "growthPercent": 300
+    },
+    { "platform": "baidu", "rank": 1, "title": "…", "searchVolume": "≈7.9M 热搜指数" },
+    { "platform": "x_twitter", "rank": 3, "title": "…" }
+  ],
+  "volumeScore": 78,
+  "velocityScore": 85,
+  "crossPlatformScore": 75,
+  "compositeScore": 79,
+  "platformCount": 3
+}
+```
+
+Scores must follow **`prompts/gba-pulse-trend-scoring.md`** (35% volume + 35% velocity + 30% cross-platform). Recompute if you merge duplicate titles.
+
 ## Quality bar
 
 - **Google:** data must be from the **48-hour** Trending Now view (confirm in UI + `hours=48` in each `sourceUrl`). Do **not** ship a capture that matches only the last ~4 hours. Volumes must reflect the **on-site** table, not RSS `approx_traffic`. If you only have RSS, you have **not** met the quality bar — use `"—"` for volume until you can read the table.
+- **`topicCandidates`:** must be present, scored, and derived from **this capture’s** boards only (not from old news).
 - Titles must match **live** boards at capture time; no placeholder “Example …” rows unless the board is genuinely empty (use em-dash titles sparingly; a **short** `disclaimer` is OK).
 - ISO timestamps on `refreshedAt`, `capturedAt`, and per-row `capturedAt` when the UI shows a scrape time.
 - Ensure JSON has **no** raw `</script>` sequences inside string values (break with `<\/script>` in HTML if ever needed).
