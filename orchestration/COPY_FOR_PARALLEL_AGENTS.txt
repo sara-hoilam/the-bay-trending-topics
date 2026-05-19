@@ -75,4 +75,4 @@ Output ONLY the inner HTML for `panel-overall`, starting with `<p class="agg-met
 
 Write the result to orchestration/fragments/overall.html (create the file).
 
-After `overall.html` exists, run `node scripts/merge-briefing-panels.mjs`. It will update Live Edition plus the three model tabs **and** the Trend Watch tab (from `orchestration/fragments/trendwatch.html`). Commit and deploy.
+After `overall.html` exists, run `node scripts/merge-briefing-panels.mjs`. It will update Live Edition plus the three model tabs **and** the Trend Watch tab (from `orchestration/fragments/trendwatch.html`), and **refresh the masthead Date | Generated (HKT) plus the footer edition date** to the moment the script runs. Use `node scripts/merge-briefing-panels.mjs --no-stamp` only if you must merge without touching those lines. Commit and deploy.

@@ -26,10 +26,11 @@ Use `cd` there before any `git` command.
 
 1. `git status -sb` — show what changed.
 2. If there are changes: ask for a short commit message (or propose one from the diff) then `git add` only what should ship, then `git commit`.
-3. `git fetch origin` then compare to `origin/main` if push might need reconciliation.
-4. **Normal push:** `git push origin main`
-5. **Only if** histories diverged **and** the user confirms local `main` should replace GitHub: `git push --force-with-lease origin main`. Warn that this rewrites remote history.
-6. Never print or ask the user to paste **passwords, PATs, or private SSH keys**. If authentication fails, point them to SSH key (`ssh -T git@github.com`) or HTTPS + token docs—not to share secrets in chat.
+3. For a **GBA Pulse** HTML publish: confirm `node scripts/merge-briefing-panels.mjs` was run after fragment updates — that refreshes **`index.html`** panels **and** masthead **Date | Generated (HKT)** and footer edition date. Skip stamp only with `--no-stamp`.
+4. `git fetch origin` then compare to `origin/main` if push might need reconciliation.
+5. **Normal push:** `git push origin main`
+6. **Only if** histories diverged **and** the user confirms local `main` should replace GitHub: `git push --force-with-lease origin main`. Warn that this rewrites remote history.
+7. Never print or ask the user to paste **passwords, PATs, or private SSH keys**. If authentication fails, point them to SSH key (`ssh -T git@github.com`) or HTTPS + token docs—not to share secrets in chat.
 
 ## After a successful push
 
@@ -37,4 +38,4 @@ Remind them: GitHub Pages may take **1–3 minutes**; hard-refresh the site (**C
 
 ## Out of scope
 
-Do not start multi-model briefing runs, edit `orchestration/fragments`, or run `merge-briefing-panels.mjs` unless the user explicitly requests it in this chat.
+Do not start multi-model briefing runs or edit `orchestration/fragments` unless the user explicitly requests it. You may **suggest** `node scripts/merge-briefing-panels.mjs` when they ask to publish an updated briefing.
