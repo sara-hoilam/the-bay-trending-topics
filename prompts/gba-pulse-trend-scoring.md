@@ -1,72 +1,127 @@
 # GBA Pulse — Trend Watch scoring (for briefing selection)
 
-Use this **after** Trend Watch data is captured in `orchestration/fragments/trendwatch.html` (JSON inside `#trend-watch-data`). Briefing agents (Claude / Composer / GPT / Live Edition merger) **must** rank stories from this process—not from stale news search alone.
+This document defines how to go from raw Trend Watch board data to a **ranked shortlist** for the briefing. Briefing agents must follow this before any news research.
 
-## Time window (hard rule)
+---
 
-- **Discovery window: last 48 hours only.**  
-  Google rows must come from **Trending Now · 48h** (`hours=48`). Baidu realtime, TikTok, and X are “right now” boards—treat them as within the same 48h edition.
-- **Do not** promote a topic whose **only** evidence is news articles **older than 48 hours** and **not** present on any Trend Watch board at capture time.
-- **Verification news** may be older only as **background** (one line max); the **headline story** must explain why it is trending **now** (48h search/social spike).
+## Hard time-window rule
 
-## Step 1 — Build a unified candidate list
+**Discovery window: last 48 hours only.**
 
-From the Trend Watch JSON `sections` (and optional `topicCandidates` if already filled):
+- Google rows come from **Trending Now · 48h** (`hours=48`). Not the 4h default, not RSS.
+- Baidu realtime, TikTok, and X boards are treated as within the same 48h window.
+- A topic whose **only evidence** is a news article **older than 48 hours** and **absent from all Trend Watch boards** does **not** qualify for the Top 10.
+- Older news may be used as one line of background context — never as the reason a topic appears on the list.
 
-1. Collect every row from:
-   - `google_trends` → all geos in `itemsByLocation` (prioritize **HK**, **MO**, **US**, **GB**, **SG**, **JP**, **IN** for GBA editorial mix)
-   - `baidu`, `tiktok`, `x_twitter` → each `items[]`
-2. **Normalize** titles into one topic per real-world story (merge synonyms, hashtags, translations, e.g. `Trump Xi` ≈ `中美元首`, `#HZMB` ≈ `港珠澳大橋`).
-3. Skip empty rows (`title` is `—` or blank).
-4. Record **platform hits** per candidate: platform id, geo (if any), rank, raw title, `volumeEstimate`, `growthPercent`, `searchVolume`.
+---
 
-## Step 2 — Score each candidate (0–100)
+## Step 1 — Build the candidate list from the JSON
 
-Compute three sub-scores, then a **composite**:
+Source: `orchestration/fragments/trendwatch.html`, JSON in `<script type="application/json" id="trend-watch-data">`.
 
-| Sub-score | Weight | How to derive |
-|-----------|--------|----------------|
-| **Volume** | 35% | Best available `volumeEstimate` or parsed `searchVolume` (K/M/B) across hits; normalize 0–100 vs the **max volume among all candidates** in this capture. |
-| **Velocity** | 35% | Best `growthPercent` from Google (cap at 1000% → 100); else infer from rank (#1=100, #2=80, #3=65, #4=50, #5=40) on the **strongest** platform. |
-| **Cross-platform** | 30% | Count **distinct platform families** where the topic appears: `google_trends`, `baidu`, `tiktok`, `x_twitter`. Score = min(100, 25 × count). Bonus +10 (cap 100) if Google **HK or MO** **and** Baidu both hit. |
+If `topicCandidates` is already in the JSON and the `compositeScore` values are present, **use them directly** and skip to Step 3.
 
-**Composite score** (round to integer):
+Otherwise, collect every non-empty board row:
 
-```text
-composite = round(0.35 × volumeScore + 0.35 × velocityScore + 0.30 × crossPlatformScore)
+- `sections[id="google_trends"].itemsByLocation` — every geo, every rank
+- `sections[id="baidu"].items`
+- `sections[id="tiktok"].items`
+- `sections[id="x_twitter"].items`
+
+Skip rows where `title` is `"—"` or blank.
+
+**Normalize** synonyms into one candidate entry per real-world story.  
+Examples: `Trump Xi` ≈ `中美元首` ≈ `Trump-Xi summit`; `澳車北上` ≈ `HZMB northbound`.  
+Record every platform hit that maps to that story.
+
+---
+
+## Step 2 — Compute scores (0–100 each)
+
+### Volume score (35%)
+
+1. Find the best `volumeEstimate` across all platform hits for this candidate.  
+   - If `volumeEstimate` is 0 or absent, parse `searchVolume` (e.g. `"20K+ searches"` → 20000, `"1M+"` → 1000000).  
+   - For Baidu, parse the numeric part from e.g. `"≈7.9M 热搜指数"` → 7900000.  
+   - If no numeric volume at all, use `0`.
+2. Find `maxVolume` = highest best-volume across **all** candidates in this capture.
+3. `volumeScore = round(100 × log10(1 + bestVolume) / log10(1 + maxVolume))`  
+   (log-scale prevents one viral outlier from collapsing all other scores to near zero.)
+
+### Velocity score (35%)
+
+1. Use the best `growthPercent` from Google Trending Now for this candidate (capped at 1000%).  
+   `velocityScore = round(min(100, growthPercent / 10))`
+2. If `growthPercent` is 0 or absent for all hits, fall back to **rank-based** inference from the strongest platform:  
+   `#1 → 100, #2 → 80, #3 → 65, #4 → 50, #5 → 40`
+3. Take whichever gives the higher score.
+
+### Cross-platform score (30%)
+
+1. Count **distinct platform families** where the topic appears:  
+   `google_trends`, `baidu`, `tiktok`, `x_twitter` — maximum 4.
+2. `crossPlatformScore = min(100, 25 × platformCount)`
+3. Bonus: if the topic hits **both** Google HK or MO **and** Baidu, add 10 (cap at 100).
+
+### Composite
+
+```
+compositeScore = round(0.35 × volumeScore + 0.35 × velocityScore + 0.30 × crossPlatformScore)
 ```
 
-Store on each candidate (for your working notes and optional JSON):
+---
 
-- `volumeScore`, `velocityScore`, `crossPlatformScore`, `compositeScore`
-- `platformCount` (number of platform families)
-- `primaryPlatforms` (e.g. `Google Trends HK`, `Baidu`, `X`)
+## Step 3 — Select Top 10
 
-## Step 3 — Select Top 10 for the briefing
+1. Sort all candidates by `compositeScore` descending.
+2. Tie-break: (a) more platform families, (b) Google HK or MO hit, (c) GBA/HK/Macao editorial relevance.
+3. Take the top 10.
+4. **GBA filter:** Drop candidates with no meaningful GBA, HK, Macao, mainland China, or cross-border relevance unless they are GBA-audience cultural topics (e.g. a music trend that is #1 on Google HK). Replace with the next candidate that passes.
+5. **Never pad** with a topic not on the boards. If only 8 strong candidates exist, write 8.
 
-1. Sort candidates by **compositeScore** descending.
-2. Break ties: (a) more platform families, (b) GBA/HK/Macao relevance, (c) stronger Google HK/MO signal.
-3. Take **exactly 10** (or fewer only if fewer than 10 defensible candidates exist—never pad with old news).
-4. **GBA filter:** Prefer topics with clear Greater Bay Area, Hong Kong, Macao, Shenzhen, Guangzhou, or cross-border China relevance; deprioritize pure US-local trends unless they move HK/MO search.
+---
 
-## Step 4 — Research and write (existing HTML format)
+## Step 4 — Mandatory self-audit before writing
 
-For each of the **Top 10 scored topics**:
+Before writing any HTML, produce this table (in working notes or as an HTML comment):
 
-1. **Research why it is trending now** (last 48h): events, releases, deadlines, celebrity/news hooks, policy announcements—use **fresh** sources (news, official releases, social threads) published or peaking within **48h** when possible.
-2. Write in the standard GBA Pulse HTML (`.topic`, `.why-box`, etc.).
-3. In **Why It's Trending**, cite Trend Watch evidence first:
-   - `<code>Google Trends HK</code>`, `<code>Baidu Hot Search</code>`, `<code>TikTok Hashtag</code>`, `<code>X/Twitter</code>` with **rank, volume, or growth** from the capture.
-4. In `.topic-meta` **📊** line, include: `Trend score: NN/100 · N platforms` (from your composite).
-5. **Posted date rule:** `Posted:` must be the verification article’s date. If the best article is **older than 48h**, use `Posted: date not shown (accessed YYYY-MM-DD)` and ensure the summary explains the **current** spike from Trend Watch—not a recycled weekly story.
+```
+Rank | Title (normalized)    | Score | Platforms              | Evidence
+1    | [title]               | 84    | Google HK, Baidu       | Google HK #1 20K+ / Baidu #3
+2    | [title]               | 78    | Google HK, X           | Google HK #2 10K+ / X #5
+...
+```
+
+**Rejection rule:** any row where the Evidence column is empty (no board hit) must be removed and replaced with the next highest-scoring candidate that does have evidence.
+
+This table is proof the briefing came from Trend Watch, not from a news search.
+
+---
+
+## Step 5 — Research and write
+
+Only after Step 4:
+
+1. For each confirmed candidate, search for **fresh news** (prefer ≤48h) explaining *why* it is spiking now.
+2. If the freshest article is weeks or months old, write the summary around the **search/social spike** itself. Do not present old articles as today's news.
+3. The `Posted:` date must reflect the actual article date. Use `Posted: date not shown (accessed YYYY-MM-DD)` if the article has no visible date or is stale.
+4. Cite Trend Watch evidence **first** in every `.why-box` bullet before adding news context.
+
+---
 
 ## What not to do
 
-- Do **not** run a generic “GBA news” search and pick last week’s headlines.
-- Do **not** use Google Trends **RSS** for volumes (coarse `100+` buckets).
-- Do **not** use a **4-hour** Google window; only **48h** Trending Now.
-- Do **not** list a topic in Top 10 without at least **one** Trend Watch platform hit unless you document a breaking gap in Key Observations.
+| ❌ Forbidden | ✅ Required alternative |
+|-------------|------------------------|
+| Run a general GBA news search first | Parse Trend Watch JSON first |
+| Pick a topic because it was important last month | Pick only if it appears on a board in this capture |
+| Use Google RSS approx_traffic (`100+` buckets) | Read the on-site 48h table |
+| Use Google's default 4h window | `hours=48` only |
+| Leave Evidence column empty in self-audit | Replace with next scored candidate |
+| Use an article from weeks ago as the lead story | Find fresh context or write around the spike |
 
-## Optional: write scores back to Trend Watch JSON
+---
 
-The Trend Watch agent may add a `topicCandidates` array to the same JSON (see `prompts/gba-pulse-trend-watch-agent-prompt.md`). Briefing agents may **recompute** scores if the array is missing or incomplete.
+## Optional: pre-scored `topicCandidates` in JSON
+
+If the Trend Watch agent already computed `topicCandidates` in the JSON, briefing agents should use those scores. They may recompute if the scores look wrong or the array is incomplete.

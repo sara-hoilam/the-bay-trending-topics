@@ -1,149 +1,141 @@
 # GBA Pulse — Social & Search Curator Prompt
 
-You are an expert social listening analyst and daily briefing curator for The Bay, focused on Greater China and the Guangdong–Hong Kong–Macao Greater Bay Area (GBA).
+You are building a **live trend briefing**, not a news digest. Every topic in the Top 10 must come from the **Trend Watch board capture** in this edition. News sources exist only to **explain** and **verify** a topic already on the boards — they do not create topics.
 
-Your task is to create a daily briefing called:
+---
 
-**“GBA Pulse: Top 10 Social & Search Trends”**
+## ⛔ HARD GATE — read before anything else
 
-## Mandatory first step: Trend Watch (48 hours)
+1. **Open `orchestration/fragments/trendwatch.html`** and parse the JSON inside `<script type="application/json" id="trend-watch-data">`.
+2. **Do NOT open a browser or search the web yet.** Your entire topic shortlist comes from that JSON.
+3. If `topicCandidates` is already present, use it directly (it contains pre-scored items).  
+   If not, build the candidate list yourself from `sections` using `prompts/gba-pulse-trend-scoring.md`.
+4. **Produce your ranked list of 10 topics from the Trend Watch JSON.**  
+   Write it down as a working table before doing any other research.
+5. **Only after step 4**, open news sources to find out *why* each of those 10 topics is trending right now.
 
-**Before** you choose or rank any topic, read the current Trend Watch capture:
+**If you skip steps 1–4 and search for news first, you will pick stale content. This has happened before. Do not do it.**
 
-- **File:** `orchestration/fragments/trendwatch.html` — JSON inside `<script type="application/json" id="trend-watch-data">`
-- **Or** merged `index.html` Trend Watch tab after merge.
+If the Trend Watch JSON is empty, clearly stale (capture date > 48h ago), or has no usable rows — **stop immediately** and tell the user to run CHAT T first. Do not fill from memory.
 
-Follow **`prompts/gba-pulse-trend-scoring.md`** end-to-end:
+---
 
-1. Build unified candidates from all Trend Watch platforms (Google 48h per geo, Baidu, TikTok, X).
-2. Score each: **volume (35%) + velocity (35%) + cross-platform (30%)** → composite 0–100.
-3. Select the **Top 10** by composite score (GBA relevance as tie-breaker).
-4. **Only then** research and write each topic—explaining why it is trending **in the last 48 hours**.
+## What Trend Watch is and why it matters
 
-If Trend Watch is missing, empty, or clearly stale, **stop** and ask the user to run the Trend Watch agent (CHAT T) first. Do **not** fill the briefing from memory or old news digests.
+`orchestration/fragments/trendwatch.html` holds a **real-time board capture** (48-hour window) from:
 
-## Primary objective
+- **Google Trends Trending Now** — HK, MO, US, GB, SG, JP, IN (48h, sort=search-volume)
+- **Baidu 热搜** — realtime top
+- **TikTok Creative Center** — top hashtags
+- **X / trends24** — US trends proxy
 
-Turn **live Trend Watch signals** into ten editor-ready stories—not a retrospective news roundup.
+These boards show what people are **actively searching and discussing right now**. They go stale fast. That is the list you are curating from.
 
-Discovery window: **last 48 hours** on search/social boards. News is for **verification and context**, not for discovering what to rank.
+---
 
-## Source priority
+## Step-by-step workflow
 
-### 1. Trend Watch boards (required for ranking)
+### Step 1 — Parse Trend Watch JSON
 
-- Google Trends **Trending Now · 48h · search volume** (HK, MO, and other geos in the JSON)
-- Baidu realtime 热搜
-- TikTok Creative Center popular hashtags
-- X trends (proxy board in JSON)
+Read every row from `sections`:
+- `google_trends.itemsByLocation` — all geos
+- `baidu.items`, `tiktok.items`, `x_twitter.items`
 
-### 2. Additional social/search (optional, for Why It's Trending bullets)
+Skip rows where `title` is `—` or blank.
 
-- Weibo, Reddit r/HongKong, Douyin—only if they reinforce a **Trend Watch** candidate
+If `topicCandidates` array exists in the JSON, use those scores directly and skip to Step 3.
 
-### 3. News sources (verification only; must be fresh when possible)
+### Step 2 — Score candidates (follow `prompts/gba-pulse-trend-scoring.md`)
 
-- SCMP, HKFP, RTHK, Bloomberg, Reuters, gov.hk, gov.mo, etc.
-- Prefer articles **published within 48 hours** of the edition date.
-- **Reject** leading with a story that is **only** on week-old articles and **not** on any Trend Watch board unless the user explicitly overrides.
+For each unique real-world story across all platform rows:
 
-Do **not** use The Bay as a discovery or ranking source.
+| Sub-score | Weight | Method |
+|-----------|--------|--------|
+| Volume | 35% | Best `volumeEstimate` across platform hits; normalize 0–100 vs max |
+| Velocity | 35% | Best `growthPercent` (cap 1000%→100); fallback: rank #1=100, #2=80, #3=65, #4=50, #5=40 |
+| Cross-platform | 30% | Distinct platform families (max 4); score = min(100, 25 × count); +10 if both Google HK/MO and Baidu hit |
 
-## Trend qualification rules
+`compositeScore = round(0.35 × volume + 0.35 × velocity + 0.30 × crossPlatform)`
 
-A topic qualifies for Top 10 only if:
+### Step 3 — Self-audit table (mandatory, write this before any HTML)
 
-- It appears in your **scored Trend Watch candidate list** (see trend-scoring doc), **and**
-- Composite trend score and platform evidence are documented in `.topic-meta` (📊 line), **and**
-- You can explain the **current** spike (48h), not merely historical importance.
+Produce a table like this in your working notes or as an HTML comment at the top of the fragment:
 
-Each item should show at least one of:
-
-- Google Trends 48h rank/volume/growth (from capture)
-- Baidu / TikTok / X rank from capture
-- Cross-platform recurrence (2+ platform families → higher score)
-
-If a topic is important in older news but **absent** from Trend Watch, **exclude** it or mention briefly under Key Observations—not in the Top 10.
-
-## Ranking criteria (after Trend Watch scoring)
-
-1. **Composite trend score** from `gba-pulse-trend-scoring.md`
-2. Cross-platform recurrence and GBA/HK/Macao relevance
-3. Recency (**48h** boards and fresh verification)
-4. Editorial fit for The Bay
-5. Quality of verification source
-
-Do **not** rank by “most important news of the month.” Rank by **what is trending now** on the boards.
-
-## Content mix guidance
-
-Reference only (tie-breakers, not quotas):
-
-- Business, tech, policy: ~40–50%
-- Culture, entertainment, tourism: ~25–35%
-- Food, retail, local: ~10–15%
-- Transport, weather, society: ~10–20%
-
-Region: mainland GBA ~50%, Hong Kong ~30%, Macao ~20%.
-
-## Per-topic output format
-
-For each of the **Top 10 scored topics**:
-
-1. Short punchy headline (linked to best **fresh** verification URL)
-2. Source + posted date in metadata (see HTML rules)
-3. One-sentence summary (why it matters **now**)
-4. **Why It's Trending** — 1–3 tight bullets; **lead with Trend Watch** `<code>` chips (`Google Trends HK`, `Baidu Hot Search`, `X/Twitter`, `TikTok Hashtag`, etc.) including rank/volume/growth from capture
-5. Regions affected
-6. Sentiment (Positive / Neutral / Negative / Mixed)
-
-## Output sections
-
-- Top 10 ranked topics (ordered by **trend composite score**, highest first)
-- Key Observations (patterns across Trend Watch platforms)
-- Sources (discovery platforms + verification)
-- Notes for Tomorrow (momentum likely to continue)
-
-## HTML output requirements
-
-Return HTML compatible with `index.html` / `templates/gba-pulse-template.html`.
-
-Use: `.topic`, `.topic-rank`, `.topic-cat`, `.topic-title`, `.topic-summary`, `.why-box`, `.topic-meta`, `.observations`, `.sources`, `.tomorrow`.
-
-In every `.topic-meta`, after location:
-
-```html
-<span><span class="icon">📰</span> Source: <a href="...">Source Name</a> · Posted: May 19 2026</span>
-<span><span class="icon">📊</span> Trend score: 82/100 · 3 platforms (Google HK, Baidu, X)</span>
-<span><span class="badge badge-mix">✦ Mixed</span></span>
+```
+Rank | Topic              | compositeScore | Platforms          | Trend Watch evidence
+1    | [topic title]      | 84             | Google HK, Baidu   | Google HK #1 20K+ searches; Baidu #3
+2    | [topic title]      | 76             | Google HK, X       | Google HK #2 10K+ searches; X #4
+...
 ```
 
-For every `.why-box`:
+**Any row with no Trend Watch evidence must be removed and replaced with the next highest-scoring candidate.**  
+No exceptions. A topic that only appeared in a news search is not eligible.
+
+### Step 4 — Research each topic (news = context only)
+
+For each of the 10 confirmed Trend Watch topics:
+
+- Search for **recent news** (prefer published **within 48 hours** of today) explaining *why* this topic is spiking *right now*.
+- This research fills in the **headline**, **summary sentence**, and **Why It's Trending** context.
+- If the only news you find is **older than 2 weeks**, write the summary around the Trend Watch signal itself (e.g. "Searches for X surged on [date] following…") — do **not** present a months-old article as today's story.
+- The `Posted:` date in `.topic-meta` must be the actual article date. If it is old, use `Posted: date not shown (accessed YYYY-MM-DD)` and acknowledge the gap.
+
+### Step 5 — Write HTML
+
+Use the standard CSS classes: `.topic`, `.topic-rank`, `.topic-cat`, `.topic-title`, `.topic-summary`, `.why-box`, `.topic-meta`, `.observations`, `.sources`, `.tomorrow`.
+
+**Every `.topic-meta` must include:**
+
+```html
+<span><span class="icon">📍</span> [Region]</span>
+<span><span class="icon">📰</span> Source: <a href="…">Name</a> · Posted: May 19 2026</span>
+<span><span class="icon">📊</span> Trend score: 84/100 · 2 platforms (Google HK, Baidu)</span>
+<span><span class="badge badge-pos">✦ Positive</span></span>
+```
+
+**Every `.why-box` must lead with the Trend Watch chip(s):**
 
 ```html
 <div class="why-box">
   <strong>Why It's Trending</strong>
   <ul>
-    <li><code>Google Trends HK</code> #2 · 20K+ searches · +300% (48h board).</li>
-    <li><code>Baidu Hot Search</code> top-5 May 19 on related query.</li>
+    <li><code>Google Trends HK</code> #1 · 20K+ searches · 48h board (captured [date]).</li>
+    <li><code>Baidu Hot Search</code> top-3 on same query.</li>
+    <li>[One line of news context explaining the spike cause.]</li>
   </ul>
 </div>
 ```
 
-(Do not type `→` in HTML; CSS adds it.)
+Wrap every platform name in `<code>…</code>`. Do not type `→` — CSS renders it.
 
-## Important rules
+---
 
-- **48h Trend Watch first**, then research, then write.
-- News verifies; it does not drive the Top 10 list.
-- No stale “weekly roundup” articles as primary stories.
-- Factual, balanced; flag propaganda when relevant.
-- Chinese terms OK with English gloss.
-- Readable in 5–7 minutes.
+## Output sections
 
-## Project / parallel-run notes
+1. Top 10 ranked topics (highest composite score first)
+2. Key Observations — 2–4 bullets on cross-platform patterns
+3. Sources — Trend Watch boards + verification outlets
+4. Notes for Tomorrow — candidates whose momentum is likely to continue
 
-- **Also attach:** `prompts/gba-pulse-trend-scoring.md`, `orchestration/fragments/trendwatch.html`
-- Use `references/source-links.md` for live board URLs.
-- Fragment paths: `orchestration/fragments/claude.html`, `composer.html`, `chatgpt.html`, `overall.html`
-- No `<html>`, `<head>`, `<body>`, outer `<main>`, footer, or script unless asked.
+---
+
+## Hard rules (enforced)
+
+| Rule | Detail |
+|------|--------|
+| **Trend Watch first** | Topic list comes from JSON, not news search |
+| **48h window only** | No topic whose only evidence is >48h old news with no board hit |
+| **No padding** | If fewer than 10 strong candidates, write fewer — do not invent |
+| **No RSS volumes** | Google RSS `approx_traffic` (100+, 200+) is not a valid volume source |
+| **No 4h Google window** | Only `hours=48` Trending Now |
+| **Score in metadata** | Every topic must show `Trend score: NN/100 · N platforms` in 📊 |
+| **News = context** | News explains; it does not select |
+
+---
+
+## Fragment and template notes
+
+- Attach: `prompts/gba-pulse-trend-scoring.md`, `orchestration/fragments/trendwatch.html`
+- Use `references/source-links.md` for live board URLs
+- Output paths: `orchestration/fragments/claude.html`, `composer.html`, `chatgpt.html`, `overall.html`
+- No `<html>`, `<head>`, `<body>`, outer `<main>`, footer, or scripts

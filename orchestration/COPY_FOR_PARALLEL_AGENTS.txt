@@ -1,104 +1,165 @@
-Use these in **parallel Cursor Agent chats** after Trend Watch is fresh. Attach files as shown in each block.
+GBA Pulse — parallel agent run instructions
+============================================
 
-**Run order (required):**
+Run in this ORDER. Do not run A/B/C before T is complete.
 
-1. **CHAT T** — refresh Trend Watch (48h boards + `topicCandidates` scores)  
-2. **CHAT A / B / C** — in parallel: Top 10 briefings from Trend Watch scores  
-3. **CHAT D** — Live Edition merger  
-4. `node scripts/merge-briefing-panels.mjs` — merges fragments + stamps masthead date (HKT)
+  STEP 1: CHAT T  →  refresh Trend Watch boards (48h) + compute topicCandidates scores
+  STEP 2: CHAT A + B + C  →  in parallel, each builds Top 10 from Trend Watch scores
+  STEP 3: CHAT D  →  Live Edition merger
+  STEP 4 (terminal): node scripts/merge-briefing-panels.mjs
 
 ================================================================================
-CHAT T — model: any (browsing-capable recommended)
+CHAT T — model: any with live browsing
 Fragment file: orchestration/fragments/trendwatch.html
 ================================================================================
-You refresh the **Trend Watch** panel in GBA Pulse.
-
-Read and follow **every** instruction in:
-
+Attach:
   @prompts/gba-pulse-trend-watch-agent-prompt.md
   @prompts/gba-pulse-trend-scoring.md
 
-**Important:** For **Google Trends**, use the **past 48 hours** window only (site often defaults to ~4h — switch to 48h; every `sourceUrl` must include `hours=48`). Capture volumes from the **Trending Now** web table per geo — **not** RSS.
+You are refreshing the Trend Watch panel for this edition.
 
-**When this prompt is sent**, pull **real-time** data from live boards (Google 48h per geo, Baidu realtime, TikTok hashtags, X/trends proxy). Update **only** the JSON inside `<script type="application/json" id="trend-watch-data">…</script>` in `orchestration/fragments/trendwatch.html`. Keep the `model-tag` line, `<svg>` sprite (`tw-icon-*`), and `<div id="trend-watch-root"></div>` unchanged.
+REQUIRED STEPS (in order):
 
-**Required in JSON:** `windowHours: 48`, all `sections`, and **`topicCandidates`** array scored per `gba-pulse-trend-scoring.md` (volume + velocity + cross-platform → `compositeScore`).
+1. Open and capture each of these live boards RIGHT NOW (not from training data):
+   - Google Trends Trending Now for HK, US, GB, MO, JP, SG, IN
+     URL pattern: https://trends.google.com/trending?geo=HK&sort=search-volume&hours=48
+     ⚠ MUST use hours=48 in URL and in the UI — the site defaults to ~4h, change it.
+     ⚠ Read volumes from the ON-SITE TABLE (e.g. "20K+ searches") — NOT from RSS feeds.
+   - Baidu realtime: https://top.baidu.com/board?tab=realtime
+   - TikTok Creative Center hashtags: https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en
+   - X/Twitter trends proxy: https://trends24.in/united-states/
 
-Do not add the standalone preview ribbon.
+2. Fill all sections[] in the JSON with the live data.
 
-After saving, run `node scripts/merge-briefing-panels.mjs` from repo root.
+3. Using prompts/gba-pulse-trend-scoring.md, build topicCandidates[]:
+   - Normalize all rows from all boards into unique real-world stories
+   - Score each: volume (35%) + velocity (35%) + cross-platform (30%) = compositeScore
+   - Sort descending by compositeScore
+   - Include at least 15 candidates
+
+4. Set windowHours: 48, refreshedAt to current ISO timestamp (HKT).
+
+5. Keep disclaimer: "" (empty string — do not paste methodology notes into the banner).
+
+6. Do NOT add the standalone preview ribbon.
+
+7. Save to orchestration/fragments/trendwatch.html — keep the model-tag line, <svg> sprite
+   (tw-icon-* symbols), and <div id="trend-watch-root"></div> unchanged.
+
+8. Run: node scripts/merge-briefing-panels.mjs
 
 ================================================================================
 CHAT A — model: Claude Sonnet 4.6
 Fragment file: orchestration/fragments/claude.html
 ================================================================================
-**Prerequisite:** CHAT T finished — `orchestration/fragments/trendwatch.html` is fresh (48h boards).
+⚠ PREREQUISITE: CHAT T must be complete. orchestration/fragments/trendwatch.html must
+  be fresh (captured within the last few hours, windowHours=48).
 
 Attach:
-
   @prompts/gba-pulse-curator-prompt.md
   @prompts/gba-pulse-trend-scoring.md
   @orchestration/fragments/trendwatch.html
   @references/source-links.md
   @templates/gba-pulse-template.html
 
-You are producing ONLY the inner HTML for the **Claude** panel of GBA Pulse.
+You are writing the CLAUDE panel of GBA Pulse Top 10. Read the instructions below
+carefully — previous runs produced stale content because this order was not followed.
 
-**Workflow:** Score all Trend Watch candidates → pick **Top 10** by `compositeScore` → research **why each is trending in the last 48h** → write HTML. Do **not** lead with news articles older than 48h unless the topic is live on Trend Watch **now**.
+⛔ DO NOT search for news yet. DO NOT open any news site yet.
 
-- `.topic-meta` 📊 line: `Trend score: NN/100 · N platforms (…)`
-- `.why-box`: lead with `<code>Google Trends HK</code>`, `<code>Baidu Hot Search</code>`, etc. from the capture
-- Source/date span after location; `Posted:` from verification article (prefer ≤48h)
+MANDATORY WORKFLOW — follow this exact order:
 
-Same CSS classes as template. No `<html>`, `<head>`, outer `<main>`. Write to `orchestration/fragments/claude.html`.
+STEP A1 — Parse the Trend Watch JSON from orchestration/fragments/trendwatch.html.
+  Extract topicCandidates[] if present; otherwise build candidates from sections[] using
+  the scoring spec in prompts/gba-pulse-trend-scoring.md.
+
+STEP A2 — Produce a self-audit table (write it as an HTML comment at the top of the
+  fragment, e.g. <!-- TREND AUDIT: ... -->):
+
+  Rank | Topic              | Score | Platforms       | Board evidence
+  1    | [title]            | 84    | Google HK, Baidu | HK #1 20K+; Baidu #3
+  ...up to 10...
+
+  Any topic with empty Board evidence column = remove it, use next candidate.
+
+STEP A3 — ONLY AFTER the table is written and validated: search for fresh news
+  (prefer published within 48h of today) explaining WHY each of those 10 topics is
+  spiking right now. News = context. News does NOT choose the topics.
+
+STEP A4 — Write the HTML. For every topic:
+  - .topic-meta 📊 line: "Trend score: NN/100 · N platforms (Platform1, Platform2)"
+  - .why-box: FIRST bullet must be a Trend Watch chip, e.g.:
+    <li><code>Google Trends HK</code> #1 · 20K+ searches · 48h board (captured [date]).</li>
+  - Posted: use the actual article date. If article is older than a week, use
+    "Posted: date not shown (accessed YYYY-MM-DD)" and explain the spike in the summary.
+
+Output ONLY inner HTML. Same CSS classes as templates/gba-pulse-template.html.
+No <html>, <head>, outer <main>. Write to orchestration/fragments/claude.html.
 
 ================================================================================
 CHAT B — model: Cursor Composer 2
 Fragment file: orchestration/fragments/composer.html
 ================================================================================
-**Prerequisite:** CHAT T finished — `orchestration/fragments/trendwatch.html` is fresh (48h boards).
+⚠ PREREQUISITE: CHAT T must be complete.
 
 Attach:
-
   @prompts/gba-pulse-curator-prompt.md
   @prompts/gba-pulse-trend-scoring.md
   @orchestration/fragments/trendwatch.html
   @references/source-links.md
   @templates/gba-pulse-template.html
 
-Same workflow as CHAT A for the **Composer** panel. Write to `orchestration/fragments/composer.html`.
+You are writing the COMPOSER panel of GBA Pulse Top 10.
+
+⛔ DO NOT search for news yet. DO NOT open any news site yet.
+
+Follow the EXACT same workflow as CHAT A (steps A1→A4) but write to
+orchestration/fragments/composer.html.
+
+The topic list must come from the Trend Watch JSON topicCandidates (or scored from
+sections[]). Every topic must have Trend Watch board evidence in the self-audit table
+before you write HTML.
 
 ================================================================================
 CHAT C — model: GPT-5.5
 Fragment file: orchestration/fragments/chatgpt.html
 ================================================================================
-**Prerequisite:** CHAT T finished — `orchestration/fragments/trendwatch.html` is fresh (48h boards).
+⚠ PREREQUISITE: CHAT T must be complete.
 
 Attach:
-
   @prompts/gba-pulse-curator-prompt.md
   @prompts/gba-pulse-trend-scoring.md
   @orchestration/fragments/trendwatch.html
   @references/source-links.md
   @templates/gba-pulse-template.html
 
-Same workflow as CHAT A for the **GPT-5.5** panel. Write to `orchestration/fragments/chatgpt.html`.
+You are writing the GPT-5.5 panel of GBA Pulse Top 10.
+
+⛔ DO NOT search for news yet. DO NOT open any news site yet.
+
+Follow the EXACT same workflow as CHAT A (steps A1→A4) but write to
+orchestration/fragments/chatgpt.html.
+
+The topic list must come from the Trend Watch JSON topicCandidates (or scored from
+sections[]). Every topic must have Trend Watch board evidence in the self-audit table
+before you write HTML.
 
 ================================================================================
-AFTER A, B, C FINISH
+AFTER A, B, C ARE COMPLETE
 ================================================================================
-Run CHAT D, then:
+Run CHAT D, then from repo root:
 
   node scripts/merge-briefing-panels.mjs
+
+(This also refreshes masthead Date | Generated to current HKT time.)
 
 ================================================================================
 CHAT D — model: GPT-5.5 or Claude Sonnet 4.6
 Fragment file: orchestration/fragments/overall.html
 ================================================================================
-You are the **Live Edition** merger for GBA Pulse.
+⚠ PREREQUISITE: CHAT A, B, C must all be complete.
 
-Read:
-
+Attach:
   @orchestration/fragments/trendwatch.html
   @orchestration/fragments/claude.html
   @orchestration/fragments/composer.html
@@ -106,20 +167,43 @@ Read:
   @prompts/gba-pulse-curator-prompt.md
   @prompts/gba-pulse-trend-scoring.md
 
-Create merged **Top 10** for Live Edition.
+You are the LIVE EDITION merger for GBA Pulse.
 
-**Merge rules:**
+MERGER RULES (in priority order):
 
-1. **Anchor on Trend Watch:** prefer topics with high `compositeScore` in `topicCandidates` and strong cross-platform hits; deprioritize model-only stories not on Trend Watch.
-2. Normalize duplicates across the three model outputs.
-3. Rank by: Trend Watch composite score → cross-model overlap → GBA relevance → freshness (48h) → verification quality.
-4. Do **not** promote stale news (articles weeks old) unless Trend Watch shows a **current** spike; explain in summary.
-5. Keep reference mix where possible: innovation/business ~50%, arts/culture ~30%, food/drink ~15%, other ~15%; mainland GBA ~50%, HK ~30%, Macao ~20%.
-6. Every `.topic-meta`: source/date after location; 📊 includes `Trend score: NN/100 · N platforms`.
-7. Every `.why-box`: `<strong>Why It's Trending</strong>` + 1–3 short `<li>` with `<code>` platform chips from Trend Watch capture.
+1. ANCHOR ON TREND WATCH. Open trendwatch.html and re-check the topicCandidates[]
+   scores. The merged Top 10 must be drawn from topics on those boards — if a
+   model panel includes a topic with no Trend Watch board hit, exclude it from
+   the merged edition (mention it briefly in Key Observations instead).
 
-Output ONLY inner HTML: `<p class="agg-method">…</p>`, ten `.topic` blocks, Key Observations, Sources, Notes for Tomorrow. No `<html>`, `<head>`, `<body>`, outer `<main>`.
+2. Among Trend Watch-anchored topics, rank by:
+   - Composite trend score (highest first)
+   - Cross-model overlap (3-model agreement > 2 > 1)
+   - GBA/HK/Macao editorial relevance
+   - Freshness of verification (prefer ≤48h articles)
 
-Write to `orchestration/fragments/overall.html`.
+3. Normalize duplicates from the three model panels into single entries.
 
-After saving, run `node scripts/merge-briefing-panels.mjs` (refreshes masthead/footer dates in HKT). Use `--no-stamp` only if you must skip date refresh. Commit and deploy.
+4. If a model panel included a topic with an article from weeks or months ago but
+   that topic IS on the Trend Watch boards, keep the topic but update the summary
+   to explain the CURRENT spike rather than the original story.
+
+5. Do NOT promote any topic not on the Trend Watch boards, even if all three
+   models mentioned it. Move it to Key Observations instead.
+
+6. Content mix reference (tie-breaker only, not a quota):
+   innovation/business ~50%, arts/culture ~30%, food/drink ~15%, other ~15%;
+   mainland GBA ~50%, HK ~30%, Macao ~20%.
+
+7. Every .topic-meta: source/date after location; 📊 line shows
+   "Trend score: NN/100 · N platforms (…)".
+
+8. Every .why-box: <strong>Why It's Trending</strong> + 1–3 short <li> items;
+   first bullet must use a <code>platform chip</code> from the Trend Watch capture.
+
+Output ONLY inner HTML: <p class="agg-method">…</p>, ten .topic blocks, Key
+Observations, Sources, Notes for Tomorrow. No <html>, <head>, <body>, outer <main>.
+
+Write to orchestration/fragments/overall.html.
+
+After saving, run: node scripts/merge-briefing-panels.mjs

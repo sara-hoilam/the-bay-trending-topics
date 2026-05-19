@@ -132,7 +132,7 @@ Scores must follow **`prompts/gba-pulse-trend-scoring.md`** (35% volume + 35% ve
 ## Quality bar
 
 - **Google:** data must be from the **48-hour** Trending Now view (confirm in UI + `hours=48` in each `sourceUrl`). Do **not** ship a capture that matches only the last ~4 hours. Volumes must reflect the **on-site** table, not RSS `approx_traffic`. If you only have RSS, you have **not** met the quality bar — use `"—"` for volume until you can read the table.
-- **`topicCandidates`:** must be present, scored, and derived from **this capture’s** boards only (not from old news).
+- **`topicCandidates`:** must be present and scored per `gba-pulse-trend-scoring.md` using only this capture’s board rows — not training-data memory or old news. Briefing agents (CHAT A/B/C/D) read this array as their **only** topic source. An empty or missing array causes those agents to fall back to stale content. Always produce it.
 - Titles must match **live** boards at capture time; no placeholder “Example …” rows unless the board is genuinely empty (use em-dash titles sparingly; a **short** `disclaimer` is OK).
 - ISO timestamps on `refreshedAt`, `capturedAt`, and per-row `capturedAt` when the UI shows a scrape time.
 - Ensure JSON has **no** raw `</script>` sequences inside string values (break with `<\/script>` in HTML if ever needed).
