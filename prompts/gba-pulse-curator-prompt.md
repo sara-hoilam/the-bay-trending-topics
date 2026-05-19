@@ -76,7 +76,7 @@ No exceptions. A topic that only appeared in a news search is not eligible.
 For each of the 10 confirmed Trend Watch topics:
 
 - Search for **recent news** (prefer published **within 48 hours** of today) explaining *why* this topic is spiking *right now*.
-- This research fills in the **headline**, **summary sentence**, and **Why It's Trending** context.
+- This research fills in the **headline**, **summary sentence**, and **Interesting Angles** content.
 - If the only news you find is **older than 2 weeks**, write the summary around the Trend Watch signal itself (e.g. "Searches for X surged on [date] following…") — do **not** present a months-old article as today's story.
 - The `Posted:` date in `.topic-meta` must be the actual article date. If it is old, use `Posted: date not shown (accessed YYYY-MM-DD)` and acknowledge the gap.
 
@@ -95,22 +95,27 @@ Use the standard CSS classes: `.topic`, `.topic-rank`, `.topic-cat`, `.topic-tit
 
 Note: the platforms line must list **all** the geos and platforms where the topic actually appeared — not just HK. E.g. `Google HK + US + SG, Baidu` if it appeared in those three Google geos.
 
-**Every `.why-box` must lead with the Trend Watch chip(s) from the actual capture:**
+**Every `.why-box` must contain 2–3 editorial angle bullets, written as open questions or thought-starters for editors — not explanations:**
 
 ```html
 <div class="why-box">
-  <strong>Why It's Trending</strong>
+  <strong>Interesting Angles</strong>
   <ul>
-    <li><code>Google Trends HK</code> #1 · 20K+ searches · 48h board + <code>Google Trends SG</code> #3 · 5K+ searches.</li>
-    <li><code>Baidu Hot Search</code> top-5 on same query (May 19).</li>
-    <li>[One line of news context explaining the spike cause.]</li>
+    <li>Follow-up question or editorial angle — e.g. "Where are the top watch-party bars in HK for this match, and are venues already seeing booking spikes?"</li>
+    <li>A second distinct angle — e.g. "How are crypto and sports-betting markets pricing the outcome?"</li>
+    <li>[Optional third angle — only include if genuinely different from the first two.]</li>
   </ul>
 </div>
 ```
 
-If the topic appeared in only one geo (e.g. US only), still cite it — e.g. `<code>Google Trends US</code> #2 · 500K+ searches` — and explain the GBA angle in the summary.
+**Rules for `.why-box` content:**
+- Bullets are **questions or prompts**, not answers. The editor should feel inspired to investigate, not briefed on a conclusion.
+- Each bullet should suggest a **concrete, actionable story angle** — e.g. a venue to visit, a market to check, a demographic to interview, a comparison to make.
+- Aim for **2 solid angles** over 3 weak ones.
+- Do **not** repeat the trend score data (that belongs in `.topic-meta`).
+- Do **not** use `<code>` platform chips inside `.why-box` — those go in `.topic-meta`.
 
-Wrap every platform name in `<code>…</code>`. Do not type `→` — CSS renders it.
+Do not type `→` — CSS renders it automatically.
 
 ---
 

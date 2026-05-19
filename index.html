@@ -140,13 +140,77 @@
   /* ─── TOPIC CARD ─── */
   .topic {
     display: grid;
-    grid-template-columns: 56px 1fr;
+    grid-template-columns: 56px 1fr auto;
     gap: 0 24px;
     border-top: 1.5px solid var(--ink);
     padding: 28px 0 28px;
     animation: fadeUp .4s ease both;
+    align-items: start;
   }
   .topic:last-of-type { border-bottom: 1.5px solid var(--ink); }
+
+  /* ─── TREND SCORE BADGE ─── */
+  .topic-score-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    padding-top: 4px;
+    min-width: 52px;
+    text-align: center;
+  }
+  .topic-score-badge__ring {
+    position: relative;
+    width: 75px;
+    height: 75px;
+  }
+  .topic-score-badge__ring svg {
+    transform: rotate(-90deg);
+    display: block;
+  }
+  .topic-score-badge__ring .tsb-track {
+    fill: none;
+    stroke: #e0dbd4;
+    stroke-width: 5;
+  }
+  .topic-score-badge__ring .tsb-fill {
+    fill: none;
+    stroke-width: 5;
+    stroke-linecap: round;
+    transition: stroke-dashoffset .5s ease;
+  }
+  .topic-score-badge__num {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .topic-score-badge__label {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .topic-score-badge__platforms {
+    font-family: 'DM Mono', monospace;
+    font-size: 8px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.3;
+    max-width: 56px;
+  }
+  @media (max-width: 560px) {
+    .topic { grid-template-columns: 40px 1fr; }
+    .topic-score-badge { display: none; }
+  }
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -237,8 +301,8 @@
 
   /* ─── WHY TRENDING BOX ─── */
   .why-box {
-    background: #faf8f4;
-    border-left: 5px solid var(--accent);
+    background: #f0f5ff;
+    border-left: 5px solid #1b4dc8;
     padding: 12px 16px;
     margin: 12px 0;
     font-size: 13.5px;
@@ -250,9 +314,19 @@
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    color: var(--muted);
+    color: #1b4dc8;
     display: block;
     margin-bottom: 8px;
+    /* override whatever label agents write — always show "Interesting Angles" */
+    font-size: 0;
+  }
+  .why-box strong::before {
+    content: '✦ Interesting Angles';
+    font-size: 10px;
+    color: #1b4dc8;
+    font-family: 'DM Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: .1em;
   }
   .why-box ul {
     list-style: none;
@@ -274,7 +348,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: var(--accent);
+    color: #1b4dc8;
     font-weight: 700;
     font-size: 1em;
     line-height: inherit;
@@ -283,11 +357,11 @@
     font-family: 'DM Mono', monospace;
     font-size: 10.5px;
     font-weight: 500;
-    background: rgba(200, 68, 27, 0.12);
+    background: rgba(27, 77, 200, 0.10);
     color: var(--ink);
     padding: 2px 6px;
     border-radius: 3px;
-    border: 1px solid rgba(200, 68, 27, 0.28);
+    border: 1px solid rgba(27, 77, 200, 0.22);
     white-space: normal;
     word-break: break-word;
   }
@@ -431,6 +505,7 @@
 
   .model-panel { display: none; }
   .model-panel.is-visible { display: block; }
+  .agg-method { display: none; }
   .agg-method {
     font-size: 13.5px;
     line-height: 1.65;
@@ -726,12 +801,12 @@
   <div class="masthead-inner">
     <div class="masthead-meta">
       <span>粤港澳大湾区 · Greater Bay Area Intelligence</span>
-      <span id="gba-masthead-stamp">Date: 2026-05-19 &nbsp;|&nbsp; Generated: 15:05 HKT</span>
+      <span id="gba-masthead-stamp">Date: 2026-05-19 &nbsp;|&nbsp; Generated: 15:27 HKT</span>
     </div>
     <h1>GBA <span>Pulse</span></h1>
     <p class="masthead-tagline">Please validate all the sources as AI can make mistake</p>
     <div class="masthead-stripe" role="tablist" aria-label="Briefing by model">
-      <button type="button" class="masthead-pill hot" role="tab" id="tab-overall" data-panel="overall" aria-selected="true" title="Top 10 trending topics across all platforms">📰 Trending News Today</button>
+      <button type="button" class="masthead-pill hot" role="tab" id="tab-overall" data-panel="overall" aria-selected="true" title="Top 10 trending topics across all platforms">📰 Trending News</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-trendwatch" data-panel="trendwatch" aria-selected="false" title="Trend Watch dashboards">Trend Watch</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
@@ -755,11 +830,11 @@
     </h2>
     <p class="topic-summary">Arsenal beat Burnley 1–0 at the Emirates on May 18 (Havertz, 36') and moved five points clear of Manchester City with one week left — the Gunners' closest approach to a title since the 2003/04 Invincibles, driving exceptional multi-market search volume across Hong Kong, Britain, the US, and Singapore.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Google Trends HK</code> #3 · 5K+ searches · 1000% growth; <code>Google Trends GB</code> #1 · 500K+; <code>Google Trends US</code> #3 · 200K+; <code>Google Trends SG</code> #2 · 10K+ — highest composite score (94) in the 48h capture.</li>
-        <li>All three model panels ranked this in the top two; RTHK (Posted: 19 May 2026) and Arsenal.com confirm result and title-race standing.</li>
-        <li>22-year drought narrative sustains HK football communities on X and Reddit — watch-party and F&amp;B booking spikes likely if City drops points before Arsenal's final fixture (~25 May).</li>
+        <li>Where are the top bars and watch-party spots in Hong Kong to catch Arsenal's potential title-clinching final fixture — and which F&amp;B venues are already seeing booking spikes?</li>
+        <li>With 22 years of near-misses fuelling the fanbase, how are HK Gunners communities organising around the finish line — Telegram groups, watch parties, merch pop-ups?</li>
+        <li>How are sports betting and prediction markets pricing Arsenal's title odds now they are five points clear with one game left?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -781,11 +856,10 @@
     </h2>
     <p class="topic-summary">Manchester United hosted Nottingham Forest on May 17 at Old Trafford in a fixture framed as Casemiro's farewell home appearance; the match drew extraordinary search volume across Hong Kong (#2, 10K+), Britain (#2, 200K+), and Singapore (#1, 20K+) as Forest's Europa League elimination added a parallel club storyline.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Google Trends HK</code> #2 · 10K+ searches · 1000% growth; <code>Google Trends GB</code> #2 · 200K+; <code>Google Trends SG</code> #1 · 20K+ — composite score 84; all three panels included this story.</li>
-        <li>BBC Sport and ESPN Singapore carried fixture context; emotional farewell and Forest's European exit drove X/Twitter football threads through the weekend.</li>
-        <li>HK's large Man Utd fanbase routinely pushes PL fixtures into the top-five Google HK band when European kickoffs align with Asia evening — pattern confirmed again in this capture.</li>
+        <li>Casemiro spent five trophied years at Man Utd — which Hong Kong or GBA-based Brazilian community groups are marking this farewell, and how is the HK Man Utd fanbase eulogising him?</li>
+        <li>Forest's Europa League exit robbed them of the prestige they chased all season — what does European football's qualification lottery mean for mid-table clubs and their Asian fan followings?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -807,11 +881,10 @@
     </h2>
     <p class="topic-summary">A state-media package around International Museum Day and Xi Jinping's museum anecdotes topped Baidu's realtime board at ≈7.90M 热搜指数 on May 19, amplifying cultural-heritage messaging with downstream relevance for Guangdong, Hong Kong, and Macao museum infrastructure under the GBA Cultural Bay Area (文化湾区) initiative.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Baidu Hot Search</code> #1 · ≈7.90M 热搜指数 · 48h board — highest mainland numeric volume in the capture; all three panels included this story (GPT-5.5 #1, Composer #9, Claude #5).</li>
-        <li>China News and People's Daily amplified the May 18 International Museum Day theme, "Museums: Bridges between Worlds."</li>
-        <li><em>State-media discount applies:</em> volume reflects coordinated official amplification rather than organic-only public sentiment — label framing explicitly for mixed HK audiences.</li>
+        <li>International Museum Day falls on May 18 — which GBA institutions (Palace Museum HK, M+, Guangdong Museum) are running events or limited exhibitions worth spotlighting for readers?</li>
+        <li>The Cultural Bay Area (文化湾区) initiative ties Beijing's heritage messaging directly to GBA infrastructure spending — what specific museum or cultural venue projects are in the pipeline for 2026–2027?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -833,11 +906,10 @@
     </h2>
     <p class="topic-summary">Vladimir Putin arrived in Beijing on May 19 for a two-day state visit — his 25th trip to China — to meet Xi Jinping and Premier Li Qiang, marking the 25th anniversary of the Sino-Russian Treaty of Good-Neighbourliness just days after President Trump's landmark Beijing summit, compressing the most concentrated great-power diplomacy into one week.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Baidu Hot Search</code> #2 · ≈7.81M 热搜指数 · 48h board — composite score 71; all three panels ranked this in the top four.</li>
-        <li>BBC Chinese, RTHK, and SCMP confirmed the May 19–20 schedule; agenda expected to cover energy (Power of Siberia 2), trade, and strategic-partnership language with HK financial intermediary implications.</li>
-        <li>English finance Twitter often lags mainland boards by hours unless a joint communiqué drops — watch May 20 signing for enforceable terms vs ceremony coverage.</li>
+        <li>With Trump visiting Beijing just days earlier and Putin arriving now, how are GBA-based financial institutions and multinationals reading this concentrated diplomacy week — any observable capital or deal flows?</li>
+        <li>If the summit produces a Power of Siberia 2 energy deal, what does cheaper Russian gas routed via China mean for Hong Kong utilities and cross-border industrial energy costs in Guangdong?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -859,11 +931,10 @@
     </h2>
     <p class="topic-summary">Three post-2000 cross-border e-commerce entrepreneurs donated 20 billion AI model tokens to Zhengzhou Xiayas University on May 13, sparking a Weibo debate on whether the gesture is worth hundreds of yuan or ¥250,000 — with donors built on Alibaba International Station, a platform widely used by GBA traders in Shenzhen and Guangzhou.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Baidu Hot Search</code> #3 · ≈7.71M 热搜指数 · 48h board — composite score 65; all three panels included this story.</li>
-        <li>Sina Finance (Posted: 16 May 2026) reported the donation could cover roughly 500 students on an AI agent platform; online debate focused on token valuation vs traditional capital gifts.</li>
-        <li>Story crystallises two live debates: real-economy value of AI token economies and the 00后 generation reframing "giving back" in the AI era — relevant to GBA startup and ed-tech observers.</li>
+        <li>20 billion AI tokens — is this actually worth anything useful to students, or is it a PR stunt? What would ¥250,000 in real cash actually buy versus 20 billion tokens at today's consumption rates?</li>
+        <li>As the 00后 generation starts redefining philanthropy in the AI era, what does this signal for GBA ed-tech startups and the Shenzhen/Guangzhou cross-border commerce scene?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -885,11 +956,11 @@
     </h2>
     <p class="topic-summary">Hong Kong activated the Alert Response Level of its Ebola Preparedness and Response Plan on May 17 after WHO declared the DRC/Uganda Bundibugyo-strain outbreak a PHEIC; Africa CDC reports 336 cases and 87 deaths — no local cases, risk assessed low, but airport Africa-flight screening and CHP advisories are live.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Google Trends HK</code> #1 · 10K+ searches · 1000% growth · 48h board — composite score 63; Composer ranked #1 by raw HK volume; all three panels included this story.</li>
-        <li>RTHK and HK government release (Posted: 17 May 2026) confirmed Alert Level activation; Bundibugyo strain has no dedicated vaccine yet, sustaining search urgency through May 19.</li>
-        <li>Treat volume as precaution-driven curiosity until CHP/WHO confirm geography of risk — bilingual health threads on X often front-run official push notifications.</li>
+        <li>What does "Alert Response Level" actually mean for Hong Kong residents in practice — what screenings are happening at HKIA, and which Africa-route flights are under watch?</li>
+        <li>Bundibugyo strain has no dedicated vaccine — how is Hong Kong's stockpile and hospital quarantine capacity positioned relative to 2014-era MERS preparedness protocols?</li>
+        <li>Panic searches often spike before CHP advisories — is there a gap in HK's public-health communication that social media is filling, and how should editors frame risk without amplifying fear?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -911,11 +982,10 @@
     </h2>
     <p class="topic-summary">Moses Chan (馬浚偉) spiked to Google HK #4 (5K+, 1000% growth) in the 48h window; MP Weekly and regional outlets report his resignation as Metro Broadcast CEO for personal reasons, effective May 20 — blending celebrity nostalgia, media-industry leadership, and speculation over future public roles.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Google Trends HK</code> #4 · 5K+ searches · 1000% growth · 48h board — composite score 61; all three panels included this story.</li>
-        <li>MP Weekly reported the Metro Radio CEO exit; Claude panel also linked active TVB drama "The Legal Watchers" as a possible secondary driver — verify same-day entertainment desks for trigger confirmation.</li>
-        <li>Local celebrity traffic often punches above regional politics during holiday-weighted weeks — durable HK entertainment search pattern.</li>
+        <li>Moses Chan moves from CEO back to full-time acting — is this a trend of "back-to-roots" career pivots among second-generation HK celebrities, or a unique case?</li>
+        <li>With Metro Broadcast under new leadership, how does the Cantonese-radio landscape look in 2026 — who are the likely internal candidates and what does this mean for Metro Radio's programming direction?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -937,11 +1007,10 @@
     </h2>
     <p class="topic-summary">China's "逐日工程" (Chasing the Sun) space-based solar power project achieved a breakthrough in microwave wireless transmission: 1,180W at 100 m, 20.8% DC-to-DC efficiency, and stable 143W drone reception at 30 km/h — embedded in the 15th Five-Year Plan as a strategic growth frontier with GBA aerospace supply-chain read-through.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Baidu Hot Search</code> #4 · ≈7.62M 热搜指数 · 48h board — composite score 60; all three panels included this story.</li>
-        <li>Xinhua (Posted: 18 May 2026) reported kilowatt-level output and transmission efficiency; research team led by CAE academician Duan Baoyan at Xi'an University of Electronic Science and Technology.</li>
-        <li><em>State-media amplification note:</em> technical claims credible on published figures but "international leading" characterisation is institution-sourced — apply editorial discount; independent peer review pending.</li>
+        <li>Space-based solar is embedded in China's 15th Five-Year Plan — which GBA aerospace supply-chain companies (Guangzhou, Shenzhen, Zhuhai) stand to win contracts, and are any publicly listed?</li>
+        <li>The 1,180W figure sounds impressive but the commercial bar is gigawatts — how far is China (and the US/EU) from an orbital solar plant that actually feeds a grid, and what's a realistic timeline?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -963,11 +1032,10 @@
     </h2>
     <p class="topic-summary">Apple, Huawei, and Xiaomi slashed high-end smartphone prices this week ahead of China's "618" mid-year shopping festival (May 12 – June 20): iPhone 17 Pro series down ¥1,000; Huawei Mate X7 down ¥1,000 and Mate X6 down ¥3,000 — reversing March hikes driven by memory-chip cost surges, with Shenzhen Huaqiangbei and HK parallel-import arbitrage watchers tracking spreads.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Baidu Hot Search</code> #5 · ≈7.52M 热搜指数 · 48h board — composite score 56; all three panels included this story.</li>
-        <li>China News (Posted: 18 May 2026) reported iPhone, Huawei, and Xiaomi cuts of ¥1,000+; Weibo "手机大降价" hashtag trended separately from the Baidu board headline.</li>
-        <li>HK cross-border shoppers and parallel importers typically respond to mainland price drops within 48–72 hours — relevant to Shenzhen retail vlogs and HK price-comparison groups.</li>
+        <li>With iPhone 17 Pro down ¥1,000 in China, does the Hong Kong grey-market still make sense — or has the price gap between HK retail and Mainland officially narrowed enough to kill the arbitrage?</li>
+        <li>618 runs until June 20 — which flagship phones and accessories are seeing the steepest Shenzhen Huaqiangbei mark-downs right now, and where are the best deals for GBA cross-border shoppers?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -989,11 +1057,10 @@
     </h2>
     <p class="topic-summary">A 5.2-magnitude earthquake struck Liuzhou City's Liunan District (Guangxi) at 00:21 on May 18; a second 5.2-magnitude quake hit the same district at 21:44 on May 19, approximately 1 km from the first epicentre — triggering Level-III national emergency response, 315 rescue personnel deployed, and Google HK #5 search interest as some Hong Kong residents reported tremors.</p>
     <div class="why-box">
-      <strong>Why It's Trending</strong>
+      <strong>Interesting Angles</strong>
       <ul>
-        <li><code>Google Trends HK</code> #5 · 5K+ searches · 800% growth · 48h board — composite score 54; all three panels included this story.</li>
-        <li>RTHK (Posted: 18 May 2026) and China Daily (Posted: 19 May 2026) confirmed twin-quake sequence, 3 missing, 4 injured, and 64 aftershocks by May 18 noon; Hong Kong Observatory received 10+ local tremor reports.</li>
-        <li>Guangxi borders Guangdong — earthquakes generate immediate HK search interest given GBA cross-border proximity; Cantonese Telegram and Reddit "did you feel it?" threads spiked within minutes of alert apps.</li>
+        <li>HK Observatory received tremor reports — how sensitive are Hong Kong high-rises to earthquakes in Guangxi, and what building standards govern earthquake resilience in GBA's dense urban corridors?</li>
+        <li>Guangxi–Guangdong supply-chain corridors carry significant GBA trade — are any key logistics hubs or roads near Liuzhou disrupted, and how quickly do insurers respond to cross-border cargo claims?</li>
       </ul>
     </div>
     <div class="topic-meta">
@@ -2463,6 +2530,85 @@ Rank | Topic | Score | Platforms | Trend Watch evidence
 })();
 </script>
 <script src="trend-watch-panel.js" defer></script>
+<script>
+(function () {
+  function scoreColor(n) {
+    if (n >= 80) return '#00c46a';   /* vivid green */
+    if (n >= 60) return '#f5a700';   /* bright amber-gold */
+    if (n >= 40) return '#ff5722';   /* vivid orange-red */
+    return '#9e9e9e';                /* neutral grey */
+  }
+
+  function buildBadge(score, platforms) {
+    var r = 32, circ = 2 * Math.PI * r;
+    var fill = Math.round(circ * (score / 100));
+    var color = scoreColor(score);
+
+    var wrap = document.createElement('div');
+    wrap.className = 'topic-score-badge';
+    wrap.setAttribute('aria-label', 'Trend score ' + score + ' out of 100');
+
+    var ring = document.createElement('div');
+    ring.className = 'topic-score-badge__ring';
+    ring.innerHTML =
+      '<svg width="75" height="75" viewBox="0 0 75 75" aria-hidden="true">' +
+        '<circle class="tsb-track" cx="37.5" cy="37.5" r="' + r + '"/>' +
+        '<circle class="tsb-fill" cx="37.5" cy="37.5" r="' + r + '"' +
+          ' stroke="' + color + '"' +
+          ' stroke-dasharray="' + circ + '"' +
+          ' stroke-dashoffset="' + (circ - fill) + '"' +
+        '/>' +
+      '</svg>' +
+      '<div class="topic-score-badge__num" style="color:' + color + '">' + score + '</div>';
+
+    var lbl = document.createElement('div');
+    lbl.className = 'topic-score-badge__label';
+    lbl.textContent = 'trend score';
+
+    wrap.appendChild(ring);
+    wrap.appendChild(lbl);
+
+    if (platforms) {
+      var plt = document.createElement('div');
+      plt.className = 'topic-score-badge__platforms';
+      plt.textContent = platforms;
+      wrap.appendChild(plt);
+    }
+
+    return wrap;
+  }
+
+  function injectScores() {
+    var panel = document.getElementById('panel-overall');
+    if (!panel) return;
+    panel.querySelectorAll('.topic').forEach(function (topic) {
+      if (topic.querySelector('.topic-score-badge')) return;
+
+      var scoreVal = null, platformsTxt = null;
+      topic.querySelectorAll('.topic-meta span').forEach(function (span) {
+        var txt = span.textContent || '';
+        var m = txt.match(/Trend score[:\s]+(\d+)\s*\/\s*100/i);
+        if (m) {
+          scoreVal = parseInt(m[1], 10);
+          /* extract platforms hint after the bullet separator */
+          var p = txt.match(/·\s*\d+\s+platforms?\s*\(([^)]+)\)/i);
+          if (p) platformsTxt = p[1];
+        }
+      });
+
+      if (scoreVal == null) return;
+      var badge = buildBadge(scoreVal, platformsTxt);
+      topic.appendChild(badge);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectScores);
+  } else {
+    injectScores();
+  }
+})();
+</script>
 
 </body>
 </html>

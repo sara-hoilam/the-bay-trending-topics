@@ -94,8 +94,17 @@ STEP A3 — ONLY AFTER the table is written and validated: search for fresh news
 
 STEP A4 — Write the HTML. For every topic:
   - .topic-meta 📊 line: "Trend score: NN/100 · N platforms (Platform1, Platform2)"
-  - .why-box: FIRST bullet must be a Trend Watch chip, e.g.:
-    <li><code>Google Trends HK</code> #1 · 20K+ searches · 48h board (captured [date]).</li>
+  - .why-box: write 2–3 bullets as OPEN QUESTIONS / EDITORIAL ANGLES for editors, e.g.:
+    <div class="why-box">
+      <strong>Interesting Angles</strong>
+      <ul>
+        <li>Where are the top bars to watch this match in Hong Kong, and are venues
+            already seeing booking spikes?</li>
+        <li>How are sports-betting markets pricing the outcome as the season closes?</li>
+      </ul>
+    </div>
+    These are QUESTIONS, not answers. Do NOT put trend-score platform chips inside
+    .why-box — those belong in .topic-meta only.
   - Posted: use the actual article date. If article is older than a week, use
     "Posted: date not shown (accessed YYYY-MM-DD)" and explain the spike in the summary.
 
@@ -206,11 +215,14 @@ MERGER RULES (in priority order):
 7. Every .topic-meta: source/date after location; 📊 line shows
    "Trend score: NN/100 · N platforms (…)".
 
-8. Every .why-box: <strong>Why It's Trending</strong> + 1–3 short <li> items;
-   first bullet must use a <code>platform chip</code> from the Trend Watch capture.
+8. Every .why-box: <strong>Interesting Angles</strong> + 2–3 bullet points written as
+   open QUESTIONS or editorial prompts for editors — not explanations of why it's
+   trending. E.g. "Where are the top watch-party venues in HK for this match?" Do NOT
+   put platform chips inside .why-box; those belong in .topic-meta only.
 
-Output ONLY inner HTML: <p class="agg-method">…</p>, ten .topic blocks, Key
-Observations, Sources, Notes for Tomorrow. No <html>, <head>, <body>, outer <main>.
+Output ONLY inner HTML: ten .topic blocks, Key Observations, Sources, Notes for
+Tomorrow. Do NOT include a <p class="agg-method">…</p> paragraph — it is hidden by
+CSS and no longer shown to readers. No <html>, <head>, <body>, outer <main>.
 
 Write to orchestration/fragments/overall.html.
 
