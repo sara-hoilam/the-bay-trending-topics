@@ -539,7 +539,9 @@
     --tw-rule: #0d0d0d18;
   }
   #panel-trendwatch main.wrapper {
-    max-width: min(1520px, 96vw);
+    max-width: min(1320px, 96vw);
+    margin-left: auto;
+    margin-right: auto;
   }
   #panel-trendwatch .tw-meta-line {
     font-family: 'DM Mono', monospace;
@@ -565,18 +567,38 @@
     padding: 2px 6px;
     border-radius: 3px;
   }
-  #panel-trendwatch .tw-dashboard { width: 100%; }
+  #panel-trendwatch .tw-dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #panel-trendwatch .tw-platform-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 14px;
     align-items: stretch;
+    width: 100%;
+    max-width: min(1320px, 100%);
+    margin: 0 auto;
+    justify-content: center;
   }
-  @media (max-width: 1200px) {
-    #panel-trendwatch .tw-platform-grid { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 900px) {
+    #panel-trendwatch .tw-platform-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    /* Center lone third panel when stacked 2+1 */
+    #panel-trendwatch .tw-platform-grid > .tw-platform-panel:nth-child(3):last-child {
+      grid-column: 1 / -1;
+      max-width: min(480px, 100%);
+      justify-self: center;
+    }
   }
   @media (max-width: 560px) {
     #panel-trendwatch .tw-platform-grid { grid-template-columns: 1fr; }
+    #panel-trendwatch .tw-platform-grid > .tw-platform-panel:nth-child(3):last-child {
+      grid-column: auto;
+      max-width: none;
+      justify-self: stretch;
+    }
   }
   #panel-trendwatch .tw-platform-panel {
     background: var(--tw-panel-bg);
