@@ -29,7 +29,6 @@ Use these as starting points; verify stories against primary sources. URLs are c
 
 | Resource | URL |
 |----------|-----|
-| TikTok Creative Center — popular hashtags | https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en |
 | X (Twitter) search — live (adjust query) | https://x.com/search?q=Hong+Kong&f=live |
 | Reddit — Hong Kong | https://www.reddit.com/r/HongKong/ |
 | Reddit — Macau | https://www.reddit.com/r/Macau/ |

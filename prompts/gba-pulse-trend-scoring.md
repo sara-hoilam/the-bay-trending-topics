@@ -9,7 +9,7 @@ This document defines how to go from raw Trend Watch board data to a **ranked sh
 **Discovery window: last 48 hours only.**
 
 - Google rows come from **Trending Now · 48h** (`hours=48`). Not the 4h default, not RSS.
-- Baidu realtime, TikTok, and X boards are treated as within the same 48h window.
+- Baidu realtime and X boards are treated as within the same 48h window as Google.
 - A topic whose **only evidence** is a news article **older than 48 hours** and **absent from all Trend Watch boards** does **not** qualify for the Top 10.
 - Older news may be used as one line of background context — never as the reason a topic appears on the list.
 
@@ -25,7 +25,6 @@ Otherwise, collect every non-empty board row from **all geos equally**:
 
 - `sections[id="google_trends"].itemsByLocation` — **every** geo key: HK, US, GB, MO, JP, SG, IN (and any others present). Do **not** skip or deprioritize any geo at this stage.
 - `sections[id="baidu"].items`
-- `sections[id="tiktok"].items`
 - `sections[id="x_twitter"].items`
 
 Skip rows where `title` is `"—"` or blank.
@@ -61,7 +60,7 @@ Record every platform hit (including geo) that maps to that story.
 ### Cross-platform score (30%)
 
 1. Count **distinct platform families** where the topic appears:  
-   `google_trends` (any geo counts as one family hit, but multiple geos within Google count as extra signal — see bonus), `baidu`, `tiktok`, `x_twitter` — base maximum 4.
+   `google_trends` (any geo counts as one family hit, but multiple geos within Google count as extra signal — see bonus), `baidu`, `x_twitter` — base maximum 3.
 2. `crossPlatformScore = min(100, 25 × platformCount)`
 3. Bonuses (each capped so total ≤ 100):
    - +10 if topic appears in Google **HK or MO** (directly GBA-relevant geo)

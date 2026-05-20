@@ -26,7 +26,6 @@ REQUIRED STEPS (in order):
      ⚠ MUST use hours=48 in URL and in the UI — the site defaults to ~4h, change it.
      ⚠ Read volumes from the ON-SITE TABLE (e.g. "20K+ searches") — NOT from RSS feeds.
    - Baidu realtime: https://top.baidu.com/board?tab=realtime
-   - TikTok Creative Center hashtags: https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en
    - X/Twitter trends proxy: https://trends24.in/united-states/
 
 2. Fill all sections[] in the JSON with the live data.

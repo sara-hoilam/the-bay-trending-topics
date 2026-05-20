@@ -42,7 +42,6 @@ You refresh the **Trend Watch** tab in GBA Pulse by editing one HTML fragment. T
 
 - **Google Trends — Trending Now** (48h, search volume sort): one board per geo — e.g. HK, US, GB, MO, JP, SG, IN — populated **from that page’s table**, into `itemsByLocation`.
 - **Baidu realtime**: `https://top.baidu.com/board?tab=realtime` — top five.
-- **TikTok Creative Center — popular hashtags** (US-weighted): `https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en` — top five.
 - **X / Twitter trends (proxy)**: e.g. `https://trends24.in/united-states/` or another live trends page the newsroom uses — top five, US unless the product owner specifies another geo.
 
 ## JSON schema (top level)
@@ -85,9 +84,9 @@ You refresh the **Trend Watch** tab in GBA Pulse by editing one HTML fragment. T
 - **`volumeEstimate`**: numeric estimate aligned with the UI (used for scoring).
 - **`growthPercent`**: breakout / growth % from the UI if shown; if not shown, use `0` or omit and note in disclaimer.
 
-### Sections: `baidu`, `tiktok`, `x_twitter`
+### Sections: `baidu`, `x_twitter`
 
-`id` must be `"baidu"`, `"tiktok"`, or `"x_twitter"`.
+`id` must be `"baidu"` or `"x_twitter"`.
 
 Each has `boardLabel`, `subtitle`, `sourceUrl`, `capturedAt`, and `items` (five rows):
 

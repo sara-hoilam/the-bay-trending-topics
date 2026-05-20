@@ -86,20 +86,6 @@
       ]
     },
     {
-      "id": "tiktok",
-      "boardLabel": "Popular hashtags",
-      "subtitle": "Creative Center (US-weighted · 7d typical)",
-      "sourceUrl": "https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en",
-      "capturedAt": "2026-05-14T08:15:00+08:00",
-      "items": [
-        { "rank": 1, "title": "#mothersday", "searchVolume": "~59.3K posts", "pin": "📍🇺🇸" },
-        { "rank": 2, "title": "#tiktoktvfilmcontest", "searchVolume": "~36.8K posts", "pin": "📍🇺🇸" },
-        { "rank": 3, "title": "#2020", "searchVolume": "~8.7K posts", "pin": "📍🇺🇸" },
-        { "rank": 4, "title": "#fyp", "searchVolume": "— (fill from board)", "pin": "📍🇺🇸" },
-        { "rank": 5, "title": "#viral", "searchVolume": "— (fill from board)", "pin": "📍🇺🇸" }
-      ]
-    },
-    {
       "id": "x_twitter",
       "boardLabel": "United States",
       "subtitle": "X trends · trends24 proxy",
