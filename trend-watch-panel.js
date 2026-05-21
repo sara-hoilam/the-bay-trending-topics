@@ -8,6 +8,7 @@
   var BRAND = {
     google_trends: { title: "Google Trends", accent: "#4285f4", iconId: "tw-icon-google-trends" },
     baidu: { title: "Baidu", accent: "#2932e1", iconId: "tw-icon-baidu" },
+    weibo: { title: "Weibo", accent: "#e6162d", iconId: "tw-icon-weibo" },
     x_twitter: { title: "X", accent: "#000", iconId: "tw-icon-x" },
   };
 

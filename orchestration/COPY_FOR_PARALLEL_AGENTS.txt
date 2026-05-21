@@ -1,11 +1,11 @@
 GBA Pulse — parallel agent run instructions
 ============================================
 
-Run in this ORDER. Do not run A/B/C before T is complete.
+Run in this ORDER. Do not run A/B before T is complete.
 
   STEP 1: CHAT T  →  refresh Trend Watch boards (48h) + compute topicCandidates scores
-  STEP 2: CHAT A + B + C  →  in parallel, each builds Top 10 from Trend Watch scores
-  STEP 3: CHAT D  →  Live Edition merger
+  STEP 2: CHAT A + B  →  in parallel, Claude + Composer each build Top 10 from Trend Watch scores
+  STEP 3: CHAT D  →  Trending News merger (Claude + Composer inputs only — no GPT)
   STEP 4 (terminal): node scripts/merge-briefing-panels.mjs
 
 ================================================================================
@@ -26,6 +26,7 @@ REQUIRED STEPS (in order):
      ⚠ MUST use hours=48 in URL and in the UI — the site defaults to ~4h, change it.
      ⚠ Read volumes from the ON-SITE TABLE (e.g. "20K+ searches") — NOT from RSS feeds.
    - Baidu realtime: https://top.baidu.com/board?tab=realtime
+   - Weibo realtime hot (微博实时热搜): https://s.weibo.com/top/summary?cate=realtimehot — top five; use cate=realtimehot only
    - X/Twitter trends proxy: https://trends24.in/united-states/
 
 2. Fill all sections[] in the JSON with the live data.
@@ -136,32 +137,7 @@ before you write HTML. All geos (HK, US, GB, MO, JP, SG, IN) must be included in
 candidate collection — do not limit to HK only.
 
 ================================================================================
-CHAT C — model: GPT-5.5
-Fragment file: orchestration/fragments/chatgpt.html
-================================================================================
-⚠ PREREQUISITE: CHAT T must be complete.
-
-Attach:
-  @prompts/gba-pulse-curator-prompt.md
-  @prompts/gba-pulse-trend-scoring.md
-  @orchestration/fragments/trendwatch.html
-  @references/source-links.md
-  @templates/gba-pulse-template.html
-
-You are writing the GPT-5.5 panel of GBA Pulse Top 10.
-
-⛔ DO NOT search for news yet. DO NOT open any news site yet.
-
-Follow the EXACT same workflow as CHAT A (steps A1→A4) but write to
-orchestration/fragments/chatgpt.html.
-
-The topic list must come from the Trend Watch JSON topicCandidates (or scored from
-sections[]). Every topic must have Trend Watch board evidence in the self-audit table
-before you write HTML. All geos (HK, US, GB, MO, JP, SG, IN) must be included in
-candidate collection — do not limit to HK only.
-
-================================================================================
-AFTER A, B, C ARE COMPLETE
+AFTER A AND B ARE COMPLETE
 ================================================================================
 Run CHAT D, then from repo root:
 
@@ -170,20 +146,21 @@ Run CHAT D, then from repo root:
 (This also refreshes masthead Date | Generated to current HKT time.)
 
 ================================================================================
-CHAT D — model: GPT-5.5 or Claude Sonnet 4.6
+CHAT D — model: Claude Sonnet 4.6 (or Composer 2)
 Fragment file: orchestration/fragments/overall.html
 ================================================================================
-⚠ PREREQUISITE: CHAT A, B, C must all be complete.
+⚠ PREREQUISITE: CHAT A and CHAT B must be complete.
+
+⛔ DO NOT attach or read orchestration/fragments/chatgpt.html. GPT is not part of this workflow.
 
 Attach:
   @orchestration/fragments/trendwatch.html
   @orchestration/fragments/claude.html
   @orchestration/fragments/composer.html
-  @orchestration/fragments/chatgpt.html
   @prompts/gba-pulse-curator-prompt.md
   @prompts/gba-pulse-trend-scoring.md
 
-You are the LIVE EDITION merger for GBA Pulse.
+You are the Trending News merger for GBA Pulse (panel-overall).
 
 MERGER RULES (in priority order):
 
@@ -194,27 +171,29 @@ MERGER RULES (in priority order):
 
 2. Among Trend Watch-anchored topics, rank by:
    - Composite trend score (highest first)
-   - Cross-model overlap (3-model agreement > 2 > 1)
+   - Cross-model overlap (both Claude and Composer > single panel only)
    - GBA/HK/Macao editorial relevance
    - Freshness of verification (prefer ≤48h articles)
 
-3. Normalize duplicates from the three model panels into single entries.
+3. Normalize duplicates from the **Claude and Composer panels only** into single entries.
 
-4. If a model panel included a topic with an article from weeks or months ago but
+4. If a panel included a topic with an article from weeks or months ago but
    that topic IS on the Trend Watch boards, keep the topic but update the summary
    to explain the CURRENT spike rather than the original story.
 
-5. Do NOT promote any topic not on the Trend Watch boards, even if all three
-   models mentioned it. Move it to Key Observations instead.
+5. Do NOT promote any topic not on the Trend Watch boards, even if both panels
+   mentioned it. Move it to Key Observations instead.
 
-6. Content mix reference (tie-breaker only, not a quota):
+6. Do NOT use topics, rankings, or copy that appear only in chatgpt.html or any GPT run.
+
+7. Content mix reference (tie-breaker only, not a quota):
    innovation/business ~50%, arts/culture ~30%, food/drink ~15%, other ~15%;
    mainland GBA ~50%, HK ~30%, Macao ~20%.
 
-7. Every .topic-meta: source/date after location; 📊 line shows
+8. Every .topic-meta: source/date after location; 📊 line shows
    "Trend score: NN/100 · N platforms (…)".
 
-8. Every .why-box: <strong>Interesting Angles</strong> + 2–3 bullet points written as
+9. Every .why-box: <strong>Interesting Angles</strong> + 2–3 bullet points written as
    open QUESTIONS or editorial prompts for editors — not explanations of why it's
    trending. E.g. "Where are the top watch-party venues in HK for this match?" Do NOT
    put platform chips inside .why-box; those belong in .topic-meta only.

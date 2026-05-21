@@ -1,23 +1,20 @@
 GBA Pulse — parallel multi-model architecture
 =============================================
 
-Yes, you can run all three models in parallel and land updates in one HTML
-file. Use one of these patterns (or combine them).
+Run **Claude + Composer** in parallel, then merge to Trending News (overall).
+GPT-5.5 is **not** part of this workflow.
 
 ---------------------------------------------------------------------------
 1) Cursor IDE: Multitask / parallel agents (human-in-the-loop)
 ---------------------------------------------------------------------------
-Open several Cursor agent or Composer sessions at once (**Multitask Mode**, when available). Copy-paste starters: **`orchestration/COPY_FOR_PARALLEL_AGENTS.txt`**. Give each session the same @-attachments
+Open two Cursor agent or Composer sessions at once (**Multitask Mode**, when available). Copy-paste starters: **`orchestration/COPY_FOR_PARALLEL_AGENTS.txt`**. Give each session the same @-attachments
 (prompts/gba-pulse-curator-prompt.md, references/source-links.md,
-templates/gba-pulse-template.html) but pin a different model:
+templates/gba-pulse-template.html, orchestration/fragments/trendwatch.html) but pin a different model:
 
-  • Composer 2
-  • Claude Sonnet 4.6
-  • GPT-5.5
+  • CHAT A — Claude Sonnet 4.6  → orchestration/fragments/claude.html
+  • CHAT B — Composer 2         → orchestration/fragments/composer.html
 
-Each session writes its HTML to a **fragment file** under
-orchestration/fragments/ (see filenames below), not directly to index.html, so
-nothing collides on disk. When all three finish:
+When both finish, run **CHAT D** (merger) — reads claude.html + composer.html only, **not** chatgpt.html — then:
 
   node scripts/merge-briefing-panels.mjs
 
@@ -25,7 +22,7 @@ That splices fragments into index.html between the <!-- GBA_MERGE:... -->
 markers. Commit and deploy.
 
 Why fragments first?
-  Three processes writing the same file without coordination will corrupt
+  Two processes writing the same file without coordination will corrupt
   the file. Fragments + one merge step is the smallest safe “parallel write”
   pattern.
 
@@ -33,44 +30,35 @@ Why fragments first?
 2) Programmatic: Cursor TypeScript SDK (true parallel)
 ---------------------------------------------------------------------------
 From a script (local machine or CI with repo checkout + CURSOR_API_KEY), call
-`Agent.prompt` three times inside `Promise.all`, each with a different
-`model: { id: "..." }`. Confirm current model IDs with:
+`Agent.prompt` twice inside `Promise.all`, each with a different
+`model: { id: "..." }` (Claude + Composer only). Confirm current model IDs with:
 
   import { Cursor } from "@cursor/sdk";
   const models = await Cursor.models.list({ apiKey: process.env.CURSOR_API_KEY });
 
-Typical IDs include `composer-2`; Claude / GPT slugs depend on your account —
-do not hardcode without listing first.
-
 Each prompt should instruct the agent to **write only** to e.g.
-orchestration/fragments/claude.html (full inner HTML for that panel), not
-index.html. A follow-up `node scripts/merge-briefing-panels.mjs` step (or the
-same script invoked after `Promise.all`) performs the splice.
-
-SDK reference: see Cursor docs for @cursor/sdk and Agent.prompt / Agent.create.
-
-Caveats:
-  • Rate limits / queueing: three simultaneous cloud or local runs may be
-    throttled; have a retry or run two parallel + one sequential if needed.
-  • Local runs need a clean git tree or explicit paths so agents do not fight
-    over unrelated edits.
-  • Overall (Live Edition) tab is still usually a **fourth** editorial merge
-    step (human or a dedicated “merger” agent that reads the three fragments).
+orchestration/fragments/claude.html or composer.html (full inner HTML for that panel), not
+index.html. A follow-up merger step reads both fragments and writes overall.html, then
+`node scripts/merge-briefing-panels.mjs` splices into index.html.
 
 ---------------------------------------------------------------------------
 3) Markers and merge script (already in the repo)
 ---------------------------------------------------------------------------
 index.html contains paired comments:
 
-  <!-- GBA_MERGE:claude:START -->   ... editable panel body ...   <!-- GBA_MERGE:claude:END -->
-  <!-- GBA_MERGE:composer:START --> ... <!-- GBA_MERGE:composer:END -->
-  <!-- GBA_MERGE:chatgpt:START -->  ... <!-- GBA_MERGE:chatgpt:END -->
+  <!-- GBA_MERGE:overall:START -->   ... Trending News (merged) ...   <!-- GBA_MERGE:overall:END -->
+  <!-- GBA_MERGE:claude:START -->    ... <!-- GBA_MERGE:claude:END -->
+  <!-- GBA_MERGE:composer:START -->  ... <!-- GBA_MERGE:composer:END -->
+  <!-- GBA_MERGE:trendwatch:START --> ... <!-- GBA_MERGE:trendwatch:END -->
 
-Default fragment paths:
+Merged by `merge-briefing-panels.mjs`:
 
+  orchestration/fragments/overall.html
   orchestration/fragments/claude.html
   orchestration/fragments/composer.html
-  orchestration/fragments/chatgpt.html
+  orchestration/fragments/trendwatch.html
+
+`chatgpt.html` is **not** merged (GPT panel hidden and unused).
 
 Merge:
 
@@ -81,15 +69,7 @@ Optional overrides:
   node scripts/merge-briefing-panels.mjs --index=./index.html --claude=./path/to/claude.html
 
 ---------------------------------------------------------------------------
-4) Optional next step: “Overall” automation
----------------------------------------------------------------------------
-Add <!-- GBA_MERGE:overall:START --> inside panel-overall’s <main> if you want a
-fourth fragment, or run a separate merger prompt that reads the three fragments
-and outputs merged Top 10, then merge-briefing-panels or a second script
-applies it.
-
----------------------------------------------------------------------------
-5) Deploy
+4) Deploy
 ---------------------------------------------------------------------------
 After merge: git add index.html orchestration/fragments/*.html && commit && push;
 your static host serves index.html as usual.

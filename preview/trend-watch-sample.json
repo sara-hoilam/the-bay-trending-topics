@@ -86,6 +86,20 @@
       ]
     },
     {
+      "id": "weibo",
+      "boardLabel": "实时热搜",
+      "subtitle": "Weibo realtime hot · mainland China",
+      "sourceUrl": "https://s.weibo.com/top/summary?cate=realtimehot",
+      "capturedAt": "2026-05-14T08:14:00+08:00",
+      "items": [
+        { "rank": 1, "title": "示例热搜话题一", "searchVolume": "≈2.1M 热度", "pin": "📍🇨🇳" },
+        { "rank": 2, "title": "示例热搜话题二", "searchVolume": "≈1.8M 热度", "pin": "📍🇨🇳" },
+        { "rank": 3, "title": "示例热搜话题三", "searchVolume": "≈1.5M 热度", "pin": "📍🇨🇳" },
+        { "rank": 4, "title": "示例热搜话题四", "searchVolume": "≈1.2M 热度", "pin": "📍🇨🇳" },
+        { "rank": 5, "title": "示例热搜话题五", "searchVolume": "≈1.0M 热度", "pin": "📍🇨🇳" }
+      ]
+    },
+    {
       "id": "x_twitter",
       "boardLabel": "United States",
       "subtitle": "X trends · trends24 proxy",

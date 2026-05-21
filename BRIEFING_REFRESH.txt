@@ -1,9 +1,11 @@
-GBA Pulse — manual refresh in Cursor (Composer 2 · Claude Sonnet 4.6 · GPT-5.5)
+GBA Pulse — manual refresh in Cursor (Composer 2 · Claude Sonnet 4.6)
 ================================================================================
 
 Goal
 ----
-Fill `index.html` in this repo: four tabs (Live Edition = merged overall, Claude, Composer, GPT-5.5). No database — you overwrite the file, then git push to your live host (GitHub Pages, Netlify, Vercel, S3, etc.).
+Fill `index.html` in this repo: Trending News tab = merged overall; optional Claude/Composer panels (hidden in UI). No database — you overwrite fragments, merge, then git push to your live host (GitHub Pages, Netlify, Vercel, S3, etc.).
+
+GPT-5.5 is **not** used in the Trending News workflow.
 
 What to attach each run
 -------------------------
@@ -15,7 +17,7 @@ In every Cursor chat, @-mention (or attach) at least:
 
 Optionally @ index.html so the model sees the exact CSS classes for `.topic`, `.why-box`, etc.
 
-Three model runs (separate chats or sequential in one chat after changing model)
+Two model runs (separate chats or sequential in one chat after changing model)
 ---------------------------------------------------------------------------------
 1) Composer 2 — open Composer, set model to **Composer 2**, then ask:
 
@@ -26,19 +28,16 @@ Three model runs (separate chats or sequential in one chat after changing model)
 
 2) Claude Sonnet 4.6 — new Agent chat, model **Claude Sonnet 4.6**, same instruction.
 
-3) GPT-5.5 — new Agent chat, model **GPT-5.5**, same instruction.
-
 Where to paste in index.html
 -----------------------------
 Search for these element ids and replace only the inner <main class="wrapper"> … </main> of each panel (keep the outer <div id="panel-…">):
 
   id="panel-claude"     → Claude Sonnet 4.6 run
   id="panel-composer"   → Composer 2 run
-  id="panel-chatgpt"    → GPT-5.5 run
 
-Live Edition (overall)
-----------------------
-Edit id="panel-overall": replace the ten topics (and sections below) with your **merged** Top 10 using overlap, velocity, and impact across the three runs.
+Trending News (overall)
+-----------------------
+Edit id="panel-overall": replace the ten topics (and sections below) with your **merged** Top 10 using overlap, velocity, and impact across **Claude + Composer only** (see orchestration/COPY_FOR_PARALLEL_AGENTS.txt CHAT D).
 
 Preview locally
 ---------------
@@ -50,8 +49,8 @@ Open http://localhost:8765/index.html
 
 Parallel runs (see orchestration/PARALLEL_BRIEFING.txt)
 -------------------------------------------------------
-Three Cursor sessions (or one SDK script with Promise.all) can each write
-orchestration/fragments/claude.html | composer.html | chatgpt.html, then:
+Two Cursor sessions (or one SDK script with Promise.all) can each write
+orchestration/fragments/claude.html and composer.html, then CHAT D merges to overall.html, then:
 
   node scripts/merge-briefing-panels.mjs
 
@@ -64,4 +63,4 @@ Deep links to tabs
 http://yoursite.example/index.html#overall
 http://yoursite.example/index.html#claude
 http://yoursite.example/index.html#composer
-http://yoursite.example/index.html#chatgpt
+http://yoursite.example/index.html#trendwatch

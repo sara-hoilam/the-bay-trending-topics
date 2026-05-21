@@ -42,6 +42,7 @@ You refresh the **Trend Watch** tab in GBA Pulse by editing one HTML fragment. T
 
 - **Google Trends — Trending Now** (48h, search volume sort): one board per geo — e.g. HK, US, GB, MO, JP, SG, IN — populated **from that page’s table**, into `itemsByLocation`.
 - **Baidu realtime**: `https://top.baidu.com/board?tab=realtime` — top five.
+- **Weibo realtime hot (微博实时热搜)**: `https://s.weibo.com/top/summary?cate=realtimehot` — top five. Use **`cate=realtimehot`** only (not 要闻 or other tabs). Copy exact topic titles and heat labels from the on-site table (e.g. `1234567` 热度 or `≈1.2M 热度`). The page may show a login wall in headless fetch — open in a normal browser session and transcribe live rows; do not invent titles.
 - **X / Twitter trends (proxy)**: e.g. `https://trends24.in/united-states/` or another live trends page the newsroom uses — top five, US unless the product owner specifies another geo.
 
 ## JSON schema (top level)
@@ -84,9 +85,11 @@ You refresh the **Trend Watch** tab in GBA Pulse by editing one HTML fragment. T
 - **`volumeEstimate`**: numeric estimate aligned with the UI (used for scoring).
 - **`growthPercent`**: breakout / growth % from the UI if shown; if not shown, use `0` or omit and note in disclaimer.
 
-### Sections: `baidu`, `x_twitter`
+### Sections: `baidu`, `weibo`, `x_twitter`
 
-`id` must be `"baidu"` or `"x_twitter"`.
+`id` must be `"baidu"`, `"weibo"`, or `"x_twitter"`.
+
+For **Weibo**, set `sourceUrl` to `https://s.weibo.com/top/summary?cate=realtimehot` and `boardLabel` to e.g. `实时热搜`. Use `pin`: `📍🇨🇳`. Format `searchVolume` like Baidu where possible (e.g. `≈2.1M 热度`).
 
 Each has `boardLabel`, `subtitle`, `sourceUrl`, `capturedAt`, and `items` (five rows):
 
@@ -131,7 +134,7 @@ Scores must follow **`prompts/gba-pulse-trend-scoring.md`** (35% volume + 35% ve
 ## Quality bar
 
 - **Google:** data must be from the **48-hour** Trending Now view (confirm in UI + `hours=48` in each `sourceUrl`). Do **not** ship a capture that matches only the last ~4 hours. Volumes must reflect the **on-site** table, not RSS `approx_traffic`. If you only have RSS, you have **not** met the quality bar — use `"—"` for volume until you can read the table.
-- **`topicCandidates`:** must be present and scored per `gba-pulse-trend-scoring.md` using only this capture’s board rows — not training-data memory or old news. Briefing agents (CHAT A/B/C/D) read this array as their **only** topic source. An empty or missing array causes those agents to fall back to stale content. Always produce it.
+- **`topicCandidates`:** must be present and scored per `gba-pulse-trend-scoring.md` using only this capture’s board rows — not training-data memory or old news. Briefing agents (CHAT A/B/D — Claude, Composer, merger) read this array as their **only** topic source. An empty or missing array causes those agents to fall back to stale content. Always produce it.
 - Titles must match **live** boards at capture time; no placeholder “Example …” rows unless the board is genuinely empty (use em-dash titles sparingly; a **short** `disclaimer` is OK).
 - ISO timestamps on `refreshedAt`, `capturedAt`, and per-row `capturedAt` when the UI shows a scrape time.
 - Ensure JSON has **no** raw `</script>` sequences inside string values (break with `<\/script>` in HTML if ever needed).

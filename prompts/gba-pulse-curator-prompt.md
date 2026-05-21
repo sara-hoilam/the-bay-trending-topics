@@ -26,6 +26,7 @@ If the Trend Watch JSON is empty, clearly stale (capture date > 48h ago), or has
 
 - **Google Trends Trending Now** — HK, MO, US, GB, SG, JP, IN (48h, sort=search-volume)
 - **Baidu 热搜** — realtime top
+- **Weibo 实时热搜** — `https://s.weibo.com/top/summary?cate=realtimehot`
 - **X / trends24** — US trends proxy
 
 These boards show what people are **actively searching and discussing right now**. They go stale fast. That is the list you are curating from.
@@ -38,7 +39,7 @@ These boards show what people are **actively searching and discussing right now*
 
 Read every row from `sections`:
 - `google_trends.itemsByLocation` — **all geos without exception**: HK, US, GB, MO, JP, SG, IN (and any others present). Do not skip any geo here. A topic trending only in US or JP may still be highly GBA-relevant (financial news, AI releases, geopolitics).
-- `baidu.items`, `x_twitter.items`
+- `baidu.items`, `weibo.items`, `x_twitter.items`
 
 Skip rows where `title` is `—` or blank.
 
@@ -145,5 +146,6 @@ Do not type `→` — CSS renders it automatically.
 
 - Attach: `prompts/gba-pulse-trend-scoring.md`, `orchestration/fragments/trendwatch.html`
 - Use `references/source-links.md` for live board URLs
-- Output paths: `orchestration/fragments/claude.html`, `composer.html`, `chatgpt.html`, `overall.html`
+- Model panel outputs: `orchestration/fragments/claude.html`, `composer.html` only (GPT/chatgpt is **not** used in the Trending News workflow).
+- Merger output: `orchestration/fragments/overall.html` — merge **Claude + Composer only**; do not read `chatgpt.html`.
 - No `<html>`, `<head>`, `<body>`, outer `<main>`, footer, or scripts

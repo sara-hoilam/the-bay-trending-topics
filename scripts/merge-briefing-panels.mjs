@@ -104,7 +104,8 @@ const defaults = {
 
 let html = fs.readFileSync(args.index, "utf8");
 
-for (const zone of ["overall", "claude", "composer", "chatgpt", "trendwatch"]) {
+// chatgpt zone omitted — Trending News uses Claude + Composer only; panel stays hidden in UI
+for (const zone of ["overall", "claude", "composer", "trendwatch"]) {
   const fragPath = args[zone] ?? defaults[zone];
   if (!fs.existsSync(fragPath)) {
     console.warn(`Skip ${zone}: file not found: ${fragPath}`);

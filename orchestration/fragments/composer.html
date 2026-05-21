@@ -1,40 +1,41 @@
-<!--
-  Self-audit (Trend Watch → topics only; capture refreshedAt 2026-05-20T01:26:00+08:00)
-  Rank | Topic (normalized)              | Score | Platforms / evidence
-  1    | Arsenal / title-parade cluster   | 90    | Google GB #2 arsenal parade 500K+; SG #4 arsenal vs burnley 10K+; X US #2 Arsenal
-  2    | Putin Beijing / China–Russia     | 88    | Baidu #1 中俄关系 ≈7.90M; #2 普京抵达北京 ≈7.81M; #3 王毅迎接 ≈7.71M
-  3    | Premier League (generic)         | 84    | Google HK #1 英超 20K+; US #5 premier league 500K+
-  4    | Bournemouth vs Manchester City   | 82    | Google HK #4; GB #3; SG #2 (all 20K–200K+ buckets)
-  5    | Chelsea vs Tottenham Hotspur   | 80    | Google GB #1 chelsea vs spurs 500K+
-  6    | HK Observatory + tropical cyclone| 72    | Google HK #2 天文台 10K+; #3 熱帶氣旋 5K+ (merged weather cluster)
-  7    | SMILE (微笑) satellite launch    | 68    | Baidu #4 “微笑”卫星 ≈7.62M
-  8    | Japanese automaker earnings shock| 66    | Baidu #5 又一家日本车企暴雷 ≈7.52M
-  9    | IPL (LSG vs RR)                  | 60    | Google IN #1 lsg vs rr 2M+
- 10    | WhatsApp                         | 55    | Google HK #5 whatsapp 5K+
--->
-  <p class="editor-hint"><strong>Editorial:</strong> In Cursor, choose model <strong>Composer 2</strong>, attach <code>prompts/gba-pulse-curator-prompt.md</code> + <code>orchestration/fragments/trendwatch.html</code>, then fill this panel. Topics must trace to the Trend Watch JSON — news links only verify context.</p>
-  <p class="model-tag">Cursor Composer 2 · Date: 2026-05-20 · Generated: 02:05 HKT · Board capture labelled May 20, 2026 ~01:20 HKT</p>
+  <p class="editor-hint"><strong>Editorial:</strong> In Cursor, choose model <strong>Composer 2</strong>, attach the curator prompt and <code>trendwatch.html</code>, run <strong>Run GBA Pulse</strong>, then merge via <code>scripts/merge-briefing-panels.mjs</code> when ready.</p>
+  <p class="model-tag">Cursor Composer 2 — today&apos;s run · Date: 2026-05-21 · Generated: 09:30 HKT · Boards snapshot: <code>refreshedAt</code> 2026-05-21T01:42:00+08:00</p>
+
+  <!-- Self-audit (Trend Watch JSON only)
+  Rank | Topic | Score | Platforms | Evidence
+  1 | HK Observatory / weather | 95 | Google HK | #1 天文台 50K+; #3 hko 10K+
+  2 | Xi–Putin / China–Russia statements | 92 | Baidu | #1 会见记者 ≈7.90M; #2 联合声明 ≈7.81M; #4 关键之年 ≈7.62M
+  3 | Premier League cluster | 88 | Google HK, US, GB, SG | HK #4–5 10K+; US #3 500K+; GB #1–5 200–500K+; SG #1 20K+
+  4 | NBA playoffs (Cavs–Knicks, OKC) | 84 | Google US | #1 1M+; #2 500K+
+  5 | Japan public alert 警報 | 82 | Google JP | #1 1M+
+  6 | Primary-school umbrella returns | 78 | Baidu | #3 ≈7.71M
+  7 | HK Education Bureau | 74 | Google HK | #2 教育局 10K+
+  8 | Scenic slogan backlash | 73 | Baidu | #5 ≈7.52M
+  9 | Freiburg vs Aston Villa | 70 | Google GB, SG | GB #1 500K+; SG #2 10K+
+  10 | IPL CSK vs GT | 64 | Google IN | #5 board row
+  -->
 
   <div class="topic" style="animation-delay:0.05s">
     <div class="topic-rank">1</div>
     <div class="topic-body">
-      <div class="topic-cat">Sports · Premier League</div>
+      <div class="topic-cat">Weather · Hong Kong</div>
       <h2 class="topic-title">
-        <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Arsenal Title Arc: Parade Plans and Burnley Echo on HK–US–SG Google Rows</a>
+        <a href="https://www.hko.gov.hk/en/wxinfo/currwx/tc.htm" target="_blank" rel="noopener noreferrer">天文台 at #1 (50K+): HK Google Trending Now Hands the Board to Storm Season</a>
       </h2>
-      <p class="topic-summary">The latest 48-hour boards bundle GB interest in an Arsenal victory parade, a live SG bucket for Arsenal–Burnley, and a US X cluster for the club — stacking on Hong Kong&apos;s generic「英超」surge as the season hits its last fixtures.</p>
+      <p class="topic-summary">Hong Kong&apos;s 48-hour Trending Now capture puts「天文台」at the top bucket (50K+ searches) with「hko」also in the top five (10K+) — the classic dual-branding pattern when humidity, heat warnings, or cyclone watches concentrate public attention ahead of summer.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>Where should Hong Kong Arsenal supporters gather if the title is clinched — which pubs already took deposits for the final matchday, and are any GBA Shenzhen bars marketing coach packages?</li>
-          <li>If a London parade is confirmed, what is the airlift and hotel story for travelling HK fans — are CX/BA adding capacity or is everything already wait-listed?</li>
+          <li>Are cross-border coaches, HZMB shuttle operators, and outdoor-event insurers already seeing measurable cancellations when HKO hoists early signals — or is search volume still mostly precautionary?</li>
+          <li>Which neighbourhoods rely on unofficial forecast screenshots versus the official app — and where does misinformation spike first during signal upgrades?</li>
+          <li>How should Macao and Zhuhai hospitality brief Cantonese-speaking guests when Hong Kong and Guangdong warnings are not perfectly synchronized?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> London · Hong Kong, Singapore, US/North American fans · GBA travel corridor</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">BBC Sport</a> · Posted: date not shown (accessed 2026-05-20)</span>
-        <span><span class="icon">📊</span> Trend score: 90/100 · 3 platforms (Google GB + SG, X US)</span>
-        <span><span class="badge badge-pos">✦ Positive</span></span>
+        <span><span class="icon">📍</span> Hong Kong SAR · Pearl River Delta coastline · Macao marine routes</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.hko.gov.hk/en/wxinfo/currwx/tc.htm" target="_blank" rel="noopener noreferrer">Hong Kong Observatory</a> · Posted: rolling warnings (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 95/100 · 1 platform (Google HK #1 + #3 cluster)</span>
+        <span><span class="badge badge-mix">✦ Mixed</span></span>
       </div>
     </div>
   </div>
@@ -44,20 +45,21 @@
     <div class="topic-body">
       <div class="topic-cat">Geopolitics · China / Russia</div>
       <h2 class="topic-title">
-        <a href="https://www.scmp.com/news/china/diplomacy/article/3353816/after-china-us-reset-putin-heads-beijing-sino-russian-strategic-refresh" target="_blank" rel="noopener noreferrer">Putin in Beijing: Baidu Board Sweeps Dominated by Arrival and &quot;Correct Track&quot; Line</a>
+        <a href="https://www.aljazeera.com/news/2026/5/20/multipolar-world-what-xi-and-putin-announced-after-beijing-summit" target="_blank" rel="noopener noreferrer">Xi–Putin Press Pack Occupies Baidu #1–2–4 as Joint Statements Drop</a>
       </h2>
-      <p class="topic-summary">Three consecutive realtime rows — Party-line headline, Putin&apos;s landing, and Wang Yi on the tarmac — each logged ≈7.7–7.9M 热搜指数 in the capture, crowding out almost every other mainland public topic for hours.</p>
+      <p class="topic-summary">Mainland realtime search is dominated by the leaders&apos; joint press appearance (≈7.90M), the China–Russia joint statement line (≈7.81M), and the &quot;关键之年&quot; diplomacy framing (≈7.62M) — a contiguous cluster that crowded out most other public topics in this capture.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>If a Power of Siberia 2-style gas contour is announced, how do Hong Kong utilities and Guangdong industrial buyers model marginal cost shifts versus LNG-linked contracts?</li>
-          <li>With Trump&apos;s Beijing stop immediately preceding this visit, which HK legal and banking desks are gaming sanctions secondary effects on dollar clearing vs. renminbi legs?</li>
+          <li>Which Hong Kong dollar-clearing and sanctions-compliance desks are stress-testing renminbi legs versus euro- and dollar-denominated Russia trade after the summit language?</li>
+          <li>If energy or currency side-letters emerge, how do Guangdong power importers and LNG buyers model marginal cost shifts versus long-term contracts?</li>
+          <li>Where does party-line Baidu framing diverge from Reuters, Al Jazeera, or SCMP on deliverables — what must editors verify line-by-line before publishing?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Beijing · GBA finance and energy read-through</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.scmp.com/news/china/diplomacy/article/3353816/after-china-us-reset-putin-heads-beijing-sino-russian-strategic-refresh" target="_blank" rel="noopener noreferrer">SCMP</a> · Posted: 16 May 2026</span>
-        <span><span class="icon">📊</span> Trend score: 88/100 · 1 platform (Baidu #1–3 cluster)</span>
+        <span><span class="icon">📍</span> Beijing narrative · GBA finance, energy, and trade read-through</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.aljazeera.com/news/2026/5/20/multipolar-world-what-xi-and-putin-announced-after-beijing-summit" target="_blank" rel="noopener noreferrer">Al Jazeera</a> · Posted: 20 May 2026</span>
+        <span><span class="icon">📊</span> Trend score: 92/100 · 1 platform (Baidu #1–2–4 cluster)</span>
         <span><span class="badge badge-mix">✦ Mixed</span></span>
       </div>
     </div>
@@ -68,21 +70,22 @@
     <div class="topic-body">
       <div class="topic-cat">Sports · Premier League</div>
       <h2 class="topic-title">
-        <a href="https://www.premierleague.com/en" target="_blank" rel="noopener noreferrer">「英超」+ US &quot;premier league&quot;: Dual-Hemisphere Search Stack</a>
+        <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Premier League Still Owns the Multi-Geo Row: HK #4–5, US 500K+, GB Half-Million Fixtures</a>
       </h2>
-      <p class="topic-summary">Hong Kong&apos;s #1 row is the Chinese shorthand for the Premier League while the United States board still carries a half-million &quot;premier league&quot; bucket — the same competition narrated in two languages at massive scale.</p>
+      <p class="topic-summary">Even with weather at #1 locally,「英超」and &quot;premier league&quot; remain in Hong Kong&apos;s top five (10K+ each). The same narrative crosses the United States (500K+), Britain (500K+ on multiple fixtures), and Singapore (20K+ #1 row) — the strongest cross-border sports cluster in the snapshot besides basketball.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>How much of Hong Kong&apos;s overnight search lift is organic fandom versus algorithmic spill from gambling, highlights clips, and pirate streams — can any vendor share VPN-offshore stats ethically?</li>
-          <li>Do Pearl River Delta hotels still run coach packages for midnight Premier League pubs — which tier-one city has the densest licensed venues now that Haikou/Sanya have their own sports-bar clusters?</li>
+          <li>Which Lan Kwai Fong, Tsim Sha Tsui, and Cotai venues are packaging final-week fixtures for tourists who paired football with a GBA city break?</li>
+          <li>How much of Hong Kong&apos;s English-query lift is driven by fantasy leagues, offshore streams, and in-play betting chatter versus stadium tourism to the UK?</li>
+          <li>If Arsenal parade or relegation drama spikes again, does Cathay or regional carriers show measurable UK-bound seat repricing?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Hong Kong SAR · United States audience · GBA night-economy spillover</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.premierleague.com/en" target="_blank" rel="noopener noreferrer">Premier League official</a> · Posted: rolling fixtures (accessed 2026-05-20)</span>
-        <span><span class="icon">📊</span> Trend score: 84/100 · 1 platform (Google HK + US geos)</span>
-        <span><span class="badge badge-neu">✦ Neutral</span></span>
+        <span><span class="icon">📍</span> UK fixtures · Hong Kong, Singapore, US audiences · GBA night economy</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">BBC Sport</a> · Posted: rolling fixtures (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 88/100 · 4 platforms (Google HK, US, GB, SG)</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
       </div>
     </div>
   </div>
@@ -90,23 +93,24 @@
   <div class="topic" style="animation-delay:0.20s">
     <div class="topic-rank">4</div>
     <div class="topic-body">
-      <div class="topic-cat">Sports · Premier League</div>
+      <div class="topic-cat">Sports · NBA</div>
       <h2 class="topic-title">
-        <a href="https://www.premierleague.com/en/match/2562255/bournemouth-vs-manchester-city" target="_blank" rel="noopener noreferrer">Bournemouth vs Manchester City: Same Fixture, Three Google Geos</a>
+        <a href="https://www.nba.com/news" target="_blank" rel="noopener noreferrer">Cavaliers vs Knicks at 1M+ and OKC at 500K+ Anchor US Google</a>
       </h2>
-      <p class="topic-summary">The Vitality Stadium title-race fixture appears simultaneously on Hong Kong, United Kingdom, and Singapore Trending Now tables — classic pattern when kickoff time hits multiple Asia-Pacific finance hubs.</p>
+      <p class="topic-summary">The US Trending Now board leads with playoff matchups at seven-figure and half-million search buckets — a late-night viewership block for Hong Kong and Singapore youth audiences that often shows up in café screens and illegal-stream discourse even without a local Google row.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>City&apos;s line-up narratives now reference continental keepers and loanees leaked on social before team sheets — where is HK sport media sourcing those early drops, and is the FA examining another integrity lane?</li>
-          <li>If the title race goes to goal difference, how are HK book-linked Super League affiliates hedging liability — any visible skew in in-play liquidity?</li>
+          <li>Which Hong Kong venues still hold legitimate NBA broadcast licences — and how do they compete with VPN-fed US feeds?</li>
+          <li>Does playoff star power move sneaker resale or training-camp sign-ups for GBA teens?</li>
+          <li>When US X trends are pure sports while Baidu is geopolitics, how should a GBA front page balance reader demand?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Bournemouth, UK · Hong Kong, Singapore discovery</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.premierleague.com/en/match/2562255/bournemouth-vs-manchester-city" target="_blank" rel="noopener noreferrer">Premier League — match centre</a> · Posted: fixture MW37 (accessed 2026-05-20)</span>
-        <span><span class="icon">📊</span> Trend score: 82/100 · 1 platform (Google HK + GB + SG)</span>
-        <span><span class="badge badge-neu">✦ Neutral</span></span>
+        <span><span class="icon">📍</span> United States arenas · Hong Kong, Macao late-night sports viewers</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.nba.com/news" target="_blank" rel="noopener noreferrer">NBA.com</a> · Posted: rolling coverage (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 84/100 · 1 platform (Google US #1–2)</span>
+        <span><span class="badge badge-pos">✦ Positive</span></span>
       </div>
     </div>
   </div>
@@ -114,22 +118,23 @@
   <div class="topic" style="animation-delay:0.25s">
     <div class="topic-rank">5</div>
     <div class="topic-body">
-      <div class="topic-cat">Sports · Premier League</div>
+      <div class="topic-cat">Weather · Japan (GBA spillover)</div>
       <h2 class="topic-title">
-        <a href="https://www.premierleague.com/en/match/2562259/chelsea-vs-tottenham-hotspur" target="_blank" rel="noopener noreferrer">Chelsea vs Spurs Tops Britain at 500K+ — Relegation Psychology Meets Europe Hunt</a>
+        <a href="https://www.jma.go.jp/bosai/warning/" target="_blank" rel="noopener noreferrer">警報 at 1M+ on Japan Google — Regional Alert Culture HK Travellers Know Well</a>
       </h2>
-      <p class="topic-summary">Stamford Bridge drama for Spurs&apos; survival arithmetic anchored the UK board&apos;s lead row while trickling into Hong Kong&apos;s generic Premier League chatter.</p>
+      <p class="topic-summary">Japan&apos;s top Trending Now row is「警報」at 1M+ searches in the same capture window as Hong Kong&apos;s Observatory surge — a reminder that East Asian publics now treat push-alert keywords as a first screen for travel and logistics planning.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>Tottenham&apos;s Asian fan roadshows historically anchor in Hong Kong — if the club stumbles toward the drop, do HK supporter trusts pivot activism toward ENIC or local academy tie-ups?</li>
-          <li>Chelsea&apos;s travel-squad kids impressed mid-week — is there a loan-to-Shenzhen or Guangzhou academy pathway worth profiling for a GBA sports desk?</li>
+          <li>How many Pearl River Delta tour groups and cruise passengers had Tokyo or Osaka legs this week — are travel agents fielding mass rebooking calls?</li>
+          <li>Do Hong Kong insurers price Japan typhoon season differently post-2024 experience — any policy fine print travellers miss?</li>
+          <li>Could coordinated JMA–HKO graphics be a service-journalism collaboration during overlapping hazards?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> London · Hong Kong diaspora supporters</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.bbc.com/sport/football/live/clypl797pw9t" target="_blank" rel="noopener noreferrer">BBC Sport — live report</a> · Posted: May 2026 (accessed 2026-05-20)</span>
-        <span><span class="icon">📊</span> Trend score: 80/100 · 1 platform (Google GB #1)</span>
+        <span><span class="icon">📍</span> Japan · Hong Kong outbound travel · aviation links</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.jma.go.jp/bosai/warning/" target="_blank" rel="noopener noreferrer">Japan Meteorological Agency</a> · Posted: active advisories (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 82/100 · 1 platform (Google JP #1)</span>
         <span><span class="badge badge-mix">✦ Mixed</span></span>
       </div>
     </div>
@@ -138,22 +143,23 @@
   <div class="topic" style="animation-delay:0.30s">
     <div class="topic-rank">6</div>
     <div class="topic-body">
-      <div class="topic-cat">Weather · Hong Kong</div>
+      <div class="topic-cat">Society · Mainland viral</div>
       <h2 class="topic-title">
-        <a href="https://www.hko.gov.hk/en/wxinfo/currwx/tc.htm" target="_blank" rel="noopener noreferrer">天文台 + 熱帶氣旋: Twin HK Google Rows as Storm Season Builds</a>
+        <a href="https://www.163.com/dy/article/KTDAEI8205345ARG.html" target="_blank" rel="noopener noreferrer">「全损雨伞」Primary-School Return Row Hits Baidu #3</a>
       </h2>
-      <p class="topic-summary">Observatory branding and explicit tropical-cyclone keywords both sit in Hong Kong&apos;s top five with strong growth percentages — the signature dual signal when humidity rises and models disagree.</p>
+      <p class="topic-summary">A Jiangsu primary-school / parents&apos; committee dispute over returning dozens of used umbrellas (≈7.71M hot-search index) became a morality play about &quot;seven-day no-reason&quot; returns, e-commerce etiquette, and who apologises when pupils&apos; gear is involved.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>Which cross-harbour ferry operators still lack redundant comms for T8 — any post-2024 audit findings worth FOIL-ing through the Transport Department?</li>
-          <li>When citizen apps show a different cone than HKO graphics, who moderates the WhatsApp neighbourhood chats — and should editors publish a compare-contrast explainer proactively?</li>
+          <li>Do Hong Kong and Macao schools see parallel parent-group buying on Taobao-style platforms — is there a cross-border consumer-rights story?</li>
+          <li>Should editors pair the viral clip with plain-language explainers on merchant protection versus abuse of return policies?</li>
+          <li>Could Guangdong manufacturers of cheap rainy-day kit turn this into a &quot;buy local / quality&quot; marketing moment?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Hong Kong SAR · South China Sea basin</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.hko.gov.hk/en/wxinfo/currwx/tc.htm" target="_blank" rel="noopener noreferrer">Hong Kong Observatory</a> · Posted: rolling warnings (accessed 2026-05-20)</span>
-        <span><span class="icon">📊</span> Trend score: 72/100 · 1 platform (Google HK #2–3 cluster)</span>
+        <span><span class="icon">📍</span> Mainland PRD schools discourse · Hong Kong parent forums (mirror chatter)</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.163.com/dy/article/KTDAEI8205345ARG.html" target="_blank" rel="noopener noreferrer">NetEase</a> · Posted: May 2026 (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 78/100 · 1 platform (Baidu #3)</span>
         <span><span class="badge badge-mix">✦ Mixed</span></span>
       </div>
     </div>
@@ -162,23 +168,24 @@
   <div class="topic" style="animation-delay:0.35s">
     <div class="topic-rank">7</div>
     <div class="topic-body">
-      <div class="topic-cat">Space science · China / Europe</div>
+      <div class="topic-cat">Education · Hong Kong</div>
       <h2 class="topic-title">
-        <a href="https://www.chinanews.com.cn/tp/hd2011/2026/05-19/1191702.shtml" target="_blank" rel="noopener noreferrer">微笑 (SMILE) Launch: ESA–CAS Mission Hits Baidu Top Five</a>
+        <a href="https://news.rthk.hk/rthk/ch/component/k2/1853631-20260505.htm" target="_blank" rel="noopener noreferrer">教育局 at #2 (10K+): Subsidy Merge News Meets Post-DSE Attention</a>
       </h2>
-      <p class="topic-summary">A Sino-European magnetosphere imager riding a European launcher punched through mainland hot search with a ≈7.6M index row, feeding patriotic science accounts and aerospace bull threads alike.</p>
+      <p class="topic-summary">Hong Kong&apos;s second Trending Now row is「教育局」with a 10K+ bucket in the same week exam-season attention and policy rollouts (expanded operating grants) keep schools and parents glued to official announcements.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>Which Zhuhai, Shenzhen, or Guangzhou payload subcontractors supplied SMILE components — can you map the supply chain without running afoul of export-control talking points?</li>
-          <li>Space-weather data eventually matters for satellite insurers in Hong Kong — who writes those policies locally, and are premiums budging after this mission&apos;s success narrative?</li>
+          <li>Are PTAs seeing confusion over which grants are consolidated next academic year — is there a paperwork burden story for small schools?</li>
+          <li>How are mainland–Hong Kong digital-education partnerships (e.g. ministerial exchanges) playing in local classrooms beyond the press release?</li>
+          <li>Does search spike track typhoon-related class suspensions, or is it dominated by DSE and placement anxiety this cycle?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Kourou launch / Beijing ops · GBA aerospace supply chain</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.chinanews.com.cn/tp/hd2011/2026/05-19/1191702.shtml" target="_blank" rel="noopener noreferrer">China News</a> · Posted: 19 May 2026</span>
-        <span><span class="icon">📊</span> Trend score: 68/100 · 1 platform (Baidu #4)</span>
-        <span><span class="badge badge-pos">✦ Positive</span></span>
+        <span><span class="icon">📍</span> Hong Kong SAR schools · families · GBA education policy echo</span>
+        <span><span class="icon">📰</span> Source: <a href="https://news.rthk.hk/rthk/ch/component/k2/1853631-20260505.htm" target="_blank" rel="noopener noreferrer">RTHK</a> · Posted: 5 May 2026</span>
+        <span><span class="icon">📊</span> Trend score: 74/100 · 1 platform (Google HK #2)</span>
+        <span><span class="badge badge-neu">✦ Neutral</span></span>
       </div>
     </div>
   </div>
@@ -186,22 +193,23 @@
   <div class="topic" style="animation-delay:0.40s">
     <div class="topic-rank">8</div>
     <div class="topic-body">
-      <div class="topic-cat">Autos · Japan / China market</div>
+      <div class="topic-cat">Tourism · Mainland</div>
       <h2 class="topic-title">
-        <a href="https://finance.sina.com.cn/roll/2026-05-15/doc-inhxxwvn8174536.shtml" target="_blank" rel="noopener noreferrer">Japanese OEM &quot;暴雷&quot; Wave: Baidu #5 as Earnings Pain Goes Viral</a>
+        <a href="https://www.163.com/dy/article/KTD38H7F0512D3VJ.html" target="_blank" rel="noopener noreferrer">「把媳妇孩子扔了吧」Scenic Slogan Blowback — Baidu #5</a>
       </h2>
-      <p class="topic-summary">Sina Finance-style roll-ups on Toyota, Honda, and Nissan profit collapses and US-tariff shock translated into a hot-search slug about another Japanese carmaker in crisis.</p>
+      <p class="topic-summary">A Henan scenic area&apos;s attempt at edgy hiking humour (≈7.52M index) triggered backlash over misogynistic wording; boards reflect how fast tourism marketing can become a nationwide civics debate.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>Guangzhou and Foshan still host major JV plants — which lines are most exposed if HQ orders another export cut to America, and are any retooling to BYDs-for-export?</li>
-          <li>Does Hong Kong&apos;s premium import scene still bet on JDM halo models — are parallel traders stuck with inventory they cannot move at HZMB checkpoints?</li>
+          <li>Which GBA operators are copying viral mountain-park tone without legal or brand review — could Macao or Hengqin attractions face the same trap?</li>
+          <li>Should travel editors publish a &quot;what makes a slogan safe&quot; checklist after this cycle?</li>
+          <li>Do short-video algorithms reward offensive copy before human moderators catch it — who pays the reputation cost?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Japan HQ · Guangdong manufacturing belt · Hong Kong import market</span>
-        <span><span class="icon">📰</span> Source: <a href="https://finance.sina.com.cn/roll/2026-05-15/doc-inhxxwvn8174536.shtml" target="_blank" rel="noopener noreferrer">Sina Finance</a> · Posted: 15 May 2026</span>
-        <span><span class="icon">📊</span> Trend score: 66/100 · 1 platform (Baidu #5)</span>
+        <span><span class="icon">📍</span> Mainland domestic tourism · Hong Kong traveller sentiment</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.163.com/dy/article/KTD38H7F0512D3VJ.html" target="_blank" rel="noopener noreferrer">NetEase / 新京报 commentary</a> · Posted: May 2026 (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 73/100 · 1 platform (Baidu #5)</span>
         <span><span class="badge badge-neg">✦ Negative</span></span>
       </div>
     </div>
@@ -210,22 +218,23 @@
   <div class="topic" style="animation-delay:0.45s">
     <div class="topic-rank">9</div>
     <div class="topic-body">
-      <div class="topic-cat">Cricket · India (GBA audience)</div>
+      <div class="topic-cat">Sports · Football (Europe)</div>
       <h2 class="topic-title">
-        <a href="https://www.iplt20.com/" target="_blank" rel="noopener noreferrer">IPL &quot;lsg vs rr&quot; at 2M+ India Searches — Streaming Ripple in HK &amp; SG</a>
+        <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Freiburg vs Aston Villa: GB #1 and SG #2 Align</a>
       </h2>
-      <p class="topic-summary">The Indian board&apos;s lead bucket is a Lucknow–Rajasthan fixture with a multi-million search estimate — a South Asian diaspora signal that often mirrors Hotstar/Jio spikes audible in Chungking Mansions kiosks and Little India, Singapore.</p>
+      <p class="topic-summary">The same European fixture name sits at the top of Britain&apos;s 48-hour board (500K+) and second in Singapore (10K+), echoing the Premier League cluster but highlighting UEFA competition interest inside the broader football pile-up.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>Which Hong Kong pubs actually secure IPL commercial feeds legally — is the licensing map still a grey market story in 2026?</li>
-          <li>When a night match sends simultaneous DDoS-like load across mobile networks, do HKT/HKT-Singtel peering engineers see correlated jitter worth a technical sidebar?</li>
+          <li>Are Singapore–Hong Kong business travellers doubling city breaks around mid-week European kickoffs — any corporate hospitality trend?</li>
+          <li>Which local pubs split screens between EPL title races and continental ties — does inventory favour one league?</li>
+          <li>Could a surprise villa or underdog storyline become the bilingual meme of the week on Cantonese football pages?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> India venues · Hong Kong &amp; Singapore South Asian communities</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.iplt20.com/" target="_blank" rel="noopener noreferrer">IPL official</a> · Posted: season 2026 (accessed 2026-05-20)</span>
-        <span><span class="icon">📊</span> Trend score: 60/100 · 1 platform (Google IN #1)</span>
+        <span><span class="icon">📍</span> UK / Germany football arc · Singapore · Hong Kong expat bars</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">BBC Sport</a> · Posted: rolling coverage (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 70/100 · 2 platforms (Google GB, SG)</span>
         <span><span class="badge badge-neu">✦ Neutral</span></span>
       </div>
     </div>
@@ -234,23 +243,24 @@
   <div class="topic" style="animation-delay:0.50s">
     <div class="topic-rank">10</div>
     <div class="topic-body">
-      <div class="topic-cat">Consumer tech · Hong Kong</div>
+      <div class="topic-cat">Cricket · India (diaspora ripple)</div>
       <h2 class="topic-title">
-        <a href="https://www.hkcert.org/security-bulletin/whatsapp-multiple-vulnerabilities_20260506" target="_blank" rel="noopener noreferrer">WhatsApp in HK Top Five — Security Patch + Scam Season Overlap</a>
+        <a href="https://www.espncricinfo.com/series/ipl-2026-1510719" target="_blank" rel="noopener noreferrer">IPL「csk vs gt」in India Top Five While HK #1 Stays Weather</a>
       </h2>
-      <p class="topic-summary">Messaging keyword volume sits at the bottom of Hong Kong&apos;s top-five snapshot alongside a fresh HKCERT bulletin on multi-platform CVE fixes — a predictable confluence when fraud PSAs share oxygen with upgrade nag screens.</p>
+      <p class="topic-summary">India&apos;s captured top-five list still includes an IPL slug (CSK vs GT) alongside date and weather terms — a South Asian diaspora signal that often shows up in Hong Kong streaming chatter even when it does not surface on the city&apos;s own top-five rows.</p>
       <div class="why-box">
         <strong>Interesting Angles</strong>
         <ul>
-          <li>AFCD and HKICL both flagged impersonation lures routing victims to WhatsApp — can you stitch a timeline of which government bureau gets hit most each quarter?</li>
-          <li>Family-office compliance teams in Central are mandating archived comms — does Meta&apos;s Business API finally satisfy SFC record-keeping expectations, or are banks still forcing traders onto sanctioned enterprise apps?</li>
+          <li>Which Hong Kong venues legally screen IPL playoffs — is the licensing map still partly grey?</li>
+          <li>Can Macao properties host watch parties that pull Guangdong visitors on match nights?</li>
+          <li>Does cricket remain under-covered in GBA English-language outlets relative to actual viewership?</li>
         </ul>
       </div>
       <div class="topic-meta">
-        <span><span class="icon">📍</span> Hong Kong SAR</span>
-        <span><span class="icon">📰</span> Source: <a href="https://www.hkcert.org/security-bulletin/whatsapp-multiple-vulnerabilities_20260506" target="_blank" rel="noopener noreferrer">HKCERT</a> · Posted: 6 May 2026</span>
-        <span><span class="icon">📊</span> Trend score: 55/100 · 1 platform (Google HK #5)</span>
-        <span><span class="badge badge-mix">✦ Mixed</span></span>
+        <span><span class="icon">📍</span> India league · Hong Kong South Asian communities</span>
+        <span><span class="icon">📰</span> Source: <a href="https://www.espncricinfo.com/series/ipl-2026-1510719" target="_blank" rel="noopener noreferrer">ESPNcricinfo</a> · Posted: 2026 IPL hub (accessed 2026-05-21)</span>
+        <span><span class="icon">📊</span> Trend score: 64/100 · 1 platform (Google IN #5)</span>
+        <span><span class="badge badge-neu">✦ Neutral</span></span>
       </div>
     </div>
   </div>
@@ -258,9 +268,10 @@
   <section class="observations">
     <h2>🔭 Key Observations</h2>
     <ul>
-      <li><strong>Ball-sports gravity:</strong> Five slots tie directly to Premier League boards (Arsenal cluster, generic 英超, Bournemouth–City, Chelsea–Spurs) plus a sixth for India IPL at 2M+ searches — the JSON makes the late-May sports pile-up undeniable, not an editorial fudge.</li>
-      <li><strong>Politics on Baidu, weather on Google HK:</strong> High-index diplomacy rows (Putin / 中俄) sit entirely on realtime while Hong Kong users separately hammer observatory language — dual-register behaviour worth designing distinct push alerts for.</li>
-      <li><strong>Macao gap persists:</strong> Google MO returned only em-dash placeholders again; Macao-specific discovery for this capture is structurally blind — flag when citing city-level tourism stories without a board row.</li>
+      <li><strong>Weather beats football locally:</strong> For this 01:42 HKT capture, Hong Kong&apos;s #1 row is observatory branding, not「英超」— sports still cluster globally but editors should not assume the city&apos;s lead query is always the ball game.</li>
+      <li><strong>Baidu is diplomacy + morality theatre:</strong> Three adjacent geopolitics lines share the summit spotlight while two social-issues slugs (umbrellas, slogans) supply mainland civics debate oxygen at comparable index levels.</li>
+      <li><strong>X / trends24 is entertainment-heavy:</strong> US proxy trends (#Survivor50, wrestling, memes) lacked a defensible GBA news line, so none were promoted into the Top 10 under the hard gate.</li>
+      <li><strong>Data gaps stay honest:</strong> Google MO returned placeholder dashes; Weibo 实时热搜 may need an in-browser pull at https://s.weibo.com/top/summary?cate=realtimehot if rows show —.</li>
     </ul>
   </section>
 
@@ -271,21 +282,27 @@
       <a href="https://trends.google.com/trending?geo=US&amp;sort=search-volume&amp;hours=48" target="_blank" rel="noopener noreferrer">Google Trends — US Trending Now 48h</a>
       <a href="https://trends.google.com/trending?geo=GB&amp;sort=search-volume&amp;hours=48" target="_blank" rel="noopener noreferrer">Google Trends — GB Trending Now 48h</a>
       <a href="https://trends.google.com/trending?geo=SG&amp;sort=search-volume&amp;hours=48" target="_blank" rel="noopener noreferrer">Google Trends — SG Trending Now 48h</a>
+      <a href="https://trends.google.com/trending?geo=JP&amp;sort=search-volume&amp;hours=48" target="_blank" rel="noopener noreferrer">Google Trends — JP Trending Now 48h</a>
       <a href="https://trends.google.com/trending?geo=IN&amp;sort=search-volume&amp;hours=48" target="_blank" rel="noopener noreferrer">Google Trends — IN Trending Now 48h</a>
       <a href="https://top.baidu.com/board?tab=realtime" target="_blank" rel="noopener noreferrer">Baidu — Realtime 热搜</a>
       <a href="https://trends24.in/united-states/" target="_blank" rel="noopener noreferrer">trends24 — US X proxy</a>
-      <a href="https://www.scmp.com/news/china/diplomacy/article/3353816/after-china-us-reset-putin-heads-beijing-sino-russian-strategic-refresh" target="_blank" rel="noopener noreferrer">SCMP — Putin visit</a>
-      <a href="https://www.chinanews.com.cn/tp/hd2011/2026/05-19/1191702.shtml" target="_blank" rel="noopener noreferrer">China News — SMILE launch</a>
       <a href="https://www.hko.gov.hk/en/index.html" target="_blank" rel="noopener noreferrer">Hong Kong Observatory</a>
-      <a href="https://www.hkcert.org/security-bulletin/whatsapp-multiple-vulnerabilities_20260506" target="_blank" rel="noopener noreferrer">HKCERT — WhatsApp bulletin</a>
+      <a href="https://www.jma.go.jp/bosai/warning/" target="_blank" rel="noopener noreferrer">Japan Meteorological Agency</a>
+      <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">BBC Sport</a>
+      <a href="https://www.nba.com/" target="_blank" rel="noopener noreferrer">NBA.com</a>
+      <a href="https://www.aljazeera.com/news/2026/5/20/multipolar-world-what-xi-and-putin-announced-after-beijing-summit" target="_blank" rel="noopener noreferrer">Al Jazeera — Xi–Putin summit read-out</a>
+      <a href="https://news.rthk.hk/rthk/ch/component/k2/1853631-20260505.htm" target="_blank" rel="noopener noreferrer">RTHK — EDB grants</a>
+      <a href="https://www.163.com/dy/article/KTDAEI8205345ARG.html" target="_blank" rel="noopener noreferrer">NetEase — umbrella row</a>
+      <a href="https://www.163.com/dy/article/KTD38H7F0512D3VJ.html" target="_blank" rel="noopener noreferrer">NetEase — scenic slogan commentary</a>
+      <a href="https://www.espncricinfo.com/series/ipl-2026-1510719" target="_blank" rel="noopener noreferrer">ESPNcricinfo — IPL 2026</a>
     </div>
   </section>
 
   <section class="tomorrow">
     <ul>
-      <li>Re-pull Google HK after the next European kickoff block — football rows shuffled rapidly between 英超, specific Cyrillic/Chinese transliterations, and weather keywords during this capture.</li>
-      <li>Watch for a joint Putin–Xi communiqué; energy and currency clauses would re-rate the entire Baidu diplomacy cluster plus HK ADRs.</li>
-      <li>If HKO hoists a higher cyclone signal, expect「天文台」and「熱帶氣旋」to decouple — sometimes one keyword races ahead of the other when aviation cancellations dominate.</li>
-      <li>IPL playoff elimination games could swap Google IN #1 between franchise abbreviations overnight — verify the three-letter slug before filing.</li>
+      <li>Re-pull Google HK after the next HKO signal change —「天文台」and「hko」can invert rank order within minutes when aviation cancels dominate.</li>
+      <li>Watch whether Baidu diplomacy rows stay bundled or split if a new domestic scandal displaces foreign-policy bandwidth.</li>
+      <li>If MO or TikTok boards populate on the next agent run, revisit Macao-specific and hashtag-native candidates before merge.</li>
+      <li>India&apos;s #1 Hindi date row (२१ मई) may swap with cricket slugs around match days — confirm the exact three-letter fixture string before filing.</li>
     </ul>
   </section>

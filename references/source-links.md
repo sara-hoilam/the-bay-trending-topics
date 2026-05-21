@@ -24,6 +24,7 @@ Use these as starting points; verify stories against primary sources. URLs are c
 | Google Trends — Hong Kong | https://trends.google.com/explore?geo=HK |
 | Google Trends — Macau | https://trends.google.com/explore?geo=MO |
 | Baidu realtime hot board | https://top.baidu.com/board?tab=realtime |
+| Weibo realtime hot (实时热搜) | https://s.weibo.com/top/summary?cate=realtimehot |
 
 ## Social & video
 

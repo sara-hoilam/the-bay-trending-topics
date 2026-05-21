@@ -9,7 +9,7 @@ This document defines how to go from raw Trend Watch board data to a **ranked sh
 **Discovery window: last 48 hours only.**
 
 - Google rows come from **Trending Now · 48h** (`hours=48`). Not the 4h default, not RSS.
-- Baidu realtime and X boards are treated as within the same 48h window as Google.
+- Baidu realtime, Weibo realtime hot (`cate=realtimehot`), and X boards are treated as within the same 48h window as Google.
 - A topic whose **only evidence** is a news article **older than 48 hours** and **absent from all Trend Watch boards** does **not** qualify for the Top 10.
 - Older news may be used as one line of background context — never as the reason a topic appears on the list.
 
@@ -25,6 +25,7 @@ Otherwise, collect every non-empty board row from **all geos equally**:
 
 - `sections[id="google_trends"].itemsByLocation` — **every** geo key: HK, US, GB, MO, JP, SG, IN (and any others present). Do **not** skip or deprioritize any geo at this stage.
 - `sections[id="baidu"].items`
+- `sections[id="weibo"].items`
 - `sections[id="x_twitter"].items`
 
 Skip rows where `title` is `"—"` or blank.
@@ -44,6 +45,7 @@ Record every platform hit (including geo) that maps to that story.
 1. Find the best `volumeEstimate` across all platform hits for this candidate.  
    - If `volumeEstimate` is 0 or absent, parse `searchVolume` (e.g. `"20K+ searches"` → 20000, `"1M+"` → 1000000).  
    - For Baidu, parse the numeric part from e.g. `"≈7.9M 热搜指数"` → 7900000.  
+   - For Weibo, parse heat from e.g. `"≈2.1M 热度"` or a plain numeric heat string → numeric estimate.  
    - If no numeric volume at all, use `0`.
 2. Find `maxVolume` = highest best-volume across **all** candidates in this capture.
 3. `volumeScore = round(100 × log10(1 + bestVolume) / log10(1 + maxVolume))`  
@@ -60,11 +62,12 @@ Record every platform hit (including geo) that maps to that story.
 ### Cross-platform score (30%)
 
 1. Count **distinct platform families** where the topic appears:  
-   `google_trends` (any geo counts as one family hit, but multiple geos within Google count as extra signal — see bonus), `baidu`, `x_twitter` — base maximum 3.
+   `google_trends` (any geo counts as one family hit, but multiple geos within Google count as extra signal — see bonus), `baidu`, `weibo`, `x_twitter` — base maximum 4.
 2. `crossPlatformScore = min(100, 25 × platformCount)`
 3. Bonuses (each capped so total ≤ 100):
    - +10 if topic appears in Google **HK or MO** (directly GBA-relevant geo)
    - +10 if topic appears in **both** Google (any geo) **and** Baidu (cross-strait signal)
+   - +5 if topic appears on **both** Baidu **and** Weibo (dual mainland hot-board signal)
    - +5 if topic appears in **3 or more** Google geos (broad international traction)
 
 ### Composite
