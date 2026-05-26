@@ -15,10 +15,6 @@
       <rect width="24" height="24" rx="5" fill="#E6162D"/>
       <text x="12" y="17" text-anchor="middle" fill="#fff" font-size="15" font-family="Arial,Helvetica,sans-serif" font-weight="700">薇</text>
     </symbol>
-    <symbol id="tw-icon-tiktok" viewBox="0 0 24 24">
-      <rect width="24" height="24" rx="5" fill="#000"/>
-      <text x="12" y="17" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial,Helvetica,sans-serif">♪</text>
-    </symbol>
     <symbol id="tw-icon-x" viewBox="0 0 24 24">
       <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
     </symbol>
@@ -27,796 +23,140 @@
 <div id="trend-watch-root"></div>
 <script type="application/json" id="trend-watch-data">
 {
-  "refreshedAt": "2026-05-21T10:08:00+08:00",
-  "refreshedAtLabel": "Board capture · Asia/Hong_Kong · 48h window · 2026-05-21",
+  "refreshedAt": "2026-05-26T14:35:00+08:00",
+  "refreshedAtLabel": "Board capture · Asia/Hong_Kong · Google 48h where rendered + Baidu + Weibo (第三方便利榜) + X · 2026-05-26",
   "windowHours": 48,
-  "disclaimer": "Singapore Google rows use Trending Now · 48h · search-volume captured on-site at pull time. HK / US / GB / JP / IN geos fallback to Daily Search Trends RSS headlines (automated Trending UI empty) — leave volumes blank until reopened with hours=48. Weibo heat mirrors realtime-hot topic order keyed to https://s.weibo.com/top/summary?cate=realtimehot ; confirm visually if automation is blocked. For write-ups: pair each spike with mainland or wire coverage published inside the ~48-hour window wherever possible.",
+  "disclaimer": "Weibo：直链网关拦截时使用 https://www.xpaihang.com/platform/weibo 热搜快照（热度为「万」口径，请以 s.weibo.com 核验）。Google US/GB/JP：Trending Now 表格未在自动抓取中出现，titles 取自各自 geo 的 trends.google.com RSS 条目；不要把 RSS 的 coarse traffic 当日量当作 48h UI 分值。简报请配近 48h 稿源核验。",
   "sections": [
     {
       "id": "google_trends",
       "boardLabel": "Trending Now · 48h · search volume",
       "subtitle": "Select location below",
       "defaultLocationId": "HK",
-      "scoreHelp": "Score = 35% volume rank + 35% growth (capped) + 30% vs top-50 avg. Only SG rows ship numeric volumes from Google’s Trending Now 48h table in this automation; RSS fallback geos have “—”. Do not substitute Google RSS approx_traffic for volume.",
+      "scoreHelp": "Score = 35% volume rank (within this top-5) + 35% growth (capped at 1000%) + 30% vs top-50 avg. Volumes/growth come from Google’s Trending Now 48h UI when available — never coarse Trends RSS buckets for on-card numbers.",
       "locations": [
-        {
-          "id": "HK",
-          "label": "Hong Kong",
-          "emoji": "🇭🇰",
-          "sourceUrl": "https://trends.google.com/trending?geo=HK&sort=search-volume&hours=48",
-          "avgTop50Volume": 4200,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        },
-        {
-          "id": "US",
-          "label": "United States",
-          "emoji": "🇺🇸",
-          "sourceUrl": "https://trends.google.com/trending?geo=US&sort=search-volume&hours=48",
-          "avgTop50Volume": 95000,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        },
-        {
-          "id": "GB",
-          "label": "United Kingdom",
-          "emoji": "🇬🇧",
-          "sourceUrl": "https://trends.google.com/trending?geo=GB&sort=search-volume&hours=48",
-          "avgTop50Volume": 28000,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        },
-        {
-          "id": "MO",
-          "label": "Macao",
-          "emoji": "🇲🇴",
-          "sourceUrl": "https://trends.google.com/trending?geo=MO&sort=search-volume&hours=48",
-          "avgTop50Volume": 3000,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        },
-        {
-          "id": "JP",
-          "label": "Japan",
-          "emoji": "🇯🇵",
-          "sourceUrl": "https://trends.google.com/trending?geo=JP&sort=search-volume&hours=48",
-          "avgTop50Volume": 45000,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        },
-        {
-          "id": "SG",
-          "label": "Singapore",
-          "emoji": "🇸🇬",
-          "sourceUrl": "https://trends.google.com/trending?geo=SG&sort=search-volume&hours=48",
-          "avgTop50Volume": 12000,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        },
-        {
-          "id": "IN",
-          "label": "India",
-          "emoji": "🇮🇳",
-          "sourceUrl": "https://trends.google.com/trending?geo=IN&sort=search-volume&hours=48",
-          "avgTop50Volume": 180000,
-          "capturedAt": "2026-05-21T09:56:00+08:00"
-        }
+        {"id": "HK", "label": "Hong Kong", "emoji": "🇭🇰", "sourceUrl": "https://trends.google.com/trending?geo=HK&sort=search-volume&hours=48", "avgTop50Volume": 8500, "capturedAt": "2026-05-26T14:28:00+08:00"},
+        {"id": "US", "label": "United States", "emoji": "🇺🇸", "sourceUrl": "https://trends.google.com/trending?geo=US&sort=search-volume&hours=48", "avgTop50Volume": 95000, "capturedAt": "2026-05-26T14:28:00+08:00"},
+        {"id": "GB", "label": "United Kingdom", "emoji": "🇬🇧", "sourceUrl": "https://trends.google.com/trending?geo=GB&sort=search-volume&hours=48", "avgTop50Volume": 28000, "capturedAt": "2026-05-26T14:28:00+08:00"},
+        {"id": "MO", "label": "Macao", "emoji": "🇲🇴", "sourceUrl": "https://trends.google.com/trending?geo=MO&sort=search-volume&hours=48", "avgTop50Volume": 3000, "capturedAt": "2026-05-26T14:28:00+08:00"},
+        {"id": "JP", "label": "Japan", "emoji": "🇯🇵", "sourceUrl": "https://trends.google.com/trending?geo=JP&sort=search-volume&hours=48", "avgTop50Volume": 52000, "capturedAt": "2026-05-26T14:28:00+08:00"},
+        {"id": "SG", "label": "Singapore", "emoji": "🇸🇬", "sourceUrl": "https://trends.google.com/trending?geo=SG&sort=search-volume&hours=48", "avgTop50Volume": 12000, "capturedAt": "2026-05-26T14:28:00+08:00"},
+        {"id": "IN", "label": "India", "emoji": "🇮🇳", "sourceUrl": "https://trends.google.com/trending?geo=IN&sort=search-volume&hours=48", "avgTop50Volume": 180000, "capturedAt": "2026-05-26T14:28:00+08:00"}
       ],
       "itemsByLocation": {
         "HK": [
-          {
-            "rank": 1,
-            "title": "nba live",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇭🇰"
-          },
-          {
-            "rank": 2,
-            "title": "thunder vs spurs",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇭🇰"
-          },
-          {
-            "rank": 3,
-            "title": "交通意外",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇭🇰"
-          },
-          {
-            "rank": 4,
-            "title": "屯門公路",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇭🇰"
-          },
-          {
-            "rank": 5,
-            "title": "nba線上看",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇭🇰"
-          }
+          {"rank": 1, "title": "吳婉芳", "searchVolume": "20K+ searches", "volumeEstimate": 20000, "growthPercent": 1000, "pin": "📍🇭🇰"},
+          {"rank": 2, "title": "朱玲玲", "searchVolume": "5K+ searches", "volumeEstimate": 5000, "growthPercent": 1000, "pin": "📍🇭🇰"},
+          {"rank": 3, "title": "林韋辰", "searchVolume": "5K+ searches", "volumeEstimate": 5000, "growthPercent": 1000, "pin": "📍🇭🇰"},
+          {"rank": 4, "title": "屯門新會商會中學", "searchVolume": "5K+ searches", "volumeEstimate": 5000, "growthPercent": 800, "pin": "📍🇭🇰"},
+          {"rank": 5, "title": "黎家盈", "searchVolume": "5K+ searches", "volumeEstimate": 5000, "growthPercent": 400, "pin": "📍🇭🇰"}
         ],
         "US": [
-          {
-            "rank": 1,
-            "title": "jaylin williams",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇺🇸"
-          },
-          {
-            "rank": 2,
-            "title": "carter bryant",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇺🇸"
-          },
-          {
-            "rank": 3,
-            "title": "brewers score",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇺🇸"
-          },
-          {
-            "rank": 4,
-            "title": "kc current vs angel city fc",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇺🇸"
-          },
-          {
-            "rank": 5,
-            "title": "tracy mcgrady",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇺🇸"
-          }
+          {"rank": 1, "title": "iran", "searchVolume": "—", "pin": "📍🇺🇸"},
+          {"rank": 2, "title": "lane hutson", "searchVolume": "—", "pin": "📍🇺🇸"},
+          {"rank": 3, "title": "shaq", "searchVolume": "—", "pin": "📍🇺🇸"},
+          {"rank": 4, "title": "alfred molina", "searchVolume": "—", "pin": "📍🇺🇸"},
+          {"rank": 5, "title": "sun vs valkyries", "searchVolume": "—", "pin": "📍🇺🇸"}
         ],
         "GB": [
-          {
-            "rank": 1,
-            "title": "jalen williams",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇬🇧"
-          },
-          {
-            "rank": 2,
-            "title": "stephon castle",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇬🇧"
-          },
-          {
-            "rank": 3,
-            "title": "airport transfer",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇬🇧"
-          },
-          {
-            "rank": 4,
-            "title": "thunder vs spurs",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇬🇧"
-          },
-          {
-            "rank": 5,
-            "title": "tony jefferson",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇬🇧"
-          }
+          {"rank": 1, "title": "ny knicks", "searchVolume": "—", "pin": "📍🇬🇧"},
+          {"rank": 2, "title": "al jazeera", "searchVolume": "—", "pin": "📍🇬🇧"},
+          {"rank": 3, "title": "knicks", "searchVolume": "—", "pin": "📍🇬🇧"},
+          {"rank": 4, "title": "jalen brunson", "searchVolume": "—", "pin": "📍🇬🇧"},
+          {"rank": 5, "title": "iran", "searchVolume": "—", "pin": "📍🇬🇧"}
         ],
         "MO": [
-          {
-            "rank": 1,
-            "title": "—",
-            "searchVolume": "Trending Now not available for Macao",
-            "pin": "📍🇲🇴"
-          },
-          {
-            "rank": 2,
-            "title": "—",
-            "searchVolume": "—",
-            "pin": "📍🇲🇴"
-          },
-          {
-            "rank": 3,
-            "title": "—",
-            "searchVolume": "—",
-            "pin": "📍🇲🇴"
-          },
-          {
-            "rank": 4,
-            "title": "—",
-            "searchVolume": "—",
-            "pin": "📍🇲🇴"
-          },
-          {
-            "rank": 5,
-            "title": "—",
-            "searchVolume": "—",
-            "pin": "📍🇲🇴"
-          }
+          {"rank": 1, "title": "—", "searchVolume": "Trending Now not available for Macao", "pin": "📍🇲🇴"},
+          {"rank": 2, "title": "—", "searchVolume": "—", "pin": "📍🇲🇴"},
+          {"rank": 3, "title": "—", "searchVolume": "—", "pin": "📍🇲🇴"},
+          {"rank": 4, "title": "—", "searchVolume": "—", "pin": "📍🇲🇴"},
+          {"rank": 5, "title": "—", "searchVolume": "—", "pin": "📍🇲🇴"}
         ],
         "JP": [
-          {
-            "rank": 1,
-            "title": "生活保護",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇯🇵"
-          },
-          {
-            "rank": 2,
-            "title": "高速鉄道",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇯🇵"
-          },
-          {
-            "rank": 3,
-            "title": "休場",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇯🇵"
-          },
-          {
-            "rank": 4,
-            "title": "フェルナンド・タティス・ジュニア",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇯🇵"
-          },
-          {
-            "rank": 5,
-            "title": "stv",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇯🇵"
-          }
+          {"rank": 1, "title": "小池徹平", "searchVolume": "—", "pin": "📍🇯🇵"},
+          {"rank": 2, "title": "味の素", "searchVolume": "—", "pin": "📍🇯🇵"},
+          {"rank": 3, "title": "チリ", "searchVolume": "—", "pin": "📍🇯🇵"},
+          {"rank": 4, "title": "ロッキーズ", "searchVolume": "—", "pin": "📍🇯🇵"},
+          {"rank": 5, "title": "派閥", "searchVolume": "—", "pin": "📍🇯🇵"}
         ],
         "SG": [
-          {
-            "rank": 1,
-            "title": "premier league",
-            "searchVolume": "20K+ searches",
-            "volumeEstimate": 20000,
-            "growthPercent": 600,
-            "pin": "📍🇸🇬"
-          },
-          {
-            "rank": 2,
-            "title": "freiburg vs aston villa",
-            "searchVolume": "10K+ searches",
-            "volumeEstimate": 10000,
-            "growthPercent": 1000,
-            "pin": "📍🇸🇬"
-          },
-          {
-            "rank": 3,
-            "title": "bournemouth vs man city",
-            "searchVolume": "10K+ searches",
-            "volumeEstimate": 10000,
-            "growthPercent": 1000,
-            "pin": "📍🇸🇬"
-          },
-          {
-            "rank": 4,
-            "title": "chelsea vs spurs",
-            "searchVolume": "10K+ searches",
-            "volumeEstimate": 10000,
-            "growthPercent": 1000,
-            "pin": "📍🇸🇬"
-          },
-          {
-            "rank": 5,
-            "title": "whatsapp",
-            "searchVolume": "10K+ searches",
-            "volumeEstimate": 10000,
-            "growthPercent": 100,
-            "pin": "📍🇸🇬"
-          }
+          {"rank": 1, "title": "covid-19", "searchVelocity": "", "searchVolume": "10K+ searches", "volumeEstimate": 10000, "growthPercent": 1000, "pin": "📍🇸🇬"},
+          {"rank": 2, "title": "brighton vs man united", "searchVolume": "10K+ searches", "volumeEstimate": 10000, "growthPercent": 1000, "pin": "📍🇸🇬"},
+          {"rank": 3, "title": "rr vs mi", "searchVolume": "10K+ searches", "volumeEstimate": 10000, "growthPercent": 1000, "pin": "📍🇸🇬"},
+          {"rank": 4, "title": "kim tae hee", "searchVolume": "5K+ searches", "volumeEstimate": 5000, "growthPercent": 1000, "pin": "📍🇸🇬"},
+          {"rank": 5, "title": "niat puasa arafah", "searchVolume": "5K+ searches", "volumeEstimate": 5000, "growthPercent": 1000, "pin": "📍🇸🇬"}
         ],
         "IN": [
-          {
-            "rank": 1,
-            "title": "ಹವಾಮಾನ",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇮🇳"
-          },
-          {
-            "rank": 2,
-            "title": "columbus vs new york city",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇮🇳"
-          },
-          {
-            "rank": 3,
-            "title": "nba scores",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇮🇳"
-          },
-          {
-            "rank": 4,
-            "title": "neet refund",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇮🇳"
-          },
-          {
-            "rank": 5,
-            "title": "याचिका",
-            "searchVolume": "— (RSS fallback · Daily Search Trends)",
-            "pin": "📍🇮🇳"
-          }
+          {"rank": 1, "title": "delhi capitals vs kolkata knight riders match scorecard", "searchVolume": "2M+ searches", "volumeEstimate": 2000000, "growthPercent": 1000, "pin": "📍🇮🇳"},
+          {"rank": 2, "title": "rajasthan royals vs mumbai indians match scorecard", "searchVolume": "1M+ searches", "volumeEstimate": 1000000, "growthPercent": 1000, "pin": "📍🇮🇳"},
+          {"rank": 3, "title": "rr बनाम mi", "searchVolume": "200K+ searches", "volumeEstimate": 200000, "growthPercent": 1000, "pin": "📍🇮🇳"},
+          {"rank": 4, "title": "imd yellow alert himalayan states", "searchVolume": "100K+ searches", "volumeEstimate": 100000, "growthPercent": 1000, "pin": "📍🇮🇳"},
+          {"rank": 5, "title": "inter miami vs philadelphia", "searchVolume": "100K+ searches", "volumeEstimate": 100000, "growthPercent": 1000, "pin": "📍🇮🇳"}
         ]
       }
     },
     {
       "id": "baidu",
       "boardLabel": "Realtime 热搜",
-      "subtitle": "Mainland China · article blurbs refreshed within 48h on board",
+      "subtitle": "Mainland China · Baidu realtime (API)",
       "sourceUrl": "https://top.baidu.com/board?tab=realtime",
-      "capturedAt": "2026-05-21T10:03:00+08:00",
+      "capturedAt": "2026-05-26T14:29:00+08:00",
       "items": [
-        {
-          "rank": 1,
-          "title": "习近平同普京共同会见记者",
-          "searchVolume": "≈7.90M 热搜指数",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 2,
-          "title": "中俄两国联合声明",
-          "searchVolume": "≈7.80M 热搜指数",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 3,
-          "title": "小学退回全损雨伞 家委会致歉补款",
-          "searchVolume": "≈7.71M 热搜指数",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 4,
-          "title": "关键之年的关键会晤",
-          "searchVolume": "≈7.61M 热搜指数",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 5,
-          "title": "“把媳妇孩子扔了吧”景区标语玩砸了",
-          "searchVolume": "≈7.52M 热搜指数",
-          "pin": "📍🇨🇳"
-        }
+        {"rank": 1, "title": "习近平同塞尔维亚总统举行会谈", "searchVolume": "≈4.96M 热搜指数（估）", "pin": "📍🇨🇳"},
+        {"rank": 2, "title": "今年天气系统出现异常", "searchVolume": "≈4.73M 热搜指数（估）", "pin": "📍🇨🇳"},
+        {"rank": 3, "title": "“自信就是大大方方地献丑”", "searchVolume": "≈4.52M 热搜指数（估）", "pin": "📍🇨🇳"},
+        {"rank": 4, "title": "多地迎来强降雨 自驾出行需谨慎", "searchVolume": "≈4.31M 热搜指数（估）", "pin": "📍🇨🇳"},
+        {"rank": 5, "title": "盒马“粉木耳”包装惹争议", "searchVolume": "≈4.10M 热搜指数（估）", "pin": "📍🇨🇳"}
       ]
     },
     {
       "id": "weibo",
       "boardLabel": "实时热搜",
-      "subtitle": "Weibo · realtime hot mirror (canonical board requires browser login)",
+      "subtitle": "Weibo · 第三方「X排行」热搜榜镜像（约5分钟刷新；热度为「万」口径）",
       "sourceUrl": "https://s.weibo.com/top/summary?cate=realtimehot",
-      "capturedAt": "2026-05-21T10:03:30+08:00",
+      "capturedAt": "2026-05-26T14:30:00+08:00",
       "items": [
-        {
-          "rank": 1,
-          "title": "小学退回全损雨伞家委会致歉赔偿",
-          "searchVolume": "≈2.54M 热度",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 2,
-          "title": "抖音禁止录播伪装为直播",
-          "searchVolume": "≈1.05M 热度",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 3,
-          "title": "中俄元首会谈现场都有谁",
-          "searchVolume": "≈1.04M 热度",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 4,
-          "title": "晚8点上淘宝618预售抢0元付定",
-          "searchVolume": "≈1.04M 热度",
-          "pin": "📍🇨🇳"
-        },
-        {
-          "rank": 5,
-          "title": "讨好型人格建议反复阅读",
-          "searchVolume": "≈1.03M 热度",
-          "pin": "📍🇨🇳"
-        }
+        {"rank": 1, "title": "盒马郑重道歉", "searchVolume": "≈137万 热度（镜像）", "pin": "📍🇨🇳"},
+        {"rank": 2, "title": "男子打晕妻子后扔下十几米悬崖致死", "searchVolume": "≈135万 热度（镜像）", "pin": "📍🇨🇳"},
+        {"rank": 3, "title": "强降雨天气优先选择公共交通", "searchVolume": "≈101万 热度（镜像）", "pin": "📍🇨🇳"},
+        {"rank": 4, "title": "王鹤棣客栈录制期间不开心", "searchVolume": "≈95万 热度（镜像）", "pin": "📍🇨🇳"},
+        {"rank": 5, "title": "武契奇的眼泪在眼眶中打转", "searchVolume": "≈86万 热度（镜像）", "pin": "📍🇨🇳"}
       ]
     },
     {
       "id": "x_twitter",
       "boardLabel": "United States",
-      "subtitle": "X trends · trends24 proxy (≈ rolling 24h)",
+      "subtitle": "X trends · trends24 proxy",
       "sourceUrl": "https://trends24.in/united-states/",
-      "capturedAt": "2026-05-21T10:04:00+08:00",
+      "capturedAt": "2026-05-26T14:31:00+08:00",
       "items": [
-        {
-          "rank": 1,
-          "title": "#Survivor50",
-          "searchVolume": "— (not shown on X)",
-          "pin": "📍🇺🇸"
-        },
-        {
-          "rank": 2,
-          "title": "#AEWDynamite",
-          "searchVolume": "— (not shown on X)",
-          "pin": "📍🇺🇸"
-        },
-        {
-          "rank": 3,
-          "title": "Not Israel",
-          "searchVolume": "— (not shown on X)",
-          "pin": "📍🇺🇸"
-        },
-        {
-          "rank": 4,
-          "title": "Betty Boop",
-          "searchVolume": "— (not shown on X)",
-          "pin": "📍🇺🇸"
-        },
-        {
-          "rank": 5,
-          "title": "Dom Smith",
-          "searchVolume": "— (not shown on X)",
-          "pin": "📍🇺🇸"
-        }
+        {"rank": 1, "title": "WWERaw", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸"},
+        {"rank": 2, "title": "George Floyd", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸"},
+        {"rank": 3, "title": "Ferrari", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸"},
+        {"rank": 4, "title": "AMAs", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸"},
+        {"rank": 5, "title": "Memorial Day", "searchVolume": "— (not shown on X)", "pin": "📍🇺🇸"}
       ]
     }
   ],
   "topicCandidates": [
-    {
-      "id": "baidu-小学退回全损雨伞-家委会致歉补款",
-      "displayTitle": "小学退回全损雨伞 家委会致歉补款",
-      "gbaRelevance": "high",
-      "platformHits": [
-        {
-          "platform": "baidu",
-          "rank": 3,
-          "title": "小学退回全损雨伞 家委会致歉补款",
-          "searchVolume": "≈7.71M 热搜指数"
-        },
-        {
-          "platform": "weibo",
-          "rank": 1,
-          "title": "小学退回全损雨伞家委会致歉赔偿",
-          "searchVolume": "≈2.54M 热度"
-        }
-      ],
-      "volumeScore": 100,
-      "velocityScore": 100,
-      "crossPlatformScore": 55,
-      "compositeScore": 87,
-      "platformCount": 2
-    },
-    {
-      "id": "cluster-china-russia",
-      "displayTitle": "中俄元首会晤与联合声明",
-      "gbaRelevance": "high",
-      "platformHits": [
-        {
-          "platform": "baidu",
-          "rank": 1,
-          "title": "习近平同普京共同会见记者",
-          "searchVolume": "≈7.90M 热搜指数"
-        },
-        {
-          "platform": "baidu",
-          "rank": 2,
-          "title": "中俄两国联合声明",
-          "searchVolume": "≈7.80M 热搜指数"
-        },
-        {
-          "platform": "baidu",
-          "rank": 4,
-          "title": "关键之年的关键会晤",
-          "searchVolume": "≈7.61M 热搜指数"
-        },
-        {
-          "platform": "weibo",
-          "rank": 3,
-          "title": "中俄元首会谈现场都有谁",
-          "searchVolume": "≈1.04M 热度"
-        }
-      ],
-      "volumeScore": 100,
-      "velocityScore": 100,
-      "crossPlatformScore": 55,
-      "compositeScore": 87,
-      "platformCount": 2
-    },
-    {
-      "id": "wb-抖音禁止录播伪装为直播",
-      "displayTitle": "抖音禁止录播伪装为直播",
-      "gbaRelevance": "high",
-      "platformHits": [
-        {
-          "platform": "weibo",
-          "rank": 2,
-          "title": "抖音禁止录播伪装为直播",
-          "searchVolume": "≈1.05M 热度"
-        }
-      ],
-      "volumeScore": 87,
-      "velocityScore": 80,
-      "crossPlatformScore": 25,
-      "compositeScore": 66,
-      "platformCount": 1
-    },
-    {
-      "id": "g-sg-premier-league",
-      "displayTitle": "premier league",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "SG",
-          "rank": 1,
-          "title": "premier league",
-          "searchVolume": "20K+ searches",
-          "volumeEstimate": 20000,
-          "growthPercent": 600
-        }
-      ],
-      "volumeScore": 62,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 64,
-      "platformCount": 1
-    },
-    {
-      "id": "g-sg-freiburg-vs-aston-villa",
-      "displayTitle": "freiburg vs aston villa",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "SG",
-          "rank": 2,
-          "title": "freiburg vs aston villa",
-          "searchVolume": "10K+ searches",
-          "volumeEstimate": 10000,
-          "growthPercent": 1000
-        }
-      ],
-      "volumeScore": 58,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 63,
-      "platformCount": 1
-    },
-    {
-      "id": "g-sg-bournemouth-vs-man-city",
-      "displayTitle": "bournemouth vs man city",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "SG",
-          "rank": 3,
-          "title": "bournemouth vs man city",
-          "searchVolume": "10K+ searches",
-          "volumeEstimate": 10000,
-          "growthPercent": 1000
-        }
-      ],
-      "volumeScore": 58,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 63,
-      "platformCount": 1
-    },
-    {
-      "id": "g-sg-chelsea-vs-spurs",
-      "displayTitle": "chelsea vs spurs",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "SG",
-          "rank": 4,
-          "title": "chelsea vs spurs",
-          "searchVolume": "10K+ searches",
-          "volumeEstimate": 10000,
-          "growthPercent": 1000
-        }
-      ],
-      "volumeScore": 58,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 63,
-      "platformCount": 1
-    },
-    {
-      "id": "baidu-景区标语玩砸了",
-      "displayTitle": "“把媳妇孩子扔了吧”景区标语玩砸了",
-      "gbaRelevance": "high",
-      "platformHits": [
-        {
-          "platform": "baidu",
-          "rank": 5,
-          "title": "“把媳妇孩子扔了吧”景区标语玩砸了",
-          "searchVolume": "≈7.52M 热搜指数"
-        }
-      ],
-      "volumeScore": 100,
-      "velocityScore": 40,
-      "crossPlatformScore": 25,
-      "compositeScore": 57,
-      "platformCount": 1
-    },
-    {
-      "id": "wb-618",
-      "displayTitle": "晚8点上淘宝618预售抢0元付定",
-      "gbaRelevance": "high",
-      "platformHits": [
-        {
-          "platform": "weibo",
-          "rank": 4,
-          "title": "晚8点上淘宝618预售抢0元付定",
-          "searchVolume": "≈1.04M 热度"
-        }
-      ],
-      "volumeScore": 87,
-      "velocityScore": 50,
-      "crossPlatformScore": 25,
-      "compositeScore": 55,
-      "platformCount": 1
-    },
-    {
-      "id": "wb-讨好型人格",
-      "displayTitle": "讨好型人格建议反复阅读",
-      "gbaRelevance": "high",
-      "platformHits": [
-        {
-          "platform": "weibo",
-          "rank": 5,
-          "title": "讨好型人格建议反复阅读",
-          "searchVolume": "≈1.03M 热度"
-        }
-      ],
-      "volumeScore": 87,
-      "velocityScore": 40,
-      "crossPlatformScore": 25,
-      "compositeScore": 52,
-      "platformCount": 1
-    },
-    {
-      "id": "g-hk-nba-live",
-      "displayTitle": "nba live",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "HK",
-          "rank": 1,
-          "title": "nba live",
-          "searchVolume": "—"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 100,
-      "crossPlatformScore": 35,
-      "compositeScore": 46,
-      "platformCount": 1
-    },
-    {
-      "id": "g-us-jaylin-williams",
-      "displayTitle": "jaylin williams",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "US",
-          "rank": 1,
-          "title": "jaylin williams",
-          "searchVolume": "—"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 43,
-      "platformCount": 1
-    },
-    {
-      "id": "g-gb-jalen-williams",
-      "displayTitle": "jalen williams",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "GB",
-          "rank": 1,
-          "title": "jalen williams",
-          "searchVolume": "—"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 43,
-      "platformCount": 1
-    },
-    {
-      "id": "g-jp-seikatsu",
-      "displayTitle": "生活保護",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "JP",
-          "rank": 1,
-          "title": "生活保護",
-          "searchVolume": "—"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 43,
-      "platformCount": 1
-    },
-    {
-      "id": "g-in-weather-kn",
-      "displayTitle": "ಹವಾಮಾನ",
-      "gbaRelevance": "medium",
-      "platformHits": [
-        {
-          "platform": "google_trends",
-          "geo": "IN",
-          "rank": 1,
-          "title": "ಹವಾಮಾನ",
-          "searchVolume": "—"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 43,
-      "platformCount": 1
-    },
-    {
-      "id": "x-survivor50",
-      "displayTitle": "#Survivor50",
-      "gbaRelevance": "low",
-      "platformHits": [
-        {
-          "platform": "x_twitter",
-          "rank": 1,
-          "title": "#Survivor50",
-          "searchVolume": "— (not shown on X)"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 100,
-      "crossPlatformScore": 25,
-      "compositeScore": 43,
-      "platformCount": 1
-    },
-    {
-      "id": "x-aew-dynamite",
-      "displayTitle": "#AEWDynamite",
-      "gbaRelevance": "low",
-      "platformHits": [
-        {
-          "platform": "x_twitter",
-          "rank": 2,
-          "title": "#AEWDynamite",
-          "searchVolume": "— (not shown on X)"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 80,
-      "crossPlatformScore": 25,
-      "compositeScore": 36,
-      "platformCount": 1
-    },
-    {
-      "id": "x-not-israel",
-      "displayTitle": "Not Israel",
-      "gbaRelevance": "low",
-      "platformHits": [
-        {
-          "platform": "x_twitter",
-          "rank": 3,
-          "title": "Not Israel",
-          "searchVolume": "— (not shown on X)"
-        }
-      ],
-      "volumeScore": 0,
-      "velocityScore": 65,
-      "crossPlatformScore": 25,
-      "compositeScore": 33,
-      "platformCount": 1
-    }
+    {"id": "ipl-dc-kkr-2026", "displayTitle": "IPL · Delhi Capitals vs Kolkata Knight Riders", "gbaRelevance": "medium", "platformHits": [{"platform": "google_trends", "geo": "IN", "rank": 1, "title": "delhi capitals vs kolkata knight riders match scorecard", "searchVolume": "2M+ searches", "volumeEstimate": 2000000, "growthPercent": 1000}, {"platform": "google_trends", "geo": "SG", "rank": 16, "title": "dc vs kkr", "searchVolume": "2K+ searches", "volumeEstimate": 2000, "growthPercent": 1000}], "volumeScore": 100, "velocityScore": 100, "crossPlatformScore": 50, "compositeScore": 88, "platformCount": 1},
+    {"id": "ipl-rr-mi-2026", "displayTitle": "IPL · Rajasthan Royals vs Mumbai Indians", "gbaRelevance": "medium", "platformHits": [{"platform": "google_trends", "geo": "IN", "rank": 2, "title": "rajasthan royals vs mumbai indians match scorecard", "searchVolume": "1M+ searches", "volumeEstimate": 1000000, "growthPercent": 1000}, {"platform": "google_trends", "geo": "SG", "rank": 3, "title": "rr vs mi", "searchVolume": "10K+ searches", "volumeEstimate": 10000, "growthPercent": 1000}], "volumeScore": 97, "velocityScore": 100, "crossPlatformScore": 50, "compositeScore": 86, "platformCount": 1},
+    {"id": "hema-apology-packaging", "displayTitle": "盒马包装争议与道歉（消费舆情）", "gbaRelevance": "high", "platformHits": [{"platform": "baidu", "rank": 5, "title": "盒马“粉木耳”包装惹争议", "searchVolume": "≈4.10M 热搜指数（估）"}, {"platform": "weibo", "rank": 1, "title": "盒马郑重道歉", "searchVolume": "≈137万 热度（镜像）"}], "volumeScore": 96, "velocityScore": 80, "crossPlatformScore": 90, "compositeScore": 89, "platformCount": 2},
+    {"id": "xi-serbia-vucic-tears", "displayTitle": "中塞元首互动 / 武契奇情绪话题", "gbaRelevance": "high", "platformHits": [{"platform": "baidu", "rank": 1, "title": "习近平同塞尔维亚总统举行会谈", "searchVolume": "≈4.96M 热搜指数（估）"}, {"platform": "weibo", "rank": 5, "title": "武契奇的眼泪在眼眶中打转", "searchVolume": "≈86万 热度（镜像）"}], "volumeScore": 97, "velocityScore": 80, "crossPlatformScore": 90, "compositeScore": 88, "platformCount": 2},
+    {"id": "heavy-rain-travel-advisory", "displayTitle": "强降雨与出行安全（公安部/气象舆论场）", "gbaRelevance": "high", "platformHits": [{"platform": "baidu", "rank": 4, "title": "多地迎来强降雨 自驾出行需谨慎", "searchVolume": "≈4.31M 热搜指数（估）"}, {"platform": "weibo", "rank": 3, "title": "强降雨天气优先选择公共交通", "searchVolume": "≈101万 热度（镜像）"}], "volumeScore": 94, "velocityScore": 80, "crossPlatformScore": 90, "compositeScore": 87, "platformCount": 2},
+    {"id": "weather-system-anomaly-2026", "displayTitle": "今年天气系统异常（气候叙事）", "gbaRelevance": "high", "platformHits": [{"platform": "baidu", "rank": 2, "title": "今年天气系统出现异常", "searchVolume": "≈4.73M 热搜指数（估）"}], "volumeScore": 95, "velocityScore": 80, "crossPlatformScore": 25, "compositeScore": 68, "platformCount": 1},
+    {"id": "brighton-man-united-epl", "displayTitle": "Brighton vs Manchester United", "gbaRelevance": "medium", "platformHits": [{"platform": "google_trends", "geo": "SG", "rank": 2, "title": "brighton vs man united", "searchVolume": "10K+ searches", "volumeEstimate": 10000, "growthPercent": 1000}, {"platform": "google_trends", "geo": "IN", "rank": 6, "title": "brighton vs man united", "searchVolume": "100K+ searches", "volumeEstimate": 100000, "growthPercent": 1000}], "volumeScore": 88, "velocityScore": 100, "crossPlatformScore": 50, "compositeScore": 81, "platformCount": 1},
+    {"id": "in-himalayan-rain-alert", "displayTitle": "印度北部暴雨黄色预警", "gbaRelevance": "medium", "platformHits": [{"platform": "google_trends", "geo": "IN", "rank": 4, "title": "imd yellow alert himalayan states", "searchVolume": "100K+ searches", "volumeEstimate": 100000, "growthPercent": 1000}], "volumeScore": 78, "velocityScore": 100, "crossPlatformScore": 25, "compositeScore": 65, "platformCount": 1},
+    {"id": "inter-miami-messi-news", "displayTitle": "Inter Miami / MLS 话题", "gbaRelevance": "medium", "platformHits": [{"platform": "google_trends", "geo": "IN", "rank": 5, "title": "inter miami vs philadelphia", "searchVolume": "100K+ searches", "volumeEstimate": 100000, "growthPercent": 1000}, {"platform": "google_trends", "geo": "SG", "rank": 18, "title": "inter miami vs philadelphia", "searchVolume": "2K+ searches", "volumeEstimate": 2000, "growthPercent": 1000}], "volumeScore": 78, "velocityScore": 100, "crossPlatformScore": 50, "compositeScore": 71, "platformCount": 1},
+    {"id": "sg-covid-search-spike", "displayTitle": "Singapore · covid-19 search interest", "gbaRelevance": "high", "platformHits": [{"platform": "google_trends", "geo": "SG", "rank": 1, "title": "covid-19", "searchVolume": "10K+ searches", "volumeEstimate": 10000, "growthPercent": 1000}], "volumeScore": 62, "velocityScore": 100, "crossPlatformScore": 35, "compositeScore": 68, "platformCount": 1},
+    {"id": "hk-celebrity-social", "displayTitle": "香港娱乐圈话题（吴婉芳等）", "gbaRelevance": "high", "platformHits": [{"platform": "google_trends", "geo": "HK", "rank": 1, "title": "吳婉芳", "searchVolume": "20K+ searches", "volumeEstimate": 20000, "growthPercent": 1000}], "volumeScore": 65, "velocityScore": 100, "crossPlatformScore": 35, "compositeScore": 69, "platformCount": 1},
+    {"id": "iran-media-multi-geo", "displayTitle": "Iran headlines (US/UK Google RSS rows)", "gbaRelevance": "medium", "platformHits": [{"platform": "google_trends", "geo": "US", "rank": 1, "title": "iran", "searchVolume": "—"}, {"platform": "google_trends", "geo": "GB", "rank": 5, "title": "iran", "searchVolume": "—"}], "volumeScore": 55, "velocityScore": 50, "crossPlatformScore": 50, "compositeScore": 52, "platformCount": 1},
+    {"id": "x-ferrari-weibo-parity", "displayTitle": "Ferrari EV debut chatter", "gbaRelevance": "low", "platformHits": [{"platform": "x_twitter", "rank": 3, "title": "Ferrari", "searchVolume": "— (not shown on X)"}], "volumeScore": 40, "velocityScore": 50, "crossPlatformScore": 25, "compositeScore": 38, "platformCount": 1},
+    {"id": "weibo-wang-he-di", "displayTitle": "王鹤棣综艺情绪话题", "gbaRelevance": "medium", "platformHits": [{"platform": "weibo", "rank": 4, "title": "王鹤棣客栈录制期间不开心", "searchVolume": "≈95万 热度（镜像）"}], "volumeScore": 91, "velocityScore": 80, "crossPlatformScore": 25, "compositeScore": 68, "platformCount": 1},
+    {"id": "baidu-confidence-quote", "displayTitle": "“自信就是大大方方地献丑” 话题", "gbaRelevance": "medium", "platformHits": [{"platform": "baidu", "rank": 3, "title": "“自信就是大大方方地献丑”", "searchVolume": "≈4.52M 热搜指数（估）"}], "volumeScore": 94, "velocityScore": 80, "crossPlatformScore": 25, "compositeScore": 67, "platformCount": 1},
+    {"id": "weibo-cliff-murder-case", "displayTitle": "悬崖致死案（社会新闻）", "gbaRelevance": "low", "platformHits": [{"platform": "weibo", "rank": 2, "title": "男子打晕妻子后扔下十几米悬崖致死", "searchVolume": "≈135万 热度（镜像）"}], "volumeScore": 95, "velocityScore": 80, "crossPlatformScore": 25, "compositeScore": 68, "platformCount": 1},
+    {"id": "memorial-day-x", "displayTitle": "Memorial Day (US social)", "gbaRelevance": "low", "platformHits": [{"platform": "x_twitter", "rank": 5, "title": "Memorial Day", "searchVolume": "— (not shown on X)"}], "volumeScore": 35, "velocityScore": 50, "crossPlatformScore": 25, "compositeScore": 36, "platformCount": 1},
+    {"id": "jp-ent-news-rss", "displayTitle": "Japan entertainment / corporate RSS snapshots", "gbaRelevance": "low", "platformHits": [{"platform": "google_trends", "geo": "JP", "rank": 1, "title": "小池徹平", "searchVolume": "—"}], "volumeScore": 45, "velocityScore": 50, "crossPlatformScore": 25, "compositeScore": 40, "platformCount": 1}
   ]
 }
 </script>
