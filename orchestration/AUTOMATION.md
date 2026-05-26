@@ -42,7 +42,9 @@ npm install
 node scripts/run-daily-cloud.mjs
 ```
 
-Or: **Actions → Daily GBA Pulse (08:00 HKT) → Run workflow**.
+Or: **Actions → Daily GBA Pulse** → **Run workflow** (workflow file: `daily-gba-pulse.yml`).
+
+**Confirm you’re on the fixed workflow:** open the run → check the commit is **`f663bbb` or newer** → after Cloud agents the step must be **`Sync latest main after cloud agent`**, not `Pull agent commits`. If you still see the old step name, cancel in-progress runs and use **Daily GBA Pulse** (not the retired `daily-8am-hkt.yml` workflow).
 
 Single step:
 
@@ -54,7 +56,7 @@ node scripts/run-daily-cloud.mjs --run=2
 ## Schedule
 
 - **Cron:** `0 0 * * *` UTC = **08:00 Asia/Hong_Kong**
-- Workflow file: `.github/workflows/daily-8am-hkt.yml`
+- Workflow file: `.github/workflows/daily-gba-pulse.yml`
 
 ## Cost (~$0.50 / day)
 

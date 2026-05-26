@@ -1,11 +1,14 @@
 # Daily refresh at 08:00 Hong Kong Time (00:00 UTC).
-# Requires repo secrets: CURSOR_API_KEY
-name: Daily GBA Pulse (08:00 HKT)
+# Replaces daily-8am-hkt.yml (same logic; new file so Actions picks up fixed steps).
+# Requires repo secret: CURSOR_API_KEY
+name: Daily GBA Pulse
 
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+
+run-name: "GBA Pulse refresh · run ${{ github.run_number }}"
 
 permissions:
   contents: write
@@ -40,7 +43,6 @@ jobs:
       - name: Cloud agents (Trend Watch + Trending News)
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-          # Use the Actions token (do not use secrets.GITHUB_TOKEN — a blank repo secret overrides it)
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/run-daily-cloud.mjs --skip-preflight
 
