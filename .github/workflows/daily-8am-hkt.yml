@@ -1,0 +1,65 @@
+# Daily refresh at 08:00 Hong Kong Time (00:00 UTC).
+# Requires repo secrets: CURSOR_API_KEY
+name: Daily GBA Pulse (08:00 HKT)
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-gba-pulse
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Preflight (API key + GitHub repo access)
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+        run: node scripts/diagnose-cloud.mjs
+
+      - name: Cloud agents (Trend Watch + Trending News)
+        env:
+          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/run-daily-cloud.mjs --skip-preflight
+
+      - name: Pull agent commits
+        run: git pull --rebase origin main
+
+      - name: Verify Trend Watch freshness
+        run: node scripts/verify-daily-capture.mjs
+
+      - name: Fallback merge into index.html
+        run: node scripts/merge-briefing-panels.mjs
+
+      - name: Commit fallback merge if needed
+        run: |
+          git config user.name "gba-pulse-bot"
+          git config user.email "gba-pulse-bot@users.noreply.github.com"
+          git add index.html orchestration/fragments/overall.html orchestration/fragments/trendwatch.html
+          if git diff --staged --quiet; then
+            echo "No fallback changes"
+          else
+            git commit -m "chore(daily): merge fallback $(TZ=Asia/Hong_Kong date +%Y-%m-%d)"
+            git push origin main
+          fi

@@ -1,0 +1,17 @@
+{
+  "name": "gba-pulse",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "merge": "node scripts/merge-briefing-panels.mjs",
+    "daily:cloud": "node scripts/run-daily-cloud.mjs",
+    "daily:diagnose": "node scripts/diagnose-cloud.mjs",
+    "daily:verify": "node scripts/verify-daily-capture.mjs"
+  },
+  "dependencies": {
+    "@cursor/sdk": "^1.0.13"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
