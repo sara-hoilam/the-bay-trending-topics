@@ -40,11 +40,21 @@ jobs:
       - name: Cloud agents (Trend Watch + Trending News)
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Use the Actions token (do not use secrets.GITHUB_TOKEN — a blank repo secret overrides it)
+          GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/run-daily-cloud.mjs --skip-preflight
 
-      - name: Pull agent commits
-        run: git pull --rebase origin main
+      - name: Sync latest main after cloud agent
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin main
+          git checkout -f main
+          git reset --hard origin/main
+
+      - name: Install dependencies (after sync)
+        run: npm install
 
       - name: Verify Trend Watch freshness
         run: node scripts/verify-daily-capture.mjs
@@ -53,13 +63,16 @@ jobs:
         run: node scripts/merge-briefing-panels.mjs
 
       - name: Commit fallback merge if needed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
-          git config user.name "gba-pulse-bot"
-          git config user.email "gba-pulse-bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git add index.html orchestration/fragments/overall.html orchestration/fragments/trendwatch.html
           if git diff --staged --quiet; then
             echo "No fallback changes"
           else
             git commit -m "chore(daily): merge fallback $(TZ=Asia/Hong_Kong date +%Y-%m-%d)"
-            git push origin main
+            git push origin HEAD:main
           fi

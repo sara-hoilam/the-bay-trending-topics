@@ -1,0 +1,106 @@
+# GBA Pulse — daily cloud automation (08:00 HKT)
+
+Runs on **GitHub Actions** — your Mac can be off. Uses **Cursor Cloud agents** with **Composer 2.5 Standard** (~$0.35–0.50 per day target).
+
+## What is a PR?
+
+A **Pull Request (PR)** is a GitHub proposal: “merge this branch into `main` after review.”  
+This automation **does not use PRs** — agents **push directly to `main`**, and GitHub Pages serves `index.html`.
+
+## Pipeline (2 cloud runs)
+
+| Step | Script / agent | Output |
+|------|----------------|--------|
+| 1 | `prompts/gba-pulse-cloud-run1-trendwatch.md` | `orchestration/fragments/trendwatch.html` |
+| 2 | `prompts/gba-pulse-cloud-run2-edition.md` | `overall.html` + `node scripts/merge-briefing-panels.mjs` → `index.html` |
+| Fallback | Workflow merges again if the agent skipped merge | `index.html` |
+
+Skipped in automation: `claude.html`, `composer.html`, `chatgpt.html`.
+
+## One-time setup
+
+1. **GitHub repo:** [sara-hoilam/the-bay-trending-topics](https://github.com/sara-hoilam/the-bay-trending-topics)
+
+2. **Secret `CURSOR_API_KEY`**  
+   [Cursor Dashboard → Integrations](https://cursor.com/dashboard/integrations) → create API key →  
+   Repo **Settings → Secrets and variables → Actions → New repository secret**
+
+3. **Connect repo to Cursor Cloud**  
+   In Cursor team settings, ensure `the-bay-trending-topics` is an allowed GitHub repo for cloud agents.
+
+4. **GitHub Pages** (if not already)  
+   Settings → Pages → deploy from branch `main`, folder `/` (root `index.html`).
+
+5. **Optional:** restrict who can push to `main` (branch protection) but allow `gba-pulse-bot` / Actions.
+
+## Manual test
+
+```bash
+export CURSOR_API_KEY="cursor_..."
+export GITHUB_TOKEN="ghp_..."   # optional; cloud agent uses for push
+npm install
+node scripts/run-daily-cloud.mjs
+```
+
+Or: **Actions → Daily GBA Pulse (08:00 HKT) → Run workflow**.
+
+Single step:
+
+```bash
+node scripts/run-daily-cloud.mjs --run=1
+node scripts/run-daily-cloud.mjs --run=2
+```
+
+## Schedule
+
+- **Cron:** `0 0 * * *` UTC = **08:00 Asia/Hong_Kong**
+- Workflow file: `.github/workflows/daily-8am-hkt.yml`
+
+## Cost (~$0.50 / day)
+
+- **Composer 2.5 Standard:** ~$0.50/M input, ~$2.50/M output ([pricing](https://cursor.com/docs/models/cursor-composer-2-5))
+- **2 runs** (boards + edition only) with capped news searches → ~600k–1M input + ~40–60k output → **~$0.35–0.50** API-style
+- Individual plans may use **included Composer pool** — check **Cursor → Usage** after the first run
+
+Do **not** enable Fast tier in the workflow (`composer-2.5` Fast is ~6× more expensive).
+
+## Troubleshooting
+
+### `Startup failed: Error (retryable=false)`
+
+This happens **before** the agent runs. Almost always:
+
+1. **GitHub not connected to Cursor** for cloud agents  
+   - [cursor.com/dashboard](https://cursor.com/dashboard) → connect **GitHub**  
+   - Enable access to **`sara-hoilam/the-bay-trending-topics`** (org/repo picker)
+
+2. **Bad `CURSOR_API_KEY`** — create a **User API key** at [Integrations](https://cursor.com/dashboard/integrations); no quotes/spaces in the secret.
+
+3. **Repo not in connected list** — run locally:
+
+   ```bash
+   export CURSOR_API_KEY="cursor_..."
+   npm run daily:diagnose
+   ```
+
+   You should see `✓ Target repo is connected`. If not, fix GitHub permissions in Cursor first.
+
+4. Re-run with full error detail:
+
+   ```bash
+   npm run daily:cloud
+   ```
+
+   (Preflight now prints `code`, `status`, `helpUrl` when the SDK provides them.)
+
+| Symptom | Fix |
+|---------|-----|
+| Workflow green but site old | Hard-refresh; confirm Pages source is `main` |
+| `refreshedAt` stale | Re-run Run 1; check agent logs in Cursor dashboard |
+| `exit code 128` on refresh | Usually `git pull`/`git push` auth. Workflow uses `github.token` — **delete** any repo secret named `GITHUB_TOKEN` if you created one (blank secret breaks git). Re-run workflow after pushing workflow fix. |
+| Push failed | Workflow needs `permissions: contents: write`; disable branch rules blocking `github-actions[bot]` |
+| Weibo rows `—` | Expected sometimes; agent may need mirror URL in disclaimer |
+
+## Mac scheduler (legacy)
+
+`scheduling/install-launchd.sh` only creates `output/gba-pulse-YYYY-MM-DD.html` — **not** this cloud pipeline.
