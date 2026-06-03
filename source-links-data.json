@@ -6,31 +6,47 @@
       "domain": "10times.com",
       "displayName": "10times (Trade Shows)",
       "url": "https://10times.com/shenzhen-cn/tradeshows",
-      "category": "Lifestyle"
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "html"
+      }
     },
     {
       "domain": "eyeshenzhen.com",
       "displayName": "Amazing Shenzhen (Events)",
       "url": "https://www.eyeshenzhen.com/node_400950.htm",
-      "category": "Lifestyle"
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "html",
+        "parser": "eyeshenzhen"
+      }
     },
     {
       "domain": "event.hktdc.com",
       "displayName": "HKTDC Event Calendar",
-      "url": "https://event.hktdc.com/",
-      "category": "Lifestyle"
+      "url": "https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk",
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "hktdc-phr-api"
+      }
     },
     {
       "domain": "shenzhenmuseum.com",
       "displayName": "Shenzhen Museum",
-      "url": "https://www.shenzhenmuseum.com/",
-      "category": "Lifestyle"
+      "url": "https://www.shenzhenmuseum.com/en/exhibition",
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "html"
+      }
     },
     {
       "domain": "westk.hk",
       "displayName": "WestK Hong Kong",
-      "url": "https://www.westk.hk/en/home",
-      "category": "Lifestyle"
+      "url": "https://www.westk.hk/en/whats-on",
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "html"
+      }
     },
     {
       "domain": "21jingji.com",

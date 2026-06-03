@@ -6,6 +6,11 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import {
+  HAPPENINGS_FETCH_BY_DOMAIN,
+  happeningsFetchMeta,
+  happeningsListingUrl,
+} from "./happenings-fetch-config.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -292,9 +297,12 @@ const URL_OVERRIDES = {
   "bbc.com": "https://www.bbc.com/news",
   "bloomberg.com": "https://www.bloomberg.com/asia",
   "westk.hk": "https://www.westk.hk/en/home",
-  "event.hktdc.com": "https://event.hktdc.com/",
+  "event.hktdc.com":
+    HAPPENINGS_FETCH_BY_DOMAIN["event.hktdc.com"].listingUrl,
   "10times.com": "https://10times.com/shenzhen-cn/tradeshows",
   "eyeshenzhen.com": "https://www.eyeshenzhen.com/node_400950.htm",
+  "shenzhenmuseum.com":
+    HAPPENINGS_FETCH_BY_DOMAIN["shenzhenmuseum.com"].listingUrl,
 };
 
 function displayName(domain) {
@@ -334,12 +342,19 @@ function parseDomains(md) {
     if (item && category) {
       const domain = item[1];
       if (shouldSkipDomain(domain)) continue;
-      rows.push({
+      const categoryName = CATEGORY_MAP[category] || category;
+      const url = homepageUrl(domain);
+      const row = {
         domain,
         displayName: displayName(domain),
-        url: homepageUrl(domain),
-        category: CATEGORY_MAP[category] || category,
-      });
+        url: happeningsListingUrl(domain, url),
+        category: categoryName,
+      };
+      if (categoryName === "Lifestyle") {
+        const meta = happeningsFetchMeta(domain);
+        if (meta) row.happeningsFetch = meta;
+      }
+      rows.push(row);
     }
   }
 

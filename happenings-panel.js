@@ -58,6 +58,8 @@
     filter: "all",
     events: [],
     sources: [],
+    seeMoreUrl: null,
+    seeMoreLabel: "See more events",
   };
 
   function esc(s) {
@@ -144,6 +146,26 @@
       });
   }
 
+  function upcomingEventsForFilter(filter) {
+    var today = hktTodayDate();
+    return state.events
+      .filter(function (ev) {
+        if (!matchesFilter(ev, filter)) return false;
+        var end = parseDate(ev.end || ev.start);
+        return end >= today;
+      })
+      .sort(function (a, b) {
+        return parseDate(a.start) - parseDate(b.start);
+      });
+  }
+
+  function sourceLabel(domain) {
+    var src = state.sources.find(function (s) {
+      return s.domain === domain;
+    });
+    return src ? src.displayName : domain || "";
+  }
+
   function formatBadgeRange(ev) {
     var s = parseDate(ev.start);
     var e = parseDate(ev.end || ev.start);
@@ -178,6 +200,9 @@
     var firstDow = new Date(y, m, 1).getDay();
     var daysInMonth = new Date(y, m + 1, 0).getDate();
     var monthEvents = filteredEventsForMonth(y, m, filter);
+    var listEvents = upcomingEventsForFilter(filter);
+    var listCap = 30;
+    if (listEvents.length > listCap) listEvents = listEvents.slice(0, listCap);
 
     var html = '<div class="hp-layout">';
 
@@ -259,13 +284,20 @@
 
     html += '<div class="hp-events-col">';
     html += '<h2 class="hp-events-title">Upcoming Events</h2>';
-    if (!monthEvents.length) {
-      html += '<p class="hp-empty">No events this month for this filter.</p>';
+    if (filter !== "all") {
+      html +=
+        '<p class="hp-events-sub">' +
+        esc(listEvents.length + " upcoming · " + monthEvents.length + " in " + MONTHS[m] + " " + y) +
+        "</p>";
+    }
+    if (!listEvents.length) {
+      html += '<p class="hp-empty">No upcoming events for this filter.</p>';
     } else {
       html += '<ul class="hp-event-list">';
-      monthEvents.forEach(function (ev) {
+      listEvents.forEach(function (ev) {
         var meta = regionMeta(ev);
         var loc = ev.location || meta.label;
+        var src = sourceLabel(ev.sourceDomain);
         html += '<li class="hp-event">';
         html +=
           '<div class="hp-event-badge" style="background:' +
@@ -281,6 +313,7 @@
           esc(loc) +
           "</strong> | " +
           esc(formatDetailDate(ev)) +
+          (src ? " · " + esc(src) : "") +
           "</p>";
         html +=
           '<p class="hp-event-title"><a href="' +
@@ -292,8 +325,14 @@
       });
       html += "</ul>";
     }
+    var seeMoreHref = state.seeMoreUrl || "https://event.hktdc.com/";
+    var seeMoreText = state.seeMoreLabel || "See more events";
     html +=
-      '<a class="hp-see-more" href="https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk" target="_blank" rel="noopener noreferrer">See more HKTDC exhibitions &rsaquo;</a>';
+      '<a class="hp-see-more" href="' +
+      esc(seeMoreHref) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      esc(seeMoreText) +
+      " &rsaquo;</a>";
     html += "</div>";
 
     html += "</div></div>";
@@ -340,6 +379,13 @@
         state.sources = (results[1].sources || []).filter(function (s) {
           return s.category === "Lifestyle";
         });
+        var hktdc = state.sources.find(function (s) {
+          return s.domain === "event.hktdc.com";
+        });
+        if (hktdc) {
+          state.seeMoreUrl = hktdc.url;
+          state.seeMoreLabel = "See more HKTDC exhibitions";
+        }
         var meta = document.getElementById("hp-meta");
         if (meta) {
           meta.textContent =

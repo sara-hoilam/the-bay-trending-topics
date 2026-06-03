@@ -8,17 +8,20 @@ Refresh **`happenings-events.json`** with upcoming lifestyle events for the **Ha
 
 ## Required steps
 
-1. Run the automated fetch (Amazing Shenzhen listings):
+1. Regenerate source links (embeds Lifestyle `happeningsFetch` metadata), then fetch events:
 
    ```bash
+   node scripts/generate-source-links-data.mjs
    node scripts/generate-happenings-data.mjs
    ```
+
+   The script reads **every Lifestyle row** in `source-links-data.json`. Fetch methods and listing URLs are defined in `scripts/happenings-fetch-config.mjs` and embedded at generation time — do not hardcode domain logic in the agent run.
 
 2. Browse **lifestyle sources** from `source-links-data.json` (category **Lifestyle**) and add or update events **not** covered by the script:
 
    | Domain | Focus |
    |--------|--------|
-   | `event.hktdc.com` | HK **Exhibitions** via [filtered listing](https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk) (script uses `api-phr.hktdc.com`) |
+   | `event.hktdc.com` | HK exhibitions — URL/filter in source links (`eventFormat=Exhibition&location=hk`); API fetch is automatic |
    | `westk.hk` | M+, Palace Museum, performing arts |
    | `10times.com` | Shenzhen trade shows |
    | `shenzhenmuseum.com` | Museum exhibitions |
