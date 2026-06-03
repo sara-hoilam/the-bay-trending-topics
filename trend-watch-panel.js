@@ -166,7 +166,35 @@
     return false;
   }
 
+  function isWrongSourceVolume(it, secId) {
+    if (!it || !it.searchVolume) return false;
+    var sv = String(it.searchVolume);
+    if (secId === "weibo" && /热搜指数/.test(sv)) return true;
+    if (secId === "baidu" && /热度/.test(sv) && !/热搜指数/.test(sv)) return true;
+    return false;
+  }
+
+  function candidateHasPlatformHit(c, secId, title, geoId) {
+    if (!c || !secId) return false;
+    var key = String(title || "").trim().toLowerCase();
+    var hits = c.platformHits || [];
+    for (var i = 0; i < hits.length; i++) {
+      var h = hits[i];
+      var hitTitle = String(h.title || "").trim().toLowerCase();
+      var display = String(c.displayTitle || "").trim().toLowerCase();
+      if (hitTitle !== key && display !== key) continue;
+      if (secId === "google_trends" && h.platform === "google_trends") {
+        if (!geoId || h.geo === geoId) return true;
+      } else if (h.platform === secId) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   function passesPlatformFilter(it, secId, data, geoId) {
+    if (it.sourcePlatform && it.sourcePlatform !== secId) return false;
+    if (isWrongSourceVolume(it, secId)) return false;
     if (secId === "baidu" || secId === "weibo") {
       if (it.isGossip === true) return false;
       var c = findCandidate(data, it.title, secId, geoId);
@@ -350,6 +378,10 @@
     var list = data.topicCandidates || [];
     for (var i = 0; i < list.length; i++) {
       var c = list[i];
+      if (secId === "google_trends" || secId === "baidu" || secId === "weibo") {
+        if (!candidateHasPlatformHit(c, secId, title, geoId)) continue;
+        return c;
+      }
       if (String(c.displayTitle || "").trim().toLowerCase() === key) return c;
       var hits = c.platformHits || [];
       for (var j = 0; j < hits.length; j++) {
@@ -454,7 +486,9 @@
   function displayItems(data, sec, geoId) {
     if (sec.id === "google_trends") return displayGoogleItems(data, sec);
     var secId = sec.id;
-    var raw = getSectionItems(sec);
+    var raw = getSectionItems(sec).map(function (it) {
+      return Object.assign({}, it, { sourcePlatform: secId });
+    });
     var pool = sortItems(raw).filter(function (it) {
       return !isRowEmpty(it) && passesPlatformFilter(it, secId, data, geoId);
     });
@@ -468,31 +502,13 @@
       });
       pool = Object.values(byTitle);
     }
-    var seen = new Set(
-      pool.map(function (it) {
-        return it.title;
-      })
-    );
-    if (pool.length < RANK_SLOTS) {
-      backfillFromCandidates(data, secId, geoId, seen).forEach(function (it) {
-        if (pool.length < RANK_SLOTS) pool.push(it);
-      });
-    }
-    if (secId === "weibo" && pool.length < RANK_SLOTS) {
-      sortItems(raw).forEach(function (it) {
-        if (pool.length >= RANK_SLOTS) return;
-        if (seen.has(it.title)) return;
-        if (!passesWeiboDeepFilter(it, data)) return;
-        seen.add(it.title);
-        pool.push(it);
-      });
-    }
     pool.sort(function (a, b) {
       if (secId === "baidu" || secId === "weibo") {
-        var va = a.volumeEstimate != null ? a.volumeEstimate : 0;
-        var vb = b.volumeEstimate != null ? b.volumeEstimate : 0;
-        if (vb !== va) return vb - va;
+        return (a.rank || 999) - (b.rank || 999);
       }
+      var va = a.volumeEstimate != null ? a.volumeEstimate : 0;
+      var vb = b.volumeEstimate != null ? b.volumeEstimate : 0;
+      if (vb !== va) return vb - va;
       return (a.rank || 999) - (b.rank || 999);
     });
     var rows = [];
