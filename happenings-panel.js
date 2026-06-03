@@ -146,26 +146,6 @@
       });
   }
 
-  function upcomingEventsForFilter(filter) {
-    var today = hktTodayDate();
-    return state.events
-      .filter(function (ev) {
-        if (!matchesFilter(ev, filter)) return false;
-        var end = parseDate(ev.end || ev.start);
-        return end >= today;
-      })
-      .sort(function (a, b) {
-        return parseDate(a.start) - parseDate(b.start);
-      });
-  }
-
-  function sourceLabel(domain) {
-    var src = state.sources.find(function (s) {
-      return s.domain === domain;
-    });
-    return src ? src.displayName : domain || "";
-  }
-
   function formatBadgeRange(ev) {
     var s = parseDate(ev.start);
     var e = parseDate(ev.end || ev.start);
@@ -200,9 +180,6 @@
     var firstDow = new Date(y, m, 1).getDay();
     var daysInMonth = new Date(y, m + 1, 0).getDate();
     var monthEvents = filteredEventsForMonth(y, m, filter);
-    var listEvents = upcomingEventsForFilter(filter);
-    var listCap = 30;
-    if (listEvents.length > listCap) listEvents = listEvents.slice(0, listCap);
 
     var html = '<div class="hp-layout">';
 
@@ -284,20 +261,13 @@
 
     html += '<div class="hp-events-col">';
     html += '<h2 class="hp-events-title">Upcoming Events</h2>';
-    if (filter !== "all") {
-      html +=
-        '<p class="hp-events-sub">' +
-        esc(listEvents.length + " upcoming · " + monthEvents.length + " in " + MONTHS[m] + " " + y) +
-        "</p>";
-    }
-    if (!listEvents.length) {
-      html += '<p class="hp-empty">No upcoming events for this filter.</p>';
+    if (!monthEvents.length) {
+      html += '<p class="hp-empty">No events this month for this filter.</p>';
     } else {
       html += '<ul class="hp-event-list">';
-      listEvents.forEach(function (ev) {
+      monthEvents.forEach(function (ev) {
         var meta = regionMeta(ev);
         var loc = ev.location || meta.label;
-        var src = sourceLabel(ev.sourceDomain);
         html += '<li class="hp-event">';
         html +=
           '<div class="hp-event-badge" style="background:' +
@@ -313,7 +283,6 @@
           esc(loc) +
           "</strong> | " +
           esc(formatDetailDate(ev)) +
-          (src ? " · " + esc(src) : "") +
           "</p>";
         html +=
           '<p class="hp-event-title"><a href="' +
