@@ -143,6 +143,30 @@ const GLOSSARY = {
     isNewsworthy: false,
     isGbaRelevant: false,
   },
+  比亚迪汽车5月销量383453辆: {
+    titleEn: "BYD May auto sales — 383,453 units",
+    whyTrending:
+      "Weibo tech hot listed BYD's May delivery figure as the EV giant's monthly sales update circulated — directly relevant to Shenzhen HQ and GBA manufacturing.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  SpaceXA股供应商名单曝光: {
+    titleEn: "SpaceX A-share supplier list surfaces",
+    whyTrending:
+      "Tech board traffic rose on a list naming mainland listed firms tied to SpaceX's supply chain — a cross-border aerospace/industrial story with GBA electronics suppliers in focus.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "腾讯云DeepSeek最高降价97.5%": {
+    titleEn: "Tencent Cloud DeepSeek cuts prices up to 97.5%",
+    whyTrending:
+      "Tencent Cloud's aggressive DeepSeek model pricing cuts hit Weibo tech hot search as enterprises compare AI inference costs — relevant to Shenzhen/HK cloud and fintech buyers.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
 };
 
 function normTitle(t) {

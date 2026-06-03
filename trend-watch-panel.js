@@ -23,7 +23,7 @@
    * Skip local viral human-interest, entertainment nostalgia, micro-dramas.
    */
   var NEWSWORTHY =
-    /新规|规则|立法|条例|规定|政策|驾驶|获批|试验|频率|6G|5G|AI|人工智能|豆包|Doubao|芯片|半导体|电动车|法拉利|苹果|利率|存款|税|经济|GDP|股市|银行|外交|总统|部长|协议|勋章|武契奇|国防|制裁|贸易|台风|雷暴|大风|暴雨|预警|极端|气象|天气|香港|澳门|港澳|大湾区|粤港|横琴|派位|統一|小一|小\s*一|入境|通关|口岸|监管|央行|发改委|国务院|环球|国际|全球|文化|使命|考古|三星堆|会晤|红线|汛期/i;
+    /新规|规则|立法|条例|规定|政策|驾驶|获批|试验|频率|6G|5G|AI|人工智能|豆包|Doubao|DeepSeek|芯片|半导体|电动车|法拉利|苹果|腾讯|比亚迪|BYD|销量|汽车|新能源|A股|供应商|SpaceX|降价|云计算|利率|存款|税|经济|GDP|股市|银行|外交|总统|部长|协议|勋章|武契奇|国防|制裁|贸易|台风|雷暴|大风|暴雨|预警|极端|气象|天气|香港|澳门|港澳|大湾区|粤港|横琴|派位|統一|小一|小\s*一|入境|通关|口岸|监管|央行|发改委|国务院|环球|国际|全球|文化|使命|考古|三星堆|会晤|红线|汛期/i;
 
   var LOCAL_VIRAL =
     /大哥|赊.*面|砸店|崩溃痛哭|光伏板|亲戚|灵魂摆渡|瘦腿|膝盖|酒家|博主|嫌贵|找碴|暴食|减肥|秘嫁|阔太|综艺|重播|播出|电视剧|网剧|粉丝|网红|相亲|离婚|恋情|绯闻|抄袭|新歌|砸|痛哭|老宅|偷装|造谣者|学校已报警/i;
@@ -162,7 +162,8 @@
     var blob = itemTextBlob(it);
     if (LOCAL_VIRAL.test(blob)) return false;
     if (GOSSIP_KEYWORDS.test(blob)) return false;
-    if (NEWSWORTHY.test(blob)) return true;
+    if (NEWSWORTHY.test(blob) || NEWS_TOPIC.test(blob)) return true;
+    if (gbaAutoMatch(blob)) return true;
     return false;
   }
 
@@ -502,8 +503,23 @@
       });
       pool = Object.values(byTitle);
     }
+    if (secId === "weibo" && pool.length < RANK_SLOTS) {
+      var seen = new Set(pool.map(function (it) {
+        return it.title;
+      }));
+      sortItems(raw).forEach(function (it) {
+        if (pool.length >= RANK_SLOTS) return;
+        if (seen.has(it.title) || isRowEmpty(it)) return;
+        if (!passesWeiboDeepFilter(it, data)) return;
+        seen.add(it.title);
+        pool.push(it);
+      });
+    }
     pool.sort(function (a, b) {
       if (secId === "baidu" || secId === "weibo") {
+        var va = a.volumeEstimate != null ? a.volumeEstimate : 0;
+        var vb = b.volumeEstimate != null ? b.volumeEstimate : 0;
+        if (vb !== va) return vb - va;
         return (a.rank || 999) - (b.rank || 999);
       }
       var va = a.volumeEstimate != null ? a.volumeEstimate : 0;

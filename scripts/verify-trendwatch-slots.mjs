@@ -27,7 +27,7 @@ const GBA_LOCAL =
 const MAJOR_NATIONAL =
   /国台办|中美|高考|1290万|民生|公积金|育儿|两军|夏威夷|6G|获批|黄仁勋|Trump|特朗普/i;
 const NEWSWORTHY =
-  /政策|外交|芯片|电动车|AI|台风|预警|国台办|高考|公积金|民生/i;
+  /政策|外交|芯片|电动车|AI|腾讯|比亚迪|DeepSeek|SpaceX|A股|销量|降价|台风|预警|国台办|高考|公积金|民生|6G/i;
 const LOCAL_VIRAL = /光伏板|崩溃痛哭|灵魂摆渡|瘦腿|综艺|抄袭|老宅|偷装/i;
 const GOSSIP = /恋情|绯闻|浪姐|抄袭|秘嫁|综艺.*导演/i;
 
@@ -68,7 +68,7 @@ function countFilled(secId) {
   const raw = secId === "weibo" ? getWeiboItems(sec) : sec.items || [];
   const seen = new Set();
   const pool = [];
-  for (const it of raw.sort((a, b) => (a.rank || 999) - (b.rank || 999))) {
+  for (const it of raw.sort((a, b) => (b.volumeEstimate || 0) - (a.volumeEstimate || 0))) {
     if (!it?.title || seen.has(it.title)) continue;
     if (!isNews(it) || !isGba(it)) continue;
     seen.add(it.title);
