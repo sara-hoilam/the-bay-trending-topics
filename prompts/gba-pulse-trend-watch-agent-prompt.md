@@ -98,7 +98,7 @@ You refresh the **Trend Watch** tab in GBA Pulse by editing one HTML fragment. T
 
 `id` must be `"baidu"` or `"weibo"` only. **Do not** add `x_twitter`.
 
-**Editorial bar (The Bay / GBA Pulse):** Baidu and Weibo show **GBA-relevant or major national** topics only.
+**Editorial bar (The Bay / GBA Pulse):** Baidu and Weibo show **GBA-relevant or major national** topics only. **Each column is its own live board** — never copy Baidu titles/volumes into the Weibo section (the UI does not mirror across platforms).
 
 **GBA relevance (required):** A row must tie to **Hong Kong, Macao, or a GBA mainland city** (Guangzhou, Shenzhen, Zhuhai, Foshan, Huizhou, Dongguan, Zhongshan, Jiangmen, Zhaoqing) — or cross-border GBA terms (大湾区, 粤港澳, 横琴, 前海, 南沙, 北向, 口岸, etc.). **Exception:** truly **major China-wide** stories (e.g. Trump–Xi summit, 国台办 / cross-strait, nationwide 高考, central 民生/公积金 policy, US–China military talks) even without a GBA place name. Set `"isGbaRelevant": true|false` on every row.
 

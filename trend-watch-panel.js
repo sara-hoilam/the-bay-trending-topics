@@ -413,25 +413,9 @@
   }
 
   /**
-   * Last-resort Weibo fill: mirror Baidu rows that pass GBA filters when the Weibo
-   * board's top ranks are mostly entertainment (common capture gap).
+   * Weibo must only show Weibo-sourced rows — never mirror Baidu (different boards,
+   * different volume scales). Empty slots are OK when gossip filter leaves <5 items.
    */
-  function backfillWeiboFromBaidu(data, pool, seen) {
-    if (pool.length >= RANK_SLOTS) return;
-    var baiduSec = null;
-    (data.sections || []).forEach(function (sec) {
-      if (sec.id === "baidu") baiduSec = sec;
-    });
-    if (!baiduSec) return;
-    sortItems(baiduSec.items || []).forEach(function (it) {
-      if (pool.length >= RANK_SLOTS) return;
-      if (!it || !it.title || seen.has(it.title)) return;
-      if (!passesPlatformFilter(it, "baidu", data, null)) return;
-      seen.add(it.title);
-      pool.push(Object.assign({}, it, { pin: it.pin || "📍🇨🇳" }));
-    });
-  }
-
   function displayGoogleItems(data, sec) {
     var locs = (sec.locations || []).filter(function (loc) {
       return loc.id === "HK" || loc.id === "MO";
@@ -502,9 +486,6 @@
         seen.add(it.title);
         pool.push(it);
       });
-    }
-    if (secId === "weibo" && pool.length < RANK_SLOTS) {
-      backfillWeiboFromBaidu(data, pool, seen);
     }
     pool.sort(function (a, b) {
       if (secId === "baidu" || secId === "weibo") {

@@ -75,16 +75,6 @@ function countFilled(secId) {
     pool.push(it);
     if (pool.length >= RANK_SLOTS) break;
   }
-  if (secId === "weibo" && pool.length < RANK_SLOTS) {
-    const baidu = data.sections.find((s) => s.id === "baidu");
-    for (const it of (baidu?.items || []).sort((a, b) => (a.rank || 999) - (b.rank || 999))) {
-      if (pool.length >= RANK_SLOTS) break;
-      if (!it?.title || seen.has(it.title)) continue;
-      if (!isNews(it) || !isGba(it)) continue;
-      seen.add(it.title);
-      pool.push(it);
-    }
-  }
   return pool.length;
 }
 
