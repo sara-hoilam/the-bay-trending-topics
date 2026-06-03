@@ -18,7 +18,7 @@ Refresh **`happenings-events.json`** with upcoming lifestyle events for the **Ha
 
    | Domain | Focus |
    |--------|--------|
-   | `event.hktdc.com` | HK trade fairs & expos (next 90 days) |
+   | `event.hktdc.com` | HK **Exhibitions** via [filtered listing](https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk) (script uses `api-phr.hktdc.com`) |
    | `westk.hk` | M+, Palace Museum, performing arts |
    | `10times.com` | Shenzhen trade shows |
    | `shenzhenmuseum.com` | Museum exhibitions |

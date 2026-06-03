@@ -18,9 +18,13 @@ const sourceLinksPath = path.join(root, "source-links-data.json");
 
 /** Listing pages that work better than the homepage URL in source-links-data.json */
 const LISTING_URL_OVERRIDES = {
+  "event.hktdc.com":
+    "https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk",
   "shenzhenmuseum.com": "https://www.shenzhenmuseum.com/en/exhibition",
   "westk.hk": "https://www.westk.hk/en/whats-on",
 };
+
+const HKTDC_EVENT_API = "https://api-phr.hktdc.com/phr-home/v1/event";
 
 const UA = "GBA-Pulse-Bot/1.0 (+https://github.com/sara-hoilam/the-bay-trending-topics)";
 
@@ -59,6 +63,70 @@ function addDays(iso, days) {
 
 function truncateTitle(title, max = 90) {
   return title.length > max ? `${title.slice(0, max - 1)}…` : title;
+}
+
+function isoDateHkt(iso) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Hong_Kong",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date(iso));
+  function get(type) {
+    const p = parts.find((x) => x.type === type);
+    return p ? p.value : "";
+  }
+  return `${get("year")}-${get("month")}-${get("day")}`;
+}
+
+function hktMidnightIso(dateStr) {
+  return new Date(`${dateStr}T00:00:00+08:00`).toISOString();
+}
+
+function isHktdcHkExhibition(hit) {
+  const formats = hit.eventFormats ?? [];
+  return (
+    formats.includes("Exhibition") &&
+    hit.eventIsOutsideHK === false &&
+    hit.eventOrganizerCode === "hktdc"
+  );
+}
+
+function parseHktdcExhibitions(data, sourceDomain, listUrl) {
+  return (data.hits ?? [])
+    .filter(isHktdcHkExhibition)
+    .map((hit) => ({
+      title: truncateTitle(hit.title),
+      start: isoDateHkt(hit.eventStartDate),
+      end: isoDateHkt(hit.eventEndDate),
+      region: "hk",
+      location: hit.displayCityForDisplay || "Hong Kong",
+      url: hit.landingUrl || listUrl,
+      sourceDomain,
+    }));
+}
+
+async function fetchHktdcExhibitions(today, listUrl) {
+  const params = new URLSearchParams({
+    organizers: "hktdc, hktdc-participate",
+    fromEventEndDate: hktMidnightIso(today),
+    language: "en",
+    offset: "1",
+    sort: "eventStartDate",
+    limit: "100",
+  });
+  const res = await fetch(`${HKTDC_EVENT_API}?${params}`, {
+    headers: {
+      "User-Agent": UA,
+      Accept: "application/json",
+      Origin: "https://event.hktdc.com",
+      Referer: listUrl,
+    },
+    signal: AbortSignal.timeout(25000),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} for HKTDC event API`);
+  const data = await res.json();
+  return parseHktdcExhibitions(data, "event.hktdc.com", listUrl);
 }
 
 function inferRegion(text) {
@@ -332,8 +400,12 @@ async function main() {
     console.log(`Fetching ${src.domain} (${src.url})`);
     let domainEvents = [];
     try {
-      const html = await fetchText(src.url);
-      domainEvents = parseSource(html, src.domain, src.url);
+      if (src.domain === "event.hktdc.com") {
+        domainEvents = await fetchHktdcExhibitions(today, src.url);
+      } else {
+        const html = await fetchText(src.url);
+        domainEvents = parseSource(html, src.domain, src.url);
+      }
       console.log(`  ${domainEvents.length} events from ${src.domain}`);
     } catch (err) {
       console.warn(`  Skip ${src.domain}: ${err.message}`);

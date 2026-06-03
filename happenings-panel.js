@@ -293,7 +293,7 @@
       html += "</ul>";
     }
     html +=
-      '<a class="hp-see-more" href="https://event.hktdc.com/" target="_blank" rel="noopener noreferrer">See more events &rsaquo;</a>';
+      '<a class="hp-see-more" href="https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk" target="_blank" rel="noopener noreferrer">See more HKTDC exhibitions &rsaquo;</a>';
     html += "</div>";
 
     html += "</div></div>";
