@@ -87,6 +87,10 @@ const EXCLUDED_DOMAINS = new Set([
   "appimg.modaily.cn",
   "mobile.epaper.routeryun.com",
   "content.foshanplus.com",
+  // Removed from Lifestyle (news-heavy / not event calendars)
+  "timeout.com",
+  "lifestyleasia.com",
+  "macauonjourney.com",
 ]);
 
 function shouldSkipDomain(domain) {

@@ -21,9 +21,6 @@ Refresh **`happenings-events.json`** with upcoming lifestyle events for the **Ha
    | `event.hktdc.com` | HK trade fairs & expos (next 90 days) |
    | `westk.hk` | M+, Palace Museum, performing arts |
    | `10times.com` | Shenzhen trade shows |
-   | `timeout.com` | HK culture & openings |
-   | `lifestyleasia.com` | HK/SZ lifestyle openings |
-   | `macauonjourney.com` | Macao travel & culture |
    | `shenzhenmuseum.com` | Museum exhibitions |
 
 3. Each event object:

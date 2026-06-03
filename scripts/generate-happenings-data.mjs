@@ -18,8 +18,6 @@ const sourceLinksPath = path.join(root, "source-links-data.json");
 
 /** Listing pages that work better than the homepage URL in source-links-data.json */
 const LISTING_URL_OVERRIDES = {
-  "timeout.com": "https://www.timeout.com/hong-kong/things-to-do",
-  "lifestyleasia.com": "https://www.lifestyleasia.com/hk/things-to-do/",
   "shenzhenmuseum.com": "https://www.shenzhenmuseum.com/en/exhibition",
   "westk.hk": "https://www.westk.hk/en/whats-on",
 };
@@ -82,10 +80,9 @@ function inferRegion(text) {
 }
 
 function defaultRegionForDomain(domain) {
-  if (domain === "timeout.com" || domain === "event.hktdc.com" || domain === "westk.hk") {
+  if (domain === "event.hktdc.com" || domain === "westk.hk") {
     return { region: "hk", location: "Hong Kong" };
   }
-  if (domain === "macauonjourney.com") return { region: "macao", location: "Macao" };
   if (domain === "10times.com" || domain === "eyeshenzhen.com" || domain === "shenzhenmuseum.com") {
     return { region: "shenzhen", location: "Shenzhen" };
   }
@@ -193,12 +190,6 @@ function normalizeKey(ev) {
   return `${ev.sourceDomain}|${ev.title.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ").trim()}`;
 }
 
-function postedFromUrl(url) {
-  const m = url.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
-  if (!m) return null;
-  return `${m[1]}-${m[2]}-${m[3]}`;
-}
-
 function parseEyeshenzhen(html, sourceDomain) {
   const events = [];
   const itemRe = /<a class="articlelist-item" href="([^"]+)">([\s\S]*?)<\/a>/g;
@@ -231,114 +222,8 @@ function parseEyeshenzhen(html, sourceDomain) {
   return events;
 }
 
-function parseMacauonjourney(html, sourceDomain) {
-  const events = [];
-  const today = hktDateStr();
-  const cutoff = addDays(today, -90);
-  const articleRe = /<article[^>]*hentry[^>]*>([\s\S]*?)<\/article>/g;
-  let match;
-
-  while ((match = articleRe.exec(html)) !== null) {
-    const block = match[1];
-    const url = block.match(/entry-title"><a href="([^"]+)"/)?.[1];
-    const rawTitle = block.match(/entry-title"><a href="[^"]+"[^>]*>([\s\S]*?)<\/a>/)?.[1];
-    if (!url || !rawTitle) continue;
-
-    const title = decodeHtml(rawTitle);
-    const datetime = block.match(/datetime="([^"]+)"/)?.[1];
-    const posted =
-      (datetime && /^\d{4}-\d{2}-\d{2}/.test(datetime) ? datetime.slice(0, 10) : null) ??
-      postedFromUrl(url);
-    if (!posted || posted < cutoff) continue;
-
-    const blob = `${title} ${block}`;
-    const { region, location } = inferRegion(blob);
-    const { start, end } = extractDateRange(blob, posted);
-
-    events.push({
-      title: truncateTitle(title),
-      start,
-      end,
-      region,
-      location,
-      url,
-      sourceDomain,
-    });
-    if (events.length >= 10) break;
-  }
-  return events;
-}
-
-function parseTimeout(html, sourceDomain, listUrl) {
-  const events = [];
-  const today = hktDateStr();
-  const seen = new Set();
-  const tileRe = /<article class="tile _article_wkzyo_1"[\s\S]*?<\/article>/g;
-  let match;
-
-  while ((match = tileRe.exec(html)) !== null) {
-    const block = match[0];
-    const path = block.match(/href="(\/hong-kong\/[^"]+)"/)?.[1];
-    const title = block.match(/<h3[^>]*>([^<]+)<\/h3>/)?.[1];
-    if (!path || !title || path.includes("/on-video")) continue;
-    if (seen.has(path)) continue;
-    seen.add(path);
-
-    const blob = decodeHtml(title);
-    const { start, end } = extractDateRange(blob, today);
-    events.push({
-      title: truncateTitle(blob),
-      start,
-      end,
-      region: "hk",
-      location: "Hong Kong",
-      url: `https://www.timeout.com${path}`,
-      sourceDomain,
-    });
-    if (events.length >= 10) break;
-  }
-
-  if (!events.length) {
-    const linkRe = /href="(\/hong-kong\/things-to-do\/[^"#?]+)"/g;
-    while ((match = linkRe.exec(html)) !== null) {
-      const path = match[1];
-      if (path.includes("/on-video") || seen.has(path)) continue;
-      seen.add(path);
-      const slug = path.split("/").pop() ?? "event";
-      const title = slug
-        .split("-")
-        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-        .join(" ");
-      events.push({
-        title: truncateTitle(title),
-        start: today,
-        end: addDays(today, 30),
-        region: "hk",
-        location: "Hong Kong",
-        url: `https://www.timeout.com${path}`,
-        sourceDomain,
-      });
-      if (events.length >= 8) break;
-    }
-  }
-
-  if (!events.length && listUrl) {
-    events.push({
-      title: "Time Out Hong Kong — things to do",
-      start: today,
-      end: addDays(today, 30),
-      region: "hk",
-      location: "Hong Kong",
-      url: listUrl,
-      sourceDomain,
-    });
-  }
-  return events;
-}
-
 function parseJsonLdEvents(html, sourceDomain, listUrl) {
   const events = [];
-  const today = hktDateStr();
   const re = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
   let match;
 
@@ -381,8 +266,6 @@ function parseGeneric(html, sourceDomain, listUrl) {
 
 const DOMAIN_PARSERS = {
   "eyeshenzhen.com": parseEyeshenzhen,
-  "macauonjourney.com": parseMacauonjourney,
-  "timeout.com": parseTimeout,
 };
 
 function parseSource(html, sourceDomain, listUrl) {

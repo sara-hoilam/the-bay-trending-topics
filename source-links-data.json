@@ -1,6 +1,6 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 120,
+  "count": 117,
   "sources": [
     {
       "domain": "10times.com",
@@ -21,27 +21,9 @@
       "category": "Lifestyle"
     },
     {
-      "domain": "lifestyleasia.com",
-      "displayName": "Lifestyle Asia",
-      "url": "https://www.lifestyleasia.com/",
-      "category": "Lifestyle"
-    },
-    {
-      "domain": "macauonjourney.com",
-      "displayName": "Macao on Journey",
-      "url": "https://macauonjourney.com/",
-      "category": "Lifestyle"
-    },
-    {
       "domain": "shenzhenmuseum.com",
       "displayName": "Shenzhen Museum",
       "url": "https://www.shenzhenmuseum.com/",
-      "category": "Lifestyle"
-    },
-    {
-      "domain": "timeout.com",
-      "displayName": "Time Out",
-      "url": "https://www.timeout.com/",
       "category": "Lifestyle"
     },
     {

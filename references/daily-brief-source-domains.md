@@ -120,13 +120,10 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `yicaiglobal.com` (1 links in training sample)
 - `zaobao.com` (1 links in training sample)
 
-## Lifestyle (8 domains)
+## Lifestyle (5 domains)
 
 - `westk.hk` (events hub)
 - `event.hktdc.com` (trade fairs)
 - `10times.com` (trade show listings)
 - `eyeshenzhen.com` (Shenzhen fairs & exhibitions)
-- `macauonjourney.com` (14 links in training sample)
-- `lifestyleasia.com` (1 links in training sample)
-- `timeout.com` (1 links in training sample)
 - `shenzhenmuseum.com` (1 links in training sample)
