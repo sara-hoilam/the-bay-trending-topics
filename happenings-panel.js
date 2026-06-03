@@ -29,9 +29,32 @@
     "JUL", "AUG", "SEP", "OCT", "NOV", "DEC",
   ];
 
+  /** Calendar month/year and “today” use Asia/Hong_Kong, not browser locale. */
+  function hktTodayParts() {
+    var parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Hong_Kong",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).formatToParts(new Date());
+    function get(type) {
+      var p = parts.find(function (x) {
+        return x.type === type;
+      });
+      return p ? Number(p.value) : 0;
+    }
+    return { year: get("year"), month: get("month") - 1, day: get("day") };
+  }
+
+  function hktTodayDate() {
+    var p = hktTodayParts();
+    return new Date(p.year, p.month, p.day);
+  }
+
+  var hktInit = hktTodayParts();
   var state = {
-    year: 2026,
-    month: 5,
+    year: hktInit.year,
+    month: hktInit.month,
     filter: "all",
     events: [],
     sources: [],
@@ -151,7 +174,7 @@
     var y = state.year;
     var m = state.month;
     var filter = state.filter;
-    var today = new Date();
+    var today = hktTodayDate();
     var firstDow = new Date(y, m, 1).getDay();
     var daysInMonth = new Date(y, m + 1, 0).getDate();
     var monthEvents = filteredEventsForMonth(y, m, filter);

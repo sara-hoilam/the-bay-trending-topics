@@ -1,5 +1,5 @@
 {
-  "generatedFrom": "Lifestyle source links (8 domains) · automated + curated",
+  "generatedFrom": "Lifestyle source links (8 domains) · automated fetch with cache fallback",
   "updatedAt": "2026-06-03",
   "events": [
     {
@@ -66,6 +66,51 @@
       "sourceDomain": "eyeshenzhen.com"
     },
     {
+      "title": "東京澀谷區加強整頓市容 亂拋垃圾會被罰款二千日元",
+      "start": "2026-06-02",
+      "end": "2026-06-16",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/02/%e6%9d%b1%e4%ba%ac%e6%be%80%e8%b0%b7%e5%8d%80%e5%8a%a0%e5%bc%b7%e6%95%b4%e9%a0%93%e5%b8%82%e5%ae%b9-%e4%ba%82%e6%8b%8b%e5%9e%83%e5%9c%be%e6%9c%83%e8%a2%ab%e7%bd%b0%e6%ac%be%e4%ba%8c%e5%8d%83%e6%97%a5/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "逾百五年歷史 澳門陸軍俱樂部躋身全球最佳私人俱樂部",
+      "start": "2026-06-02",
+      "end": "2026-06-16",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/02/%e9%80%be%e7%99%be%e4%ba%94%e5%b9%b4%e6%ad%b7%e5%8f%b2-%e6%be%b3%e9%96%80%e9%99%b8%e8%bb%8d%e4%bf%b1%e6%a8%82%e9%83%a8%e8%ba%8b%e8%ba%ab%e5%85%a8%e7%90%83%e6%9c%80%e4%bd%b3%e7%a7%81%e4%ba%ba%e4%bf%b1/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "外賣行業出白皮書 推動制定行業服務標準三方面應對挑戰",
+      "start": "2026-06-02",
+      "end": "2026-06-16",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/02/%e5%a4%96%e8%b3%a3%e8%a1%8c%e6%a5%ad%e5%87%ba%e7%99%bd%e7%9a%ae%e6%9b%b8-%e6%8e%a8%e5%8b%95%e5%88%b6%e5%ae%9a%e8%a1%8c%e6%a5%ad%e6%9c%8d%e5%8b%99%e6%a8%99%e6%ba%96%e4%b8%89%e6%96%b9%e9%9d%a2%e6%87%89/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "青洲致命交通意外後再有涉斑馬線事故 兩婆孫雅廉訪被撞",
+      "start": "2026-06-02",
+      "end": "2026-06-16",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/02/%e9%9d%92%e6%b4%b2%e8%87%b4%e5%91%bd%e4%ba%a4%e9%80%9a%e6%84%8f%e5%a4%96%e5%be%8c%e5%86%8d%e6%9c%89%e6%b6%89%e6%96%91%e9%a6%ac%e7%b7%9a%e4%ba%8b%e6%95%85-%e5%85%a9%e5%a9%86%e5%ad%ab%e9%9b%85%e5%bb%89/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "再多十三個公共停車場下星期三起實施半小時收費",
+      "start": "2026-06-02",
+      "end": "2026-06-16",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/02/%e5%86%8d%e5%a4%9a%e5%8d%81%e4%b8%89%e5%80%8b%e5%85%ac%e5%85%b1%e5%81%9c%e8%bb%8a%e5%a0%b4%e4%b8%8b%e6%98%9f%e6%9c%9f%e4%b8%89%e8%b5%b7%e5%af%a6%e6%96%bd%e5%8d%8a%e5%b0%8f%e6%99%82%e6%94%b6%e8%b2%bb/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
       "title": "17 upcoming events at Shenzhen's two exhibitions centers in June",
       "start": "2026-06-03",
       "end": "2026-08-02",
@@ -73,6 +118,132 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/03/content_32076861.htm",
       "sourceDomain": "eyeshenzhen.com"
+    },
+    {
+      "title": "內地綜藝節目一車明星安全帶全是後製 公安部發文提醒",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/03/%e5%85%a7%e5%9c%b0%e7%b6%9c%e8%97%9d%e7%af%80%e7%9b%ae%e4%b8%80%e8%bb%8a%e6%98%8e%e6%98%9f%e5%ae%89%e5%85%a8%e5%b8%b6%e5%85%a8%e6%98%af%e5%be%8c%e8%a3%bd-%e5%85%ac%e5%ae%89%e9%83%a8%e7%99%bc%e6%96%87/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "議員倡直航澳紐 民航局：拓長線具基礎惟需航企商業決策",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/03/%e8%ad%b0%e5%93%a1%e5%80%a1%e7%9b%b4%e8%88%aa%e6%be%b3%e7%b4%90-%e6%b0%91%e8%88%aa%e5%b1%80%ef%bc%9a%e6%8b%93%e9%95%b7%e7%b7%9a%e5%85%b7%e5%9f%ba%e7%a4%8e%e6%83%9f%e9%9c%80%e8%88%aa%e4%bc%81%e5%95%86/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "公共部門加入 全澳共享蚊怕水專區已增至近二百處地點",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/03/%e5%85%ac%e5%85%b1%e9%83%a8%e9%96%80%e5%8a%a0%e5%85%a5-%e5%85%a8%e6%be%b3%e5%85%b1%e4%ba%ab%e8%9a%8a%e6%80%95%e6%b0%b4%e5%b0%88%e5%8d%80%e5%b7%b2%e5%a2%9e%e8%87%b3%e8%bf%91%e4%ba%8c%e7%99%be%e8%99%95/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "輕軌預留兩站連接橫琴線 南線盡快上馬 爭取三季掃碼入閘",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/03/%e8%bc%95%e8%bb%8c%e9%a0%90%e7%95%99%e5%85%a9%e7%ab%99%e9%80%a3%e6%8e%a5%e6%a9%ab%e7%90%b4%e7%b7%9a-%e5%8d%97%e7%b7%9a%e7%9b%a1%e5%bf%ab%e4%b8%8a%e9%a6%ac-%e7%88%ad%e5%8f%96%e4%b8%89%e5%ad%a3%e6%8e%83/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "位於南海中南部低壓區將逐步發展 未來數日天氣酷熱",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://macauonjourney.com/2026/06/03/%e4%bd%8d%e6%96%bc%e5%8d%97%e6%b5%b7%e4%b8%ad%e5%8d%97%e9%83%a8%e4%bd%8e%e5%a3%93%e5%8d%80%e5%b0%87%e9%80%90%e6%ad%a5%e7%99%bc%e5%b1%95-%e6%9c%aa%e4%be%86%e6%95%b8%e6%97%a5%e5%a4%a9%e6%b0%a3%e9%85%b7/",
+      "sourceDomain": "macauonjourney.com"
+    },
+    {
+      "title": "The best events happening in Hong Kong this May",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/things-to-do-hong-kong-may-events-festivals",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "The best things to do in Hong Kong this weekend",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/things-to-do-in-hong-kong-this-weekend",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "2026 Hong Kong public holidays: How to maximise your time off",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/news/2026-hong-kong-public-holidays-how-to-maximise-your-time-off-052025",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "The 65 best things to do in Hong Kong 2025",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/best-things-to-do-in-hong-kong",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "Your ultimate guide to 'Kowloon Walled City: A Cinematic Journey' exhibition",
+      "start": "2026-06-03",
+      "end": "2026-08-02",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/guide-to-kowloon-walled-city-exhibition",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "Top attractions",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/the-best-hong-kong-attractions",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "Hiking trails",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/sport-and-fitness/best-hikes-hong-kong",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "Free things to do",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/free-things-to-do-in-hong-kong",
+      "sourceDomain": "timeout.com"
+    },
+    {
+      "title": "Fun indoor activities",
+      "start": "2026-06-03",
+      "end": "2026-06-17",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.timeout.com/hong-kong/things-to-do/the-best-indoor-activities-hong-kong",
+      "sourceDomain": "timeout.com"
     },
     {
       "title": "Shenzhen trade shows — June listings",
@@ -91,15 +262,6 @@
       "location": "Hong Kong",
       "url": "https://www.westk.hk/en/home",
       "sourceDomain": "westk.hk"
-    },
-    {
-      "title": "Time Out — Hong Kong airport Terminal 2 guide",
-      "start": "2026-06-10",
-      "end": "2026-06-10",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.timeout.com/hong-kong",
-      "sourceDomain": "timeout.com"
     },
     {
       "title": "MixC Longhua Mall Shenzhen — 2027 opening preview",
@@ -127,15 +289,6 @@
       "location": "France",
       "url": "https://event.hktdc.com/",
       "sourceDomain": "event.hktdc.com"
-    },
-    {
-      "title": "Macao on Journey — June travel & culture picks",
-      "start": "2026-06-18",
-      "end": "2026-06-18",
-      "region": "macao",
-      "location": "Macao",
-      "url": "https://macauonjourney.com/",
-      "sourceDomain": "macauonjourney.com"
     },
     {
       "title": "Smart City Summit & International ICT Expo",

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Refresh happenings-events.json from lifestyle source listings.
- * Preserves curated non–eyeshenzhen events; replaces eyeshenzhen-derived rows each run.
+ * Refresh happenings-events.json from all Lifestyle source links.
+ * Attempts every domain in source-links-data.json (category Lifestyle).
+ * On fetch/parse failure, keeps existing events for that domain (pruned).
  *
  * Usage: node scripts/generate-happenings-data.mjs
  */
@@ -15,24 +16,27 @@ const root = path.join(__dirname, "..");
 const outPath = path.join(root, "happenings-events.json");
 const sourceLinksPath = path.join(root, "source-links-data.json");
 
-const FETCH_SOURCES = [
-  {
-    domain: "eyeshenzhen.com",
-    url: "https://www.eyeshenzhen.com/node_400950.htm",
-  },
-];
-
-const MANUAL_DOMAINS = new Set([
-  "event.hktdc.com",
-  "westk.hk",
-  "10times.com",
-  "timeout.com",
-  "lifestyleasia.com",
-  "macauonjourney.com",
-  "shenzhenmuseum.com",
-]);
+/** Listing pages that work better than the homepage URL in source-links-data.json */
+const LISTING_URL_OVERRIDES = {
+  "timeout.com": "https://www.timeout.com/hong-kong/things-to-do",
+  "lifestyleasia.com": "https://www.lifestyleasia.com/hk/things-to-do/",
+  "shenzhenmuseum.com": "https://www.shenzhenmuseum.com/en/exhibition",
+  "westk.hk": "https://www.westk.hk/en/whats-on",
+};
 
 const UA = "GBA-Pulse-Bot/1.0 (+https://github.com/sara-hoilam/the-bay-trending-topics)";
+
+function loadLifestyleFetchSources() {
+  if (!fs.existsSync(sourceLinksPath)) return [];
+  const sl = JSON.parse(fs.readFileSync(sourceLinksPath, "utf8"));
+  return (sl.sources ?? [])
+    .filter((s) => s.category === "Lifestyle")
+    .map((s) => ({
+      domain: s.domain,
+      url: LISTING_URL_OVERRIDES[s.domain] ?? s.url,
+      displayName: s.displayName,
+    }));
+}
 
 function decodeHtml(s) {
   return s
@@ -42,6 +46,8 @@ function decodeHtml(s) {
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
+    .replace(/&#8211;/g, "–")
+    .replace(/&#8212;/g, "—")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -53,14 +59,16 @@ function addDays(iso, days) {
   return hktDateStr(dt);
 }
 
+function truncateTitle(title, max = 90) {
+  return title.length > max ? `${title.slice(0, max - 1)}…` : title;
+}
+
 function inferRegion(text) {
   const loc = text.toLowerCase();
   if (/hong kong|\bhk\b|westk|kowloon/.test(loc)) return { region: "hk", location: "Hong Kong" };
   if (/macao|macau|澳门|澳門|grand lisboa/.test(loc)) return { region: "macao", location: "Macao" };
   if (/shenzhen|深圳|pingshan|nanshan|longhua/.test(loc)) return { region: "shenzhen", location: "Shenzhen" };
-  if (
-    /france|paris|viva tech|international|europe|japan|tokyo|singapore/.test(loc)
-  ) {
+  if (/france|paris|viva tech|international|europe|japan|tokyo|singapore/.test(loc)) {
     return { region: "international", location: "International" };
   }
   if (
@@ -71,6 +79,17 @@ function inferRegion(text) {
     return { region: "gba", location: "GBA" };
   }
   return { region: "shenzhen", location: "Shenzhen" };
+}
+
+function defaultRegionForDomain(domain) {
+  if (domain === "timeout.com" || domain === "event.hktdc.com" || domain === "westk.hk") {
+    return { region: "hk", location: "Hong Kong" };
+  }
+  if (domain === "macauonjourney.com") return { region: "macao", location: "Macao" };
+  if (domain === "10times.com" || domain === "eyeshenzhen.com" || domain === "shenzhenmuseum.com") {
+    return { region: "shenzhen", location: "Shenzhen" };
+  }
+  return { region: "hk", location: "Hong Kong" };
 }
 
 function monthIndex(name) {
@@ -108,7 +127,7 @@ function isoFromParts(year, month, day) {
 }
 
 function extractDateRange(text, postedIso) {
-  const [py, pm, pd] = postedIso.split("-").map(Number);
+  const [py] = postedIso.split("-").map(Number);
   const year = py;
 
   const range = text.match(
@@ -171,10 +190,16 @@ function extractDateRange(text, postedIso) {
 }
 
 function normalizeKey(ev) {
-  return `${ev.sourceDomain}|${ev.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim()}`;
+  return `${ev.sourceDomain}|${ev.title.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ").trim()}`;
 }
 
-function parseEyeshenzhen(html, sourceDomain, listUrl) {
+function postedFromUrl(url) {
+  const m = url.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
+  if (!m) return null;
+  return `${m[1]}-${m[2]}-${m[3]}`;
+}
+
+function parseEyeshenzhen(html, sourceDomain) {
   const events = [];
   const itemRe = /<a class="articlelist-item" href="([^"]+)">([\s\S]*?)<\/a>/g;
   let match;
@@ -194,7 +219,7 @@ function parseEyeshenzhen(html, sourceDomain, listUrl) {
     const { start, end } = extractDateRange(blob, posted);
 
     events.push({
-      title: title.length > 90 ? `${title.slice(0, 87)}…` : title,
+      title: truncateTitle(title),
       start,
       end,
       region,
@@ -206,14 +231,184 @@ function parseEyeshenzhen(html, sourceDomain, listUrl) {
   return events;
 }
 
+function parseMacauonjourney(html, sourceDomain) {
+  const events = [];
+  const today = hktDateStr();
+  const cutoff = addDays(today, -90);
+  const articleRe = /<article[^>]*hentry[^>]*>([\s\S]*?)<\/article>/g;
+  let match;
+
+  while ((match = articleRe.exec(html)) !== null) {
+    const block = match[1];
+    const url = block.match(/entry-title"><a href="([^"]+)"/)?.[1];
+    const rawTitle = block.match(/entry-title"><a href="[^"]+"[^>]*>([\s\S]*?)<\/a>/)?.[1];
+    if (!url || !rawTitle) continue;
+
+    const title = decodeHtml(rawTitle);
+    const datetime = block.match(/datetime="([^"]+)"/)?.[1];
+    const posted =
+      (datetime && /^\d{4}-\d{2}-\d{2}/.test(datetime) ? datetime.slice(0, 10) : null) ??
+      postedFromUrl(url);
+    if (!posted || posted < cutoff) continue;
+
+    const blob = `${title} ${block}`;
+    const { region, location } = inferRegion(blob);
+    const { start, end } = extractDateRange(blob, posted);
+
+    events.push({
+      title: truncateTitle(title),
+      start,
+      end,
+      region,
+      location,
+      url,
+      sourceDomain,
+    });
+    if (events.length >= 10) break;
+  }
+  return events;
+}
+
+function parseTimeout(html, sourceDomain, listUrl) {
+  const events = [];
+  const today = hktDateStr();
+  const seen = new Set();
+  const tileRe = /<article class="tile _article_wkzyo_1"[\s\S]*?<\/article>/g;
+  let match;
+
+  while ((match = tileRe.exec(html)) !== null) {
+    const block = match[0];
+    const path = block.match(/href="(\/hong-kong\/[^"]+)"/)?.[1];
+    const title = block.match(/<h3[^>]*>([^<]+)<\/h3>/)?.[1];
+    if (!path || !title || path.includes("/on-video")) continue;
+    if (seen.has(path)) continue;
+    seen.add(path);
+
+    const blob = decodeHtml(title);
+    const { start, end } = extractDateRange(blob, today);
+    events.push({
+      title: truncateTitle(blob),
+      start,
+      end,
+      region: "hk",
+      location: "Hong Kong",
+      url: `https://www.timeout.com${path}`,
+      sourceDomain,
+    });
+    if (events.length >= 10) break;
+  }
+
+  if (!events.length) {
+    const linkRe = /href="(\/hong-kong\/things-to-do\/[^"#?]+)"/g;
+    while ((match = linkRe.exec(html)) !== null) {
+      const path = match[1];
+      if (path.includes("/on-video") || seen.has(path)) continue;
+      seen.add(path);
+      const slug = path.split("/").pop() ?? "event";
+      const title = slug
+        .split("-")
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(" ");
+      events.push({
+        title: truncateTitle(title),
+        start: today,
+        end: addDays(today, 30),
+        region: "hk",
+        location: "Hong Kong",
+        url: `https://www.timeout.com${path}`,
+        sourceDomain,
+      });
+      if (events.length >= 8) break;
+    }
+  }
+
+  if (!events.length && listUrl) {
+    events.push({
+      title: "Time Out Hong Kong — things to do",
+      start: today,
+      end: addDays(today, 30),
+      region: "hk",
+      location: "Hong Kong",
+      url: listUrl,
+      sourceDomain,
+    });
+  }
+  return events;
+}
+
+function parseJsonLdEvents(html, sourceDomain, listUrl) {
+  const events = [];
+  const today = hktDateStr();
+  const re = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
+  let match;
+
+  while ((match = re.exec(html)) !== null) {
+    let data;
+    try {
+      data = JSON.parse(match[1]);
+    } catch {
+      continue;
+    }
+    const nodes = Array.isArray(data) ? data : [data];
+    for (const node of nodes) {
+      if (node["@type"] !== "Event") continue;
+      const start = node.startDate?.slice(0, 10);
+      if (!start || !node.name) continue;
+      const end = node.endDate?.slice(0, 10) ?? addDays(start, 7);
+      const blob = `${node.name} ${node.location?.name ?? ""}`;
+      const { region, location } = inferRegion(blob);
+      events.push({
+        title: truncateTitle(decodeHtml(node.name)),
+        start,
+        end,
+        region,
+        location: node.location?.name ?? location,
+        url: node.url ?? listUrl,
+        sourceDomain,
+      });
+    }
+  }
+
+  if (!events.length) return [];
+  return events;
+}
+
+function parseGeneric(html, sourceDomain, listUrl) {
+  const jsonLd = parseJsonLdEvents(html, sourceDomain, listUrl);
+  if (jsonLd.length) return jsonLd;
+  return [];
+}
+
+const DOMAIN_PARSERS = {
+  "eyeshenzhen.com": parseEyeshenzhen,
+  "macauonjourney.com": parseMacauonjourney,
+  "timeout.com": parseTimeout,
+};
+
+function parseSource(html, sourceDomain, listUrl) {
+  const parser = DOMAIN_PARSERS[sourceDomain] ?? parseGeneric;
+  const events = parser(html, sourceDomain, listUrl);
+  return events.map((ev) => {
+    if (!ev.region) {
+      const defaults = defaultRegionForDomain(sourceDomain);
+      return { ...ev, region: defaults.region, location: ev.location ?? defaults.location };
+    }
+    return ev;
+  });
+}
+
 async function fetchText(url) {
   const res = await fetch(url, {
-    headers: { "User-Agent": UA, Accept: "text/html" },
+    headers: { "User-Agent": UA, Accept: "text/html,application/json" },
     redirect: "follow",
     signal: AbortSignal.timeout(25000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-  return res.text();
+  const text = await res.text();
+  if (/cloudflare|attention required|why have i been blocked/i.test(text.slice(0, 2000))) {
+    throw new Error("Blocked by site protection");
+  }
+  return text;
 }
 
 function loadExisting() {
@@ -226,24 +421,51 @@ function prunePast(events, today) {
   return events.filter((ev) => !ev.end || ev.end >= cutoff);
 }
 
+function groupByDomain(events) {
+  const map = new Map();
+  for (const ev of events) {
+    const domain = ev.sourceDomain ?? "unknown";
+    if (!map.has(domain)) map.set(domain, []);
+    map.get(domain).push(ev);
+  }
+  return map;
+}
+
 async function main() {
   const today = hktDateStr();
+  const sources = loadLifestyleFetchSources();
+  if (!sources.length) {
+    console.error("No Lifestyle sources in source-links-data.json");
+    process.exit(1);
+  }
+
   const existing = loadExisting();
-  const kept = prunePast(
-    (existing.events ?? []).filter((ev) => MANUAL_DOMAINS.has(ev.sourceDomain)),
-    today,
-  );
+  const existingByDomain = groupByDomain(existing.events ?? []);
 
   const fetched = [];
-  for (const src of FETCH_SOURCES) {
+  const kept = [];
+
+  for (const src of sources) {
+    console.log(`Fetching ${src.domain} (${src.url})`);
+    let domainEvents = [];
     try {
-      console.log(`Fetching ${src.url}`);
       const html = await fetchText(src.url);
-      const parsed = parseEyeshenzhen(html, src.domain, src.url);
-      console.log(`  ${parsed.length} events from ${src.domain}`);
-      fetched.push(...parsed);
+      domainEvents = parseSource(html, src.domain, src.url);
+      console.log(`  ${domainEvents.length} events from ${src.domain}`);
     } catch (err) {
       console.warn(`  Skip ${src.domain}: ${err.message}`);
+    }
+
+    if (domainEvents.length > 0) {
+      fetched.push(...domainEvents);
+    } else {
+      const fallback = prunePast(existingByDomain.get(src.domain) ?? [], today);
+      if (fallback.length) {
+        console.log(`  Keeping ${fallback.length} cached event(s) for ${src.domain}`);
+        kept.push(...fallback);
+      } else {
+        console.log(`  No events for ${src.domain}`);
+      }
     }
   }
 
@@ -253,14 +475,8 @@ async function main() {
 
   const events = [...merged.values()].sort((a, b) => a.start.localeCompare(b.start));
 
-  let lifestyleCount = 0;
-  if (fs.existsSync(sourceLinksPath)) {
-    const sl = JSON.parse(fs.readFileSync(sourceLinksPath, "utf8"));
-    lifestyleCount = (sl.sources ?? []).filter((s) => s.category === "Lifestyle").length;
-  }
-
   const payload = {
-    generatedFrom: `Lifestyle source links (${lifestyleCount || 8} domains) · automated + curated`,
+    generatedFrom: `Lifestyle source links (${sources.length} domains) · automated fetch with cache fallback`,
     updatedAt: today,
     events,
   };
