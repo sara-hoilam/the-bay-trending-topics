@@ -1,0 +1,726 @@
+{
+  "generatedFrom": "references/daily-brief-source-domains.md",
+  "count": 120,
+  "sources": [
+    {
+      "domain": "10times.com",
+      "displayName": "10times (Trade Shows)",
+      "url": "https://10times.com/shenzhen-cn/tradeshows",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "eyeshenzhen.com",
+      "displayName": "Amazing Shenzhen (Events)",
+      "url": "https://www.eyeshenzhen.com/node_400950.htm",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "event.hktdc.com",
+      "displayName": "HKTDC Event Calendar",
+      "url": "https://event.hktdc.com/",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "lifestyleasia.com",
+      "displayName": "Lifestyle Asia",
+      "url": "https://www.lifestyleasia.com/",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "macauonjourney.com",
+      "displayName": "Macao on Journey",
+      "url": "https://macauonjourney.com/",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "shenzhenmuseum.com",
+      "displayName": "Shenzhen Museum",
+      "url": "https://www.shenzhenmuseum.com/",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "timeout.com",
+      "displayName": "Time Out",
+      "url": "https://www.timeout.com/",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "westk.hk",
+      "displayName": "WestK Hong Kong",
+      "url": "https://www.westk.hk/en/home",
+      "category": "Lifestyle"
+    },
+    {
+      "domain": "21jingji.com",
+      "displayName": "21st Century Business Herald",
+      "url": "https://www.21jingji.com/",
+      "category": "News"
+    },
+    {
+      "domain": "abcnews.com",
+      "displayName": "ABC News",
+      "url": "https://www.abcnews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "aerotime.aero",
+      "displayName": "AeroTime",
+      "url": "https://www.aerotime.aero/",
+      "category": "News"
+    },
+    {
+      "domain": "bbc.com",
+      "displayName": "BBC News",
+      "url": "https://www.bbc.com/news",
+      "category": "News"
+    },
+    {
+      "domain": "m.bendibao.com",
+      "displayName": "Bendibao (Mobile)",
+      "url": "https://m.bendibao.com/",
+      "category": "News"
+    },
+    {
+      "domain": "bloomberg.com",
+      "displayName": "Bloomberg",
+      "url": "https://www.bloomberg.com/asia",
+      "category": "News"
+    },
+    {
+      "domain": "cbsnews.com",
+      "displayName": "CBS News",
+      "url": "https://www.cbsnews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "news.cctv.com",
+      "displayName": "CCTV News",
+      "url": "https://www.news.cctv.com/",
+      "category": "News"
+    },
+    {
+      "domain": "news.cgtn.com",
+      "displayName": "CGTN",
+      "url": "https://www.cgtn.com/",
+      "category": "News"
+    },
+    {
+      "domain": "channelnewsasia.com",
+      "displayName": "Channel NewsAsia",
+      "url": "https://www.channelnewsasia.com/",
+      "category": "News"
+    },
+    {
+      "domain": "chinadaily.com.cn",
+      "displayName": "China Daily",
+      "url": "https://www.chinadaily.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "cn.chinadaily.com.cn",
+      "displayName": "China Daily (CN)",
+      "url": "https://cn.chinadaily.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "gd.chinadaily.com.cn",
+      "displayName": "China Daily (Guangdong)",
+      "url": "https://gd.chinadaily.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "chinadailyasia.com",
+      "displayName": "China Daily Asia",
+      "url": "https://www.chinadailyasia.com/",
+      "category": "News"
+    },
+    {
+      "domain": "chinadailyhk.com",
+      "displayName": "China Daily Hong Kong",
+      "url": "https://www.chinadailyhk.com/",
+      "category": "News"
+    },
+    {
+      "domain": "chinanews.com.cn",
+      "displayName": "China News Service",
+      "url": "https://www.chinanews.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "cnbc.com",
+      "displayName": "CNBC",
+      "url": "https://cnbc.com/",
+      "category": "News"
+    },
+    {
+      "domain": "cnevpost.com",
+      "displayName": "CnEVPost",
+      "url": "https://cnevpost.com/",
+      "category": "News"
+    },
+    {
+      "domain": "edition.cnn.com",
+      "displayName": "CNN",
+      "url": "https://edition.cnn.com/",
+      "category": "News"
+    },
+    {
+      "domain": "cryptobriefing.com",
+      "displayName": "Crypto Briefing",
+      "url": "https://www.cryptobriefing.com/",
+      "category": "News"
+    },
+    {
+      "domain": "dimsumdaily.hk",
+      "displayName": "Dimsum Daily",
+      "url": "https://www.dimsumdaily.hk/",
+      "category": "News"
+    },
+    {
+      "domain": "webzdg.sun0769.com",
+      "displayName": "Dongguan Daily",
+      "url": "https://webzdg.sun0769.com/",
+      "category": "News"
+    },
+    {
+      "domain": "jjckb.xinhuanet.com",
+      "displayName": "Economic Information Daily",
+      "url": "https://www.jjckb.xinhuanet.com/",
+      "category": "News"
+    },
+    {
+      "domain": "exmoo.com",
+      "displayName": "Exmoo",
+      "url": "https://www.exmoo.com/",
+      "category": "News"
+    },
+    {
+      "domain": "focustaiwan.tw",
+      "displayName": "Focus Taiwan",
+      "url": "https://www.focustaiwan.tw/",
+      "category": "News"
+    },
+    {
+      "domain": "foshannews.net",
+      "displayName": "Foshan News",
+      "url": "https://www.foshannews.net/",
+      "category": "News"
+    },
+    {
+      "domain": "fzs.newoe.cn",
+      "displayName": "Foshan News (Newoe)",
+      "url": "https://www.fzs.newoe.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "gba.net.cn",
+      "displayName": "GBA Net",
+      "url": "https://www.gba.net.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "ggrasia.com",
+      "displayName": "GGRAsia",
+      "url": "https://www.ggrasia.com/",
+      "category": "News"
+    },
+    {
+      "domain": "globaltimes.cn",
+      "displayName": "Global Times",
+      "url": "https://www.globaltimes.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "news.gscn.com.cn",
+      "displayName": "GSCN News",
+      "url": "https://www.news.gscn.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "gdtv.cn",
+      "displayName": "Guangdong TV",
+      "url": "https://gdtv.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "gzdaily.dayoo.com",
+      "displayName": "Guangzhou Daily",
+      "url": "https://gzdaily.dayoo.com/",
+      "category": "News"
+    },
+    {
+      "domain": "huacheng.gz-cmc.com",
+      "displayName": "Guangzhou Daily (Huacheng)",
+      "url": "https://www.huacheng.gz-cmc.com/",
+      "category": "News"
+    },
+    {
+      "domain": "hk01.com",
+      "displayName": "HK01",
+      "url": "https://hk01.com/",
+      "category": "News"
+    },
+    {
+      "domain": "hongkongfp.com",
+      "displayName": "Hong Kong Free Press",
+      "url": "https://hongkongfp.com/",
+      "category": "News"
+    },
+    {
+      "domain": "xxsb.gz-cmc.com",
+      "displayName": "Information Times (Guangzhou)",
+      "url": "https://www.xxsb.gz-cmc.com/",
+      "category": "News"
+    },
+    {
+      "domain": "jinguxun.com",
+      "displayName": "Jingu Xun",
+      "url": "https://www.jinguxun.com/",
+      "category": "News"
+    },
+    {
+      "domain": "zaobao.com",
+      "displayName": "Lianhe Zaobao",
+      "url": "https://www.zaobao.com/",
+      "category": "News"
+    },
+    {
+      "domain": "macaubusiness.com",
+      "displayName": "Macao Business",
+      "url": "https://macaubusiness.com/",
+      "category": "News"
+    },
+    {
+      "domain": "macaobusinessnews.com",
+      "displayName": "Macao Business News",
+      "url": "https://macaobusinessnews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "modaily.cn",
+      "displayName": "Macao Daily",
+      "url": "https://www.modaily.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "macaodaily.com",
+      "displayName": "Macao Daily (macaodaily.com)",
+      "url": "https://macaodaily.com/",
+      "category": "News"
+    },
+    {
+      "domain": "macaudailytimes.com.mo",
+      "displayName": "Macao Daily Times",
+      "url": "https://macaudailytimes.com.mo/",
+      "category": "News"
+    },
+    {
+      "domain": "macaupostdaily.com",
+      "displayName": "Macao Post Daily",
+      "url": "https://macaupostdaily.com/",
+      "category": "News"
+    },
+    {
+      "domain": "epaper.nfnews.com",
+      "displayName": "Nanfang Plus (E-paper)",
+      "url": "https://epaper.nfnews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "newsgd.com",
+      "displayName": "NewsGD",
+      "url": "https://www.newsgd.com/",
+      "category": "News"
+    },
+    {
+      "domain": "hk.on.cc",
+      "displayName": "on.cc",
+      "url": "https://hk.on.cc/",
+      "category": "News"
+    },
+    {
+      "domain": "hm.people.com.cn",
+      "displayName": "People's Daily (Hainan)",
+      "url": "https://www.hm.people.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "sz.people.com.cn",
+      "displayName": "People's Daily (Shenzhen)",
+      "url": "https://sz.people.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "reuters.com",
+      "displayName": "Reuters",
+      "url": "https://www.reuters.com/world/",
+      "category": "News"
+    },
+    {
+      "domain": "news.rthk.hk",
+      "displayName": "RTHK News",
+      "url": "https://news.rthk.hk/rthk/en/latest-news.htm",
+      "category": "News"
+    },
+    {
+      "domain": "stcn.com",
+      "displayName": "Securities Times",
+      "url": "https://www.stcn.com/",
+      "category": "News"
+    },
+    {
+      "domain": "szdaily.sznews.com",
+      "displayName": "Shenzhen Daily",
+      "url": "https://szdaily.sznews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "wb.sznews.com",
+      "displayName": "Shenzhen Evening News",
+      "url": "https://www.wb.sznews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "sznews.com",
+      "displayName": "Shenzhen News",
+      "url": "https://www.sznews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "sztqb.sznews.com",
+      "displayName": "Shenzhen Special Zone Daily",
+      "url": "https://sztqb.sznews.com/",
+      "category": "News"
+    },
+    {
+      "domain": "sztv.com.cn",
+      "displayName": "Shenzhen TV",
+      "url": "https://sztv.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "k.sina.com.cn",
+      "displayName": "Sina",
+      "url": "https://www.k.sina.com.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "sina.cn",
+      "displayName": "Sina",
+      "url": "https://www.sina.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "finance.sina.cn",
+      "displayName": "Sina Finance",
+      "url": "https://finance.sina.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "stheadline.com",
+      "displayName": "Sing Tao Headline",
+      "url": "https://www.stheadline.com/",
+      "category": "News"
+    },
+    {
+      "domain": "sohu.com",
+      "displayName": "Sohu",
+      "url": "https://www.sohu.com/",
+      "category": "News"
+    },
+    {
+      "domain": "scmp.com",
+      "displayName": "South China Morning Post",
+      "url": "https://www.scmp.com/topics/greater-bay-area",
+      "category": "News"
+    },
+    {
+      "domain": "news.southcn.com",
+      "displayName": "Southern Net",
+      "url": "https://news.southcn.com/",
+      "category": "News"
+    },
+    {
+      "domain": "info.newsgd.com",
+      "displayName": "Southern Net (NewsGD)",
+      "url": "https://info.newsgd.com/",
+      "category": "News"
+    },
+    {
+      "domain": "epaper.tkww.hk",
+      "displayName": "Ta Kung Wen Wei (E-paper)",
+      "url": "https://epaper.tkww.hk/",
+      "category": "News"
+    },
+    {
+      "domain": "taichungdaily.com",
+      "displayName": "Taichung Daily",
+      "url": "https://www.taichungdaily.com/",
+      "category": "News"
+    },
+    {
+      "domain": "tdm.com.mo",
+      "displayName": "TDM (Macao)",
+      "url": "https://www.tdm.com.mo/zh-hant/",
+      "category": "News"
+    },
+    {
+      "domain": "news.qq.com",
+      "displayName": "Tencent News",
+      "url": "https://www.news.qq.com/",
+      "category": "News"
+    },
+    {
+      "domain": "independent.co.uk",
+      "displayName": "The Independent",
+      "url": "https://www.independent.co.uk/",
+      "category": "News"
+    },
+    {
+      "domain": "thepaper.cn",
+      "displayName": "The Paper",
+      "url": "https://www.thepaper.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "thestandard.com.hk",
+      "displayName": "The Standard",
+      "url": "https://www.thestandard.com.hk/",
+      "category": "News"
+    },
+    {
+      "domain": "straitstimes.com",
+      "displayName": "The Straits Times",
+      "url": "https://www.straitstimes.com/",
+      "category": "News"
+    },
+    {
+      "domain": "telegraph.co.uk",
+      "displayName": "The Telegraph",
+      "url": "https://www.telegraph.co.uk/",
+      "category": "News"
+    },
+    {
+      "domain": "wsj.com",
+      "displayName": "The Wall Street Journal",
+      "url": "https://www.wsj.com/",
+      "category": "News"
+    },
+    {
+      "domain": "news.tvb.com",
+      "displayName": "TVB News",
+      "url": "https://news.tvb.com/tc/local",
+      "category": "News"
+    },
+    {
+      "domain": "news.un.org",
+      "displayName": "UN News",
+      "url": "https://www.news.un.org/",
+      "category": "News"
+    },
+    {
+      "domain": "vakiodaily.com",
+      "displayName": "Va Kio Daily",
+      "url": "https://www.vakiodaily.com/",
+      "category": "News"
+    },
+    {
+      "domain": "waou.com.mo",
+      "displayName": "Wa Ou Daily",
+      "url": "https://www.waou.com.mo/",
+      "category": "News"
+    },
+    {
+      "domain": "english.news.cn",
+      "displayName": "Xinhua English",
+      "url": "https://english.news.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "news.cn",
+      "displayName": "Xinhua News",
+      "url": "https://www.news.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "xinhuanet.com",
+      "displayName": "Xinhuanet",
+      "url": "https://www.xinhuanet.com/",
+      "category": "News"
+    },
+    {
+      "domain": "finance.yahoo.com",
+      "displayName": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/",
+      "category": "News"
+    },
+    {
+      "domain": "hk.finance.yahoo.com",
+      "displayName": "Yahoo Finance HK",
+      "url": "https://hk.finance.yahoo.com/",
+      "category": "News"
+    },
+    {
+      "domain": "sports.yahoo.com",
+      "displayName": "Yahoo Sports",
+      "url": "https://www.sports.yahoo.com/",
+      "category": "News"
+    },
+    {
+      "domain": "yicaiglobal.com",
+      "displayName": "Yicai Global",
+      "url": "https://www.yicaiglobal.com/",
+      "category": "News"
+    },
+    {
+      "domain": "pub-zhtb.hizh.cn",
+      "displayName": "Zhuhai Daily",
+      "url": "https://pub-zhtb.hizh.cn/",
+      "category": "News"
+    },
+    {
+      "domain": "fso.gov.hk",
+      "displayName": "Financial Services Office (HK)",
+      "url": "https://www.fso.gov.hk/",
+      "category": "Official"
+    },
+    {
+      "domain": "eng.gdd.gov.cn",
+      "displayName": "Guangdong Government (English)",
+      "url": "https://eng.gdd.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "gdii.gd.gov.cn",
+      "displayName": "Guangdong Industry & IT Dept",
+      "url": "https://gdii.gd.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "gz.gov.cn",
+      "displayName": "Guangzhou Government",
+      "url": "https://www.gz.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "hengqin.gov.cn",
+      "displayName": "Hengqin Authority",
+      "url": "https://www.hengqin.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "hkelectric.com",
+      "displayName": "HK Electric",
+      "url": "https://hkelectric.com/",
+      "category": "Official"
+    },
+    {
+      "domain": "info.gov.hk",
+      "displayName": "Hong Kong Government",
+      "url": "https://www.info.gov.hk/gia/general/ctoday.htm",
+      "category": "Official"
+    },
+    {
+      "domain": "news.gov.hk",
+      "displayName": "Hong Kong Government News",
+      "url": "https://www.news.gov.hk/eng/",
+      "category": "Official"
+    },
+    {
+      "domain": "heritagemuseum.gov.hk",
+      "displayName": "Hong Kong Heritage Museum",
+      "url": "https://www.heritagemuseum.gov.hk/",
+      "category": "Official"
+    },
+    {
+      "domain": "hko.gov.hk",
+      "displayName": "Hong Kong Observatory",
+      "url": "https://hko.gov.hk/",
+      "category": "Official"
+    },
+    {
+      "domain": "legco.gov.hk",
+      "displayName": "Legislative Council (HK)",
+      "url": "https://www.legco.gov.hk/",
+      "category": "Official"
+    },
+    {
+      "domain": "locpg.gov.cn",
+      "displayName": "Liaison Office of Central Govt (HK)",
+      "url": "https://www.locpg.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "macaotourism.gov.mo",
+      "displayName": "Macao Government Tourism Office",
+      "url": "https://macaotourism.gov.mo/",
+      "category": "Official"
+    },
+    {
+      "domain": "bo.dsaj.gov.mo",
+      "displayName": "Macao Legal Affairs Bureau",
+      "url": "https://www.bo.dsaj.gov.mo/",
+      "category": "Official"
+    },
+    {
+      "domain": "mlm.com.mo",
+      "displayName": "Macao Lottery",
+      "url": "https://mlm.com.mo/",
+      "category": "Official"
+    },
+    {
+      "domain": "gov.mo",
+      "displayName": "Macao SAR Government",
+      "url": "https://www.gov.mo/zh-hant/news/",
+      "category": "Official"
+    },
+    {
+      "domain": "smg.gov.mo",
+      "displayName": "Macao SAR Government (SMG)",
+      "url": "https://www.smg.gov.mo/",
+      "category": "Official"
+    },
+    {
+      "domain": "qh.sz.gov.cn",
+      "displayName": "Qianhai Authority",
+      "url": "https://www.qh.sz.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "fao.sz.gov.cn",
+      "displayName": "Shenzhen Foreign Affairs Office",
+      "url": "https://www.fao.sz.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "szft.gov.cn",
+      "displayName": "Shenzhen Futian District Govt",
+      "url": "https://szft.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "sz.gov.cn",
+      "displayName": "Shenzhen Government",
+      "url": "https://sz.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "english.gov.cn",
+      "displayName": "State Council (English)",
+      "url": "https://english.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "sasac.gov.cn",
+      "displayName": "State-owned Assets Commission",
+      "url": "https://www.sasac.gov.cn/",
+      "category": "Official"
+    },
+    {
+      "domain": "who.int",
+      "displayName": "World Health Organization",
+      "url": "https://www.who.int/",
+      "category": "Official"
+    }
+  ]
+}

@@ -5,8 +5,11 @@
   "scripts": {
     "merge": "node scripts/merge-briefing-panels.mjs",
     "daily:cloud": "node scripts/run-daily-cloud.mjs",
+    "daily:post": "node scripts/run-daily-post.mjs",
     "daily:diagnose": "node scripts/diagnose-cloud.mjs",
-    "daily:verify": "node scripts/verify-daily-capture.mjs"
+    "daily:verify": "node scripts/verify-daily-capture.mjs && node scripts/verify-daily-brief.mjs && node scripts/verify-happenings.mjs",
+    "source-links:generate": "node scripts/generate-source-links-data.mjs",
+    "happenings:generate": "node scripts/generate-happenings-data.mjs"
   },
   "dependencies": {
     "@cursor/sdk": "^1.0.13"

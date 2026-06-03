@@ -24,12 +24,11 @@ If the Trend Watch JSON is empty, clearly stale (capture date > 48h ago), or has
 
 `orchestration/fragments/trendwatch.html` holds a **real-time board capture** (48-hour window) from:
 
-- **Google Trends Trending Now** — HK, MO, US, GB, SG, JP, IN (48h, sort=search-volume)
+- **Google Trends Trending Now** — **HK and MO only** (48h, sort=search-volume)
 - **Baidu 热搜** — realtime top
 - **Weibo 实时热搜** — `https://s.weibo.com/top/summary?cate=realtimehot`
-- **X / trends24** — US trends proxy
 
-These boards show what people are **actively searching and discussing right now**. They go stale fast. That is the list you are curating from.
+These boards show what GBA and mainland audiences are **actively searching and discussing**. Non-GBA geos (US, UK, JP, IN, SG) and X trends are **not** in Trend Watch.
 
 ---
 
@@ -38,8 +37,8 @@ These boards show what people are **actively searching and discussing right now*
 ### Step 1 — Parse Trend Watch JSON
 
 Read every row from `sections`:
-- `google_trends.itemsByLocation` — **all geos without exception**: HK, US, GB, MO, JP, SG, IN (and any others present). Do not skip any geo here. A topic trending only in US or JP may still be highly GBA-relevant (financial news, AI releases, geopolitics).
-- `baidu.items`, `weibo.items`, `x_twitter.items`
+- `google_trends.itemsByLocation` — **HK and MO only**
+- `baidu.items`, `weibo.items`
 
 Skip rows where `title` is `—` or blank.
 
@@ -53,7 +52,7 @@ For each unique real-world story across all platform rows:
 |-----------|--------|--------|
 | Volume | 35% | Best `volumeEstimate` across platform hits; normalize 0–100 vs max |
 | Velocity | 35% | Best `growthPercent` (cap 1000%→100); fallback: rank #1=100, #2=80, #3=65, #4=50, #5=40 |
-| Cross-platform | 30% | Distinct platform families (max 4); score = min(100, 25 × count); +10 if both Google HK/MO and Baidu hit |
+| Cross-platform | 30% | Distinct platform families (max **3**: Google HK/MO, Baidu, Weibo); score = min(100, 25 × count); +10 if both Google HK/MO and Baidu hit |
 
 `compositeScore = round(0.35 × volume + 0.35 × velocity + 0.30 × crossPlatform)`
 
@@ -89,11 +88,11 @@ Use the standard CSS classes: `.topic`, `.topic-rank`, `.topic-cat`, `.topic-tit
 ```html
 <span><span class="icon">📍</span> [Region]</span>
 <span><span class="icon">📰</span> Source: <a href="…">Name</a> · Posted: May 19 2026</span>
-<span><span class="icon">📊</span> Trend score: 84/100 · 3 platforms (Google HK + SG, Baidu, X)</span>
+<span><span class="icon">📊</span> Trend score: 84/100 · 3 platforms (Google HK + MO, Baidu)</span>
 <span><span class="badge badge-pos">✦ Positive</span></span>
 ```
 
-Note: the platforms line must list **all** the geos and platforms where the topic actually appeared — not just HK. E.g. `Google HK + US + SG, Baidu` if it appeared in those three Google geos.
+Note: the platforms line must list **all** the geos and platforms where the topic actually appeared — e.g. `Google HK + MO, Baidu` if it appeared on both GBA Google geos and Baidu.
 
 **Every `.why-box` must contain 2–3 editorial angle bullets, written as open questions or thought-starters for editors — not explanations:**
 

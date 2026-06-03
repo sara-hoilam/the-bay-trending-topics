@@ -21,13 +21,15 @@ You are refreshing the Trend Watch panel for this edition.
 REQUIRED STEPS (in order):
 
 1. Open and capture each of these live boards RIGHT NOW (not from training data):
-   - Google Trends Trending Now for HK, US, GB, MO, JP, SG, IN
+   - Google Trends Trending Now for **HK and MO only** (GBA geos)
      URL pattern: https://trends.google.com/trending?geo=HK&sort=search-volume&hours=48
+     (repeat for geo=MO)
      ⚠ MUST use hours=48 in URL and in the UI — the site defaults to ~4h, change it.
      ⚠ Read volumes from the ON-SITE TABLE (e.g. "20K+ searches") — NOT from RSS feeds.
+     ⚠ Do NOT capture US, GB, JP, SG, IN — removed from GBA Pulse.
    - Baidu realtime: https://top.baidu.com/board?tab=realtime
    - Weibo realtime hot (微博实时热搜): https://s.weibo.com/top/summary?cate=realtimehot — top five; use cate=realtimehot only
-   - X/Twitter trends proxy: https://trends24.in/united-states/
+   - Do NOT capture X/Twitter or trends24 — removed from Trend Watch.
 
 2. Fill all sections[] in the JSON with the live data.
 
@@ -73,11 +75,9 @@ STEP A1 — Parse the Trend Watch JSON from orchestration/fragments/trendwatch.h
   Extract topicCandidates[] if present; otherwise build candidates from sections[] using
   the scoring spec in prompts/gba-pulse-trend-scoring.md.
 
-  ⚠ COLLECT ALL GEOS: google_trends.itemsByLocation contains rows for HK, US, GB, MO,
-  JP, SG, IN and possibly others. You must collect rows from EVERY geo — not just HK.
-  A story trending in US, SG, or JP may be highly GBA-relevant and score high on
-  cross-platform if it also hits Baidu or X. Skipping non-HK geos causes the Top 10
-  to under-represent international trends that GBA audiences are tracking.
+  ⚠ GBA GEO SCOPE: google_trends.itemsByLocation contains **HK and MO only**. Also use
+  baidu.items and weibo.items. Do NOT use x_twitter or non-GBA Google geos (US/GB/JP/SG/IN).
+  Skipping Baidu/Weibo or only reading HK Google rows misses cross-strait stories.
 
 STEP A2 — Produce a self-audit table (write it as an HTML comment at the top of the
   fragment, e.g. <!-- TREND AUDIT: ... -->):
@@ -133,8 +133,7 @@ orchestration/fragments/composer.html.
 
 The topic list must come from the Trend Watch JSON topicCandidates (or scored from
 sections[]). Every topic must have Trend Watch board evidence in the self-audit table
-before you write HTML. All geos (HK, US, GB, MO, JP, SG, IN) must be included in
-candidate collection — do not limit to HK only.
+before you write HTML. Use **HK/MO Google + Baidu + Weibo** only.
 
 ================================================================================
 AFTER A AND B ARE COMPLETE

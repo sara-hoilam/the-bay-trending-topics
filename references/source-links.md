@@ -21,10 +21,11 @@ Use these as starting points; verify stories against primary sources. URLs are c
 
 | Resource | URL |
 |----------|-----|
-| Google Trends — Hong Kong | https://trends.google.com/explore?geo=HK |
-| Google Trends — Macau | https://trends.google.com/explore?geo=MO |
+| Google Trends — Hong Kong (Trend Watch 48h) | https://trends.google.com/trending?geo=HK&sort=search-volume&hours=48 |
+| Google Trends — Macao (Trend Watch 48h) | https://trends.google.com/trending?geo=MO&sort=search-volume&hours=48 |
 | Baidu realtime hot board | https://top.baidu.com/board?tab=realtime |
 | Weibo realtime hot (实时热搜) | https://s.weibo.com/top/summary?cate=realtimehot |
+| Weibo tech hot (科技) | https://s.weibo.com/top/summary?cate=tech |
 
 ## Social & video
 

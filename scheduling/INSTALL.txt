@@ -1,5 +1,19 @@
 GBA Pulse — daily 08:00 Hong Kong time
 
+Primary schedule: GitHub Actions workflow `.github/workflows/daily-gba-pulse.yml`
+(cron 00:00 UTC = 08:00 HKT). Updates Trend Watch, Daily Brief, Happenings,
+and Source Links data, then pushes to `main` for GitHub Pages.
+
+Requires repo secret: CURSOR_API_KEY
+
+Manual cloud run (local):
+  npm run daily:cloud          # Trend Watch + Daily Brief + Happenings agents
+  npm run daily:post           # regenerate JSON, verify, merge index.html
+
+---
+
+Local Mac schedule (optional fallback)
+
 1) Install LaunchAgent (recommended)
    cd to this repo, then:
    bash scheduling/install-launchd.sh

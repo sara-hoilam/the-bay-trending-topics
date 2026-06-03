@@ -147,6 +147,105 @@
     animation: fadeUp .4s ease both;
     align-items: start;
   }
+  #panel-overall .topic {
+    grid-template-columns: 56px 1fr auto;
+  }
+  #panel-overall .topic.brief-article.is-selected {
+    background: #faf8f4;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  #panel-overall .topic-title {
+    cursor: default;
+  }
+  #panel-overall .topic-meta a {
+    color: var(--accent2);
+    text-decoration: underline;
+  }
+  #panel-overall .topic-meta a:hover {
+    color: var(--accent);
+  }
+
+  /* ─── DAILY BRIEF TOOLBAR + SELECT ─── */
+  .brief-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 14px 0 20px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .brief-toolbar-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .brief-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+  .brief-toolbar-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border: 1.5px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background .15s, color .15s;
+  }
+  .brief-toolbar-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .brief-toolbar-btn--primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .brief-toolbar-btn--primary:hover {
+    background: #a83816;
+    border-color: #a83816;
+    color: #fff;
+  }
+  .topic-select-wrap {
+    padding-top: 6px;
+  }
+  .topic-select-btn {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 7px 12px;
+    min-width: 88px;
+    border: 1.5px solid var(--rule);
+    background: var(--paper);
+    color: var(--muted);
+    cursor: pointer;
+    border-radius: 2px;
+    white-space: nowrap;
+    transition: border-color .15s, color .15s, background .15s;
+  }
+  .topic-select-btn:hover {
+    border-color: var(--accent2);
+    color: var(--accent2);
+  }
+  .brief-article.is-selected .topic-select-btn {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
   .topic:last-of-type { border-bottom: 1.5px solid var(--ink); }
 
   /* ─── TREND SCORE BADGE ─── */
@@ -575,7 +674,7 @@
   }
   #panel-trendwatch .tw-platform-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 14px;
     align-items: stretch;
     width: 100%;
@@ -657,34 +756,8 @@
     text-decoration: none;
   }
   #panel-trendwatch .tw-panel-open:hover { text-decoration: underline; }
-  #panel-trendwatch .tw-geo-select-wrap {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  #panel-trendwatch .tw-geo-select-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: var(--muted);
-  }
-  #panel-trendwatch .tw-geo-select {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    padding: 6px 28px 6px 10px;
-    border: 1px solid var(--tw-rule);
-    border-radius: 4px;
-    background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b6460' d='M3 4.5L6 8l3-3.5'/%3E%3C/svg%3E") no-repeat right 8px center;
-    appearance: none;
-    cursor: pointer;
-    color: var(--ink);
-    max-width: 200px;
-  }
-  #panel-trendwatch .tw-geo-select:focus {
-    outline: 2px solid var(--accent2);
-    outline-offset: 1px;
+  #panel-trendwatch .tw-panel-actions--boards .tw-panel-open {
+    font-size: 11px;
   }
   #panel-trendwatch .tw-panel-score-hint {
     font-size: 10px;
@@ -706,22 +779,19 @@
   }
   #panel-trendwatch .tw-topic-card {
     position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 88px;
+    gap: 4px 12px;
+    align-items: stretch;
     background: var(--tw-card-bg);
     border: 1px solid var(--tw-rule);
     border-radius: 6px;
-    padding: 12px 40px 12px 12px;
-    min-height: 108px;
-  }
-  #panel-trendwatch .tw-topic-card.tw-has-score {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 52px;
-    gap: 4px 10px;
-    align-items: stretch;
-    padding: 12px 10px 12px 12px;
+    padding: 10px 10px 10px 12px;
+    min-height: 72px;
   }
   #panel-trendwatch .tw-topic-card.tw-is-empty { opacity: .65; }
   #panel-trendwatch .tw-topic-card-main { min-width: 0; }
-  #panel-trendwatch .tw-topic-card-score-col {
+  #panel-trendwatch .tw-topic-card-vol-col {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -733,15 +803,9 @@
     margin-left: 2px;
   }
   #panel-trendwatch .tw-topic-pin-abs {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     font-size: 14px;
     line-height: 1;
     user-select: none;
-  }
-  #panel-trendwatch .tw-topic-card.tw-has-score .tw-topic-pin-abs {
-    position: static;
     margin-bottom: 8px;
   }
   #panel-trendwatch .tw-topic-rank {
@@ -755,47 +819,74 @@
     font-size: 15px;
     font-weight: 600;
     line-height: 1.35;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     word-break: break-word;
   }
-  #panel-trendwatch .tw-topic-metric {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    font-size: 12px;
+  #panel-trendwatch .tw-topic-title-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 2px;
   }
-  #panel-trendwatch .tw-metric-lbl {
+  #panel-trendwatch .tw-topic-title-wrap[data-has-tip] {
+    cursor: help;
+  }
+  #panel-trendwatch .tw-topic-title-wrap[data-has-tip] .tw-topic-title-link {
+    cursor: pointer;
+  }
+  #panel-trendwatch .tw-topic-title-en {
+    font-size: 12px;
+    line-height: 1.35;
+    color: var(--muted);
+    font-weight: 400;
+    margin-top: 3px;
+  }
+  #panel-trendwatch .tw-topic-tip {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 8px);
+    z-index: 30;
+    min-width: 220px;
+    max-width: min(320px, 90vw);
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--tw-card-bg);
+    border: 1px solid var(--tw-rule);
+    border-radius: 6px;
+    box-shadow: 0 6px 20px #0d0d0d18;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .15s ease, visibility .15s ease;
+  }
+  #panel-trendwatch .tw-topic-title-wrap:hover .tw-topic-tip,
+  #panel-trendwatch .tw-topic-title-wrap:focus-within .tw-topic-tip {
+    opacity: 1;
+    visibility: visible;
+  }
+  #panel-trendwatch .tw-topic-title-link {
+    color: var(--accent2);
+    text-decoration: none;
+  }
+  #panel-trendwatch .tw-topic-title-link:hover { text-decoration: underline; }
+  #panel-trendwatch .tw-topic-vol-val {
+    font-family: 'DM Mono', monospace;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.2;
+    word-break: break-word;
+  }
+  #panel-trendwatch .tw-topic-vol-lbl {
     font-family: 'DM Mono', monospace;
     font-size: 9px;
     letter-spacing: .06em;
     text-transform: uppercase;
     color: var(--muted);
-  }
-  #panel-trendwatch .tw-metric-val {
-    font-weight: 600;
-    color: var(--ink);
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-  }
-  #panel-trendwatch .tw-topic-metric time {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    color: #444;
-  }
-  #panel-trendwatch .tw-topic-score-val {
-    font-family: 'DM Mono', monospace;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--accent);
-    line-height: 1;
-  }
-  #panel-trendwatch .tw-topic-score-lbl {
-    font-family: 'DM Mono', monospace;
-    font-size: 8px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 6px;
+    margin-top: 4px;
   }
   #panel-trendwatch .tw-err {
     background: #fdeee9;
@@ -805,6 +896,335 @@
     border-radius: 2px;
   }
 
+  /* ─── HAPPENINGS TAB ─── */
+  #panel-happenings main.wrapper {
+    padding-top: 24px;
+  }
+  .hp-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hp-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .hp-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .hp-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 28px;
+    border: 1.5px solid var(--ink);
+    border-radius: 999px;
+    overflow: hidden;
+    width: fit-content;
+    max-width: 100%;
+  }
+  .hp-filter {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border: none;
+    background: #fff;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background .15s, color .15s;
+    white-space: nowrap;
+  }
+  .hp-filter + .hp-filter {
+    border-left: 1px solid var(--rule);
+  }
+  .hp-filter--active {
+    background: #e8920a;
+    color: #fff;
+  }
+  .hp-body {
+    display: grid;
+    grid-template-columns: minmax(280px, 340px) 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .hp-body { grid-template-columns: 1fr; gap: 28px; }
+  }
+  .hp-cal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .hp-cal-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+  .hp-cal-nav {
+    font-size: 22px;
+    line-height: 1;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .hp-cal-nav:hover {
+    background: #f5f0e8;
+    color: var(--ink);
+  }
+  .hp-cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+  }
+  .hp-cal-weekdays {
+    margin-bottom: 8px;
+  }
+  .hp-cal-wd {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    padding: 4px 0;
+  }
+  .hp-cal-day {
+    position: relative;
+    min-height: 44px;
+    padding: 6px 2px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .hp-cal-day--empty {
+    visibility: hidden;
+  }
+  .hp-cal-num {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  .hp-cal-day--today .hp-cal-num {
+    color: #c0392b;
+    font-weight: 700;
+  }
+  .hp-cal-dots {
+    display: flex;
+    gap: 3px;
+    margin-top: 4px;
+    min-height: 6px;
+  }
+  .hp-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .hp-dot--hk { background: #e8920a; }
+  .hp-dot--sz { background: #1e3a5f; }
+  .hp-dot--mo { background: #7b2d8e; }
+  .hp-dot--gba { background: #2a7a6f; }
+  .hp-dot--intl { background: #5c6b7a; }
+  .hp-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .hp-legend span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .hp-events-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .hp-event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .hp-event {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+    align-items: flex-start;
+  }
+  .hp-event-badge {
+    flex-shrink: 0;
+    width: 72px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.25;
+    padding: 8px 6px;
+  }
+  .hp-event-meta {
+    font-size: 13px;
+    margin: 0 0 6px;
+    color: var(--muted);
+  }
+  .hp-event-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4;
+  }
+  .hp-event-title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .hp-event-title a:hover {
+    color: #e8920a;
+    text-decoration: underline;
+  }
+  .hp-see-more {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 24px;
+    border: 2px solid #e8920a;
+    border-radius: 999px;
+    color: #e8920a;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .hp-see-more:hover {
+    background: #fdf6e3;
+  }
+  .hp-empty, .hp-err {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .hp-err { color: var(--neg); }
+
+  /* ─── SOURCE LINKS TAB ─── */
+  #panel-sourcelinks main.wrapper {
+    padding-top: 24px;
+  }
+  .sl-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sl-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .sl-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .sl-table-wrap {
+    overflow-x: auto;
+    border-top: 1.5px solid var(--ink);
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .sl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .sl-table thead th {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 12px 14px;
+    background: #faf8f4;
+    border-bottom: 1px solid var(--rule);
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .sl-table tbody tr {
+    border-bottom: 1px solid var(--rule);
+  }
+  .sl-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .sl-table tbody td {
+    padding: 11px 14px;
+    vertical-align: top;
+    line-height: 1.45;
+  }
+  .sl-domain {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    min-width: 140px;
+    word-break: break-all;
+  }
+  .sl-name {
+    font-weight: 500;
+    min-width: 180px;
+  }
+  .sl-link {
+    word-break: break-all;
+  }
+  .sl-link a {
+    color: var(--accent2);
+    text-decoration: underline;
+  }
+  .sl-link a:hover {
+    color: var(--accent);
+  }
+  .sl-cat {
+    white-space: nowrap;
+    width: 100px;
+  }
+  .sl-cat-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+  }
+  .sl-cat-official { background: #e8f0fd; color: var(--neu); border-color: #a5bef5; }
+  .sl-cat-news { background: #fdf6e3; color: var(--mix); border-color: #e8d48a; }
+  .sl-cat-lifestyle { background: #f3e8fd; color: #5b3d8a; border-color: #c9a8e8; }
+  .sl-cat-social { background: #e6f5ed; color: var(--pos); border-color: #a8dbbe; }
+  .sl-err {
+    color: var(--neg);
+    font-size: 13px;
+  }
+  .sl-err code {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+  }
+
 </style>
 </head>
 <body>
@@ -812,13 +1232,15 @@
   <div class="masthead-inner">
     <div class="masthead-meta">
       <span>粤港澳大湾区 · Greater Bay Area Intelligence</span>
-      <span id="gba-masthead-stamp">Date: 2026-06-03 &nbsp;|&nbsp; Generated: 11:40 HKT</span>
+      <span id="gba-masthead-stamp">Date: 2026-06-03 &nbsp;|&nbsp; Generated: 18:18 HKT</span>
     </div>
     <h1>GBA <span>Pulse</span></h1>
     <p class="masthead-tagline">Please validate all the sources as AI can make mistake</p>
     <div class="masthead-stripe" role="tablist" aria-label="Briefing by model">
-      <button type="button" class="masthead-pill hot" role="tab" id="tab-overall" data-panel="overall" aria-selected="true" title="Top 10 trending topics across all platforms">📰 Trending News</button>
+      <button type="button" class="masthead-pill hot" role="tab" id="tab-overall" data-panel="overall" aria-selected="true" title="THE BAY Daily Brief — GBA news scan">📰 Daily Brief</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-trendwatch" data-panel="trendwatch" aria-selected="false" title="Trend Watch dashboards">Trend Watch</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-happenings" data-panel="happenings" aria-selected="false" title="Lifestyle events calendar">Happenings</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -2911,6 +3333,40 @@ Dropped (next in queue): myles-garrett 72 low; zenfukuji kept; realme 68; us-chi
 </main>
 </div>
 
+<div id="panel-happenings" class="model-panel" role="tabpanel" aria-labelledby="tab-happenings" hidden>
+  <main class="wrapper">
+    <div class="hp-header">
+      <h2>Happenings</h2>
+      <p class="hp-meta"><span id="hp-meta">Loading…</span> · lifestyle source links</p>
+    </div>
+    <div id="happenings-root"></div>
+  </main>
+</div>
+
+<div id="panel-sourcelinks" class="model-panel" role="tabpanel" aria-labelledby="tab-sourcelinks" hidden>
+  <main class="wrapper">
+    <div class="sl-header">
+      <h2>Approved source links</h2>
+      <p class="sl-meta"><span id="sl-count">120 sources</span> · daily brief prompt allowlist · 1 link per domain</p>
+    </div>
+    <div class="sl-table-wrap">
+      <table class="sl-table" id="source-links-table">
+        <thead>
+          <tr>
+            <th scope="col">Source</th>
+            <th scope="col">Name</th>
+            <th scope="col">Link</th>
+            <th scope="col">Category</th>
+          </tr>
+        </thead>
+        <tbody id="source-links-tbody">
+          <tr><td colspan="4" class="sl-err">Loading sources…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
 <footer>
   <span id="gba-footer-edition">GBA Pulse · 粤港澳大湾区脉搏 · 2026-06-03</span>
   <span>For informational purposes only — verify all data with primary sources</span>
@@ -2937,9 +3393,11 @@ Dropped (next in queue): myles-garrett 72 low; zenfukuji kept; realme 68; us-chi
     t.addEventListener("click", function () { show(t.getAttribute("data-panel")); });
   });
   var h = (location.hash || "").replace("#", "");
-  if (["overall", "claude", "composer", "chatgpt", "trendwatch"].indexOf(h) !== -1) show(h);
+  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks"].indexOf(h) !== -1) show(h);
 })();
 </script>
+<script src="source-links-panel.js" defer></script>
+<script src="happenings-panel.js" defer></script>
 <script src="trend-watch-panel.js" defer></script>
 <script>
 (function () {
@@ -3020,6 +3478,7 @@ Dropped (next in queue): myles-garrett 72 low; zenfukuji kept; realme 68; us-chi
   }
 })();
 </script>
+<script type="module" src="daily-brief-export.js"></script>
 
 </body>
 </html>

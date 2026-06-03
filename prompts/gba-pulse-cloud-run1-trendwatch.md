@@ -15,8 +15,11 @@ Read and follow:
 ## Required steps
 
 1. Capture **live** boards (browser/tools), not training memory:
-   - Google Trends Trending Now: HK, US, GB, MO, JP, SG, IN — **`hours=48`** in URL and UI
-   - Baidu realtime, Weibo `cate=realtimehot`, X via trends24 US
+   - Google Trends Trending Now: **HK and MO only** — **`hours=48`** in URL and UI
+   - Baidu realtime, Weibo `cate=realtimehot` + `cate=tech`
+   - **Do not** capture US/GB/JP/SG/IN Google geos or X/trends24
+   - **Never invent or recycle stale topics** — every row must match the live board at capture time
+   - **Skip celebrity/gossip rows** and **non-newsworthy local viral stories** on Baidu/Weibo when filling top-5; set **`isGbaRelevant`** on every Baidu/Weibo row (GBA cities + major national only); add **`whyTrending`** (2–3 sentences) on every displayed item
 2. Fill `sections[]`; build **`topicCandidates`** (≥15 if possible), sorted by `compositeScore`.
 3. Set `refreshedAt` to current ISO time (Asia/Hong_Kong), `windowHours: 48`, `disclaimer: ""`.
 4. Keep unchanged: `model-tag`, `<svg>` sprite (`tw-icon-*`), `#trend-watch-root`, `#trend-watch-data` script tag.

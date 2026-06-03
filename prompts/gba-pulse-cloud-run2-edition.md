@@ -1,4 +1,6 @@
-# GBA Pulse — Cloud Run 2: Trending News edition
+# GBA Pulse — Cloud Run 2 (legacy): Trending News edition
+
+> **Superseded** by `prompts/gba-pulse-cloud-run2-daily-brief.md`. The daily workflow now generates **THE BAY: Daily Brief** in the `overall` panel.
 
 You are a **cloud agent** on repo `sara-hoilam/the-bay-trending-topics` (branch `main`). **Run 1** should already have committed fresh `trendwatch.html`.
 

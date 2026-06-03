@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Daily GBA Pulse — two cloud Composer 2.5 runs, then optional local verify/merge fallback.
+ * Daily GBA Pulse — three cloud Composer 2.5 runs (Trend Watch, Daily Brief, Happenings).
  *
  * Env:
  *   CURSOR_API_KEY — required
@@ -8,7 +8,7 @@
  *
  * Usage:
  *   node scripts/run-daily-cloud.mjs
- *   node scripts/run-daily-cloud.mjs --run 1|2   # single step
+ *   node scripts/run-daily-cloud.mjs --run 1|2|3   # single step
  */
 import fs from "fs";
 import path from "path";
@@ -62,11 +62,17 @@ async function preflight(apiKey) {
   }
 }
 
+const RUN_PROMPTS = {
+  1: { file: "gba-pulse-cloud-run1-trendwatch.md", label: "Trend Watch" },
+  2: { file: "gba-pulse-cloud-run2-daily-brief.md", label: "Daily Brief" },
+  3: { file: "gba-pulse-cloud-run3-happenings.md", label: "Happenings" },
+};
+
 async function runStep(step, apiKey) {
-  const promptFile =
-    step === 1 ? "gba-pulse-cloud-run1-trendwatch.md" : "gba-pulse-cloud-run2-edition.md";
-  const prompt = readPrompt(promptFile);
-  const label = step === 1 ? "Trend Watch" : "Trending News edition";
+  const cfg = RUN_PROMPTS[step];
+  if (!cfg) throw new Error(`Unknown run step: ${step}`);
+  const prompt = readPrompt(cfg.file);
+  const label = cfg.label;
 
   console.log(`\n=== Cloud Run ${step}: ${label} ===`);
   console.log(`Repo: ${REPO_URL}`);
@@ -132,6 +138,7 @@ async function main() {
 
   if (only === 1 || only == null) await runStep(1, apiKey);
   if (only === 2 || only == null) await runStep(2, apiKey);
+  if (only === 3 || only == null) await runStep(3, apiKey);
 
   console.log("\nDone. Pull main and open index.html, or wait for GitHub Pages.");
 }

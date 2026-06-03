@@ -1,0 +1,339 @@
+/**
+ * Happenings tab — calendar + upcoming events from lifestyle source links.
+ */
+(function () {
+  var root = document.getElementById("happenings-root");
+  if (!root) return;
+
+  var FILTERS = [
+    { id: "all", label: "All" },
+    { id: "hk", label: "Hong Kong" },
+    { id: "shenzhen", label: "Shenzhen" },
+    { id: "macao", label: "Macao" },
+    { id: "gba", label: "Other GBA" },
+    { id: "international", label: "International" },
+  ];
+
+  var REGIONS = {
+    hk: { color: "#e8920a", label: "Hong Kong", dotClass: "hp-dot--hk" },
+    shenzhen: { color: "#1e3a5f", label: "Shenzhen", dotClass: "hp-dot--sz" },
+    macao: { color: "#7b2d8e", label: "Macao", dotClass: "hp-dot--mo" },
+    gba: { color: "#2a7a6f", label: "Other GBA", dotClass: "hp-dot--gba" },
+    international: { color: "#5c6b7a", label: "International", dotClass: "hp-dot--intl" },
+  };
+
+  var REGION_ORDER = ["hk", "shenzhen", "macao", "gba", "international"];
+
+  var MONTHS = [
+    "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+    "JUL", "AUG", "SEP", "OCT", "NOV", "DEC",
+  ];
+
+  var state = {
+    year: 2026,
+    month: 5,
+    filter: "all",
+    events: [],
+    sources: [],
+  };
+
+  function esc(s) {
+    var d = document.createElement("div");
+    d.textContent = s == null ? "" : String(s);
+    return d.innerHTML;
+  }
+
+  function pad(n) {
+    return n < 10 ? "0" + n : String(n);
+  }
+
+  function parseDate(s) {
+    var p = s.split("-");
+    return new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]));
+  }
+
+  function sameDay(a, b) {
+    return (
+      a.getFullYear() === b.getFullYear() &&
+      a.getMonth() === b.getMonth() &&
+      a.getDate() === b.getDate()
+    );
+  }
+
+  function inferRegion(ev) {
+    var loc = (ev.location || "").toLowerCase();
+    if (/hong kong|\bhk\b/.test(loc)) return "hk";
+    if (/shenzhen|深圳/.test(loc)) return "shenzhen";
+    if (/macao|macau|澳门|澳門/.test(loc)) return "macao";
+    if (
+      /guangzhou|广州|廣州|foshan|佛山|dongguan|东莞|東莞|zhuhai|珠海|huizhou|惠州|jiangmen|江门|江門|zhaoqing|肇庆|肇慶|zhongshan|中山|hengqin|横琴|粵港澳|大湾区/.test(
+        loc
+      )
+    ) {
+      return "gba";
+    }
+    return "international";
+  }
+
+  function normalizeRegion(ev) {
+    var inferred = inferRegion(ev);
+    var r = ev.region;
+    if (r === "outside" || !REGIONS[r]) return inferred;
+    if (
+      (r === "gba" && inferred === "international") ||
+      (r === "international" && inferred === "gba")
+    ) {
+      return inferred;
+    }
+    return r;
+  }
+
+  function matchesFilter(ev, filter) {
+    if (filter === "all") return true;
+    return normalizeRegion(ev) === filter;
+  }
+
+  function eventOverlapsMonth(ev, year, month) {
+    var start = parseDate(ev.start);
+    var end = parseDate(ev.end || ev.start);
+    var first = new Date(year, month, 1);
+    var last = new Date(year, month + 1, 0);
+    return start <= last && end >= first;
+  }
+
+  function eventsOnDay(year, month, day, filter) {
+    var d = new Date(year, month, day);
+    return state.events.filter(function (ev) {
+      if (!matchesFilter(ev, filter)) return false;
+      var start = parseDate(ev.start);
+      var end = parseDate(ev.end || ev.start);
+      return d >= start && d <= end;
+    });
+  }
+
+  function filteredEventsForMonth(year, month, filter) {
+    return state.events
+      .filter(function (ev) {
+        return eventOverlapsMonth(ev, year, month) && matchesFilter(ev, filter);
+      })
+      .sort(function (a, b) {
+        return parseDate(a.start) - parseDate(b.start);
+      });
+  }
+
+  function formatBadgeRange(ev) {
+    var s = parseDate(ev.start);
+    var e = parseDate(ev.end || ev.start);
+    var sm = MONTHS[s.getMonth()];
+    if (s.getMonth() === e.getMonth() && s.getFullYear() === e.getFullYear()) {
+      if (s.getDate() === e.getDate()) return pad(s.getDate()) + " " + sm;
+      return s.getDate() + "-" + e.getDate() + " " + sm;
+    }
+    return pad(s.getDate()) + " " + sm + " – " + e.getDate() + " " + MONTHS[e.getMonth()];
+  }
+
+  function formatDetailDate(ev) {
+    var s = parseDate(ev.start);
+    var e = parseDate(ev.end || ev.start);
+    var fmt = function (d) {
+      return pad(d.getDate()) + "." + pad(d.getMonth() + 1) + "." + d.getFullYear();
+    };
+    if (s.getTime() === e.getTime()) return fmt(s);
+    return fmt(s) + " - " + fmt(e);
+  }
+
+  function regionMeta(ev) {
+    var id = normalizeRegion(ev);
+    return REGIONS[id] || REGIONS.gba;
+  }
+
+  function render() {
+    var y = state.year;
+    var m = state.month;
+    var filter = state.filter;
+    var today = new Date();
+    var firstDow = new Date(y, m, 1).getDay();
+    var daysInMonth = new Date(y, m + 1, 0).getDate();
+    var monthEvents = filteredEventsForMonth(y, m, filter);
+
+    var html = '<div class="hp-layout">';
+
+    html += '<div class="hp-filters" role="tablist" aria-label="Event region filter">';
+    FILTERS.forEach(function (f) {
+      html +=
+        '<button type="button" class="hp-filter' +
+        (filter === f.id ? " hp-filter--active" : "") +
+        '" data-filter="' +
+        f.id +
+        '" role="tab" aria-selected="' +
+        (filter === f.id) +
+        '">' +
+        esc(f.label) +
+        "</button>";
+    });
+    html += "</div>";
+
+    html += '<div class="hp-body">';
+
+    html += '<div class="hp-calendar-col">';
+    html += '<div class="hp-cal-head">';
+    html +=
+      '<button type="button" class="hp-cal-nav" data-nav="-1" aria-label="Previous month">‹</button>';
+    html += '<span class="hp-cal-title">' + MONTHS[m] + " " + y + "</span>";
+    html +=
+      '<button type="button" class="hp-cal-nav" data-nav="1" aria-label="Next month">›</button>';
+    html += "</div>";
+
+    html += '<div class="hp-cal-grid hp-cal-weekdays">';
+    ["S", "M", "T", "W", "T", "F", "S"].forEach(function (d) {
+      html += '<span class="hp-cal-wd">' + d + "</span>";
+    });
+    html += "</div>";
+
+    html += '<div class="hp-cal-grid hp-cal-days">';
+    for (var i = 0; i < firstDow; i++) {
+      html += '<span class="hp-cal-day hp-cal-day--empty"></span>';
+    }
+    for (var day = 1; day <= daysInMonth; day++) {
+      var cellDate = new Date(y, m, day);
+      var dayEv = eventsOnDay(y, m, day, "all");
+      var isToday = sameDay(cellDate, today);
+      var dots = "";
+      var seen = {};
+      dayEv.forEach(function (e) {
+        var rid = normalizeRegion(e);
+        if (!seen[rid]) {
+          seen[rid] = true;
+          var meta = REGIONS[rid];
+          if (meta) dots += '<span class="hp-dot ' + meta.dotClass + '"></span>';
+        }
+      });
+      html +=
+        '<span class="hp-cal-day' +
+        (isToday ? " hp-cal-day--today" : "") +
+        (dayEv.length ? " hp-cal-day--has" : "") +
+        '">' +
+        '<span class="hp-cal-num">' +
+        day +
+        "</span>" +
+        (dots ? '<span class="hp-cal-dots">' + dots + "</span>" : "") +
+        "</span>";
+    }
+    html += "</div>";
+
+    html += '<div class="hp-legend">';
+    REGION_ORDER.forEach(function (id) {
+      var meta = REGIONS[id];
+      html +=
+        '<span><i class="hp-dot ' +
+        meta.dotClass +
+        '"></i> ' +
+        esc(meta.label) +
+        "</span>";
+    });
+    html += "</div>";
+    html += "</div>";
+
+    html += '<div class="hp-events-col">';
+    html += '<h2 class="hp-events-title">Upcoming Events</h2>';
+    if (!monthEvents.length) {
+      html += '<p class="hp-empty">No events this month for this filter.</p>';
+    } else {
+      html += '<ul class="hp-event-list">';
+      monthEvents.forEach(function (ev) {
+        var meta = regionMeta(ev);
+        var loc = ev.location || meta.label;
+        html += '<li class="hp-event">';
+        html +=
+          '<div class="hp-event-badge" style="background:' +
+          meta.color +
+          '">' +
+          esc(formatBadgeRange(ev)) +
+          "</div>";
+        html += '<div class="hp-event-body">';
+        html +=
+          '<p class="hp-event-meta"><strong style="color:' +
+          meta.color +
+          '">' +
+          esc(loc) +
+          "</strong> | " +
+          esc(formatDetailDate(ev)) +
+          "</p>";
+        html +=
+          '<p class="hp-event-title"><a href="' +
+          esc(ev.url) +
+          '" target="_blank" rel="noopener noreferrer">' +
+          esc(ev.title) +
+          "</a></p>";
+        html += "</div></li>";
+      });
+      html += "</ul>";
+    }
+    html +=
+      '<a class="hp-see-more" href="https://event.hktdc.com/" target="_blank" rel="noopener noreferrer">See more events &rsaquo;</a>';
+    html += "</div>";
+
+    html += "</div></div>";
+
+    root.innerHTML = html;
+
+    root.querySelectorAll("[data-filter]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.filter = btn.getAttribute("data-filter");
+        render();
+      });
+    });
+    root.querySelectorAll("[data-nav]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var delta = Number(btn.getAttribute("data-nav"));
+        state.month += delta;
+        if (state.month > 11) {
+          state.month = 0;
+          state.year++;
+        } else if (state.month < 0) {
+          state.month = 11;
+          state.year--;
+        }
+        render();
+      });
+    });
+  }
+
+  function load() {
+    Promise.all([
+      fetch("happenings-events.json").then(function (r) {
+        if (!r.ok) throw new Error("events HTTP " + r.status);
+        return r.json();
+      }),
+      fetch("source-links-data.json").then(function (r) {
+        if (!r.ok) throw new Error("sources HTTP " + r.status);
+        return r.json();
+      }),
+    ])
+      .then(function (results) {
+        state.events = (results[0].events || []).map(function (ev) {
+          return Object.assign({}, ev, { region: normalizeRegion(ev) });
+        });
+        state.sources = (results[1].sources || []).filter(function (s) {
+          return s.category === "Lifestyle";
+        });
+        var meta = document.getElementById("hp-meta");
+        if (meta) {
+          meta.textContent =
+            state.events.length +
+            " events · " +
+            state.sources.length +
+            " lifestyle sources";
+        }
+        render();
+      })
+      .catch(function (err) {
+        root.innerHTML =
+          '<p class="hp-err">Could not load happenings (' +
+          esc(err.message) +
+          ").</p>";
+      });
+  }
+
+  load();
+})();

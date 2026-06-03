@@ -8,8 +8,9 @@ This document defines how to go from raw Trend Watch board data to a **ranked sh
 
 **Discovery window: last 48 hours only.**
 
-- Google rows come from **Trending Now · 48h** (`hours=48`). Not the 4h default, not RSS.
-- Baidu realtime, Weibo realtime hot (`cate=realtimehot`), and X boards are treated as within the same 48h window as Google.
+- Google rows come from **Trending Now · 48h** (`hours=48`) for **Hong Kong and Macao only**. Not the 4h default, not RSS.
+- Baidu realtime and Weibo realtime hot (`cate=realtimehot`) are treated as within the same 48h window as Google.
+- **Do not use** X/Twitter trends or Google Trends for US, UK, JP, IN, SG — removed from GBA Pulse Trend Watch.
 - A topic whose **only evidence** is a news article **older than 48 hours** and **absent from all Trend Watch boards** does **not** qualify for the Top 10.
 - Older news may be used as one line of background context — never as the reason a topic appears on the list.
 
@@ -23,15 +24,16 @@ If `topicCandidates` is already in the JSON and the `compositeScore` values are 
 
 Otherwise, collect every non-empty board row from **all geos equally**:
 
-- `sections[id="google_trends"].itemsByLocation` — **every** geo key: HK, US, GB, MO, JP, SG, IN (and any others present). Do **not** skip or deprioritize any geo at this stage.
+- `sections[id="google_trends"].itemsByLocation` — **HK and MO only** (GBA Google geos).
 - `sections[id="baidu"].items`
 - `sections[id="weibo"].items`
-- `sections[id="x_twitter"].items`
 
 Skip rows where `title` is `"—"` or blank.
 
+**Do not** read `x_twitter` or non-GBA Google geos (US, GB, JP, SG, IN) — they are not in this product.
+
 **Normalize** synonyms into one candidate entry per real-world story.  
-Examples: `Trump Xi` ≈ `中美元首` ≈ `Trump-Xi summit`; `澳車北上` ≈ `HZMB northbound`; a topic trending as #1 in US and #2 in SG maps to one candidate with two Google geo hits.  
+Examples: `Trump Xi` ≈ `中美元首`; `澳車北上` ≈ `HZMB northbound`; a topic on both Google HK and Baidu maps to one candidate with two platform hits.  
 Record every platform hit (including geo) that maps to that story.
 
 **Why all geos matter:** A story trending in the US, SG, or JP often reaches GBA audiences within hours (financial news, AI releases, geopolitical events). Collecting all geos first lets the cross-platform score correctly reflect that a topic is moving across multiple markets. The GBA relevance filter is applied at Step 3 (ranking), not here.
@@ -61,14 +63,16 @@ Record every platform hit (including geo) that maps to that story.
 
 ### Cross-platform score (30%)
 
+**GBA scope:** Candidates should come from **HK/MO Google**, **Baidu**, or **Weibo** hits. Mainland and GBA-adjacent stories on Baidu/Weibo qualify; US/UK/JP/SG-only sports or holidays do not.
+
 1. Count **distinct platform families** where the topic appears:  
-   `google_trends` (any geo counts as one family hit, but multiple geos within Google count as extra signal — see bonus), `baidu`, `weibo`, `x_twitter` — base maximum 4.
+   `google_trends` (HK or MO), `baidu`, `weibo` — maximum **3**.
 2. `crossPlatformScore = min(100, 25 × platformCount)`
 3. Bonuses (each capped so total ≤ 100):
-   - +10 if topic appears in Google **HK or MO** (directly GBA-relevant geo)
-   - +10 if topic appears in **both** Google (any geo) **and** Baidu (cross-strait signal)
-   - +5 if topic appears on **both** Baidu **and** Weibo (dual mainland hot-board signal)
-   - +5 if topic appears in **3 or more** Google geos (broad international traction)
+   - +10 if topic appears in Google **HK or MO**
+   - +10 if topic appears in **both** Google (HK/MO) **and** Baidu
+   - +5 if topic appears on **both** Baidu **and** Weibo
+   - +5 if topic appears on **both** Google HK **and** Google MO
 
 ### Composite
 
@@ -82,13 +86,13 @@ compositeScore = round(0.35 × volumeScore + 0.35 × velocityScore + 0.30 × cro
 
 1. Sort all candidates by `compositeScore` descending.
 2. Tie-break: (a) more platform families, (b) Google HK or MO hit, (c) GBA/HK/Macao editorial relevance.
-3. **GBA relevance filter** — from the sorted list, prefer topics with at least one of:
-   - Appears on Google HK or MO boards
-   - Appears on Baidu
-   - Is a global story (finance, AI, geopolitics, celebrity) with clear GBA audience interest even if trending in US/SG/JP only — note this in `gbaRelevance: "medium"`
-   - Drop topics with **zero** GBA relevance (e.g. a purely local US sports event with no China/HK angle) unless the boards strongly signal GBA audience pickup (e.g. #1 on Google HK).
+3. **GBA relevance filter** — from the sorted list, keep topics that pass **at least one** of:
+   - **GBA local:** HK, Macao, or a GBA mainland city (Guangzhou, Shenzhen, Zhuhai, Foshan, Huizhou, Dongguan, Zhongshan, Jiangmen, Zhaoqing) in the story, or cross-border GBA terms (大湾区, 粤港澳, 横琴, 北向, etc.)
+   - **Google HK or MO hit** on the same story (GBA audience is actively searching it)
+   - **Major national exception:** China-wide diplomacy or policy with no GBA place name but clear national impact (e.g. Trump state visit, 国台办, nationwide 高考, central 民生/公积金 measures, US–China military talks)
+   - Drop provincial/local stories outside GBA (e.g. Inner Mongolia corruption, Zhejiang-only accidents, foreign weather with no GBA angle) unless they meet the major-national bar.
 4. Take the top 10 after the GBA filter. **Never pad** with a topic not on the boards. If only 8 strong candidates pass, write 8.
-5. **Aim for geographic mix:** don't let all 10 slots go to HK-only Google topics. If candidates from US/SG/JP Google boards have GBA relevance and strong scores, include them — they represent international trends the GBA audience is also tracking.
+5. **Prefer cross-strait and GBA-local mix:** HK/MO Google + GBA-tagged Baidu/Weibo hits should dominate the Top 10.
 
 ---
 
