@@ -9,7 +9,9 @@
     "daily:diagnose": "node scripts/diagnose-cloud.mjs",
     "daily:verify": "node scripts/verify-daily-capture.mjs && node scripts/verify-daily-brief.mjs && node scripts/verify-happenings.mjs",
     "source-links:generate": "node scripts/generate-source-links-data.mjs",
-    "happenings:generate": "node scripts/generate-happenings-data.mjs"
+    "happenings:generate": "node scripts/generate-happenings-data.mjs",
+    "trendwatch:prune": "node scripts/prune-trendwatch-gba.mjs",
+    "trendwatch:enrich": "node scripts/enrich-trendwatch-metadata.mjs"
   },
   "dependencies": {
     "@cursor/sdk": "^1.0.13"

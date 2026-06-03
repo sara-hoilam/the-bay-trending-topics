@@ -6,11 +6,7 @@ You are a **cloud agent** on repo `sara-hoilam/the-bay-trending-topics` (branch 
 
 Update **`orchestration/fragments/trendwatch.html`** with a fresh **48-hour** board capture and scored **`topicCandidates`**.
 
-Read and follow:
-
-- `prompts/gba-pulse-trend-watch-agent-prompt.md`
-- `prompts/gba-pulse-trend-scoring.md`
-- `references/source-links.md` (board URLs)
+Read and follow **`prompts/gba-pulse-trend-watch-agent-prompt.md`** (full schema: `titleEn`, `whyTrending`, GBA-only Google HK/MO, no X, gossip filter).
 
 ## Required steps
 
@@ -27,8 +23,12 @@ Read and follow:
 
    ```bash
    node scripts/prune-trendwatch-gba.mjs
+   node scripts/enrich-trendwatch-metadata.mjs
+   node scripts/verify-trendwatch-slots.mjs
    node scripts/merge-briefing-panels.mjs
    ```
+
+   Follow **`prompts/gba-pulse-trend-watch-agent-prompt.md`** in full — every displayed row needs **`titleEn`** (CJK titles), **`whyTrending`** (hover tooltip), and gossip/GBA flags.
 
 6. **Commit and push to `main`** (no pull request):
 

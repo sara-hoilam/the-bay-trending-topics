@@ -168,14 +168,15 @@
 
   function passesPlatformFilter(it, secId, data, geoId) {
     if (secId === "baidu" || secId === "weibo") {
+      if (it.isGossip === true) return false;
       var c = findCandidate(data, it.title, secId, geoId);
+      if (c && (c.isGossip === true || c.gbaRelevance === "low")) return false;
       if (candidateGbaOk(c)) {
-        if (it.isGossip === true || (c && c.isGossip === true)) return false;
-        if (it.isGbaRelevant === false) return false;
-        return isNewsworthyItem(it) || isNewsworthyAuto(it) || true;
+        return isNewsworthyItem(it) || isNewsworthyAuto(it);
       }
       return isNewsworthyItem(it) && isGbaRelevantItem(it, data, secId, geoId, c);
     }
+    if (it.isGossip === true) return false;
     return !isGossipItem(it);
   }
 
@@ -439,7 +440,7 @@
     var pool = [];
     locs.forEach(function (loc) {
       sortItems(getGoogleItems(sec, loc.id)).forEach(function (it) {
-        if (isRowEmpty(it) || isGossipItem(it)) return;
+        if (isRowEmpty(it) || isGossipItem(it) || it.isGossip === true) return;
         pool.push(Object.assign({}, it, { geoId: it.geoId || it.geo || loc.id }));
       });
     });
