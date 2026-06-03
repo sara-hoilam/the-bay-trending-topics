@@ -11,10 +11,13 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
-import { hktDateStr } from "./hkt-date.mjs";
+import {
+  resolveDailyBriefInput,
+  root as repoRoot,
+} from "./daily-brief-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = path.join(__dirname, "..");
+const root = repoRoot;
 
 const DOMAIN_LABELS = {
   "info.newsgd.com": "NewsGD",
@@ -42,22 +45,13 @@ const DOMAIN_LABELS = {
 };
 
 function defaultBriefInput() {
-  const today = hktDateStr();
-  const todayPath = path.join(root, "Training Data", `${today}-daily-brief.md`);
-  if (fs.existsSync(todayPath)) return todayPath;
-  const dir = path.join(root, "Training Data");
-  const files = fs
-    .readdirSync(dir)
-    .filter((f) => /^\d{4}-\d{2}-\d{2}-daily-brief\.md$/.test(f))
-    .sort()
-    .reverse();
-  if (files.length) return path.join(dir, files[0]);
-  return todayPath;
+  return resolveDailyBriefInput(null) ?? path.join(root, "Training Data", "2026-06-03-daily-brief.md");
 }
 
 function parseArgs(argv) {
+  let explicitInput = null;
   const out = {
-    input: defaultBriefInput(),
+    input: null,
     output: path.join(root, "orchestration/fragments/overall.html"),
     merge: false,
   };
@@ -65,8 +59,16 @@ function parseArgs(argv) {
     if (a === "--merge") out.merge = true;
     else {
       const m = a.match(/^--(\w+)=(.+)$/);
-      if (m) out[m[1]] = path.resolve(root, m[2]);
+      if (m) {
+        if (m[1] === "input") explicitInput = path.resolve(root, m[2]);
+        else out[m[1]] = path.resolve(root, m[2]);
+      }
     }
+  }
+  out.input = resolveDailyBriefInput(explicitInput);
+  if (!out.input || !fs.existsSync(out.input)) {
+    console.error("No daily brief markdown found under Training Data/");
+    process.exit(1);
   }
   return out;
 }

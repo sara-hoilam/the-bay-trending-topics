@@ -23,7 +23,7 @@
    * Skip local viral human-interest, entertainment nostalgia, micro-dramas.
    */
   var NEWSWORTHY =
-    /新规|规则|立法|条例|规定|政策|驾驶|获批|试验|频率|6G|5G|AI|人工智能|芯片|半导体|电动车|法拉利|苹果|利率|存款|税|经济|GDP|股市|银行|外交|总统|部长|协议|勋章|武契奇|国防|制裁|贸易|台风|雷暴|大风|暴雨|预警|极端|气象|天气|香港|澳门|港澳|大湾区|粤港|横琴|派位|統一|小一|小\s*一|入境|通关|口岸|监管|央行|发改委|国务院|环球|国际|全球/i;
+    /新规|规则|立法|条例|规定|政策|驾驶|获批|试验|频率|6G|5G|AI|人工智能|豆包|Doubao|芯片|半导体|电动车|法拉利|苹果|利率|存款|税|经济|GDP|股市|银行|外交|总统|部长|协议|勋章|武契奇|国防|制裁|贸易|台风|雷暴|大风|暴雨|预警|极端|气象|天气|香港|澳门|港澳|大湾区|粤港|横琴|派位|統一|小一|小\s*一|入境|通关|口岸|监管|央行|发改委|国务院|环球|国际|全球|文化|使命|考古|三星堆|会晤|红线|汛期/i;
 
   var LOCAL_VIRAL =
     /大哥|赊.*面|砸店|崩溃痛哭|光伏板|亲戚|灵魂摆渡|瘦腿|膝盖|酒家|博主|嫌贵|找碴|暴食|减肥|秘嫁|阔太|综艺|重播|播出|电视剧|网剧|粉丝|网红|相亲|离婚|恋情|绯闻|抄袭|新歌|砸|痛哭|老宅|偷装|造谣者|学校已报警/i;
@@ -108,6 +108,14 @@
     return false;
   }
 
+  function candidateGbaOk(c) {
+    if (!c) return false;
+    if (c.isGbaRelevant === true) return true;
+    if (c.isGbaRelevant === false || c.gbaRelevance === "low") return false;
+    if (c.gbaRelevance === "high" || c.gbaRelevance === "medium") return true;
+    return hasGbaGoogleHit(c);
+  }
+
   function isGbaRelevantItem(it, data, secId, geoId, candidate) {
     if (!it || isRowEmpty(it)) return false;
     if (it.isGbaRelevant === true) return true;
@@ -115,7 +123,7 @@
     var c =
       candidate ||
       (data && secId ? findCandidate(data, it.title, secId, geoId || it.geoId || it.geo) : null);
-    if (c && c.isGbaRelevant === true) return true;
+    if (candidateGbaOk(c)) return true;
     if (hasGbaGoogleHit(c)) return true;
 
     var g = it.geoId || it.geo || geoId;
@@ -126,7 +134,7 @@
     if (gbaAutoMatch(blob)) return true;
 
     if (it.isGbaRelevant === false) return false;
-    if (c && c.isGbaRelevant === false) return false;
+    if (c && (c.isGbaRelevant === false || c.gbaRelevance === "low")) return false;
     return false;
   }
 
@@ -160,7 +168,13 @@
 
   function passesPlatformFilter(it, secId, data, geoId) {
     if (secId === "baidu" || secId === "weibo") {
-      return isNewsworthyItem(it) && isGbaRelevantItem(it, data, secId, geoId, null);
+      var c = findCandidate(data, it.title, secId, geoId);
+      if (candidateGbaOk(c)) {
+        if (it.isGossip === true || (c && c.isGossip === true)) return false;
+        if (it.isGbaRelevant === false) return false;
+        return isNewsworthyItem(it) || isNewsworthyAuto(it) || true;
+      }
+      return isNewsworthyItem(it) && isGbaRelevantItem(it, data, secId, geoId, c);
     }
     return !isGossipItem(it);
   }
@@ -418,7 +432,10 @@
   }
 
   function displayGoogleItems(data, sec) {
-    var locs = sec.locations || [];
+    var locs = (sec.locations || []).filter(function (loc) {
+      return loc.id === "HK" || loc.id === "MO";
+    });
+    if (!locs.length) locs = sec.locations || [];
     var pool = [];
     locs.forEach(function (loc) {
       sortItems(getGoogleItems(sec, loc.id)).forEach(function (it) {

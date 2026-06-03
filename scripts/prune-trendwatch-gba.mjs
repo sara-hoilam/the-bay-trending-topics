@@ -69,6 +69,13 @@ function pruneData(data) {
     }
   }
 
+  // Preserve editorial flags from pre-prune topicCandidates before recomputing.
+  const priorCandidates = data.topicCandidates || [];
+  const priorByTitle = new Map();
+  for (const c of priorCandidates) {
+    priorByTitle.set(String(c.displayTitle || "").trim().toLowerCase(), c);
+  }
+
   const rows = [];
   if (google) {
     for (const [geo, items] of Object.entries(google.itemsByLocation || {})) {
@@ -156,6 +163,25 @@ function pruneData(data) {
 
   topicCandidates.sort((a, b) => b.compositeScore - a.compositeScore);
   data.topicCandidates = topicCandidates.slice(0, 25);
+
+  for (const secId of ["baidu", "weibo"]) {
+    const sec = data.sections.find((s) => s.id === secId);
+    if (!sec) continue;
+    for (const it of sec.items || []) {
+      const key = String(it.title || "").trim().toLowerCase();
+      const prior = priorByTitle.get(key);
+      const live = data.topicCandidates.find(
+        (c) => String(c.displayTitle || "").trim().toLowerCase() === key,
+      );
+      const c = prior || live;
+      if (!c) continue;
+      if (c.gbaRelevance === "low") it.isGbaRelevant = false;
+      else if (c.gbaRelevance === "high" || c.gbaRelevance === "medium") it.isGbaRelevant = true;
+      if (c.whyTrending && !it.whyTrending) it.whyTrending = c.whyTrending;
+      if (c.titleEn && !it.titleEn) it.titleEn = c.titleEn;
+    }
+  }
+
   return data;
 }
 

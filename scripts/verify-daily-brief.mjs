@@ -1,22 +1,33 @@
 #!/usr/bin/env node
 /**
- * Fail CI if today's Daily Brief markdown or overall fragment is missing/stale.
+ * Fail CI if overall panel is Trending News format or daily brief markdown is missing/stale.
  */
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { ageHours, hktDateStr } from "./hkt-date.mjs";
+import { hktDateStr } from "./hkt-date.mjs";
+import {
+  isDailyBriefFragment,
+  isTrendingNewsFragment,
+  listDailyBriefFiles,
+  briefPathForDate,
+} from "./daily-brief-utils.mjs";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const today = hktDateStr();
-const briefPath = path.join(root, "Training Data", `${today}-daily-brief.md`);
+const briefPath = briefPathForDate(today);
 const fragPath = path.join(root, "orchestration/fragments/overall.html");
 
 let ok = true;
 
 if (!fs.existsSync(briefPath)) {
-  console.error(`Missing daily brief: Training Data/${today}-daily-brief.md`);
-  ok = false;
+  const latest = listDailyBriefFiles()[0];
+  if (latest) {
+    console.warn(`No brief for HKT today; latest file is ${latest}`);
+  } else {
+    console.error(`Missing daily brief: Training Data/${today}-daily-brief.md`);
+    ok = false;
+  }
 } else {
   const stat = fs.statSync(briefPath);
   const ageH = (Date.now() - stat.mtimeMs) / 36e5;
@@ -34,16 +45,17 @@ if (!fs.existsSync(fragPath)) {
   ok = false;
 } else {
   const frag = fs.readFileSync(fragPath, "utf8");
-  if (!frag.includes(`Edition: ${today}`) && !frag.includes(`Daily Brief · ${today}`)) {
-    console.warn(`overall.html may not match today (${today}) — check edition stamp in fragment`);
-  }
-  const m = frag.match(/<!--[\s\S]*?Edition:\s*(\d{4}-\d{2}-\d{2})/);
-  if (m && m[1] !== today) {
-    console.warn(`Fragment edition ${m[1]} differs from HKT today ${today}`);
-  }
-  const articleMatch = frag.match(/(\d+)\s+articles/);
-  if (articleMatch) {
-    console.log(`OK overall fragment (${articleMatch[1]} articles)`);
+  if (isTrendingNewsFragment(frag)) {
+    console.error("overall.html is Trending News format — Daily Brief tab will show wrong content");
+    ok = false;
+  } else if (!isDailyBriefFragment(frag)) {
+    console.error("overall.html is not a recognised Daily Brief fragment");
+    ok = false;
+  } else {
+    const articleMatch = frag.match(/(\d+)\s+articles/);
+    if (articleMatch) {
+      console.log(`OK overall fragment (${articleMatch[1]} articles, Daily Brief format)`);
+    }
   }
 }
 

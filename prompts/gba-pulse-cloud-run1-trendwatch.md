@@ -26,6 +26,7 @@ Read and follow:
 5. Run from repo root:
 
    ```bash
+   node scripts/prune-trendwatch-gba.mjs
    node scripts/merge-briefing-panels.mjs
    ```
 
