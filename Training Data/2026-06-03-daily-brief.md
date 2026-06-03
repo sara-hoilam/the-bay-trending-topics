@@ -1,5 +1,5 @@
 THE BAY: Daily Brief
-Date: 3 June 2026 · 24 articles · method: daily-brief-agent-prompt (live source scan)
+Date: 3 June 2026 · 25 articles · method: daily-brief-agent-prompt (live source scan)
 
 
 GBA News (3):
@@ -66,7 +66,7 @@ https://www.gov.mo/zh-hant/news/1241617/
 AMCM figures released on 3 June show Macao’s broad money supply M2 fell 0.6 percent month-on-month in April to 854.4 billion patacas, with M1 down 8.1 percent as current deposits dropped 11.4 percent while currency in circulation edged up 0.1 percent. By currency, pataca, Hong Kong dollar, renminbi and US dollar accounted for 32.1 percent, 44.1 percent, 7.4 percent and 14.7 percent of M2 respectively. The overall loan-to-deposit ratio rose to 75.4 percent from 71.2 percent at end-March, while the non-performing loan ratio eased to 4.4 percent from 4.7 percent.
 
 
-Hong Kong (6):
+Hong Kong (7):
 
 12. **Lee Kazakhstan visit — 43 MoUs** — TVB + RTHK + HKFP + The Standard
 https://news.tvb.com/tc/1174301-%E6%9D%8E%E5%AE%B6%E8%B6%85%E6%8C%87%E8%88%87%E5%93%88%E8%96%A9%E5%85%8B%E6%9A%AB%E9%81%94%E6%88%9043%E9%A0%85%E8%AB%92%E8%A7%A3%E5%82%99%E5%BF%98%E9%8C%84%E5%8F%8A%E5%8D%94%E8%AD%B0%E5%8C%85%E6%8B%AC%E9%96%8B%E9%80%9A%E5%85%A9%E5%9C%B0%E7%9B%B4%E8%88%AA%E8%88%AA%E7%8F%AD
@@ -96,45 +96,52 @@ https://news.tvb.com/tc/1174271-%E9%A2%A8%E8%87%BA%E8%96%96%E8%96%93%E5%91%A8%E4
 https://www.thestandard.com.hk/news/article/333634/Typhoon-Jangmi-disrupts-HK-Japan-flights-multiple-cancellations-on-June-3
 Typhoon Jangmi forced widespread cancellations on 3 June on Hong Kong–Japan routes as the storm moved towards Tokyo, Osaka and Nagoya after battering Okinawa. TVB listed affected services including HK Express, Cathay Pacific, Japan Airlines and ANA flights to Tokyo’s Haneda and Narita airports, as well as Osaka and Nagoya; Hong Kong Airlines also cancelled Osaka services. The Standard said airlines urged passengers to check flight status before travelling to the airport.
 
-17. **Northern Metropolis ASEAN tour** — SCMP
-https://www.scmp.com/presented/news/hong-kong/topics/hkaf-tour-northern-metropolis/article/3355708/hong-kong-pitches-northern-metropolis-asean-gateway-greater-bay-area
-Hong Kong officials led a nearly 70-strong ASEAN delegation tour of the Northern Metropolis on 3 June, organised by the Hong Kong-ASEAN Foundation and the Northern Metropolis Co-ordination Office. Delegates including ASEAN consuls-general and chamber leaders visited the Hung Shui Kiu/Ha Tsuen New Development Area liaison centre, the Hong Kong-Shenzhen Innovation and Technology Park, Long Valley Nature Park and Ming Tak Tong in Yuen Long. NMCO director Linda So said the project — the first Hong Kong scheme included in the national 15th Five-Year Plan — is intended as a gateway for international firms entering the GBA; SCMP cited Trade and Industry Department data showing ASEAN merchandise trade with Hong Kong reached HK$1.67 trillion in 2025, or 15.3 percent of the city’s total.
+17. **King Sir Chung King-fai dies at 89** — RTHK + SCMP + Headline Daily
+https://news.rthk.hk/rthk/ch/component/k2/1857080-20260603.htm
+https://www.scmp.com/news/hong-kong/society/article/3355785/king-sir-chung-king-fai-titan-hong-kong-theatre-dead-89
+https://eastweek.stheadline.com/focus/19495/King-Sir%E9%8D%BE%E6%99%AF%E8%BC%9D%E7%9D%A1%E5%A4%A2%E4%B8%AD%E5%AE%89%E8%A9%B3%E9%9B%A2%E4%B8%96-%E5%89%B5%E8%BE%A6%E9%9B%BB%E8%A6%96%E8%97%9D%E5%93%A1%E8%A8%93%E7%B7%B4%E7%8F%AD%E7%8D%A8%E5%85%B7%E6%85%A7%E7%9C%BC%E7%9D%87%E4%B8%AD%E5%91%A8%E6%BD%A4%E7%99%BC
+Veteran theatre figure Chung King-fai, known as “King Sir”, died peacefully at home on the morning of 3 June at age 89, his nephew announced on TVB’s social media page. RTHK said Chung spent decades as an actor, director, educator and broadcaster, served 18 years as founding dean of the Hong Kong Academy for Performing Arts drama school, and helped launch TVB’s artiste training programme that nurtured generations of performers. Secretary for Culture, Sports and Tourism Rosanna Law offered condolences and praised his advisory work for the government; SCMP and Headline Daily noted his role in spotting talent such as Chow Yun-fat and his distinctive narration voice on documentary series.
+
+18. **HKGAI V3 local AI model launch** — RTHK + Hong Kong Government
+https://news.rthk.hk/rthk/ch/component/k2/1857088-20260603.htm
+https://www.info.gov.hk/gia/general/202606/03/P2026060300659.htm
+The Hong Kong Generative AI Research and Development Centre released HKGAI V3 on 3 June at the “Agentic HK” launch conference, with Secretary for Innovation, Technology and Industry Sun Dong saying the upgraded model can autonomously execute tasks and is trained on local data to handle bilingual and trilingual Hong Kong contexts. RTHK reported Sun said the city is moving to the front of the global AI wave and expects V3 to improve applications such as government document assistant “HKPilot” and public chatbot “HKChat”. The government press release said Sun attended the ecosystem cooperation event and outlined plans including an AI+ and industry development strategy committee and the forthcoming Hong Kong AI Research Institute.
 
 
 Zhuhai inc. Hengqin (2):
 
-18. **Youth talent subsidies** — NewsGD + Hengqin authority
+19. **Youth talent subsidies** — NewsGD + Hengqin authority
 https://info.newsgd.com/node_1df1562bc2/3126e20be0.shtml
 https://www.hengqin.gov.cn/macao_zh_hans/zwgk/tzgg/gg/content/post_3910602.html
 Hengqin’s youth talent subsidy scheme opened for applications on 1 June and will run until 30 June for degree holders, professionals and Macao youths working for employers registered in the Guangdong–Macao In-Depth Cooperation Zone. Eligible Macao youths can receive living subsidies of up to 270,000 yuan, while degree-holding and professional talents may receive up to 180,000 yuan and skilled workers up to 60,000 yuan, paid in instalments over two to three years depending on category. Applicants must have paid individual income tax and social insurance in Hengqin for at least six consecutive months if applying for the first time.
 
-19. **Hengqin labour-arbitration legal outreach** — gov.mo
+20. **Hengqin labour-arbitration legal outreach** — gov.mo
 https://www.gov.mo/zh-hant/news/1241374/
 Macao’s Legal Affairs Bureau and the Hengqin Guangdong–Macao In-Depth Cooperation Zone Legal Affairs Bureau jointly deployed the “Macao–Hengqin Legal Volunteer Corps” to Hengqin communities to promote mainland labour-arbitration rules. Volunteers led by deputy team leader Wong Shuk Kwan visited merchants to distribute explanatory materials and collect questions from Macao residents working or doing business in the zone. Officials said the corps will continue regular community outreach to help Macao people and enterprises integrate into the cooperation zone under a shared legal framework.
 
 
 Guangzhou (1):
 
-20. **Marine economy 2030 target** — Guangzhou Daily
+21. **Marine economy 2030 target** — Guangzhou Daily
 https://gzdaily.dayoo.com/pc/html/2026-06/03/content_866_909194.htm
 Guangzhou Daily reported on 3 June that a draft 15th Five-Year Plan for marine economic development, released for public consultation on 30 May, targets raising the city’s gross ocean product to 730 billion yuan by 2030. The document said Guangzhou’s marine economy reached 523.1 billion yuan in 2025, accounting for 16.3 percent of local GDP, and sets goals to build an internationally competitive marine industry cluster and strengthen the Southern Marine Science and Technology Innovation Centre. By 2035, the plan envisages Guangzhou as a modern maritime city with ocean-related industries ranking among global leaders.
 
 
 Shenzhen (2):
 
-21. **Merck GBA innovation centre** — Shenzhen News + GBA.net
+22. **Merck GBA innovation centre** — Shenzhen News + GBA.net
 https://www.sznews.com/news/content/2026-06/01/content_32074701.htm
 https://www.gba.net.cn/news/2026/24639.html
 German science and technology group Merck officially opened its Greater Bay Area Innovation and Collaboration Centre in Nanshan on 1 June, marking a major expansion of its China footprint after 93 years in the market. Shenzhen News and GBA.net said the 2,500-square-metre facility will serve as an R&D and partnership hub focused on life sciences, healthcare and advanced materials, drawing on Merck’s global laboratory resources to support local firms and cross-border collaboration. The centre is positioned as part of Merck’s “accelerator” model to incubate startups in life science, pharma and electronics technology.
 
-22. **Qianhai international payment measures** — Shenzhen Special Zone Daily
+23. **Qianhai international payment measures** — Shenzhen Special Zone Daily
 https://sztqb.sznews.com/PC/content/202606/02/content_3451970.html
 Qianhai authorities jointly published ten measures to streamline international payment services in the cooperation zone, requiring key merchants and districts to accept foreign bank cards, cash and mobile wallets and to install ATMs and currency-exchange facilities within 500 metres of major tourist sites. Shenzhen Special Zone Daily said the package supports UnionPay promotions, palm and facial payment pilots at venues such as Qianhai Ice and Snow World, the “Bay Area Light” Ferris wheel and K11, and expands “external card binding” and “external wallet internal use” services — including 36 overseas e-wallets such as PayPal. The policy also references broader use of the mBridge platform to connect cross-border payment scenarios between the mainland and Hong Kong.
 
 
 Nation (1):
 
-23. **China–UK strategic dialogue** — TVB + CGTN + SCMP
+24. **China–UK strategic dialogue** — TVB + CGTN + SCMP
 https://news.tvb.com/sc/1174309-UKForeignSecretaryYvetteCoopermeetsWangYiHanZhenginBeijing
 https://news.cgtn.com/news/2026-06-02/China-UK-pledge-deeper-cooperation-at-strategic-dialogue-in-Beijing-1NEpfzw8z3q/p.html
 https://www.scmp.com/news/china/diplomacy/article/3355732/china-uk-ties-thaw-wang-yi-urges-they-further-communicate-and-align-our-positions
@@ -143,7 +150,7 @@ Chinese Foreign Minister Wang Yi and UK Foreign Secretary Yvette Cooper held the
 
 GBA sport (1):
 
-24. **Asian U20 pole vault gold (Shaoguan athlete, HK venue)** — NewsGD + NF News
+25. **Asian U20 pole vault gold (Shaoguan athlete, HK venue)** — NewsGD + NF News
 https://info.newsgd.com/node_28ab3f3552/e65750fb2a.shtml
 https://epaper.nfnews.com/nfdaily/html/202606/03/content_10172171.html
 19-year-old Zeng Liang from Qujiang, Shaoguan won men’s pole vault gold at the 22nd Asian U20 Athletics Championships after clearing 5.45 metres at Kai Tak Youth Sports Ground in Hong Kong. Southern Daily said Zeng, a product of Shaoguan’s amateur sports school system, had previously broken a provincial youth record and reached national elite standard with a 5.30-metre jump at the 2025 national youth championships. The Shaoguan municipal government issued a congratulatory message praising his performance as a reflection of the city’s youth athletics development.
@@ -151,9 +158,9 @@ https://epaper.nfnews.com/nfdaily/html/202606/03/content_10172171.html
 
 <!-- DAILY BRIEF AUDIT
 Date: 2026-06-03 HKT
-Stories: 24
-GBA filter drops: US/EU tariff headlines (Macao Business intl wire); Isle of Man TT (Macao Daily Times sport); HK unregistered-birth arrest (society, no GBA angle); P1 SMS allocation error (local admin)
-Single-source items: Macao taxi tender (10), April monetary stats (11), Northern Metropolis ASEAN tour (17), Guangzhou marine (20), Qianhai payments (22), Hengqin legal outreach (19)
+Stories: 25
+GBA filter drops: US/EU tariff headlines (Macao Business intl wire); Isle of Man TT (Macao Daily Times sport); HK unregistered-birth arrest (society, no GBA angle); P1 SMS allocation error (local admin); Northern Metropolis ASEAN tour (dropped for Chung/HKGAI)
+Single-source items: Macao taxi tender (10), April monetary stats (11), Guangzhou marine (21), Qianhai payments (23), Hengqin legal outreach (20)
 Out of catalog: none
-Rerun notes: mBridge block updated with gov.mo 1241712 day-one figures (23 transactions, ~1.3B patacas); added Frederick Ma listing pipeline, Standard–Freedom Horizons MOU line in Lee visit block
+Rerun notes: Run 2 evening refresh — added King Sir Chung King-fai (17) and HKGAI V3 (18) from live RTHK/SCMP/gov.hk scan; removed single-source Northern Metropolis ASEAN tour
 -->
