@@ -12,15 +12,6 @@
       "sourceDomain": "westk.hk"
     },
     {
-      "title": "Treasures of Global Jewellery from The Met — Palace Museum",
-      "start": "2026-04-15",
-      "end": "2026-10-19",
-      "region": "hk",
-      "location": "Hong Kong Palace Museum, West Kowloon",
-      "url": "https://www.westk.hk/en/event/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
-      "sourceDomain": "westk.hk"
-    },
-    {
       "title": "Ryuichi Sakamoto | seeing sound, hearing time at M+",
       "start": "2026-02-14",
       "end": "2026-07-05",
@@ -39,6 +30,51 @@
       "sourceDomain": "westk.hk"
     },
     {
+      "title": "Treasures of Global Jewellery from The Met — Palace Museum",
+      "start": "2026-04-15",
+      "end": "2026-10-19",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.westk.hk/en/event/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
+      "sourceDomain": "westk.hk"
+    },
+    {
+      "title": "Wine to Asia to hit town May 14-16",
+      "start": "2026-05-09",
+      "end": "2026-07-08",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-05/09/content_32042917.htm",
+      "sourceDomain": "eyeshenzhen.com"
+    },
+    {
+      "title": "Original design shines at ICIF sub-venue MGU SHOWROOM",
+      "start": "2026-05-18",
+      "end": "2026-07-17",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-05/18/content_32054795.htm",
+      "sourceDomain": "eyeshenzhen.com"
+    },
+    {
+      "title": "CUHK-Shenzhen shines with global artists' works",
+      "start": "2026-05-18",
+      "end": "2026-06-01",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-05/18/content_32055794.htm",
+      "sourceDomain": "eyeshenzhen.com"
+    },
+    {
+      "title": "SIMoA to debut with Renaissance classics and national treasures",
+      "start": "2026-05-27",
+      "end": "2026-07-26",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-05/27/content_32067728.htm",
+      "sourceDomain": "eyeshenzhen.com"
+    },
+    {
       "title": "Wael Shawky: I Am Hymns of the New Temples at M+",
       "start": "2026-05-30",
       "end": "2026-10-25",
@@ -48,12 +84,21 @@
       "sourceDomain": "westk.hk"
     },
     {
-      "title": "SIMoA to debut with Renaissance classics and national treasures",
-      "start": "2026-05-27",
-      "end": "2026-07-26",
+      "title": "PAM unveils 2 new exhibitions in 'Hometown Series'",
+      "start": "2026-06-01",
+      "end": "2026-07-31",
       "region": "shenzhen",
-      "location": "Shenzhen International Museum of Art",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-05/27/content_32067728.htm",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32074062.htm",
+      "sourceDomain": "eyeshenzhen.com"
+    },
+    {
+      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
+      "start": "2026-06-01",
+      "end": "2026-07-31",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
       "sourceDomain": "eyeshenzhen.com"
     },
     {
@@ -66,15 +111,6 @@
       "sourceDomain": "eyeshenzhen.com"
     },
     {
-      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
-      "start": "2026-06-01",
-      "end": "2026-07-31",
-      "region": "macao",
-      "location": "Grand Lisboa Palace Resort Macao",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
-      "sourceDomain": "eyeshenzhen.com"
-    },
-    {
       "title": "Annals Inscribed Bronze — ancient art at Shenzhen Museum",
       "start": "2026-06-03",
       "end": "2026-12-31",
@@ -82,6 +118,15 @@
       "location": "Shenzhen Museum (Ancient Art)",
       "url": "https://www.shenzhenmuseum.com/en/exhibition",
       "sourceDomain": "shenzhenmuseum.com"
+    },
+    {
+      "title": "17 upcoming events at Shenzhen's two exhibitions centers in June",
+      "start": "2026-06-03",
+      "end": "2026-08-02",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/03/content_32076861.htm",
+      "sourceDomain": "eyeshenzhen.com"
     },
     {
       "title": "Yarn Expo Shenzhen (YESZ)",
@@ -129,39 +174,300 @@
       "sourceDomain": "westk.hk"
     },
     {
-      "title": "HKTDC Hong Kong Book Fair 2026",
+      "title": "HKTDC World of Snacks 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
       "region": "hk",
-      "location": "Hong Kong Convention and Exhibition Centre",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/worldofsnacks/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
+      "start": "2026-07-15",
+      "end": "2026-07-21",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://hkbookfair.hktdc.com/en/index.html",
       "sourceDomain": "event.hktdc.com"
     },
     {
-      "title": "HKTDC Food Expo 2026",
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
+      "start": "2026-07-15",
+      "end": "2026-07-21",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Hengqin New Area,Qianhai Shekou",
+      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Food Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
       "region": "hk",
-      "location": "Hong Kong Convention and Exhibition Centre",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
       "url": "https://www.hktdc.com/event/hkfoodexpo/en",
       "sourceDomain": "event.hktdc.com"
     },
     {
-      "title": "CENTRESTAGE 2026",
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/foodexpopro/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkteafair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "Salon de TIME 2026 (HKCEC)",
+      "start": "2026-09-01",
+      "end": "2026-09-05",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/te",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Watch & Clock Fair 2026 (HKCEC)",
+      "start": "2026-09-01",
+      "end": "2026-09-05",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkwatchfair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "CENTRESTAGE 2026 (HKCEC) ",
       "start": "2026-09-02",
       "end": "2026-09-05",
       "region": "hk",
-      "location": "Hong Kong Convention and Exhibition Centre",
+      "location": "Hong Kong",
       "url": "https://centrestage.com.hk/",
       "sourceDomain": "event.hktdc.com"
     },
     {
-      "title": "Eco Expo Asia 2026",
+      "title": "electronicAsia 2026 (HKCEC)",
+      "start": "2026-10-13",
+      "end": "2026-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/electronicasia",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
+      "start": "2026-10-13",
+      "end": "2026-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairae",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "Eco Expo Asia 2026 (AsiaWorld-Expo)",
       "start": "2026-10-26",
       "end": "2026-10-29",
       "region": "hk",
-      "location": "AsiaWorld-Expo",
+      "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/ecoexpoasia",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Outdoor and Tech Light Expo 2026 (AsiaWorld-Expo)",
+      "start": "2026-10-26",
+      "end": "2026-10-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkotlexpo/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Lighting Fair (Autumn Edition) 2026 (HKCEC)",
+      "start": "2026-10-27",
+      "end": "2026-10-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hklightingfairae/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Wine and Spirits Fair 2026 (HKCEC)",
+      "start": "2026-11-05",
+      "end": "2026-11-07",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkwinefair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "DesignInspire 2026",
+      "start": "2026-11-19",
+      "end": "2026-11-21",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://designinspire.hktdc.com?utm_source=Event+Listing&utm_medium=banner&utm_campaign=Event+Listing",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Baby Products Fair 2027",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkbabyfair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkstationeryfair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Education & Careers Expo 2027 (HKCEC)",
+      "start": "2027-01-21",
+      "end": "2027-01-24",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkeducationexpo",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Diamond, Gem & Pearl Show 2027 (AsiaWorld-Expo)",
+      "start": "2027-03-02",
+      "end": "2027-03-06",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkdgp/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Jewellery Show 2027 (HKCEC)",
+      "start": "2027-03-04",
+      "end": "2027-03-08",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkjewellery/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
+      "start": "2027-04-13",
+      "end": "2027-04-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairse",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "InnoEX 2027 (HKCEC)",
+      "start": "2027-04-13",
+      "end": "2027-04-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/innoex",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Smart Lighting Expo 2027 (HKCEC)",
+      "start": "2027-04-20",
+      "end": "2027-04-23",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://smartlightingexpo.hktdc.com/",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong International Lighting Fair (Spring Edition) 2027 (HKCEC)",
+      "start": "2027-04-20",
+      "end": "2027-04-23",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hklightingfairse/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkprintpackfair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkgiftspremiumfair",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "Home InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/homeinstyle/en",
+      "sourceDomain": "event.hktdc.com"
+    },
+    {
+      "title": "Fashion InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/fashioninstyle/en",
       "sourceDomain": "event.hktdc.com"
     }
   ]
