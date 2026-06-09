@@ -139,18 +139,7 @@ async function main() {
 
   if (only === 1 || only == null) await runStep(1, apiKey);
 
-  if (only === 2 || only == null) {
-    console.log("\n=== Editor comparison pipeline (pre–Run 2) ===");
-    try {
-      execFileSync(process.execPath, [path.join(__dirname, "run-editor-comparison-pipeline.mjs")], {
-        cwd: root,
-        stdio: "inherit",
-      });
-    } catch (err) {
-      console.warn("Editor comparison pipeline failed (non-fatal):", err.message ?? err);
-    }
-    await runStep(2, apiKey);
-  }
+  if (only === 2 || only == null) await runStep(2, apiKey);
   if (only === 3 || only == null) await runStep(3, apiKey);
 
   console.log("\nDone. Pull main and open index.html, or wait for GitHub Pages.");

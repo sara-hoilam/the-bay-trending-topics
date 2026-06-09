@@ -7,6 +7,8 @@ https://drive.google.com/drive/folders/1sUw2ipTfv-UkVOZnrWuX9-7DGsMHshaw?usp=sha
 
 One Word document per day comparing the **manual** daily brief (managing editors) with **GBA Pulse AI** output. Parsed selections train Run 2 (Daily Brief) story ranking.
 
+**On-demand only:** Run via the Cursor skill **`gba-pulse-editor-feedback`** or `npm run editor:feedback`. The automatic 08:00 HKT daily refresh does **not** run this pipeline.
+
 ## Filename convention
 
 `YYYY-MM-DD-comparison.docx` (edition date = manual brief date)
