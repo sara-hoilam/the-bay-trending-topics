@@ -13,7 +13,6 @@
  */
 import fs from "fs";
 import path from "path";
-import { google } from "googleapis";
 import {
   ensureDirs,
   listRawDocx,
@@ -75,6 +74,18 @@ function importFromLocalDir(importDir, dryRun) {
   return 0;
 }
 
+async function loadGoogleApis() {
+  try {
+    const mod = await import("googleapis");
+    return mod.google;
+  } catch {
+    console.error(
+      "googleapis package not installed. Run: npm install googleapis --no-save (or full npm install on CI)",
+    );
+    return null;
+  }
+}
+
 async function syncFromDrive(dryRun) {
   const credsJson = process.env.GOOGLE_DRIVE_CREDENTIALS;
   if (!credsJson?.trim()) {
@@ -83,6 +94,9 @@ async function syncFromDrive(dryRun) {
     console.log(`Drive folder: ${DRIVE_FOLDER_URL}`);
     return 0;
   }
+
+  const google = await loadGoogleApis();
+  if (!google) return 1;
 
   let credentials;
   try {

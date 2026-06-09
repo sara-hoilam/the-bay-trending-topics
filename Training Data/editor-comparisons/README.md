@@ -45,12 +45,26 @@ cd "C:\Users\The Bay Sara\OneDrive\The Bay\the-bay-trending-topics"
 py scripts/import-editor-comparisons.py
 ```
 
-**With Node.js installed:**
+**With Node.js installed (Windows Surface / ARM64):**
+
+PowerShell may block `npm` — use `npm.cmd`. Full `npm install` can fail on Windows ARM because cloud-only `@cursor/sdk` needs native build tools. Use the **minimal local install** instead:
 
 ```powershell
 cd "C:\Users\The Bay Sara\OneDrive\The Bay\the-bay-trending-topics"
-npm run editor:import
-npm run editor:pipeline
+
+# If a previous install failed, delete the broken folder first:
+Remove-Item -Recurse -Force node_modules -ErrorAction SilentlyContinue
+
+npm.cmd install jszip --omit=optional
+py scripts/import-editor-comparisons.py
+npm.cmd run editor:parse-build
+```
+
+Or with import via Node:
+
+```powershell
+npm.cmd run editor:import
+npm.cmd run editor:parse-build
 ```
 
 Or step by step:
