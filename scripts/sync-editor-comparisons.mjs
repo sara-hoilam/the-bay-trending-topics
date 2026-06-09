@@ -8,6 +8,8 @@
  * Usage:
  *   node scripts/sync-editor-comparisons.mjs
  *   node scripts/sync-editor-comparisons.mjs --dry-run
+ *   node scripts/sync-editor-comparisons.mjs --import-dir="GBA Pulse Feedback"
+ *   node scripts/sync-editor-comparisons.mjs --import-dir="C:\path\to\GBA Pulse Feedback"
  */
 import fs from "fs";
 import path from "path";
@@ -16,12 +18,61 @@ import {
   ensureDirs,
   listRawDocx,
   paths,
+  root,
   DRIVE_FOLDER_ID,
   DRIVE_FOLDER_URL,
+  findDocxFiles,
+  standardRawFilename,
+  extractDateFromFilename,
 } from "./editor-comparison-utils.mjs";
 
 function parseArgs() {
-  return { dryRun: process.argv.includes("--dry-run") };
+  const out = { dryRun: process.argv.includes("--dry-run"), importDir: null };
+  for (const a of process.argv.slice(2)) {
+    const m = a.match(/^--import-dir=(.+)$/);
+    if (m) out.importDir = path.resolve(root, m[1]);
+  }
+  return out;
+}
+
+function importFromLocalDir(importDir, dryRun) {
+  const files = findDocxFiles(importDir);
+  if (!files.length) {
+    console.log(`No .docx files under ${importDir}`);
+    return 0;
+  }
+
+  let copied = 0;
+  let skipped = 0;
+  for (const src of files) {
+    const base = path.basename(src);
+    const destName = standardRawFilename(base);
+    if (!extractDateFromFilename(base) && !extractDateFromFilename(destName)) {
+      console.warn(`Skip (no date in filename): ${base}`);
+      skipped++;
+      continue;
+    }
+    const dest = path.join(paths.raw, destName);
+    if (fs.existsSync(dest)) {
+      const srcMtime = fs.statSync(src).mtimeMs;
+      const destMtime = fs.statSync(dest).mtimeMs;
+      if (destMtime >= srcMtime) {
+        console.log(`Up to date: ${destName}`);
+        continue;
+      }
+    }
+    if (dryRun) {
+      console.log(`Would import: ${base} → ${destName}`);
+      copied++;
+      continue;
+    }
+    fs.copyFileSync(src, dest);
+    console.log(`Imported: ${base} → ${destName}`);
+    copied++;
+  }
+
+  console.log(`Local import complete (${copied} copied, ${skipped} skipped).`);
+  return 0;
 }
 
 async function syncFromDrive(dryRun) {
@@ -96,7 +147,14 @@ async function syncFromDrive(dryRun) {
 
 async function main() {
   ensureDirs();
-  const { dryRun } = parseArgs();
+  const { dryRun, importDir } = parseArgs();
+
+  if (importDir) {
+    console.log(`Importing from: ${importDir}`);
+    const code = importFromLocalDir(importDir, dryRun);
+    if (code) process.exit(code);
+  }
+
   const local = listRawDocx();
   console.log(`Local raw/: ${local.length} docx file(s)`);
 

@@ -58,9 +58,73 @@ export function ensureDirs() {
   }
 }
 
+const MONTHS = {
+  january: "01",
+  february: "02",
+  march: "03",
+  april: "04",
+  may: "05",
+  june: "06",
+  july: "07",
+  august: "08",
+  september: "09",
+  october: "10",
+  november: "11",
+  december: "12",
+  jan: "01",
+  feb: "02",
+  mar: "03",
+  apr: "04",
+  jun: "06",
+  jul: "07",
+  aug: "08",
+  sep: "09",
+  oct: "10",
+  nov: "11",
+  dec: "12",
+};
+
 export function extractDateFromFilename(name) {
-  const m = name.match(/(\d{4}-\d{2}-\d{2})/);
-  return m?.[1] ?? null;
+  const iso = name.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) return `${iso[1]}-${iso[2]}-${iso[3]}`;
+
+  const isoCompact = name.match(/(\d{4})[_\s](\d{1,2})[_\s](\d{1,2})/);
+  if (isoCompact) {
+    const mm = isoCompact[2].padStart(2, "0");
+    const dd = isoCompact[3].padStart(2, "0");
+    return `${isoCompact[1]}-${mm}-${dd}`;
+  }
+
+  const dmy = name.match(/(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)\s+(\d{4})/i);
+  if (dmy) {
+    const mo = MONTHS[dmy[2].toLowerCase()];
+    if (mo) return `${dmy[3]}-${mo}-${dmy[1].padStart(2, "0")}`;
+  }
+
+  const mdy = name.match(/([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s+(\d{4})/i);
+  if (mdy) {
+    const mo = MONTHS[mdy[1].toLowerCase()];
+    if (mo) return `${mdy[3]}-${mo}-${mdy[2].padStart(2, "0")}`;
+  }
+
+  return null;
+}
+
+export function standardRawFilename(sourceName) {
+  const date = extractDateFromFilename(sourceName);
+  if (date) return `${date}-comparison.docx`;
+  return sourceName.endsWith(".docx") ? sourceName : `${sourceName}.docx`;
+}
+
+export function findDocxFiles(dir, results = []) {
+  if (!fs.existsSync(dir)) return results;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith("~$") || entry.name.startsWith(".")) continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) findDocxFiles(full, results);
+    else if (/\.docx$/i.test(entry.name)) results.push(full);
+  }
+  return results;
 }
 
 export function listRawDocx() {

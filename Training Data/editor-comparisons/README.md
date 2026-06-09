@@ -34,13 +34,33 @@ The parser treats these as weighted training signals (News > IG ≈ generic).
 
 ## Manual ingest (v1)
 
+### Option A — import a downloaded Drive folder (Windows / Mac)
+
+If you saved the whole Google Drive folder locally (e.g. `GBA Pulse Feedback` inside the repo):
+
+```powershell
+cd "C:\Users\The Bay Sara\OneDrive\The Bay\the-bay-trending-topics"
+npm run editor:import
+npm run editor:pipeline
+```
+
+Or step by step:
+
+```bash
+node scripts/sync-editor-comparisons.mjs --import-dir="GBA Pulse Feedback"
+node scripts/run-editor-comparison-pipeline.mjs
+```
+
+The import copies each `.docx` into `raw/YYYY-MM-DD-comparison.docx` when the filename contains a date (`2026-06-09`, `9 June 2026`, etc.).
+
+### Option B — copy files one at a time
+
 1. Download new comparison docx from Google Drive.
 2. Save to `Training Data/editor-comparisons/raw/YYYY-MM-DD-comparison.docx`.
 3. Run:
 
 ```bash
-node scripts/parse-editor-comparison.mjs
-node scripts/build-editor-selection-model.mjs
+npm run editor:pipeline
 ```
 
 ## Automated sync (v2)

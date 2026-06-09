@@ -8,6 +8,7 @@
     "daily:post": "node scripts/run-daily-post.mjs",
     "daily:diagnose": "node scripts/diagnose-cloud.mjs",
     "daily:verify": "node scripts/verify-daily-capture.mjs && node scripts/verify-daily-brief.mjs && node scripts/verify-happenings.mjs && node scripts/verify-editor-comparisons.mjs",
+    "editor:import": "node scripts/sync-editor-comparisons.mjs --import-dir=GBA Pulse Feedback",
     "editor:sync": "node scripts/sync-editor-comparisons.mjs",
     "editor:parse": "node scripts/parse-editor-comparison.mjs",
     "editor:build": "node scripts/build-editor-selection-model.mjs",
