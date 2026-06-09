@@ -1,4 +1,4 @@
-# GBA Pulse — daily cloud automation (07:00 HKT scheduled, ~09:30 start after queue)
+# GBA Pulse — daily cloud automation (06:00 HKT scheduled, ~08:30 start after queue)
 
 Runs on **GitHub Actions** — your Mac can be off. Uses **Cursor Cloud agents** with **Composer 2.5 Standard** (~$0.35–0.50 per day target).
 
@@ -55,7 +55,7 @@ node scripts/run-daily-cloud.mjs --run=2
 
 ## Schedule
 
-- **Cron:** `0 23 * * *` UTC = **07:00 Asia/Hong_Kong** (GitHub queue delay usually pushes actual start to ~09:30 HKT; job runtime ~10–20 min)
+- **Cron:** `0 22 * * *` UTC = **06:00 Asia/Hong_Kong** (GitHub queue delay usually pushes actual start to ~08:30 HKT; job runtime ~10–20 min)
 - Workflow file: `.github/workflows/daily-gba-pulse.yml`
 
 ## Cost (~$0.50 / day)
