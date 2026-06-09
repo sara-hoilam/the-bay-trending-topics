@@ -311,6 +311,7 @@ function parseMacaotourismWhatsonResponse(data, source, monthKey) {
       location,
       url: listUrl,
       sourceDomain: source.domain,
+      featured: hit.top === "yes",
     };
   }).filter((ev) => ev.title && ev.start);
 }

@@ -11,6 +11,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { hktDateStr } from "./hkt-date.mjs";
 import { addDays, fetchEventsForSource } from "./happenings-fetch-handlers.mjs";
+import { annotateHighlight } from "./happenings-highlight-score.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -89,11 +90,17 @@ async function main() {
   for (const ev of kept) merged.set(normalizeKey(ev), ev);
   for (const ev of fetched) merged.set(normalizeKey(ev), ev);
 
-  const events = [...merged.values()].sort((a, b) => a.start.localeCompare(b.start));
+  const events = [...merged.values()]
+    .map(annotateHighlight)
+    .sort((a, b) => a.start.localeCompare(b.start));
+
+  const highlightedCount = events.filter((ev) => ev.highlighted).length;
 
   const payload = {
     generatedFrom: `Lifestyle source links (${sources.length} domains) · source-links-data.json happeningsFetch`,
     updatedAt: today,
+    highlightScoreThreshold: 24,
+    highlightedCount,
     events,
   };
 

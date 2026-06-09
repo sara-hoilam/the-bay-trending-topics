@@ -1,8 +1,9 @@
 /**
- * Happenings tab — calendar + upcoming events from lifestyle source links.
+ * Happenings tab — calendar + highlighted and all events from lifestyle source links.
  */
 (function () {
   var DATA_V = window.GBA_DATA_VERSION || "1";
+  var HIGHLIGHT_THRESHOLD = 24;
   var root = document.getElementById("happenings-root");
   if (!root) return;
 
@@ -30,7 +31,18 @@
     "JUL", "AUG", "SEP", "OCT", "NOV", "DEC",
   ];
 
-  /** Calendar month/year and “today” use Asia/Hong_Kong, not browser locale. */
+  var MARQUEE_PATTERNS = [
+    /clockenflap/i,
+    /comic\s*con/i,
+    /comicon/i,
+    /art\s*basel/i,
+    /book\s*fair/i,
+    /marathon/i,
+    /world\s*tour/i,
+    /arts?\s*festival/i,
+    /music\s*festival/i,
+  ];
+
   function hktTodayParts() {
     var parts = new Intl.DateTimeFormat("en-CA", {
       timeZone: "Asia/Hong_Kong",
@@ -59,6 +71,7 @@
     filter: "all",
     events: [],
     sources: [],
+    eventCountByDomain: {},
     seeMoreUrl: null,
     seeMoreLabel: "See more events",
   };
@@ -114,6 +127,38 @@
     return r;
   }
 
+  function eventSpanDays(ev) {
+    if (!ev.start || !ev.end) return 1;
+    var start = parseDate(ev.start);
+    var end = parseDate(ev.end);
+    return Math.max(1, Math.round((end - start) / 86400000) + 1);
+  }
+
+  function clientHighlightScore(ev) {
+    if (typeof ev.highlightScore === "number") return ev.highlightScore;
+    var blob = (ev.title || "") + " " + (ev.location || "");
+    var score = 0;
+    if (ev.featured) score += 40;
+    MARQUEE_PATTERNS.forEach(function (re) {
+      if (re.test(blob)) score += 28;
+    });
+    if (/\bfestival\b/i.test(blob)) score += 18;
+    if (/\bexpo\b/i.test(blob)) score += 16;
+    if (/\bfair\b/i.test(blob)) score += 14;
+    if (/\bconcert\b/i.test(blob)) score += 12;
+    if (/\binternational\b/i.test(blob)) score += 10;
+    var span = eventSpanDays(ev);
+    if (span >= 14) score += 12;
+    else if (span >= 7) score += 8;
+    else if (span >= 3) score += 4;
+    return score;
+  }
+
+  function isHighlighted(ev) {
+    if (ev.highlighted === true) return true;
+    return clientHighlightScore(ev) >= HIGHLIGHT_THRESHOLD;
+  }
+
   function matchesFilter(ev, filter) {
     if (filter === "all") return true;
     return normalizeRegion(ev) === filter;
@@ -147,6 +192,15 @@
       });
   }
 
+  function highlightedEventsForMonth(year, month, filter) {
+    return filteredEventsForMonth(year, month, filter)
+      .filter(isHighlighted)
+      .sort(function (a, b) {
+        return clientHighlightScore(b) - clientHighlightScore(a);
+      })
+      .slice(0, 10);
+  }
+
   function formatBadgeRange(ev) {
     var s = parseDate(ev.start);
     var e = parseDate(ev.end || ev.start);
@@ -173,6 +227,76 @@
     return REGIONS[id] || REGIONS.gba;
   }
 
+  function renderEventItem(ev, opts) {
+    opts = opts || {};
+    var meta = regionMeta(ev);
+    var loc = ev.location || meta.label;
+    var html = '<li class="hp-event' + (opts.highlighted ? " hp-event--highlighted" : "") + '">';
+    html +=
+      '<div class="hp-event-badge' +
+      (opts.highlighted ? " hp-event-badge--highlighted" : "") +
+      '" style="background:' +
+      meta.color +
+      '">' +
+      esc(formatBadgeRange(ev)) +
+      "</div>";
+    html += '<div class="hp-event-body">';
+    html +=
+      '<p class="hp-event-meta"><strong style="color:' +
+      meta.color +
+      '">' +
+      esc(loc) +
+      "</strong> | " +
+      esc(formatDetailDate(ev)) +
+      "</p>";
+    html +=
+      '<p class="hp-event-title"><a href="' +
+      esc(ev.url) +
+      '" target="_blank" rel="noopener noreferrer">' +
+      esc(ev.title) +
+      "</a></p>";
+    html += "</div></li>";
+    return html;
+  }
+
+  function renderEventList(events, emptyMsg) {
+    if (!events.length) {
+      return '<p class="hp-empty">' + esc(emptyMsg) + "</p>";
+    }
+    var html = '<ul class="hp-event-list">';
+    events.forEach(function (ev) {
+      html += renderEventItem(ev, { highlighted: isHighlighted(ev) });
+    });
+    html += "</ul>";
+    return html;
+  }
+
+  function renderSourcesBar() {
+    if (!state.sources.length) return "";
+    var html = '<div class="hp-sources-bar">';
+    html += '<p class="hp-sources-bar-label">Lifestyle calendar sources</p>';
+    html += '<ul class="hp-sources-chips">';
+    state.sources.forEach(function (src) {
+      var count = state.eventCountByDomain[src.domain] || 0;
+      html +=
+        '<li class="hp-source-chip">' +
+        '<a href="' +
+        esc(src.url) +
+        '" target="_blank" rel="noopener noreferrer" title="' +
+        esc(src.domain) +
+        '">' +
+        '<span class="hp-source-chip-name">' +
+        esc(src.displayName || src.domain) +
+        "</span>" +
+        '<span class="hp-source-chip-count">' +
+        count +
+        " events</span>" +
+        "</a></li>";
+    });
+    html += "</ul></div>";
+    return html;
+  }
+
   function render() {
     var y = state.year;
     var m = state.month;
@@ -181,8 +305,10 @@
     var firstDow = new Date(y, m, 1).getDay();
     var daysInMonth = new Date(y, m + 1, 0).getDate();
     var monthEvents = filteredEventsForMonth(y, m, filter);
+    var highlightedEvents = highlightedEventsForMonth(y, m, filter);
 
-    var html = '<div class="hp-layout">';
+    var html = renderSourcesBar();
+    html += '<div class="hp-layout">';
 
     html += '<div class="hp-filters" role="tablist" aria-label="Event region filter">';
     FILTERS.forEach(function (f) {
@@ -261,40 +387,16 @@
     html += "</div>";
 
     html += '<div class="hp-events-col">';
-    html += '<h2 class="hp-events-title">Upcoming Events</h2>';
-    if (!monthEvents.length) {
-      html += '<p class="hp-empty">No events this month for this filter.</p>';
-    } else {
-      html += '<ul class="hp-event-list">';
-      monthEvents.forEach(function (ev) {
-        var meta = regionMeta(ev);
-        var loc = ev.location || meta.label;
-        html += '<li class="hp-event">';
-        html +=
-          '<div class="hp-event-badge" style="background:' +
-          meta.color +
-          '">' +
-          esc(formatBadgeRange(ev)) +
-          "</div>";
-        html += '<div class="hp-event-body">';
-        html +=
-          '<p class="hp-event-meta"><strong style="color:' +
-          meta.color +
-          '">' +
-          esc(loc) +
-          "</strong> | " +
-          esc(formatDetailDate(ev)) +
-          "</p>";
-        html +=
-          '<p class="hp-event-title"><a href="' +
-          esc(ev.url) +
-          '" target="_blank" rel="noopener noreferrer">' +
-          esc(ev.title) +
-          "</a></p>";
-        html += "</div></li>";
-      });
-      html += "</ul>";
-    }
+    html += '<h2 class="hp-events-title hp-events-title--highlighted">Highlighted Events</h2>';
+    html += '<p class="hp-events-sub">Major festivals, fairs, concerts, and crowd-pulling exhibitions</p>';
+    html += renderEventList(
+      highlightedEvents,
+      "No major highlighted events this month for this filter."
+    );
+
+    html += '<h2 class="hp-events-title hp-events-title--all">All Events</h2>';
+    html += renderEventList(monthEvents, "No events this month for this filter.");
+
     var seeMoreHref = state.seeMoreUrl || "https://event.hktdc.com/";
     var seeMoreText = state.seeMoreLabel || "See more events";
     html +=
@@ -306,23 +408,6 @@
     html += "</div>";
 
     html += "</div></div>";
-
-    if (state.sources.length) {
-      html += '<div class="hp-sources">';
-      html += '<h3 class="hp-sources-title">Lifestyle calendar sources</h3>';
-      html += '<ul class="hp-sources-list">';
-      state.sources.forEach(function (src) {
-        html +=
-          '<li><a href="' +
-          esc(src.url) +
-          '" target="_blank" rel="noopener noreferrer"><strong>' +
-          esc(src.displayName || src.domain) +
-          "</strong></a> · " +
-          esc(src.domain) +
-          "</li>";
-      });
-      html += "</ul></div>";
-    }
 
     root.innerHTML = html;
 
@@ -366,6 +451,17 @@
         state.sources = (results[1].sources || []).filter(function (s) {
           return s.category === "Lifestyle";
         });
+        state.eventCountByDomain = {};
+        state.sources.forEach(function (src) {
+          state.eventCountByDomain[src.domain] = 0;
+        });
+        state.events.forEach(function (ev) {
+          var domain = ev.sourceDomain;
+          if (domain && state.eventCountByDomain[domain] != null) {
+            state.eventCountByDomain[domain]++;
+          }
+        });
+
         var hktdc = state.sources.find(function (s) {
           return s.domain === "event.hktdc.com";
         });

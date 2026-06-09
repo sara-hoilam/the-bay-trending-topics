@@ -1051,11 +1051,79 @@
     align-items: center;
     gap: 6px;
   }
+  .hp-sources-bar {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hp-sources-bar-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .hp-sources-chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .hp-source-chip a {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 8px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: #fff;
+    text-decoration: none;
+    color: var(--ink);
+    min-width: 140px;
+  }
+  .hp-source-chip a:hover {
+    border-color: #c9a8e8;
+    background: #faf7fd;
+  }
+  .hp-source-chip-name {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .hp-source-chip-count {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
   .hp-events-title {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 24px;
+  }
+  .hp-events-title--highlighted {
+    font-size: 24px;
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+  .hp-events-title--all {
+    margin-top: 32px;
+  }
+  .hp-events-sub {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0 0 18px;
+  }
+  .hp-event--highlighted .hp-event-title {
+    font-weight: 600;
+  }
+  .hp-event-badge--highlighted {
+    box-shadow: inset 0 0 0 2px rgba(255,255,255,.35);
   }
   .hp-event-list {
     list-style: none;
@@ -1245,37 +1313,6 @@
     border: 1px solid var(--rule);
     border-radius: 4px;
     background: #fff;
-  }
-  .hp-sources {
-    margin-top: 28px;
-    padding-top: 20px;
-    border-top: 1px solid var(--rule);
-  }
-  .hp-sources-title {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 10px;
-  }
-  .hp-sources-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 8px;
-  }
-  .hp-sources-list a {
-    color: var(--neu);
-    text-decoration: none;
-  }
-  .hp-sources-list a:hover {
-    text-decoration: underline;
-  }
-  .hp-sources-list li {
-    font-size: 13px;
-    color: var(--ink);
   }
 
 </style>
@@ -5001,9 +5038,9 @@
   if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks"].indexOf(h) !== -1) show(h);
 })();
 </script>
-<script>window.GBA_DATA_VERSION = "20260609b";</script>
-<script src="source-links-panel.js?v=20260609b" defer></script>
-<script src="happenings-panel.js?v=20260609b" defer></script>
+<script>window.GBA_DATA_VERSION = "20260609c";</script>
+<script src="source-links-panel.js?v=20260609c" defer></script>
+<script src="happenings-panel.js?v=20260609c" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
 <script>
 (function () {
