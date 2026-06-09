@@ -1,8 +1,8 @@
 # Editor selection calibration digest
 
-Generated: 2026-06-09T06:27:09.834Z
-Editions in window: 2026-06-09
-Total editor-selected stories: 3
+Generated: 2026-06-09T07:21:36.184Z
+Editions in window: 2026-06-09, 2026-06-08, 2026-06-05
+Total editor-selected stories: 11
 
 ## Weighting (apply at Step 3 — Cluster & rank)
 
@@ -22,9 +22,11 @@ Additional bonuses: same URL in past editor picks (+2), similar headline (+1), m
 
 ## Story types editors favor
 
+- gba integration: 4 picks
+- society: 3 picks
+- sport: 2 picks
 - transport: 1 picks
 - weather: 1 picks
-- sport: 1 picks
 
 ## Top outlet domains in editor picks
 
@@ -33,6 +35,7 @@ Additional bonuses: same URL in past editor picks (+2), similar headline (+1), m
 ## Keywords in selected headlines
 
 - 2026 (2×)
+- yuan (2×)
 - southbound (1×)
 - travel (1×)
 - scheme (1×)
@@ -46,13 +49,20 @@ Additional bonuses: same URL in past editor picks (+2), similar headline (+1), m
 - issues (1×)
 - black (1×)
 - rainstorm (1×)
-- warning (1×)
 
 ## Annotated examples (selection only — do not copy prose)
 
 - **2026-06-09** [news] GBA News: Southbound travel scheme opens to five more GBA cities from July
 - **2026-06-09** [ig] Hong Kong: Observatory issues first black rainstorm warning of 2026
 - **2026-06-09** [generic] Macao: Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races
+- **2026-06-08** [generic] null: Macao Tower featured in Trip.Best Global 100 night attractions
+- **2026-06-08** [generic] null: Angola–Guangzhou new air route launch
+- **2026-06-05** [news] null: RCEP tariff savings (Guangdong 1.4B yuan)
+- **2026-06-05** [ig] null: Hengqin talent living subsidies (June application)
+- **2026-06-05** [ig] null: Education subsidy fraud (CCAC referral)
+- **2026-06-05** [ig] null: Hometown Market Carnival at Victoria Park
+- **2026-06-05** [news] null: Shenzhen 10 major group sports events list (2025)
+- **2026-06-05** [news] null: Mainland China fuel price reduction (save 20.5 yuan per tank)
 
 ## Rules for the agent
 

@@ -1,0 +1,32 @@
+{
+  "editionDate": "2026-06-08",
+  "sourceFile": "2026-06-08-comparison.docx",
+  "parsedAt": "2026-06-09T07:20:34.926Z",
+  "selectedStories": [
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Macao Tower featured in Trip.Best Global 100 night attractions",
+      "urls": [],
+      "selectionTag": "generic",
+      "selected": true,
+      "weight": 2
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Angola–Guangzhou new air route launch",
+      "urls": [],
+      "selectionTag": "generic",
+      "selected": true,
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "igSelected": 0,
+    "newsSelected": 0,
+    "genericSelected": 2,
+    "totalSelected": 2
+  },
+  "paragraphCount": 74
+}

@@ -1,19 +1,21 @@
 {
-  "generatedAt": "2026-06-09T06:27:09.834Z",
+  "generatedAt": "2026-06-09T07:21:36.184Z",
   "windowDays": 14,
   "editionsIncluded": [
-    "2026-06-09"
+    "2026-06-09",
+    "2026-06-08",
+    "2026-06-05"
   ],
-  "totalSelectedStories": 3,
+  "totalSelectedStories": 11,
   "tagWeights": {
     "news": 3,
     "ig": 2,
     "generic": 2
   },
   "tagCounts": {
-    "ig": 1,
-    "news": 1,
-    "generic": 1
+    "ig": 4,
+    "news": 4,
+    "generic": 3
   },
   "sectionCounts": {
     "GBA News": 1,
@@ -39,7 +41,9 @@
   "storyTypeCounts": {
     "transport": 1,
     "weather": 1,
-    "sport": 1
+    "sport": 2,
+    "gba_integration": 4,
+    "society": 3
   },
   "urlDomainFrequency": {
     "scmp.com": 1
@@ -47,6 +51,10 @@
   "repeatHeadlinePatterns": [
     {
       "word": "2026",
+      "count": 2
+    },
+    {
+      "word": "yuan",
       "count": 2
     },
     {
@@ -132,6 +140,14 @@
     {
       "word": "races",
       "count": 1
+    },
+    {
+      "word": "tower",
+      "count": 1
+    },
+    {
+      "word": "featured",
+      "count": 1
     }
   ],
   "calibrationExamples": [
@@ -155,6 +171,62 @@
       "section": "Macao",
       "selectionTag": "generic",
       "weight": 2
+    },
+    {
+      "editionDate": "2026-06-08",
+      "headline": "Macao Tower featured in Trip.Best Global 100 night attractions",
+      "section": null,
+      "selectionTag": "generic",
+      "weight": 2
+    },
+    {
+      "editionDate": "2026-06-08",
+      "headline": "Angola–Guangzhou new air route launch",
+      "section": null,
+      "selectionTag": "generic",
+      "weight": 2
+    },
+    {
+      "editionDate": "2026-06-05",
+      "headline": "RCEP tariff savings (Guangdong 1.4B yuan)",
+      "section": null,
+      "selectionTag": "news",
+      "weight": 3
+    },
+    {
+      "editionDate": "2026-06-05",
+      "headline": "Hengqin talent living subsidies (June application)",
+      "section": null,
+      "selectionTag": "ig",
+      "weight": 2
+    },
+    {
+      "editionDate": "2026-06-05",
+      "headline": "Education subsidy fraud (CCAC referral)",
+      "section": null,
+      "selectionTag": "ig",
+      "weight": 2
+    },
+    {
+      "editionDate": "2026-06-05",
+      "headline": "Hometown Market Carnival at Victoria Park",
+      "section": null,
+      "selectionTag": "ig",
+      "weight": 2
+    },
+    {
+      "editionDate": "2026-06-05",
+      "headline": "Shenzhen 10 major group sports events list (2025)",
+      "section": null,
+      "selectionTag": "news",
+      "weight": 3
+    },
+    {
+      "editionDate": "2026-06-05",
+      "headline": "Mainland China fuel price reduction (save 20.5 yuan per tank)",
+      "section": null,
+      "selectionTag": "news",
+      "weight": 3
     }
   ],
   "selectionRules": {

@@ -1,0 +1,68 @@
+{
+  "editionDate": "2026-06-05",
+  "sourceFile": "2026-06-05-comparison.docx",
+  "parsedAt": "2026-06-09T07:20:34.911Z",
+  "selectedStories": [
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "RCEP tariff savings (Guangdong 1.4B yuan)",
+      "urls": [],
+      "selectionTag": "news",
+      "selected": true,
+      "weight": 3
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Hengqin talent living subsidies (June application)",
+      "urls": [],
+      "selectionTag": "ig",
+      "selected": true,
+      "weight": 2
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Education subsidy fraud (CCAC referral)",
+      "urls": [],
+      "selectionTag": "ig",
+      "selected": true,
+      "weight": 2
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Hometown Market Carnival at Victoria Park",
+      "urls": [],
+      "selectionTag": "ig",
+      "selected": true,
+      "weight": 2
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Shenzhen 10 major group sports events list (2025)",
+      "urls": [],
+      "selectionTag": "news",
+      "selected": true,
+      "weight": 3
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Mainland China fuel price reduction (save 20.5 yuan per tank)",
+      "urls": [],
+      "selectionTag": "news",
+      "selected": true,
+      "weight": 3
+    }
+  ],
+  "stats": {
+    "igSelected": 3,
+    "newsSelected": 3,
+    "genericSelected": 0,
+    "totalSelected": 6
+  },
+  "paragraphCount": 58
+}
