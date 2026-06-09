@@ -1224,6 +1224,59 @@
     font-family: 'DM Mono', monospace;
     font-size: 11px;
   }
+  .sl-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .sl-toolbar label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .sl-toolbar select {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: #fff;
+  }
+  .hp-sources {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  .hp-sources-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .hp-sources-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .hp-sources-list a {
+    color: var(--neu);
+    text-decoration: none;
+  }
+  .hp-sources-list a:hover {
+    text-decoration: underline;
+  }
+  .hp-sources-list li {
+    font-size: 13px;
+    color: var(--ink);
+  }
 
 </style>
 </head>
@@ -4890,7 +4943,16 @@
   <main class="wrapper">
     <div class="sl-header">
       <h2>Approved source links</h2>
-      <p class="sl-meta"><span id="sl-count">117 sources</span> · daily brief prompt allowlist · 1 link per domain</p>
+      <p class="sl-meta"><span id="sl-count">118 sources</span> · daily brief prompt allowlist · 1 link per domain</p>
+    </div>
+    <div class="sl-toolbar">
+      <label for="sl-category-filter">Category</label>
+      <select id="sl-category-filter" aria-label="Filter source links by category">
+        <option value="all">All</option>
+        <option value="Lifestyle">Lifestyle</option>
+        <option value="News">News</option>
+        <option value="Official">Official</option>
+      </select>
     </div>
     <div class="sl-table-wrap">
       <table class="sl-table" id="source-links-table">
@@ -4939,8 +5001,9 @@
   if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks"].indexOf(h) !== -1) show(h);
 })();
 </script>
-<script src="source-links-panel.js" defer></script>
-<script src="happenings-panel.js?v=20260604e" defer></script>
+<script>window.GBA_DATA_VERSION = "20260609b";</script>
+<script src="source-links-panel.js?v=20260609b" defer></script>
+<script src="happenings-panel.js?v=20260609b" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
 <script>
 (function () {

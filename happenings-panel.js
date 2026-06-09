@@ -2,6 +2,7 @@
  * Happenings tab — calendar + upcoming events from lifestyle source links.
  */
 (function () {
+  var DATA_V = window.GBA_DATA_VERSION || "1";
   var root = document.getElementById("happenings-root");
   if (!root) return;
 
@@ -306,6 +307,23 @@
 
     html += "</div></div>";
 
+    if (state.sources.length) {
+      html += '<div class="hp-sources">';
+      html += '<h3 class="hp-sources-title">Lifestyle calendar sources</h3>';
+      html += '<ul class="hp-sources-list">';
+      state.sources.forEach(function (src) {
+        html +=
+          '<li><a href="' +
+          esc(src.url) +
+          '" target="_blank" rel="noopener noreferrer"><strong>' +
+          esc(src.displayName || src.domain) +
+          "</strong></a> · " +
+          esc(src.domain) +
+          "</li>";
+      });
+      html += "</ul></div>";
+    }
+
     root.innerHTML = html;
 
     root.querySelectorAll("[data-filter]").forEach(function (btn) {
@@ -332,11 +350,11 @@
 
   function load() {
     Promise.all([
-      fetch("happenings-events.json").then(function (r) {
+      fetch("happenings-events.json?v=" + encodeURIComponent(DATA_V)).then(function (r) {
         if (!r.ok) throw new Error("events HTTP " + r.status);
         return r.json();
       }),
-      fetch("source-links-data.json").then(function (r) {
+      fetch("source-links-data.json?v=" + encodeURIComponent(DATA_V)).then(function (r) {
         if (!r.ok) throw new Error("sources HTTP " + r.status);
         return r.json();
       }),
