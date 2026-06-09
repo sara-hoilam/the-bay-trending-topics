@@ -36,7 +36,16 @@ The parser treats these as weighted training signals (News > IG ≈ generic).
 
 ### Option A — import a downloaded Drive folder (Windows / Mac)
 
-If you saved the whole Google Drive folder locally (e.g. `GBA Pulse Feedback` inside the repo):
+If you saved the whole Google Drive folder locally as `GBA Pulse Feedback` inside the repo:
+
+**Python only (no Node.js yet):**
+
+```powershell
+cd "C:\Users\The Bay Sara\OneDrive\The Bay\the-bay-trending-topics"
+py scripts/import-editor-comparisons.py
+```
+
+**With Node.js installed:**
 
 ```powershell
 cd "C:\Users\The Bay Sara\OneDrive\The Bay\the-bay-trending-topics"
