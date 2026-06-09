@@ -131,14 +131,14 @@ https://...
 https://...
 [Optional: Video: https://...]
 [Optional: Background: https://...]
-Two to four sentences summarising the verified facts (see Summary quality bar).
+One to two concise sentences summarising the verified facts, with key figures and dates wrapped in ==double equals== for highlighting (see Summary quality bar).
 
 Macao (5):
 
 4. **Short headline label** — Outlet + Outlet
 https://...
 https://...
-One to three short factual sentences (English). See **Summary quality bar** below — prefer 2–4 sentences with figures and named officials when sources support them.
+One to two concise factual sentences (English). See **Summary quality bar** below — wrap dates, figures, quotas, deadlines, and policy names in ==double equals== for highlighting.
 ```
 
 **Format rules:**
@@ -148,7 +148,7 @@ One to three short factual sentences (English). See **Summary quality bar** belo
 - **GBA News:** numbered bold title → URLs → summary (no inline source line)  
 - **All other sections:** numbered bold title → `—` source attribution (outlet names, not URLs) → URLs on following lines → summary  
 - URL lines first after the title (no bullets), one URL per line  
-- **1–3 short factual sentences** per item  
+- **1–2 concise factual sentences** per item, with key facts wrapped in `==double equals==` for yellow highlighting  
 - Do not invent facts not supported by the linked sources  
 
 ### Step 6 — Self-audit (HTML comment or trailing block)
@@ -171,27 +171,30 @@ Out of catalog: [any exception URLs]
 
 | Do | Don’t |
 |----|-------|
-| Write **2–4 sentences per story** when sources allow — match colleague brief depth | One-sentence stubs that omit key figures or context |
-| Lead with **who, what, when**; then add **numbers, policy changes, and named officials** | Mimic colleague idioms (“came to a standstill”, “slated to”, etc.) |
-| Include **follow-up context** in the same block (e.g. second-phase dates, category breakdowns, industry reaction) when corroborated | Editorialize or predict |
+| Write **1–2 concise sentences per story** (~30–45 words) | Long multi-sentence paragraphs that bury the lead |
+| Lead with **who, what, when**; highlight **numbers, policy changes, deadlines, and place names** with `==double equals==` | Mimic colleague idioms (“came to a standstill”, “slated to”, etc.) |
+| Include **one follow-up fact** (quota, deadline, impact) when corroborated — no more | Editorialize or predict |
 | Attribute claims to officials/data in sources (“according to DSEC”, “Tam said”) | Copy-paste PR fluff verbatim |
 | Use “yesterday/today/Monday” aligned to edition date | Split one hearing into multiple blocks unless sources clearly report separate developments |
 | Keep summaries self-contained for editors | Write long analysis or opinion |
 
-### Summary quality bar (from Training Data examples)
+### Summary quality bar
 
-Each summary should read like a wire brief an editor can act on:
+Each summary should read like a scannable wire brief — short, factual, with key data highlighted:
 
-1. **Sentence 1** — core event: actor + action + date/place  
-2. **Sentence 2** — hard facts: amounts, percentages, headcounts, deadlines, route names  
-3. **Sentences 3–4 (if needed)** — secondary detail: related policy, industry response, wider GBA angle, or what changed vs the previous round  
+1. **Sentence 1** — core event: actor + action + date/place; wrap the headline fact in `==double equals==`  
+2. **Sentence 2 (optional)** — one hard fact: amount, quota, deadline, or impact — also highlight key figures  
+
+**Highlight syntax:** wrap dates, figures, quotas, deadlines, place names, and policy names in `==double equals==`. Example:
+
+> The Transport Department said ==five more GBA cities== will join the southbound vehicle scheme from ==25 July==, doubling daily urban quotas to ==200==. Applications open ==16 July==.
 
 **Examples of the right depth (not wording to copy):**
-- Wealth scheme: payout amounts + 183-day rule + auto-payment count + GBA share of declarations  
-- LRT hearing: station names + QR payment timeline + linked line openings  
-- Retail data: headline growth + category winners/laggards + industry caution quote  
+- Wealth scheme: `==HK$6,000==` payout + `==183-day==` rule in one sentence  
+- LRT hearing: station names + `==Q3 2026==` QR payment timeline  
+- Retail data: headline growth + top category in two short sentences  
 
-Minimum: **2 sentences** for simple incidents; **3–4** for policy, stats, or multi-outlet diplomatic stories.
+Maximum: **2 sentences** (~45 words). Simple incidents may use **1 sentence**.
 
 ---
 

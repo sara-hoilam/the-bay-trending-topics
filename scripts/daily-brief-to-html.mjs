@@ -81,6 +81,18 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
+function renderSummary(text) {
+  const parts = text.split(/==([^=]+)==/g);
+  return parts
+    .map((part, i) =>
+      i % 2 === 1
+        ? `<mark class="brief-highlight">${escapeHtml(part)}</mark>`
+        : escapeHtml(part),
+    )
+    .join("")
+    .replace(/'/g, "&apos;");
+}
+
 function hostFromUrl(url) {
   try {
     return new URL(url).hostname.replace(/^www\./, "");
@@ -225,7 +237,7 @@ function renderBriefHtml({ editionDate, sections, articleCount }) {
       "",
     );
     for (const art of section.articles) {
-      const summary = escapeHtml(art.summary).replace(/'/g, "&apos;");
+      const summary = renderSummary(art.summary);
       const sourceLines = art.urls.map((u) => renderSourceLine(u, editionDate)).join("\n");
       parts.push(
         `<div class="topic brief-article" style="animation-delay:${delay.toFixed(2)}s">`,
