@@ -159,14 +159,14 @@ https://...
 https://...
 [Optional: Video: https://...]
 [Optional: Background: https://...]
-One to two concise sentences summarising the verified facts, with key figures and dates wrapped in ==double equals== for highlighting (see Summary quality bar).
+One to two concise sentences summarising the verified facts (see Summary quality bar).
 
 Macao (5):
 
 4. **Short headline label** — Outlet + Outlet
 https://...
 https://...
-One to two concise factual sentences (English). See **Summary quality bar** below — wrap dates, figures, quotas, deadlines, and policy names in ==double equals== for highlighting.
+One to two concise factual sentences (English). See **Summary quality bar** below.
 ```
 
 **Format rules:**
@@ -176,7 +176,7 @@ One to two concise factual sentences (English). See **Summary quality bar** belo
 - **GBA News:** numbered bold title → URLs → summary (no inline source line)  
 - **All other sections:** numbered bold title → `—` source attribution (outlet names, not URLs) → URLs on following lines → summary  
 - URL lines first after the title (no bullets), one URL per line  
-- **1–2 concise factual sentences** per item, with key facts wrapped in `==double equals==` for yellow highlighting  
+- **1–2 concise factual sentences** per item  
 - Do not invent facts not supported by the linked sources  
 
 ### Step 6 — Self-audit (HTML comment or trailing block)
@@ -200,7 +200,7 @@ Out of catalog: [any exception URLs]
 | Do | Don’t |
 |----|-------|
 | Write **1–2 concise sentences per story** (~30–45 words) | Long multi-sentence paragraphs that bury the lead |
-| Lead with **who, what, when**; highlight **numbers, policy changes, deadlines, and place names** with `==double equals==` | Mimic colleague idioms (“came to a standstill”, “slated to”, etc.) |
+| Lead with **who, what, when**; include **numbers, policy changes, deadlines, and place names** where relevant | Mimic colleague idioms (“came to a standstill”, “slated to”, etc.) |
 | Include **one follow-up fact** (quota, deadline, impact) when corroborated — no more | Editorialize or predict |
 | Attribute claims to officials/data in sources (“according to DSEC”, “Tam said”) | Copy-paste PR fluff verbatim |
 | Use “yesterday/today/Monday” aligned to edition date | Split one hearing into multiple blocks unless sources clearly report separate developments |
@@ -208,18 +208,18 @@ Out of catalog: [any exception URLs]
 
 ### Summary quality bar
 
-Each summary should read like a scannable wire brief — short, factual, with key data highlighted:
+Each summary should read like a scannable wire brief — short, factual, with key data up front:
 
-1. **Sentence 1** — core event: actor + action + date/place; wrap the headline fact in `==double equals==`  
-2. **Sentence 2 (optional)** — one hard fact: amount, quota, deadline, or impact — also highlight key figures  
+1. **Sentence 1** — core event: actor + action + date/place  
+2. **Sentence 2 (optional)** — one hard fact: amount, quota, deadline, or impact  
 
-**Highlight syntax:** wrap dates, figures, quotas, deadlines, place names, and policy names in `==double equals==`. Example:
+**Example:**
 
-> The Transport Department said ==five more GBA cities== will join the southbound vehicle scheme from ==25 July==, doubling daily urban quotas to ==200==. Applications open ==16 July==.
+> The Transport Department said five more GBA cities will join the southbound vehicle scheme from 25 July, doubling daily urban quotas to 200. Applications open 16 July.
 
 **Examples of the right depth (not wording to copy):**
-- Wealth scheme: `==HK$6,000==` payout + `==183-day==` rule in one sentence  
-- LRT hearing: station names + `==Q3 2026==` QR payment timeline  
+- Wealth scheme: HK$6,000 payout + 183-day rule in one sentence  
+- LRT hearing: station names + Q3 2026 QR payment timeline  
 - Retail data: headline growth + top category in two short sentences  
 
 Maximum: **2 sentences** (~45 words). Simple incidents may use **1 sentence**.

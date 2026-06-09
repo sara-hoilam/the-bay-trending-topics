@@ -3,9 +3,26 @@
  * Used by generate-source-links-data.mjs (embed in JSON) and generate-happenings-data.mjs.
  *
  * listingUrl — URL shown on Source Links tab and used as Referer for fetch
- * method     — html | hktdc-phr-api
+ * method     — html | hktdc-phr-api | macaotourism-whatson-api
  * parser     — html parser id (html method only)
  */
+
+/** YYYYMM in Asia/Hong_Kong for Macao tourism whatson URLs. */
+export function macaotourismMonthKey(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Hong_Kong",
+    year: "numeric",
+    month: "2-digit",
+  }).formatToParts(date);
+  const y = parts.find((p) => p.type === "year")?.value ?? "2026";
+  const m = parts.find((p) => p.type === "month")?.value ?? "01";
+  return `${y}${m}`;
+}
+
+export function macaotourismWhatsonUrl(monthKey = macaotourismMonthKey()) {
+  return `https://www.macaotourism.gov.mo/en/events/whatson?month=${monthKey}`;
+}
+
 export const HAPPENINGS_FETCH_BY_DOMAIN = {
   "event.hktdc.com": {
     method: "hktdc-phr-api",
@@ -32,6 +49,17 @@ export const HAPPENINGS_FETCH_BY_DOMAIN = {
     method: "html",
     listingUrl: "https://www.shenzhenmuseum.com/en/exhibition",
     defaultRegion: { region: "shenzhen", location: "Shenzhen" },
+  },
+  "macaotourism.gov.mo": {
+    method: "macaotourism-whatson-api",
+    listingUrl: macaotourismWhatsonUrl(),
+    listingMonths: 3,
+    defaultRegion: { region: "macao", location: "Macao" },
+  },
+  "ticketflap.com": {
+    method: "html",
+    listingUrl: "https://www.ticketflap.com/",
+    defaultRegion: { region: "hk", location: "Hong Kong" },
   },
 };
 

@@ -22,7 +22,6 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `hko.gov.hk` (1 links in training sample)
 - `legco.gov.hk` (1 links in training sample)
 - `locpg.gov.cn` (1 links in training sample)
-- `macaotourism.gov.mo` (1 links in training sample)
 - `mlm.com.mo` (1 links in training sample)
 - `qh.sz.gov.cn` (1 links in training sample)
 - `sasac.gov.cn` (1 links in training sample)
@@ -120,10 +119,12 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `yicaiglobal.com` (1 links in training sample)
 - `zaobao.com` (1 links in training sample)
 
-## Lifestyle (5 domains)
+## Lifestyle (7 domains)
 
 - `westk.hk` (events hub)
 - `event.hktdc.com` (trade fairs)
 - `10times.com` (trade show listings)
 - `eyeshenzhen.com` (Shenzhen fairs & exhibitions)
 - `shenzhenmuseum.com` (1 links in training sample)
+- `macaotourism.gov.mo` (Macao events calendar)
+- `ticketflap.com` (HK/Macau/GZ ticketing)

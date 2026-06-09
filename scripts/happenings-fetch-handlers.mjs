@@ -2,7 +2,13 @@
  * Per-source fetch handlers for generate-happenings-data.mjs.
  * Dispatch is driven by source-links-data.json → happeningsFetch.method.
  */
-import { HKTDC_PHR_EVENT_API, hktdcFiltersFromListingUrl, HAPPENINGS_FETCH_BY_DOMAIN } from "./happenings-fetch-config.mjs";
+import {
+  HKTDC_PHR_EVENT_API,
+  hktdcFiltersFromListingUrl,
+  HAPPENINGS_FETCH_BY_DOMAIN,
+  macaotourismMonthKey,
+  macaotourismWhatsonUrl,
+} from "./happenings-fetch-config.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
 
 export const UA = "GBA-Pulse-Bot/1.0 (+https://github.com/sara-hoilam/the-bay-trending-topics)";
@@ -283,6 +289,62 @@ async function fetchHtmlSource(source) {
   return parser(html, source.domain, source.url);
 }
 
+function shiftMacaotourismMonthKey(monthKey, offset) {
+  const y = Number(monthKey.slice(0, 4));
+  const m = Number(monthKey.slice(4, 6)) - 1;
+  const dt = new Date(y, m + offset, 1);
+  return macaotourismMonthKey(dt);
+}
+
+function parseMacaotourismWhatsonResponse(data, source, monthKey) {
+  const listUrl = macaotourismWhatsonUrl(monthKey);
+  return (data.results ?? []).map((hit) => {
+    const range = hit.eventDateRange?.[0] ?? [];
+    const start = range[0];
+    const end = range[1] ?? (start ? addDays(start, 7) : null);
+    const location = hit.location?.[0]?.name ?? "Macao";
+    return {
+      title: truncateTitle(decodeHtml(hit.name ?? "")),
+      start,
+      end,
+      region: "macao",
+      location,
+      url: listUrl,
+      sourceDomain: source.domain,
+    };
+  }).filter((ev) => ev.title && ev.start);
+}
+
+async function fetchMacaotourismWhatsonApi(source, today) {
+  const cfg = HAPPENINGS_FETCH_BY_DOMAIN[source.domain] ?? {};
+  const monthCount = cfg.listingMonths ?? 1;
+  const startKey = macaotourismMonthKey(new Date(`${today}T12:00:00+08:00`));
+  const events = [];
+  const seen = new Set();
+
+  for (let i = 0; i < monthCount; i++) {
+    const monthKey = shiftMacaotourismMonthKey(startKey, i);
+    const apiUrl = `https://www.macaotourism.gov.mo/api/enf/whatson?locale=en&month=${monthKey}`;
+    const res = await fetch(apiUrl, {
+      headers: {
+        "User-Agent": UA,
+        Accept: "application/json",
+        Referer: macaotourismWhatsonUrl(monthKey),
+      },
+      signal: AbortSignal.timeout(25000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status} for Macao whatson API`);
+    const data = await res.json();
+    for (const ev of parseMacaotourismWhatsonResponse(data, source, monthKey)) {
+      const key = `${ev.title}|${ev.start}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      events.push(ev);
+    }
+  }
+  return events;
+}
+
 /** Fetch events for one Lifestyle row from source-links-data.json. */
 export async function fetchEventsForSource(source, today) {
   const method = source.happeningsFetch?.method ?? "html";
@@ -293,6 +355,9 @@ export async function fetchEventsForSource(source, today) {
       break;
     case "html":
       events = await fetchHtmlSource(source);
+      break;
+    case "macaotourism-whatson-api":
+      events = await fetchMacaotourismWhatsonApi(source, today);
       break;
     default:
       throw new Error(`Unknown happeningsFetch.method: ${method}`);

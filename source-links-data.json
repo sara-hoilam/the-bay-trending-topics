@@ -1,6 +1,6 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 117,
+  "count": 118,
   "sources": [
     {
       "domain": "10times.com",
@@ -31,9 +31,27 @@
       }
     },
     {
+      "domain": "macaotourism.gov.mo",
+      "displayName": "Macao Government Tourism Office",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "macaotourism-whatson-api"
+      }
+    },
+    {
       "domain": "shenzhenmuseum.com",
       "displayName": "Shenzhen Museum",
       "url": "https://www.shenzhenmuseum.com/en/exhibition",
+      "category": "Lifestyle",
+      "happeningsFetch": {
+        "method": "html"
+      }
+    },
+    {
+      "domain": "ticketflap.com",
+      "displayName": "Ticketflap",
+      "url": "https://www.ticketflap.com/",
       "category": "Lifestyle",
       "happeningsFetch": {
         "method": "html"
@@ -646,12 +664,6 @@
       "domain": "locpg.gov.cn",
       "displayName": "Liaison Office of Central Govt (HK)",
       "url": "https://www.locpg.gov.cn/",
-      "category": "Official"
-    },
-    {
-      "domain": "macaotourism.gov.mo",
-      "displayName": "Macao Government Tourism Office",
-      "url": "https://macaotourism.gov.mo/",
       "category": "Official"
     },
     {
