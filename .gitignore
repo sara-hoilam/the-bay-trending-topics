@@ -5,3 +5,7 @@ node_modules/
 capture-output.json
 capture-log.txt
 trendwatch-payload.json
+
+# Editor comparison docx (sync from Drive); keep fixture for CI
+Training Data/editor-comparisons/raw/*
+!Training Data/editor-comparisons/raw/2026-06-09-comparison.docx

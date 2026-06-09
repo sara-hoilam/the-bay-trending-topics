@@ -1,0 +1,171 @@
+{
+  "generatedAt": "2026-06-09T06:27:09.834Z",
+  "windowDays": 14,
+  "editionsIncluded": [
+    "2026-06-09"
+  ],
+  "totalSelectedStories": 3,
+  "tagWeights": {
+    "news": 3,
+    "ig": 2,
+    "generic": 2
+  },
+  "tagCounts": {
+    "ig": 1,
+    "news": 1,
+    "generic": 1
+  },
+  "sectionCounts": {
+    "GBA News": 1,
+    "Macao": 1,
+    "Hong Kong": 1,
+    "Zhuhai inc. Hengqin": 0,
+    "Guangzhou": 0,
+    "Shenzhen": 0,
+    "Foshan": 0,
+    "Huizhou": 0,
+    "Dongguan": 0,
+    "Zhongshan": 0,
+    "Jiangmen": 0,
+    "Zhaoqing": 0,
+    "Nation": 0,
+    "GBA sport": 0
+  },
+  "sectionFloors": {
+    "GBA News": 1,
+    "Macao": 1,
+    "Hong Kong": 1
+  },
+  "storyTypeCounts": {
+    "transport": 1,
+    "weather": 1,
+    "sport": 1
+  },
+  "urlDomainFrequency": {
+    "scmp.com": 1
+  },
+  "repeatHeadlinePatterns": [
+    {
+      "word": "2026",
+      "count": 2
+    },
+    {
+      "word": "southbound",
+      "count": 1
+    },
+    {
+      "word": "travel",
+      "count": 1
+    },
+    {
+      "word": "scheme",
+      "count": 1
+    },
+    {
+      "word": "opens",
+      "count": 1
+    },
+    {
+      "word": "five",
+      "count": 1
+    },
+    {
+      "word": "more",
+      "count": 1
+    },
+    {
+      "word": "cities",
+      "count": 1
+    },
+    {
+      "word": "from",
+      "count": 1
+    },
+    {
+      "word": "july",
+      "count": 1
+    },
+    {
+      "word": "observatory",
+      "count": 1
+    },
+    {
+      "word": "issues",
+      "count": 1
+    },
+    {
+      "word": "black",
+      "count": 1
+    },
+    {
+      "word": "rainstorm",
+      "count": 1
+    },
+    {
+      "word": "warning",
+      "count": 1
+    },
+    {
+      "word": "blessing",
+      "count": 1
+    },
+    {
+      "word": "ceremony",
+      "count": 1
+    },
+    {
+      "word": "held",
+      "count": 1
+    },
+    {
+      "word": "international",
+      "count": 1
+    },
+    {
+      "word": "dragon",
+      "count": 1
+    },
+    {
+      "word": "boat",
+      "count": 1
+    },
+    {
+      "word": "races",
+      "count": 1
+    }
+  ],
+  "calibrationExamples": [
+    {
+      "editionDate": "2026-06-09",
+      "headline": "Southbound travel scheme opens to five more GBA cities from July",
+      "section": "GBA News",
+      "selectionTag": "news",
+      "weight": 3
+    },
+    {
+      "editionDate": "2026-06-09",
+      "headline": "Observatory issues first black rainstorm warning of 2026",
+      "section": "Hong Kong",
+      "selectionTag": "ig",
+      "weight": 2
+    },
+    {
+      "editionDate": "2026-06-09",
+      "headline": "Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races",
+      "section": "Macao",
+      "selectionTag": "generic",
+      "weight": 2
+    }
+  ],
+  "selectionRules": {
+    "preferEditorTaggedPatterns": true,
+    "weightMultipliers": {
+      "news": 3,
+      "ig": 2,
+      "generic": 2
+    },
+    "urlMatchBonus": 2,
+    "headlineSimilarityBonus": 1,
+    "storyTypeBonus": 1
+  }
+}

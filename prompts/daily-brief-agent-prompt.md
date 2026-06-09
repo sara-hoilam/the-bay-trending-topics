@@ -110,6 +110,34 @@ Drop candidates that fail the geographic scope. Tag survivors: `GBA-wide | Macao
 - Merge duplicates across languages (TC/SC/EN same story).  
 - Rank within each section: **hard news & policy > economy > society > soft culture/openings**.  
 - Ensure **Macao** and **Hong Kong** are represented if material exists (training briefs always include both when news is available).
+- Apply **editor selection calibration** (below) when ranking competing candidates.
+
+### Editor selection calibration (weighted)
+
+Managing editors mark manual brief picks in daily comparison docs with `[News selected]`, `[IG selected]`, or `[Selected]` (often in red). Use parsed history to bias **selection**, not prose style.
+
+**Before final ranking**, read:
+- `@Training Data/editor-comparisons/digest/latest.md`
+- `@references/editor-selection-weights.json`
+
+**Weight multipliers** (from comparison docs):
+
+| Editor tag | Weight |
+|------------|--------|
+| `[News selected]` | 3× |
+| `[IG selected]` | 2× |
+| `[Selected]` | 2× |
+
+**Bonus signals** when scoring candidates:
+- Same URL appeared in editor picks within the last 7 days → **+2**
+- Headline/section similar to a past editor pick → **+1**
+- Story type frequently editor-selected (transport, weather, policy, GBA integration) → **+1**
+
+**Rules:**
+- Prefer stories that match **what** editors historically select (topic, section, outlet patterns in the digest).
+- When two stories are equally fresh and corroborated, pick the one with higher editor-calibration score.
+- Do **not** copy manual summary wording or colleague tone.
+- If digest says “no parsed data yet”, fall back to default selection rules only.
 
 ### Step 4 — Corroborate
 
@@ -203,12 +231,16 @@ Maximum: **2 sentences** (~45 words). Simple incidents may use **1 sentence**.
 When running this prompt, attach:
 
 - `@references/daily-brief-source-domains.md` — approved 120 domains  
-- `@Training Data/all-sources-and-links.md` — optional; URL patterns by outlet  
+- `@Training Data/editor-comparisons/digest/latest.md` — **editor selection calibration** (weighted picks from comparison docs)  
+- `@references/editor-selection-weights.json` — machine-readable editor pick patterns  
 - `@references/source-links.md` — dashboard entry points  
 
 Optional calibration (selection only, not style):
 
+- `@Training Data/all-sources-and-links.md` — URL patterns by outlet  
 - `@Training Data/2026-06-03-trial-daily-brief-20articles.md` — worked example of selection rules  
+
+Editor comparison source: [Google Drive folder](https://drive.google.com/drive/folders/1sUw2ipTfv-UkVOZnrWuX9-7DGsMHshaw?usp=sharing) → `Training Data/editor-comparisons/raw/`  
 
 ---
 

@@ -75,6 +75,9 @@ run("prune-trendwatch-gba.mjs");
 run("enrich-trendwatch-metadata.mjs");
 ensureDailyBriefOverall();
 
+tryRun("compare-daily-brief.mjs");
+tryRun("verify-editor-comparisons.mjs");
+
 const checks = [
   ["verify-daily-capture.mjs", true],
   ["verify-daily-brief.mjs", false],

@@ -7,14 +7,21 @@
     "daily:cloud": "node scripts/run-daily-cloud.mjs",
     "daily:post": "node scripts/run-daily-post.mjs",
     "daily:diagnose": "node scripts/diagnose-cloud.mjs",
-    "daily:verify": "node scripts/verify-daily-capture.mjs && node scripts/verify-daily-brief.mjs && node scripts/verify-happenings.mjs",
+    "daily:verify": "node scripts/verify-daily-capture.mjs && node scripts/verify-daily-brief.mjs && node scripts/verify-happenings.mjs && node scripts/verify-editor-comparisons.mjs",
+    "editor:sync": "node scripts/sync-editor-comparisons.mjs",
+    "editor:parse": "node scripts/parse-editor-comparison.mjs",
+    "editor:build": "node scripts/build-editor-selection-model.mjs",
+    "editor:pipeline": "node scripts/run-editor-comparison-pipeline.mjs",
+    "editor:compare": "node scripts/compare-daily-brief.mjs",
     "source-links:generate": "node scripts/generate-source-links-data.mjs",
     "happenings:generate": "node scripts/generate-happenings-data.mjs",
     "trendwatch:prune": "node scripts/prune-trendwatch-gba.mjs",
     "trendwatch:enrich": "node scripts/enrich-trendwatch-metadata.mjs"
   },
   "dependencies": {
-    "@cursor/sdk": "^1.0.13"
+    "@cursor/sdk": "^1.0.13",
+    "googleapis": "^173.0.0",
+    "jszip": "^3.10.1"
   },
   "engines": {
     "node": ">=20"

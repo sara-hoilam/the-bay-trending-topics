@@ -8,7 +8,15 @@ Produce **today’s Daily Brief** markdown, convert it to the **📰 Daily Brief
 
 ## Workflow
 
-1. Read and follow **`prompts/daily-brief-agent-prompt.md`** (GBA scope, 120 approved domains, selection rules).
+0. Ensure editor comparison training is fresh (run on repo before this agent if not already done):
+
+   ```bash
+   node scripts/run-editor-comparison-pipeline.mjs
+   ```
+
+   Attach **`Training Data/editor-comparisons/digest/latest.md`** and **`references/editor-selection-weights.json`** when following the daily brief prompt. Apply weighted editor picks at Step 3 (Cluster & rank).
+
+1. Read and follow **`prompts/daily-brief-agent-prompt.md`** (GBA scope, 120 approved domains, selection rules, editor calibration).
 2. Use **today’s date in Asia/Hong_Kong** for the edition filename and audit block.
 3. Live-scan approved sources (browser/tools) — do **not** invent URLs or recycle stale stories.
 4. Write markdown to:

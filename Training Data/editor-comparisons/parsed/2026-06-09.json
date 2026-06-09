@@ -1,0 +1,43 @@
+{
+  "editionDate": "2026-06-09",
+  "sourceFile": "2026-06-09-comparison.docx",
+  "parsedAt": "2026-06-09T06:25:54.385Z",
+  "selectedStories": [
+    {
+      "section": "GBA News",
+      "sourceSide": "manual",
+      "headline": "Southbound travel scheme opens to five more GBA cities from July",
+      "urls": [
+        "https://www.scmp.com/news/hong-kong/transport/article/3356351/example"
+      ],
+      "selectionTag": "news",
+      "selected": true,
+      "weight": 3
+    },
+    {
+      "section": "Hong Kong",
+      "sourceSide": "manual",
+      "headline": "Observatory issues first black rainstorm warning of 2026",
+      "urls": [],
+      "selectionTag": "ig",
+      "selected": true,
+      "weight": 2
+    },
+    {
+      "section": "Macao",
+      "sourceSide": "manual",
+      "headline": "Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races",
+      "urls": [],
+      "selectionTag": "generic",
+      "selected": true,
+      "weight": 2
+    }
+  ],
+  "stats": {
+    "igSelected": 1,
+    "newsSelected": 1,
+    "genericSelected": 1,
+    "totalSelected": 3
+  },
+  "paragraphCount": 11
+}

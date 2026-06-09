@@ -35,6 +35,27 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Editor comparison training (sync, parse, build)
+        env:
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+          GOOGLE_DRIVE_FOLDER_ID: 1sUw2ipTfv-UkVOZnrWuX9-7DGsMHshaw
+        run: node scripts/run-editor-comparison-pipeline.mjs
+
+      - name: Commit editor training artifacts if changed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git add references/editor-selection-weights.json "Training Data/editor-comparisons/"
+          if git diff --staged --quiet; then
+            echo "No editor training changes"
+          else
+            git commit -m "chore(daily): editor comparison training $(TZ=Asia/Hong_Kong date +%Y-%m-%d)"
+            git push origin HEAD:main
+          fi
+
       - name: Preflight (API key + GitHub repo access)
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
@@ -73,6 +94,7 @@ jobs:
             orchestration/fragments/trendwatch.html \
             happenings-events.json \
             source-links-data.json \
+            references/editor-selection-weights.json \
             "Training Data/"
           if git diff --staged --quiet; then
             echo "No post-pipeline changes"
