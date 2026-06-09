@@ -54,7 +54,7 @@
       "url": "https://www.ticketflap.com/",
       "category": "Lifestyle",
       "happeningsFetch": {
-        "method": "html"
+        "method": "ticketflap-top"
       }
     },
     {

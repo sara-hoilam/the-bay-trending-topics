@@ -3,7 +3,7 @@
  * Used by generate-source-links-data.mjs (embed in JSON) and generate-happenings-data.mjs.
  *
  * listingUrl — URL shown on Source Links tab and used as Referer for fetch
- * method     — html | hktdc-phr-api | macaotourism-whatson-api
+ * method     — html | hktdc-phr-api | macaotourism-whatson-api | ticketflap-top
  * parser     — html parser id (html method only)
  */
 
@@ -57,7 +57,7 @@ export const HAPPENINGS_FETCH_BY_DOMAIN = {
     defaultRegion: { region: "macao", location: "Macao" },
   },
   "ticketflap.com": {
-    method: "html",
+    method: "ticketflap-top",
     listingUrl: "https://www.ticketflap.com/",
     defaultRegion: { region: "hk", location: "Hong Kong" },
   },

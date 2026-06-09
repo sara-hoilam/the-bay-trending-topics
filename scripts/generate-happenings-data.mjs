@@ -12,6 +12,7 @@ import { fileURLToPath } from "url";
 import { hktDateStr } from "./hkt-date.mjs";
 import { addDays, fetchEventsForSource } from "./happenings-fetch-handlers.mjs";
 import { annotateHighlight } from "./happenings-highlight-score.mjs";
+import { execFileSync } from "child_process";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -50,6 +51,15 @@ function groupByDomain(events) {
 
 async function main() {
   const today = hktDateStr();
+  try {
+    execFileSync(process.execPath, [path.join(__dirname, "fetch-ticketflap-events.mjs")], {
+      stdio: "inherit",
+      timeout: 90000,
+    });
+  } catch (err) {
+    console.warn(`Ticketflap scrape skipped: ${err.message}`);
+  }
+
   const sources = loadLifestyleSources();
   if (!sources.length) {
     console.error("No Lifestyle sources in source-links-data.json");

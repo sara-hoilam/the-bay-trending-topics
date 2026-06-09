@@ -1,0 +1,100 @@
+{
+  "updatedAt": "2026-06-09",
+  "note": "Curated top Ticketflap listings when live scrape is blocked. Refresh with: node scripts/fetch-ticketflap-events.mjs",
+  "events": [
+    {
+      "title": "Clockenflap 2026",
+      "start": "2026-12-04",
+      "end": "2026-12-06",
+      "region": "hk",
+      "location": "Central Harbourfront, Hong Kong",
+      "url": "https://www.ticketflap.com/Clockenflap2026",
+      "sourceDomain": "ticketflap.com",
+      "featured": true,
+      "dateNote": "Dates TBD"
+    },
+    {
+      "title": "Fuji Rock Festival '26",
+      "start": "2026-07-24",
+      "end": "2026-07-26",
+      "region": "international",
+      "location": "Naeba Ski Resort, Japan",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "featured": true
+    },
+    {
+      "title": "Glow Festival by Prudential 2026",
+      "start": "2026-07-10",
+      "end": "2026-07-19",
+      "region": "international",
+      "location": "Sentosa, Singapore",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "featured": true
+    },
+    {
+      "title": "King Gnu CEN+RAL Tour 2026 – Hong Kong",
+      "start": "2026-05-29",
+      "end": "2026-05-30",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    },
+    {
+      "title": "ZUTOMAYO – Hong Kong",
+      "start": "2026-06-06",
+      "end": "2026-06-06",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    },
+    {
+      "title": "Jason Leong – In Laughing Memory Tour Hong Kong 2026",
+      "start": "2026-06-06",
+      "end": "2026-06-06",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    },
+    {
+      "title": "Morgan Jay: The Goofy Guy Tour – Hong Kong",
+      "start": "2026-10-08",
+      "end": "2026-10-08",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    },
+    {
+      "title": "IVE WORLD TOUR <SHOW WHAT I AM> IN MACAO",
+      "start": "2026-05-23",
+      "end": "2026-05-24",
+      "region": "macao",
+      "location": "The Venetian Arena, Macao",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    },
+    {
+      "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
+      "start": "2026-10-16",
+      "end": "2026-10-18",
+      "region": "macao",
+      "location": "Galaxy Arena, Macao",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    },
+    {
+      "title": "BABYMONSTER WORLD TOUR [춤 (CHOOM)] IN MACAO",
+      "start": "2026-09-12",
+      "end": "2026-09-12",
+      "region": "macao",
+      "location": "The Venetian Arena, Macao",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com"
+    }
+  ]
+}

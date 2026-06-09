@@ -387,11 +387,11 @@
     html += "</div>";
 
     html += '<div class="hp-events-col">';
-    html += '<h2 class="hp-events-title hp-events-title--highlighted">Highlighted Events</h2>';
+    html += '<h2 class="hp-events-title hp-events-title--key">Key Events</h2>';
     html += '<p class="hp-events-sub">Major festivals, fairs, concerts, and crowd-pulling exhibitions</p>';
     html += renderEventList(
       highlightedEvents,
-      "No major highlighted events this month for this filter."
+      "No key events this month for this filter."
     );
 
     html += '<h2 class="hp-events-title hp-events-title--all">All Events</h2>';

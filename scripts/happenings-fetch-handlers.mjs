@@ -10,6 +10,10 @@ import {
   macaotourismWhatsonUrl,
 } from "./happenings-fetch-config.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
+import {
+  loadTicketflapPool,
+  selectTicketflapEvents,
+} from "./ticketflap-events-utils.mjs";
 
 export const UA = "GBA-Pulse-Bot/1.0 (+https://github.com/sara-hoilam/the-bay-trending-topics)";
 
@@ -360,6 +364,11 @@ export async function fetchEventsForSource(source, today) {
     case "macaotourism-whatson-api":
       events = await fetchMacaotourismWhatsonApi(source, today);
       break;
+    case "ticketflap-top": {
+      const pool = loadTicketflapPool(today);
+      events = selectTicketflapEvents(pool.events, today);
+      break;
+    }
     default:
       throw new Error(`Unknown happeningsFetch.method: ${method}`);
   }

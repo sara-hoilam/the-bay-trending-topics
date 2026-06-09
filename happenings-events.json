@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
   "updatedAt": "2026-06-09",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 43,
+  "highlightedCount": 48,
   "events": [
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
@@ -90,6 +90,17 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-05/27/content_32067728.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "King Gnu CEN+RAL Tour 2026 – Hong Kong",
+      "start": "2026-05-29",
+      "end": "2026-05-30",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -614,6 +625,17 @@
       "highlighted": false
     },
     {
+      "title": "ZUTOMAYO – Hong Kong",
+      "start": "2026-06-06",
+      "end": "2026-06-06",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "2026 International Children’s Day Event Series",
       "start": "2026-06-07",
       "end": "2026-06-07",
@@ -1041,6 +1063,18 @@
       "highlighted": false
     },
     {
+      "title": "Glow Festival by Prudential 2026",
+      "start": "2026-07-10",
+      "end": "2026-07-19",
+      "region": "international",
+      "location": "Sentosa, Singapore",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "featured": true,
+      "highlightScore": 66,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
@@ -1071,6 +1105,18 @@
       "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 32,
+      "highlighted": true
+    },
+    {
+      "title": "Fuji Rock Festival '26",
+      "start": "2026-07-24",
+      "end": "2026-07-26",
+      "region": "international",
+      "location": "Naeba Ski Resort, Japan",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "featured": true,
+      "highlightScore": 62,
       "highlighted": true
     },
     {
@@ -1162,6 +1208,17 @@
       "highlighted": false
     },
     {
+      "title": "BABYMONSTER WORLD TOUR [춤 (CHOOM)] IN MACAO",
+      "start": "2026-09-12",
+      "end": "2026-09-12",
+      "region": "macao",
+      "location": "The Venetian Arena, Macao",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "electronicAsia 2026 (HKCEC)",
       "start": "2026-10-13",
       "end": "2026-10-16",
@@ -1181,6 +1238,17 @@
       "url": "https://www.hktdc.com/event/hkelectronicsfairae",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
+      "highlighted": true
+    },
+    {
+      "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
+      "start": "2026-10-16",
+      "end": "2026-10-18",
+      "region": "macao",
+      "location": "Galaxy Arena, Macao",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "highlightScore": 32,
       "highlighted": true
     },
     {
@@ -1237,6 +1305,19 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 4,
       "highlighted": false
+    },
+    {
+      "title": "Clockenflap 2026",
+      "start": "2026-12-04",
+      "end": "2026-12-06",
+      "region": "hk",
+      "location": "Central Harbourfront, Hong Kong",
+      "url": "https://www.ticketflap.com/Clockenflap2026",
+      "sourceDomain": "ticketflap.com",
+      "featured": true,
+      "dateNote": "Dates TBD",
+      "highlightScore": 72,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
