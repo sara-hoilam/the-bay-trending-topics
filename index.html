@@ -1072,20 +1072,61 @@
     flex-wrap: wrap;
     gap: 8px;
   }
-  .hp-source-chip a {
+  .hp-source-chip {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+  .hp-source-chip-btn {
     display: flex;
     flex-direction: column;
     gap: 2px;
     padding: 8px 12px;
     border: 1px solid var(--rule);
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     background: #fff;
-    text-decoration: none;
     color: var(--ink);
     min-width: 140px;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
   }
-  .hp-source-chip a:hover {
+  .hp-source-chip--active .hp-source-chip-btn {
+    border-color: #7b2d8e;
+    background: #faf7fd;
+    box-shadow: inset 0 0 0 1px #c9a8e8;
+  }
+  .hp-source-chip-btn:hover {
     border-color: #c9a8e8;
+    background: #faf7fd;
+  }
+  .hp-source-chip-btn--clear {
+    border-radius: 8px;
+    min-width: auto;
+    font-size: 12px;
+    font-weight: 600;
+    color: #7b2d8e;
+  }
+  .hp-source-chip-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border: 1px solid var(--rule);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background: #fff;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .hp-source-chip-link:hover {
+    color: #7b2d8e;
+    background: #faf7fd;
+    border-color: #c9a8e8;
+  }
+  .hp-source-chip--active .hp-source-chip-link {
+    border-color: #7b2d8e;
     background: #faf7fd;
   }
   .hp-source-chip-name {
@@ -5038,9 +5079,9 @@
   if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks"].indexOf(h) !== -1) show(h);
 })();
 </script>
-<script>window.GBA_DATA_VERSION = "20260609d";</script>
-<script src="source-links-panel.js?v=20260609d" defer></script>
-<script src="happenings-panel.js?v=20260609d" defer></script>
+<script>window.GBA_DATA_VERSION = "20260609e";</script>
+<script src="source-links-panel.js?v=20260609e" defer></script>
+<script src="happenings-panel.js?v=20260609e" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
 <script>
 (function () {
