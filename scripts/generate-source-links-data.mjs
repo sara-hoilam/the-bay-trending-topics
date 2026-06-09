@@ -10,6 +10,7 @@ import {
   HAPPENINGS_FETCH_BY_DOMAIN,
   happeningsFetchMeta,
   happeningsListingUrl,
+  macaotourismWhatsonUrl,
 } from "./happenings-fetch-config.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -272,6 +273,7 @@ const DISPLAY_NAMES = {
   "event.hktdc.com": "HKTDC Event Calendar",
   "10times.com": "10times (Trade Shows)",
   "eyeshenzhen.com": "Amazing Shenzhen (Events)",
+  "ticketflap.com": "Ticketflap",
 };
 
 const URL_OVERRIDES = {
@@ -303,6 +305,8 @@ const URL_OVERRIDES = {
   "eyeshenzhen.com": "https://www.eyeshenzhen.com/node_400950.htm",
   "shenzhenmuseum.com":
     HAPPENINGS_FETCH_BY_DOMAIN["shenzhenmuseum.com"].listingUrl,
+  "macaotourism.gov.mo": macaotourismWhatsonUrl(),
+  "ticketflap.com": HAPPENINGS_FETCH_BY_DOMAIN["ticketflap.com"].listingUrl,
 };
 
 function displayName(domain) {

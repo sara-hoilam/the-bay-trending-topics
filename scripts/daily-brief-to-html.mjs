@@ -82,15 +82,7 @@ function escapeHtml(s) {
 }
 
 function renderSummary(text) {
-  const parts = text.split(/==([^=]+)==/g);
-  return parts
-    .map((part, i) =>
-      i % 2 === 1
-        ? `<mark class="brief-highlight">${escapeHtml(part)}</mark>`
-        : escapeHtml(part),
-    )
-    .join("")
-    .replace(/'/g, "&apos;");
+  return escapeHtml(text.replace(/==([^=]+)==/g, "$1")).replace(/'/g, "&apos;");
 }
 
 function hostFromUrl(url) {
