@@ -137,6 +137,17 @@
       "highlighted": false
     },
     {
+      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
+      "start": "2026-06-01",
+      "end": "2026-07-31",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "Step into the paws of cats and dogs",
       "start": "2026-06-01",
       "end": "2026-06-15",
@@ -1241,17 +1252,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
-      "start": "2026-10-13",
-      "end": "2026-10-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkelectronicsfairae",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "electronicAsia 2026 (HKCEC)",
       "start": "2026-10-13",
       "end": "2026-10-16",
@@ -1261,6 +1261,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
+      "start": "2026-10-13",
+      "end": "2026-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairae",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
     },
     {
       "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
@@ -1342,17 +1353,6 @@
       "highlighted": true
     },
     {
-      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkstationeryfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 36,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1362,6 +1362,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 18,
       "highlighted": false
+    },
+    {
+      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkstationeryfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 36,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
@@ -1452,6 +1463,28 @@
       "highlighted": true
     },
     {
+      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkprintpackfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 52,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1483,28 +1516,6 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
-    },
-    {
-      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkprintpackfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 52,
-      "highlighted": true
     }
   ]
 }
