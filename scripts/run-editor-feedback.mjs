@@ -56,6 +56,6 @@ console.log(`parsed/: ${listParsedJson().length} editions`);
 if (fs.existsSync(paths.weights)) {
   const w = JSON.parse(fs.readFileSync(paths.weights, "utf8"));
   console.log(`totalSelectedStories: ${w.totalSelectedStories ?? 0}`);
-  console.log(`tagCounts: ${JSON.stringify(w.tagCounts ?? {})}`);
+  console.log(`[selected] picks: ${w.tagCounts?.selected ?? 0}`);
 }
 console.log("\nEditor feedback complete. Weights apply on next Daily Brief run with digest attached.");

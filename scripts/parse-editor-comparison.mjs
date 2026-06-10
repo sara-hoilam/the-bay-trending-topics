@@ -207,9 +207,9 @@ function buildStoriesFromParagraphs(paragraphs) {
         flushCurrent();
         allBlocks.push({
           ...makeBlock(currentSection, currentSide, headline),
-          selectionTag: "generic",
+          selectionTag: "selected",
           selected: true,
-          weight: tagWeight("generic"),
+          weight: tagWeight("selected"),
         });
       }
     }
@@ -228,12 +228,10 @@ async function parseDocx(filePath) {
   const paragraphs = extractParagraphs(docXml);
   const selectedStories = buildStoriesFromParagraphs(paragraphs);
 
-  const stats = { igSelected: 0, newsSelected: 0, genericSelected: 0, totalSelected: 0 };
+  const stats = { selectedCount: 0, totalSelected: 0 };
   for (const s of selectedStories) {
     stats.totalSelected++;
-    if (s.selectionTag === "ig") stats.igSelected++;
-    else if (s.selectionTag === "news") stats.newsSelected++;
-    else stats.genericSelected++;
+    if (s.selectionTag === "selected") stats.selectedCount++;
   }
 
   const editionDate = extractDateFromFilename(path.basename(filePath));

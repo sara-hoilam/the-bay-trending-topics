@@ -1,6 +1,6 @@
 # Editor selection calibration digest
 
-Generated: 2026-06-09T07:21:36.184Z
+Generated: 2026-06-10T03:52:54.733Z
 Editions in window: 2026-06-09, 2026-06-08, 2026-06-05
 Total editor-selected stories: 11
 
@@ -8,11 +8,11 @@ Total editor-selected stories: 11
 
 | Tag | Multiplier |
 |-----|------------|
-| [News selected] | 3× |
-| [IG selected] | 2× |
-| [Selected] | 2× |
+| [selected] | 4× |
 
-Additional bonuses: same URL in past editor picks (+2), similar headline (+1), matching story-type pattern (+1).
+Legacy tags `[News selected]` and `[IG selected]` in older comparison docs count the same as `[selected]`.
+
+Additional bonuses: same URL in past editor picks (+3), similar headline (+2), matching story-type pattern (+2).
 
 ## Section floors (observed editor picks)
 
@@ -52,22 +52,22 @@ Additional bonuses: same URL in past editor picks (+2), similar headline (+1), m
 
 ## Annotated examples (selection only — do not copy prose)
 
-- **2026-06-09** [news] GBA News: Southbound travel scheme opens to five more GBA cities from July
-- **2026-06-09** [ig] Hong Kong: Observatory issues first black rainstorm warning of 2026
-- **2026-06-09** [generic] Macao: Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races
-- **2026-06-08** [generic] null: Macao Tower featured in Trip.Best Global 100 night attractions
-- **2026-06-08** [generic] null: Angola–Guangzhou new air route launch
-- **2026-06-05** [news] null: RCEP tariff savings (Guangdong 1.4B yuan)
-- **2026-06-05** [ig] null: Hengqin talent living subsidies (June application)
-- **2026-06-05** [ig] null: Education subsidy fraud (CCAC referral)
-- **2026-06-05** [ig] null: Hometown Market Carnival at Victoria Park
-- **2026-06-05** [news] null: Shenzhen 10 major group sports events list (2025)
-- **2026-06-05** [news] null: Mainland China fuel price reduction (save 20.5 yuan per tank)
+- **2026-06-09** [selected] GBA News: Southbound travel scheme opens to five more GBA cities from July
+- **2026-06-09** [selected] Hong Kong: Observatory issues first black rainstorm warning of 2026
+- **2026-06-09** [selected] Macao: Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races
+- **2026-06-08** [selected] null: Macao Tower featured in Trip.Best Global 100 night attractions
+- **2026-06-08** [selected] null: Angola–Guangzhou new air route launch
+- **2026-06-05** [selected] null: RCEP tariff savings (Guangdong 1.4B yuan)
+- **2026-06-05** [selected] null: Hengqin talent living subsidies (June application)
+- **2026-06-05** [selected] null: Education subsidy fraud (CCAC referral)
+- **2026-06-05** [selected] null: Hometown Market Carnival at Victoria Park
+- **2026-06-05** [selected] null: Shenzhen 10 major group sports events list (2025)
+- **2026-06-05** [selected] null: Mainland China fuel price reduction (save 20.5 yuan per tank)
 
 ## Rules for the agent
 
 1. Prefer stories that match editor-selected patterns above (topic, section, outlet).
-2. Apply tag weights when a candidate resembles a past `[News selected]` / `[IG selected]` story.
+2. Apply the `[selected]` weight when a candidate resembles a past managing-editor pick.
 3. Do **not** imitate manual summary wording — mirror **what** editors select, not **how** they write.
 4. When in doubt between two corroborated stories, pick the one closer to historical editor picks.
 

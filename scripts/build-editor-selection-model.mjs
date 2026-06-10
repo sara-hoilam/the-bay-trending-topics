@@ -13,6 +13,9 @@ import {
   listParsedJson,
   paths,
   TAG_WEIGHTS,
+  SELECTION_BONUSES,
+  normalizeSelectionTag,
+  tagWeight,
   hostFromUrl,
   normalizeHeadline,
   SECTION_NAMES,
@@ -77,14 +80,15 @@ function buildModel(parsedFiles, windowDays) {
   );
 
   const sectionCounts = Object.fromEntries(SECTION_NAMES.map((s) => [s, 0]));
-  const tagCounts = { ig: 0, news: 0, generic: 0 };
+  const tagCounts = { selected: 0 };
   const domainCounts = new Map();
   const storyTypeCounts = new Map();
   const examples = [];
 
   for (const s of allStories) {
     if (s.section && sectionCounts[s.section] != null) sectionCounts[s.section]++;
-    if (s.selectionTag && tagCounts[s.selectionTag] != null) tagCounts[s.selectionTag]++;
+    const tag = normalizeSelectionTag(s.selectionTag);
+    if (tag === "selected") tagCounts.selected++;
     for (const u of s.urls ?? []) {
       const host = hostFromUrl(u);
       if (host) domainCounts.set(host, (domainCounts.get(host) ?? 0) + 1);
@@ -96,8 +100,8 @@ function buildModel(parsedFiles, windowDays) {
         editionDate: s.editionDate,
         headline: s.headline,
         section: s.section,
-        selectionTag: s.selectionTag,
-        weight: s.weight,
+        selectionTag: normalizeSelectionTag(s.selectionTag),
+        weight: tagWeight(s.selectionTag),
       });
     }
   }
@@ -125,9 +129,9 @@ function buildModel(parsedFiles, windowDays) {
     selectionRules: {
       preferEditorTaggedPatterns: true,
       weightMultipliers: TAG_WEIGHTS,
-      urlMatchBonus: 2,
-      headlineSimilarityBonus: 1,
-      storyTypeBonus: 1,
+      urlMatchBonus: SELECTION_BONUSES.urlMatch,
+      headlineSimilarityBonus: SELECTION_BONUSES.headlineSimilarity,
+      storyTypeBonus: SELECTION_BONUSES.storyType,
     },
   };
 }
@@ -144,11 +148,11 @@ function buildDigest(model, parsedFiles) {
     "",
     "| Tag | Multiplier |",
     "|-----|------------|",
-    `| [News selected] | ${TAG_WEIGHTS.news}× |`,
-    `| [IG selected] | ${TAG_WEIGHTS.ig}× |`,
-    `| [Selected] | ${TAG_WEIGHTS.generic}× |`,
+    `| [selected] | ${TAG_WEIGHTS.selected}× |`,
     "",
-    "Additional bonuses: same URL in past editor picks (+2), similar headline (+1), matching story-type pattern (+1).",
+    "Legacy tags `[News selected]` and `[IG selected]` in older comparison docs count the same as `[selected]`.",
+    "",
+    `Additional bonuses: same URL in past editor picks (+${SELECTION_BONUSES.urlMatch}), similar headline (+${SELECTION_BONUSES.headlineSimilarity}), matching story-type pattern (+${SELECTION_BONUSES.storyType}).`,
     "",
     "## Section floors (observed editor picks)",
     "",
@@ -187,7 +191,7 @@ function buildDigest(model, parsedFiles) {
   if (model.calibrationExamples.length) {
     for (const ex of model.calibrationExamples) {
       lines.push(
-        `- **${ex.editionDate}** [${ex.selectionTag}] ${ex.section}: ${ex.headline}`,
+        `- **${ex.editionDate}** [selected] ${ex.section}: ${ex.headline}`,
       );
     }
   } else {
@@ -199,7 +203,7 @@ function buildDigest(model, parsedFiles) {
     "## Rules for the agent",
     "",
     "1. Prefer stories that match editor-selected patterns above (topic, section, outlet).",
-    "2. Apply tag weights when a candidate resembles a past `[News selected]` / `[IG selected]` story.",
+    "2. Apply the `[selected]` weight when a candidate resembles a past managing-editor pick.",
     "3. Do **not** imitate manual summary wording — mirror **what** editors select, not **how** they write.",
     "4. When in doubt between two corroborated stories, pick the one closer to historical editor picks.",
     "",

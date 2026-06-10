@@ -51,6 +51,18 @@ def extract_date(name: str) -> str | None:
         if mo:
             return f"{m.group(3)}-{mo}-{int(m.group(2)):02d}"
 
+    m = re.search(
+        r"\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|oct|nov|dec)[a-z]*-(\d{1,2})\b",
+        name,
+        re.I,
+    )
+    if m:
+        mo = MONTHS.get(m.group(1).lower()[:3])
+        if mo:
+            year = re.search(r"(\d{4})", name)
+            y = year.group(1) if year else str(__import__("datetime").date.today().year)
+            return f"{y}-{mo}-{int(m.group(2)):02d}"
+
     return None
 
 

@@ -114,7 +114,7 @@ Drop candidates that fail the geographic scope. Tag survivors: `GBA-wide | Macao
 
 ### Editor selection calibration (weighted)
 
-Managing editors mark manual brief picks in daily comparison docs with `[News selected]`, `[IG selected]`, or `[Selected]` (often in red). Use parsed history to bias **selection**, not prose style.
+Managing editors mark manual brief picks in daily comparison docs with **`[selected]`** (often in red). Older docs may use `[News selected]` or `[IG selected]` — treat all as the same signal. Use parsed history to bias **selection**, not prose style.
 
 **Before final ranking**, read:
 - `@Training Data/editor-comparisons/digest/latest.md`
@@ -124,14 +124,12 @@ Managing editors mark manual brief picks in daily comparison docs with `[News se
 
 | Editor tag | Weight |
 |------------|--------|
-| `[News selected]` | 3× |
-| `[IG selected]` | 2× |
-| `[Selected]` | 2× |
+| `[selected]` | **4×** |
 
 **Bonus signals** when scoring candidates:
-- Same URL appeared in editor picks within the last 7 days → **+2**
-- Headline/section similar to a past editor pick → **+1**
-- Story type frequently editor-selected (transport, weather, policy, GBA integration) → **+1**
+- Same URL appeared in editor picks within the last 7 days → **+3**
+- Headline/section similar to a past editor pick → **+2**
+- Story type frequently editor-selected (transport, weather, policy, GBA integration) → **+2**
 
 **Rules:**
 - Prefer stories that match **what** editors historically select (topic, section, outlet patterns in the digest).
