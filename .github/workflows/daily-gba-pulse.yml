@@ -1,4 +1,4 @@
-# Daily refresh scheduled 06:00 Hong Kong Time (22:00 UTC).
+# Daily refresh scheduled 06:00 Hong Kong Time (23:00 UTC).
 # GitHub Actions queue delay is typically ~2–3 h, so runs start ~08:30 HKT and finish ~08:45.
 # Tabs updated: Trend Watch, Daily Brief, Happenings, Source Links (data JSON).
 # Requires repo secret: CURSOR_API_KEY
@@ -6,7 +6,7 @@ name: Daily GBA Pulse
 
 on:
   schedule:
-    - cron: "0 22 * * *"
+    - cron: "0 23 * * *"
   workflow_dispatch:
 
 run-name: "GBA Pulse refresh · run ${{ github.run_number }}"
