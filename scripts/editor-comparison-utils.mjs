@@ -10,7 +10,15 @@ export const DRIVE_FOLDER_ID = "1sUw2ipTfv-UkVOZnrWuX9-7DGsMHshaw";
 export const DRIVE_FOLDER_URL =
   "https://drive.google.com/drive/folders/1sUw2ipTfv-UkVOZnrWuX9-7DGsMHshaw?usp=sharing";
 
-export const TAG_WEIGHTS = { news: 3, ig: 2, generic: 2 };
+/** Unified weight for any managing-editor pick ([selected] or legacy tags). */
+export const TAG_WEIGHTS = { selected: 4 };
+
+/** Bonuses when a candidate resembles past editor-selected stories. */
+export const SELECTION_BONUSES = {
+  urlMatch: 3,
+  headlineSimilarity: 2,
+  storyType: 2,
+};
 
 export const SECTION_NAMES = [
   "GBA News",
@@ -39,7 +47,7 @@ export const paths = {
 };
 
 export const SELECTION_TAG_RE =
-  /\[(?:IG\s+selected|News\s+selected|Selected)\]/i;
+  /\[(?:selected|IG\s+selected|News\s+selected)\]/i;
 
 export const RED_COLOR_VALUES = new Set([
   "FF0000",
@@ -107,6 +115,17 @@ export function extractDateFromFilename(name) {
     if (mo) return `${mdy[3]}-${mo}-${mdy[2].padStart(2, "0")}`;
   }
 
+  const monDashDay = name.match(
+    /\b(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|jun|jul|aug|sep|oct|nov|dec)[a-z]*-(\d{1,2})\b/i,
+  );
+  if (monDashDay) {
+    const mo = MONTHS[monDashDay[1].toLowerCase()];
+    if (mo) {
+      const year = name.match(/(\d{4})/)?.[1] ?? String(new Date().getFullYear());
+      return `${year}-${mo}-${monDashDay[2].padStart(2, "0")}`;
+    }
+  }
+
   return null;
 }
 
@@ -145,18 +164,21 @@ export function listParsedJson() {
 }
 
 export function parseSelectionTag(text) {
-  const ig = /\[IG\s+selected\]/i.test(text);
-  const news = /\[News\s+selected\]/i.test(text);
-  const generic = /\[Selected\]/i.test(text);
-  if (news) return "news";
-  if (ig) return "ig";
-  if (generic) return "generic";
+  if (SELECTION_TAG_RE.test(text)) return "selected";
   return null;
 }
 
+/** Normalize legacy parsed tags (news / ig / generic) to unified selected. */
+export function normalizeSelectionTag(tag) {
+  if (!tag) return null;
+  if (tag === "selected") return "selected";
+  if (tag === "news" || tag === "ig" || tag === "generic") return "selected";
+  return tag;
+}
+
 export function tagWeight(tag) {
-  if (!tag) return 0;
-  return TAG_WEIGHTS[tag] ?? TAG_WEIGHTS.generic;
+  if (!normalizeSelectionTag(tag)) return 0;
+  return TAG_WEIGHTS.selected;
 }
 
 export function normalizeHeadline(s) {

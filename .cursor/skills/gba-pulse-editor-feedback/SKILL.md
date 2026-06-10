@@ -1,13 +1,13 @@
 ---
 name: gba-pulse-editor-feedback
-description: On-demand editor feedback training for GBA Pulse Daily Brief. Import comparison docx from GBA Pulse Feedback, parse [Selected]/[IG selected]/[News selected] markers, rebuild editor-selection weights and digest. Invoke only when the user asks to apply editor feedback — not part of the automatic daily refresh.
+description: On-demand editor feedback training for GBA Pulse Daily Brief. Import comparison docx from GBA Pulse Feedback, parse [selected] markers (and legacy [News selected]/[IG selected]), rebuild editor-selection weights and digest. Invoke only when the user asks to apply editor feedback — not part of the automatic daily refresh.
 ---
 
 # GBA Pulse — Editor feedback training (on-demand)
 
-Apply managing editors' manual brief feedback so **Run 2 (Daily Brief)** selects stories more like the human process, especially items marked **`[Selected]`**, **`[IG selected]`**, or **`[News selected]`** (often red font in Word).
+Apply managing editors' manual brief feedback so **Run 2 (Daily Brief)** selects stories more like the human process, especially items marked **`[selected]`** (often red font in Word).
 
-**This skill is manual.** The automated 08:00 HKT daily pipeline does **not** run this workflow unless the user explicitly invokes this skill.
+**This skill is manual.** The automated daily pipeline does **not** run this workflow unless the user explicitly invokes this skill.
 
 ## When to use
 
@@ -34,11 +34,21 @@ Google Drive source: https://drive.google.com/drive/folders/1sUw2ipTfv-UkVOZnrWu
 
 ## Weighting rules (selection only — not prose style)
 
+Managing editors now mark all picks with a single tag:
+
 | Editor tag | Weight |
 |------------|--------|
-| `[News selected]` | 3× |
-| `[IG selected]` | 2× |
-| `[Selected]` | 2× |
+| `[selected]` | **4×** |
+
+**Legacy comparison docs** may still use `[News selected]` or `[IG selected]` — the parser treats them the same as `[selected]` (no separate news vs IG weighting).
+
+**Bonus signals** when a candidate resembles past editor picks:
+
+| Signal | Bonus |
+|--------|-------|
+| Same URL in a past `[selected]` story | +3 |
+| Similar headline / section | +2 |
+| Matching story-type pattern (transport, weather, policy, GBA) | +2 |
 
 The agent must mirror **what** editors select, not **how** they write summaries.
 
@@ -64,7 +74,7 @@ Or:
 node scripts/sync-editor-comparisons.mjs --import-dir="GBA Pulse Feedback"
 ```
 
-Filenames must include a date (`2026-06-09`, `9 June 2026`, etc.) or files are skipped.
+Filenames must include a date (`2026-06-10`, `Jun-10`, `10 June 2026`, etc.) or files are skipped.
 
 Copies into: `Training Data/editor-comparisons/raw/YYYY-MM-DD-comparison.docx`
 
@@ -109,7 +119,7 @@ Report: `Training Data/editor-comparisons/reports/YYYY-MM-DD.md`
 Report:
 
 - How many docx imported / parsed
-- Count of `[News selected]` / `[IG selected]` / `[Selected]` stories
+- Count of `[selected]` stories (total managing-editor picks)
 - Top sections and domains in `editor-selection-weights.json`
 - Whether digest was updated
 - If overlap report exists: recall % (editor picks found in AI brief)
@@ -147,7 +157,7 @@ After this skill completes, the next **Daily Brief** generation should attach:
 | `npm` blocked | Use `npm.cmd` |
 | `gyp ERR` / `sqlite3` on full install | Use `npm.cmd install jszip --omit=optional` only |
 | `jszip` not found | Delete `node_modules`, reinstall jszip |
-| Files skipped on import | Add date to filename |
+| Files skipped on import | Add date to filename (`2026-06-10` or `Jun-10`) |
 
 ## Related scripts
 

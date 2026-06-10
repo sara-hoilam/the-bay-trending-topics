@@ -13,15 +13,15 @@ const documentXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     <w:p><w:r><w:t>1. Southbound travel scheme opens to five more GBA cities from July</w:t></w:r></w:p>
     <w:p><w:r><w:t>https://www.scmp.com/news/hong-kong/transport/article/3356351/example</w:t></w:r></w:p>
     <w:p>
-      <w:r><w:rPr><w:color w:val="FF0000"/></w:rPr><w:t>[News selected]</w:t></w:r>
+      <w:r><w:rPr><w:color w:val="FF0000"/></w:rPr><w:t>[selected]</w:t></w:r>
       <w:r><w:t> Editor pick for cross-border transport.</w:t></w:r>
     </w:p>
     <w:p><w:r><w:t>Hong Kong (1):</w:t></w:r></w:p>
     <w:p><w:r><w:t>5. Observatory issues first black rainstorm warning of 2026</w:t></w:r></w:p>
-    <w:p><w:r><w:t>[IG selected]</w:t></w:r></w:p>
+    <w:p><w:r><w:t>[selected]</w:t></w:r></w:p>
     <w:p><w:r><w:t>Macao (1):</w:t></w:r></w:p>
     <w:p><w:r><w:t>3. Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races</w:t></w:r></w:p>
-    <w:p><w:r><w:t>[Selected]</w:t></w:r></w:p>
+    <w:p><w:r><w:t>[selected]</w:t></w:r></w:p>
   </w:body>
 </w:document>`;
 

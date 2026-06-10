@@ -19,11 +19,15 @@ Examples: `2026-06-09-comparison.docx`, `2026-06-08-comparison.docx`
 
 Stories chosen by managing editors are marked with **red font** and/or bracket tags (case-insensitive):
 
+- **`[selected]`** — current format (all managing-editor picks)
+
+Legacy tags in older comparison docs are still parsed but weighted the same:
+
 - `[News selected]`
 - `[IG selected]`
 - `[Selected]`
 
-The parser treats these as weighted training signals (News > IG ≈ generic).
+The parser treats every tag as a **`[selected]`** training signal at **4×** weight.
 
 ## Folder layout
 

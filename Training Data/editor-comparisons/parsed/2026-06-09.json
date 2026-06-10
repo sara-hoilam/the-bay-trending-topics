@@ -1,7 +1,7 @@
 {
   "editionDate": "2026-06-09",
   "sourceFile": "2026-06-09-comparison.docx",
-  "parsedAt": "2026-06-09T07:20:34.930Z",
+  "parsedAt": "2026-06-10T03:52:54.693Z",
   "selectedStories": [
     {
       "section": "GBA News",
@@ -10,33 +10,31 @@
       "urls": [
         "https://www.scmp.com/news/hong-kong/transport/article/3356351/example"
       ],
-      "selectionTag": "news",
+      "selectionTag": "selected",
       "selected": true,
-      "weight": 3
+      "weight": 4
     },
     {
       "section": "Hong Kong",
       "sourceSide": "manual",
       "headline": "Observatory issues first black rainstorm warning of 2026",
       "urls": [],
-      "selectionTag": "ig",
+      "selectionTag": "selected",
       "selected": true,
-      "weight": 2
+      "weight": 4
     },
     {
       "section": "Macao",
       "sourceSide": "manual",
       "headline": "Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races",
       "urls": [],
-      "selectionTag": "generic",
+      "selectionTag": "selected",
       "selected": true,
-      "weight": 2
+      "weight": 4
     }
   ],
   "stats": {
-    "igSelected": 1,
-    "newsSelected": 1,
-    "genericSelected": 1,
+    "selectedCount": 3,
     "totalSelected": 3
   },
   "paragraphCount": 11
