@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-06-10",
+  "updatedAt": "2026-06-11",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 49,
+  "highlightedCount": 51,
   "events": [
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
@@ -14,6 +14,17 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
       "highlighted": true
+    },
+    {
+      "title": "Quest for China Ware Culture — Shenzhen Museum ceramics",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "region": "shenzhen",
+      "location": "Shenzhen Museum (Ancient Art), Tongxin Road",
+      "url": "https://www.shenzhenmuseum.com/en/exhibition",
+      "sourceDomain": "shenzhenmuseum.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "Ryuichi Sakamoto | seeing sound, hearing time at M+",
@@ -36,6 +47,17 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
       "highlighted": false
+    },
+    {
+      "title": "Heavenly Horses — Palace Museum masterpieces",
+      "start": "2026-03-20",
+      "end": "2026-09-30",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.westk.hk/en/event/heavenly-horses-masterpieces-from-the-palace-museum",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 28,
+      "highlighted": true
     },
     {
       "title": "Treasures of Global Jewellery from The Met — Palace Museum",
@@ -104,6 +126,17 @@
       "highlighted": false
     },
     {
+      "title": "Wael Shawky: I Am Hymns of the New Temples at M+",
+      "start": "2026-05-30",
+      "end": "2026-10-25",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.westk.hk/en/event/wael-shawky-i-am-hymns-of-the-new-temples",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "PAM unveils 2 new exhibitions in 'Hometown Series'",
       "start": "2026-06-01",
       "end": "2026-07-31",
@@ -112,17 +145,6 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32074062.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
-      "start": "2026-06-01",
-      "end": "2026-07-31",
-      "region": "macao",
-      "location": "Macao",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -946,6 +968,17 @@
       "highlighted": true
     },
     {
+      "title": "Joyful Encounters — The Art of Wong Kwan Shut",
+      "start": "2026-06-24",
+      "end": "2026-10-31",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.westk.hk/en/event/joyful-encounters-the-art-of-wong-kwan-shut",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "6th Guangdong-Hong Kong-Macao Greater Bay Area Chinese Theatre Cultural Festival",
       "start": "2026-06-25",
       "end": "2026-06-28",
@@ -1309,17 +1342,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Baby Products Fair 2027",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hkbabyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1329,6 +1351,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Baby Products Fair 2027",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkbabyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 18,
+      "highlighted": false
     },
     {
       "title": "HKTDC Education & Careers Expo 2027 (HKCEC)",
@@ -1408,6 +1441,28 @@
       "highlighted": true
     },
     {
+      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkprintpackfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 52,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1439,28 +1494,6 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
-    },
-    {
-      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkprintpackfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 52,
-      "highlighted": true
     }
   ]
 }
