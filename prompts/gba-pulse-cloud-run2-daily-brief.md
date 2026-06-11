@@ -17,7 +17,7 @@ Produce **today’s Daily Brief** markdown, convert it to the **📰 Daily Brief
 
    `Training Data/YYYY-MM-DD-daily-brief.md`
 
-   Target **18–24 articles** across GBA News, Macao, HK, Zhuhai/Hengqin, Guangzhou, Shenzhen, other cities, Nation, GBA sport (as warranted).
+   Target **~30 articles** across GBA News, Macao, HK, Zhuhai/Hengqin, Guangzhou, Shenzhen, other cities, Nation, GBA sport (as warranted).
 5. Convert and merge:
 
    ```bash
@@ -42,6 +42,6 @@ Use `GITHUB_TOKEN` from the environment if `git push` needs auth.
 
 ## Cost discipline
 
-- Follow scan order in the prompt; stop when the edition is full.
+- Follow scan order in the prompt; stop when the edition reaches ~30 articles.
 - Prefer outlet home/list pages over deep site-wide search.
 - Cluster related stories; do not duplicate the same incident across sections.

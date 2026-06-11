@@ -29,7 +29,7 @@ If a breaking story has **no** outlet on the list, note it in a final **Out of c
 
 ### Scan order (matches colleague workflow)
 
-Work through sources in this priority until the edition is full:
+Work through sources in this priority until the edition reaches **~30 articles**:
 
 1. **Macao & HK broadcast / wire**
    - `tdm.com.mo`, `news.tvb.com`, `news.rthk.hk`
@@ -61,7 +61,7 @@ Apply these **before** writing summaries:
 | **Cross-border first** | HZMB, Hengqin, Qianhai, dragon-boat/GBA-wide tourism, province-level announcements → **GBA News** section |
 | **Official + media** | When government announces policy, pair **gov** URL with **TDM/TVB/NewsGD** coverage when available |
 | **Background links** | Event/venue pages → prefix `Background:` on its own URL line; video → prefix `Video:` |
-| **Volume** | Target **15–25 substantive story blocks** per edition (training samples vary; quality over count) |
+| **Volume** | Target **~30 substantive story blocks** per edition (quality over count; do not pad with thin items) |
 
 ### Section assignment
 
