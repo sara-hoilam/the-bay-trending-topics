@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-06-11",
+  "updatedAt": "2026-06-12",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 51,
+  "highlightedCount": 52,
   "events": [
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
@@ -156,17 +156,6 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32074062.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
-      "start": "2026-06-01",
-      "end": "2026-07-31",
-      "region": "macao",
-      "location": "Macao",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -481,17 +470,6 @@
       "highlighted": false
     },
     {
-      "title": "17 upcoming events at Shenzhen's two exhibitions centers in June",
-      "start": "2026-06-03",
-      "end": "2026-08-02",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/03/content_32076861.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "Annals Inscribed Bronze — ancient art at Shenzhen Museum",
       "start": "2026-06-03",
       "end": "2026-12-31",
@@ -512,6 +490,17 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
       "highlighted": true
+    },
+    {
+      "title": "17 upcoming events at Shenzhen's two exhibitions centers in June",
+      "start": "2026-06-03",
+      "end": "2026-08-02",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/03/content_32076861.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "2026 Macau Summer Shopping Expo & The 7th Maternity Baby’s Products Expo",
@@ -733,6 +722,39 @@
       "url": "https://10times.com/laserfair-china",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "China International Semiconductor Exhibition",
+      "start": "2026-06-10",
+      "end": "2026-06-12",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1d0-949d-zgdp-s",
+      "sourceDomain": "10times.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "Shenzhen Data Center Liquid Cooling Industry Exhibition",
+      "start": "2026-06-10",
+      "end": "2026-06-12",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1dd-zgs4-d8f1-9",
+      "sourceDomain": "10times.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "IAMD Shenzhen — Integrated Automation, Motion & Drives",
+      "start": "2026-06-10",
+      "end": "2026-06-12",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center",
+      "url": "https://10times.com/control-automation-exhibition-china",
+      "sourceDomain": "10times.com",
+      "highlightScore": 10,
       "highlighted": false
     },
     {
@@ -1094,18 +1116,6 @@
       "highlighted": true
     },
     {
-      "title": "OomBam “FulFill” Fan Meeting in Macau",
-      "start": "2026-06-27",
-      "end": "2026-06-27",
-      "region": "macao",
-      "location": "Grand Lisboa Palace Resort Macau",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
       "title": "The Londoner Macao Proudly Presents: Single All The Way KP One Mic Stand in Macao",
       "start": "2026-06-27",
       "end": "2026-06-27",
@@ -1274,17 +1284,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
-      "start": "2026-10-13",
-      "end": "2026-10-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkelectronicsfairae",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "electronicAsia 2026 (HKCEC)",
       "start": "2026-10-13",
       "end": "2026-10-16",
@@ -1294,6 +1293,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
+      "start": "2026-10-13",
+      "end": "2026-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairae",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
     },
     {
       "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
@@ -1375,17 +1385,6 @@
       "highlighted": true
     },
     {
-      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkstationeryfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 36,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1395,6 +1394,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 18,
       "highlighted": false
+    },
+    {
+      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkstationeryfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 36,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
@@ -1496,23 +1506,23 @@
       "highlighted": true
     },
     {
-      "title": "Home InStyle 2027 (HKCEC)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/homeinstyle/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "Fashion InStyle 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/fashioninstyle/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Home InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/homeinstyle/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
