@@ -148,6 +148,17 @@
       "highlighted": false
     },
     {
+      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
+      "start": "2026-06-01",
+      "end": "2026-07-31",
+      "region": "macao",
+      "location": "Macao",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "Step into the paws of cats and dogs",
       "start": "2026-06-01",
       "end": "2026-06-15",
@@ -925,6 +936,18 @@
       "highlighted": false
     },
     {
+      "title": "12th International Day of Yoga",
+      "start": "2026-06-14",
+      "end": "2026-06-14",
+      "region": "macao",
+      "location": "Lisboeta Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 10,
+      "highlighted": false
+    },
+    {
       "title": "“Breathe · Macao” 2026 International Day of Yoga Community Mind-Body Wellness Program",
       "start": "2026-06-14",
       "end": "2026-06-14",
@@ -1045,17 +1068,6 @@
       "highlighted": true
     },
     {
-      "title": "Joyful Encounters — The Art of Wong Kwan Shut",
-      "start": "2026-06-24",
-      "end": "2026-10-31",
-      "region": "hk",
-      "location": "Hong Kong Palace Museum, West Kowloon",
-      "url": "https://www.westk.hk/en/event/joyful-encounters-the-art-of-wong-kwan-shut",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "Shenzhen International Internet of Things Exhibition (IoT Expo)",
       "start": "2026-06-24",
       "end": "2026-06-26",
@@ -1064,6 +1076,17 @@
       "url": "https://10times.com/e10s-xxk1-p2r3",
       "sourceDomain": "10times.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "Joyful Encounters — The Art of Wong Kwan Shut",
+      "start": "2026-06-24",
+      "end": "2026-10-31",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.westk.hk/en/event/joyful-encounters-the-art-of-wong-kwan-shut",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 28,
       "highlighted": true
     },
     {
@@ -1206,6 +1229,17 @@
       "highlighted": true
     },
     {
+      "title": "Cafeex Shenzhen",
+      "start": "2026-07-24",
+      "end": "2026-07-26",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center",
+      "url": "https://10times.com/cafeex-shenzhen",
+      "sourceDomain": "10times.com",
+      "highlightScore": 10,
+      "highlighted": false
+    },
+    {
       "title": "Fuji Rock Festival '26",
       "start": "2026-07-24",
       "end": "2026-07-26",
@@ -1216,17 +1250,6 @@
       "featured": true,
       "highlightScore": 62,
       "highlighted": true
-    },
-    {
-      "title": "Cafeex Shenzhen",
-      "start": "2026-07-24",
-      "end": "2026-07-26",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/cafeex-shenzhen",
-      "sourceDomain": "10times.com",
-      "highlightScore": 10,
-      "highlighted": false
     },
     {
       "title": "HKTDC Food Expo 2026 (HKCEC)",
