@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-06-13",
+  "updatedAt": "2026-06-14",
   "highlightScoreThreshold": 24,
   "highlightedCount": 54,
   "events": [
@@ -82,6 +82,17 @@
       "highlighted": false
     },
     {
+      "title": "Dial-A-Poem Hong Kong at M+",
+      "start": "2026-04-25",
+      "end": "2026-08-30",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.westk.hk/en/newsroom/mplus-announces-2026-exhibition-moving-image-programmes",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "Original design shines at ICIF sub-venue MGU SHOWROOM",
       "start": "2026-05-18",
       "end": "2026-07-17",
@@ -115,17 +126,6 @@
       "highlighted": false
     },
     {
-      "title": "King Gnu CEN+RAL Tour 2026 – Hong Kong",
-      "start": "2026-05-29",
-      "end": "2026-05-30",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.ticketflap.com/",
-      "sourceDomain": "ticketflap.com",
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
       "title": "Wael Shawky: I Am Hymns of the New Temples at M+",
       "start": "2026-05-30",
       "end": "2026-10-25",
@@ -145,17 +145,6 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32074062.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
-      "start": "2026-06-01",
-      "end": "2026-07-31",
-      "region": "macao",
-      "location": "Macao",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
