@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-13",
+  "updatedAt": "2026-06-14",
   "source": "cache",
   "events": [
     {
@@ -12,15 +12,6 @@
       "sourceDomain": "ticketflap.com",
       "featured": true,
       "dateNote": "Dates TBD"
-    },
-    {
-      "title": "King Gnu CEN+RAL Tour 2026 – Hong Kong",
-      "start": "2026-05-29",
-      "end": "2026-05-30",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.ticketflap.com/",
-      "sourceDomain": "ticketflap.com"
     },
     {
       "title": "ZUTOMAYO – Hong Kong",
