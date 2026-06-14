@@ -69,6 +69,7 @@
     year: hktInit.year,
     month: hktInit.month,
     filter: "all",
+    sourceDomain: null,
     events: [],
     sources: [],
     eventCountByDomain: {},
@@ -159,9 +160,18 @@
     return clientHighlightScore(ev) >= HIGHLIGHT_THRESHOLD;
   }
 
-  function matchesFilter(ev, filter) {
+  function matchesRegionFilter(ev, filter) {
     if (filter === "all") return true;
     return normalizeRegion(ev) === filter;
+  }
+
+  function matchesSourceFilter(ev) {
+    if (!state.sourceDomain) return true;
+    return ev.sourceDomain === state.sourceDomain;
+  }
+
+  function matchesFilter(ev, filter) {
+    return matchesRegionFilter(ev, filter) && matchesSourceFilter(ev);
   }
 
   function eventOverlapsMonth(ev, year, month) {
@@ -274,16 +284,22 @@
   function renderSourcesBar() {
     if (!state.sources.length) return "";
     var html = '<div class="hp-sources-bar">';
-    html += '<p class="hp-sources-bar-label">Lifestyle calendar sources</p>';
+    html +=
+      '<p class="hp-sources-bar-label">Lifestyle calendar sources · click to filter</p>';
     html += '<ul class="hp-sources-chips">';
     state.sources.forEach(function (src) {
       var count = state.eventCountByDomain[src.domain] || 0;
+      var active = state.sourceDomain === src.domain;
       html +=
-        '<li class="hp-source-chip">' +
-        '<a href="' +
-        esc(src.url) +
-        '" target="_blank" rel="noopener noreferrer" title="' +
+        '<li class="hp-source-chip' +
+        (active ? " hp-source-chip--active" : "") +
+        '">' +
+        '<button type="button" class="hp-source-chip-btn" data-source-domain="' +
         esc(src.domain) +
+        '" aria-pressed="' +
+        active +
+        '" title="Filter events from ' +
+        esc(src.displayName || src.domain) +
         '">' +
         '<span class="hp-source-chip-name">' +
         esc(src.displayName || src.domain) +
@@ -291,8 +307,21 @@
         '<span class="hp-source-chip-count">' +
         count +
         " events</span>" +
-        "</a></li>";
+        "</button>" +
+        '<a class="hp-source-chip-link" href="' +
+        esc(src.url) +
+        '" target="_blank" rel="noopener noreferrer" aria-label="Open ' +
+        esc(src.displayName || src.domain) +
+        ' website" title="Open source website">↗</a>' +
+        "</li>";
     });
+    if (state.sourceDomain) {
+      html +=
+        '<li class="hp-source-chip hp-source-chip--clear">' +
+        '<button type="button" class="hp-source-chip-btn hp-source-chip-btn--clear" data-source-domain="">' +
+        "Clear source filter" +
+        "</button></li>";
+    }
     html += "</ul></div>";
     return html;
   }
@@ -348,7 +377,7 @@
     }
     for (var day = 1; day <= daysInMonth; day++) {
       var cellDate = new Date(y, m, day);
-      var dayEv = eventsOnDay(y, m, day, "all");
+      var dayEv = eventsOnDay(y, m, day, filter);
       var isToday = sameDay(cellDate, today);
       var dots = "";
       var seen = {};
@@ -397,8 +426,17 @@
     html += '<h2 class="hp-events-title hp-events-title--all">All Events</h2>';
     html += renderEventList(monthEvents, "No events this month for this filter.");
 
-    var seeMoreHref = state.seeMoreUrl || "https://event.hktdc.com/";
-    var seeMoreText = state.seeMoreLabel || "See more events";
+    var activeSource = state.sourceDomain
+      ? state.sources.find(function (s) {
+          return s.domain === state.sourceDomain;
+        })
+      : null;
+    var seeMoreHref = activeSource
+      ? activeSource.url
+      : state.seeMoreUrl || "https://event.hktdc.com/";
+    var seeMoreText = activeSource
+      ? "See more on " + (activeSource.displayName || activeSource.domain)
+      : state.seeMoreLabel || "See more events";
     html +=
       '<a class="hp-see-more" href="' +
       esc(seeMoreHref) +
@@ -427,6 +465,19 @@
         } else if (state.month < 0) {
           state.month = 11;
           state.year--;
+        }
+        render();
+      });
+    });
+    root.querySelectorAll("[data-source-domain]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var domain = btn.getAttribute("data-source-domain");
+        if (!domain) {
+          state.sourceDomain = null;
+        } else if (state.sourceDomain === domain) {
+          state.sourceDomain = null;
+        } else {
+          state.sourceDomain = domain;
         }
         render();
       });
