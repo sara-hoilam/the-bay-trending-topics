@@ -1372,11 +1372,13 @@
     color: #1e3a5f;
   }
   .igl-row--highlight td {
-    color: #b8860b;
+    background: #fff6db;
+    color: #1e3a5f;
     font-weight: 600;
   }
   .igl-row--highlight .igl-handle {
-    color: #c9a227;
+    color: var(--muted);
+    font-weight: 400;
   }
   .igl-account a {
     font-weight: 600;
@@ -1395,7 +1397,7 @@
     font-weight: 400;
   }
   .igl-row--highlight .igl-account a {
-    color: #b8860b;
+    color: #1e3a5f;
   }
   .igl-followers {
     font-family: 'DM Mono', monospace;
@@ -1411,11 +1413,9 @@
   .igl-growth--up { color: var(--pos); }
   .igl-growth--down { color: var(--neg); }
   .igl-growth--flat { color: var(--muted); }
-  .igl-row--highlight .igl-growth--up,
-  .igl-row--highlight .igl-growth--down,
-  .igl-row--highlight .igl-growth--flat {
-    color: #b8860b;
-  }
+  .igl-row--highlight .igl-growth--up { color: var(--pos); }
+  .igl-row--highlight .igl-growth--down { color: var(--neg); }
+  .igl-row--highlight .igl-growth--flat { color: var(--muted); }
   .igl-posts {
     font-family: 'DM Mono', monospace;
     font-size: 13px;
@@ -5264,7 +5264,7 @@
 })();
 </script>
 <script>window.GBA_DATA_VERSION = "20260609d";</script>
-<script src="ig-leaderboard-panel.js?v=20260615c" defer></script>
+<script src="ig-leaderboard-panel.js?v=20260615d" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
 <script src="happenings-panel.js?v=20260609d" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>

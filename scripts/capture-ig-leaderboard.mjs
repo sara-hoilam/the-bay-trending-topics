@@ -10,6 +10,9 @@
  *   node scripts/capture-ig-leaderboard.mjs --snapshot=orchestration/ig-leaderboard-snapshot.json
  */
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { execFileSync } from "child_process";
 import {
   buildLeaderboardData,
   loadAccountConfig,
@@ -19,6 +22,9 @@ import {
 } from "./ig-leaderboard-utils.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const root = path.join(__dirname, "..");
+
 function readSnapshotArg() {
   const eq = process.argv.find((a) => a.startsWith("--snapshot="));
   if (!eq) return null;
@@ -27,7 +33,23 @@ function readSnapshotArg() {
     console.error("Snapshot file not found:", p);
     process.exit(1);
   }
-  return JSON.parse(fs.readFileSync(p, "utf8"));
+  const raw = JSON.parse(fs.readFileSync(p, "utf8"));
+  return raw.accounts ?? raw;
+}
+
+function normalizeSnapshot(snapshot) {
+  if (!snapshot) return null;
+  if (snapshot.accounts && typeof snapshot.accounts === "object") {
+    return snapshot.accounts;
+  }
+  const out = {};
+  for (const [handle, val] of Object.entries(snapshot)) {
+    if (handle === "capturedAt" || handle === "notes") continue;
+    if (val && typeof val === "object" && ("followers" in val || "posts7d" in val)) {
+      out[handle] = val;
+    }
+  }
+  return Object.keys(out).length ? out : null;
 }
 
 function seedSnapshot() {
@@ -51,8 +73,27 @@ function main() {
     existingByHandle[row.handle] = row;
   }
 
-  let snapshot = readSnapshotArg();
+  let snapshot = normalizeSnapshot(readSnapshotArg());
   let captureMethod = snapshot ? "agent-snapshot" : "history-preserve";
+
+  if (process.argv.includes("--refresh")) {
+    const fetchPath = path.join(__dirname, "fetch-ig-benchmark.mjs");
+    try {
+      execFileSync(process.execPath, [fetchPath], { cwd: root, stdio: "inherit" });
+    } catch {
+      console.warn("fetch-ig-benchmark.mjs failed — continuing with manual snapshot if present");
+    }
+    const snapPath = path.join(root, "orchestration/ig-leaderboard-snapshot.json");
+    const manualPath = path.join(root, "references/ig-leaderboard-manual-snapshot.json");
+    const fetched = fs.existsSync(snapPath)
+      ? normalizeSnapshot(JSON.parse(fs.readFileSync(snapPath, "utf8")))
+      : {};
+    const manual = fs.existsSync(manualPath)
+      ? normalizeSnapshot(JSON.parse(fs.readFileSync(manualPath, "utf8")))
+      : {};
+    snapshot = { ...fetched, ...manual };
+    captureMethod = "public-refresh";
+  }
 
   if (!snapshot && !existing) {
     snapshot = seedSnapshot();
@@ -64,7 +105,10 @@ function main() {
     const prev = existingByHandle[cfg.handle];
     const snap = snapshot?.[cfg.handle];
     if (snap) {
-      return mergeSnapshot(prev, cfg, snap, today);
+      return mergeSnapshot(prev, cfg, {
+        followers: snap.followers ?? prev?.followers ?? null,
+        posts7d: snap.posts7d ?? prev?.posts7d ?? null,
+      }, today);
     }
     if (prev) {
       return mergeSnapshot(prev, cfg, { followers: prev.followers, posts7d: prev.posts7d }, today);

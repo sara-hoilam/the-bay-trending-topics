@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-06-15",
+  "notes": "Manual refresh supplement when Instagram blocks automated capture. Followers: SCMP from Checkbb (601.5K), The Bay from public benchmark (32K). Posts7d: rolling 7-day counts from profile review.",
+  "accounts": {
+    "scmpnews": { "followers": 601500, "posts7d": 35 },
+    "tatlerhk": { "followers": 251000, "posts7d": 45 },
+    "the_trip_addict": { "followers": 94000, "posts7d": 12 },
+    "sassyhk": { "followers": 91000, "posts7d": 9 },
+    "thebayasia": { "followers": 32000, "posts7d": 6 },
+    "greaterbayvibes": { "followers": 16500, "posts7d": 9 }
+  }
+}
