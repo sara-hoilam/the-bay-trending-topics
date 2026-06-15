@@ -1,6 +1,6 @@
 /**
- * IG Competitor Followers leaderboard — Source Links tab (last panel).
- * Loads ig-leaderboard-data.json and renders ranked tourism-board accounts.
+ * IG Competitor Followers leaderboard — dedicated IG Leaderboard tab.
+ * Chip layout mirrors Happenings lifestyle source bar (ranked follower counts).
  */
 (function () {
   var DATA_V = window.GBA_DATA_VERSION || "1";
@@ -24,27 +24,66 @@
   }
 
   function formatDelta(n) {
-    if (n == null) return "—";
+    if (n == null) return "7d —";
     var sign = n > 0 ? "+" : "";
-    return sign + n.toLocaleString();
-  }
-
-  function formatEngagement(rate) {
-    if (rate == null) return "—";
-    return (rate * 100).toFixed(2) + "%";
+    return "7d " + sign + n.toLocaleString();
   }
 
   function deltaClass(n) {
-    if (n == null) return "ig-delta--flat";
-    if (n > 0) return "ig-delta--up";
-    if (n < 0) return "ig-delta--down";
-    return "ig-delta--flat";
+    if (n == null) return "igl-chip-delta--flat";
+    if (n > 0) return "igl-chip-delta--up";
+    if (n < 0) return "igl-chip-delta--down";
+    return "igl-chip-delta--flat";
+  }
+
+  function renderChip(row, rank) {
+    var homeClass = row.group === "home" ? " igl-chip--home" : "";
+    return (
+      '<li class="igl-chip' +
+      homeClass +
+      '">' +
+      '<a href="' +
+      esc(row.url) +
+      '" target="_blank" rel="noopener noreferrer" title="@' +
+      esc(row.handle) +
+      ' on Instagram">' +
+      '<span class="igl-chip-rank">#' +
+      rank +
+      "</span>" +
+      '<span class="igl-chip-name">' +
+      esc(row.displayName || row.handle) +
+      "</span>" +
+      '<span class="igl-chip-handle">@' +
+      esc(row.handle) +
+      " · " +
+      esc(row.market) +
+      "</span>" +
+      '<span class="igl-chip-followers">' +
+      esc(formatFollowers(row.followers)) +
+      " followers</span>" +
+      '<span class="igl-chip-delta ' +
+      deltaClass(row.followersDelta7d) +
+      '">' +
+      esc(formatDelta(row.followersDelta7d)) +
+      "</span>" +
+      "</a></li>"
+    );
+  }
+
+  function renderGroup(label, accounts, startRank) {
+    if (!accounts.length) return "";
+    var html = '<div class="igl-group">';
+    html += '<p class="igl-group-label">' + esc(label) + "</p>";
+    html += '<ul class="igl-chips">';
+    accounts.forEach(function (row, i) {
+      html += renderChip(row, startRank + i);
+    });
+    html += "</ul></div>";
+    return html;
   }
 
   function render(data) {
-    var accounts = (data.accounts || []).slice().sort(function (a, b) {
-      return (b.followers ?? -1) - (a.followers ?? -1);
-    });
+    var accounts = (data.accounts || []).slice();
     var meta = document.getElementById("ig-leaderboard-meta");
     if (meta) {
       meta.textContent =
@@ -59,67 +98,29 @@
     }
 
     if (!accounts.length) {
-      root.innerHTML = '<p class="ig-empty">No Instagram accounts configured.</p>';
+      root.innerHTML = '<p class="igl-empty">No Instagram accounts configured.</p>';
       return;
     }
 
-    var html = '<div class="ig-table-wrap"><table class="ig-table">';
-    html +=
-      "<thead><tr>" +
-      "<th scope=\"col\">#</th>" +
-      "<th scope=\"col\">Account</th>" +
-      "<th scope=\"col\">Market</th>" +
-      "<th scope=\"col\">Followers</th>" +
-      "<th scope=\"col\">7d</th>" +
-      "<th scope=\"col\">30d</th>" +
-      "<th scope=\"col\">Engagement</th>" +
-      "</tr></thead><tbody>";
+    var home = accounts
+      .filter(function (a) {
+        return a.group === "home";
+      })
+      .sort(function (a, b) {
+        return (b.followers ?? -1) - (a.followers ?? -1);
+      });
+    var competitors = accounts
+      .filter(function (a) {
+        return a.group !== "home";
+      })
+      .sort(function (a, b) {
+        return (b.followers ?? -1) - (a.followers ?? -1);
+      });
 
-    accounts.forEach(function (row, idx) {
-      var groupClass = row.group === "home" ? "ig-badge--home" : "ig-badge--competitor";
-      var groupLabel = row.group === "home" ? "GBA" : "Competitor";
-      html += "<tr>";
-      html += '<td class="ig-rank">' + (idx + 1) + "</td>";
-      html +=
-        '<td class="ig-account"><a href="' +
-        esc(row.url) +
-        '" target="_blank" rel="noopener noreferrer">@' +
-        esc(row.handle) +
-        "</a>" +
-        '<span class="ig-account-name">' +
-        esc(row.displayName) +
-        "</span>" +
-        '<span class="ig-account-org">' +
-        esc(row.org) +
-        "</span></td>";
-      html +=
-        '<td class="ig-market"><span class="ig-badge ' +
-        groupClass +
-        '">' +
-        esc(groupLabel) +
-        "</span> " +
-        esc(row.market) +
-        "</td>";
-      html += '<td class="ig-followers">' + esc(formatFollowers(row.followers)) + "</td>";
-      html +=
-        '<td class="ig-delta ' +
-        deltaClass(row.followersDelta7d) +
-        '">' +
-        esc(formatDelta(row.followersDelta7d)) +
-        "</td>";
-      html +=
-        '<td class="ig-delta ' +
-        deltaClass(row.followersDelta30d) +
-        '">' +
-        esc(formatDelta(row.followersDelta30d)) +
-        "</td>";
-      html += '<td class="ig-engagement">' + esc(formatEngagement(row.engagementRate)) + "</td>";
-      html += "</tr>";
-    });
-
-    html += "</tbody></table></div>";
+    var html = renderGroup("GBA tourism boards", home, 1);
+    html += renderGroup("Competitor destinations", competitors, home.length + 1);
     if (data.refreshedAtLabel) {
-      html += '<p class="ig-footnote">' + esc(data.refreshedAtLabel) + "</p>";
+      html += '<p class="igl-footnote">' + esc(data.refreshedAtLabel) + "</p>";
     }
     root.innerHTML = html;
   }
@@ -132,7 +133,7 @@
     .then(render)
     .catch(function (err) {
       root.innerHTML =
-        '<p class="ig-err">Could not load IG leaderboard (' +
+        '<p class="igl-err">Could not load IG leaderboard (' +
         esc(err.message) +
         "). Run <code>node scripts/capture-ig-leaderboard.mjs</code>.</p>";
     });

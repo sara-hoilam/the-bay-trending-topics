@@ -1,6 +1,6 @@
 # GBA Pulse — Cloud Run 4: IG competitor followers
 
-You are refreshing **`ig-leaderboard-data.json`** for the **Source Links** tab (last tab), then committing and pushing **`main`**.
+You are refreshing **`ig-leaderboard-data.json`** for the **IG Leaderboard** tab (dedicated panel after Source Links), then committing and pushing **`main`**.
 
 ## Goal
 
@@ -45,7 +45,7 @@ git push origin main
 
 ## Rules
 
-- Do **not** edit `index.html` — the tab loads JSON client-side via `ig-leaderboard-panel.js`.
+- Do **not** edit `index.html` — the IG Leaderboard tab loads JSON client-side via `ig-leaderboard-panel.js`.
 - Do **not** invent follower counts — use numbers visible on the profile or reputable public analytics pages.
 - If Instagram blocks login/bot access, browse each profile manually and record the follower count from the page header.
 - Accounts without a successful capture should be omitted from the snapshot (existing history is preserved).

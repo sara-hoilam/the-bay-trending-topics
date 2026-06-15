@@ -1315,153 +1315,117 @@
     background: #fff;
   }
 
-  /* ─── IG LEADERBOARD (Source Links tab) ─── */
-  .ig-section {
-    margin-bottom: 32px;
-    padding-bottom: 24px;
+  /* ─── IG LEADERBOARD TAB ─── */
+  #panel-igleaderboard main.wrapper {
+    padding-top: 24px;
+  }
+  .igl-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
     border-bottom: 1px solid var(--rule);
   }
-  .ig-header {
-    margin-bottom: 16px;
-  }
-  .ig-header h2 {
+  .igl-header h2 {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 6px;
   }
-  .ig-meta {
+  .igl-meta {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
     letter-spacing: .08em;
     text-transform: uppercase;
     color: var(--muted);
   }
-  .ig-table-wrap {
-    overflow-x: auto;
-    border-top: 1.5px solid var(--ink);
-    border-bottom: 1.5px solid var(--ink);
+  .igl-group {
+    margin-bottom: 28px;
   }
-  .ig-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-  .ig-table thead th {
+  .igl-group-label {
     font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 12px 14px;
-    background: #faf8f4;
-    border-bottom: 1px solid var(--rule);
-    color: var(--muted);
-    white-space: nowrap;
-  }
-  .ig-table tbody tr {
-    border-bottom: 1px solid var(--rule);
-  }
-  .ig-table tbody tr:last-child {
-    border-bottom: none;
-  }
-  .ig-table tbody td {
-    padding: 11px 14px;
-    vertical-align: top;
-    line-height: 1.45;
-  }
-  .ig-rank {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    color: var(--muted);
-    width: 36px;
-  }
-  .ig-account a {
-    font-weight: 600;
-    color: var(--ink);
-    text-decoration: none;
-  }
-  .ig-account a:hover {
-    color: var(--accent2);
-    text-decoration: underline;
-  }
-  .ig-account-name {
-    display: block;
-    font-size: 13px;
-    color: var(--ink);
-    margin-top: 2px;
-  }
-  .ig-account-org {
-    display: block;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: .04em;
-    margin-top: 2px;
-  }
-  .ig-badge {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 9px;
+    font-size: 11px;
     letter-spacing: .08em;
     text-transform: uppercase;
-    padding: 2px 6px;
-    border-radius: 2px;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .igl-chips {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .igl-chip a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 14px;
     border: 1px solid var(--rule);
-    margin-right: 4px;
+    border-radius: 8px;
+    background: #fff;
+    text-decoration: none;
+    color: var(--ink);
+    min-width: 168px;
+    position: relative;
   }
-  .ig-badge--home {
-    background: #e8f0fd;
-    color: var(--neu);
+  .igl-chip a:hover {
+    border-color: #c9a8e8;
+    background: #faf7fd;
+  }
+  .igl-chip--home a {
     border-color: #a5bef5;
+    background: #f8faff;
   }
-  .ig-badge--competitor {
-    background: #fdf6e3;
-    color: var(--mix);
-    border-color: #e8d48a;
-  }
-  .ig-followers {
-    font-family: 'DM Mono', monospace;
-    font-weight: 600;
-    font-size: 13px;
-    white-space: nowrap;
-  }
-  .ig-delta {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    white-space: nowrap;
-  }
-  .ig-delta--up { color: var(--pos); }
-  .ig-delta--down { color: var(--neg); }
-  .ig-delta--flat { color: var(--muted); }
-  .ig-engagement {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    color: var(--muted);
-    white-space: nowrap;
-  }
-  .ig-footnote {
+  .igl-chip-rank {
+    position: absolute;
+    top: 8px;
+    right: 10px;
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     color: var(--muted);
-    margin: 10px 0 0;
+  }
+  .igl-chip-name {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    padding-right: 24px;
+  }
+  .igl-chip-handle {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+  }
+  .igl-chip-followers {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .igl-chip-delta {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .igl-chip-delta--up { color: var(--pos); }
+  .igl-chip-delta--down { color: var(--neg); }
+  .igl-chip-delta--flat { color: var(--muted); }
+  .igl-footnote {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    margin: 0;
     letter-spacing: .04em;
   }
-  .ig-empty, .ig-err {
+  .igl-empty, .igl-err {
     color: var(--muted);
     font-size: 14px;
   }
-  .ig-err { color: var(--neg); }
-  .ig-err code {
+  .igl-err { color: var(--neg); }
+  .igl-err code {
     font-family: 'DM Mono', monospace;
     font-size: 11px;
-  }
-  .sl-divider-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 14px;
   }
 
 </style>
@@ -1479,7 +1443,8 @@
       <button type="button" class="masthead-pill hot" role="tab" id="tab-overall" data-panel="overall" aria-selected="true" title="THE BAY Daily Brief — GBA news scan">📰 Daily Brief</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-trendwatch" data-panel="trendwatch" aria-selected="false" title="Trend Watch dashboards">Trend Watch</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-happenings" data-panel="happenings" aria-selected="false" title="Lifestyle events calendar">Happenings</button>
-      <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="IG competitor followers and approved daily brief source links">Source Links</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Tourism-board Instagram follower leaderboard">IG Leaderboard</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -5218,16 +5183,8 @@
 
 <div id="panel-sourcelinks" class="model-panel" role="tabpanel" aria-labelledby="tab-sourcelinks" hidden>
   <main class="wrapper">
-    <section class="ig-section" aria-labelledby="ig-leaderboard-heading">
-      <div class="ig-header">
-        <h2 id="ig-leaderboard-heading">IG competitor followers</h2>
-        <p class="ig-meta"><span id="ig-leaderboard-meta">Loading…</span> · official tourism-board Instagram accounts</p>
-      </div>
-      <div id="ig-leaderboard-root"></div>
-    </section>
-
-    <h2 class="sl-divider-title">Approved source links</h2>
     <div class="sl-header">
+      <h2>Approved source links</h2>
       <p class="sl-meta"><span id="sl-count">118 sources</span> · daily brief prompt allowlist · 1 link per domain</p>
     </div>
     <div class="sl-toolbar">
@@ -5257,6 +5214,16 @@
   </main>
 </div>
 
+<div id="panel-igleaderboard" class="model-panel" role="tabpanel" aria-labelledby="tab-igleaderboard" hidden>
+  <main class="wrapper">
+    <div class="igl-header">
+      <h2>IG competitor followers</h2>
+      <p class="igl-meta"><span id="ig-leaderboard-meta">Loading…</span> · official tourism-board Instagram accounts</p>
+    </div>
+    <div id="ig-leaderboard-root"></div>
+  </main>
+</div>
+
 <footer>
   <span id="gba-footer-edition">GBA Pulse · 粤港澳大湾区脉搏 · 2026-06-15</span>
   <span>For informational purposes only — verify all data with primary sources</span>
@@ -5283,11 +5250,11 @@
     t.addEventListener("click", function () { show(t.getAttribute("data-panel")); });
   });
   var h = (location.hash || "").replace("#", "");
-  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks"].indexOf(h) !== -1) show(h);
+  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard"].indexOf(h) !== -1) show(h);
 })();
 </script>
 <script>window.GBA_DATA_VERSION = "20260609d";</script>
-<script src="ig-leaderboard-panel.js?v=20260615a" defer></script>
+<script src="ig-leaderboard-panel.js?v=20260615b" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
 <script src="happenings-panel.js?v=20260609d" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
