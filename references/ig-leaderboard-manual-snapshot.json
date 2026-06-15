@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-06-15",
+  "notes": "Live refresh via Instastatistics API — followers as of 2026-06-15; 7d posts from posting-history delta or recent-post cadence.",
+  "accounts": {
+    "scmpnews": { "followers": 648769, "posts7d": 30, "followersGrowthPct7d": 5.4 },
+    "tatlerhongkong": { "followers": 256204, "posts7d": 49, "followersGrowthPct7d": 2.39 },
+    "the_trip_addict": { "followers": 94494, "posts7d": 7 },
+    "sassyhongkong": { "followers": 91246, "posts7d": 8 },
+    "thebayasia": { "followers": 31696, "posts7d": 11 },
+    "greaterbayvibes": { "followers": 17268, "posts7d": 8 }
+  }
+}

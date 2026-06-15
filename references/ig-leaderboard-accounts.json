@@ -1,0 +1,41 @@
+{
+  "description": "GBA Pulse Instagram competitors benchmark — media and lifestyle accounts in the Greater Bay Area.",
+  "accounts": [
+    {
+      "handle": "scmpnews",
+      "displayName": "South China Morning Post",
+      "url": "https://www.instagram.com/scmpnews/",
+      "highlight": false
+    },
+    {
+      "handle": "tatlerhongkong",
+      "displayName": "Tatler HK",
+      "url": "https://www.instagram.com/tatlerhongkong/",
+      "highlight": false
+    },
+    {
+      "handle": "the_trip_addict",
+      "displayName": "The Trip Addict",
+      "url": "https://www.instagram.com/the_trip_addict/",
+      "highlight": false
+    },
+    {
+      "handle": "sassyhongkong",
+      "displayName": "Sassy HK",
+      "url": "https://www.instagram.com/sassyhongkong/",
+      "highlight": false
+    },
+    {
+      "handle": "thebayasia",
+      "displayName": "The Bay",
+      "url": "https://www.instagram.com/thebayasia/",
+      "highlight": true
+    },
+    {
+      "handle": "greaterbayvibes",
+      "displayName": "Greater Bay Vibes",
+      "url": "https://www.instagram.com/greaterbayvibes/",
+      "highlight": false
+    }
+  ]
+}
