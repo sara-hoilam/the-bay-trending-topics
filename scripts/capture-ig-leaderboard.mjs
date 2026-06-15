@@ -55,12 +55,12 @@ function normalizeSnapshot(snapshot) {
 function seedSnapshot() {
   /** Instagram Competitors Benchmark baseline — overwritten by daily capture. */
   return {
-    scmpnews: { followers: 641000, posts7d: 35 },
-    tatlerhk: { followers: 251000, posts7d: 45 },
-    the_trip_addict: { followers: 94000, posts7d: 12 },
-    sassyhk: { followers: 91000, posts7d: 9 },
-    thebayasia: { followers: 30900, posts7d: 6 },
-    greaterbayvibes: { followers: 16500, posts7d: 9 },
+    scmpnews: { followers: 648769, posts7d: 30 },
+    tatlerhongkong: { followers: 256204, posts7d: 50 },
+    the_trip_addict: { followers: 94494, posts7d: 7 },
+    sassyhongkong: { followers: 91246, posts7d: 8 },
+    thebayasia: { followers: 31696, posts7d: 11 },
+    greaterbayvibes: { followers: 17268, posts7d: 8 },
   };
 }
 
@@ -108,6 +108,7 @@ function main() {
       return mergeSnapshot(prev, cfg, {
         followers: snap.followers ?? prev?.followers ?? null,
         posts7d: snap.posts7d ?? prev?.posts7d ?? null,
+        followersGrowthPct7d: snap.followersGrowthPct7d ?? prev?.followersGrowthPct7d ?? null,
       }, today);
     }
     if (prev) {

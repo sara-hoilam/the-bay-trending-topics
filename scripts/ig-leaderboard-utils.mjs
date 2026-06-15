@@ -80,6 +80,8 @@ export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
   }
   nextHistory.sort((a, b) => (a.date < b.date ? -1 : 1));
   const metrics = computeMetrics(nextHistory, today);
+  const followersGrowthPct7d =
+    metrics.followersGrowthPct7d ?? snapshot.followersGrowthPct7d ?? null;
 
   return {
     handle: cfg.handle,
@@ -87,7 +89,7 @@ export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
     url: cfg.url,
     highlight: cfg.highlight === true,
     followers: metrics.followers,
-    followersGrowthPct7d: metrics.followersGrowthPct7d,
+    followersGrowthPct7d,
     posts7d: metrics.posts7d,
     history: nextHistory,
   };
