@@ -108,7 +108,6 @@ function main() {
       return mergeSnapshot(prev, cfg, {
         followers: snap.followers ?? prev?.followers ?? null,
         posts7d: snap.posts7d ?? prev?.posts7d ?? null,
-        followersGrowthPct7d: snap.followersGrowthPct7d ?? prev?.followersGrowthPct7d ?? null,
       }, today);
     }
     if (prev) {

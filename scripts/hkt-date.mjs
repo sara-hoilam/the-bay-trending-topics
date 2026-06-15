@@ -26,3 +26,10 @@ export function hktIsoDateTime(date = new Date()) {
 export function ageHours(iso) {
   return (Date.now() - new Date(iso).getTime()) / 36e5;
 }
+
+/** Add calendar days to an HKT YYYY-MM-DD string. */
+export function hktAddDays(dateStr, days) {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  const utc = new Date(Date.UTC(y, m - 1, d + days));
+  return hktDateStr(utc);
+}

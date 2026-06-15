@@ -9,8 +9,8 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 ## Metrics per account
 
 1. **Followers** — exact count from profile header as of capture date
-2. **Rolling 7-day follower growth %** — computed automatically from history when a snapshot ≥7 days old exists; you only record today's follower count
-3. **Rolling 7-day posting cadence** — number of posts published in the last 7 days (count from profile grid or analytics)
+2. **Rolling 7-day follower growth %** — computed automatically during Google Sheet sync by comparing today's followers to the sheet row from **exactly 7 calendar days ago** (e.g. 15 Jun vs 8 Jun). Leave empty when that reference date is missing.
+3. **Rolling 7-day posting cadence** — number of posts in the last 7 days from Instagram profile API
 
 ## Accounts (fixed order)
 
@@ -27,9 +27,11 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 
 1. Read `references/ig-leaderboard-accounts.json`.
 
-2. For each account, open the Instagram profile and record:
+2. For each account, fetch from Instagram's API (or record from profile):
    - `followers` (integer)
    - `posts7d` (integer — posts in the last 7 days)
+
+   Do **not** set `followersGrowthPct7d` — it is derived from the Google Sheet log during sync.
 
 3. Write `orchestration/ig-leaderboard-snapshot.json`:
 
