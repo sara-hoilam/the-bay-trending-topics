@@ -123,6 +123,15 @@ function main() {
   console.log(
     `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts)`
   );
+
+  if (!process.argv.includes("--no-sheet-sync")) {
+    const sheetPath = path.join(__dirname, "sync-ig-leaderboard-sheet.mjs");
+    try {
+      execFileSync(process.execPath, [sheetPath], { cwd: root, stdio: "inherit" });
+    } catch {
+      console.warn("sync-ig-leaderboard-sheet.mjs failed — leaderboard JSON was still saved");
+    }
+  }
 }
 
 main();
