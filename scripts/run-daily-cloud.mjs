@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Daily GBA Pulse — three cloud Composer 2.5 runs (Trend Watch, Daily Brief, Happenings).
+ * Daily GBA Pulse — four cloud Composer 2.5 runs (Trend Watch, Daily Brief, Happenings, IG Leaderboard).
  *
  * Env:
  *   CURSOR_API_KEY — required
@@ -67,6 +67,7 @@ const RUN_PROMPTS = {
   1: { file: "gba-pulse-cloud-run1-trendwatch.md", label: "Trend Watch" },
   2: { file: "gba-pulse-cloud-run2-daily-brief.md", label: "Daily Brief" },
   3: { file: "gba-pulse-cloud-run3-happenings.md", label: "Happenings" },
+  4: { file: "gba-pulse-cloud-run4-ig-leaderboard.md", label: "IG Leaderboard" },
 };
 
 async function runStep(step, apiKey) {
@@ -141,6 +142,7 @@ async function main() {
 
   if (only === 2 || only == null) await runStep(2, apiKey);
   if (only === 3 || only == null) await runStep(3, apiKey);
+  if (only === 4 || only == null) await runStep(4, apiKey);
 
   console.log("\nDone. Pull main and open index.html, or wait for GitHub Pages.");
 }

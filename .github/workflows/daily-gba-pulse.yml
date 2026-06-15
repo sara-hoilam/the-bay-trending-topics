@@ -1,6 +1,6 @@
 # Daily refresh scheduled 06:00 Hong Kong Time (23:00 UTC).
 # GitHub Actions queue delay is typically ~2–3 h, so runs start ~08:30 HKT and finish ~08:45.
-# Tabs updated: Trend Watch, Daily Brief, Happenings, Source Links (data JSON).
+# Tabs updated: Trend Watch, Daily Brief, Happenings, IG Leaderboard, Source Links (data JSON).
 # Requires repo secret: CURSOR_API_KEY
 name: Daily GBA Pulse
 
@@ -41,7 +41,7 @@ jobs:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
         run: node scripts/diagnose-cloud.mjs
 
-      - name: Cloud agents (Trend Watch + Daily Brief + Happenings)
+      - name: Cloud agents (Trend Watch + Daily Brief + Happenings + IG Leaderboard)
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
@@ -74,6 +74,7 @@ jobs:
             orchestration/fragments/trendwatch.html \
             happenings-events.json \
             source-links-data.json \
+            ig-leaderboard-data.json \
             references/editor-selection-weights.json \
             "Training Data/"
           if git diff --staged --quiet; then

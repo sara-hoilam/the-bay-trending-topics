@@ -1,0 +1,69 @@
+{
+  "description": "Official tourism-board Instagram accounts tracked on GBA Pulse Source Links tab.",
+  "accounts": [
+    {
+      "handle": "discoverhongkong",
+      "displayName": "Discover Hong Kong",
+      "org": "HKTB",
+      "market": "Hong Kong",
+      "group": "home",
+      "url": "https://www.instagram.com/discoverhongkong/"
+    },
+    {
+      "handle": "visitmacao",
+      "displayName": "Visit Macao",
+      "org": "MGTO",
+      "market": "Macao",
+      "group": "home",
+      "url": "https://www.instagram.com/visitmacao/"
+    },
+    {
+      "handle": "visit_singapore",
+      "displayName": "Visit Singapore",
+      "org": "STB",
+      "market": "Singapore",
+      "group": "competitor",
+      "url": "https://www.instagram.com/visit_singapore/"
+    },
+    {
+      "handle": "tourismthailand",
+      "displayName": "Amazing Thailand",
+      "org": "TAT",
+      "market": "Thailand",
+      "group": "competitor",
+      "url": "https://www.instagram.com/tourismthailand/"
+    },
+    {
+      "handle": "visitjapanjp",
+      "displayName": "Visit Japan",
+      "org": "JNTO",
+      "market": "Japan",
+      "group": "competitor",
+      "url": "https://www.instagram.com/visitjapanjp/"
+    },
+    {
+      "handle": "visitkorea.kr",
+      "displayName": "Visit Korea",
+      "org": "KTO",
+      "market": "South Korea",
+      "group": "competitor",
+      "url": "https://www.instagram.com/visitkorea.kr/"
+    },
+    {
+      "handle": "visitlondon",
+      "displayName": "Visit London",
+      "org": "London & Partners",
+      "market": "United Kingdom",
+      "group": "competitor",
+      "url": "https://www.instagram.com/visitlondon/"
+    },
+    {
+      "handle": "dubai",
+      "displayName": "Visit Dubai",
+      "org": "DET",
+      "market": "UAE",
+      "group": "competitor",
+      "url": "https://www.instagram.com/dubai/"
+    }
+  ]
+}
