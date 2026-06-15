@@ -2,6 +2,13 @@ name: IG Leaderboard Sheet Sync
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/ig-leaderboard-sheet-sync.yml"
+      - "scripts/sync-ig-leaderboard-sheet.mjs"
+      - "scripts/capture-ig-leaderboard.mjs"
+      - "scripts/fetch-ig-benchmark.mjs"
 
 run-name: "IG sheet sync · run ${{ github.run_number }}"
 
