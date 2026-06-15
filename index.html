@@ -1072,7 +1072,7 @@
     flex-wrap: wrap;
     gap: 8px;
   }
-  .hp-source-chip a {
+  .hp-source-chip-btn {
     display: flex;
     flex-direction: column;
     gap: 2px;
@@ -1080,13 +1080,21 @@
     border: 1px solid var(--rule);
     border-radius: 8px;
     background: #fff;
-    text-decoration: none;
     color: var(--ink);
     min-width: 140px;
+    cursor: pointer;
+    font: inherit;
+    text-align: left;
   }
-  .hp-source-chip a:hover {
+  .hp-source-chip-btn:hover {
     border-color: #c9a8e8;
     background: #faf7fd;
+  }
+  .hp-source-chip-btn--active,
+  .hp-source-chip-btn--active:hover {
+    border-color: #c9a8e8;
+    background: #faf7fd;
+    box-shadow: 0 0 0 1px #c9a8e8;
   }
   .hp-source-chip-name {
     font-size: 12px;
@@ -5131,7 +5139,7 @@
 </script>
 <script>window.GBA_DATA_VERSION = "20260609d";</script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
-<script src="happenings-panel.js?v=20260609d" defer></script>
+<script src="happenings-panel.js?v=20260615a" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
 <script>
 (function () {
