@@ -1337,85 +1337,95 @@
     text-transform: uppercase;
     color: var(--muted);
   }
-  .igl-group {
-    margin-bottom: 28px;
+  .igl-table-wrap {
+    overflow-x: auto;
+    border-radius: 4px;
+    border: 1px solid #1e3a5f;
   }
-  .igl-group-label {
+  .igl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .igl-table thead th {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: .08em;
+    font-size: 10px;
+    letter-spacing: .1em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 10px;
+    text-align: left;
+    padding: 12px 16px;
+    background: #1e3a5f;
+    color: #fff;
+    white-space: nowrap;
   }
-  .igl-chips {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .igl-chip a {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    padding: 10px 14px;
-    border: 1px solid var(--rule);
-    border-radius: 8px;
+  .igl-table tbody tr {
+    border-bottom: 1px solid var(--rule);
     background: #fff;
-    text-decoration: none;
-    color: var(--ink);
-    min-width: 168px;
-    position: relative;
   }
-  .igl-chip a:hover {
-    border-color: #c9a8e8;
-    background: #faf7fd;
+  .igl-table tbody tr:last-child {
+    border-bottom: none;
   }
-  .igl-chip--home a {
-    border-color: #a5bef5;
-    background: #f8faff;
+  .igl-table tbody td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    line-height: 1.45;
+    color: #1e3a5f;
   }
-  .igl-chip-rank {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    color: var(--muted);
-  }
-  .igl-chip-name {
-    font-size: 12px;
+  .igl-row--highlight td {
+    color: #b8860b;
     font-weight: 600;
-    line-height: 1.3;
-    padding-right: 24px;
   }
-  .igl-chip-handle {
+  .igl-row--highlight .igl-handle {
+    color: #c9a227;
+  }
+  .igl-account a {
+    font-weight: 600;
+    color: inherit;
+    text-decoration: none;
+  }
+  .igl-account a:hover {
+    text-decoration: underline;
+  }
+  .igl-handle {
+    display: block;
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     color: var(--muted);
+    margin-top: 2px;
+    font-weight: 400;
   }
-  .igl-chip-followers {
+  .igl-row--highlight .igl-account a {
+    color: #b8860b;
+  }
+  .igl-followers {
+    font-family: 'DM Mono', monospace;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .igl-growth {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .igl-growth--up { color: var(--pos); }
+  .igl-growth--down { color: var(--neg); }
+  .igl-growth--flat { color: var(--muted); }
+  .igl-row--highlight .igl-growth--up,
+  .igl-row--highlight .igl-growth--down,
+  .igl-row--highlight .igl-growth--flat {
+    color: #b8860b;
+  }
+  .igl-posts {
     font-family: 'DM Mono', monospace;
     font-size: 13px;
-    font-weight: 600;
-    color: var(--ink);
+    white-space: nowrap;
   }
-  .igl-chip-delta {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-  }
-  .igl-chip-delta--up { color: var(--pos); }
-  .igl-chip-delta--down { color: var(--neg); }
-  .igl-chip-delta--flat { color: var(--muted); }
   .igl-footnote {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     color: var(--muted);
-    margin: 0;
+    margin: 10px 0 0;
     letter-spacing: .04em;
   }
   .igl-empty, .igl-err {
@@ -1444,7 +1454,7 @@
       <button type="button" class="masthead-pill" role="tab" id="tab-trendwatch" data-panel="trendwatch" aria-selected="false" title="Trend Watch dashboards">Trend Watch</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-happenings" data-panel="happenings" aria-selected="false" title="Lifestyle events calendar">Happenings</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
-      <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Tourism-board Instagram follower leaderboard">IG Leaderboard</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Instagram competitors benchmark">IG Leaderboard</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -5217,8 +5227,8 @@
 <div id="panel-igleaderboard" class="model-panel" role="tabpanel" aria-labelledby="tab-igleaderboard" hidden>
   <main class="wrapper">
     <div class="igl-header">
-      <h2>IG competitor followers</h2>
-      <p class="igl-meta"><span id="ig-leaderboard-meta">Loading…</span> · official tourism-board Instagram accounts</p>
+      <h2>Instagram competitors benchmark</h2>
+      <p class="igl-meta"><span id="ig-leaderboard-meta">Loading…</span> · GBA media &amp; lifestyle accounts</p>
     </div>
     <div id="ig-leaderboard-root"></div>
   </main>
@@ -5254,7 +5264,7 @@
 })();
 </script>
 <script>window.GBA_DATA_VERSION = "20260609d";</script>
-<script src="ig-leaderboard-panel.js?v=20260615b" defer></script>
+<script src="ig-leaderboard-panel.js?v=20260615c" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
 <script src="happenings-panel.js?v=20260609d" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>

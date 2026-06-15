@@ -1,56 +1,65 @@
-# GBA Pulse — Cloud Run 4: IG competitor followers
+# GBA Pulse — Cloud Run 4: IG competitors benchmark
 
-You are refreshing **`ig-leaderboard-data.json`** for the **IG Leaderboard** tab (dedicated panel after Source Links), then committing and pushing **`main`**.
+You are refreshing **`ig-leaderboard-data.json`** for the **IG Leaderboard** tab, then committing and pushing **`main`**.
 
 ## Goal
 
-Capture **public Instagram follower counts** (and estimated engagement if visible) for every account in `references/ig-leaderboard-accounts.json`. Write a snapshot file, run the merge script, commit, and push.
+Capture public Instagram metrics for the six benchmark accounts in `references/ig-leaderboard-accounts.json`.
+
+## Metrics per account
+
+1. **Followers** — exact count from profile header as of capture date
+2. **Rolling 7-day follower growth %** — computed automatically from history when a snapshot ≥7 days old exists; you only record today's follower count
+3. **Rolling 7-day posting cadence** — number of posts published in the last 7 days (count from profile grid or analytics)
+
+## Accounts (fixed order)
+
+| Handle | Display name |
+|--------|----------------|
+| `scmpnews` | South China Morning Post |
+| `tatlerhk` | Tatler HK |
+| `the_trip_addict` | The Trip Addict |
+| `sassyhk` | Sassy HK |
+| `thebayasia` | The Bay |
+| `greaterbayvibes` | Greater Bay Vibes |
 
 ## Steps
 
-1. Read `references/ig-leaderboard-accounts.json` for the account list (handles, URLs).
+1. Read `references/ig-leaderboard-accounts.json`.
 
-2. For **each** account, open the Instagram profile URL in the browser:
-   - Record **followers** (exact integer from profile header)
-   - Record **posts** count if shown
-   - Record **engagement rate** only if a third-party analytics page shows it; otherwise omit
+2. For each account, open the Instagram profile and record:
+   - `followers` (integer)
+   - `posts7d` (integer — posts in the last 7 days)
 
-3. Write snapshot JSON to `orchestration/ig-leaderboard-snapshot.json`:
+3. Write `orchestration/ig-leaderboard-snapshot.json`:
 
 ```json
 {
-  "discoverhongkong": { "followers": 716900, "engagementRate": 0.0101, "posts": 4200 },
-  "visitmacao": { "followers": 250000 },
-  "visit_singapore": { "followers": 829800 }
+  "scmpnews": { "followers": 641000, "posts7d": 35 },
+  "tatlerhk": { "followers": 251000, "posts7d": 45 },
+  "the_trip_addict": { "followers": 94000, "posts7d": 12 },
+  "sassyhk": { "followers": 91000, "posts7d": 9 },
+  "thebayasia": { "followers": 30900, "posts7d": 6 },
+  "greaterbayvibes": { "followers": 16500, "posts7d": 9 }
 }
 ```
 
-Keys must match `handle` values from the accounts config exactly.
-
-4. Merge snapshot into history and regenerate data:
+4. Merge:
 
 ```bash
 node scripts/capture-ig-leaderboard.mjs --snapshot=orchestration/ig-leaderboard-snapshot.json
 ```
 
-5. Verify the output file exists and `updatedAt` is today (Asia/Hong_Kong).
-
-6. Commit and push to `main`:
+5. Commit and push:
 
 ```bash
 git add ig-leaderboard-data.json orchestration/ig-leaderboard-snapshot.json
-git commit -m "daily: IG leaderboard refresh $(TZ=Asia/Hong_Kong date +%Y-%m-%d)"
+git commit -m "daily: IG benchmark refresh $(TZ=Asia/Hong_Kong date +%Y-%m-%d)"
 git push origin main
 ```
 
 ## Rules
 
-- Do **not** edit `index.html` — the IG Leaderboard tab loads JSON client-side via `ig-leaderboard-panel.js`.
-- Do **not** invent follower counts — use numbers visible on the profile or reputable public analytics pages.
-- If Instagram blocks login/bot access, browse each profile manually and record the follower count from the page header.
-- Accounts without a successful capture should be omitted from the snapshot (existing history is preserved).
-
-## Accounts tracked
-
-Home (GBA): `discoverhongkong`, `visitmacao`  
-Competitors: `visit_singapore`, `tourismthailand`, `visitjapanjp`, `visitkorea.kr`, `visitlondon`, `dubai`
+- Do **not** edit `index.html` — the IG Leaderboard tab loads JSON via `ig-leaderboard-panel.js`.
+- Use numbers visible on the profile; do not invent follower counts.
+- Omit handles you cannot capture (existing history is preserved).

@@ -1,6 +1,5 @@
 /**
- * IG Competitor Followers leaderboard — dedicated IG Leaderboard tab.
- * Chip layout mirrors Happenings lifestyle source bar (ranked follower counts).
+ * IG Competitors Benchmark — dedicated IG Leaderboard tab.
  */
 (function () {
   var DATA_V = window.GBA_DATA_VERSION || "1";
@@ -19,80 +18,37 @@
       var m = n / 1000000;
       return (m % 1 === 0 ? m.toFixed(0) : m.toFixed(1).replace(/\.0$/, "")) + "M";
     }
-    if (n >= 10000) return Math.round(n / 1000) + "K";
+    if (n >= 100000) return Math.round(n / 1000) + "K";
+    if (n >= 10000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "K";
     return n.toLocaleString();
   }
 
-  function formatDelta(n) {
-    if (n == null) return "7d —";
+  function formatGrowthPct(n) {
+    if (n == null) return "—";
     var sign = n > 0 ? "+" : "";
-    return "7d " + sign + n.toLocaleString();
+    return sign + n.toFixed(2).replace(/\.?0+$/, "") + "%";
   }
 
-  function deltaClass(n) {
-    if (n == null) return "igl-chip-delta--flat";
-    if (n > 0) return "igl-chip-delta--up";
-    if (n < 0) return "igl-chip-delta--down";
-    return "igl-chip-delta--flat";
+  function formatPosts7d(n) {
+    if (n == null) return "—";
+    return String(n);
   }
 
-  function renderChip(row, rank) {
-    var homeClass = row.group === "home" ? " igl-chip--home" : "";
-    return (
-      '<li class="igl-chip' +
-      homeClass +
-      '">' +
-      '<a href="' +
-      esc(row.url) +
-      '" target="_blank" rel="noopener noreferrer" title="@' +
-      esc(row.handle) +
-      ' on Instagram">' +
-      '<span class="igl-chip-rank">#' +
-      rank +
-      "</span>" +
-      '<span class="igl-chip-name">' +
-      esc(row.displayName || row.handle) +
-      "</span>" +
-      '<span class="igl-chip-handle">@' +
-      esc(row.handle) +
-      " · " +
-      esc(row.market) +
-      "</span>" +
-      '<span class="igl-chip-followers">' +
-      esc(formatFollowers(row.followers)) +
-      " followers</span>" +
-      '<span class="igl-chip-delta ' +
-      deltaClass(row.followersDelta7d) +
-      '">' +
-      esc(formatDelta(row.followersDelta7d)) +
-      "</span>" +
-      "</a></li>"
-    );
-  }
-
-  function renderGroup(label, accounts, startRank) {
-    if (!accounts.length) return "";
-    var html = '<div class="igl-group">';
-    html += '<p class="igl-group-label">' + esc(label) + "</p>";
-    html += '<ul class="igl-chips">';
-    accounts.forEach(function (row, i) {
-      html += renderChip(row, startRank + i);
-    });
-    html += "</ul></div>";
-    return html;
+  function growthClass(n) {
+    if (n == null) return "";
+    if (n > 0) return "igl-growth--up";
+    if (n < 0) return "igl-growth--down";
+    return "igl-growth--flat";
   }
 
   function render(data) {
-    var accounts = (data.accounts || []).slice();
+    var accounts = data.accounts || [];
     var meta = document.getElementById("ig-leaderboard-meta");
     if (meta) {
       meta.textContent =
+        "As of " +
         (data.updatedAt || "—") +
         " · " +
-        accounts.filter(function (a) {
-          return a.followers != null;
-        }).length +
-        "/" +
         accounts.length +
         " accounts";
     }
@@ -102,23 +58,40 @@
       return;
     }
 
-    var home = accounts
-      .filter(function (a) {
-        return a.group === "home";
-      })
-      .sort(function (a, b) {
-        return (b.followers ?? -1) - (a.followers ?? -1);
-      });
-    var competitors = accounts
-      .filter(function (a) {
-        return a.group !== "home";
-      })
-      .sort(function (a, b) {
-        return (b.followers ?? -1) - (a.followers ?? -1);
-      });
+    var html = '<div class="igl-table-wrap"><table class="igl-table">';
+    html +=
+      "<thead><tr>" +
+      '<th scope="col">Instagram competitors benchmark</th>' +
+      '<th scope="col">Followers</th>' +
+      '<th scope="col">7d growth</th>' +
+      '<th scope="col">7d posts</th>' +
+      "</tr></thead><tbody>";
 
-    var html = renderGroup("GBA tourism boards", home, 1);
-    html += renderGroup("Competitor destinations", competitors, home.length + 1);
+    accounts.forEach(function (row) {
+      var rowClass = row.highlight ? " igl-row--highlight" : "";
+      html += '<tr class="igl-row' + rowClass + '">';
+      html +=
+        '<td class="igl-account">' +
+        '<a href="' +
+        esc(row.url) +
+        '" target="_blank" rel="noopener noreferrer">' +
+        esc(row.displayName || row.handle) +
+        "</a>" +
+        '<span class="igl-handle">@' +
+        esc(row.handle) +
+        "</span></td>";
+      html += '<td class="igl-followers">' + esc(formatFollowers(row.followers)) + "</td>";
+      html +=
+        '<td class="igl-growth ' +
+        growthClass(row.followersGrowthPct7d) +
+        '">' +
+        esc(formatGrowthPct(row.followersGrowthPct7d)) +
+        "</td>";
+      html += '<td class="igl-posts">' + esc(formatPosts7d(row.posts7d)) + "</td>";
+      html += "</tr>";
+    });
+
+    html += "</tbody></table></div>";
     if (data.refreshedAtLabel) {
       html += '<p class="igl-footnote">' + esc(data.refreshedAtLabel) + "</p>";
     }

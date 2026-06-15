@@ -36,13 +36,6 @@ export function parseFollowerCount(raw) {
   return Math.round(n);
 }
 
-export function formatFollowers(n) {
-  if (n == null) return "—";
-  if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, "") + "M";
-  if (n >= 10_000) return Math.round(n / 1000) + "K";
-  return String(n);
-}
-
 function daysBetween(a, b) {
   const da = new Date(a + "T12:00:00");
   const db = new Date(b + "T12:00:00");
@@ -62,47 +55,40 @@ function historyEntryOnOrBefore(history, targetDate, minDaysAgo) {
   return best;
 }
 
-export function computeDeltas(history, today) {
+export function computeMetrics(history, today) {
   const current = (history || []).find((h) => h.date === today);
   const followers = current?.followers ?? null;
+  const posts7d = current?.posts7d ?? null;
   const ref7 = historyEntryOnOrBefore(history, today, 7);
-  const ref30 = historyEntryOnOrBefore(history, today, 30);
-  return {
-    followers,
-    followersDelta7d:
-      followers != null && ref7?.followers != null ? followers - ref7.followers : null,
-    followersDelta30d:
-      followers != null && ref30?.followers != null ? followers - ref30.followers : null,
-  };
+  let followersGrowthPct7d = null;
+  if (followers != null && ref7?.followers != null && ref7.followers > 0) {
+    followersGrowthPct7d =
+      Math.round(((followers - ref7.followers) / ref7.followers) * 10000) / 100;
+  }
+  return { followers, posts7d, followersGrowthPct7d };
 }
 
 export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
   const prevHistory = existing?.history || [];
   const nextHistory = prevHistory.filter((h) => h.date !== today);
-  if (snapshot.followers != null) {
+  if (snapshot.followers != null || snapshot.posts7d != null) {
     nextHistory.push({
       date: today,
-      followers: snapshot.followers,
-      engagementRate: snapshot.engagementRate ?? null,
-      posts: snapshot.posts ?? null,
+      followers: snapshot.followers ?? null,
+      posts7d: snapshot.posts7d ?? null,
     });
   }
   nextHistory.sort((a, b) => (a.date < b.date ? -1 : 1));
-  const deltas = computeDeltas(nextHistory, today);
-  const latest = nextHistory[nextHistory.length - 1] || {};
+  const metrics = computeMetrics(nextHistory, today);
 
   return {
     handle: cfg.handle,
     displayName: cfg.displayName,
-    org: cfg.org,
-    market: cfg.market,
-    group: cfg.group,
     url: cfg.url,
-    followers: deltas.followers,
-    engagementRate: latest.engagementRate ?? snapshot.engagementRate ?? null,
-    posts: latest.posts ?? snapshot.posts ?? null,
-    followersDelta7d: deltas.followersDelta7d,
-    followersDelta30d: deltas.followersDelta30d,
+    highlight: cfg.highlight === true,
+    followers: metrics.followers,
+    followersGrowthPct7d: metrics.followersGrowthPct7d,
+    posts7d: metrics.posts7d,
     history: nextHistory,
   };
 }
@@ -113,11 +99,9 @@ export function buildLeaderboardData(accounts, captureMethod = "manual") {
     generatedFrom: "references/ig-leaderboard-accounts.json",
     updatedAt: today,
     refreshedAt: hktIsoDateTime(),
-    refreshedAtLabel: "Public profile snapshot · Asia/Hong_Kong",
+    refreshedAtLabel: "Follower snapshot as of update date · rolling 7-day growth & posting cadence",
     captureMethod,
-    accounts: accounts
-      .slice()
-      .sort((a, b) => (b.followers ?? -1) - (a.followers ?? -1)),
+    accounts,
   };
 }
 

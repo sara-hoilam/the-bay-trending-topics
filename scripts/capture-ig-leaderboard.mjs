@@ -2,16 +2,12 @@
 /**
  * Refresh ig-leaderboard-data.json from references/ig-leaderboard-accounts.json.
  *
- * Modes:
+ * Snapshot fields per handle:
+ *   { "followers": 641000, "posts7d": 35 }
+ *
+ * Usage:
  *   node scripts/capture-ig-leaderboard.mjs
- *     Merge optional --snapshot JSON file or preserve existing history.
- *   node scripts/capture-ig-leaderboard.mjs --snapshot=path/to/snap.json
- *     snap.json: { "discoverhongkong": { "followers": 716900, "engagementRate": 0.0101 }, ... }
- *
- * Daily cloud agent (prompts/gba-pulse-cloud-run4-ig-leaderboard.md) browses each
- * Instagram profile and writes a snapshot file before this script runs.
- *
- * Usage: node scripts/capture-ig-leaderboard.mjs
+ *   node scripts/capture-ig-leaderboard.mjs --snapshot=orchestration/ig-leaderboard-snapshot.json
  */
 import fs from "fs";
 import {
@@ -35,12 +31,14 @@ function readSnapshotArg() {
 }
 
 function seedSnapshot() {
-  /** Initial public-profile estimates (Checkbb, Jun 2026) — overwritten by daily capture. */
+  /** Instagram Competitors Benchmark baseline — overwritten by daily capture. */
   return {
-    discoverhongkong: { followers: 716900, engagementRate: 0.0101 },
-    visit_singapore: { followers: 829800, engagementRate: 0.0057 },
-    tourismthailand: { followers: 305200, engagementRate: 0.081 },
-    visitlondon: { followers: 1800000, engagementRate: 0.0011 },
+    scmpnews: { followers: 641000, posts7d: 35 },
+    tatlerhk: { followers: 251000, posts7d: 45 },
+    the_trip_addict: { followers: 94000, posts7d: 12 },
+    sassyhk: { followers: 91000, posts7d: 9 },
+    thebayasia: { followers: 30900, posts7d: 6 },
+    greaterbayvibes: { followers: 16500, posts7d: 9 },
   };
 }
 
@@ -58,8 +56,8 @@ function main() {
 
   if (!snapshot && !existing) {
     snapshot = seedSnapshot();
-    captureMethod = "checkbb-seed";
-    console.log("No existing ig-leaderboard-data.json — seeding from public profile estimates.");
+    captureMethod = "benchmark-seed";
+    console.log("No existing ig-leaderboard-data.json — seeding from competitors benchmark.");
   }
 
   const accounts = configs.map((cfg) => {
@@ -69,7 +67,7 @@ function main() {
       return mergeSnapshot(prev, cfg, snap, today);
     }
     if (prev) {
-      return mergeSnapshot(prev, cfg, { followers: prev.followers, engagementRate: prev.engagementRate, posts: prev.posts }, today);
+      return mergeSnapshot(prev, cfg, { followers: prev.followers, posts7d: prev.posts7d }, today);
     }
     return mergeSnapshot(null, cfg, {}, today);
   });

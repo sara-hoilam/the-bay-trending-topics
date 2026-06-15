@@ -1,69 +1,41 @@
 {
-  "description": "Official tourism-board Instagram accounts tracked on GBA Pulse IG Leaderboard tab.",
+  "description": "GBA Pulse Instagram competitors benchmark — media and lifestyle accounts in the Greater Bay Area.",
   "accounts": [
     {
-      "handle": "discoverhongkong",
-      "displayName": "Discover Hong Kong",
-      "org": "HKTB",
-      "market": "Hong Kong",
-      "group": "home",
-      "url": "https://www.instagram.com/discoverhongkong/"
+      "handle": "scmpnews",
+      "displayName": "South China Morning Post",
+      "url": "https://www.instagram.com/scmpnews/",
+      "highlight": false
     },
     {
-      "handle": "visitmacao",
-      "displayName": "Visit Macao",
-      "org": "MGTO",
-      "market": "Macao",
-      "group": "home",
-      "url": "https://www.instagram.com/visitmacao/"
+      "handle": "tatlerhk",
+      "displayName": "Tatler HK",
+      "url": "https://www.instagram.com/tatlerhk/",
+      "highlight": false
     },
     {
-      "handle": "visit_singapore",
-      "displayName": "Visit Singapore",
-      "org": "STB",
-      "market": "Singapore",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visit_singapore/"
+      "handle": "the_trip_addict",
+      "displayName": "The Trip Addict",
+      "url": "https://www.instagram.com/the_trip_addict/",
+      "highlight": false
     },
     {
-      "handle": "tourismthailand",
-      "displayName": "Amazing Thailand",
-      "org": "TAT",
-      "market": "Thailand",
-      "group": "competitor",
-      "url": "https://www.instagram.com/tourismthailand/"
+      "handle": "sassyhk",
+      "displayName": "Sassy HK",
+      "url": "https://www.instagram.com/sassyhk/",
+      "highlight": false
     },
     {
-      "handle": "visitjapanjp",
-      "displayName": "Visit Japan",
-      "org": "JNTO",
-      "market": "Japan",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visitjapanjp/"
+      "handle": "thebayasia",
+      "displayName": "The Bay",
+      "url": "https://www.instagram.com/thebayasia/",
+      "highlight": true
     },
     {
-      "handle": "visitkorea.kr",
-      "displayName": "Visit Korea",
-      "org": "KTO",
-      "market": "South Korea",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visitkorea.kr/"
-    },
-    {
-      "handle": "visitlondon",
-      "displayName": "Visit London",
-      "org": "London & Partners",
-      "market": "United Kingdom",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visitlondon/"
-    },
-    {
-      "handle": "dubai",
-      "displayName": "Visit Dubai",
-      "org": "DET",
-      "market": "UAE",
-      "group": "competitor",
-      "url": "https://www.instagram.com/dubai/"
+      "handle": "greaterbayvibes",
+      "displayName": "Greater Bay Vibes",
+      "url": "https://www.instagram.com/greaterbayvibes/",
+      "highlight": false
     }
   ]
 }

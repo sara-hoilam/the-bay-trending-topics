@@ -1,149 +1,105 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-15",
-  "refreshedAt": "2026-06-15T15:00:43+08:00",
-  "refreshedAtLabel": "Public profile snapshot · Asia/Hong_Kong",
-  "captureMethod": "checkbb-seed",
+  "refreshedAt": "2026-06-15T15:50:52+08:00",
+  "refreshedAtLabel": "Follower snapshot as of update date · rolling 7-day growth & posting cadence",
+  "captureMethod": "benchmark-seed",
   "accounts": [
     {
-      "handle": "visitlondon",
-      "displayName": "Visit London",
-      "org": "London & Partners",
-      "market": "United Kingdom",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visitlondon/",
-      "followers": 1800000,
-      "engagementRate": 0.0011,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
+      "handle": "scmpnews",
+      "displayName": "South China Morning Post",
+      "url": "https://www.instagram.com/scmpnews/",
+      "highlight": false,
+      "followers": 641000,
+      "followersGrowthPct7d": null,
+      "posts7d": 35,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 1800000,
-          "engagementRate": 0.0011,
-          "posts": null
+          "followers": 641000,
+          "posts7d": 35
         }
       ]
     },
     {
-      "handle": "visit_singapore",
-      "displayName": "Visit Singapore",
-      "org": "STB",
-      "market": "Singapore",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visit_singapore/",
-      "followers": 829800,
-      "engagementRate": 0.0057,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
+      "handle": "tatlerhk",
+      "displayName": "Tatler HK",
+      "url": "https://www.instagram.com/tatlerhk/",
+      "highlight": false,
+      "followers": 251000,
+      "followersGrowthPct7d": null,
+      "posts7d": 45,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 829800,
-          "engagementRate": 0.0057,
-          "posts": null
+          "followers": 251000,
+          "posts7d": 45
         }
       ]
     },
     {
-      "handle": "discoverhongkong",
-      "displayName": "Discover Hong Kong",
-      "org": "HKTB",
-      "market": "Hong Kong",
-      "group": "home",
-      "url": "https://www.instagram.com/discoverhongkong/",
-      "followers": 716900,
-      "engagementRate": 0.0101,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
+      "handle": "the_trip_addict",
+      "displayName": "The Trip Addict",
+      "url": "https://www.instagram.com/the_trip_addict/",
+      "highlight": false,
+      "followers": 94000,
+      "followersGrowthPct7d": null,
+      "posts7d": 12,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 716900,
-          "engagementRate": 0.0101,
-          "posts": null
+          "followers": 94000,
+          "posts7d": 12
         }
       ]
     },
     {
-      "handle": "tourismthailand",
-      "displayName": "Amazing Thailand",
-      "org": "TAT",
-      "market": "Thailand",
-      "group": "competitor",
-      "url": "https://www.instagram.com/tourismthailand/",
-      "followers": 305200,
-      "engagementRate": 0.081,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
+      "handle": "sassyhk",
+      "displayName": "Sassy HK",
+      "url": "https://www.instagram.com/sassyhk/",
+      "highlight": false,
+      "followers": 91000,
+      "followersGrowthPct7d": null,
+      "posts7d": 9,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 305200,
-          "engagementRate": 0.081,
-          "posts": null
+          "followers": 91000,
+          "posts7d": 9
         }
       ]
     },
     {
-      "handle": "visitmacao",
-      "displayName": "Visit Macao",
-      "org": "MGTO",
-      "market": "Macao",
-      "group": "home",
-      "url": "https://www.instagram.com/visitmacao/",
-      "followers": null,
-      "engagementRate": null,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
-      "history": []
+      "handle": "thebayasia",
+      "displayName": "The Bay",
+      "url": "https://www.instagram.com/thebayasia/",
+      "highlight": true,
+      "followers": 30900,
+      "followersGrowthPct7d": null,
+      "posts7d": 6,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "followers": 30900,
+          "posts7d": 6
+        }
+      ]
     },
     {
-      "handle": "visitjapanjp",
-      "displayName": "Visit Japan",
-      "org": "JNTO",
-      "market": "Japan",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visitjapanjp/",
-      "followers": null,
-      "engagementRate": null,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
-      "history": []
-    },
-    {
-      "handle": "visitkorea.kr",
-      "displayName": "Visit Korea",
-      "org": "KTO",
-      "market": "South Korea",
-      "group": "competitor",
-      "url": "https://www.instagram.com/visitkorea.kr/",
-      "followers": null,
-      "engagementRate": null,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
-      "history": []
-    },
-    {
-      "handle": "dubai",
-      "displayName": "Visit Dubai",
-      "org": "DET",
-      "market": "UAE",
-      "group": "competitor",
-      "url": "https://www.instagram.com/dubai/",
-      "followers": null,
-      "engagementRate": null,
-      "posts": null,
-      "followersDelta7d": null,
-      "followersDelta30d": null,
-      "history": []
+      "handle": "greaterbayvibes",
+      "displayName": "Greater Bay Vibes",
+      "url": "https://www.instagram.com/greaterbayvibes/",
+      "highlight": false,
+      "followers": 16500,
+      "followersGrowthPct7d": null,
+      "posts7d": 9,
+      "history": [
+        {
+          "date": "2026-06-15",
+          "followers": 16500,
+          "posts7d": 9
+        }
+      ]
     }
   ]
 }
