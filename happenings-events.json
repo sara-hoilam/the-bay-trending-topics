@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-06-14",
+  "updatedAt": "2026-06-15",
   "highlightScoreThreshold": 24,
   "highlightedCount": 54,
   "events": [
@@ -145,17 +145,6 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32074062.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "'Vivienne Westwood & Jewellery' exhibition makes South China debut in Macao",
-      "start": "2026-06-01",
-      "end": "2026-07-31",
-      "region": "macao",
-      "location": "Macao",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/01/content_32073745.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -1463,17 +1452,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1483,6 +1461,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 18,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
     },
     {
       "title": "HKTDC Education & Careers Expo 2027 (HKCEC)",
