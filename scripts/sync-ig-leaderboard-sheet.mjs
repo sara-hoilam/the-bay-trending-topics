@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
  * Upsert today's IG leaderboard snapshot into Google Sheets.
+ * followers_growth_pct_7d is computed from sheet history (today vs 7 calendar days ago).
  *
  * Env:
  *   GOOGLE_SHEETS_IG_LEADERBOARD_ID  — spreadsheet ID from the sheet URL
@@ -12,13 +13,13 @@
  *   node scripts/sync-ig-leaderboard-sheet.mjs
  *   node scripts/sync-ig-leaderboard-sheet.mjs --dry-run
  */
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from "url";
-import { loadLeaderboardData } from "./ig-leaderboard-utils.mjs";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const root = path.join(__dirname, "..");
+import {
+  growthPctFromSheetRows,
+  loadLeaderboardData,
+  parseFollowerCount,
+  writeLeaderboardData,
+} from "./ig-leaderboard-utils.mjs";
+import { hktAddDays } from "./hkt-date.mjs";
 
 const HEADERS = [
   "date",
@@ -54,6 +55,22 @@ async function loadGoogleApis() {
 
 function quoteTabName(tab) {
   return `'${String(tab).replace(/'/g, "''")}'`;
+}
+
+function parseSheetRows(values) {
+  if (!values?.length) return [];
+  const [header, ...rows] = values;
+  const isHeader = header?.[0] === HEADERS[0];
+  const dataRows = isHeader ? rows : values;
+  const parsed = [];
+  for (const row of dataRows) {
+    const date = row?.[0];
+    const handle = row?.[1];
+    const followers = parseFollowerCount(row?.[3]);
+    if (!date || !handle || followers == null) continue;
+    parsed.push({ date: String(date), handle: String(handle), followers });
+  }
+  return parsed;
 }
 
 function rowsFromData(data) {
@@ -106,12 +123,18 @@ async function getSheetsClient() {
   return { sheets, spreadsheetId, tabName };
 }
 
+async function readSheetRows(sheets, spreadsheetId, tabName) {
+  const range = `${quoteTabName(tabName)}!A:G`;
+  const res = await sheets.spreadsheets.values.get({ spreadsheetId, range });
+  return parseSheetRows(res.data.values ?? []);
+}
+
 async function ensureHeader(sheets, spreadsheetId, tabName) {
   const range = `${quoteTabName(tabName)}!A1:G1`;
   const res = await sheets.spreadsheets.values.get({ spreadsheetId, range });
   const firstRow = res.data.values?.[0] ?? [];
   const hasHeader = firstRow[0] === HEADERS[0];
-  if (hasHeader) return 1;
+  if (hasHeader) return;
 
   await sheets.spreadsheets.values.update({
     spreadsheetId,
@@ -120,7 +143,6 @@ async function ensureHeader(sheets, spreadsheetId, tabName) {
     requestBody: { values: [HEADERS] },
   });
   console.log(`Wrote header row to ${tabName}`);
-  return 1;
 }
 
 async function findTodayRowIndexes(sheets, spreadsheetId, tabName, today) {
@@ -174,6 +196,28 @@ async function appendRows(sheets, spreadsheetId, tabName, rows) {
   });
 }
 
+function applyGrowthFromSheet(data, sheetRows) {
+  const today = data.updatedAt;
+  const refDate = hktAddDays(today, -7);
+  let withGrowth = 0;
+
+  for (const account of data.accounts || []) {
+    const growth = growthPctFromSheetRows(
+      sheetRows,
+      account.handle,
+      today,
+      account.followers
+    );
+    account.followersGrowthPct7d = growth;
+    if (growth != null) withGrowth++;
+  }
+
+  console.log(
+    `7d growth from sheet: ${withGrowth}/${data.accounts?.length ?? 0} accounts (ref date ${refDate})`
+  );
+  return data;
+}
+
 async function main() {
   const data = loadLeaderboardData();
   if (!data?.updatedAt || !data.accounts?.length) {
@@ -186,6 +230,11 @@ async function main() {
 
   const { sheets, spreadsheetId, tabName } = client;
   const today = data.updatedAt;
+
+  await ensureHeader(sheets, spreadsheetId, tabName);
+  const sheetRows = await readSheetRows(sheets, spreadsheetId, tabName);
+  applyGrowthFromSheet(data, sheetRows);
+
   const rows = rowsFromData(data);
 
   if (dryRun) {
@@ -196,7 +245,8 @@ async function main() {
     return 0;
   }
 
-  await ensureHeader(sheets, spreadsheetId, tabName);
+  writeLeaderboardData(data);
+
   const existing = await findTodayRowIndexes(sheets, spreadsheetId, tabName, today);
   if (existing.length) {
     await deleteRows(sheets, spreadsheetId, tabName, existing);

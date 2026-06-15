@@ -1,9 +1,9 @@
 {
   "capturedAt": "2026-06-15",
-  "notes": "Live refresh via Instastatistics API — followers as of 2026-06-15; 7d posts from posting-history delta or recent-post cadence.",
+  "notes": "Manual supplement when Instagram API is rate-limited. Growth % is computed from Google Sheet history, not stored here.",
   "accounts": {
-    "scmpnews": { "followers": 648769, "posts7d": 30, "followersGrowthPct7d": 5.4 },
-    "tatlerhongkong": { "followers": 256204, "posts7d": 49, "followersGrowthPct7d": 2.39 },
+    "scmpnews": { "followers": 648769, "posts7d": 30 },
+    "tatlerhongkong": { "followers": 256204, "posts7d": 49 },
     "the_trip_addict": { "followers": 94494, "posts7d": 7 },
     "sassyhongkong": { "followers": 91246, "posts7d": 8 },
     "thebayasia": { "followers": 31696, "posts7d": 11 },

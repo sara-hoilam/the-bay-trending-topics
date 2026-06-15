@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { hktDateStr, hktIsoDateTime } from "./hkt-date.mjs";
+import { hktAddDays, hktDateStr, hktIsoDateTime } from "./hkt-date.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -36,36 +36,23 @@ export function parseFollowerCount(raw) {
   return Math.round(n);
 }
 
-function daysBetween(a, b) {
-  const da = new Date(a + "T12:00:00");
-  const db = new Date(b + "T12:00:00");
-  return Math.round((db - da) / 86400000);
-}
-
-function historyEntryOnOrBefore(history, targetDate, minDaysAgo) {
-  const sorted = (history || [])
-    .slice()
-    .filter((h) => h.date && h.followers != null)
-    .sort((a, b) => (a.date < b.date ? -1 : 1));
-  let best = null;
-  for (const entry of sorted) {
-    const gap = daysBetween(entry.date, targetDate);
-    if (gap >= minDaysAgo) best = entry;
-  }
-  return best;
-}
-
 export function computeMetrics(history, today) {
   const current = (history || []).find((h) => h.date === today);
   const followers = current?.followers ?? null;
   const posts7d = current?.posts7d ?? null;
-  const ref7 = historyEntryOnOrBefore(history, today, 7);
-  let followersGrowthPct7d = null;
-  if (followers != null && ref7?.followers != null && ref7.followers > 0) {
-    followersGrowthPct7d =
-      Math.round(((followers - ref7.followers) / ref7.followers) * 10000) / 100;
-  }
-  return { followers, posts7d, followersGrowthPct7d };
+  return { followers, posts7d, followersGrowthPct7d: null };
+}
+
+/** Rolling 7d follower growth % from sheet rows: today vs exactly 7 calendar days ago. */
+export function growthPctFromSheetRows(sheetRows, handle, today, todayFollowers) {
+  if (todayFollowers == null) return null;
+  const refDate = hktAddDays(today, -7);
+  const refRow = (sheetRows || []).find(
+    (row) => row.date === refDate && row.handle === handle
+  );
+  const refFollowers = refRow?.followers;
+  if (refFollowers == null || refFollowers <= 0) return null;
+  return Math.round(((todayFollowers - refFollowers) / refFollowers) * 10000) / 100;
 }
 
 export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
@@ -80,8 +67,6 @@ export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
   }
   nextHistory.sort((a, b) => (a.date < b.date ? -1 : 1));
   const metrics = computeMetrics(nextHistory, today);
-  const followersGrowthPct7d =
-    metrics.followersGrowthPct7d ?? snapshot.followersGrowthPct7d ?? null;
 
   return {
     handle: cfg.handle,
@@ -89,7 +74,7 @@ export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
     url: cfg.url,
     highlight: cfg.highlight === true,
     followers: metrics.followers,
-    followersGrowthPct7d,
+    followersGrowthPct7d: null,
     posts7d: metrics.posts7d,
     history: nextHistory,
   };
