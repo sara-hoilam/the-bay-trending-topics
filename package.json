@@ -21,6 +21,7 @@
     "happenings:generate": "node scripts/generate-happenings-data.mjs",
     "ig:capture": "node scripts/capture-ig-leaderboard.mjs",
     "ig:refresh": "node scripts/capture-ig-leaderboard.mjs --refresh",
+    "ig:sheet-sync": "node scripts/sync-ig-leaderboard-sheet.mjs",
     "ticketflap:fetch": "node scripts/fetch-ticketflap-events.mjs",
     "trendwatch:prune": "node scripts/prune-trendwatch-gba.mjs",
     "trendwatch:enrich": "node scripts/enrich-trendwatch-metadata.mjs"

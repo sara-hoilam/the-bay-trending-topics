@@ -1,0 +1,33 @@
+name: IG Leaderboard Sheet Sync
+
+on:
+  workflow_dispatch:
+
+run-name: "IG sheet sync · run ${{ github.run_number }}"
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Refresh IG metrics and sync Google Sheet
+        env:
+          GOOGLE_SHEETS_IG_LEADERBOARD_ID: ${{ secrets.GOOGLE_SHEETS_IG_LEADERBOARD_ID }}
+          GOOGLE_SHEETS_IG_TAB: ${{ secrets.GOOGLE_SHEETS_IG_TAB }}
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
+        run: npm run ig:refresh

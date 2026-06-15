@@ -60,6 +60,11 @@ jobs:
         run: npm install
 
       - name: Post-pipeline (regenerate data, verify, merge)
+        env:
+          GOOGLE_SHEETS_IG_LEADERBOARD_ID: ${{ secrets.GOOGLE_SHEETS_IG_LEADERBOARD_ID }}
+          GOOGLE_SHEETS_IG_TAB: ${{ secrets.GOOGLE_SHEETS_IG_TAB }}
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
         run: node scripts/run-daily-post.mjs
 
       - name: Commit post-pipeline artifacts if needed

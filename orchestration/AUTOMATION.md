@@ -31,7 +31,10 @@ Skipped in automation: `claude.html`, `composer.html`, `chatgpt.html`.
 4. **GitHub Pages** (if not already)  
    Settings → Pages → deploy from branch `main`, folder `/` (root `index.html`).
 
-5. **Optional:** restrict who can push to `main` (branch protection) but allow `gba-pulse-bot` / Actions.
+5. **IG Leaderboard Google Sheet (optional)**  
+   See `references/ig-leaderboard-google-sheet.md` — share the sheet with a service account and set `GOOGLE_SHEETS_IG_LEADERBOARD_ID` + `GOOGLE_SHEETS_CREDENTIALS` secrets.
+
+6. **Optional:** restrict who can push to `main` (branch protection) but allow `gba-pulse-bot` / Actions.
 
 ## Manual test
 
