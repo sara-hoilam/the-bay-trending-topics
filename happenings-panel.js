@@ -69,6 +69,7 @@
     year: hktInit.year,
     month: hktInit.month,
     filter: "all",
+    sourceFilter: null,
     events: [],
     sources: [],
     eventCountByDomain: {},
@@ -164,6 +165,11 @@
     return normalizeRegion(ev) === filter;
   }
 
+  function matchesSourceFilter(ev) {
+    if (!state.sourceFilter) return true;
+    return ev.sourceDomain === state.sourceFilter;
+  }
+
   function eventOverlapsMonth(ev, year, month) {
     var start = parseDate(ev.start);
     var end = parseDate(ev.end || ev.start);
@@ -176,6 +182,7 @@
     var d = new Date(year, month, day);
     return state.events.filter(function (ev) {
       if (!matchesFilter(ev, filter)) return false;
+      if (!matchesSourceFilter(ev)) return false;
       var start = parseDate(ev.start);
       var end = parseDate(ev.end || ev.start);
       return d >= start && d <= end;
@@ -185,7 +192,11 @@
   function filteredEventsForMonth(year, month, filter) {
     return state.events
       .filter(function (ev) {
-        return eventOverlapsMonth(ev, year, month) && matchesFilter(ev, filter);
+        return (
+          eventOverlapsMonth(ev, year, month) &&
+          matchesFilter(ev, filter) &&
+          matchesSourceFilter(ev)
+        );
       })
       .sort(function (a, b) {
         return parseDate(a.start) - parseDate(b.start);
@@ -278,12 +289,17 @@
     html += '<ul class="hp-sources-chips">';
     state.sources.forEach(function (src) {
       var count = state.eventCountByDomain[src.domain] || 0;
+      var isActive = state.sourceFilter === src.domain;
       html +=
         '<li class="hp-source-chip">' +
-        '<a href="' +
-        esc(src.url) +
-        '" target="_blank" rel="noopener noreferrer" title="' +
+        '<button type="button" class="hp-source-chip-btn' +
+        (isActive ? " hp-source-chip-btn--active" : "") +
+        '" data-source-filter="' +
         esc(src.domain) +
+        '" aria-pressed="' +
+        isActive +
+        '" title="Filter by ' +
+        esc(src.displayName || src.domain) +
         '">' +
         '<span class="hp-source-chip-name">' +
         esc(src.displayName || src.domain) +
@@ -291,7 +307,7 @@
         '<span class="hp-source-chip-count">' +
         count +
         " events</span>" +
-        "</a></li>";
+        "</button></li>";
     });
     html += "</ul></div>";
     return html;
@@ -414,6 +430,13 @@
     root.querySelectorAll("[data-filter]").forEach(function (btn) {
       btn.addEventListener("click", function () {
         state.filter = btn.getAttribute("data-filter");
+        render();
+      });
+    });
+    root.querySelectorAll("[data-source-filter]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var domain = btn.getAttribute("data-source-filter");
+        state.sourceFilter = state.sourceFilter === domain ? null : domain;
         render();
       });
     });
