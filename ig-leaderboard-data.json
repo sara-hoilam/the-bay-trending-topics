@@ -1,9 +1,9 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
-  "updatedAt": "2026-06-15",
-  "refreshedAt": "2026-06-15T16:28:35+08:00",
-  "refreshedAtLabel": "Follower snapshot as of update date · rolling 7-day growth & posting cadence",
-  "captureMethod": "agent-snapshot",
+  "updatedAt": "2026-06-16",
+  "refreshedAt": "2026-06-16T11:02:22+08:00",
+  "refreshedAtLabel": "Follower snapshot as of update date · rolling 7-day growth · today's & 7-day post counts",
+  "captureMethod": "public-refresh",
   "accounts": [
     {
       "handle": "scmpnews",
@@ -11,13 +11,20 @@
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
       "followers": 648769,
-      "followersGrowthPct7d": 5.4,
+      "followersGrowthPct7d": null,
       "posts7d": 30,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
           "followers": 648769,
           "posts7d": 30
+        },
+        {
+          "date": "2026-06-16",
+          "followers": 648769,
+          "posts7d": 30,
+          "postsToday": null
         }
       ]
     },
@@ -27,13 +34,20 @@
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
       "followers": 256204,
-      "followersGrowthPct7d": 2.39,
+      "followersGrowthPct7d": null,
       "posts7d": 49,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
           "followers": 256204,
           "posts7d": 49
+        },
+        {
+          "date": "2026-06-16",
+          "followers": 256204,
+          "posts7d": 49,
+          "postsToday": null
         }
       ]
     },
@@ -45,11 +59,18 @@
       "followers": 94494,
       "followersGrowthPct7d": null,
       "posts7d": 7,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
           "followers": 94494,
           "posts7d": 7
+        },
+        {
+          "date": "2026-06-16",
+          "followers": 94494,
+          "posts7d": 7,
+          "postsToday": null
         }
       ]
     },
@@ -61,11 +82,18 @@
       "followers": 91246,
       "followersGrowthPct7d": null,
       "posts7d": 8,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
           "followers": 91246,
           "posts7d": 8
+        },
+        {
+          "date": "2026-06-16",
+          "followers": 91246,
+          "posts7d": 8,
+          "postsToday": null
         }
       ]
     },
@@ -77,11 +105,18 @@
       "followers": 31696,
       "followersGrowthPct7d": null,
       "posts7d": 11,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
           "followers": 31696,
           "posts7d": 11
+        },
+        {
+          "date": "2026-06-16",
+          "followers": 31696,
+          "posts7d": 11,
+          "postsToday": null
         }
       ]
     },
@@ -93,11 +128,18 @@
       "followers": 17268,
       "followersGrowthPct7d": null,
       "posts7d": 8,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
           "followers": 17268,
           "posts7d": 8
+        },
+        {
+          "date": "2026-06-16",
+          "followers": 17268,
+          "posts7d": 8,
+          "postsToday": null
         }
       ]
     }
