@@ -59,8 +59,8 @@ If secrets are missing, sync is skipped with a log message (refresh still succee
 
 | Column | Source |
 |--------|--------|
-| `followers` | Instagram `web_profile_info` API only (`scripts/fetch-ig-benchmark.mjs`) |
-| `posts_7d` | Instagram profile recent posts (same API) |
+| `followers` | Instagram `web_profile_info` API (`scripts/fetch-ig-benchmark.mjs`) |
+| `posts_7d` | Instagram GraphQL timeline pagination — full 7-day window, not just the first ~12 posts |
 | `followers_growth_pct_7d` | **Google Sheet history** — compares today vs exactly 7 calendar days ago (e.g. 15 Jun vs 8 Jun). Empty if the reference date has no row for that handle. |
 
 Growth is written to both the sheet and `ig-leaderboard-data.json` during sheet sync.
