@@ -1,12 +1,37 @@
 {
   "capturedAt": "2026-06-16",
   "notes": [
-    "scmpnews: fetch failed (HTTP 429)",
-    "tatlerhongkong: fetch failed (HTTP 429)",
-    "the_trip_addict: fetch failed (HTTP 429)",
-    "sassyhongkong: fetch failed (HTTP 429)",
-    "thebayasia: fetch failed (HTTP 429)",
-    "greaterbayvibes: fetch failed (HTTP 429)"
+    "scmpnews: 648,930 followers, 12 posts/7d (instagram-api)",
+    "tatlerhongkong: 256,360 followers, 9 posts/7d (instagram-api)",
+    "the_trip_addict: 94,498 followers, 8 posts/7d (instagram-api)",
+    "sassyhongkong: 91,248 followers, 8 posts/7d (instagram-api)",
+    "thebayasia: 31,748 followers, 12 posts/7d (instagram-api)",
+    "greaterbayvibes: 17,285 followers, 8 posts/7d (instagram-api)"
   ],
-  "accounts": {}
+  "accounts": {
+    "scmpnews": {
+      "followers": 648930,
+      "posts7d": 12
+    },
+    "tatlerhongkong": {
+      "followers": 256360,
+      "posts7d": 9
+    },
+    "the_trip_addict": {
+      "followers": 94498,
+      "posts7d": 8
+    },
+    "sassyhongkong": {
+      "followers": 91248,
+      "posts7d": 8
+    },
+    "thebayasia": {
+      "followers": 31748,
+      "posts7d": 12
+    },
+    "greaterbayvibes": {
+      "followers": 17285,
+      "posts7d": 8
+    }
+  }
 }
