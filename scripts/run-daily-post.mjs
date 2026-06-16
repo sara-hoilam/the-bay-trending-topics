@@ -71,7 +71,7 @@ console.log(`Daily post-pipeline (HKT ${today})`);
 
 run("generate-source-links-data.mjs");
 run("generate-happenings-data.mjs");
-run("capture-ig-leaderboard.mjs");
+run("capture-ig-leaderboard.mjs", ["--refresh"]);
 run("prune-trendwatch-gba.mjs");
 run("enrich-trendwatch-metadata.mjs");
 ensureDailyBriefOverall();

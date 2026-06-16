@@ -58,13 +58,22 @@ export function growthPctFromSheetRows(sheetRows, handle, today, todayFollowers)
 
 export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
   const prevHistory = existing?.history || [];
+  const prevToday = prevHistory.find((h) => h.date === today);
   const nextHistory = prevHistory.filter((h) => h.date !== today);
-  if (snapshot.followers != null || snapshot.posts7d != null || snapshot.postsToday != null) {
+
+  const hasUpdate =
+    snapshot.followers != null ||
+    "posts7d" in snapshot ||
+    "postsToday" in snapshot;
+
+  if (hasUpdate) {
     nextHistory.push({
       date: today,
-      followers: snapshot.followers ?? null,
-      posts7d: snapshot.posts7d ?? null,
-      postsToday: snapshot.postsToday ?? null,
+      followers: snapshot.followers ?? prevToday?.followers ?? null,
+      posts7d: "posts7d" in snapshot ? snapshot.posts7d : (prevToday?.posts7d ?? null),
+      postsToday: "postsToday" in snapshot
+        ? snapshot.postsToday
+        : (prevToday?.postsToday ?? null),
     });
   }
   nextHistory.sort((a, b) => (a.date < b.date ? -1 : 1));
