@@ -1,9 +1,9 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-16",
-  "refreshedAt": "2026-06-16T10:04:55+08:00",
+  "refreshedAt": "2026-06-16T10:06:52+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · rolling 7-day growth & posting cadence",
-  "captureMethod": "agent-snapshot",
+  "captureMethod": "history-preserve",
   "accounts": [
     {
       "handle": "scmpnews",
