@@ -8,6 +8,7 @@
  * Usage:
  *   node scripts/capture-ig-leaderboard.mjs
  *   node scripts/capture-ig-leaderboard.mjs --snapshot=orchestration/ig-leaderboard-snapshot.json
+ *   node scripts/capture-ig-leaderboard.mjs --refresh
  */
 import fs from "fs";
 import path from "path";
@@ -45,15 +46,42 @@ function normalizeSnapshot(snapshot) {
   const out = {};
   for (const [handle, val] of Object.entries(snapshot)) {
     if (handle === "capturedAt" || handle === "notes") continue;
-    if (val && typeof val === "object" && ("followers" in val || "posts7d" in val || "postsToday" in val)) {
+    if (
+      val &&
+      typeof val === "object" &&
+      ("followers" in val || "posts7d" in val || "postsToday" in val)
+    ) {
       out[handle] = val;
     }
   }
   return Object.keys(out).length ? out : null;
 }
 
+/** Fetched API data wins; manual snapshot only fills missing followers. */
+function mergeFetchedAndManual(fetched, manual) {
+  const out = { ...fetched };
+  for (const [handle, manualSnap] of Object.entries(manual || {})) {
+    if (!out[handle]) {
+      out[handle] = { followers: manualSnap.followers ?? null };
+      continue;
+    }
+    if (out[handle].followers == null && manualSnap.followers != null) {
+      out[handle].followers = manualSnap.followers;
+    }
+  }
+  return out;
+}
+
+function snapshotFields(snap, prev) {
+  const fields = {};
+  if (snap.followers != null) fields.followers = snap.followers;
+  else if (prev?.followers != null) fields.followers = prev.followers;
+  if ("posts7d" in snap) fields.posts7d = snap.posts7d;
+  if ("postsToday" in snap) fields.postsToday = snap.postsToday;
+  return fields;
+}
+
 function seedSnapshot() {
-  /** Instagram Competitors Benchmark baseline — overwritten by daily capture. */
   return {
     scmpnews: { followers: 648769, posts7d: 30 },
     tatlerhongkong: { followers: 256204, posts7d: 50 },
@@ -91,7 +119,7 @@ function main() {
     const manual = fs.existsSync(manualPath)
       ? normalizeSnapshot(JSON.parse(fs.readFileSync(manualPath, "utf8")))
       : {};
-    snapshot = { ...fetched, ...manual };
+    snapshot = mergeFetchedAndManual(fetched, manual);
     captureMethod = "public-refresh";
   }
 
@@ -105,18 +133,10 @@ function main() {
     const prev = existingByHandle[cfg.handle];
     const snap = snapshot?.[cfg.handle];
     if (snap) {
-      return mergeSnapshot(prev, cfg, {
-        followers: snap.followers ?? prev?.followers ?? null,
-        posts7d: snap.posts7d ?? prev?.posts7d ?? null,
-        postsToday: snap.postsToday ?? prev?.postsToday ?? null,
-      }, today);
+      return mergeSnapshot(prev, cfg, snapshotFields(snap, prev), today);
     }
     if (prev) {
-      return mergeSnapshot(prev, cfg, {
-        followers: prev.followers,
-        posts7d: prev.posts7d,
-        postsToday: prev.postsToday,
-      }, today);
+      return mergeSnapshot(prev, cfg, { followers: prev.followers }, today);
     }
     return mergeSnapshot(null, cfg, {}, today);
   });
@@ -124,8 +144,9 @@ function main() {
   const data = buildLeaderboardData(accounts, captureMethod);
   writeLeaderboardData(data);
   const withFollowers = accounts.filter((a) => a.followers != null).length;
+  const withPostsToday = accounts.filter((a) => a.postsToday != null).length;
   console.log(
-    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts)`
+    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts, ${withPostsToday} with today's post count)`
   );
 
   if (!process.argv.includes("--no-sheet-sync")) {

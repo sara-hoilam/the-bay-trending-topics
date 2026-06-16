@@ -1,12 +1,12 @@
 {
   "capturedAt": "2026-06-15",
-  "notes": "Manual supplement when Instagram API is rate-limited. Growth % is computed from Google Sheet history, not stored here.",
+  "notes": "Followers-only fallback when Instagram API is rate-limited. Do not store posts7d/postsToday here — they go stale.",
   "accounts": {
-    "scmpnews": { "followers": 648769, "posts7d": 30 },
-    "tatlerhongkong": { "followers": 256204, "posts7d": 49 },
-    "the_trip_addict": { "followers": 94494, "posts7d": 7 },
-    "sassyhongkong": { "followers": 91246, "posts7d": 8 },
-    "thebayasia": { "followers": 31696, "posts7d": 11 },
-    "greaterbayvibes": { "followers": 17268, "posts7d": 8 }
+    "scmpnews": { "followers": 648930 },
+    "tatlerhongkong": { "followers": 256360 },
+    "the_trip_addict": { "followers": 94498 },
+    "sassyhongkong": { "followers": 91248 },
+    "thebayasia": { "followers": 31748 },
+    "greaterbayvibes": { "followers": 17285 }
   }
 }
