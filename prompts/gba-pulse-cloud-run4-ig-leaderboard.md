@@ -11,6 +11,7 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 1. **Followers** — exact count from Instagram `web_profile_info` API
 2. **Rolling 7-day follower growth %** — computed automatically during Google Sheet sync by comparing today's followers to the sheet row from **exactly 7 calendar days ago** (e.g. 15 Jun vs 8 Jun). Leave empty when that reference date is missing.
 3. **Rolling 7-day posting cadence** — number of posts in the last 7 calendar days (HKT), counted by `scripts/fetch-ig-benchmark.mjs` via Instagram GraphQL timeline pagination
+4. **Today's post count** — number of posts published on the update date (HKT), counted by the same script
 
 ## Accounts (fixed order)
 
@@ -32,7 +33,7 @@ node scripts/capture-ig-leaderboard.mjs --refresh
 ```
 
 This:
-- Calls `scripts/fetch-ig-benchmark.mjs` (followers + paginated 7-day post count from Instagram APIs only)
+- Calls `scripts/fetch-ig-benchmark.mjs` (followers, paginated 7-day post count, and today's post count from Instagram APIs only)
 - Merges `references/ig-leaderboard-manual-snapshot.json` only for handles the fetch could not capture
 - Updates `ig-leaderboard-data.json` and syncs Google Sheet growth
 

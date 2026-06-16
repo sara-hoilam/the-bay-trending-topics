@@ -33,3 +33,8 @@ export function hktAddDays(dateStr, days) {
   const utc = new Date(Date.UTC(y, m - 1, d + days));
   return hktDateStr(utc);
 }
+
+/** HKT calendar date (YYYY-MM-DD) for a Unix timestamp in seconds. */
+export function hktDateFromUnix(unixSeconds) {
+  return hktDateStr(new Date(unixSeconds * 1000));
+}

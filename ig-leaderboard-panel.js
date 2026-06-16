@@ -29,7 +29,7 @@
     return sign + n.toFixed(2).replace(/\.?0+$/, "") + "%";
   }
 
-  function formatPosts7d(n) {
+  function formatCount(n) {
     if (n == null) return "—";
     return String(n);
   }
@@ -65,6 +65,7 @@
       '<th scope="col">Followers</th>' +
       '<th scope="col">7d growth</th>' +
       '<th scope="col">7d posts</th>' +
+      '<th scope="col">Today\'s posts</th>' +
       "</tr></thead><tbody>";
 
     accounts.forEach(function (row) {
@@ -87,7 +88,8 @@
         '">' +
         esc(formatGrowthPct(row.followersGrowthPct7d)) +
         "</td>";
-      html += '<td class="igl-posts">' + esc(formatPosts7d(row.posts7d)) + "</td>";
+      html += '<td class="igl-posts">' + esc(formatCount(row.posts7d)) + "</td>";
+      html += '<td class="igl-posts">' + esc(formatCount(row.postsToday)) + "</td>";
       html += "</tr>";
     });
 

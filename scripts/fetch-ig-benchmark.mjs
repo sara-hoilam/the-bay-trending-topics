@@ -2,7 +2,7 @@
 /**
  * Fetch IG benchmark metrics from Instagram APIs:
  * - Followers: web_profile_info
- * - Posts/7d: web_profile_info first page + GraphQL timeline pagination
+ * - Posts/7d + posts today: web_profile_info first page + GraphQL timeline pagination
  *
  * Writes orchestration/ig-leaderboard-snapshot.json for capture-ig-leaderboard.mjs.
  *
@@ -12,7 +12,7 @@ import fs from "fs";
 import https from "https";
 import path from "path";
 import { fileURLToPath } from "url";
-import { hktAddDays, hktDateStr } from "./hkt-date.mjs";
+import { hktAddDays, hktDateFromUnix, hktDateStr } from "./hkt-date.mjs";
 import { loadAccountConfig } from "./ig-leaderboard-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -101,16 +101,18 @@ function edgeTimestamp(edge) {
   return Number.isFinite(ts) ? ts : null;
 }
 
-function countEdgesInWindow(edges, cutoff) {
-  let count = 0;
+function countEdgeMetrics(edges, cutoff, todayDate) {
+  let count7d = 0;
+  let countToday = 0;
   let minTs = null;
   for (const edge of edges || []) {
     const ts = edgeTimestamp(edge);
     if (ts == null) continue;
     if (minTs == null || ts < minTs) minTs = ts;
-    if (ts >= cutoff) count++;
+    if (ts >= cutoff) count7d++;
+    if (hktDateFromUnix(ts) === todayDate) countToday++;
   }
-  return { count, minTs };
+  return { count7d, countToday, minTs };
 }
 
 function extractTimeline(json) {
@@ -162,19 +164,23 @@ async function fetchTimelinePage({ userId, handle, after, style }) {
   return requestWithRetry(`${handle} timeline`, () => request("POST", IG_GRAPHQL_API, body));
 }
 
-async function countPosts7d(user, handle, today = hktDateStr()) {
+async function countPostMetrics(user, handle, today = hktDateStr()) {
   const cutoff = weekAgoUnix(today);
   const firstMedia = user?.edge_owner_to_timeline_media;
   const firstEdges = firstMedia?.edges || [];
-  let total = 0;
+  let total7d = 0;
+  let totalToday = 0;
   let cursor = firstMedia?.page_info?.end_cursor ?? null;
   let hasNext = firstMedia?.page_info?.has_next_page === true;
   let style = "username";
 
-  const first = countEdgesInWindow(firstEdges, cutoff);
-  total += first.count;
-  if (!hasNext) return total;
-  if (first.minTs != null && first.minTs < cutoff) return total;
+  const first = countEdgeMetrics(firstEdges, cutoff, today);
+  total7d += first.count7d;
+  totalToday += first.countToday;
+  if (!hasNext) return { posts7d: total7d, postsToday: totalToday };
+  if (first.minTs != null && first.minTs < cutoff) {
+    return { posts7d: total7d, postsToday: totalToday };
+  }
 
   let pages = 1;
   let triedIdFallback = false;
@@ -210,8 +216,9 @@ async function countPosts7d(user, handle, today = hktDateStr()) {
 
     style = timeline.style;
     triedIdFallback = false;
-    const page = countEdgesInWindow(timeline.edges, cutoff);
-    total += page.count;
+    const page = countEdgeMetrics(timeline.edges, cutoff, today);
+    total7d += page.count7d;
+    totalToday += page.countToday;
 
     const nextCursor = timeline.pageInfo?.end_cursor ?? null;
     hasNext = timeline.pageInfo?.has_next_page === true;
@@ -222,7 +229,7 @@ async function countPosts7d(user, handle, today = hktDateStr()) {
     pages++;
   }
 
-  return total;
+  return { posts7d: total7d, postsToday: totalToday };
 }
 
 async function fetchProfile(handle) {
@@ -240,13 +247,14 @@ async function fetchHandle(handle, today) {
   const followers = user.edge_followed_by?.count ?? null;
   if (followers == null) return { handle, ok: false, status: resp.status };
 
-  const posts7d = await countPosts7d(user, handle, today);
+  const { posts7d, postsToday } = await countPostMetrics(user, handle, today);
 
   return {
     handle,
     ok: true,
     followers: Math.round(followers),
     posts7d,
+    postsToday,
     source: "instagram-api",
   };
 }
@@ -263,9 +271,10 @@ async function main() {
       snapshot[cfg.handle] = {
         followers: result.followers,
         posts7d: result.posts7d,
+        postsToday: result.postsToday,
       };
       notes.push(
-        `${cfg.handle}: ${result.followers.toLocaleString()} followers, ${result.posts7d} posts/7d (${result.source})`
+        `${cfg.handle}: ${result.followers.toLocaleString()} followers, ${result.posts7d} posts/7d, ${result.postsToday} posts today (${result.source})`
       );
     } else {
       notes.push(`${cfg.handle}: fetch failed (HTTP ${result.status ?? "error"})`);
