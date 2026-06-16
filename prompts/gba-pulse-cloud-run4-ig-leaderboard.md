@@ -8,9 +8,10 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 
 ## Metrics per account
 
-1. **Followers** — exact count from profile header as of capture date
+1. **Followers** — exact count from Instagram `web_profile_info` API
 2. **Rolling 7-day follower growth %** — computed automatically during Google Sheet sync by comparing today's followers to the sheet row from **exactly 7 calendar days ago** (e.g. 15 Jun vs 8 Jun). Leave empty when that reference date is missing.
-3. **Rolling 7-day posting cadence** — number of posts in the last 7 days from Instagram profile API
+3. **Rolling 7-day posting cadence** — number of posts in the last 7 calendar days (HKT), counted by `scripts/fetch-ig-benchmark.mjs` via Instagram GraphQL timeline pagination
+4. **Today's post count** — number of posts published on the update date (HKT), counted by the same script
 
 ## Accounts (fixed order)
 
@@ -25,34 +26,24 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 
 ## Steps
 
-1. Read `references/ig-leaderboard-accounts.json`.
+1. Run the automated fetch and merge (do **not** hand-count posts or write snapshot JSON yourself):
 
-2. For each account, fetch from Instagram's API (or record from profile):
-   - `followers` (integer)
-   - `posts7d` (integer — posts in the last 7 days)
+```bash
+node scripts/capture-ig-leaderboard.mjs --refresh
+```
+
+This:
+- Calls `scripts/fetch-ig-benchmark.mjs` (followers, paginated 7-day post count, and today's post count from Instagram APIs only)
+- Merges `references/ig-leaderboard-manual-snapshot.json` only for handles the fetch could not capture
+- Updates `ig-leaderboard-data.json` and syncs Google Sheet growth
+
+2. If some handles failed (HTTP 429 / rate limit), **do not invent numbers**. Either:
+   - Re-run the command once after a short wait, or
+   - Update only the failed handles in `references/ig-leaderboard-manual-snapshot.json` with values you verified on the live profile, then re-run step 1.
 
    Do **not** set `followersGrowthPct7d` — it is derived from the Google Sheet log during sync.
 
-3. Write `orchestration/ig-leaderboard-snapshot.json`:
-
-```json
-{
-  "scmpnews": { "followers": 648769, "posts7d": 30 },
-  "tatlerhongkong": { "followers": 256204, "posts7d": 50 },
-  "the_trip_addict": { "followers": 94494, "posts7d": 7 },
-  "sassyhongkong": { "followers": 91246, "posts7d": 8 },
-  "thebayasia": { "followers": 31696, "posts7d": 11 },
-  "greaterbayvibes": { "followers": 17268, "posts7d": 8 }
-}
-```
-
-4. Merge:
-
-```bash
-node scripts/capture-ig-leaderboard.mjs --snapshot=orchestration/ig-leaderboard-snapshot.json
-```
-
-5. Commit and push:
+3. Commit and push:
 
 ```bash
 git add ig-leaderboard-data.json orchestration/ig-leaderboard-snapshot.json
@@ -63,5 +54,6 @@ git push origin main
 ## Rules
 
 - Do **not** edit `index.html` — the IG Leaderboard tab loads JSON via `ig-leaderboard-panel.js`.
-- Use numbers visible on the profile; do not invent follower counts.
+- Do **not** manually write `orchestration/ig-leaderboard-snapshot.json` unless the fetch script is completely unavailable after retries.
+- Use numbers from the script output; do not invent follower counts or post counts.
 - Omit handles you cannot capture (existing history is preserved).

@@ -3,7 +3,7 @@
  * Refresh ig-leaderboard-data.json from references/ig-leaderboard-accounts.json.
  *
  * Snapshot fields per handle:
- *   { "followers": 641000, "posts7d": 35 }
+ *   { "followers": 641000, "posts7d": 35, "postsToday": 4 }
  *
  * Usage:
  *   node scripts/capture-ig-leaderboard.mjs
@@ -45,7 +45,7 @@ function normalizeSnapshot(snapshot) {
   const out = {};
   for (const [handle, val] of Object.entries(snapshot)) {
     if (handle === "capturedAt" || handle === "notes") continue;
-    if (val && typeof val === "object" && ("followers" in val || "posts7d" in val)) {
+    if (val && typeof val === "object" && ("followers" in val || "posts7d" in val || "postsToday" in val)) {
       out[handle] = val;
     }
   }
@@ -108,10 +108,15 @@ function main() {
       return mergeSnapshot(prev, cfg, {
         followers: snap.followers ?? prev?.followers ?? null,
         posts7d: snap.posts7d ?? prev?.posts7d ?? null,
+        postsToday: snap.postsToday ?? prev?.postsToday ?? null,
       }, today);
     }
     if (prev) {
-      return mergeSnapshot(prev, cfg, { followers: prev.followers, posts7d: prev.posts7d }, today);
+      return mergeSnapshot(prev, cfg, {
+        followers: prev.followers,
+        posts7d: prev.posts7d,
+        postsToday: prev.postsToday,
+      }, today);
     }
     return mergeSnapshot(null, cfg, {}, today);
   });

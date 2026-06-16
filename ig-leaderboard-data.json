@@ -1,9 +1,9 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-16",
-  "refreshedAt": "2026-06-16T10:06:52+08:00",
-  "refreshedAtLabel": "Follower snapshot as of update date · rolling 7-day growth & posting cadence",
-  "captureMethod": "history-preserve",
+  "refreshedAt": "2026-06-16T11:02:22+08:00",
+  "refreshedAtLabel": "Follower snapshot as of update date · rolling 7-day growth · today's & 7-day post counts",
+  "captureMethod": "public-refresh",
   "accounts": [
     {
       "handle": "scmpnews",
@@ -13,6 +13,7 @@
       "followers": 648930,
       "followersGrowthPct7d": null,
       "posts7d": 12,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -22,7 +23,8 @@
         {
           "date": "2026-06-16",
           "followers": 648930,
-          "posts7d": 12
+          "posts7d": 12,
+          "postsToday": null
         }
       ]
     },
@@ -34,6 +36,7 @@
       "followers": 256360,
       "followersGrowthPct7d": null,
       "posts7d": 9,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -43,7 +46,8 @@
         {
           "date": "2026-06-16",
           "followers": 256360,
-          "posts7d": 9
+          "posts7d": 9,
+          "postsToday": null
         }
       ]
     },
@@ -55,6 +59,7 @@
       "followers": 94498,
       "followersGrowthPct7d": null,
       "posts7d": 8,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -64,7 +69,8 @@
         {
           "date": "2026-06-16",
           "followers": 94498,
-          "posts7d": 8
+          "posts7d": 8,
+          "postsToday": null
         }
       ]
     },
@@ -76,6 +82,7 @@
       "followers": 91248,
       "followersGrowthPct7d": null,
       "posts7d": 8,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -85,7 +92,8 @@
         {
           "date": "2026-06-16",
           "followers": 91248,
-          "posts7d": 8
+          "posts7d": 8,
+          "postsToday": null
         }
       ]
     },
@@ -97,6 +105,7 @@
       "followers": 31748,
       "followersGrowthPct7d": null,
       "posts7d": 12,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -106,7 +115,8 @@
         {
           "date": "2026-06-16",
           "followers": 31748,
-          "posts7d": 12
+          "posts7d": 12,
+          "postsToday": null
         }
       ]
     },
@@ -118,6 +128,7 @@
       "followers": 17285,
       "followersGrowthPct7d": null,
       "posts7d": 8,
+      "postsToday": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -127,7 +138,8 @@
         {
           "date": "2026-06-16",
           "followers": 17285,
-          "posts7d": 8
+          "posts7d": 8,
+          "postsToday": null
         }
       ]
     }
