@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-17",
-  "refreshedAt": "2026-06-17T11:14:23+08:00",
+  "refreshedAt": "2026-06-17T15:00:03+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 649354,
+      "followers": 649567,
       "followersGrowthPct7d": null,
       "posts7d": 28,
       "postsToday": 1,
@@ -28,7 +28,7 @@
         },
         {
           "date": "2026-06-17",
-          "followers": 649354,
+          "followers": 649567,
           "posts7d": 28,
           "postsToday": 1
         }
@@ -39,7 +39,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 256553,
+      "followers": 256584,
       "followersGrowthPct7d": null,
       "posts7d": 30,
       "postsToday": 0,
@@ -57,7 +57,7 @@
         },
         {
           "date": "2026-06-17",
-          "followers": 256553,
+          "followers": 256584,
           "posts7d": 30,
           "postsToday": 0
         }
@@ -97,7 +97,7 @@
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 91256,
+      "followers": 91258,
       "followersGrowthPct7d": null,
       "posts7d": 8,
       "postsToday": 0,
@@ -115,7 +115,7 @@
         },
         {
           "date": "2026-06-17",
-          "followers": 91256,
+          "followers": 91258,
           "posts7d": 8,
           "postsToday": 0
         }
@@ -126,7 +126,7 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 31803,
+      "followers": 31810,
       "followersGrowthPct7d": null,
       "posts7d": 13,
       "postsToday": 0,
@@ -144,7 +144,7 @@
         },
         {
           "date": "2026-06-17",
-          "followers": 31803,
+          "followers": 31810,
           "posts7d": 13,
           "postsToday": 0
         }
@@ -155,7 +155,7 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 17298,
+      "followers": 17299,
       "followersGrowthPct7d": null,
       "posts7d": 7,
       "postsToday": 0,
@@ -173,7 +173,7 @@
         },
         {
           "date": "2026-06-17",
-          "followers": 17298,
+          "followers": 17299,
           "posts7d": 7,
           "postsToday": 0
         }
@@ -184,33 +184,54 @@
       "displayName": "The Beat Asia",
       "url": "https://www.instagram.com/thebeatasia/",
       "highlight": false,
-      "followers": null,
+      "followers": 1988,
       "followersGrowthPct7d": null,
       "posts7d": null,
       "postsToday": null,
-      "history": []
+      "history": [
+        {
+          "date": "2026-06-17",
+          "followers": 1988,
+          "posts7d": null,
+          "postsToday": null
+        }
+      ]
     },
     {
       "handle": "o.cultmag",
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": null,
+      "followers": 41085,
       "followersGrowthPct7d": null,
       "posts7d": null,
       "postsToday": null,
-      "history": []
+      "history": [
+        {
+          "date": "2026-06-17",
+          "followers": 41085,
+          "posts7d": null,
+          "postsToday": null
+        }
+      ]
     },
     {
       "handle": "lifestyleasiahk",
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": null,
+      "followers": 122107,
       "followersGrowthPct7d": null,
       "posts7d": null,
       "postsToday": null,
-      "history": []
+      "history": [
+        {
+          "date": "2026-06-17",
+          "followers": 122107,
+          "posts7d": null,
+          "postsToday": null
+        }
+      ]
     }
   ]
 }
