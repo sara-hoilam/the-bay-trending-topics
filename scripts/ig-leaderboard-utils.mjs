@@ -56,6 +56,21 @@ export function growthPctFromSheetRows(sheetRows, handle, today, todayFollowers)
   return Math.round(((todayFollowers - refFollowers) / refFollowers) * 10000) / 100;
 }
 
+/** Rank accounts by followers descending; null/missing counts last. */
+export function sortAccountsByFollowers(accounts) {
+  return [...accounts].sort((a, b) => {
+    const af = a.followers;
+    const bf = b.followers;
+    if (af == null && bf == null) {
+      return (a.displayName || a.handle).localeCompare(b.displayName || b.handle);
+    }
+    if (af == null) return 1;
+    if (bf == null) return -1;
+    if (bf !== af) return bf - af;
+    return (a.displayName || a.handle).localeCompare(b.displayName || b.handle);
+  });
+}
+
 export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
   const prevHistory = existing?.history || [];
   const prevToday = prevHistory.find((h) => h.date === today);
@@ -100,7 +115,7 @@ export function buildLeaderboardData(accounts, captureMethod = "manual") {
     refreshedAt: hktIsoDateTime(),
     refreshedAtLabel: "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
     captureMethod,
-    accounts,
+    accounts: sortAccountsByFollowers(accounts),
   };
 }
 

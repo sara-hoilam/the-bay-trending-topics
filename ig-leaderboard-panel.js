@@ -41,8 +41,22 @@
     return "igl-growth--flat";
   }
 
+  function sortByFollowers(accounts) {
+    return accounts.slice().sort(function (a, b) {
+      var af = a.followers;
+      var bf = b.followers;
+      if (af == null && bf == null) {
+        return String(a.displayName || a.handle).localeCompare(b.displayName || b.handle);
+      }
+      if (af == null) return 1;
+      if (bf == null) return -1;
+      if (bf !== af) return bf - af;
+      return String(a.displayName || a.handle).localeCompare(b.displayName || b.handle);
+    });
+  }
+
   function render(data) {
-    var accounts = data.accounts || [];
+    var accounts = sortByFollowers(data.accounts || []);
     var meta = document.getElementById("ig-leaderboard-meta");
     if (meta) {
       meta.textContent =
