@@ -1,12 +1,12 @@
 {
-  "capturedAt": "2026-06-15",
+  "capturedAt": "2026-06-17",
   "notes": "Followers-only fallback when Instagram API is rate-limited. Do not store posts7d/postsToday here — they go stale.",
   "accounts": {
-    "scmpnews": { "followers": 648930 },
-    "tatlerhongkong": { "followers": 256360 },
-    "the_trip_addict": { "followers": 94498 },
-    "sassyhongkong": { "followers": 91248 },
-    "thebayasia": { "followers": 31748 },
-    "greaterbayvibes": { "followers": 17285 }
+    "scmpnews": { "followers": 649354 },
+    "tatlerhongkong": { "followers": 256553 },
+    "the_trip_addict": { "followers": 94501 },
+    "sassyhongkong": { "followers": 91256 },
+    "thebayasia": { "followers": 31803 },
+    "greaterbayvibes": { "followers": 17298 }
   }
 }
