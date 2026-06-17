@@ -4,7 +4,7 @@ You are refreshing **`ig-leaderboard-data.json`** for the **IG Leaderboard** tab
 
 ## Goal
 
-Capture public Instagram metrics for the six benchmark accounts in `references/ig-leaderboard-accounts.json`.
+Capture public Instagram metrics for the nine benchmark accounts in `references/ig-leaderboard-accounts.json`.
 
 ## Metrics per account
 
@@ -23,6 +23,9 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 | `sassyhongkong` | Sassy HK |
 | `thebayasia` | The Bay |
 | `greaterbayvibes` | Greater Bay Vibes |
+| `thebeatasia` | The Beat Asia |
+| `o.cultmag` | O! Cult |
+| `lifestyleasiahk` | Lifestyle Asia HK |
 
 ## Steps
 
