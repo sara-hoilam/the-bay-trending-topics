@@ -98,7 +98,7 @@ export function buildLeaderboardData(accounts, captureMethod = "manual") {
     generatedFrom: "references/ig-leaderboard-accounts.json",
     updatedAt: today,
     refreshedAt: hktIsoDateTime(),
-    refreshedAtLabel: "Follower snapshot as of update date · rolling 7-day growth · today's & 7-day post counts",
+    refreshedAtLabel: "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
     captureMethod,
     accounts,
   };

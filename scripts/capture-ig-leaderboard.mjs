@@ -146,7 +146,7 @@ function main() {
   const withFollowers = accounts.filter((a) => a.followers != null).length;
   const withPostsToday = accounts.filter((a) => a.postsToday != null).length;
   console.log(
-    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts, ${withPostsToday} with today's post count)`
+    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts, ${withPostsToday} with yesterday's post count)`
   );
 
   if (!process.argv.includes("--no-sheet-sync")) {

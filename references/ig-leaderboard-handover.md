@@ -20,8 +20,8 @@ Handover guide for setting up the **GBA Pulse IG Competitors Benchmark** in a ne
 | Metric | JSON field | Sheet column | How it is computed |
 |--------|------------|--------------|-------------------|
 | Followers | `followers` | `followers` | Instagram profile API |
-| 7-day post count | `posts7d` | `posts_7d` | Feed API pagination — posts in last 7 **calendar days** (HKT) |
-| Today's post count | `postsToday` | `posts_today` | Same pagination — posts on the **update date** (HKT) |
+| 7-day post count | `posts7d` | `posts_7d` | Feed API pagination — **7 full calendar days ending yesterday** |
+| Yesterday's post count | `postsToday` | `posts_today` | Same pagination — posts on **yesterday** (HKT). E.g. run 17 Jun → 16 Jun. |
 | 7-day follower growth % | `followersGrowthPct7d` | `followers_growth_pct_7d` | **Sheet history only** — today vs exactly 7 calendar days ago |
 
 Growth % is **not** fetched from Instagram. It is calculated during sheet sync from prior rows.
@@ -131,7 +131,7 @@ cat orchestration/ig-leaderboard-snapshot.json
 ```json
 {
   "notes": [
-    "thebayasia: 31,748 followers, 14 posts/7d, 2 posts today (instagram-api)"
+    "thebayasia: 31,748 followers, 14 posts/7d (2026-06-10–2026-06-16), 2 posts on 2026-06-16 (instagram-api)"
   ],
   "accounts": {
     "thebayasia": {
@@ -236,7 +236,7 @@ On first sync, the script writes this header if missing:
 | `followers` | Integer follower count |
 | `followers_growth_pct_7d` | % change vs row from 7 calendar days ago (empty if no ref row) |
 | `posts_7d` | Posts in last 7 calendar days |
-| `posts_today` | Posts on update date |
+| `posts_today` | Posts on yesterday (full calendar day) |
 | `captured_at` | ISO timestamp of refresh |
 
 **Upsert behaviour:** If rows for today's date already exist, they are deleted and re-appended (no duplicates).
@@ -336,7 +336,7 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 - [ ] Copy `ig-leaderboard-panel.js` + wire into `index.html`
 - [ ] Seed empty `ig-leaderboard-data.json` or run first refresh
 - [ ] Test: `node scripts/capture-ig-leaderboard.mjs --refresh`
-- [ ] Confirm snapshot notes include `posts/7d` and `posts today`
+- [ ] Confirm snapshot notes include `posts/7d (start–end)` and `posts on {yesterday}`
 
 ### Google Sheets
 
