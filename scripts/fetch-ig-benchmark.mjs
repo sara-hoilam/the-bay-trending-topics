@@ -2,7 +2,7 @@
 /**
  * Fetch IG benchmark metrics from Instagram APIs:
  * - Followers: web_profile_info
- * - Posts/7d + posts today: /api/v1/feed/user/{id}/ pagination (GraphQL fallback)
+ * - Posts/7d + postsToday: /api/v1/feed/user/{id}/ pagination (7 full days ending yesterday)
  *
  * Writes orchestration/ig-leaderboard-snapshot.json for capture-ig-leaderboard.mjs.
  *
@@ -12,7 +12,7 @@ import fs from "fs";
 import https from "https";
 import path from "path";
 import { fileURLToPath } from "url";
-import { hktAddDays, hktDateFromUnix, hktDateStr } from "./hkt-date.mjs";
+import { hktDateFromUnix, hktDateStr, hktDayStartUnix, postCountWindow } from "./hkt-date.mjs";
 import { loadAccountConfig } from "./ig-leaderboard-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -95,11 +95,6 @@ async function requestWithRetry(label, fn, maxAttempts = 4) {
   return { status: 429, json: null };
 }
 
-function weekAgoUnix(today = hktDateStr()) {
-  const refDate = hktAddDays(today, -7);
-  return Math.floor(new Date(`${refDate}T00:00:00+08:00`).getTime() / 1000);
-}
-
 function itemTimestamp(item) {
   const ts = item?.taken_at ?? item?.taken_at_timestamp ?? item?.device_timestamp;
   return Number.isFinite(ts) ? Math.floor(ts) : null;
@@ -110,7 +105,9 @@ function edgeTimestamp(edge) {
   return Number.isFinite(ts) ? ts : null;
 }
 
-function countItems(items, cutoff, todayDate) {
+function countItems(items, window) {
+  const { windowStart, windowEnd, anchorDate } = window;
+  const cutoff = hktDayStartUnix(windowStart);
   let count7d = 0;
   let countToday = 0;
   let minTs = null;
@@ -118,10 +115,11 @@ function countItems(items, cutoff, todayDate) {
     const ts = itemTimestamp(item) ?? edgeTimestamp(item);
     if (ts == null) continue;
     if (minTs == null || ts < minTs) minTs = ts;
-    if (ts >= cutoff) count7d++;
-    if (hktDateFromUnix(ts) === todayDate) countToday++;
+    const postDate = hktDateFromUnix(ts);
+    if (postDate >= windowStart && postDate <= windowEnd) count7d++;
+    if (postDate === anchorDate) countToday++;
   }
-  return { count7d, countToday, minTs };
+  return { count7d, countToday, minTs, cutoff };
 }
 
 function extractTimeline(json) {
@@ -180,8 +178,7 @@ async function fetchGraphqlPage(handle, after, docId) {
   );
 }
 
-async function countPostsViaFeed(userId, handle, today) {
-  const cutoff = weekAgoUnix(today);
+async function countPostsViaFeed(userId, handle, window) {
   let total7d = 0;
   let totalToday = 0;
   let maxId = null;
@@ -193,12 +190,12 @@ async function countPostsViaFeed(userId, handle, today) {
       return null;
     }
 
-    const page = countItems(resp.json.items, cutoff, today);
+    const page = countItems(resp.json.items, window);
     total7d += page.count7d;
     totalToday += page.countToday;
 
     if (!resp.json.more_available) break;
-    if (page.minTs != null && page.minTs < cutoff) break;
+    if (page.minTs != null && page.minTs < page.cutoff) break;
 
     const next = resp.json.next_max_id;
     if (!next || next === maxId) break;
@@ -210,8 +207,7 @@ async function countPostsViaFeed(userId, handle, today) {
   return { posts7d: total7d, postsToday: totalToday };
 }
 
-async function countPostsViaGraphql(handle, today) {
-  const cutoff = weekAgoUnix(today);
+async function countPostsViaGraphql(handle, window) {
   let total7d = 0;
   let totalToday = 0;
   let cursor = null;
@@ -230,14 +226,14 @@ async function countPostsViaGraphql(handle, today) {
       const timeline = extractTimeline(resp.json);
       if (!timeline) break;
 
-      const page = countItems(timeline.items, cutoff, today);
+      const page = countItems(timeline.items, window);
       total7d += page.count7d;
       totalToday += page.countToday;
 
       if (!timeline.hasMore) {
         return { posts7d: total7d, postsToday: totalToday };
       }
-      if (page.minTs != null && page.minTs < cutoff) {
+      if (page.minTs != null && page.minTs < page.cutoff) {
         return { posts7d: total7d, postsToday: totalToday };
       }
 
@@ -256,12 +252,12 @@ async function countPostsViaGraphql(handle, today) {
   return null;
 }
 
-async function countPostMetrics(userId, handle, today = hktDateStr()) {
-  const viaFeed = await countPostsViaFeed(userId, handle, today);
+async function countPostMetrics(userId, handle, window) {
+  const viaFeed = await countPostsViaFeed(userId, handle, window);
   if (viaFeed) return viaFeed;
 
   console.warn(`${handle}: feed API unavailable — trying GraphQL fallback`);
-  const viaGraphql = await countPostsViaGraphql(handle, today);
+  const viaGraphql = await countPostsViaGraphql(handle, window);
   if (viaGraphql) return viaGraphql;
 
   return { posts7d: 0, postsToday: 0 };
@@ -274,7 +270,7 @@ async function fetchProfile(handle) {
   );
 }
 
-async function fetchHandle(handle, today) {
+async function fetchHandle(handle, runDate, window) {
   const resp = await fetchProfile(handle);
   if (resp.status !== 200 || !resp.json?.data?.user) {
     return { handle, ok: false, status: resp.status };
@@ -284,7 +280,7 @@ async function fetchHandle(handle, today) {
   const followers = user.edge_followed_by?.count ?? null;
   if (followers == null) return { handle, ok: false, status: resp.status };
 
-  const { posts7d, postsToday } = await countPostMetrics(user.id, handle, today);
+  const { posts7d, postsToday } = await countPostMetrics(user.id, handle, window);
 
   return {
     handle,
@@ -297,13 +293,14 @@ async function fetchHandle(handle, today) {
 }
 
 async function main() {
-  const today = hktDateStr();
+  const runDate = hktDateStr();
+  const window = postCountWindow(runDate);
   const configs = loadAccountConfig();
   const snapshot = {};
   const notes = [];
 
   for (const cfg of configs) {
-    const result = await fetchHandle(cfg.handle, today);
+    const result = await fetchHandle(cfg.handle, runDate, window);
     if (result.ok) {
       snapshot[cfg.handle] = {
         followers: result.followers,
@@ -311,7 +308,7 @@ async function main() {
         postsToday: result.postsToday,
       };
       notes.push(
-        `${cfg.handle}: ${result.followers.toLocaleString()} followers, ${result.posts7d} posts/7d, ${result.postsToday} posts today (${result.source})`
+        `${cfg.handle}: ${result.followers.toLocaleString()} followers, ${result.posts7d} posts/7d (${window.windowStart}–${window.windowEnd}), ${result.postsToday} posts on ${window.anchorDate} (${result.source})`
       );
     } else {
       notes.push(`${cfg.handle}: fetch failed (HTTP ${result.status ?? "error"})`);
@@ -322,7 +319,11 @@ async function main() {
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(
     outPath,
-    JSON.stringify({ capturedAt: today, notes, accounts: snapshot }, null, 2) + "\n",
+    JSON.stringify(
+      { capturedAt: runDate, postCountWindow: window, notes, accounts: snapshot },
+      null,
+      2
+    ) + "\n",
     "utf8"
   );
 

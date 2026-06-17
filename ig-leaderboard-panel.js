@@ -65,7 +65,7 @@
       '<th scope="col">Followers</th>' +
       '<th scope="col">7d growth</th>' +
       '<th scope="col">7d posts</th>' +
-      '<th scope="col">Today\'s posts</th>' +
+      '<th scope="col">Yesterday\'s posts</th>' +
       "</tr></thead><tbody>";
 
     accounts.forEach(function (row) {

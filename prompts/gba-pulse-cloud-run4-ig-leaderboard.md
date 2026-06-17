@@ -10,8 +10,8 @@ Capture public Instagram metrics for the six benchmark accounts in `references/i
 
 1. **Followers** — exact count from Instagram `web_profile_info` API
 2. **Rolling 7-day follower growth %** — computed automatically during Google Sheet sync by comparing today's followers to the sheet row from **exactly 7 calendar days ago** (e.g. 15 Jun vs 8 Jun). Leave empty when that reference date is missing.
-3. **Rolling 7-day posting cadence** — posts in the last 7 calendar days (HKT), via `/api/v1/feed/user/` pagination
-4. **Today's post count** — posts published on the update date (HKT), counted in the same feed pagination pass
+3. **Rolling 7-day posting cadence** — posts over **7 full calendar days ending yesterday** (HKT). E.g. run on 17 Jun counts 10–16 Jun.
+4. **Yesterday's post count** — posts published on yesterday (HKT). E.g. run on 17 Jun counts posts on 16 Jun only.
 
 ## Accounts (fixed order)
 
