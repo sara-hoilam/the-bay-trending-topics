@@ -9,10 +9,10 @@ https://news.rthk.hk/rthk/en/component/k2/1858707-20260616.htm
 https://english.news.cn/20260616/ec7463f6c9b54542ab189c847fa7ede0/c.html
 China's National Immigration Administration said on 16 June it expects an 11.7% year-on-year rise in border entries and exits during the Tuen Ng holiday, averaging 2.2 million crossings daily with a peak of 2.35 million. Xinhua said Luohu is projected to handle about 260,000 trips per day and Gongbei about 370,000 as dragon-boat events draw traffic across Guangdong, Hong Kong and Macao.
 
-2. **NPC Standing Committee to authorise Hong Kong jurisdiction at upgraded Huanggang Port**
+2. **Xia inspects upgraded Huanggang Port as NPC prepares Hong Kong jurisdiction bill**
 https://www.scmp.com/news/hong-kong/society/article/3357306/chinas-npc-discuss-hong-kongs-shared-control-over-upgraded-shenzhen-port
-https://www.newsgd.com/node_99363c4f3b/e8eb59ddec.shtml
-SCMP reported on 16 June that China's top legislature will review a bill on 23–26 June to grant Hong Kong jurisdiction over the redeveloped Huanggang checkpoint, which is scheduled to open in July as a 24-hour co-located facility. NewsGD noted the Southbound Travel Scheme now covers nine mainland GBA cities, with urban quotas rising to 200 from 25 July.
+https://www.hk01.com/%E6%94%BF%E6%83%85/60361168/%E6%8B%86%E5%B1%80-%E5%A4%8F%E5%AF%B6%E9%BE%8D%E8%A8%AA%E6%96%B0%E7%9A%87%E5%B4%97%E5%8F%A3%E5%B2%B8%E7%82%BA%E9%80%9A%E9%97%9C%E9%8B%AA%E8%B7%AF-%E4%B8%83%E6%9C%88%E6%9C%89%E6%9C%9B%E5%95%9F%E7%94%A8%E5%B0%9A%E6%AC%A0%E4%B8%80%E6%AD%A5
+Xia Baolong toured the Shenzhen-side Huanggang reconstruction exhibition on 17 June with Chief Executive John Lee and Security Secretary Chris Tang before crossing into Hong Kong. SCMP said China's top legislature will review a bill on 23–26 June to grant Hong Kong jurisdiction over the 24-hour checkpoint, where co-located clearance could cut crossing times from about 30 minutes to five.
 
 3. **Yellow geological-disaster weather risk warning for northern and southwestern Guangdong**
 https://news.southcn.com/node_9045e464dd/37cf1d1c92.shtml
@@ -37,10 +37,10 @@ https://www.gov.mo/en/news/402946/
 https://www.gov.mo/en/news/402937/
 Sam Hou Fai said on 16 June that Macao held 40 industry-specific job-matching sessions from January to April, placing 3,770 residents, while a "employment + training" programme offered more than 600 vacancies this year. The Chief Executive said follow-up work on 108 investment plans in the first five months of 2026 generated 493 jobs, with "1+4" industry projects accounting for over 60%.
 
-7. **Chief Executive reports positive first-half 2026 results ahead of Third Five-Year Plan**
-https://www.gov.mo/en/news/402937/
-https://www.gov.mo/en/news/402950/
-Sam Hou Fai told legislators on 16 June that Macao maintained social stability, improving economic conditions and healthy public finances in the first half of 2026, and aims to promulgate the Third Five-Year Plan by August. He said second-half priorities include publishing the plan, advancing the four major diversification projects and hosting the 13th APEC Tourism Ministers' Meeting.
+7. **CCAC 2025 report records 427 cases filed including 30 election-related complaints**
+https://www.gov.mo/en/news/402959/
+https://www.gov.mo/en/news/402946/
+Macao's anti-corruption commission said its 2025 annual report, published on 17 June, placed 427 cases on file including 30 linked to the eighth Legislative Assembly elections, with over 16,000 election-period inspections. Commissioner Ao Ieong Seong said the CCAC will support the Chief Executive's integrity agenda as Macao prepares its Third Five-Year Plan.
 
 8. **17th International Infrastructure Investment Forum closes with USD 9.9 billion in signed agreements**
 https://www.gov.mo/en/news/402861/
@@ -60,15 +60,15 @@ https://www.info.gov.hk/gia/general/202606/17/P2026061700161.htm
 https://www.scmp.com/news/hong-kong/society/article/3357318/more-heavy-rain-expected-hong-kong-observatory-issues-amber-rainstorm-warning
 The government said on 17 June that the 8 am ceremony at Golden Bauhinia Square would be cancelled because a thunderstorm warning was in force, and may resume without notice if conditions improve. SCMP reported the Observatory issued an amber rainstorm warning for more than three hours on 16 June and forecast further downpours from a trough affecting the Guangdong coast.
 
-11. **Hong Kong Film Tour debuts in Saudi Arabia with four director showcases** — Hong Kong Government
-https://www.info.gov.hk/gia/general/202606/17/P2026061700086.htm
-https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357338/hong-kong-must-stay-outward-looking-and-free-port-thrive-trader-leaders-say
-The Trade Development Council-supported "Hong Kong Film Tour—Saudi Station" ran in Riyadh from 12 to 14 June, screening four recent Hong Kong features to nearly 200 guests including Saudi film officials. The Dubai economic and trade office said the government has injected more than HK$9 billion into the Film Development Fund and Creative Smart Initiative to expand cultural exports.
+11. **Labour import scheme tweak draws mixed catering-sector reactions** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1858823-20260617.htm
+https://news.rthk.hk/rthk/en/component/k2/1858580-20260615.htm
+A two-tier staffing ratio taking effect on 16 June requires catering employers to maintain three local workers for every imported hire in tier-two posts such as cooks and waiters, up from 2:1. Unionist lawmaker Lam Chun-sing welcomed the change as unemployment in catering reached at least 6%, while sector legislator Jonathan Leung warned tighter ratios could hurt service quality.
 
-12. **Xia Baolong backs Northern Metropolis I&T push during two-day Hong Kong visit** — RTHK + SCMP
-https://news.rthk.hk/rthk/en/component/k2/1858740-20260616.htm
+12. **Xia completes two-day Hong Kong visit with Kwai Chung terminal and Northern Metropolis tours** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1858835-20260617.htm
 https://www.scmp.com/news/hong-kong/politics/article/3357249/xia-baolong-begins-hong-kong-visit-housing-northern-metropolis-tours
-Xia Baolong inspected the Hetao co-operation zone, a Yuen Long microelectronics centre and Sandy Ridge data facilities on 16 June alongside Chief Executive John Lee. Secretary for Innovation Sun Dong said Xia fully affirmed the SAR's progress and urged Hong Kong to align with national development strategies.
+On 17 June Xia Baolong inspected Kwai Chung container terminals with Transport Secretary Mable Chan before wrapping up a two-day trip that began with Hetao, Yuen Long microelectronics and Sandy Ridge data sites on 16 June. Secretary for Innovation Sun Dong said Xia fully affirmed Hong Kong's Northern Metropolis progress and urged the city to seize national development opportunities.
 
 13. **Building renovation graft complaints rise 1.5 times after Tai Po fire, ICAC says** — SCMP + RTHK
 https://www.scmp.com/news/hong-kong/law-and-crime/article/3357337/building-renovation-graft-complaints-spike-15-times-after-tai-po-fire-icac
@@ -90,10 +90,10 @@ https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357322/hong-kong-
 https://news.rthk.hk/rthk/en/component/k2/1858677-20260616.htm
 HKSTP and SenseTime signed an agreement on 16 June to build a home-grown AI data centre in three phases, with phase one due by year-end. Justice Secretary Paul Lam told a privacy summit the same day that Hong Kong's inaugural AI R&D institute will establish standards and cross-sector collaboration platforms this year.
 
-17. **Privacy watchdog launches International Data Privacy Academy** — SCMP + RTHK
-https://www.scmp.com/news/hong-kong/law-and-crime/article/3357275/hong-kong-watchdog-launches-data-privacy-academy-develop-top-talent-sector
-https://news.rthk.hk/rthk/en/component/k2/1858677-20260616.htm
-Privacy Commissioner Ada Chung launched the Hong Kong International Data Privacy Academy on 16 June to train privacy professionals and support the city's "AI Training for All" initiative. Chung said the academy will address evolving AI governance challenges while aligning with national plans to develop Hong Kong as a global talent hub.
+17. **Teachers required to complete 30 hours of digital training every three years** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/education/article/3357369/hong-kong-teachers-undergo-30-hour-digital-training-amid-ai-push-schools
+https://news.rthk.hk/rthk/en/component/k2/1858844-20260617.htm
+The Education Bureau released a digital-education blueprint on 17 June requiring primary and secondary teachers to complete at least 30 hours of digital training within each three-year professional development cycle. Schools must embed digital elements in annual development plans, with a one-off HK$500,000 grant per publicly funded school and HK$2 billion reserved in the Quality Education Fund.
 
 
 Guangzhou (2):
@@ -146,7 +146,7 @@ Huizhou (1):
 24. **Crape myrtle in full bloom at Huizhou's Guabang Pavilion** — NewsGD
 https://www.newsgd.com/node_e9dced8600/ea83d13754.shtml
 https://www.newsgd.com/node_99363c4f3b/e8eb59ddec.shtml
-Crape myrtle trees are flowering through September at Guabang Pavilion in Honghua Lake Scenic Area, with peak blooms from late May to July. NewsGD said the pavilion name and blossoms have become a seasonal symbol of encouragement for gaokao students, while Huizhou is among five cities newly eligible under the Southbound Travel Scheme from 9 June.
+Crape myrtle trees are flowering through September at Guabang Pavilion in Honghua Lake Scenic Area, with peak blooms from late May to July. NewsGD said Huizhou is among five cities newly eligible under the Southbound Travel Scheme from 9 June as the province promotes holiday tourism across the GBA.
 
 
 Jiangmen (1):
@@ -199,6 +199,6 @@ Date: 2026-06-17 HKT
 Stories: 30
 GBA filter drops: Iran/US peace talks (Wang Yi/RTHK); EU-China-Russia training claims (HKFP); Qingdao Multinationals Summit (Xinhua); celebrity court cases (SCMP Cecilia Cheung); US/UK/world sport wire items — no primary GBA impact
 Single-source items: Huizhou crape myrtle (24) — kept as city culture marker paired with Southbound Scheme context; Shenzhen Longgang tour (20) — paired with GBA tech interview
-Editor calibration applied: cross-border travel (1), rainstorm/flag cancellation (10), dragon boat Macao/Foshan/Nansha/Jiangmen (19, 23, 25, 30), Hengqin integration (22), southbound scheme (2, 24, 27)
+Editor calibration applied: cross-border travel (1), Huanggang/Xia inspection (2, 12), rainstorm/flag cancellation (10), teachers digital training (17), labour import (11), dragon boat Macao/Foshan/Nansha/Jiangmen (19, 23, 25, 30), Hengqin integration (22), CCAC Macao (7)
 Out of catalog: none
 -->
