@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-06-18",
+  "updatedAt": "2026-06-19",
   "highlightScoreThreshold": 24,
   "highlightedCount": 14,
   "events": [
@@ -67,9 +67,9 @@
       "location": "Sands Theatre",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
       "sourceDomain": "macaotourism.gov.mo",
-      "highlightScore": 66,
-      "highlighted": true,
-      "featured": true
+      "featured": true,
+      "highlightScore": 106,
+      "highlighted": true
     },
     {
       "title": "The Forbidden City and the World — Palace Museum",
@@ -101,9 +101,9 @@
       "location": "Taipa Houses",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
       "sourceDomain": "macaotourism.gov.mo",
-      "highlightScore": 30,
-      "highlighted": true,
-      "featured": true
+      "featured": true,
+      "highlightScore": 70,
+      "highlighted": true
     },
     {
       "title": "New art museum opens with 7 inaugural exhibitions",
@@ -124,6 +124,7 @@
       "location": "Lai Chi Vun Shipyards",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
       "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
       "highlightScore": 30,
       "highlighted": true
     },
@@ -157,9 +158,9 @@
       "location": "Macao Cultural Centre",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
       "sourceDomain": "macaotourism.gov.mo",
-      "highlightScore": 30,
-      "highlighted": true,
-      "featured": true
+      "featured": true,
+      "highlightScore": 70,
+      "highlighted": true
     },
     {
       "title": "Macao 2026 Specialized World Stamp Exhibition",
@@ -169,9 +170,9 @@
       "location": "Cotai Expo, The Venetian Macao",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
       "sourceDomain": "macaotourism.gov.mo",
-      "highlightScore": 26,
-      "highlighted": true,
-      "featured": true
+      "featured": true,
+      "highlightScore": 66,
+      "highlighted": true
     },
     {
       "title": "Glow Festival by Prudential 2026",
@@ -181,16 +182,16 @@
       "location": "Sentosa, Singapore",
       "url": "https://www.ticketflap.com/",
       "sourceDomain": "ticketflap.com",
-      "highlightScore": 26,
-      "highlighted": true,
-      "featured": true
+      "featured": true,
+      "highlightScore": 66,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
       "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "location": "Hong Kong Convention and Exhibition Centre",
       "url": "https://hkbookfair.hktdc.com/en/index.html",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 58,
@@ -204,10 +205,10 @@
       "location": "Central Harbourfront, Hong Kong",
       "url": "https://www.ticketflap.com/Clockenflap2026",
       "sourceDomain": "ticketflap.com",
-      "highlightScore": 32,
-      "highlighted": true,
       "featured": true,
-      "dateNote": "Dates TBD"
+      "dateNote": "Dates TBD",
+      "highlightScore": 72,
+      "highlighted": true
     }
   ]
 }
