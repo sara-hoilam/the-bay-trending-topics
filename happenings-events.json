@@ -72,6 +72,18 @@
       "highlighted": true
     },
     {
+      "title": "Vivienne Westwood & Jewellery Exhibition 2026 Macau",
+      "start": "2026-06-01",
+      "end": "2026-07-15",
+      "region": "macao",
+      "location": "Grand Lisboa Palace Resort Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "The Forbidden City and the World — Palace Museum",
       "start": "2026-06-03",
       "end": "2026-12-31",
@@ -194,7 +206,7 @@
       "location": "Hong Kong Convention and Exhibition Centre",
       "url": "https://hkbookfair.hktdc.com/en/index.html",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 58,
+      "highlightScore": 64,
       "highlighted": true
     },
     {
