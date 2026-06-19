@@ -70,52 +70,76 @@ const RUN_PROMPTS = {
   4: { file: "gba-pulse-cloud-run4-ig-leaderboard.md", label: "IG Leaderboard" },
 };
 
-async function runStep(step, apiKey) {
+async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
   const cfg = RUN_PROMPTS[step];
   if (!cfg) throw new Error(`Unknown run step: ${step}`);
   const prompt = readPrompt(cfg.file);
   const label = cfg.label;
 
-  console.log(`\n=== Cloud Run ${step}: ${label} ===`);
+  console.log(`\n=== Cloud Run ${step}: ${label}${optional ? " (optional)" : ""} ===`);
   console.log(`Repo: ${REPO_URL}`);
   console.log(`Model: ${MODEL_ID}\n`);
 
-  const started = Date.now();
-  let result;
-  try {
-    result = await Agent.prompt(prompt, {
-      apiKey,
-      model: { id: MODEL_ID },
-      cloud: cloudOptions(),
-    });
-  } catch (err) {
-    if (err instanceof CursorAgentError) {
-      logSdkError(err, `Cloud Run ${step} startup failed`);
-      printIntegrationHelp();
-      console.error("\nRun: npm run daily:diagnose");
-      process.exit(1);
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    if (attempt > 0) {
+      const waitSec = 30;
+      console.warn(`Cloud Run ${step} retry ${attempt}/${retries} in ${waitSec}s…`);
+      await new Promise((r) => setTimeout(r, waitSec * 1000));
     }
-    throw err;
-  }
 
-  const elapsed = ((Date.now() - started) / 1000).toFixed(0);
-  console.log(`Status: ${result.status} (${elapsed}s)`);
-  if (result.durationMs != null) {
-    console.log(`Duration (SDK): ${(result.durationMs / 1000).toFixed(0)}s`);
-  }
-  if (result.git?.branches?.length) {
-    for (const b of result.git.branches) {
-      console.log(`Git: ${b.repoUrl} branch=${b.branch ?? "—"} pr=${b.prUrl ?? "direct push"}`);
+    const started = Date.now();
+    let result;
+    try {
+      result = await Agent.prompt(prompt, {
+        apiKey,
+        model: { id: MODEL_ID },
+        cloud: cloudOptions(),
+      });
+    } catch (err) {
+      if (err instanceof CursorAgentError) {
+        logSdkError(err, `Cloud Run ${step} startup failed`);
+        printIntegrationHelp();
+        if (optional && attempt < retries) continue;
+        if (optional) {
+          console.warn(
+            `Cloud Run ${step} skipped — post-pipeline will refresh IG via scripts/run-daily-post.mjs`
+          );
+          return false;
+        }
+        console.error("\nRun: npm run daily:diagnose");
+        process.exit(1);
+      }
+      throw err;
     }
+
+    const elapsed = ((Date.now() - started) / 1000).toFixed(0);
+    console.log(`Status: ${result.status} (${elapsed}s)`);
+    if (result.durationMs != null) {
+      console.log(`Duration (SDK): ${(result.durationMs / 1000).toFixed(0)}s`);
+    }
+    if (result.git?.branches?.length) {
+      for (const b of result.git.branches) {
+        console.log(`Git: ${b.repoUrl} branch=${b.branch ?? "—"} pr=${b.prUrl ?? "direct push"}`);
+      }
+    }
+    if (result.status === "error") {
+      console.error("Run failed. Check Cursor dashboard for run id:", result.id);
+      if (attempt < retries) continue;
+      if (optional) {
+        console.warn(
+          `Cloud Run ${step} failed after ${retries + 1} attempt(s) — post-pipeline will refresh IG via capture-ig-leaderboard.mjs --refresh`
+        );
+        return false;
+      }
+      process.exit(2);
+    }
+    if (result.result) {
+      const tail = result.result.slice(-500);
+      console.log("\n--- Agent tail ---\n", tail);
+    }
+    return true;
   }
-  if (result.status === "error") {
-    console.error("Run failed. Check Cursor dashboard for run id:", result.id);
-    process.exit(2);
-  }
-  if (result.result) {
-    const tail = result.result.slice(-500);
-    console.log("\n--- Agent tail ---\n", tail);
-  }
+  return false;
 }
 
 async function main() {
@@ -142,7 +166,9 @@ async function main() {
 
   if (only === 2 || only == null) await runStep(2, apiKey);
   if (only === 3 || only == null) await runStep(3, apiKey);
-  if (only === 4 || only == null) await runStep(4, apiKey);
+  if (only === 4 || only == null) {
+    await runStep(4, apiKey, { optional: true, retries: 1 });
+  }
 
   console.log("\nDone. Pull main and open index.html, or wait for GitHub Pages.");
 }

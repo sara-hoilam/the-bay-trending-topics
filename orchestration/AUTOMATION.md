@@ -105,6 +105,16 @@ This happens **before** the agent runs. Almost always:
 | `exit code 128` on refresh | Usually `git pull`/`git push` auth. Workflow uses `github.token` — **delete** any repo secret named `GITHUB_TOKEN` if you created one (blank secret breaks git). Re-run workflow after pushing workflow fix. |
 | Push failed | Workflow needs `permissions: contents: write`; disable branch rules blocking `github-actions[bot]` |
 | Weibo rows `—` | Expected sometimes; agent may need mirror URL in disclaimer |
+| **Cloud Run 4 `exit code 2`** (IG Leaderboard, ~5–10s) | Cursor cloud agent returned `status: error` — often transient after Runs 1–3, or platform quota. **Not** an Instagram script failure. Check run id in [Cursor dashboard](https://cursor.com/dashboard). Post-pipeline still runs `capture-ig-leaderboard.mjs --refresh` if the workflow continues (Run 4 is optional as of workflow fix). |
+
+### Cloud Run 4 (IG Leaderboard) fails but Runs 1–3 succeed
+
+Runs 1–3 take 2–6 minutes each; Run 4 failing in **under 15 seconds** means the **Cursor cloud agent aborted early**, before `node scripts/capture-ig-benchmark.mjs` could run.
+
+**Why the workflow used to fail entirely:** `run-daily-cloud.mjs` called `process.exit(2)` on any agent `status: error`, which skipped the post-pipeline step that also refreshes IG data.
+
+**Fallback:** `scripts/run-daily-post.mjs` runs `capture-ig-leaderboard.mjs --refresh` with Google Sheet secrets — this is the reliable IG path in GitHub Actions even when Cloud Run 4 fails.
+
 
 ## Mac scheduler (legacy)
 
