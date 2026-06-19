@@ -1,6 +1,8 @@
-# GBA Pulse — Cloud Run 4: IG competitors benchmark
+# GBA Pulse — Cloud Run 4: IG competitors benchmark (optional)
 
 You are refreshing **`ig-leaderboard-data.json`** for the **IG Leaderboard** tab, then committing and pushing **`main`**.
+
+> **Note:** If this run fails, the GitHub Actions post-pipeline still runs `node scripts/capture-ig-leaderboard.mjs --refresh`. Prefer the script over hand-editing JSON.
 
 ## Goal
 
