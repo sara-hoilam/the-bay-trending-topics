@@ -7,7 +7,8 @@ GBA News (4):
 1. **Observatory issues two black rainstorm warnings as Man Kam To checkpoint closes**
 https://www.scmp.com/news/hong-kong/health-environment/article/3357490/persistent-heavy-downpours-expected-ease-hong-kongs-tuen-ng-festival
 https://news.rthk.hk/rthk/en/component/k2/1859062-20260618.htm
-Hong Kong issued black rainstorm warnings twice on 18 June as downpours flooded 13 New Territories locations, disrupted flights and suspended classes. Shenzhen authorities closed Man Kam To for more than three hours after flooding before reopening the border point at 8 pm.
+https://www.info.gov.hk/gia/general/202606/19/P2026061900201.htm
+Hong Kong issued black rainstorm warnings twice on 18 June as downpours flooded 13 New Territories locations, disrupted flights and suspended classes. Shenzhen authorities closed Man Kam To for more than three hours before reopening at 8 pm; the FEHD said fresh-food lorries resumed via Man Kam To overnight and a temporary food-control office at Liantang/Heung Yuen Wai would stay open until 2 pm on 19 June.
 
 2. **Hong Kong and Macao should complement rather than compete for tourism, MGTO says**
 https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357471/hong-kong-macau-not-rivals-tourist-trade-industry-leaders-say
@@ -48,7 +49,7 @@ https://www.gov.mo/en/news/402946/
 Macao authorities said joint Public Security Police and Labour Affairs Bureau operations in May inspected 304 construction sites, private buildings and commercial premises, identifying 117 suspected illegal workers. The statistics were published as the government reiterated its commitment to safeguarding local employment under the new economy and finance portfolio.
 
 
-Hong Kong (9):
+Hong Kong (10):
 
 9. **Hong Kong ranks second globally in IMD competitiveness, best result since 2019** — SCMP + RTHK
 https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357537/hong-kong-ranks-no-2-global-competitiveness-best-showing-7-years
@@ -70,39 +71,43 @@ https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357559/hong-kong-
 https://news.rthk.hk/rthk/en/component/k2/1859047-20260618.htm
 Chief Secretary Eric Chan said on 18 June the Commission on Poverty would move beyond a single income line to 21 indicators covering housing, healthcare and child support, while an impact report showed three flagship programmes for single parents, elderly households and subdivided-flat residents meeting or exceeding KPIs since 2022.
 
-13. **Chief Executive meets local NPC and CPPCC members on first five-year plan consultation** — RTHK + SCMP
-https://news.rthk.hk/rthk/en/component/k2/1859100-20260618.htm
-https://www.scmp.com/news/hong-kong/politics/article/3357442/hong-kongs-john-lee-pledges-10-fold-expansion-new-university-town
-John Lee gathered Hong Kong NPC and CPPCC delegates on 18 June as a two-month public consultation on the city's inaugural five-year plan got under way. Starry Lee voiced support for the Northern Metropolis section, which Lee said Xia Baolong had fully affirmed during his 17 June visit.
+13. **Chief Executive says talent drive has brought 290,000 professionals to Hong Kong** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1859105-20260619.htm
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3357537/hong-kong-ranks-no-2-global-competitiveness-best-showing-7-years
+John Lee said in a 19 June interview marking his fourth year in office that more than 290,000 non-local professionals have arrived, surpassing the annual 35,000 target and contributing an estimated 1.2% to GDP growth. SCMP reported the city also climbed 10 places to fourth globally in talent competitiveness as part of its best IMD ranking since 2019.
 
-14. **Chief Executive says Hong Kong will help propel national automotive sector** — RTHK + SCMP
-https://news.rthk.hk/rthk/en/component/k2/1858983-20260618.htm
-https://www.scmp.com/news/hong-kong/education/article/3357454/2-universities-hku-and-cuhk-rank-among-worlds-top-20-first-hong-kong
-Lee told the 2026 International Automotive Supply Chain Expo on 18 June that Hong Kong would contribute to the mainland's modern industrial system as China remains the world's largest car exporter. He cited five local universities in the global top 100 as part of the SAR's innovation resources supporting new industrialisation under the forthcoming five-year plan.
+14. **Chief Executive urges vigilance on national security despite return to normal life** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1859108-20260619.htm
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3357462/sexual-abuse-against-children-20-2025-security-chief-vows-tighter-laws
+Lee warned on 19 June against complacency after social order was restored, saying Hong Kong pursues "relative security" through Article 23 legislation and the National Security Law while upholding rule of law and openness. The interview coincided with legislators reviewing Security Secretary Chris Tang's pledge to strengthen child-protection laws by June 2027.
 
 15. **UK Old Bailey jails two men linked to Hong Kong trade office for up to 10 years** — SCMP + Hong Kong Free Press
 https://www.scmp.com/news/hong-kong/law-and-crime/article/3357604/uk-court-jails-2-hongkongers-tied-trade-office-10-years-spying
 https://hongkongfp.com/2026/05/08/hong-kong-denies-link-to-uk-national-security-case-after-trade-officer-convicted-of-spying-on-activists/
 Bill Yuen, an office manager at the Hong Kong Economic and Trade Office in London, received eight years and security operator Peter Wai ten years on 18 June for assisting a foreign intelligence service. The Hong Kong government reiterated that the case involved unfounded allegations unrelated to the London office's official functions.
 
-16. **Survey finds 93% of mainland top-talent families cite children's education for HK move** — SCMP
-https://www.scmp.com/news/hong-kong/education/article/3357579/93-mainland-chinese-top-talent-move-hong-kong-childrens-education
-https://news.rthk.hk/rthk/en/component/k2/1858962-20260618.htm
-Beacon Group said on 18 June that 239 mainland parents admitted under talent schemes ranked schooling as the primary relocation driver, with nearly 80% moving when children reached upper secondary. Nearly half entered via the Top Talent Pass Scheme and most held master's degrees with household incomes above HK$1 million.
+16. **Chief Executive vows to cut average public housing wait to 4.5 years** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1859106-20260619.htm
+https://www.scmp.com/news/hong-kong/society/article/3357569/how-2-coming-hong-kong-policies-could-promote-subsidised-flat-turnover
+Lee said on 19 June the average wait for public rental flats has fallen to a eight-year low of 4.7 years and reaffirmed a 4.5-year target for next year, citing ordinance streamlining, expanded supply and 30,000 Light Public Housing units due by 2027–28. SCMP noted complementary Housing Authority pilots to lease subsidised flats and offer elderly flat swaps from September.
 
 17. **High Court jails programmer 14 years over 2019-era bomb plot** — SCMP
 https://www.scmp.com/news/hong-kong/law-and-crime/article/3357554/hong-kong-court-jails-man-14-years-over-evil-bomb-plot
 Mr Justice Andrew Chan sentenced Cheung Lai-ming on 18 June after he pleaded guilty to making explosives at his Wong Tai Sin flat between August 2019 and May 2022 with a view to attacking officials and plunging the city into chaos. Prosecutors dropped a national security terrorism charge in exchange for guilty pleas on four Crimes Ordinance counts.
 
+18. **Illegal online gambling via Telegram groups fuels youth addiction, advocates warn** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3357615/harder-quit-drugs-illegal-online-gambling-fuels-hongkongers-growing-addiction
+SCMP reported on 19 June that social-media tip groups are luring young Hongkongers from legal Jockey Club betting to illegal platforms offering casino, basketball and esports wagers with high rebates. Counsellors said the World Cup betting season has intensified addiction risks as tip channels promise unrealistic win rates.
+
 
 Guangzhou (2):
 
-18. **Liede hosts municipal-level Zhaojing dragon boat gathering on 19 June** — NewsGD
+19. **Liede hosts municipal-level Zhaojing dragon boat gathering on 19 June** — NewsGD
 https://www.newsgd.com/node_99363c4f3b/95ecfaf4cb.shtml
 https://www.newsgd.com/node_99363c4f3b/34a30c6305.shtml
 NewsGD said more than 100 dragon boats will assemble along Liede Creek in Tianhe on 19 June for a municipal intangible-heritage Zhaojing event surrounded by Zhujiang New Town skyscrapers. Organisers paired the narrow-waterway parade with a district race requiring sharp "dragon boat drifting" turns on the same day.
 
-19. **Nansha dragon boat invitational draws 50 teams including Hong Kong and Macao paddlers** — NewsGD
+20. **Nansha dragon boat invitational draws 50 teams including Hong Kong and Macao paddlers** — NewsGD
 https://www.newsgd.com/node_99363c4f3b/34a30c6305.shtml
 https://www.newsgd.com/node_99363c4f3b/95ecfaf4cb.shtml
 More than 1,000 athletes from 50 teams raced along the Jiaomen River in Nansha on 13 June in five categories over 400 metres. Organisers paired the invitational with a sports carnival and Hong Kong co-designed cultural products as part of Guangzhou's broader holiday consumption season.
@@ -110,12 +115,12 @@ More than 1,000 athletes from 50 teams raced along the Jiaomen River in Nansha o
 
 Zhuhai inc. Hengqin (2):
 
-20. **Hengqin Port vehicle trips surpass 2 million in 2026, up 42.4% year on year** — NewsGD
+21. **Hengqin Port vehicle trips surpass 2 million in 2026, up 42.4% year on year** — NewsGD
 https://info.newsgd.com/node_73b7112307/6220b42fa2.shtml
 https://www.newsgd.com/node_99363c4f3b/32dce974b5.shtml
 NewsGD said crossings at the land link between Hengqin and Macao exceeded 2 million by 6 pm on 13 June, with Macao-registered single-plate vehicles accounting for nearly 1.32 million trips. Authorities credited integrated one-stop clearance lanes that complete joint inspections in under two minutes.
 
-21. **AI short-drama companies gather in Hengqin to explore digital content paths** — NewsGD
+22. **AI short-drama companies gather in Hengqin to explore digital content paths** — NewsGD
 https://www.newsgd.com/node_99363c4f3b/32dce974b5.shtml
 https://www.gov.mo/en/news/403145/
 Industry representatives met at the China–Portuguese/Spanish-speaking Countries Service Centre on 15 June to discuss AIGC comic-drama production and overseas distribution. The Hengqin Guidance Fund and Volcano Engine co-hosted the exchange as the cooperation zone rolled out support measures for the short-drama sector.
@@ -123,12 +128,12 @@ Industry representatives met at the China–Portuguese/Spanish-speaking Countrie
 
 Shenzhen (2):
 
-22. **Metro Line 13 north extension passes acceptance, set to open by end-June** — NewsGD
+23. **Metro Line 13 north extension passes acceptance, set to open by end-June** — NewsGD
 https://info.newsgd.com/node_73b7112307/3b21112099.shtml
 https://www.newsgd.com/node_99363c4f3b/b99e635834.shtml
 Shenzhen Daily said on 18 June that the 19.25-kilometre Phase II extension from Shangwu to Lisonglang, adding 11 stations across Bao'an and Guangming, passed acceptance inspection and will open by month-end. The full 41.69-kilometre line will cut Guangming Science City–Shenzhen Bay Checkpoint journeys to about 45 minutes.
 
-23. **Shenzhen launches Urban Index of Shenzhen at World Cities Summit** — Xinhua
+24. **Shenzhen launches Urban Index of Shenzhen at World Cities Summit** — Xinhua
 https://english.news.cn/20260617/bbe7127ab80b4f4dae293644e5c1f426/c.html
 https://news.cn/20260617/bbe7127ab80b4f4dae293644e5c1f426/c.html
 Xinhua said Shenzhen unveiled the Urban Index of Shenzhen on 17 June in Singapore as a non-ranking governance tool covering innovation, livability, aesthetics, resilience, humanism and intelligence across 20 pilot cities. Officials released a 2026 observation report highlighting Shenzhen micro-renewal and smart-transport cases alongside lessons from Singapore, Nairobi and London.
@@ -136,7 +141,7 @@ Xinhua said Shenzhen unveiled the Urban Index of Shenzhen on 17 June in Singapor
 
 Dongguan (1):
 
-24. **Huawei debuts HarmonyOS 7 at Developer Conference in Songshan Lake** — NewsGD
+25. **Huawei debuts HarmonyOS 7 at Developer Conference in Songshan Lake** — NewsGD
 https://www.newsgd.com/node_99363c4f3b/7b1b74c6a4.shtml
 https://www.newsgd.com/node_99363c4f3b/450e3ccc25.shtml
 Huawei opened HDC 2026 at Songshan Lake on 12 June with the developer beta of HarmonyOS 7, an evolved Agent architecture and openPangu 2.0. NewsGD said more than 66 million devices now run HarmonyOS 6 and the ecosystem counts over 11 million registered developers.
@@ -144,7 +149,7 @@ Huawei opened HDC 2026 at Songshan Lake on 12 June with the developer beta of Ha
 
 Foshan (1):
 
-25. **Foshan Metro Line 3 becomes fully operational with Dunhou Station opening** — NewsGD
+26. **Foshan Metro Line 3 becomes fully operational with Dunhou Station opening** — NewsGD
 https://www.newsgd.com/node_d36b0ef83f/20bb7acadf.shtml
 https://www.newsgd.com/node_d36b0ef83f/c865e79a01.shtml
 NewsGD said Line 3 entered full service on 18 June with Dunhou Station, linking landmarks including Zhongshan Park, the Ancestral Temple and Liang Garden across Chancheng and Nanhai. The opening coincided with international dragon boat teams training on Diejiao's "water F1" drifting course in Nanhai.
@@ -152,18 +157,10 @@ NewsGD said Line 3 entered full service on 18 June with Dunhou Station, linking 
 
 Huizhou (1):
 
-26. **Huizhou included in expanded Southbound Travel Scheme urban quota lottery** — NewsGD
+27. **Huizhou included in expanded Southbound Travel Scheme urban quota lottery** — NewsGD
 https://www.newsgd.com/node_99363c4f3b/e8eb59ddec.shtml
 https://www.newsgd.com/node_e9dced8600/ea83d13754.shtml
 NewsGD said private car owners in Huizhou joined Shenzhen, Foshan, Dongguan and Zhaoqing in applying from 9 to 20 June for 4,600 July Hong Kong urban quotas under the HZMB southbound scheme. Eligible vehicles may enter Hong Kong's urban areas from 25 July after the 23 June draw.
-
-
-Jiangmen (1):
-
-27. **Dragon Boat Festival race guide lists events across Jiangmen districts from 19 June** — NewsGD
-https://info.newsgd.com/node_ed2910caae/992a7a6124.shtml
-https://www.newsgd.com/node_99363c4f3b/b71e2577bd.shtml
-NewsGD published schedules for races in Pengjiang, Jianghai, Xinhui, Taishan, Kaiping, Heshan and Enping, including a 500-metre straight course in Tangxia on 19 June with 12 teams. Organisers paired waterfront regattas with food carnivals as the province marked the Tuen Ng holiday.
 
 
 Zhongshan (1):
@@ -193,8 +190,8 @@ The Sports Bureau said standard 500-metre invitation races and a university rega
 <!-- DAILY BRIEF AUDIT
 Date: 2026-06-19 HKT
 Stories: 30
-GBA filter drops: US-Iran peace talks (RTHK); US Fed rate outlook (RTHK); Ghana/Panama World Cup (RTHK); Gordon Wu optimism profile (SCMP); dog-friendly cafe red tape (SCMP); e-commerce packaging NGO briefing (SCMP) — no primary GBA impact or soft culture only
-Single-source items: High Court bomb plot (17) — kept for significant sentencing; no second approved outlet located on 18 June
-Editor calibration applied: black rainstorm/Man Kam To (1), southbound scheme (3, 26, 29), Macao dragon boat (30), GBA integration Hengqin/IPIM (4, 20, 21), transport Metro Line 3/13 (22, 25), Macao/HK tourism complementarity (2), APEC Macao (5)
+GBA filter drops: US-Iran peace talks (RTHK); US Fed rate outlook (RTHK); Ghana/Panama World Cup (RTHK); Gordon Wu optimism profile (SCMP); dog-friendly cafe red tape (SCMP); e-commerce packaging NGO briefing (SCMP); Jiangmen dragon boat schedule (NewsGD) — dropped to avoid redundant festival listings
+Single-source items: High Court bomb plot (17); illegal online gambling (18) — kept for significant 19 June society reporting; no second approved outlet located
+Editor calibration applied: black rainstorm/Man Kam To/Liantang food office (1), southbound scheme (3, 27, 29), Macao dragon boat (30), GBA integration Hengqin/IPIM (4, 21, 22), transport Metro Line 3/13 (23, 26), Macao/HK tourism complementarity (2), APEC Macao (5), talent/housing policy (13, 16)
 Out of catalog: none
 -->
