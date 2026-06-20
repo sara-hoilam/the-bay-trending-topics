@@ -32,7 +32,7 @@
   "optionalDependencies": {
     "@cursor/sdk": "^1.0.13",
     "googleapis": "^173.0.0",
-    "puppeteer-core": "^24.0.0"
+    "puppeteer-core": "^24.43.1"
   },
   "engines": {
     "node": ">=20"
