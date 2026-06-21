@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-21",
-  "refreshedAt": "2026-06-21T08:40:33+08:00",
+  "refreshedAt": "2026-06-21T08:54:08+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -12,7 +12,7 @@
       "highlight": false,
       "followers": 653010,
       "followersGrowthPct7d": null,
-      "posts7d": 36,
+      "posts7d": 33,
       "postsToday": 2,
       "history": [
         {
@@ -47,7 +47,7 @@
         {
           "date": "2026-06-21",
           "followers": 653010,
-          "posts7d": 36,
+          "posts7d": 33,
           "postsToday": 2
         }
       ]
@@ -57,7 +57,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 257187,
+      "followers": 257186,
       "followersGrowthPct7d": null,
       "posts7d": 9,
       "postsToday": 3,
@@ -93,7 +93,7 @@
         },
         {
           "date": "2026-06-21",
-          "followers": 257187,
+          "followers": 257186,
           "posts7d": 9,
           "postsToday": 3
         }
@@ -106,8 +106,8 @@
       "highlight": false,
       "followers": 122374,
       "followersGrowthPct7d": null,
-      "posts7d": 30,
-      "postsToday": 2,
+      "posts7d": 0,
+      "postsToday": 0,
       "history": [
         {
           "date": "2026-06-17",
@@ -130,8 +130,8 @@
         {
           "date": "2026-06-21",
           "followers": 122374,
-          "posts7d": 30,
-          "postsToday": 2
+          "posts7d": 0,
+          "postsToday": 0
         }
       ]
     },
@@ -234,9 +234,9 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 41837,
+      "followers": 41838,
       "followersGrowthPct7d": null,
-      "posts7d": 3,
+      "posts7d": 0,
       "postsToday": 0,
       "history": [
         {
@@ -259,8 +259,8 @@
         },
         {
           "date": "2026-06-21",
-          "followers": 41837,
-          "posts7d": 3,
+          "followers": 41838,
+          "posts7d": 0,
           "postsToday": 0
         }
       ]
@@ -272,8 +272,8 @@
       "highlight": true,
       "followers": 32102,
       "followersGrowthPct7d": null,
-      "posts7d": 12,
-      "postsToday": 1,
+      "posts7d": 0,
+      "postsToday": 0,
       "history": [
         {
           "date": "2026-06-15",
@@ -307,8 +307,8 @@
         {
           "date": "2026-06-21",
           "followers": 32102,
-          "posts7d": 12,
-          "postsToday": 1
+          "posts7d": 0,
+          "postsToday": 0
         }
       ]
     },
@@ -319,7 +319,7 @@
       "highlight": false,
       "followers": 17560,
       "followersGrowthPct7d": null,
-      "posts7d": 6,
+      "posts7d": 0,
       "postsToday": 0,
       "history": [
         {
@@ -354,7 +354,7 @@
         {
           "date": "2026-06-21",
           "followers": 17560,
-          "posts7d": 6,
+          "posts7d": 0,
           "postsToday": 0
         }
       ]
@@ -366,7 +366,7 @@
       "highlight": false,
       "followers": 1988,
       "followersGrowthPct7d": null,
-      "posts7d": 2,
+      "posts7d": 0,
       "postsToday": 0,
       "history": [
         {
@@ -390,7 +390,7 @@
         {
           "date": "2026-06-21",
           "followers": 1988,
-          "posts7d": 2,
+          "posts7d": 0,
           "postsToday": 0
         }
       ]
