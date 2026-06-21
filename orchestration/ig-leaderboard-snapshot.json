@@ -1,67 +1,67 @@
 {
-  "capturedAt": "2026-06-20",
+  "capturedAt": "2026-06-21",
   "postCountWindow": {
-    "runDate": "2026-06-20",
-    "anchorDate": "2026-06-19",
-    "windowStart": "2026-06-13",
-    "windowEnd": "2026-06-19"
+    "runDate": "2026-06-21",
+    "anchorDate": "2026-06-20",
+    "windowStart": "2026-06-14",
+    "windowEnd": "2026-06-20"
   },
   "notes": [
-    "scmpnews: 652,578 followers, 37 posts/7d (2026-06-13–2026-06-19), 5 posts on 2026-06-19 (instagram-api)",
-    "tatlerhongkong: 257,023 followers, 9 posts/7d (2026-06-13–2026-06-19), 5 posts on 2026-06-19 (instagram-api)",
-    "the_trip_addict: 94,517 followers, 5 posts/7d (2026-06-13–2026-06-19), 1 posts on 2026-06-19 (instagram-api)",
-    "sassyhongkong: 91,280 followers, 6 posts/7d (2026-06-13–2026-06-19), 1 posts on 2026-06-19 (instagram-api)",
-    "thebayasia: 32,068 followers, 12 posts/7d (2026-06-13–2026-06-19), 2 posts on 2026-06-19 (instagram-api)",
-    "greaterbayvibes: 17,477 followers, 6 posts/7d (2026-06-13–2026-06-19), 1 posts on 2026-06-19 (instagram-api)",
-    "thebeatasia: 1,987 followers, 2 posts/7d (2026-06-13–2026-06-19), 0 posts on 2026-06-19 (instagram-api)",
-    "o.cultmag: 41,638 followers, 3 posts/7d (2026-06-13–2026-06-19), 0 posts on 2026-06-19 (instagram-api)",
-    "lifestyleasiahk: 122,328 followers, 30 posts/7d (2026-06-13–2026-06-19), 3 posts on 2026-06-19 (instagram-api)"
+    "scmpnews: 653,010 followers, 36 posts/7d (2026-06-14–2026-06-20), 2 posts on 2026-06-20 (instagram-api)",
+    "tatlerhongkong: 257,187 followers, 9 posts/7d (2026-06-14–2026-06-20), 3 posts on 2026-06-20 (instagram-api)",
+    "the_trip_addict: 94,527 followers, 6 posts/7d (2026-06-14–2026-06-20), 1 posts on 2026-06-20 (instagram-api)",
+    "sassyhongkong: 91,271 followers, 5 posts/7d (2026-06-14–2026-06-20), 0 posts on 2026-06-20 (instagram-api)",
+    "thebayasia: 32,102 followers, 12 posts/7d (2026-06-14–2026-06-20), 1 posts on 2026-06-20 (instagram-api)",
+    "greaterbayvibes: 17,560 followers, 6 posts/7d (2026-06-14–2026-06-20), 0 posts on 2026-06-20 (instagram-api)",
+    "thebeatasia: 1,988 followers, 2 posts/7d (2026-06-14–2026-06-20), 0 posts on 2026-06-20 (instagram-api)",
+    "o.cultmag: 41,837 followers, 3 posts/7d (2026-06-14–2026-06-20), 0 posts on 2026-06-20 (instagram-api)",
+    "lifestyleasiahk: 122,374 followers, 30 posts/7d (2026-06-14–2026-06-20), 2 posts on 2026-06-20 (instagram-api)"
   ],
   "accounts": {
     "scmpnews": {
-      "followers": 652578,
-      "posts7d": 37,
-      "postsToday": 5
+      "followers": 653010,
+      "posts7d": 36,
+      "postsToday": 2
     },
     "tatlerhongkong": {
-      "followers": 257023,
+      "followers": 257187,
       "posts7d": 9,
-      "postsToday": 5
+      "postsToday": 3
     },
     "the_trip_addict": {
-      "followers": 94517,
-      "posts7d": 5,
+      "followers": 94527,
+      "posts7d": 6,
       "postsToday": 1
     },
     "sassyhongkong": {
-      "followers": 91280,
-      "posts7d": 6,
-      "postsToday": 1
+      "followers": 91271,
+      "posts7d": 5,
+      "postsToday": 0
     },
     "thebayasia": {
-      "followers": 32068,
+      "followers": 32102,
       "posts7d": 12,
-      "postsToday": 2
-    },
-    "greaterbayvibes": {
-      "followers": 17477,
-      "posts7d": 6,
       "postsToday": 1
     },
+    "greaterbayvibes": {
+      "followers": 17560,
+      "posts7d": 6,
+      "postsToday": 0
+    },
     "thebeatasia": {
-      "followers": 1987,
+      "followers": 1988,
       "posts7d": 2,
       "postsToday": 0
     },
     "o.cultmag": {
-      "followers": 41638,
+      "followers": 41837,
       "posts7d": 3,
       "postsToday": 0
     },
     "lifestyleasiahk": {
-      "followers": 122328,
+      "followers": 122374,
       "posts7d": 30,
-      "postsToday": 3
+      "postsToday": 2
     }
   }
 }
