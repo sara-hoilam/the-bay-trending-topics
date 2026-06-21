@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20",
+  "updatedAt": "2026-06-21",
   "source": "cache",
   "events": [
     {
@@ -12,15 +12,6 @@
       "sourceDomain": "ticketflap.com",
       "featured": true,
       "dateNote": "Dates TBD"
-    },
-    {
-      "title": "ZUTOMAYO – Hong Kong",
-      "start": "2026-06-06",
-      "end": "2026-06-06",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.ticketflap.com/",
-      "sourceDomain": "ticketflap.com"
     },
     {
       "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
