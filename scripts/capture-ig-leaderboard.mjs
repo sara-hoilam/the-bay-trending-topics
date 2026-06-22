@@ -15,6 +15,7 @@ import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
 import {
   buildLeaderboardData,
+  applyGrowthFromHistory,
   loadAccountConfig,
   loadLeaderboardData,
   mergeSnapshot,
@@ -135,10 +136,12 @@ function main() {
   });
 
   const data = buildLeaderboardData(accounts, captureMethod);
+  applyGrowthFromHistory(data);
   writeLeaderboardData(data);
-  const withFollowers = accounts.filter((a) => a.followers != null).length;
+  const withFollowers = data.accounts.filter((a) => a.followers != null).length;
+  const withGrowth = data.accounts.filter((a) => a.followersGrowthPct7d != null).length;
   console.log(
-    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts)`
+    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${data.accounts.length} accounts with follower counts, ${withGrowth} with 7d growth)`
   );
 
   if (!process.argv.includes("--no-sheet-sync")) {

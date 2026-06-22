@@ -14,6 +14,7 @@
  *   node scripts/sync-ig-leaderboard-sheet.mjs --dry-run
  */
 import {
+  applyGrowthFromHistory,
   growthPctFromSheetRows,
   loadLeaderboardData,
   parseFollowerCount,
@@ -200,12 +201,9 @@ function applyGrowthFromSheet(data, sheetRows) {
   let withGrowth = 0;
 
   for (const account of data.accounts || []) {
-    const growth = growthPctFromSheetRows(
-      sheetRows,
-      account.handle,
-      today,
-      account.followers
-    );
+    const growth =
+      growthPctFromSheetRows(sheetRows, account.handle, today, account.followers) ??
+      account.followersGrowthPct7d;
     account.followersGrowthPct7d = growth;
     if (growth != null) withGrowth++;
   }
@@ -231,6 +229,7 @@ async function main() {
 
   await ensureHeader(sheets, spreadsheetId, tabName);
   const sheetRows = await readSheetRows(sheets, spreadsheetId, tabName);
+  applyGrowthFromHistory(data);
   applyGrowthFromSheet(data, sheetRows);
 
   const rows = rowsFromData(data);
