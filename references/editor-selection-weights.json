@@ -1,22 +1,27 @@
 {
-  "generatedAt": "2026-06-10T03:52:54.733Z",
+  "generatedAt": "2026-06-22T03:42:10.988Z",
   "windowDays": 14,
   "editionsIncluded": [
+    "2026-06-18",
+    "2026-06-17",
+    "2026-06-16",
+    "2026-06-15",
+    "2026-06-11",
+    "2026-06-10",
     "2026-06-09",
-    "2026-06-08",
-    "2026-06-05"
+    "2026-06-08"
   ],
-  "totalSelectedStories": 11,
+  "totalSelectedStories": 28,
   "tagWeights": {
     "selected": 4
   },
   "tagCounts": {
-    "selected": 11
+    "selected": 28
   },
   "sectionCounts": {
-    "GBA News": 1,
-    "Macao": 1,
-    "Hong Kong": 1,
+    "GBA News": 0,
+    "Macao": 0,
+    "Hong Kong": 0,
     "Zhuhai inc. Hengqin": 0,
     "Guangzhou": 0,
     "Shenzhen": 0,
@@ -29,197 +34,198 @@
     "Nation": 0,
     "GBA sport": 0
   },
-  "sectionFloors": {
-    "GBA News": 1,
-    "Macao": 1,
-    "Hong Kong": 1
-  },
+  "sectionFloors": {},
   "storyTypeCounts": {
-    "transport": 1,
-    "weather": 1,
-    "sport": 2,
-    "gba_integration": 4,
-    "society": 3
+    "weather": 3,
+    "society": 12,
+    "gba_integration": 11,
+    "policy": 1,
+    "transport": 1
   },
-  "urlDomainFrequency": {
-    "scmp.com": 1
-  },
+  "urlDomainFrequency": {},
   "repeatHeadlinePatterns": [
     {
-      "word": "2026",
-      "count": 2
+      "word": "both",
+      "count": 5
     },
     {
-      "word": "yuan",
-      "count": 2
-    },
-    {
-      "word": "southbound",
-      "count": 1
-    },
-    {
-      "word": "travel",
-      "count": 1
-    },
-    {
-      "word": "scheme",
-      "count": 1
-    },
-    {
-      "word": "opens",
-      "count": 1
-    },
-    {
-      "word": "five",
-      "count": 1
-    },
-    {
-      "word": "more",
-      "count": 1
-    },
-    {
-      "word": "cities",
-      "count": 1
+      "word": "cover",
+      "count": 5
     },
     {
       "word": "from",
-      "count": 1
+      "count": 5
+    },
+    {
+      "word": "2026",
+      "count": 5
+    },
+    {
+      "word": "with",
+      "count": 5
+    },
+    {
+      "word": "june",
+      "count": 5
+    },
+    {
+      "word": "cultural",
+      "count": 3
+    },
+    {
+      "word": "adding",
+      "count": 3
+    },
+    {
+      "word": "guangzhou",
+      "count": 3
+    },
+    {
+      "word": "this",
+      "count": 3
+    },
+    {
+      "word": "applications",
+      "count": 3
+    },
+    {
+      "word": "typhoon",
+      "count": 2
+    },
+    {
+      "word": "identity",
+      "count": 2
+    },
+    {
+      "word": "gold",
+      "count": 2
+    },
+    {
+      "word": "total",
+      "count": 2
+    },
+    {
+      "word": "scheme",
+      "count": 2
     },
     {
       "word": "july",
-      "count": 1
+      "count": 2
     },
     {
-      "word": "observatory",
-      "count": 1
+      "word": "global",
+      "count": 2
     },
     {
-      "word": "issues",
-      "count": 1
+      "word": "growth",
+      "count": 2
     },
     {
-      "word": "black",
-      "count": 1
+      "word": "year",
+      "count": 2
     },
     {
-      "word": "rainstorm",
-      "count": 1
+      "word": "display",
+      "count": 2
     },
     {
-      "word": "warning",
-      "count": 1
+      "word": "museum",
+      "count": 2
     },
     {
-      "word": "blessing",
-      "count": 1
+      "word": "free",
+      "count": 2
     },
     {
-      "word": "ceremony",
-      "count": 1
+      "word": "bird",
+      "count": 2
     },
     {
-      "word": "held",
-      "count": 1
-    },
-    {
-      "word": "international",
-      "count": 1
-    },
-    {
-      "word": "dragon",
-      "count": 1
-    },
-    {
-      "word": "boat",
-      "count": 1
-    },
-    {
-      "word": "races",
-      "count": 1
-    },
-    {
-      "word": "tower",
-      "count": 1
-    },
-    {
-      "word": "featured",
-      "count": 1
+      "word": "sunday",
+      "count": 2
     }
   ],
   "calibrationExamples": [
     {
-      "editionDate": "2026-06-09",
-      "headline": "Southbound travel scheme opens to five more GBA cities from July",
-      "section": "GBA News",
-      "selectionTag": "selected",
-      "weight": 4
-    },
-    {
-      "editionDate": "2026-06-09",
-      "headline": "Observatory issues first black rainstorm warning of 2026",
-      "section": "Hong Kong",
-      "selectionTag": "selected",
-      "weight": 4
-    },
-    {
-      "editionDate": "2026-06-09",
-      "headline": "Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races",
-      "section": "Macao",
-      "selectionTag": "selected",
-      "weight": 4
-    },
-    {
-      "editionDate": "2026-06-08",
-      "headline": "Macao Tower featured in Trip.Best Global 100 night attractions",
+      "editionDate": "2026-06-17",
+      "headline": "Guangdong water authority zero casualties and no reservoir failures after Typhoon Butterfly — 192 reservoirs, 5.7 billion cubic metres retained; both cover",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-08",
-      "headline": "Angola–Guangzhou new air route launch",
+      "editionDate": "2026-06-17",
+      "headline": "Civil servants granted uniform 2% pay rise; both cover",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-05",
-      "headline": "RCEP tariff savings (Guangdong 1.4B yuan)",
+      "editionDate": "2026-06-17",
+      "headline": "GBA cultural identity forum — media delegation visits Mandarin's House in Macao; Wu Zhiliang calls for establishing GBA values and shared identity",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-05",
-      "headline": "Hengqin talent living subsidies (June application)",
+      "editionDate": "2026-06-17",
+      "headline": "Pan Zhixin (weightlifter from Maoming) wins gold at China–Japan–Korea Weightlifting Invitational; China bags 12 gold medals total",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-05",
-      "headline": "Education subsidy fraud (CCAC referral)",
+      "editionDate": "2026-06-17",
+      "headline": "Macao rodent problem on government-owned idle land severe — ~2,900 mice killed in 2026",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-05",
-      "headline": "Hometown Market Carnival at Victoria Park",
+      "editionDate": "2026-06-17",
+      "headline": "HKTDC 60th anniversary banquet and seminar; chair Frederick Ma says organisation will continue visiting emerging markets",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-05",
-      "headline": "Shenzhen 10 major group sports events list (2025)",
+      "editionDate": "2026-06-17",
+      "headline": "Guangdong Residential Care Services Scheme adding three more elderly homes in Shenzhen and Dongguan from 1 July — total recognised providers rises to 29",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
     },
     {
-      "editionDate": "2026-06-05",
-      "headline": "Mainland China fuel price reduction (save 20.5 yuan per tank)",
+      "editionDate": "2026-06-17",
+      "headline": "Shenzhen creates China's first typhoon rapid-intensification forecasting model — 24-hour prediction tool",
+      "section": null,
+      "selectionTag": "selected",
+      "weight": 4
+    },
+    {
+      "editionDate": "2026-06-17",
+      "headline": "China leads global research output per Nature Index 2026 — 22.4% growth between 2024–2025, only top-10 country with double-digit growth",
+      "section": null,
+      "selectionTag": "selected",
+      "weight": 4
+    },
+    {
+      "editionDate": "2026-06-15",
+      "headline": "Repatriated 2,400-year-old Yue royal sword on display at Guangzhou Grandview Museum from 13 June; both cover",
+      "section": null,
+      "selectionTag": "selected",
+      "weight": 4
+    },
+    {
+      "editionDate": "2026-06-11",
+      "headline": "June 11 (2026-06-11)",
+      "section": null,
+      "selectionTag": "selected",
+      "weight": 4
+    },
+    {
+      "editionDate": "2026-06-11",
+      "headline": "Finance chief Paul Chan on mainland capital flows to Hong Kong and expanded Wealth Management Connect quotas",
       "section": null,
       "selectionTag": "selected",
       "weight": 4
