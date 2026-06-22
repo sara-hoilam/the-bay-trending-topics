@@ -1,6 +1,6 @@
 {
   "capturedAt": "2026-06-17",
-  "notes": "Followers-only fallback when Instagram API is rate-limited. Do not store posts7d/postsToday here — they go stale.",
+  "notes": "Followers-only fallback when Instagram API is rate-limited.",
   "accounts": {
     "scmpnews": { "followers": 649567 },
     "tatlerhongkong": { "followers": 256584 },

@@ -29,11 +29,6 @@
     return sign + n.toFixed(2).replace(/\.?0+$/, "") + "%";
   }
 
-  function formatCount(n) {
-    if (n == null) return "—";
-    return String(n);
-  }
-
   function growthClass(n) {
     if (n == null) return "";
     if (n > 0) return "igl-growth--up";
@@ -78,8 +73,6 @@
       '<th scope="col">Instagram competitors benchmark</th>' +
       '<th scope="col">Followers</th>' +
       '<th scope="col">7d growth</th>' +
-      '<th scope="col">7d posts</th>' +
-      '<th scope="col">Yesterday\'s posts</th>' +
       "</tr></thead><tbody>";
 
     accounts.forEach(function (row) {
@@ -102,8 +95,6 @@
         '">' +
         esc(formatGrowthPct(row.followersGrowthPct7d)) +
         "</td>";
-      html += '<td class="igl-posts">' + esc(formatCount(row.posts7d)) + "</td>";
-      html += '<td class="igl-posts">' + esc(formatCount(row.postsToday)) + "</td>";
       html += "</tr>";
     });
 

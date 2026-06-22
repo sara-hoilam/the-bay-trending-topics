@@ -2,8 +2,7 @@
 /**
  * Refresh ig-leaderboard-data.json from references/ig-leaderboard-accounts.json.
  *
- * Snapshot fields per handle:
- *   { "followers": 641000, "posts7d": 35, "postsToday": 4 }
+ * Snapshot fields per handle: { "followers": 641000 }
  *
  * Usage:
  *   node scripts/capture-ig-leaderboard.mjs
@@ -46,12 +45,8 @@ function normalizeSnapshot(snapshot) {
   const out = {};
   for (const [handle, val] of Object.entries(snapshot)) {
     if (handle === "capturedAt" || handle === "notes") continue;
-    if (
-      val &&
-      typeof val === "object" &&
-      ("followers" in val || "posts7d" in val || "postsToday" in val)
-    ) {
-      out[handle] = val;
+    if (val && typeof val === "object" && "followers" in val) {
+      out[handle] = { followers: val.followers ?? null };
     }
   }
   return Object.keys(out).length ? out : null;
@@ -76,19 +71,17 @@ function snapshotFields(snap, prev) {
   const fields = {};
   if (snap.followers != null) fields.followers = snap.followers;
   else if (prev?.followers != null) fields.followers = prev.followers;
-  if ("posts7d" in snap) fields.posts7d = snap.posts7d;
-  if ("postsToday" in snap) fields.postsToday = snap.postsToday;
   return fields;
 }
 
 function seedSnapshot() {
   return {
-    scmpnews: { followers: 648769, posts7d: 30 },
-    tatlerhongkong: { followers: 256204, posts7d: 50 },
-    the_trip_addict: { followers: 94494, posts7d: 7 },
-    sassyhongkong: { followers: 91246, posts7d: 8 },
-    thebayasia: { followers: 31696, posts7d: 11 },
-    greaterbayvibes: { followers: 17268, posts7d: 8 },
+    scmpnews: { followers: 648769 },
+    tatlerhongkong: { followers: 256204 },
+    the_trip_addict: { followers: 94494 },
+    sassyhongkong: { followers: 91246 },
+    thebayasia: { followers: 31696 },
+    greaterbayvibes: { followers: 17268 },
   };
 }
 
@@ -144,9 +137,8 @@ function main() {
   const data = buildLeaderboardData(accounts, captureMethod);
   writeLeaderboardData(data);
   const withFollowers = accounts.filter((a) => a.followers != null).length;
-  const withPostsToday = accounts.filter((a) => a.postsToday != null).length;
   console.log(
-    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts, ${withPostsToday} with yesterday's post count)`
+    `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${accounts.length} accounts with follower counts)`
   );
 
   if (!process.argv.includes("--no-sheet-sync")) {
