@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-22",
-  "refreshedAt": "2026-06-22T08:32:48+08:00",
+  "refreshedAt": "2026-06-22T08:45:43+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,9 +10,9 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 653330,
-      "followersGrowthPct7d": null,
-      "posts7d": 37,
+      "followers": 653328,
+      "followersGrowthPct7d": 0.7,
+      "posts7d": 33,
       "postsToday": 3,
       "history": [
         {
@@ -52,8 +52,8 @@
         },
         {
           "date": "2026-06-22",
-          "followers": 653330,
-          "posts7d": 37,
+          "followers": 653328,
+          "posts7d": 33,
           "postsToday": 3
         }
       ]
@@ -64,8 +64,8 @@
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
       "followers": 257346,
-      "followersGrowthPct7d": null,
-      "posts7d": 9,
+      "followersGrowthPct7d": 0.45,
+      "posts7d": 30,
       "postsToday": 4,
       "history": [
         {
@@ -106,7 +106,7 @@
         {
           "date": "2026-06-22",
           "followers": 257346,
-          "posts7d": 9,
+          "posts7d": 30,
           "postsToday": 4
         }
       ]
@@ -116,10 +116,10 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 122421,
+      "followers": 122420,
       "followersGrowthPct7d": null,
-      "posts7d": 30,
-      "postsToday": 2,
+      "posts7d": 0,
+      "postsToday": 0,
       "history": [
         {
           "date": "2026-06-17",
@@ -147,9 +147,9 @@
         },
         {
           "date": "2026-06-22",
-          "followers": 122421,
-          "posts7d": 30,
-          "postsToday": 2
+          "followers": 122420,
+          "posts7d": 0,
+          "postsToday": 0
         }
       ]
     },
@@ -159,8 +159,8 @@
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
       "followers": 94528,
-      "followersGrowthPct7d": null,
-      "posts7d": 5,
+      "followersGrowthPct7d": 0.04,
+      "posts7d": 0,
       "postsToday": 0,
       "history": [
         {
@@ -201,7 +201,7 @@
         {
           "date": "2026-06-22",
           "followers": 94528,
-          "posts7d": 5,
+          "posts7d": 0,
           "postsToday": 0
         }
       ]
@@ -212,7 +212,7 @@
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
       "followers": 91278,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 0.04,
       "posts7d": 5,
       "postsToday": 0,
       "history": [
@@ -266,7 +266,7 @@
       "highlight": false,
       "followers": 42026,
       "followersGrowthPct7d": null,
-      "posts7d": 3,
+      "posts7d": 0,
       "postsToday": 0,
       "history": [
         {
@@ -296,7 +296,7 @@
         {
           "date": "2026-06-22",
           "followers": 42026,
-          "posts7d": 3,
+          "posts7d": 0,
           "postsToday": 0
         }
       ]
@@ -307,7 +307,7 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 32153,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 1.44,
       "posts7d": 13,
       "postsToday": 1,
       "history": [
@@ -359,8 +359,8 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 17636,
-      "followersGrowthPct7d": null,
+      "followers": 17637,
+      "followersGrowthPct7d": 2.14,
       "posts7d": 6,
       "postsToday": 0,
       "history": [
@@ -401,7 +401,7 @@
         },
         {
           "date": "2026-06-22",
-          "followers": 17636,
+          "followers": 17637,
           "posts7d": 6,
           "postsToday": 0
         }
@@ -414,7 +414,7 @@
       "highlight": false,
       "followers": 1988,
       "followersGrowthPct7d": null,
-      "posts7d": 2,
+      "posts7d": 0,
       "postsToday": 0,
       "history": [
         {
@@ -444,7 +444,7 @@
         {
           "date": "2026-06-22",
           "followers": 1988,
-          "posts7d": 2,
+          "posts7d": 0,
           "postsToday": 0
         }
       ]
