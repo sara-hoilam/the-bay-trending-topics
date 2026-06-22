@@ -39,7 +39,18 @@ export function parseFollowerCount(raw) {
 export function computeMetrics(history, today) {
   const current = (history || []).find((h) => h.date === today);
   const followers = current?.followers ?? null;
-  return { followers, followersGrowthPct7d: null };
+  const followersGrowthPct7d = growthPctFromHistory(history, today, followers);
+  return { followers, followersGrowthPct7d };
+}
+
+/** Rolling 7d follower growth % from account history: today vs exactly 7 calendar days ago. */
+export function growthPctFromHistory(history, today, todayFollowers) {
+  if (todayFollowers == null) return null;
+  const refDate = hktAddDays(today, -7);
+  const refRow = (history || []).find((h) => h.date === refDate);
+  const refFollowers = refRow?.followers;
+  if (refFollowers == null || refFollowers <= 0) return null;
+  return Math.round(((todayFollowers - refFollowers) / refFollowers) * 10000) / 100;
 }
 
 /** Rolling 7d follower growth % from sheet rows: today vs exactly 7 calendar days ago. */
@@ -94,9 +105,26 @@ export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
     url: cfg.url,
     highlight: cfg.highlight === true,
     followers: metrics.followers,
-    followersGrowthPct7d: null,
+    followersGrowthPct7d: metrics.followersGrowthPct7d,
     history: nextHistory,
   };
+}
+
+export function applyGrowthFromHistory(data) {
+  const today = data.updatedAt;
+  const refDate = hktAddDays(today, -7);
+  let withGrowth = 0;
+
+  for (const account of data.accounts || []) {
+    const growth = growthPctFromHistory(account.history, today, account.followers);
+    account.followersGrowthPct7d = growth;
+    if (growth != null) withGrowth++;
+  }
+
+  console.log(
+    `7d growth from history: ${withGrowth}/${data.accounts?.length ?? 0} accounts (ref date ${refDate})`
+  );
+  return data;
 }
 
 export function buildLeaderboardData(accounts, captureMethod = "manual") {

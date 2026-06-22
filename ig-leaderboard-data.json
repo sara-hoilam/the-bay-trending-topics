@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-22",
-  "refreshedAt": "2026-06-22T10:14:45+08:00",
+  "refreshedAt": "2026-06-22T10:51:18+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "history-preserve",
   "accounts": [
@@ -11,7 +11,7 @@
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
       "followers": 653328,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 0.7,
       "history": [
         {
           "date": "2026-06-15",
@@ -49,7 +49,7 @@
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
       "followers": 257346,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 0.45,
       "history": [
         {
           "date": "2026-06-15",
@@ -117,7 +117,7 @@
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
       "followers": 94528,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 0.04,
       "history": [
         {
           "date": "2026-06-15",
@@ -155,7 +155,7 @@
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
       "followers": 91278,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 0.04,
       "history": [
         {
           "date": "2026-06-15",
@@ -223,7 +223,7 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 32153,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 1.44,
       "history": [
         {
           "date": "2026-06-15",
@@ -261,7 +261,7 @@
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
       "followers": 17637,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": 2.14,
       "history": [
         {
           "date": "2026-06-15",

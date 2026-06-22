@@ -20,7 +20,7 @@ Handover guide for setting up the **GBA Pulse IG Competitors Benchmark** in a ne
 | Metric | JSON field | Sheet column | How it is computed |
 |--------|------------|--------------|-------------------|
 | Followers | `followers` | `followers` | Instagram profile API |
-| 7-day follower growth % | `followersGrowthPct7d` | `followers_growth_pct_7d` | **Sheet history only** — today vs exactly 7 calendar days ago |
+| 7-day follower growth % | `followersGrowthPct7d` | `followers_growth_pct_7d` | **Local history** during capture (today vs 7 days ago); **Google Sheet** overrides during sync when a reference row exists |
 
 Growth % is **not** fetched from Instagram. It is calculated during sheet sync from prior rows.
 
