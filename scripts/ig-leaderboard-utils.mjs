@@ -39,9 +39,7 @@ export function parseFollowerCount(raw) {
 export function computeMetrics(history, today) {
   const current = (history || []).find((h) => h.date === today);
   const followers = current?.followers ?? null;
-  const posts7d = current?.posts7d ?? null;
-  const postsToday = current?.postsToday ?? null;
-  return { followers, posts7d, postsToday, followersGrowthPct7d: null };
+  return { followers, followersGrowthPct7d: null };
 }
 
 /** Rolling 7d follower growth % from sheet rows: today vs exactly 7 calendar days ago. */
@@ -71,25 +69,21 @@ export function sortAccountsByFollowers(accounts) {
   });
 }
 
+function historyEntry(date, followers) {
+  return { date, followers };
+}
+
 export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
   const prevHistory = existing?.history || [];
   const prevToday = prevHistory.find((h) => h.date === today);
-  const nextHistory = prevHistory.filter((h) => h.date !== today);
+  const nextHistory = prevHistory
+    .filter((h) => h.date !== today)
+    .map((h) => historyEntry(h.date, h.followers));
 
-  const hasUpdate =
-    snapshot.followers != null ||
-    "posts7d" in snapshot ||
-    "postsToday" in snapshot;
-
-  if (hasUpdate) {
-    nextHistory.push({
-      date: today,
-      followers: snapshot.followers ?? prevToday?.followers ?? null,
-      posts7d: "posts7d" in snapshot ? snapshot.posts7d : (prevToday?.posts7d ?? null),
-      postsToday: "postsToday" in snapshot
-        ? snapshot.postsToday
-        : (prevToday?.postsToday ?? null),
-    });
+  if (snapshot.followers != null) {
+    nextHistory.push(
+      historyEntry(today, snapshot.followers ?? prevToday?.followers ?? null)
+    );
   }
   nextHistory.sort((a, b) => (a.date < b.date ? -1 : 1));
   const metrics = computeMetrics(nextHistory, today);
@@ -101,8 +95,6 @@ export function mergeSnapshot(existing, cfg, snapshot, today = hktDateStr()) {
     highlight: cfg.highlight === true,
     followers: metrics.followers,
     followersGrowthPct7d: null,
-    posts7d: metrics.posts7d,
-    postsToday: metrics.postsToday,
     history: nextHistory,
   };
 }
@@ -113,7 +105,7 @@ export function buildLeaderboardData(accounts, captureMethod = "manual") {
     generatedFrom: "references/ig-leaderboard-accounts.json",
     updatedAt: today,
     refreshedAt: hktIsoDateTime(),
-    refreshedAtLabel: "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
+    refreshedAtLabel: "Follower snapshot as of update date · 7d growth from Google Sheet history",
     captureMethod,
     accounts: sortAccountsByFollowers(accounts),
   };

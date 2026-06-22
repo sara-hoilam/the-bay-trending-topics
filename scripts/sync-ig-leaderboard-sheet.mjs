@@ -27,8 +27,6 @@ const HEADERS = [
   "display_name",
   "followers",
   "followers_growth_pct_7d",
-  "posts_7d",
-  "posts_today",
   "captured_at",
 ];
 
@@ -83,8 +81,6 @@ function rowsFromData(data) {
     row.displayName ?? "",
     row.followers ?? "",
     row.followersGrowthPct7d ?? "",
-    row.posts7d ?? "",
-    row.postsToday ?? "",
     capturedAt,
   ]);
 }
@@ -126,16 +122,16 @@ async function getSheetsClient() {
 }
 
 async function readSheetRows(sheets, spreadsheetId, tabName) {
-  const range = `${quoteTabName(tabName)}!A:H`;
+  const range = `${quoteTabName(tabName)}!A:F`;
   const res = await sheets.spreadsheets.values.get({ spreadsheetId, range });
   return parseSheetRows(res.data.values ?? []);
 }
 
 async function ensureHeader(sheets, spreadsheetId, tabName) {
-  const range = `${quoteTabName(tabName)}!A1:H1`;
+  const range = `${quoteTabName(tabName)}!A1:F1`;
   const res = await sheets.spreadsheets.values.get({ spreadsheetId, range });
   const firstRow = res.data.values?.[0] ?? [];
-  const hasHeader = firstRow[0] === HEADERS[0] && firstRow[6] === HEADERS[6];
+  const hasHeader = firstRow[0] === HEADERS[0] && firstRow[5] === HEADERS[5];
   if (hasHeader) return;
 
   await sheets.spreadsheets.values.update({
@@ -188,7 +184,7 @@ async function deleteRows(sheets, spreadsheetId, tabName, rowIndexes) {
 }
 
 async function appendRows(sheets, spreadsheetId, tabName, rows) {
-  const range = `${quoteTabName(tabName)}!A:H`;
+  const range = `${quoteTabName(tabName)}!A:F`;
   await sheets.spreadsheets.values.append({
     spreadsheetId,
     range,

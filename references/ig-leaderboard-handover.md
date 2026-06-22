@@ -20,8 +20,6 @@ Handover guide for setting up the **GBA Pulse IG Competitors Benchmark** in a ne
 | Metric | JSON field | Sheet column | How it is computed |
 |--------|------------|--------------|-------------------|
 | Followers | `followers` | `followers` | Instagram profile API |
-| 7-day post count | `posts7d` | `posts_7d` | Feed API pagination — **7 full calendar days ending yesterday** |
-| Yesterday's post count | `postsToday` | `posts_today` | Same pagination — posts on **yesterday** (HKT). E.g. run 17 Jun → 16 Jun. |
 | 7-day follower growth % | `followersGrowthPct7d` | `followers_growth_pct_7d` | **Sheet history only** — today vs exactly 7 calendar days ago |
 
 Growth % is **not** fetched from Instagram. It is calculated during sheet sync from prior rows.
@@ -44,9 +42,8 @@ Daily automation (choose one or both)
 
 capture-ig-leaderboard.mjs --refresh
   │
-  ├─ fetch-ig-benchmark.mjs          ← Instagram APIs
-  │     ├─ GET  i.instagram.com/api/v1/users/web_profile_info/   (followers + user id)
-  │     └─ GET  www.instagram.com/api/v1/feed/user/{id}/         (paginate posts)
+  ├─ fetch-ig-benchmark.mjs          ← Instagram profile API (followers)
+  │     └─ GET  i.instagram.com/api/v1/users/web_profile_info/
   │
   ├─ references/ig-leaderboard-manual-snapshot.json   (followers-only fallback)
   ├─ ig-leaderboard-data.json                         (site data)
@@ -57,7 +54,7 @@ capture-ig-leaderboard.mjs --refresh
 
 | File | Role |
 |------|------|
-| `scripts/fetch-ig-benchmark.mjs` | Instagram fetch + post pagination |
+| `scripts/fetch-ig-benchmark.mjs` | Instagram follower fetch |
 | `scripts/capture-ig-leaderboard.mjs` | Merge fetch → JSON |
 | `scripts/sync-ig-leaderboard-sheet.mjs` | Push rows to Google Sheet |
 | `scripts/ig-leaderboard-utils.mjs` | Shared helpers |
@@ -131,13 +128,11 @@ cat orchestration/ig-leaderboard-snapshot.json
 ```json
 {
   "notes": [
-    "thebayasia: 31,748 followers, 14 posts/7d (2026-06-10–2026-06-16), 2 posts on 2026-06-16 (instagram-api)"
+    "thebayasia: 31,748 followers (instagram-api)"
   ],
   "accounts": {
     "thebayasia": {
-      "followers": 31748,
-      "posts7d": 14,
-      "postsToday": 2
+      "followers": 31748
     }
   }
 }
@@ -161,8 +156,7 @@ Instagram blocks aggressive automated requests, especially from:
 
 - Snapshot notes: `fetch failed (HTTP 429)`
 - `accounts: {}` in snapshot
-- `postsToday` shows **—** (null) on the site
-- `posts7d` may show **stale** values from an earlier partial fetch
+- Follower counts may show **stale** values from manual snapshot or prior history
 
 **Mitigations:**
 
@@ -171,7 +165,6 @@ Instagram blocks aggressive automated requests, especially from:
 | Run from a residential IP | `npm run ig:refresh` on a local Mac often works |
 | Retry later | Daily cloud run may succeed when rate limit resets |
 | Manual followers fallback | Update `references/ig-leaderboard-manual-snapshot.json` (**followers only**) |
-| Do **not** hand-enter post counts | They go stale quickly; wait for API or accept blank |
 
 **Manual snapshot format (followers only):**
 
@@ -183,12 +176,9 @@ Instagram blocks aggressive automated requests, especially from:
 }
 ```
 
-Do **not** store `posts7d` or `postsToday` in the manual file.
-
 ### 3.6 Maintenance notes
 
-- GraphQL `doc_id` values in `fetch-ig-benchmark.mjs` can rotate when Instagram updates their web app. If pagination breaks but profile still works, check Instaloader/scrapfly issues for current `doc_id` values.
-- Feed API (`/api/v1/feed/user/`) is the primary pagination path as of mid-2026.
+- Profile API (`web_profile_info`) is the sole data source as of mid-2026.
 
 ---
 
@@ -235,8 +225,6 @@ On first sync, the script writes this header if missing:
 | `display_name` | Friendly name |
 | `followers` | Integer follower count |
 | `followers_growth_pct_7d` | % change vs row from 7 calendar days ago (empty if no ref row) |
-| `posts_7d` | Posts in last 7 calendar days |
-| `posts_today` | Posts on yesterday (full calendar day) |
 | `captured_at` | ISO timestamp of refresh |
 
 **Upsert behaviour:** If rows for today's date already exist, they are deleted and re-appended (no duplicates).
@@ -336,7 +324,7 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 - [ ] Copy `ig-leaderboard-panel.js` + wire into `index.html`
 - [ ] Seed empty `ig-leaderboard-data.json` or run first refresh
 - [ ] Test: `node scripts/capture-ig-leaderboard.mjs --refresh`
-- [ ] Confirm snapshot notes include `posts/7d (start–end)` and `posts on {yesterday}`
+- [ ] Confirm snapshot notes include follower counts per handle
 
 ### Google Sheets
 
@@ -362,8 +350,6 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | `fetch failed (HTTP 429)` | Instagram rate limit | Retry from residential IP or wait for daily run |
-| `posts_today` is **—** | Fetch did not complete | Post counts only set on successful API fetch |
-| `posts_7d` stuck at ≤12 | Old code or pagination failure | Ensure feed API pagination is in `fetch-ig-benchmark.mjs` |
 | `Requested entity was not found` | Wrong sheet ID or service account not shared | Check ID + share sheet as Editor |
 | Growth % always empty | Fewer than 7 days of sheet rows | Normal for first week |
 | Sheet sync skipped | Missing env secrets | Add GitHub secrets or export locally |
@@ -390,4 +376,4 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 
 ---
 
-*Last updated: June 2026 — reflects feed API pagination, `posts_today` column, and followers-only manual fallback.*
+*Last updated: June 2026 — followers-only leaderboard; post metrics removed.*

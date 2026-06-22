@@ -1,9 +1,9 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-22",
-  "refreshedAt": "2026-06-22T08:45:43+08:00",
-  "refreshedAtLabel": "Follower snapshot as of update date · 7d posts = 7 full days ending yesterday · yesterday's post count",
-  "captureMethod": "public-refresh",
+  "refreshedAt": "2026-06-22T10:14:45+08:00",
+  "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
+  "captureMethod": "history-preserve",
   "accounts": [
     {
       "handle": "scmpnews",
@@ -11,50 +11,35 @@
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
       "followers": 653328,
-      "followersGrowthPct7d": 0.7,
-      "posts7d": 33,
-      "postsToday": 3,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 648769,
-          "posts7d": 30
+          "followers": 648769
         },
         {
           "date": "2026-06-16",
-          "followers": 648930,
-          "posts7d": 12,
-          "postsToday": null
+          "followers": 648930
         },
         {
           "date": "2026-06-17",
-          "followers": 649567,
-          "posts7d": 28,
-          "postsToday": 1
+          "followers": 649567
         },
         {
           "date": "2026-06-19",
-          "followers": 651589,
-          "posts7d": 32,
-          "postsToday": 9
+          "followers": 651589
         },
         {
           "date": "2026-06-20",
-          "followers": 652582,
-          "posts7d": 33,
-          "postsToday": 5
+          "followers": 652582
         },
         {
           "date": "2026-06-21",
-          "followers": 653010,
-          "posts7d": 33,
-          "postsToday": 2
+          "followers": 653010
         },
         {
           "date": "2026-06-22",
-          "followers": 653328,
-          "posts7d": 33,
-          "postsToday": 3
+          "followers": 653328
         }
       ]
     },
@@ -64,50 +49,35 @@
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
       "followers": 257346,
-      "followersGrowthPct7d": 0.45,
-      "posts7d": 30,
-      "postsToday": 4,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 256204,
-          "posts7d": 49
+          "followers": 256204
         },
         {
           "date": "2026-06-16",
-          "followers": 256360,
-          "posts7d": 9,
-          "postsToday": null
+          "followers": 256360
         },
         {
           "date": "2026-06-17",
-          "followers": 256584,
-          "posts7d": 30,
-          "postsToday": 0
+          "followers": 256584
         },
         {
           "date": "2026-06-19",
-          "followers": 256884,
-          "posts7d": 7,
-          "postsToday": 7
+          "followers": 256884
         },
         {
           "date": "2026-06-20",
-          "followers": 257023,
-          "posts7d": 30,
-          "postsToday": 5
+          "followers": 257023
         },
         {
           "date": "2026-06-21",
-          "followers": 257186,
-          "posts7d": 9,
-          "postsToday": 3
+          "followers": 257186
         },
         {
           "date": "2026-06-22",
-          "followers": 257346,
-          "posts7d": 30,
-          "postsToday": 4
+          "followers": 257346
         }
       ]
     },
@@ -118,38 +88,26 @@
       "highlight": false,
       "followers": 122420,
       "followersGrowthPct7d": null,
-      "posts7d": 0,
-      "postsToday": 0,
       "history": [
         {
           "date": "2026-06-17",
-          "followers": 122107,
-          "posts7d": null,
-          "postsToday": null
+          "followers": 122107
         },
         {
           "date": "2026-06-19",
-          "followers": 122253,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 122253
         },
         {
           "date": "2026-06-20",
-          "followers": 122327,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 122327
         },
         {
           "date": "2026-06-21",
-          "followers": 122374,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 122374
         },
         {
           "date": "2026-06-22",
-          "followers": 122420,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 122420
         }
       ]
     },
@@ -159,50 +117,35 @@
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
       "followers": 94528,
-      "followersGrowthPct7d": 0.04,
-      "posts7d": 0,
-      "postsToday": 0,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 94494,
-          "posts7d": 7
+          "followers": 94494
         },
         {
           "date": "2026-06-16",
-          "followers": 94498,
-          "posts7d": 8,
-          "postsToday": null
+          "followers": 94498
         },
         {
           "date": "2026-06-17",
-          "followers": 94501,
-          "posts7d": 5,
-          "postsToday": 0
+          "followers": 94501
         },
         {
           "date": "2026-06-19",
-          "followers": 94501,
-          "posts7d": 4,
-          "postsToday": 2
+          "followers": 94501
         },
         {
           "date": "2026-06-20",
-          "followers": 94517,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 94517
         },
         {
           "date": "2026-06-21",
-          "followers": 94527,
-          "posts7d": 6,
-          "postsToday": 1
+          "followers": 94527
         },
         {
           "date": "2026-06-22",
-          "followers": 94528,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 94528
         }
       ]
     },
@@ -212,50 +155,35 @@
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
       "followers": 91278,
-      "followersGrowthPct7d": 0.04,
-      "posts7d": 5,
-      "postsToday": 0,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 91246,
-          "posts7d": 8
+          "followers": 91246
         },
         {
           "date": "2026-06-16",
-          "followers": 91248,
-          "posts7d": 8,
-          "postsToday": null
+          "followers": 91248
         },
         {
           "date": "2026-06-17",
-          "followers": 91258,
-          "posts7d": 8,
-          "postsToday": 0
+          "followers": 91258
         },
         {
           "date": "2026-06-19",
-          "followers": 91261,
-          "posts7d": 6,
-          "postsToday": 1
+          "followers": 91261
         },
         {
           "date": "2026-06-20",
-          "followers": 91281,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 91281
         },
         {
           "date": "2026-06-21",
-          "followers": 91271,
-          "posts7d": 5,
-          "postsToday": 0
+          "followers": 91271
         },
         {
           "date": "2026-06-22",
-          "followers": 91278,
-          "posts7d": 5,
-          "postsToday": 0
+          "followers": 91278
         }
       ]
     },
@@ -266,38 +194,26 @@
       "highlight": false,
       "followers": 42026,
       "followersGrowthPct7d": null,
-      "posts7d": 0,
-      "postsToday": 0,
       "history": [
         {
           "date": "2026-06-17",
-          "followers": 41085,
-          "posts7d": null,
-          "postsToday": null
+          "followers": 41085
         },
         {
           "date": "2026-06-19",
-          "followers": 41475,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 41475
         },
         {
           "date": "2026-06-20",
-          "followers": 41640,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 41640
         },
         {
           "date": "2026-06-21",
-          "followers": 41838,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 41838
         },
         {
           "date": "2026-06-22",
-          "followers": 42026,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 42026
         }
       ]
     },
@@ -307,50 +223,35 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 32153,
-      "followersGrowthPct7d": 1.44,
-      "posts7d": 13,
-      "postsToday": 1,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 31696,
-          "posts7d": 11
+          "followers": 31696
         },
         {
           "date": "2026-06-16",
-          "followers": 31748,
-          "posts7d": 12,
-          "postsToday": null
+          "followers": 31748
         },
         {
           "date": "2026-06-17",
-          "followers": 31810,
-          "posts7d": 13,
-          "postsToday": 0
+          "followers": 31810
         },
         {
           "date": "2026-06-19",
-          "followers": 31997,
-          "posts7d": 12,
-          "postsToday": 2
+          "followers": 31997
         },
         {
           "date": "2026-06-20",
-          "followers": 32069,
-          "posts7d": 12,
-          "postsToday": 2
+          "followers": 32069
         },
         {
           "date": "2026-06-21",
-          "followers": 32102,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 32102
         },
         {
           "date": "2026-06-22",
-          "followers": 32153,
-          "posts7d": 13,
-          "postsToday": 1
+          "followers": 32153
         }
       ]
     },
@@ -360,50 +261,35 @@
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
       "followers": 17637,
-      "followersGrowthPct7d": 2.14,
-      "posts7d": 6,
-      "postsToday": 0,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
-          "followers": 17268,
-          "posts7d": 8
+          "followers": 17268
         },
         {
           "date": "2026-06-16",
-          "followers": 17285,
-          "posts7d": 8,
-          "postsToday": null
+          "followers": 17285
         },
         {
           "date": "2026-06-17",
-          "followers": 17299,
-          "posts7d": 7,
-          "postsToday": 0
+          "followers": 17299
         },
         {
           "date": "2026-06-19",
-          "followers": 17362,
-          "posts7d": 7,
-          "postsToday": 2
+          "followers": 17362
         },
         {
           "date": "2026-06-20",
-          "followers": 17478,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 17478
         },
         {
           "date": "2026-06-21",
-          "followers": 17560,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 17560
         },
         {
           "date": "2026-06-22",
-          "followers": 17637,
-          "posts7d": 6,
-          "postsToday": 0
+          "followers": 17637
         }
       ]
     },
@@ -414,38 +300,26 @@
       "highlight": false,
       "followers": 1988,
       "followersGrowthPct7d": null,
-      "posts7d": 0,
-      "postsToday": 0,
       "history": [
         {
           "date": "2026-06-17",
-          "followers": 1988,
-          "posts7d": null,
-          "postsToday": null
+          "followers": 1988
         },
         {
           "date": "2026-06-19",
-          "followers": 1985,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 1985
         },
         {
           "date": "2026-06-20",
-          "followers": 1987,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 1987
         },
         {
           "date": "2026-06-21",
-          "followers": 1988,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 1988
         },
         {
           "date": "2026-06-22",
-          "followers": 1988,
-          "posts7d": 0,
-          "postsToday": 0
+          "followers": 1988
         }
       ]
     }

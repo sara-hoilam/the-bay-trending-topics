@@ -26,7 +26,7 @@ Tab name: **`Daily_Datalog`** (or set `GOOGLE_SHEETS_IG_TAB`).
 
 The sync script writes the header automatically on first run:
 
-| date | handle | display_name | followers | followers_growth_pct_7d | posts_7d | posts_today | captured_at |
+| date | handle | display_name | followers | followers_growth_pct_7d | captured_at |
 
 ### 5. GitHub Actions secrets
 Repo **Settings → Secrets and variables → Actions → New repository secret**:
@@ -60,8 +60,6 @@ If secrets are missing, sync is skipped with a log message (refresh still succee
 | Column | Source |
 |--------|--------|
 | `followers` | Instagram `web_profile_info` API (`scripts/fetch-ig-benchmark.mjs`) |
-| `posts_7d` | Instagram feed pagination — **7 full days ending yesterday** (e.g. run 17 Jun → 10–16 Jun) |
-| `posts_today` | Same feed — posts on **yesterday** only (e.g. run 17 Jun → 16 Jun). JSON field `postsToday`. |
 | `followers_growth_pct_7d` | **Google Sheet history** — compares today vs exactly 7 calendar days ago (e.g. 15 Jun vs 8 Jun). Empty if the reference date has no row for that handle. |
 
 Growth is written to both the sheet and `ig-leaderboard-data.json` during sheet sync.

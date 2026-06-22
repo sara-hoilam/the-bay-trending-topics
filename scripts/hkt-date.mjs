@@ -33,23 +33,3 @@ export function hktAddDays(dateStr, days) {
   const utc = new Date(Date.UTC(y, m - 1, d + days));
   return hktDateStr(utc);
 }
-
-/** HKT calendar date (YYYY-MM-DD) for a Unix timestamp in seconds. */
-export function hktDateFromUnix(unixSeconds) {
-  return hktDateStr(new Date(unixSeconds * 1000));
-}
-
-/**
- * Post-count window anchored on yesterday (full calendar days only).
- * E.g. run on 17 Jun → anchor 16 Jun, window 10–16 Jun (7 days).
- */
-export function postCountWindow(runDate = hktDateStr()) {
-  const anchorDate = hktAddDays(runDate, -1);
-  const windowStart = hktAddDays(anchorDate, -6);
-  return { runDate, anchorDate, windowStart, windowEnd: anchorDate };
-}
-
-/** Unix seconds for start of an HKT calendar day (YYYY-MM-DD). */
-export function hktDayStartUnix(dateStr) {
-  return Math.floor(new Date(`${dateStr}T00:00:00+08:00`).getTime() / 1000);
-}
