@@ -1,12 +1,12 @@
 {
-  "editionDate": "2026-06-05",
-  "sourceFile": "2026-06-05-comparison.docx",
-  "parsedAt": "2026-06-22T03:42:10.934Z",
+  "editionDate": "2026-06-11",
+  "sourceFile": "2026-06-11-comparison.docx",
+  "parsedAt": "2026-06-22T03:42:10.951Z",
   "selectedStories": [
     {
       "section": null,
       "sourceSide": "unknown",
-      "headline": "RCEP tariff savings (Guangdong 1.4B yuan)",
+      "headline": "June 11 (2026-06-11)",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -15,7 +15,7 @@
     {
       "section": null,
       "sourceSide": "unknown",
-      "headline": "Hengqin talent living subsidies (June application)",
+      "headline": "Finance chief Paul Chan on mainland capital flows to Hong Kong and expanded Wealth Management Connect quotas",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -24,7 +24,7 @@
     {
       "section": null,
       "sourceSide": "unknown",
-      "headline": "Education subsidy fraud (CCAC referral)",
+      "headline": "Sony and Foto Nice free bird photography sharing session this Sunday with Hong Kong Bird Watching Society speaker",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -33,7 +33,7 @@
     {
       "section": null,
       "sourceSide": "unknown",
-      "headline": "Hometown Market Carnival at Victoria Park",
+      "headline": "Shenzhen Natural History Museum — largest in South China — begins trial operation 30 June, official opening 28 July",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -42,7 +42,7 @@
     {
       "section": null,
       "sourceSide": "unknown",
-      "headline": "Shenzhen 10 major group sports events list (2025)",
+      "headline": "Zhaoshang Subdistrict Intangible Cultural Heritage Fair at Shenzhen K11 ECoast this Saturday",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -51,7 +51,7 @@
     {
       "section": null,
       "sourceSide": "unknown",
-      "headline": "Mainland China fuel price reduction (save 20.5 yuan per tank)",
+      "headline": "Ebola cases in DRC near 600, with ~115 deaths",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -62,5 +62,5 @@
     "selectedCount": 6,
     "totalSelected": 6
   },
-  "paragraphCount": 58
+  "paragraphCount": 74
 }

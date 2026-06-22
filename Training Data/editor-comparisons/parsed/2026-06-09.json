@@ -1,32 +1,66 @@
 {
   "editionDate": "2026-06-09",
   "sourceFile": "2026-06-09-comparison.docx",
-  "parsedAt": "2026-06-10T03:52:54.693Z",
+  "parsedAt": "2026-06-22T03:42:10.943Z",
   "selectedStories": [
     {
-      "section": "GBA News",
-      "sourceSide": "manual",
-      "headline": "Southbound travel scheme opens to five more GBA cities from July",
-      "urls": [
-        "https://www.scmp.com/news/hong-kong/transport/article/3356351/example"
-      ],
-      "selectionTag": "selected",
-      "selected": true,
-      "weight": 4
-    },
-    {
-      "section": "Hong Kong",
-      "sourceSide": "manual",
-      "headline": "Observatory issues first black rainstorm warning of 2026",
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Southbound Travel for Guangdong Vehicles expansion — both cover the five new GBA cities joining the scheme, with the AI adding quota and application date details",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
       "weight": 4
     },
     {
-      "section": "Macao",
-      "sourceSide": "manual",
-      "headline": "Blessing ceremony held for 2026 SJM Macao International Dragon Boat Races",
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Guangdong level-4 flood emergency response (Sunday, heavy rainfall)",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Foshan commercial housing up 7.9% in first five months of 2026",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Macao free tourism buses adding new peninsula-Cotai route Saturday; close to 10,000 riders as of end of May",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Macao CE authorises four cultural heritage protection awards (applications October–December annually)",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Monkeypox cluster in Hong Kong — four cases linked to 43-year-old male who visited Mongkok establishment",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Yayoi Kusama \"Pumpkin\" 3m installation on display at Kai Tak from June 6",
       "urls": [],
       "selectionTag": "selected",
       "selected": true,
@@ -34,8 +68,8 @@
     }
   ],
   "stats": {
-    "selectedCount": 3,
-    "totalSelected": 3
+    "selectedCount": 7,
+    "totalSelected": 7
   },
-  "paragraphCount": 11
+  "paragraphCount": 49
 }

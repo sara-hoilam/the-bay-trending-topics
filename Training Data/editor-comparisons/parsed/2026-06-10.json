@@ -1,0 +1,39 @@
+{
+  "editionDate": "2026-06-10",
+  "sourceFile": "2026-06-10-comparison.docx",
+  "parsedAt": "2026-06-22T03:42:10.947Z",
+  "selectedStories": [
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Dog-friendly restaurant pilot — 2,100+ applications for 1,000 places, lucky draw this Friday; both cover",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Macao Signature Brand launch — DSEDT accepting applications from producers and e-commerce streamers, first list in Q4 2026",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    },
+    {
+      "section": null,
+      "sourceSide": "unknown",
+      "headline": "Guangzhou CanSemi Tech IPO listing committee review on June 15 — first GBA firm with 12-inch wafer fab to seek public listing",
+      "urls": [],
+      "selectionTag": "selected",
+      "selected": true,
+      "weight": 4
+    }
+  ],
+  "stats": {
+    "selectedCount": 3,
+    "totalSelected": 3
+  },
+  "paragraphCount": 76
+}
