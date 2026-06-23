@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
   "updatedAt": "2026-06-23",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 46,
+  "highlightedCount": 49,
   "events": [
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
@@ -91,6 +91,18 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
       "highlightScore": 106,
+      "highlighted": true
+    },
+    {
+      "title": "Galaxy Entertainment Group Presents: Luso-Chinese Music Arts Festival Macau 2026",
+      "start": "2026-06-01",
+      "end": "2026-06-08",
+      "region": "macao",
+      "location": "Ponto 1915 Art Space",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 54,
       "highlighted": true
     },
     {
@@ -358,6 +370,18 @@
       "highlighted": false
     },
     {
+      "title": "Enjoy Macao with Coffee – Macao Coffee Festival",
+      "start": "2026-06-01",
+      "end": "2026-06-01",
+      "region": "macao",
+      "location": "Árvore em forma de Coração (Centro de Ciência de Macau)",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "The Forbidden City and the World — Palace Museum",
       "start": "2026-06-03",
       "end": "2026-12-31",
@@ -380,6 +404,18 @@
       "highlighted": false
     },
     {
+      "title": "2026 Macau Summer Shopping Expo & The 7th Maternity Baby’s Products Expo",
+      "start": "2026-06-05",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Cotai Expo, The Venetian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "Photography Exhibition “Nature of Macau: Birds and Flowers” by Roberto Badaraco",
       "start": "2026-06-05",
       "end": "2026-06-28",
@@ -389,6 +425,138 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Taste the Streets: Urban Awakening",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Largo do Pagode do Bazar",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Hong Kung Night Market",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Rua de Cinco de Outubro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Museum Encounter – The Tang Story",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "MGM Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "iKON FOUREVER TOUR IN MACAU",
+      "start": "2026-06-06",
+      "end": "2026-06-06",
+      "region": "macao",
+      "location": "Broadway Theatre, Broadway Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 10,
+      "highlighted": false
+    },
+    {
+      "title": "DxS [SERENADE] ON STAGE – MACAO",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "The Venetian Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Wu Bai & China Blue Rock Star 2 World Tour in Macau",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Galaxy Arena, Galaxy Macau™",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 38,
+      "highlighted": true
+    },
+    {
+      "title": "Charis Choir Presents: “L’Amore in Cammino” Music Concert",
+      "start": "2026-06-06",
+      "end": "2026-06-06",
+      "region": "macao",
+      "location": "Centro de Cultura e Artes Performativas Cardeal Newman de Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Fun Fishing Boat Cruise",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Doca da Ilha Verde",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Mak Mak’s great adventure in Macao – Coastal Fun Tour",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Barra Pier",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Art Everywhere – Cultural vibes at the weekend",
+      "start": "2026-06-06",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Anim’Arte NAM VAN",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "2026 International Children’s Day Event Series",
+      "start": "2026-06-07",
+      "end": "2026-06-07",
+      "region": "macao",
+      "location": "Camões Garden",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202606",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 10,
       "highlighted": false
     },
     {
@@ -1020,17 +1188,6 @@
       "highlighted": true
     },
     {
-      "title": "electronicAsia 2026 (HKCEC)",
-      "start": "2026-10-13",
-      "end": "2026-10-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/electronicasia",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
       "start": "2026-10-13",
       "end": "2026-10-16",
@@ -1040,6 +1197,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "electronicAsia 2026 (HKCEC)",
+      "start": "2026-10-13",
+      "end": "2026-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/electronicasia",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
