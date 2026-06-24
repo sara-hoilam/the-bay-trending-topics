@@ -1,0 +1,187 @@
+THE BAY: Daily Brief
+Date: 24 June 2026 · 30 articles · method: daily-brief-agent-prompt (live source scan)
+
+<!-- article count verified: 30 numbered blocks -->
+
+
+GBA News (3):
+
+1. **Guangdong heat persists on 24 June with Pearl River Delta highs up to 37°C**
+https://info.newsgd.com/node_ce515f4756/61728bb7cb.shtml
+https://www.info.gov.hk/gia/general/202606/24/P2026062400006.htm
+Guangdong Meteorological Service forecasts said on 22 June that post-holiday “barbecue mode” would continue through 24 June, with northern Guangdong and the Pearl River Delta seeing afternoon showers but highs of 34–37°C. Hong Kong issued a very hot weather warning at 6.45am on 24 June as the SAR baked under the same anticyclonic pattern.
+
+2. **Mainland trading crackdown seen reinforcing Hong Kong as official cross-border capital hub**
+https://www.scmp.com/economy/china-economy/article/3358091/chinas-trading-crackdown-seen-boosting-hong-kong-official-capital-hub
+https://english.news.cn/20260623/336400886c7d44febc7714c8fbd2f131/c.html
+Economists at the Summer Davos forum in Dalian on 23 June told SCMP that Beijing’s penalties on illegal overseas securities access should widen Hong Kong’s role intermediating mainland wealth through official Connect schemes. Enodo Economics founder Diana Choyleva said authorities are tightening illegal outflows while expanding sanctioned channels via the city.
+
+3. **Hengqin Port cleared 280,000 trips over Dragon Boat Festival on visa-free transit boost**
+https://www.newsgd.com/node_99363c4f3b/d8a8648858.shtml
+https://info.newsgd.com/node_73b7112307/21d3f5adde.shtml
+Hengqin Port handled more than 280,000 passenger trips and 36,000 vehicle clearances from 19–21 June, up 12% and 34% year on year, with foreign entries rising 23% after the port joined the 240-hour visa-free transit scheme last November. Hong Kong and Macao visitors accounted for 38% of traffic as cross-border holiday travel rebounded.
+
+
+Macao (3):
+
+4. **Ground-floor mezzanine fire closes Senado area shopfront at dawn on 24 June** — HK01
+https://www.hk01.com/%E7%AA%81%E7%99%BC/60363275/%E6%BE%B3%E9%96%80%E6%9C%89%E5%9C%B0%E8%88%96%E9%96%A3%E6%A8%93%E8%B5%B7%E7%81%AB-%E6%BF%83%E7%85%99%E6%B9%A7%E4%B8%8A%E5%8D%8A%E7%A9%BA-%E6%96%B0%E9%A6%AC%E8%B7%AF%E6%9A%AB%E6%99%82%E5%B0%81%E9%96%89%E4%BB%A5%E4%BE%BF%E6%B6%88%E9%98%B2%E7%81%8C%E6%95%91
+Macau firefighters were called at about 5am on 24 June to smoke rising from a ground-floor shop mezzanine near Senado Square and Chow Tai Fook Building on Avenida de Almeida Ribeiro. Dense smoke prompted a temporary closure of the busy corridor while crews extinguished the blaze; no casualties were reported at the scene.
+
+5. **Macao May CPI rose 1.43% on dearer petrol and dining** — Macau Business
+https://macaubusiness.com/consumer-prices-edge-up-1-4-per-cent-in-may/
+DSEC figures cited on 22 June showed May’s composite consumer price index up 1.43% year on year, led by a 4.79% transport jump from higher petrol costs and 1.19% higher food prices as dine-in and takeaway meals cost more. The 12-month average CPI through May rose 0.71% compared with the prior year.
+
+6. **APEC tourism ministerial and working-group meetings open in Macao 24–28 June** — Macau Business
+https://macaubusiness.com/macau-to-host-apec-tourism-delegates-for-meetings/
+Macao is hosting the 13th APEC Tourism Ministerial Meeting and 67th Tourism Working Group session from 24–28 June, with more than 200 delegates expected and conclusions due on 27 June. The government said the city will present its tourism development plans as a guest economy seeking greater influence in regional forums.
+
+
+Hong Kong (13):
+
+7. **Observatory and CHP renew heat alerts on 24 June as hospitalisations exceed 200 a year** — HK gov
+https://www.info.gov.hk/gia/general/202606/24/P2026062400006.htm
+https://www.info.gov.hk/gia/general/202606/24/P2026062400014.htm
+The Hong Kong Observatory issued a very hot weather warning at 6.45am on 24 June, urging the public to avoid prolonged outdoor activity and drink plenty of water. The Centre for Health Protection the same morning said more than 200 people are hospitalised annually for heat-related illness between May and September, with two to five deaths each year.
+
+8. **Secretary for Justice says legal system stronger after four years of security refinements** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1859656-20260624.htm
+https://news.rthk.hk/rthk/en/component/k2/1859604-20260623.htm
+Paul Lam told media on 24 June marking four years of the current-term government that Hong Kong’s laws are in a better place and recent national-security loophole fixes were handled efficiently rather than rushed. He said the Department of Justice will table mediation reforms in the second half of 2026 and lead an inter-departmental review of legislation affecting artificial intelligence.
+
+9. **May consumer prices rose 2% year on year, fastest in about a year** — RTHK + The Standard
+https://news.rthk.hk/rthk/en/component/k2/1859601-20260623.htm
+https://www.thestandard.com.hk/finance/article/335376/Hong-Kongs-overall-inflation-rises-2-percent-in-May-slightly-above-estimates
+The Census and Statistics Department said on 23 June that May’s headline CPI increased 2% year on year, up from 1.7% in April, while underlying inflation reached 1.9%. Transport fares, package holidays and health-service charges drove the acceleration despite officials expecting overall inflation to stay moderate as non-fuel prices remain largely stable.
+
+10. **Cathay Pacific cuts fuel surcharges again from 1 July as jet fuel eases** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1859595-20260623.htm
+https://www.scmp.com/news/hong-kong/transport/article/3358073/hong-kongs-cathay-pacific-cut-fuel-surcharges-again-costs-ease
+Cathay Pacific will lower long-haul fuel surcharges to HK$1,164 per sector from 1 July, down 14.5% from HK$1,362, with Southeast Asia sectors falling to HK$541. The carrier said it will continue reviewing surcharges every two weeks as Middle East-related volatility feeds through to jet fuel prices.
+
+11. **Police arrest 69 in joint operation over HK$200m cross-border investment scam laundering** — SCMP + The Standard
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3358070/hong-kong-police-arrest-69-over-laundering-hk200m-cross-border-fraud
+https://www.thestandard.com.hk/news/article/335402/Joint-cross-border-operation-dismantles-200m-investment-scam-ring-69-arrested
+Hong Kong and mainland authorities arrested 54 men and 15 women aged 18–60 on 22 June over a syndicate that laundered about HK$200 million from romance-investment scams affecting more than 170 victims. Police intercepted HK$4.7 million and traced 118 additional mule accounts linked to nearly HK$200 million in further losses.
+
+12. **Pro-Beijing union protests outside British consulate over HKETO spy convictions** — HKFP + SCMP
+https://hongkongfp.com/2026/06/24/hketo-spy-row-pro-beijing-party-stages-demo-outside-hong-kongs-british-consulate-as-uk-parliamentarians-urge-review-of-trade-office/
+https://www.scmp.com/news/hong-kong/politics/article/3357710/chinese-embassy-uk-decries-jailing-2-hongkongers-spying
+About 30 Hong Kong Federation of Trade Unions members demonstrated outside the British consulate on 23 June against the eight- and ten-year UK sentences handed to former HKETO manager Bill Yuen and associate Peter Wai. UK parliamentarians the same week asked whether London would review the trade office’s operations amid transnational repression concerns.
+
+13. **36th Hong Kong Book Fair runs 15–21 July with AI reading forum and 770 exhibitors** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1859604-20260623.htm
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3358085/ai-help-hong-kong-bookworms-find-whole-new-world-words
+Trade Development Council organisers said on 23 June that the fair themed “Reading the World: Cultural Legacy | Joyful Journeys” will host more than 770 exhibitors and 600 events at the Wan Chai convention centre alongside concurrent sport and snacks expos. An International Publishing Forum will examine how AI can boost reading efficiency without replacing books.
+
+14. **EU and Hong Kong plan financial services dialogue in Brussels this November** — SCMP
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3358017/eu-and-hong-kong-talks-new-financial-services-dialogue-envoy-says
+https://www.scmp.com/news/hong-kong/politics/article/3358103/american-envoy-hong-kong-upbeat-us-china-ties-aims-engage-city-officials
+EU Office head Harvey Rouse told Greenway 2026 on 23 June that senior officials are preparing a financial services dialogue in Brussels in November, with green finance a core agenda item. He said European firms are exploring Northern Metropolis opportunities as Hong Kong deepens sustainable finance cooperation with the bloc.
+
+15. **Survey finds 60% of Hong Kong schools already using AI for teaching or admin** — SCMP
+https://www.scmp.com/news/hong-kong/education/article/3358065/60-hong-kong-schools-using-ai-teaching-and-admin-work-survey-finds
+https://www.scmp.com/news/hong-kong/society/article/3358095/dont-restrict-ai-sports-ensure-fair-access-hong-kong-lawmaker-urges
+Education University researchers surveying 163 schools in May–June 2026 found about 20% actively exploring AI and 40% already using it while learning from peers; the remainder cited funding and talent gaps. Sports-sector legislator Kenneth Fok separately urged fair global access to AI tools rather than bans at a Summer Davos panel in Dalian.
+
+16. **San Tin warehouse fire put out in two hours after explosions; no injuries** — HKFP + The Standard
+https://hongkongfp.com/2026/06/23/explosions-heard-as-warehouse-fire-breaks-out-in-hong-kongs-san-tin/
+https://www.thestandard.com.hk/news/article/335313/Explosions-heard-as-warehouse-fire-breaks-out-in-San-Tin
+Firefighters reached Shek Wu Wai San Tsuen at 2.38am on 23 June after reports of blasts and flames at a remote warehouse storing old electronics. Seventy personnel extinguished the fire by 4.27am; a man and woman evacuated safely while crews drew water from hydrants hundreds of metres away.
+
+17. **Hospital Authority dismisses resident doctor over unauthorised patient examination** — RTHK + HKFP
+https://news.rthk.hk/rthk/en/component/k2/1859487-20260622.htm
+https://hongkongfp.com/2026/06/23/hospital-authority-dismisses-resident-doctor-over-unauthorised-exam-linked-to-sacked-intern-girlfriend/
+The Hospital Authority terminated a Tuen Mun Hospital resident on 23 June for conducting an unauthorised examination at Ruttonjee Hospital linked to a dismissed intern who accessed patient records without permission. The case was referred to the Medical Council as the authority reiterated zero tolerance for breaches of professional ethics.
+
+18. **Customs seizes 100kg ketamine in paint cans; two men arrested in HK$46m bust** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1859616-20260623.htm
+Hong Kong Customs said on 23 June that officers found about 100 kilograms of suspected ketamine hidden in paint cans in air cargo from the Netherlands and arrested two local men aged 28 and 63 in a controlled delivery in Kwun Tong. The drugs had an estimated street value of HK$46 million; a separate Yuen Long parcel contained 3.5kg of suspected etomidate bound for Malaysia.
+
+19. **Ex-mainland official’s son remanded over HK$64m laundering and bogus residency papers** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3358097/ex-chinese-officials-son-remanded-hong-kong-over-hk64m-money-laundering-case
+Xiao Rui, 37, son of a former Wuhan anti-corruption chief, was remanded on 23 June after a jury found him guilty of laundering more than HK$64 million through Hong Kong, including a 4 million yuan bribe channelled via an underground bank over nine years. The court rejected his claim that his mother handled immigration paperwork and said he had no reason to believe the funds were lawful.
+
+
+Zhuhai inc. Hengqin (2):
+
+20. **Macao government-owned MID posts MOP318m loss as Hengqin property values fall** — Macau Business
+https://macaubusiness.com/macau-investment-and-development-ltd-loss-triples-as-property-slump-hits-hengqin-assets/
+https://info.newsgd.com/node_73b7112307/21d3f5adde.shtml
+Macau Investment and Development Ltd reported a consolidated loss of MOP317.97 million for 2025, up from MOP103.37 million, after booking nearly MOP256 million in fair-value losses on Hengqin investment properties amid China’s prolonged property downturn. Revenue still rose 12.8% to MOP185.74 million and the GMTCM park hosted 238 firms by May 2026.
+
+21. **Hengqin Port expansion targets 220,000 daily trips with 113 clearance channels** — INFO Guangdong
+https://info.newsgd.com/node_73b7112307/21d3f5adde.shtml
+https://www.newsgd.com/node_99363c4f3b/d8a8648858.shtml
+A multi-phase Hengqin Port hall expansion begun in March aims to nearly double daily capacity from 114,900 to about 220,000 trips by the third quarter of 2026 through 113 channels including 47 joint e-gates with facial recognition. Officials say peak waits could fall about 45%, supporting the “Macao + Hengqin” one-hour living circle.
+
+
+Guangzhou (2):
+
+22. **9 Air adds daily Yinchuan–Guangzhou–Singapore route from 10 August** — INFO Guangdong
+https://info.newsgd.com/node_73b7112307/162fb80c90.shtml
+https://info.newsgd.com/node_ed2910caae/e324838bbf.shtml
+Guangzhou-based low-cost carrier 9 Air will launch a daily Boeing 737-800 service on the Yinchuan–Guangzhou–Singapore corridor from 10 August, lifting peak Guangzhou–Singapore frequencies toward ten departures a day. The route links northwest China to Southeast Asia via the provincial capital’s expanding international hub.
+
+23. **Three Guangzhou botanical gardens offer 42-yuan joint ticket valid three months** — INFO Guangdong
+https://info.newsgd.com/node_ed2910caae/e324838bbf.shtml
+https://info.newsgd.com/node_ed2910caae/2e71431ca8.shtml
+South China National Botanical Garden, Yunluo and Yunxi gardens launched a combined pass priced at 42 yuan discounted from 60 yuan, usable across three months for separate visits. The package covers 333-hectare subtropical collections at the national garden plus Baiyun Mountain foothill sites linked by Metro Lines 6, 11 and 12.
+
+
+Shenzhen (2):
+
+24. **Guangzhou–Dongguan–Shenzhen intercity airport section achieves full power supply** — Shenzhen News
+https://www.sznews.com/news/content/2026-06/23/content_32099079.htm
+https://info.newsgd.com/node_f5302f2a31/45357f66d6.shtml
+The 15.15-kilometre airport-to-Qianhai segment of the Guangzhou–Dongguan–Shenzhen intercity line achieved full medium-voltage electrification on 23 June, enabling equipment tests ahead of dynamic trials. Once opened, journeys between Qianhai and the airport are expected to take about ten minutes at up to 160 km/h.
+
+25. **Bay Opera hosts Global Masters contemporary dance showcase 26–27 June** — INFO Guangdong
+https://info.newsgd.com/node_f5302f2a31/45357f66d6.shtml
+Shenzhen’s Bay Opera in Bao’an will stage “Global Masters’ Showcase” on 26–27 June, reinterpreting Western works such as Ohad Naharin’s “Minus 16” and Alexander Ekman’s “Cacti” through Chinese dancers’ physical language. Curators bill the triple bill as a dialogue on movement, dreams and artistic satire ahead of the city’s APEC hosting year.
+
+
+Foshan (1):
+
+26. **Foshan Railway Station opens 1 July with new Changsha links and 32 shifted intercity trains** — INFO Guangdong
+https://info.newsgd.com/node_73b7112307/53bba7da3a.shtml
+https://www.newsgd.com/node_d36b0ef83f/65df3e79fd.shtml
+China Railway Guangzhou Group said Foshan Station begins operations on 1 July alongside a national timetable adding 77 passenger services, including new Foshan–Changsha bullet trains and 32 Guangzhou–Shenzhen intercity trains retimed to start at Foshan instead of Guangzhou North or Baiyun. Tickets for the adjusted schedule have been on sale since 17 June via 12306.
+
+
+Huizhou (1):
+
+27. **National rail timetable adds 39 stops at Huizhou North and other Pearl Delta hubs** — INFO Guangdong
+https://info.newsgd.com/node_73b7112307/53bba7da3a.shtml
+https://info.newsgd.com/node_73b7112307/8952753fc4.shtml
+The 1 July timetable revision adds 39 train stops around Guangzhou South and Shenzhen North, including Huizhou North, Guangmingcheng and Zhongkai, while increasing Beijing–Guangzhou high-speed services running at 350 km/h by 16 pairs. Cross-border trains serving Hong Kong West Kowloon will also receive additional mainland stops under the update.
+
+
+Nation (2):
+
+28. **China and EU trade chiefs to meet in Brussels on 29 June amid deficit tensions** — HKFP
+https://hongkongfp.com/2026/06/23/china-and-eu-trade-chiefs-to-meet-next-week/
+https://english.news.cn/20260623/336400886c7d44febc7714c8fbd2f131/c.html
+EU trade spokesman Olof Gill confirmed on 23 June that Commissioner Maroš Šefčovič will host Chinese Commerce Minister Wang Wentao in Brussels on 29 June as the bloc addresses a €360 billion goods deficit with China. Leaders last week paired dialogue with plans for tougher trade-defence tools while Summer Davos delegates debated global supply-chain resilience.
+
+29. **Summer Davos opens in Dalian with 1,700 delegates under “Innovating at Scale” theme** — Xinhua
+https://english.news.cn/20260623/336400886c7d44febc7714c8fbd2f131/c.html
+https://english.news.cn/20260624/b1d99d564ec842d79d520953e527c651/c.html
+The World Economic Forum’s 17th Annual Meeting of the New Champions began in Dalian on 23 June, gathering more than 1,700 participants from over 90 economies to discuss scaling innovation and China’s next growth phase. Parallel coverage highlighted Beijing’s supply chain expo opening the same week with a debut AI zone showcasing robotics and smart manufacturing.
+
+
+GBA sport (1):
+
+30. **Kenneth Fok urges fair AI access in sport rather than restriction at Summer Davos** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3358095/dont-restrict-ai-sports-ensure-fair-access-hong-kong-lawmaker-urges
+https://news.rthk.hk/rthk/en/component/k2/1859632-20260623.htm
+Sports-sector legislator Kenneth Fok told a Dalian forum on 23 June that governing bodies should ensure equal access to AI training tools because performance gains are invisible in competition and some nations lack the latest models. He spoke as Hong Kong sent 1,000 secondary students to Qianhai innovation hubs under a separate youth technology exchange launched the same day.
+
+
+<!-- DAILY BRIEF AUDIT
+Date: 2026-06-24 HKT
+Stories: 30
+GBA filter drops: France record heat (no GBA nexus); US Senate Iran war powers vote (no GBA nexus); Germany rail glitch (no GBA nexus); UK Starmer succession chatter (no GBA nexus)
+Single-source items: Macao Senado shop fire (4); Macao May CPI (5); APEC tourism meetings (6); Customs ketamine bust (18); Xiao Rui laundering remand (19) — kept for freshness; corroboration pending
+Out of catalog: none
+-->
