@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
-  "updatedAt": "2026-06-23",
-  "refreshedAt": "2026-06-23T08:48:45+08:00",
+  "updatedAt": "2026-06-24",
+  "refreshedAt": "2026-06-24T08:19:52+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,8 +10,8 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 653580,
-      "followersGrowthPct7d": 0.72,
+      "followers": 653769,
+      "followersGrowthPct7d": 0.65,
       "history": [
         {
           "date": "2026-06-15",
@@ -44,6 +44,10 @@
         {
           "date": "2026-06-23",
           "followers": 653580
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 653769
         }
       ]
     },
@@ -52,8 +56,8 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 257516,
-      "followersGrowthPct7d": 0.45,
+      "followers": 257953,
+      "followersGrowthPct7d": 0.53,
       "history": [
         {
           "date": "2026-06-15",
@@ -86,6 +90,10 @@
         {
           "date": "2026-06-23",
           "followers": 257516
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 257953
         }
       ]
     },
@@ -94,8 +102,8 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 122474,
-      "followersGrowthPct7d": null,
+      "followers": 122502,
+      "followersGrowthPct7d": 0.32,
       "history": [
         {
           "date": "2026-06-17",
@@ -120,6 +128,10 @@
         {
           "date": "2026-06-23",
           "followers": 122474
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 122502
         }
       ]
     },
@@ -128,8 +140,8 @@
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 94542,
-      "followersGrowthPct7d": 0.05,
+      "followers": 94567,
+      "followersGrowthPct7d": 0.07,
       "history": [
         {
           "date": "2026-06-15",
@@ -162,6 +174,10 @@
         {
           "date": "2026-06-23",
           "followers": 94542
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 94567
         }
       ]
     },
@@ -170,7 +186,7 @@
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 91274,
+      "followers": 91287,
       "followersGrowthPct7d": 0.03,
       "history": [
         {
@@ -204,6 +220,10 @@
         {
           "date": "2026-06-23",
           "followers": 91274
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 91287
         }
       ]
     },
@@ -212,8 +232,8 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 42181,
-      "followersGrowthPct7d": null,
+      "followers": 42280,
+      "followersGrowthPct7d": 2.91,
       "history": [
         {
           "date": "2026-06-17",
@@ -238,6 +258,10 @@
         {
           "date": "2026-06-23",
           "followers": 42181
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 42280
         }
       ]
     },
@@ -246,8 +270,8 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 32196,
-      "followersGrowthPct7d": 1.41,
+      "followers": 32237,
+      "followersGrowthPct7d": 1.34,
       "history": [
         {
           "date": "2026-06-15",
@@ -280,6 +304,10 @@
         {
           "date": "2026-06-23",
           "followers": 32196
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 32237
         }
       ]
     },
@@ -288,8 +316,8 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 17725,
-      "followersGrowthPct7d": 2.55,
+      "followers": 17764,
+      "followersGrowthPct7d": 2.69,
       "history": [
         {
           "date": "2026-06-15",
@@ -322,6 +350,10 @@
         {
           "date": "2026-06-23",
           "followers": 17725
+        },
+        {
+          "date": "2026-06-24",
+          "followers": 17764
         }
       ]
     },
@@ -331,7 +363,7 @@
       "url": "https://www.instagram.com/thebeatasia/",
       "highlight": false,
       "followers": 1987,
-      "followersGrowthPct7d": null,
+      "followersGrowthPct7d": -0.05,
       "history": [
         {
           "date": "2026-06-17",
@@ -355,6 +387,10 @@
         },
         {
           "date": "2026-06-23",
+          "followers": 1987
+        },
+        {
+          "date": "2026-06-24",
           "followers": 1987
         }
       ]
