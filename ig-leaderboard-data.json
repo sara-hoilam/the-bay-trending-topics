@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-27",
-  "refreshedAt": "2026-06-27T09:36:40+08:00",
+  "refreshedAt": "2026-06-27T09:39:31+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 654812,
+      "followers": 654816,
       "followersGrowthPct7d": 0.34,
       "history": [
         {
@@ -51,7 +51,7 @@
         },
         {
           "date": "2026-06-27",
-          "followers": 654812
+          "followers": 654816
         }
       ]
     },
@@ -60,7 +60,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 258946,
+      "followers": 258947,
       "followersGrowthPct7d": 0.75,
       "history": [
         {
@@ -101,7 +101,7 @@
         },
         {
           "date": "2026-06-27",
-          "followers": 258946
+          "followers": 258947
         }
       ]
     },
@@ -152,7 +152,7 @@
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 94797,
+      "followers": 94798,
       "followersGrowthPct7d": 0.3,
       "history": [
         {
@@ -193,7 +193,7 @@
         },
         {
           "date": "2026-06-27",
-          "followers": 94797
+          "followers": 94798
         }
       ]
     },
@@ -202,7 +202,7 @@
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 91329,
+      "followers": 91330,
       "followersGrowthPct7d": 0.05,
       "history": [
         {
@@ -243,7 +243,7 @@
         },
         {
           "date": "2026-06-27",
-          "followers": 91329
+          "followers": 91330
         }
       ]
     },
