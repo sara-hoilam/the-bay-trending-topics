@@ -1,9 +1,9 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-28",
-  "refreshedAt": "2026-06-28T08:20:47+08:00",
+  "refreshedAt": "2026-06-28T08:23:32+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
-  "captureMethod": "agent-snapshot",
+  "captureMethod": "public-refresh",
   "accounts": [
     {
       "handle": "scmpnews",
@@ -118,7 +118,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 122824,
+      "followers": 122825,
       "followersGrowthPct7d": 0.37,
       "history": [
         {
@@ -155,7 +155,7 @@
         },
         {
           "date": "2026-06-28",
-          "followers": 122824
+          "followers": 122825
         }
       ]
     },
