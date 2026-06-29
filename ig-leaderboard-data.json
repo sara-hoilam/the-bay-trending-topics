@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-29",
-  "refreshedAt": "2026-06-29T09:22:51+08:00",
+  "refreshedAt": "2026-06-29T09:25:44+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -11,7 +11,7 @@
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
       "followers": 655728,
-      "followersGrowthPct7d": 0.37,
+      "followersGrowthPct7d": 0.36,
       "history": [
         {
           "date": "2026-06-15",
@@ -69,7 +69,7 @@
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
       "followers": 259445,
-      "followersGrowthPct7d": 0.82,
+      "followersGrowthPct7d": 0.81,
       "history": [
         {
           "date": "2026-06-15",
@@ -126,7 +126,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 122896,
+      "followers": 122895,
       "followersGrowthPct7d": 0.39,
       "history": [
         {
@@ -167,7 +167,7 @@
         },
         {
           "date": "2026-06-29",
-          "followers": 122896
+          "followers": 122895
         }
       ]
     },
@@ -177,7 +177,7 @@
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
       "followers": 95016,
-      "followersGrowthPct7d": 0.52,
+      "followersGrowthPct7d": 0.51,
       "history": [
         {
           "date": "2026-06-15",
@@ -293,7 +293,7 @@
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
       "followers": 43111,
-      "followersGrowthPct7d": 2.58,
+      "followersGrowthPct7d": 2.54,
       "history": [
         {
           "date": "2026-06-17",
@@ -343,7 +343,7 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 32993,
-      "followersGrowthPct7d": 2.61,
+      "followersGrowthPct7d": 2.6,
       "history": [
         {
           "date": "2026-06-15",
@@ -400,8 +400,8 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 18005,
-      "followersGrowthPct7d": 2.09,
+      "followers": 18006,
+      "followersGrowthPct7d": 1.99,
       "history": [
         {
           "date": "2026-06-15",
@@ -449,7 +449,7 @@
         },
         {
           "date": "2026-06-29",
-          "followers": 18005
+          "followers": 18006
         }
       ]
     },
