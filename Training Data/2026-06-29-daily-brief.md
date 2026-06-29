@@ -30,7 +30,7 @@ https://macaubusiness.com/an-increasingly-digital-pension-system/
 Macau Business reported on 28 June that civil servants can accumulate up to four times the retirement capital of private-sector peers, but scholars said only about 40% of workers join any private pension tier and universal CPF coverage must come first. A companion piece said digital tools such as Macao One Account facial proof-of-life now serve about 177,000 Social Security Fund beneficiaries while Hengqin residency can count toward the 183-day rule from 24 March.
 
 
-Hong Kong (10):
+Hong Kong (11):
 
 5. **Minibus mounts Kowloon City pavement, killing one pedestrian and injuring 16** — SCMP + RTHK
 https://www.scmp.com/news/hong-kong/health-environment/article/3358662/3-seriously-injured-after-minibus-mounts-pavement-hong-kong
@@ -47,41 +47,46 @@ https://www.scmp.com/news/hong-kong/society/article/3358606/ai-k-pop-video-pulle
 https://news.rthk.hk/rthk/en/component/k2/1860235-20260628.htm
 The department withdrew an AI-generated virtual idol video titled “Obsession: The Sugar-Coated Trap” on 27–28 June after users said lyrics appeared to promote cannabis and meth rather than deter use. Senior Superintendent Ng Kee-hang said on 28 June the in-house production would be reviewed and involved no extra public funds.
 
-8. **HKU student publication Undergrad ceases operations after 74 years** — SCMP
-https://www.scmp.com/news/hong-kong/society/article/3358670/hku-student-publication-undergrad-shuts-down-after-74-years-amid-recruitment-woes
-The Hong Kong University Students’ Union said on 28 June that Undergrad stopped publishing immediately after two failed recruitment rounds since September 2025 left no 2026 editorial board. The outgoing committee called the closure the “natural ebb and flow of history” for one of the city’s longest-running campus outlets.
+8. **Prince of Wales Hospital spinal clinic cuts urgent-case waits to one week** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1860305-20260629.htm
+Prince of Wales Hospital said on 29 June its integrated spinal clinic, launched in October 2024, has triaged nearly 2,500 patients with two- to three-day physiotherapist waits and early treatment for 712 cases. Honorary orthopaedics head Law Sheung-wai said about 2% of cases flagged as urgent were seen by specialists within one week despite more than 13,600 new referrals in 2025/26.
 
 9. **Eleven-year-old boy dies after collapsing during 400-metre training run in Tseung Kwan O** — SCMP + HK01
 https://www.scmp.com/news/hong-kong/law-and-crime/article/3358614/boy-dies-after-suspected-heatstroke-tseung-kwan-o-sports-ground-hong-kong
 https://www.hk01.com/%E7%AA%81%E7%99%BC/60364510/%E7%94%B7%E7%AB%A5%E7%B7%B4%E8%B7%91%E6%9A%88%E5%80%92%E4%BA%A1-%E6%AD%BB%E8%80%85%E7%84%A1%E5%B7%B2%E7%9F%A5%E9%95%B7%E6%9C%9F%E7%97%85-%E5%85%92%E7%A7%91%E9%86%AB%E7%94%9F%E4%B8%8D%E6%8E%92%E9%99%A4%E5%85%A9%E5%99%A8%E5%AE%98%E5%87%BA%E4%BA%8B
 Police said the boy vomited and lost consciousness after a 27 June session at Tseung Kwan O Sports Ground and was certified dead at about 6.50pm despite coach CPR and defibrillator use. HK01 cited a paediatrician saying heat may have been a trigger but sudden cardiac or cerebral events remain possible pending autopsy.
 
-10. **Counsellors warn pupils as young as seven are referred for online gaming addiction** — SCMP
-https://www.scmp.com/news/hong-kong/education/article/3358672/pupils-young-7-hooked-online-games-expert-warns-alarming-trend
-Sunshine Lutheran Centre told a 28 June SCMP Learn workshop that a Primary Two pupil referred for pay-to-win gaming had taken nearly HK$8,000 cash and used a parent’s credit card. Counselling psychologist Crystal Leung said loot boxes can condition children toward adult gambling habits.
-
-11. **SFC says prediction markets may count as financial products as Interactive Brokers offers HK bets** — SCMP
+10. **SFC says prediction markets may count as financial products as Interactive Brokers offers HK bets** — SCMP
 https://www.scmp.com/news/hong-kong/law-and-crime/article/3358613/financial-products-or-illicit-gambling-can-hong-kong-regulate-prediction-markets
 SCMP found Interactive Brokers Hong Kong hosting yes-or-no markets on Hang Seng Index moves and GDP prints, reopening debate after the government paused planned basketball betting over platform growth. Lawyers told the paper existing gambling and securities laws leave a grey area requiring case-by-case regulator review.
 
-12. **HK Electric says Qatar gas halt since March drives July fuel surcharge up 33.9%** — SCMP + RTHK
+11. **HK Electric says Qatar gas halt since March drives July fuel surcharge up 33.9%** — SCMP + RTHK
 https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3358635/steeper-prices-ahead-after-qatar-gas-supply-cut-hk-electric-tells-customers
 https://news.rthk.hk/rthk/en/component/k2/1860216-20260628.htm
 CEO Francis Cheng said on 28 June Iranian strikes ended Qatari deliveries that feed about 70% of the Lamma plant’s gas mix, forcing costly spot purchases and lifting July’s fuel clause to 41.9 cents per kWh. He told RTHK surcharges may stay elevated while Middle East supply remains uncertain despite an August–October rebate for households using 450 kWh or less monthly.
 
-13. **Finance chief Paul Chan pitches Hong Kong as “super converter” for China Opportunity 2.0** — SCMP + Xinhua
+12. **Finance chief Paul Chan pitches Hong Kong as “super converter” for China Opportunity 2.0** — SCMP + Xinhua
 https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3358643/hong-kong-can-drive-china-opportunity-20-push-global-growth-paul-chan
 https://english.news.cn/20260628/ef5c78e030e04b45a6f058f4c443bb8c/c.html
 Paul Chan wrote on 28 June that Hong Kong can translate mainland innovation into asset value overseas after Summer Davos discussions on Premier Li Qiang’s “China Opportunity 2.0” framing. Xinhua quoted him saying the Northern Metropolis can commercialise research and channel patient capital to hard-tech firms under one country, two systems.
 
-14. **Hundreds bid farewell to Kwun Tong’s Yue Man Square roads before permanent closure** — SCMP
-https://www.scmp.com/news/hong-kong/society/article/3358661/heart-kwun-tong-hundreds-say-goodbye-old-yue-man-square-hong-kong
-Crowds gathered overnight on 27–28 June to photograph Yue Man Square and Tung Yan Street signs before the Urban Renewal Authority permanently closed the junction at midnight on 28 June for town-centre redevelopment. Retirees told SCMP the district had been Kwun Tong’s weekend heart for decades despite lacking luxury retail.
+13. **Northern Metropolis public flats to offer 10% more space and 25% larger units** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/society/article/3358669/bigger-space-better-living-what-northern-metropolis-public-flats-have-offer
+https://news.rthk.hk/rthk/en/component/k2/1860224-20260628.htm
+Housing Secretary Winnie Ho told SCMP on 29 June that Northern Metropolis rental and subsidised flats will exceed standard sizes by about 10% and that flats of at least 400 sq ft will rise to 25% of the mix within the 30,000-hectare megaproject. John Lee said on 28 June the plan will scale new heights via national development as nearly 100 firms have entered Hetao’s Hong Kong park since December.
+
+14. **Legislator Duncan Chiu expects Hong Kong I&T push to show results within five years** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1860300-20260629.htm
+Duncan Chiu told RTHK on 29 June that Hong Kong should produce incremental innovation results in life sciences, AI and precision manufacturing within five years under the national 15th Five-Year Plan, though upstream R&D capacity remains at an early stage. He welcomed the Education Bureau’s digital education blueprint and called for more patient capital and corporate research arms in the city.
+
+15. **HKU student publication Undergrad ceases operations after 74 years** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3358670/hku-student-publication-undergrad-shuts-down-after-74-years-amid-recruitment-woes
+The Hong Kong University Students’ Union said on 28 June that Undergrad stopped publishing immediately after two failed recruitment rounds since September 2025 left no 2026 editorial board. The outgoing committee called the closure the “natural ebb and flow of history” for one of the city’s longest-running campus outlets.
 
 
 Zhuhai inc. Hengqin (1):
 
-15. **More than 1,300 of 1,426 candidates sit Hengqin executive committee exam after institutional reform** — Macau Business + NewsGD
+16. **More than 1,300 of 1,426 candidates sit Hengqin executive committee exam after institutional reform** — Macau Business + NewsGD
 https://macaubusiness.com/over-1400-apply-for-hengqin-posts-as-executive-committee-undergoes-reform/
 https://www.newsgd.com/node_99363c4f3b/f5b20b4c44.shtml
 Authorities said on 28 June that 1,304 applicants, a 91.44% attendance rate, completed written tests on 27 June for 50 quota-based posts in the reformed nine-bureau executive committee. NewsGD said the overhaul adds a Talent Development and Social Security Bureau and renames the industrial bureau to sharpen Macao enterprise services.
@@ -89,46 +94,39 @@ Authorities said on 28 June that 1,304 applicants, a 91.44% attendance rate, com
 
 Guangzhou (2):
 
-16. **Guangdong Museum publishes multi-volume Masterpieces Collection series on Lingnan relics** — INFO Guangdong
+17. **Guangdong Museum publishes multi-volume Masterpieces Collection series on Lingnan relics** — INFO Guangdong
 https://info.newsgd.com/node_a5647c5969/4a7917d668.shtml
 https://info.newsgd.com/node_ed2910caae/39f4d19e92.shtml
 INFO Guangdong said on 28 June the Guangzhou museum’s 15-volume catalog documents ceramics, paintings and decorative arts with high-definition imaging, with more than 10 volumes already released and several collected by institutions such as the British Library. A separate 27 June piece noted Yuyin Shanfang’s crape myrtle festival runs through 31 August with a miniature bonsai display ending on 29 June.
 
-17. **Guangzhou Tianhe holds dragon boat invitational on 27 June as provincial festival season continues** — INFO Guangdong
+18. **Guangzhou Tianhe holds dragon boat invitational on 27 June as provincial festival season continues** — INFO Guangdong
 https://info.newsgd.com/node_8ac5858e3d/233e4fbd20.shtml
 An INFO Guangdong guide dated 18 June listed a Tianhe Wetland Park regatta on 27 June alongside Guangzhou’s 20 June international invitational that drew 105 teams from 20 countries. The calendar frames Pearl River dragon boat events as part of a province-wide summer cultural tourism push.
 
 
 Shenzhen (2):
 
-18. **ChinaEU and Shenzhen Low-Altitude Economy Association sign Europe cooperation MoU** — INFO Guangdong
+19. **ChinaEU and Shenzhen Low-Altitude Economy Association sign Europe cooperation MoU** — INFO Guangdong
 https://info.newsgd.com/node_a42013034a/06ce74ebee.shtml
 Organisers said on 28 June the pact will connect Shenzhen’s low-altitude manufacturing ecosystem with European regulators for compliant pilot projects in aerial logistics, emergency response and urban air mobility. Association president Zhao Qi said the goal is long-term industrial partnerships rather than one-off market entry.
 
-19. **Consumer 3D printers spread from Shenzhen factories to schools and home DIY, Xinhua reports** — Xinhua
+20. **Consumer 3D printers spread from Shenzhen factories to schools and home DIY, Xinhua reports** — Xinhua
 https://english.news.cn/20260629/8be64a57e4fc404caebdff2b26337758/c.html
 Xinhua photo coverage on 29 June highlighted Shenzhen flagship stores and Kongfu 3D factory lines turning desktop printers into mainstream consumer goods for education, toy repair and World Cup-themed souvenirs. The report said Guangdong firms are scaling from hobbyist kits to mass-market production runs.
 
 
 Foshan (1):
 
-20. **Diejiao “waterborne F1” drifting race hosts international elite challenge on 27 June** — INFO Guangdong
+21. **Diejiao “waterborne F1” drifting race hosts international elite challenge on 27 June** — INFO Guangdong
 https://info.newsgd.com/node_8ac5858e3d/233e4fbd20.shtml
 INFO Guangdong’s dragon boat guide said Foshan’s Diejiao drifting series, where 25-metre boats navigate narrow S-, L- and J-shaped channels, held an international elite session on 27 June after four community tournaments from 19–22 June. The races are billed as among Guangdong’s most technical Tuen Ng fixtures.
 
 
 Dongguan (1):
 
-21. **Gaobu Dragon Boat Championship set for 29 June on Dongjiang tributary** — INFO Guangdong
+22. **Gaobu Dragon Boat Championship set for 29 June on Dongjiang tributary** — INFO Guangdong
 https://info.newsgd.com/node_8ac5858e3d/233e4fbd20.shtml
 The same provincial guide lists Gaobu Town’s championship on 29 June along the Dongjiang River section near Jiangbin Square, following Shatian’s 26 June event that drew more than 40 village and utility teams on Danshui Lake. Organisers frame the schedule as showcasing Dongguan’s blend of folk tradition and competitive racing.
-
-
-Huizhou (1):
-
-22. **Boluo County stages dragon boat demonstration along Dongjiang on 20 June** — INFO Guangdong
-https://info.newsgd.com/node_8ac5858e3d/233e4fbd20.shtml
-INFO Guangdong noted a 20 June demonstration at Yuanzhou Town’s Xia’nan Wharf on the Dongjiang in Huizhou’s Boluo County as part of the province’s coordinated Dragon Boat Festival calendar. The entry sits among cross-GBA coastal and river events promoting summer tourism.
 
 
 Zhongshan (1):
@@ -145,19 +143,17 @@ https://info.newsgd.com/node_73b7112307/5de42d92cb.shtml
 INFO Guangdong reported a Zhuhai Airport customer service desk at Jiangmen Urban Coach Terminal offering city check-in, baggage handling and lounge access with 16 daily 80-minute shuttle trips. The centre operates from 7am to 6.30pm and links Jiangmen passengers to Zhuhai Airport’s 68 domestic destinations.
 
 
-Zhaoqing (1):
+Nation (3):
 
-25. **Xinghu Scenic Area hosts Zhaoqing dragon boat race on 19 June** — INFO Guangdong
-https://info.newsgd.com/node_8ac5858e3d/233e4fbd20.shtml
-The provincial festival guide lists a 19 June regatta on Xinghu central lake in Zhaoqing alongside other GBA municipal events under the “Come to Guangdong for Dragon Boat Festival” campaign. Zhaoqing’s slot forms part of 208 themed activities and 547 races staged across 21 Guangdong cities through July.
-
-
-Nation (2):
-
-26. **China’s major industrial firms post 18.8% profit growth in first five months of 2026** — Xinhua + Macau Business
+25. **China’s major industrial firms post 18.8% profit growth in first five months of 2026** — Xinhua + Macau Business
 https://english.news.cn/20260627/0ea484f334074581b8f6c0c61819f20e/c.html
 https://macaubusiness.com/profits-of-chinas-major-industrial-firms-up-18-8-pct-in-first-five-months/
 NBS data released on 27 June show firms with at least 20 million yuan in annual main business revenue earned 3.14 trillion yuan in combined profits between January and May, up 18.8% year on year. May profits alone rose 21.1%, with Macau Business citing surging AI electronics and new-energy materials demand as key drivers affecting GBA manufacturing supply chains.
+
+26. **Sichuan quake injures 13 and relocates 196 as China activates Level-III emergency response** — Xinhua + RTHK
+https://english.news.cn/20260629/7d62ed05c42b4ad8a5c79d2854e13be9/c.html
+https://news.rthk.hk/rthk/en/component/k2/1860303-20260629.htm
+A 5.5-magnitude quake struck Gaoxian County in Yibin, Sichuan, at 0.12am on 29 June at a depth of 6km, leaving 13 people with minor injuries and no deaths reported by 3.30am. Xinhua said 196 residents were relocated and the China Earthquake Administration activated a Level-III response as tremors were felt in Chengdu.
 
 27. **Reports say US and Iran agree to halt strikes temporarily ahead of Hormuz talks** — Xinhua
 https://english.news.cn/20260629/7b201968be2d4b66bdbb524fea98868d/c.html
@@ -183,8 +179,8 @@ RTHK said on 28 June the expanded tournament’s round-of-32 bracket was confirm
 <!-- DAILY BRIEF AUDIT
 Date: 2026-06-29 HKT
 Stories: 30
-GBA filter drops: Europe heatwave/WHO excess deaths; Middle East/Ukraine conflicts; Indonesia protests; Citic Tower repeat from 28 June; celebrity Mirror phone story; stale May Day/Zhanjiang tourism pieces
-Single-source items: Undergrad closure (8); INFO Guangdong dragon boat calendar entries (17, 20–22, 25); low-altitude MoU (18); 3D printers (19); Tse five-year plan (27) — kept for policy relevance or official calendar
+GBA filter drops: Europe heatwave/WHO excess deaths; Middle East/Ukraine conflicts beyond Hormuz; Indonesia protests; celebrity Mirror phone story; gaming addiction; Yue Man Square farewell; stale Huizhou/Zhaoqing dragon boat entries
+Single-source items: spinal clinic (8); Northern Metropolis flats (13, SCMP-led); Duncan Chiu I&T (14); Undergrad closure (15); INFO Guangdong dragon boat/culture entries (18, 21–23); low-altitude MoU (19); 3D printers (20)
 Out of catalog: none
-Editor calibration applied: five-year plan/GBA integration (1, 13), southbound transport (2), weather/floods (3), Hengqin institutional reform (15), Macao society/pension (4), Shenzhen tech/low-altitude (18–19), dragon boat/GBA culture (17, 20–22), industrial data (26), Haughey gold (28)
+Editor calibration applied: five-year plan/GBA integration (1, 12–14), southbound transport (2), weather/floods (3), Hengqin institutional reform (16), Macao society/pension (4), Northern Metropolis housing (13), Shenzhen tech/low-altitude (19–20), dragon boat/GBA culture (18, 21–22), industrial data (25), Haughey gold (28)
 -->
