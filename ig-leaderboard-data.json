@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-06-30",
-  "refreshedAt": "2026-06-30T08:23:41+08:00",
+  "refreshedAt": "2026-06-30T08:27:19+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -72,7 +72,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 259665,
+      "followers": 259666,
       "followersGrowthPct7d": 0.83,
       "history": [
         {
@@ -125,7 +125,7 @@
         },
         {
           "date": "2026-06-30",
-          "followers": 259665
+          "followers": 259666
         }
       ]
     },
@@ -312,7 +312,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 43567,
+      "followers": 43568,
       "followersGrowthPct7d": 3.29,
       "history": [
         {
@@ -357,7 +357,7 @@
         },
         {
           "date": "2026-06-30",
-          "followers": 43567
+          "followers": 43568
         }
       ]
     },
