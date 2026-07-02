@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-02",
-  "refreshedAt": "2026-07-02T08:29:09+08:00",
+  "refreshedAt": "2026-07-02T08:32:04+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 656986,
+      "followers": 656990,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -71,7 +71,7 @@
         },
         {
           "date": "2026-07-02",
-          "followers": 656986
+          "followers": 656990
         }
       ]
     },
@@ -80,7 +80,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 260247,
+      "followers": 260248,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -141,7 +141,7 @@
         },
         {
           "date": "2026-07-02",
-          "followers": 260247
+          "followers": 260248
         }
       ]
     },
