@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-02",
+  "updatedAt": "2026-07-03",
   "highlightScoreThreshold": 24,
   "highlightedCount": 48,
   "events": [
@@ -187,17 +187,6 @@
       "region": "shenzhen",
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/29/content_32106002.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "Precious chance to see Tang Dynasty treasures in HK",
-      "start": "2026-07-01",
-      "end": "2026-08-30",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/01/content_32108217.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
       "highlighted": false
@@ -539,6 +528,17 @@
       "highlighted": false
     },
     {
+      "title": "12 upcoming events at Shenzhen's two exhibitions centers in July",
+      "start": "2026-07-02",
+      "end": "2026-08-31",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/02/content_32109612.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
       "title": "MGM Riesling Uncorked 2026",
       "start": "2026-07-03",
       "end": "2026-07-03",
@@ -813,17 +813,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC World of Snacks 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/worldofsnacks/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 16,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
@@ -833,6 +822,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 58,
       "highlighted": true
+    },
+    {
+      "title": "HKTDC World of Snacks 2026 (HKCEC)",
+      "start": "2026-07-15",
+      "end": "2026-07-21",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/worldofsnacks/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 16,
+      "highlighted": false
     },
     {
       "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
@@ -1219,17 +1219,6 @@
       "highlighted": true
     },
     {
-      "title": "electronicAsia 2026 (HKCEC)",
-      "start": "2026-10-13",
-      "end": "2026-10-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/electronicasia",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
       "start": "2026-10-13",
       "end": "2026-10-16",
@@ -1239,6 +1228,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "electronicAsia 2026 (HKCEC)",
+      "start": "2026-10-13",
+      "end": "2026-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/electronicasia",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
