@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-03",
-  "refreshedAt": "2026-07-03T08:23:33+08:00",
+  "refreshedAt": "2026-07-03T08:26:09+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -84,7 +84,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 260445,
+      "followers": 260446,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -149,7 +149,7 @@
         },
         {
           "date": "2026-07-03",
-          "followers": 260445
+          "followers": 260446
         }
       ]
     },
@@ -298,7 +298,7 @@
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 91330,
+      "followers": 91329,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -363,7 +363,7 @@
         },
         {
           "date": "2026-07-03",
-          "followers": 91330
+          "followers": 91329
         }
       ]
     },
@@ -438,7 +438,7 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 34037,
+      "followers": 34039,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -503,7 +503,7 @@
         },
         {
           "date": "2026-07-03",
-          "followers": 34037
+          "followers": 34039
         }
       ]
     },
