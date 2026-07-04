@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-03",
+  "updatedAt": "2026-07-04",
   "highlightScoreThreshold": 24,
   "highlightedCount": 48,
   "events": [
@@ -1120,6 +1120,17 @@
       "highlighted": false
     },
     {
+      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/foodexpopro/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-15",
@@ -1164,14 +1175,14 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-15",
+      "title": "HKTDC Hong Kong Watch & Clock Fair 2026 (HKCEC)",
+      "start": "2026-09-01",
+      "end": "2026-09-05",
       "region": "hk",
       "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/foodexpopro/en",
+      "url": "https://www.hktdc.com/event/hkwatchfair",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
+      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1184,17 +1195,6 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
-    },
-    {
-      "title": "HKTDC Hong Kong Watch & Clock Fair 2026 (HKCEC)",
-      "start": "2026-09-01",
-      "end": "2026-09-05",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkwatchfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
     },
     {
       "title": "CENTRESTAGE 2026 (HKCEC) ",
@@ -1386,17 +1386,6 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
-      "start": "2027-04-13",
-      "end": "2027-04-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkelectronicsfairse",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "InnoEX 2027 (HKCEC)",
       "start": "2027-04-13",
       "end": "2027-04-16",
@@ -1406,6 +1395,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
+      "start": "2027-04-13",
+      "end": "2027-04-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairse",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong International Lighting Fair (Spring Edition) 2027 (HKCEC)",
