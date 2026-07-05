@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
   "updatedAt": "2026-07-05",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 52,
+  "highlightedCount": 48,
   "events": [
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
@@ -790,17 +790,6 @@
       "highlighted": false
     },
     {
-      "title": "Shenzhen National Defense, Aerospace and Aviation Expo",
-      "start": "2026-07-11",
-      "end": "2026-08-21",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center (Futian)",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/02/content_32109612.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 34,
-      "highlighted": true
-    },
-    {
       "title": "Procession of Saint Roque",
       "start": "2026-07-12",
       "end": "2026-07-12",
@@ -866,28 +855,6 @@
       "sourceDomain": "10times.com",
       "highlightScore": 34,
       "highlighted": true
-    },
-    {
-      "title": "World Advanced Military Equipment Model Exhibition",
-      "start": "2026-07-17",
-      "end": "2026-08-09",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center (Bao'an)",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/02/content_32109612.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
-      "title": "9th International Medicine of Anti-aging & Aesthetics Congress",
-      "start": "2026-07-17",
-      "end": "2026-07-19",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center (Futian)",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/02/content_32109612.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 20,
-      "highlighted": false
     },
     {
       "title": "International Youth Dance Festival 2026",
@@ -1069,28 +1036,6 @@
       "highlighted": true
     },
     {
-      "title": "15th Shenzhen Cartoon and Animation Festival",
-      "start": "2026-07-24",
-      "end": "2026-07-26",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center (Futian)",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/02/content_32109612.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "39th Shenzhen Home and Furnishing Expo",
-      "start": "2026-07-24",
-      "end": "2026-07-26",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center (Futian)",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/02/content_32109612.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "Macao Orchestra 2025-26 Season Closing Concert “Chopin by Zitong Wang”",
       "start": "2026-07-25",
       "end": "2026-07-25",
@@ -1148,17 +1093,6 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "44th GBA Marriage Expo (Shenzhen)",
-      "start": "2026-07-25",
-      "end": "2026-07-26",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center (Futian)",
-      "url": "https://hbh.jhw520.cn/",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
       "highlighted": false
     },
     {
@@ -1496,17 +1430,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
-      "start": "2027-04-27",
-      "end": "2027-04-29",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hklicensingshow/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 14,
-      "highlighted": false
-    },
-    {
       "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1559,6 +1482,17 @@
       "url": "https://www.hktdc.com/event/fashioninstyle/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
+      "start": "2027-04-27",
+      "end": "2027-04-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hklicensingshow/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 14,
       "highlighted": false
     }
   ]

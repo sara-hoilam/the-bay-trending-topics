@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-05",
-  "refreshedAt": "2026-07-05T08:14:41+08:00",
+  "refreshedAt": "2026-07-05T08:17:43+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -92,7 +92,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 260694,
+      "followers": 260695,
       "followersGrowthPct7d": 0.57,
       "history": [
         {
@@ -165,7 +165,7 @@
         },
         {
           "date": "2026-07-05",
-          "followers": 260694
+          "followers": 260695
         }
       ]
     },
