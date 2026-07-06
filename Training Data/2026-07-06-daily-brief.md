@@ -6,10 +6,10 @@ Date: 06 July 2026 · 30 articles · method: daily-brief-agent-prompt (live sour
 
 GBA News (3):
 
-1. **Northern Metropolis five-year plan sets 70,000-home construction benchmark**
+1. **Northern Metropolis advisers urge tender sweeteners after Hung Shui Kiu pilot draws two bids**
+https://news.rthk.hk/rthk/en/component/k2/1861156-20260706.htm
 https://news.rthk.hk/rthk/en/component/k2/1861134-20260706.htm
-https://www.scmp.com/news/hong-kong/education/article/3359486/hong-kongs-northern-metropolis-university-town-tender-launch-2-months
-Our Hong Kong Foundation researcher Jason Leung said on 6 July that a public-consultation target to build 70,000 housing units in the Northern Metropolis over five years gives the project measurable milestones after years of planning rhetoric. Education minister Christine Choi said the first university-town tender for a 22-hectare Hung Shui Kiu site will launch within two months, with campus awards expected after site formation finishes by year-end.
+Northern Metropolis advisory committee member Edward Lau said on 6 July that the government could extend installment payments or offer industry discounts to attract developers after the 11-hectare Hung Shui Kiu pilot area received just two bids. Surveyors institute president Tony Wan called the six-firm consortium bid a success, while Our Hong Kong Foundation researcher Jason Leung said a five-year target of 70,000 homes gives the mega-project measurable milestones.
 
 2. **Hetao Hong Kong Park to launch second land-tender batch within two months**
 https://news.rthk.hk/rthk/en/component/k2/1861075-20260705.htm
@@ -42,19 +42,19 @@ Macao Monetary Authority data cited on 4 July show resident deposits grew 0.9% m
 
 Hong Kong (12):
 
-8. **Crowds tour PLA destroyer Nanning and frigate Hengyang during Handover anniversary visit** — RTHK + HKFP
+8. **PLA destroyer Nanning and frigate Hengyang depart Hong Kong after five-day Handover visit** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/society/article/3359522/i-didnt-want-miss-it-hongkongers-see-pla-warships-after-5-day-port-call
 https://news.rthk.hk/rthk/en/component/k2/1861069-20260705.htm
-https://hongkongfp.com/2026/07/02/2-chinese-military-warships-sail-into-hong-kong-for-5-day-visit-to-mark-handover-anniversary/
-Visitors continued boarding the guided-missile destroyer Nanning and frigate Hengyang at Stonecutters Island on 5 July as part of a five-day fleet visit marking the 29th Handover anniversary, RTHK reported. HKFP said the Nanning and Hengyang arrived on 2 July for public open days that drew families and school groups celebrating the PLA Navy port call.
+The guided-missile destroyer Nanning and frigate Hengyang sailed out of Victoria Harbour on the morning of 6 July, ending a five-day port call at Stonecutters Island marking the 29th Handover anniversary. Chief Secretary Eric Chan told a rain-soaked send-off ceremony that residents gained a tangible lesson in patriotism from touring the domestically built warships.
 
 9. **HKMA chief warns of AI bubble risk and plans further renminbi internationalisation steps** — RTHK + SCMP
 https://news.rthk.hk/rthk/en/component/k2/1861058-20260705.htm
 https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359457/hong-kong-must-brace-ai-bubble-risk-and-quantum-computer-threat-hkma-chief
 HKMA chief executive Eddie Yue said on 5 July that Hong Kong will roll out more measures to expand offshore renminbi use, including direct rupiah trading after a Bank Indonesia memorandum last month. SCMP reported Yue also cautioned banks to prepare for a possible AI-sector downturn and future quantum-computing threats to encrypted financial systems.
 
-10. **Financial secretary urges Hong Kong to back national development goals** — RTHK
-https://news.rthk.hk/rthk/en/component/k2/1861062-20260705.htm
-Paul Chan wrote in his 5 July blog that Hong Kong must “seize every minute and second” to support mainland modernisation after attending a Beijing ceremony marking the Communist Party of China’s 105th anniversary. He listed renminbi internationalisation, industrial upgrading and professional services as areas where the SAR can contribute to national rejuvenation.
+10. **63 Hong Kong students from 15 schools score perfect 45 IB points** — SCMP
+https://www.scmp.com/news/hong-kong/education/article/3359510/55-hong-kong-students-13-schools-score-perfect-ib-marks
+At least 63 students from 15 Hong Kong schools achieved the maximum 45 points in International Baccalaureate results released on 6 July, SCMP reported. Victoria Shanghai Academy posted a record nine perfect scorers and a school average of 39 points, while Po Leung Kuk Choi Kai Yau School reported six top marks.
 
 11. **Police seize HK$120 million of cocaine hidden inside three-tonne metal containers** — RTHK + SCMP
 https://news.rthk.hk/rthk/en/component/k2/1861091-20260705.htm
@@ -86,9 +86,9 @@ Members of the Hong Kong Federation of Asian Domestic Workers Unions rallied out
 https://www.scmp.com/news/hong-kong/society/article/3359438/hong-kong-restaurants-spend-welcome-furry-diners-under-pet-friendly-scheme
 The Food and Environmental Hygiene Department will allow dogs in 833 eateries from 9 July under a pet-economy pilot, SCMP reported on 5 July. Old Fung Tea House owner Fung Man-kit said he spent about HK$10,000 on partitions, air purifiers and pet strollers at his Mong Kok branch, with weekend reservation slots filling quickly.
 
-18. **Motorcyclist dies in head-on collision with tricycle on Tai Po Road** — SCMP
-https://www.scmp.com/news/hong-kong/society/article/3359476/motorcyclist-dies-after-crashing-head-tricycle-hong-kong
-A 21-year-old motorcyclist died after losing control on the Sha Tin Heights section of Tai Po Road and hitting a three-wheeled motorcycle head-on late on 5 July, SCMP reported. Police said the rider was heading north when the crash occurred and investigations are continuing.
+18. **San Tin fish-farm network encroaches on government land near Mai Po wetlands** — SCMP
+https://www.scmp.com/news/hong-kong/health-environment/article/3359492/commercial-fish-farm-encroaches-government-land-and-deemed-ecological-threat
+SCMP reported on 6 July that more than 20 artificial fish ponds near Mai Po Nature Reserve and Inner Deep Bay have spilled onto adjacent government land without permission. The Lands Department inspected the site on 22 June and ordered the operator to stop the encroachment or face enforcement action.
 
 19. **Driver arrested after high-speed chase ends in five-vehicle Canal Road Flyover crash** — SCMP
 https://www.scmp.com/news/hong-kong/law-and-crime/article/3359429/hong-kong-police-arrest-driver-after-high-speed-chase-ends-5-vehicle-crash
@@ -148,10 +148,10 @@ Zhuhai border authorities processed more than 64 million Gongbei Port crossings 
 
 Nation (1):
 
-29. **China and Russia open “Joint Sea-2026” drills off Qingdao with Pacific patrol to follow**
-https://news.rthk.hk/rthk/en/component/k2/1861095-20260705.htm
-https://english.news.cn/20260705/3e9dac503d474e3d835a0dec27de03a8/c.html
-Chinese and Russian navies will hold Joint Sea-2026 exercises in waters and airspace near Qingdao from 6–13 July, with some forces continuing into a joint Pacific patrol afterward, the defence ministry said on 5 July. Xinhua reported Russian cruiser Varyag and accompanying vessels had arrived at Qingdao as Northern Theater Command destroyers, frigates and a submarine prepared for joint reconnaissance and air-defence training.
+29. **Tianwen-2 probe reaches asteroid 2016HO3 after one-billion-kilometre journey**
+https://news.rthk.hk/rthk/en/component/k2/1861168-20260706.htm
+https://english.news.cn/20260706/1fa8b2c2867f458ea54733ee28f78365/c.html
+The China National Space Administration said on 6 July that Tianwen-2 arrived 20 kilometres from near-Earth asteroid 2016HO3 after a 400-day, one-billion-kilometre voyage and has begun scientific exploration. The sample-return mission launched on 29 May 2025 and will next map the asteroid’s morphology and composition before collection operations.
 
 
 GBA sport (1):
@@ -164,8 +164,8 @@ Hong Kong will stage the Fencing World Championships at AsiaWorld-Expo from 22�
 <!-- DAILY BRIEF AUDIT
 Date: 2026-07-06 HKT
 Stories: 30
-GBA filter drops: Europe heatwave wildfires; Venezuela earthquake toll; Syria parliament delay; Iran Khamenei funeral; US July 4 events; World Cup knockout results; UK Farage gifts row; Japan asteroid probe; celebrity sport (F1 Silverstone, Wimbledon); US shooting in New York
-Single-source items: 3 (Lions convention); 10 (FS Chan blog); 12 (Musico/Tiangong); 15 (domestic worker court); 17 (pet-friendly scheme); 18 (motorcyclist fatality); 19 (Canal Road chase); 20 (HONOR tour); 22 (CAS Space interview); 23 (Orca drone); 26 (Foshan lighthouse factory); 27 (Zhongshan biotech); 30 (Fencing Worlds)
+GBA filter drops: Europe heatwave wildfires; Venezuela earthquake toll; Syria parliament delay; Iran Khamenei funeral; US July 4 events; World Cup knockout results; UK Farage gifts row; celebrity sport (F1 Silverstone, Wimbledon); US shooting in New York; Joint Sea-2026 (superseded by Tianwen-2 for Nation slot)
+Single-source items: 3 (Lions convention); 10 (IB results); 12 (Musico/Tiangong); 15 (domestic worker court); 17 (pet-friendly scheme); 18 (San Tin fish farm); 19 (Canal Road chase); 20 (HONOR tour); 22 (CAS Space interview); 23 (Orca drone); 26 (Foshan lighthouse factory); 27 (Zhongshan biotech); 30 (Fencing Worlds)
 Out of catalog: none
-Editor calibration applied: GBA integration/Northern Metropolis (1, 2, 3), society/health (4, 16), transport/cross-border (28), policy/economy (7, 9, 10), technology/innovation (12, 20, 23, 24, 25, 26), sport (30)
+Editor calibration applied: GBA integration/Northern Metropolis (1, 2, 3), society/health (4, 16, 18), transport/cross-border (28), policy/economy (7, 9), technology/innovation (12, 20, 23, 24, 25, 26, 29), sport (30)
 -->
