@@ -148,28 +148,6 @@
       "highlighted": false
     },
     {
-      "title": "Shenzhen artist Tang Ping holds exhibition in Hong Kong",
-      "start": "2026-06-15",
-      "end": "2026-08-14",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/15/content_32090080.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "New art museum opens with 7 inaugural exhibitions",
-      "start": "2026-06-15",
-      "end": "2026-08-14",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/15/content_32089937.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "New art exhibition opens at L-Art Gallery in Futian",
       "start": "2026-06-16",
       "end": "2026-08-15",
@@ -223,6 +201,17 @@
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "Brilliance — Ming Dynasty ceramics at Palace Museum",
+      "start": "2026-07-01",
+      "end": "2028-01-02",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.westk.hk/en/event/brilliance-ming-dynasty-ceramic-treasures-from-the-palace-museum-1368-1644",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 28,
+      "highlighted": true
     },
     {
       "title": "3rd Macao International Children’s Arts Festival",
@@ -561,17 +550,6 @@
       "highlighted": false
     },
     {
-      "title": "Brilliance — Ming Dynasty ceramics at Palace Museum",
-      "start": "2026-07-01",
-      "end": "2028-01-02",
-      "region": "hk",
-      "location": "Hong Kong Palace Museum, West Kowloon",
-      "url": "https://www.westk.hk/en/event/brilliance-ming-dynasty-ceramic-treasures-from-the-palace-museum-1368-1644",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "12 upcoming events at Shenzhen's two exhibitions centers in July",
       "start": "2026-07-02",
       "end": "2026-08-31",
@@ -736,6 +714,28 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "VR, rocket debris and zero-gravity fun at space exhibition",
+      "start": "2026-07-06",
+      "end": "2026-09-04",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112699.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Come to Guangming for Tintin, Smurfs, and 100 years of magic",
+      "start": "2026-07-06",
+      "end": "2026-09-04",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112587.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -1164,6 +1164,28 @@
       "highlighted": false
     },
     {
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-15",
@@ -1192,28 +1214,6 @@
       "region": "hk",
       "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
       "url": "https://www.hktdc.com/event/hkfoodexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
-      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
@@ -1364,6 +1364,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1383,17 +1394,6 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1474,6 +1474,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
+      "start": "2027-04-27",
+      "end": "2027-04-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hklicensingshow/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 14,
+      "highlighted": false
+    },
+    {
       "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1526,17 +1537,6 @@
       "url": "https://www.hktdc.com/event/fashioninstyle/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
-      "start": "2027-04-27",
-      "end": "2027-04-29",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hklicensingshow/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 14,
       "highlighted": false
     }
   ]
