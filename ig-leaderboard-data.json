@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-06",
-  "refreshedAt": "2026-07-06T13:29:30+08:00",
+  "refreshedAt": "2026-07-06T13:32:25+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -182,8 +182,8 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 123147,
-      "followersGrowthPct7d": 0.21,
+      "followers": 123146,
+      "followersGrowthPct7d": 0.2,
       "history": [
         {
           "date": "2026-06-17",
@@ -251,7 +251,7 @@
         },
         {
           "date": "2026-07-06",
-          "followers": 123147
+          "followers": 123146
         }
       ]
     },
@@ -510,7 +510,7 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 34850,
+      "followers": 34852,
       "followersGrowthPct7d": 5.63,
       "history": [
         {
@@ -587,7 +587,7 @@
         },
         {
           "date": "2026-07-06",
-          "followers": 34850
+          "followers": 34852
         }
       ]
     },
