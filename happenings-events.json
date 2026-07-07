@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-06",
+  "updatedAt": "2026-07-07",
   "highlightScoreThreshold": 24,
   "highlightedCount": 50,
   "events": [
@@ -154,17 +154,6 @@
       "region": "shenzhen",
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/16/content_32091413.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "New thematic exhibition on Forbidden City opens at HKPM",
-      "start": "2026-06-22",
-      "end": "2026-08-21",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/22/content_32098089.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 18,
       "highlighted": false
@@ -1164,14 +1153,14 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
       "start": "2026-08-13",
-      "end": "2026-08-17",
+      "end": "2026-08-15",
       "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkteafair",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
+      "highlightScore": 36,
       "highlighted": true
     },
     {
@@ -1186,6 +1175,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-15",
@@ -1194,17 +1194,6 @@
       "url": "https://www.hktdc.com/event/foodexpopro/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-15",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkteafair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 36,
       "highlighted": true
     },
     {
