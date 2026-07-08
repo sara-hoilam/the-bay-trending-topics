@@ -1,0 +1,180 @@
+THE BAY: Daily Brief
+Date: 08 July 2026 · 30 articles · method: daily-brief-agent-prompt (live source scan)
+
+<!-- article count verified: 30 numbered blocks -->
+
+
+GBA News (4):
+
+1. **PBoC expands Bond Connect quota and opens mainland market to Hong Kong and Macau debt**
+https://www.scmp.com/business/banking-finance/article/3359730/hong-kong-yuan-facility-expand-150-us736-billion-meet-international-demand
+https://macaubusiness.com/chinas-central-bank-opens-mainland-market-to-debt-issued-in-macau/
+https://news.rthk.hk/rthk/en/component/k2/1861307-20260707.htm
+People's Bank of China governor Pan Gongsheng told Hong Kong's Bond Connect summit on 7 July that the southbound annual investment quota will rise from 500 billion to 800 billion yuan and that debt issued in Hong Kong and Macau may be sold on the mainland. Chief Executive John Lee launched a trial of Hong Kong's gold central clearing system the same day, while the HKMA will expand its RMB business facility for banks to 500 billion yuan from 8 July.
+
+2. **Hengqin consults on letting Macau single-plate cars travel into Guangdong**
+https://macaubusiness.com/hengqin-eyes-macau-car-access-expansion-into-guangdong/
+Hengqin authorities opened public consultation on 7 July on allowing Macau-registered single-plate vehicles to drive beyond the cooperation zone into Guangdong, alongside relaxed eligibility for businesses, property owners and employees. Each car would allow two Macau-licensed drivers with mainland permits, insurance-linked validity capped at one year, and penalties ranging from one- to five-year bans for overstays up to lifelong exclusion for smuggling or hit-and-run offences.
+
+3. **Guangdong and Guangxi on highest flood alert as Maysak remnants and Typhoon Bavi loom**
+https://www.newsgd.com/node_1299786306/c645e56981.shtml
+https://www.newsgd.com/node_99363c4f3b/7e23a40f43.shtml
+https://news.rthk.hk/rthk/en/component/k2/1861317-20260707.htm
+The Ministry of Water Resources warned on 7 July that Typhoon Maysak will keep raising Pearl River basin levels through 9 July while Super Typhoon Bavi may hit China's eastern coast from 10 July. Guangdong issued its first red flood warning of 2026 for Fengkai on the Xijiang River as levels approached 17.24 metres, and Guangxi's toll from Maysak-linked storms reached six dead with 375,000 people affected as President Xi Jinping ordered all-out rescue efforts nationwide.
+
+4. **Secretary Alice Xie meets Guangzhou leaders on aligning HK five-year plan with Guangdong**
+https://news.rthk.hk/rthk/ch/component/k2/1861398-20260707.htm
+Secretary for Constitutional and Mainland Affairs Alice Xie visited Guangzhou on 7 July to meet Guangdong Hong Kong and Macao Affairs Office director Chen Liwen, Greater Bay Area office executive deputy Zhu Wei and Nansha party secretary Liu Wei on deepening Guangdong–Hong Kong cooperation under the 15th Five-Year Plan. Xie toured Nansha's innovation exhibition and said Hong Kong's first five-year blueprint must closely align with Guangdong and other GBA cities on science, industry and cross-boundary development.
+
+
+Macao (4):
+
+5. **Chief Executive says Phase 4 talent scheme will favour Hengqin recruits** — Macao Business
+https://macaubusiness.com/preferential-treatment-on-the-cards-for-hengqin-recruits-under-talent-scheme/
+Sam Hou Fai told Macao's talent committee on 7 July that the fourth recruitment phase, due to end in December, may add extra credit for professionals hired specifically for the Hengqin cooperation zone. About 2,100 applications have been filed across three phases, with roughly 900 in the top tier and teaching and research staff dominating the pipeline as Macao develops its Hengqin university town.
+
+6. **Three All About Macau reporters to stand trial over legislature disruption** — Macao Business
+https://macaubusiness.com/three-reporters-to-face-trial-in-macau-over-disrupting-functioning-of-legislature/
+Macao courts scheduled a 16 July trial for three journalists from the closed All About Macau outlet on charges of disrupting Legislative Assembly operations, carrying up to three years' imprisonment. The Public Prosecutions Office indicted them after police blocked two reporters from entering the 2025 policy address session in April 2025; the online paper shut in October citing legal pressure and resource constraints.
+
+7. **Mainland market opens to debt issued in Macau under Bond Connect expansion** — Macao Business
+https://macaubusiness.com/chinas-central-bank-opens-mainland-market-to-debt-issued-in-macau/
+https://www.scmp.com/business/banking-finance/article/3359730/hong-kong-yuan-facility-expand-150-us736-billion-meet-international-demand
+PBOC governor Pan Gongsheng said on 7 July that Macau-issued bonds may be sold to mainland investors alongside Hong Kong dollar and renminbi notes from Hong Kong, supporting the SAR's push to diversify beyond gaming through China–Lusophone financial links. The move follows the NDB's first US$50 million Macau issuance in June and January's 5.5 billion yuan ICBC Macao bond for Portuguese-speaking market projects.
+
+8. **Community leaders question whether concert ticket stubs can revive neighbourhood spending** — Macao Business
+https://macaubusiness.com/will-ticket-stubs-help-turn-around-community-economy/
+Business figures told Macao Daily News on 7 July that large venues in Cotai draw spectators who rarely visit older districts such as San Kio after shows, limiting spillover for small shops despite April shuttle-bus expansions. University of Macau professor Liu Ting Chi said post-event discounts were unlikely to keep tired visitors in town at night, urging pre-show incentives and broader northern peninsula redevelopment instead.
+
+
+Hong Kong (12):
+
+9. **IVF clinic ordered to suspend most services after embryo biopsy specimens mismatched** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/health-environment/article/3359758/hong-kong-ivf-clinic-ordered-suspend-most-services-after-embryo-sample-errors
+https://news.rthk.hk/rthk/en/component/k2/1861404-20260707.htm
+The Council on Human Reproductive Technology suspended most operations at Central's HEAL Fertility on 7 July after CUHK laboratory staff found embryo biopsy samples from two patients did not match their DNA in May tests. Police were alerted, the clinic failed to report the incident within 24 hours, and regulators ordered it to stop accepting new clients while a four-week investigation proceeds.
+
+10. **Proposed cooling-off refunds for beauty and fitness contracts would carry admin fee** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3359772/customers-seeking-refunds-during-cooling-period-will-need-pay-admin-fee
+Deputy Secretary for Commerce and Economic Development Winsome Au told Legco on 8 July that customers seeking refunds under a proposed seven-day cooling-off period for prepaid beauty and fitness contracts would pay an administrative fee set as a percentage of the contract value. Authorities launched a two-month consultation last week on the measure and two other consumer-protection reforms amid persistent high-pressure sales complaints.
+
+11. **Government consults on sex-law overhaul covering cult coercion, campus hazing and deepfakes** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359750/hong-kong-consults-sex-law-reform-over-cult-coercion-campus-and-online-abuse
+https://news.rthk.hk/rthk/en/component/k2/1861361-20260707.htm
+The Security Bureau opened a one-month public consultation on 7 July on sweeping sexual-offences reforms, including a statutory definition of consent with 11 presumed non-consent circumstances. Secretary Chris Tang said deception in Hong Kong that lures victims overseas for bogus fortune rituals or orientation-camp hazing involving bodily fluids would fall within Hong Kong jurisdiction, with submissions due by 5 August.
+
+12. **John Lee says AI is central plank of first five-year plan and coming policy address** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359667/ai-central-plank-hong-kongs-economic-development-john-lee-says
+https://news.rthk.hk/rthk/ch/component/k2/1861440-20260708.htm
+Chief Executive John Lee told RTHK's "Hong Kong and the 15th Five-Year Plan" programme on 8 July that artificial intelligence will anchor Hong Kong's first five-year blueprint and that future policy addresses will follow the plan to ensure cross-term continuity. He said the city must proactively serve national development while balancing pillar industries such as finance and innovation with housing, healthcare and education.
+
+13. **Hong Kong gold central clearing system begins trial operation** — RTHK + SCMP
+https://news.rthk.hk/rthk/en/component/k2/1861307-20260707.htm
+https://www.scmp.com/business/banking-finance/article/3359698/how-hong-kong-fighting-redefine-its-future-institutional-moat-wealth-surge
+John Lee announced on 7 July that Hong Kong Precious Metals Central Clearing has started trial settlement of over-the-counter gold trades, with initial deposits and transactions completed by banks, miners, refiners and jewellers. Authorities will launch Delivery Connect with the Shanghai Gold Exchange, a Hau gold price reference with Bloomberg, relisted US-dollar gold futures and a fourth-quarter Legco bill to let more MPF funds invest in gold ETFs.
+
+14. **HKMA expands offshore yuan lending facility to 500 billion yuan** — SCMP
+https://www.scmp.com/business/banking-finance/article/3359730/hong-kong-yuan-facility-expand-150-us736-billion-meet-international-demand
+The Hong Kong Monetary Authority will raise its RMB Business Facility quota by 150% to 500 billion yuan from 8 July and extend maximum tenures to two or three years, Eddie Yue said on 7 July after the prior 200 billion yuan tranche was fully used. Regulators and HKEX are also vetting a licence for a new electronic fixed-income and currency trading platform developed with CFETS.
+
+15. **Joshua Wong expected to plead guilty to foreign collusion charge in September** — SCMP + HKFP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359700/hong-kong-activist-joshua-wong-expected-plead-guilty-foreign-collusion-case
+https://hongkongfp.com/2026/07/07/jailed-activist-joshua-wong-to-plead-guilty-face-second-national-security-jail-term-in-september/
+The High Court listed a 2 September plea and sentencing hearing for Joshua Wong on 7 July over allegations he conspired with fugitive Nathan Law between July and November 2020 to seek foreign sanctions against Hong Kong and mainland China. Wong was arrested in Stanley Prison in June 2025 while serving a separate subversion sentence linked to the 2020 unofficial primary.
+
+16. **Insurers launch marine war-risk pool covering mainland and Hong Kong vessels** — SCMP
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359766/hong-kongs-war-risk-pool-testament-collaboration-insurance-leader-says
+Hong Kong Federation of Insurers chief Selina Lau said on 7 July that five local insurers had pooled marine war-risk cover so mainland and Hong Kong shipowners can continue voyages through Middle East hotspots where standard cargo policies exclude conflict damage. Lau told SCMP's China Conference the collaboration demonstrated Hong Kong's role supporting national shipping resilience.
+
+17. **Hygiene black spots fall to 57 as Chief Secretary cites four-year cross-department campaign** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1861401-20260707.htm
+Chief Secretary Eric Chan said on 7 July that government hygiene black spots had dropped to 57 from about 100 in March 2025 and a peak of 738 in July 2023 after sustained enforcement, legislative amendments and technology under the district coordination task force established in July 2022. Departments will review the list every six months and act quickly if conditions deteriorate.
+
+18. **Food department suspends rodent contractor after captured rats kept overnight** — HKFP
+https://hongkongfp.com/2026/07/07/hong-kong-govt-suspends-rodent-control-contractor-for-keeping-captured-rats-overnight/
+The Food and Environmental Hygiene Department issued a blatant-default notice last week to a Kwai Chung rodent-control contractor whose workers stored cages on a slope near Shek Lei Adventure Playground instead of same-day disposal. FEHD suspended the firm and a site supervisor, pledging more surprise inspections after media reports that a team cut from six to four staff delayed humane disposal.
+
+19. **833 dog-friendly restaurants approved as permits take effect from 9 July** — HKFP
+https://hongkongfp.com/2026/07/06/full-list-of-dog-friendly-hong-kong-restaurants-as-permits-kick-in-from-thursday/
+The Food and Environmental Hygiene Department approved 833 of 2,205 pet-dining applications ahead of permits taking effect on 9 July, requiring leashed dogs kept off tables and off reusable human utensils. SCMP reported on 5 July that restaurateurs were preparing dedicated pet sections and staff training for the long-awaited scheme ending a decades-old ban on dogs in licensed premises.
+
+20. **Churches urged to fix sexual harassment handling after survey identifies 69 victims** — SCMP + HKFP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359615/hong-kong-churches-warned-over-systemic-flaws-handling-sexual-harassment
+https://hongkongfp.com/2026/07/08/hong-kong-churches-urged-to-implement-anti-sexual-harassment-policies-after-study-finds-complaints-mishandled/
+The Hong Kong Christian Council reported on 6 July that 94 survey responses identified at least 69 church harassment victims over two decades, including three teenagers aged 13 to 15, yet only 47% of 73 churches had written policies. Executive secretary Jessica Tso said power dynamics and harmony culture led churches to offer prayer or accept resignations rather than robust penalties.
+
+
+Zhuhai inc. Hengqin (1):
+
+21. **Macao grassroots alliance opens Guangdong office to serve 30,000 Hengqin residents** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/bcee7d2b0a.shtml
+The Macao Institution of People's Alliance inaugurated its Guangdong office in Hengqin on 6 July to help residents with housing, employment, business start-ups and cross-border mediation after handling more than 170 cases since March. NewsGD said Hengqin now hosts ten representative offices of major Macao community groups serving more than 30,000 permanent Macao residents and 8,000 Macao-funded businesses.
+
+
+Guangzhou (1):
+
+22. **Nansha AI factory ships 45,000 Midea air conditioners daily to meet Europe heatwave demand** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/24842cdeaa.shtml
+NewsGD reported on 7 July that Midea's World Economic Forum "lighthouse" plant in Nansha can produce 45,000 PortaSplit units daily, with European sales up more than 70% year on year as resellers mark up the sub-800-euro self-install models above 2,500 euros. Nine AI agents now run the upgraded agentic factory, cutting material-delivery times 40% and leak rates 70% through expanded electronic testing.
+
+
+Shenzhen (2):
+
+23. **Shanwei jewellery and seafood showcased in Shenzhen under Guangdong Goods campaign** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/17c81e5c9e.shtml
+Shanwei promoted jewellery and seafood specialties at a Shenzhen event on 3 July under the provincial "Guangdong Goods Global Reach" campaign, signing cooperation including a Mozambique gemstone supply deal for an industry valued above 35 billion yuan annually. Certified cobia, sea urchin and oysters have entered GBA supermarkets and wholesale markets through production-to-sales partnerships.
+
+24. **Shenzhen exoskeleton maker Hypershell sells nearly 40,000 units across 70 countries** — NewsGD
+https://www.newsgd.com/node_d36b0ef83f/1771d78ac0.shtml
+Hypershell told reporters on 3 July that it had sold nearly 40,000 AI-powered wearable exoskeletons in more than 70 countries by the end of the first quarter of 2026, supplying Disney and Walmart staff as well as hikers and mobility-limited users. The Shenzhen firm showcased the devices during Guangdong's "Vibrant China Research Tour" innovation media programme.
+
+
+Dongguan (1):
+
+25. **Dongguan mold maker reports 90% automation and 30% efficiency gain** — NewsGD + Xinhua
+https://www.newsgd.com/node_e9dced8600/94db51724f.shtml
+Dongguan Moldbao Smart Technology told Xinhua on 2 July that its precision-mold workshop for smart hardware and designer toys now runs at 90% automation after integrating AI, industrial internet and smart manufacturing, lifting output efficiency 30%. Industrial robots transport electrodes and digital inspection covers expanded electronic test items while designers prototype toys with turnaround as fast as ten days in Shipai.
+
+
+Huizhou (1):
+
+26. **Huizhou firm integrates AI sensing into ADO e-bikes for safer urban riding** — NewsGD
+https://www.newsgd.com/node_e9dced8600/e3812b4083.shtml
+Huizhou Ruijianxing New Energy Technology showed Xinhua on 1 July how its ADO e-bike brand uses AI-powered sensing at its Huizhou laboratory and lakeside test rides to improve rider safety. The company is part of Guangdong's smart-mobility manufacturing cluster highlighted during the provincial innovation media tour ending 4 July.
+
+
+Zhaoqing (1):
+
+27. **Xijiang at Fengkai expected to exceed levee crest as Guangdong issues red flood warning** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/7e23a40f43.shtml
+https://www.newsgd.com/node_1299786306/c645e56981.shtml
+Guangdong's hydrological bureau upgraded the Fengkai section of the Xijiang to a red warning at 8am on 7 July as the Jiangkou station reached 17.24 metres against a 17.80-metre alert level, projecting about 22 metres by 8 July morning and exceeding the old Jiangkou urban levee crest. China Railway Guangzhou Group suspended some Shanghai–Kunming, Beijing–Guangzhou and Hengyang–Liuzhou services through 8 July, urging passengers to check 12306 updates.
+
+
+Nation (1):
+
+28. **Gansu landslide kills five with 12 missing; Beijing allocates 30 million yuan relief** — Macao Business + RTHK
+https://macaubusiness.com/china-allocates-funds-to-support-disaster-relief-following-landslide-in-gansu/
+https://news.rthk.hk/rthk/en/component/k2/1861317-20260707.htm
+A landslide at about 6.56am on 8 July buried 33 people in Nanhe township, Tanchang county, Longnan, Gansu, with rescuers pulling out 21 by mid-afternoon including five confirmed dead and 12 still missing. The National Development and Reform Commission allocated 30 million yuan for infrastructure restoration as President Xi Jinping ordered all-out rescue work amid concurrent flood crises in Guangxi and Hubei.
+
+
+GBA sport (2):
+
+29. **China BMX Freestyle League national-team trials held at Olympic-standard Dongguan track** — NewsGD
+https://www.newsgd.com/node_d36b0ef83f/86d79ff822.shtml
+More than 100 riders competed in Huangjiang, Dongguan, on 6–7 June at the 2026 China BMX Freestyle League and Asian Games national-team trials on a 10,000-square-metre course built to the same standard as Shanghai's 2024 Olympic qualifier series. Former Russian pro Daniil Stroganov, now coaching in Shenzhen, said Chinese riders' tricks and jump heights were improving sharply year on year.
+
+30. **TDM flags World Cup quarter-final lineup after Argentina and Switzerland advance** — TDM + RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1861418-20260708.htm
+https://news.rthk.hk/rthk/en/component/k2/1861439-20260708.htm
+Argentina beat Egypt 3–2 after extra time and Switzerland eliminated Colombia 2–0 on 8 July to complete the FIFA World Cup quarter-final field alongside England, Spain, Belgium, France and other survivors, RTHK reported overnight. TDM highlighted the bracket as Macau broadcasters continue live World Cup coverage through the knockout stage.
+
+
+<!-- DAILY BRIEF AUDIT
+Date: 2026-07-08 HKT
+Stories: 30
+GBA filter drops: Shantou coastal travel vignette (outside nine GD cities); UK/EU/US-only politics; pure entertainment rankings
+Single-source items: Macao ticket-stub economy debate (Macao Business citing Macao Daily News); Huizhou ADO e-bikes (NewsGD/Xinhua photo story); TDM World Cup bracket (RTHK match reports for corroboration)
+Out of catalog: none
+-->
