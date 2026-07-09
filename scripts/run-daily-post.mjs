@@ -71,6 +71,7 @@ console.log(`Daily post-pipeline (HKT ${today})`);
 
 run("generate-source-links-data.mjs");
 run("generate-happenings-data.mjs");
+run("generate-new-hotels-data.mjs");
 run("capture-ig-leaderboard.mjs", ["--refresh"]);
 run("prune-trendwatch-gba.mjs");
 run("enrich-trendwatch-metadata.mjs");
@@ -80,6 +81,7 @@ const checks = [
   ["verify-daily-capture.mjs", true],
   ["verify-daily-brief.mjs", false],
   ["verify-happenings.mjs", false],
+  ["verify-new-hotels.mjs", false],
 ];
 
 for (const [script, required] of checks) {

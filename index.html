@@ -1292,6 +1292,7 @@
   .sl-cat-news { background: #fdf6e3; color: var(--mix); border-color: #e8d48a; }
   .sl-cat-lifestyle { background: #f3e8fd; color: #5b3d8a; border-color: #c9a8e8; }
   .sl-cat-social { background: #e6f5ed; color: var(--pos); border-color: #a8dbbe; }
+  .sl-cat-new-hotels { background: #e8f7f4; color: #1a6b5c; border-color: #9ad4c6; }
   .sl-err {
     color: var(--neg);
     font-size: 13px;
@@ -1446,6 +1447,129 @@
     font-size: 11px;
   }
 
+  /* —— New Hotels —— */
+  #panel-newhotels main.wrapper {
+    max-width: 1100px;
+  }
+  .nh-header {
+    margin-bottom: 12px;
+  }
+  .nh-header h2 {
+    font-family: 'Instrument Serif', Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 4px;
+  }
+  .nh-meta {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+  .nh-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .nh-toolbar label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .nh-toolbar select {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: #fff;
+    color: var(--ink);
+  }
+  .nh-table-wrap {
+    overflow-x: auto;
+    border-top: 1px solid var(--rule);
+  }
+  .nh-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .nh-table thead th {
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 10px 12px 8px 0;
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  .nh-table tbody tr {
+    border-bottom: 1px solid var(--rule);
+  }
+  .nh-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  .nh-table tbody td {
+    padding: 12px 12px 12px 0;
+    vertical-align: top;
+  }
+  .nh-name {
+    font-weight: 600;
+    color: var(--ink);
+    min-width: 160px;
+  }
+  .nh-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .nh-loc, .nh-group {
+    color: var(--muted);
+  }
+  .nh-status-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+  }
+  .nh-status--upcoming {
+    background: #e8f0fd;
+    color: var(--neu);
+    border-color: #a5bef5;
+  }
+  .nh-status--opened {
+    background: #e6f5ed;
+    color: var(--pos);
+    border-color: #a8dbbe;
+  }
+  .nh-source a {
+    color: var(--neu);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .nh-source a:hover {
+    border-bottom-color: var(--neu);
+  }
+  .nh-empty, .nh-err {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .nh-err { color: var(--neg); }
+  .nh-err code {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+  }
+
 </style>
 </head>
 <body>
@@ -1463,6 +1587,7 @@
       <button type="button" class="masthead-pill" role="tab" id="tab-happenings" data-panel="happenings" aria-selected="false" title="Lifestyle events calendar">Happenings</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Instagram competitors benchmark">IG Leaderboard</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-newhotels" data-panel="newhotels" aria-selected="false" title="New and upcoming hotel openings">New Hotels</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -5203,6 +5328,7 @@
         <option value="all">All</option>
         <option value="Lifestyle">Lifestyle</option>
         <option value="News">News</option>
+        <option value="New Hotels">New Hotels</option>
         <option value="Official">Official</option>
       </select>
     </div>
@@ -5234,6 +5360,28 @@
   </main>
 </div>
 
+<div id="panel-newhotels" class="model-panel" role="tabpanel" aria-labelledby="tab-newhotels" hidden>
+  <main class="wrapper">
+    <div class="nh-header">
+      <h2>New hotels</h2>
+      <p class="nh-meta"><span id="nh-count">Loading…</span> · <span id="nh-meta">soon to open or recently opened</span></p>
+    </div>
+    <div class="nh-toolbar">
+      <label for="nh-status-filter">Status</label>
+      <select id="nh-status-filter" aria-label="Filter hotels by open status">
+        <option value="all">All</option>
+        <option value="upcoming">Opening soon</option>
+        <option value="opened">Opened</option>
+      </select>
+      <label for="nh-group-filter">Hotel group</label>
+      <select id="nh-group-filter" aria-label="Filter hotels by group">
+        <option value="all">All groups</option>
+      </select>
+    </div>
+    <div id="new-hotels-root"></div>
+  </main>
+</div>
+
 <footer>
   <span id="gba-footer-edition">GBA Pulse · 粤港澳大湾区脉搏 · 2026-07-09</span>
   <span>For informational purposes only — verify all data with primary sources</span>
@@ -5260,11 +5408,12 @@
     t.addEventListener("click", function () { show(t.getAttribute("data-panel")); });
   });
   var h = (location.hash || "").replace("#", "");
-  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard"].indexOf(h) !== -1) show(h);
+  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard", "newhotels"].indexOf(h) !== -1) show(h);
 })();
 </script>
-<script>window.GBA_DATA_VERSION = "20260609d";</script>
+<script>window.GBA_DATA_VERSION = "20260709a";</script>
 <script src="ig-leaderboard-panel.js?v=20260615d" defer></script>
+<script src="new-hotels-panel.js?v=20260709a" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
 <script src="happenings-panel.js?v=20260615a" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>

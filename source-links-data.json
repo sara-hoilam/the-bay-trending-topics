@@ -1,6 +1,6 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 118,
+  "count": 122,
   "sources": [
     {
       "domain": "10times.com",
@@ -65,6 +65,30 @@
       "happeningsFetch": {
         "method": "html"
       }
+    },
+    {
+      "domain": "group.accor.com",
+      "displayName": "Accor 2026 Openings",
+      "url": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "category": "New Hotels"
+    },
+    {
+      "domain": "ihg.com",
+      "displayName": "IHG New Hotels",
+      "url": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
+      "category": "New Hotels"
+    },
+    {
+      "domain": "marriott.com",
+      "displayName": "Marriott Bonvoy Openings",
+      "url": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
+      "category": "New Hotels"
+    },
+    {
+      "domain": "theopeninglist.com",
+      "displayName": "The Opening List",
+      "url": "https://theopeninglist.com/collection/true",
+      "category": "New Hotels"
     },
     {
       "domain": "21jingji.com",

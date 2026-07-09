@@ -128,3 +128,10 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `shenzhenmuseum.com` (1 links in training sample)
 - `macaotourism.gov.mo` (Macao events calendar)
 - `ticketflap.com` (HK/Macau/GZ ticketing)
+
+## New Hotels (4 domains)
+
+- `theopeninglist.com` (curated worldwide openings / opening soon)
+- `marriott.com` (Marriott Bonvoy portfolio openings)
+- `group.accor.com` (Accor anticipated openings)
+- `ihg.com` (IHG new & upcoming hotels)

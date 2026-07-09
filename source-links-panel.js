@@ -45,7 +45,7 @@
           "<td class=\"sl-name\">" + esc(label) + "</td>" +
           "<td class=\"sl-link\"><a href=\"" + esc(row.url) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" +
           esc(row.url) + "</a></td>" +
-          "<td class=\"sl-cat\"><span class=\"sl-cat-badge sl-cat-" + esc(row.category.toLowerCase()) + "\">" +
+          "<td class=\"sl-cat\"><span class=\"sl-cat-badge sl-cat-" + esc(row.category.toLowerCase().replace(/\s+/g, "-")) + "\">" +
           esc(row.category) + "</span></td>" +
           "</tr>"
         );
