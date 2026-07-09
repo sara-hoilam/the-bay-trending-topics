@@ -9,11 +9,25 @@
   var allHotels = [];
   var activeStatus = "all";
   var activeGroup = "all";
+  var activeLocation = "all";
+
+  var PORTUGAL_RE =
+    /\bportugal\b|\blisbon\b|\bporto\b|\bcomporta\b|\bmelides\b|\balgarve\b|\bcascais\b|\bsintra\b|\bmadeira\b|\bazores\b/i;
+  var ASIA_RE =
+    /\basia\b|\bjapan\b|\bchina\b|\bhong kong\b|\bmacao\b|\bmacau\b|\btaiwan\b|\bkorea\b|\bseoul\b|\bbusan\b|\bincheon\b|\bthailand\b|\bbangkok\b|\bphuket\b|\bvietnam\b|\bhanoi\b|\bho chi minh\b|\bsaigon\b|\bdanang\b|\bsingapore\b|\bmalaysia\b|\bkuala lumpur\b|\bpenang\b|\bindonesia\b|\bbali\b|\bjakarta\b|\bphilippines\b|\bmanila\b|\bboracay\b|\bindia\b|\bmumbai\b|\bdelhi\b|\bgoa\b|\bkerala\b|\budaipur\b|\blaos\b|\bcambodia\b|\bmyanmar\b|\byangon\b|\bmongolia\b|\bsri lanka\b|\bmaldives\b|\bnepal\b|\bbhutan\b|\bbangladesh\b|\bpakistan\b|\bkyoto\b|\btokyo\b|\bosaka\b|\bokinawa\b|\bshanghai\b|\bbeijing\b|\bshenzhen\b|\bguangzhou\b|\bjilin\b/i;
 
   function esc(s) {
     var d = document.createElement("div");
     d.textContent = s == null ? "" : String(s);
     return d.innerHTML;
+  }
+
+  function hotelRegion(h) {
+    if (h.region === "portugal" || h.region === "asia") return h.region;
+    var blob = (h.location || "") + " " + (h.name || "");
+    if (PORTUGAL_RE.test(blob)) return "portugal";
+    if (ASIA_RE.test(blob) || /\basia\b/i.test(h.region || "")) return "asia";
+    return h.region || "other";
   }
 
   function uniqueGroups(hotels) {
@@ -31,6 +45,8 @@
       if (activeStatus === "upcoming" && h.status !== "upcoming") return false;
       if (activeStatus === "opened" && h.status !== "opened") return false;
       if (activeGroup !== "all" && h.hotelGroup !== activeGroup) return false;
+      if (activeLocation === "portugal" && hotelRegion(h) !== "portugal") return false;
+      if (activeLocation === "asia" && hotelRegion(h) !== "asia") return false;
       return true;
     });
   }
@@ -130,6 +146,13 @@
   if (groupEl) {
     groupEl.addEventListener("change", function () {
       activeGroup = groupEl.value || "all";
+      renderRows();
+    });
+  }
+  var locationEl = document.getElementById("nh-location-filter");
+  if (locationEl) {
+    locationEl.addEventListener("change", function () {
+      activeLocation = locationEl.value || "all";
       renderRows();
     });
   }

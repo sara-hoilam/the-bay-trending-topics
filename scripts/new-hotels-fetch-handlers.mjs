@@ -9,6 +9,7 @@ import {
   parseOpeningPhrase,
   parseFromYearMonth,
   inferHotelGroup,
+  inferLocationRegion,
   statusFromSort,
 } from "./new-hotels-date-utils.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
@@ -70,11 +71,14 @@ function hotelRecord({
   sourceName,
   status,
   today,
+  sourceRegion = null,
 }) {
   const sort = openMeta?.openDateSort || openMeta?.openDate || null;
+  const loc = (location || "").trim() || null;
   return {
     name: name.trim(),
-    location: (location || "").trim() || null,
+    location: loc,
+    region: inferLocationRegion(loc, sourceRegion, name),
     hotelGroup: hotelGroup || inferHotelGroup(name),
     openDate: openMeta?.openDate || null,
     openDateLabel: openMeta?.openDateLabel || null,
@@ -129,6 +133,7 @@ export async function fetchOpeningList(today) {
       sourceName: cfg.displayName,
       status: row.is_opened ? "opened" : statusFromSort(openMeta?.openDateSort, today),
       today,
+      sourceRegion: row.region || null,
     });
   });
 }

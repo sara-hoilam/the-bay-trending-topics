@@ -1,7 +1,7 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "updatedAt": "2026-07-09",
-  "refreshedAt": "2026-07-09T18:56:11+08:00",
+  "refreshedAt": "2026-07-09T21:56:29+08:00",
   "windowMonths": 6,
   "windowStart": "2026-01-07",
   "windowEnd": "2027-01-08",
@@ -10,6 +10,7 @@
     {
       "name": "Adorn Tirana - Handwritten Collection",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -23,6 +24,7 @@
     {
       "name": "Aman Sveti Stefan",
       "location": "Sveti Stefan, Montenegro",
+      "region": "other",
       "hotelGroup": "Aman",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -36,6 +38,7 @@
     {
       "name": "Amancaya",
       "location": "The Bahamas, Bahamas",
+      "region": "other",
       "hotelGroup": "Aman",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -49,6 +52,7 @@
     {
       "name": "Baccarat Hotel Dubai",
       "location": "Dubai, United Arab Emirates",
+      "region": "other",
       "hotelGroup": "Baccarat",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -62,6 +66,7 @@
     {
       "name": "Baccarat Hotel Rome",
       "location": "Rome, Italy",
+      "region": "other",
       "hotelGroup": "Baccarat",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -75,6 +80,7 @@
     {
       "name": "Cambridge House",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -88,6 +94,7 @@
     {
       "name": "Capella Kyoto",
       "location": "Kyoto, Japan",
+      "region": "asia",
       "hotelGroup": "Capella",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -101,6 +108,7 @@
     {
       "name": "Caravan Hatta by Our Habitas",
       "location": "Hatta, United Arab Emirates",
+      "region": "other",
       "hotelGroup": "Habitas",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -114,6 +122,7 @@
     {
       "name": "Casa Renoir",
       "location": "Noosa, Australia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -127,6 +136,7 @@
     {
       "name": "Château la Commaraine",
       "location": "Burgundy, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -140,6 +150,7 @@
     {
       "name": "COMO Cordeillan-Bages",
       "location": "Bordeaux, France",
+      "region": "other",
       "hotelGroup": "Como",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -153,6 +164,7 @@
     {
       "name": "Conrad Corfu",
       "location": "Corfu, Greece",
+      "region": "other",
       "hotelGroup": "Conrad",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -166,6 +178,7 @@
     {
       "name": "Corinthia Rome",
       "location": "Rome, Italy",
+      "region": "other",
       "hotelGroup": "Corinthia",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -179,6 +192,7 @@
     {
       "name": "Danieli, A Four Seasons Hotel",
       "location": "Venice, Italy",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -192,6 +206,7 @@
     {
       "name": "Dune House",
       "location": "Atlantic Beach, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -205,6 +220,7 @@
     {
       "name": "Emirates Wolgan Valley, a Ritz Carlton Lodge",
       "location": "Blue Mountains, Australia",
+      "region": "other",
       "hotelGroup": "Ritz Carlton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -218,6 +234,7 @@
     {
       "name": "ENVI Al Nakheel",
       "location": "Al Ahsa, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -231,6 +248,7 @@
     {
       "name": "Equinox Hotel Amaala",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Equinox Hotels",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -244,6 +262,7 @@
     {
       "name": "Faena The Red Sea",
       "location": "Red Sea, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Faena",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -257,6 +276,7 @@
     {
       "name": "Fairmont Hanoi",
       "location": "Hanoi, Vietnam",
+      "region": "asia",
       "hotelGroup": "Fairmont",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -270,6 +290,7 @@
     {
       "name": "Four Seasons Amaala at Triple Bay",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -283,6 +304,7 @@
     {
       "name": "Four Seasons Madinah",
       "location": "Madinah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -296,6 +318,7 @@
     {
       "name": "Four Seasons Okinawa",
       "location": "Okinawa, Japan",
+      "region": "asia",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -309,6 +332,7 @@
     {
       "name": "Fregate Private Island",
       "location": "Fregate Island, Seychelles",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -322,6 +346,7 @@
     {
       "name": "Grand Hyatt Izmir",
       "location": "Izmir, Turkey",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -335,6 +360,7 @@
     {
       "name": "Hannah St Hotel",
       "location": "Melbourne, Australia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -348,6 +374,7 @@
     {
       "name": "Hyde Perth",
       "location": "Perth, Australia",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -361,6 +388,7 @@
     {
       "name": "Imperial Hotel Kyoto",
       "location": "Kyoto, Japan",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -374,6 +402,7 @@
     {
       "name": "Intercontinental Red Sea",
       "location": "Red Sea, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -387,6 +416,7 @@
     {
       "name": "Janu Diriyah",
       "location": "Diriyah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Janu",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -400,6 +430,7 @@
     {
       "name": "Jayasom Wellness Resort Amaala",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -413,6 +444,7 @@
     {
       "name": "JW Marriott Mount Kenya Rhino",
       "location": "Solio Game Reserve, Kenya",
+      "region": "other",
       "hotelGroup": "JW Marriott",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -426,6 +458,7 @@
     {
       "name": "Kimpton Ashbel New York",
       "location": "New York, United States",
+      "region": "other",
       "hotelGroup": "Kimpton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -439,6 +472,7 @@
     {
       "name": "Kimpton Era Midtown",
       "location": "New York, United States",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -452,6 +486,7 @@
     {
       "name": "Kimpton Mirador Pacific Grove Monterey by IHG",
       "location": "Monterey, United States",
+      "region": "other",
       "hotelGroup": "Kimpton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -465,6 +500,7 @@
     {
       "name": "Kimpton Miralina Resort",
       "location": "Scottsdale, United States",
+      "region": "other",
       "hotelGroup": "Kimpton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -478,6 +514,7 @@
     {
       "name": "La Reserve Florence",
       "location": "Florence, Italy",
+      "region": "other",
       "hotelGroup": "La Reserve",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -491,6 +528,7 @@
     {
       "name": "La Salvada",
       "location": "Melides, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -504,6 +542,7 @@
     {
       "name": "Le Saint Roch",
       "location": "Courchevel, France",
+      "region": "other",
       "hotelGroup": "Maisons Pariente",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -517,6 +556,7 @@
     {
       "name": "Les Sources de Vougeot",
       "location": "Vougeot, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -530,6 +570,7 @@
     {
       "name": "Mandarin Oriental Rome",
       "location": "Rome, Italy",
+      "region": "other",
       "hotelGroup": "Mandarin Oriental",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -543,6 +584,7 @@
     {
       "name": "Miraval The Red Sea",
       "location": "Red Sea, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -556,6 +598,7 @@
     {
       "name": "Na Praia",
       "location": "Comporta, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -569,6 +612,7 @@
     {
       "name": "Nammos Resort Amaala",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Nammos",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -582,6 +626,7 @@
     {
       "name": "Nobu Beach Inn Barbuda",
       "location": "Barbuda, Barbuda",
+      "region": "other",
       "hotelGroup": "Nobu",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -595,6 +640,7 @@
     {
       "name": "Nordelaia Sur Mer",
       "location": "Beaulieu-sur-Mer, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -608,6 +654,7 @@
     {
       "name": "Oberoi Wadi Safar",
       "location": "Diriyah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Oberoi",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -621,6 +668,7 @@
     {
       "name": "Ottilia Heritage, Copenhagen",
       "location": "Copenhagen, Denmark",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -634,6 +682,7 @@
     {
       "name": "Palazzo San Gottardo",
       "location": "Lake Como, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -647,6 +696,7 @@
     {
       "name": "Pical Resort, Valamar Collection",
       "location": "Istria, Croatia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -660,6 +710,7 @@
     {
       "name": "Raffles Jeddah",
       "location": "Jeddah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Raffles",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -673,6 +724,7 @@
     {
       "name": "Raffles The Red Sea",
       "location": "Red Sea, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Raffles",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -686,6 +738,7 @@
     {
       "name": "Ritz Carlton Amaala",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Ritz Carlton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -699,6 +752,7 @@
     {
       "name": "Ritz Carlton Bellagio",
       "location": "Lake Como, Italy",
+      "region": "other",
       "hotelGroup": "Ritz Carlton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -712,6 +766,7 @@
     {
       "name": "Ritz Carlton Diriyah",
       "location": "Diriyah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Ritz Carlton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -725,6 +780,7 @@
     {
       "name": "Romegas",
       "location": "Valletta, Malta",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -738,6 +794,7 @@
     {
       "name": "Rosewood Amaala",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Rosewood",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -751,6 +808,7 @@
     {
       "name": "Rosewood Hotel Bauer",
       "location": "Venice, Italy",
+      "region": "other",
       "hotelGroup": "Rosewood",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -764,6 +822,7 @@
     {
       "name": "Rosewood Rome",
       "location": "Rome, Italy",
+      "region": "other",
       "hotelGroup": "Rosewood",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -777,6 +836,7 @@
     {
       "name": "Salvia",
       "location": "Paris, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -790,6 +850,7 @@
     {
       "name": "Santa Lucia Jungle Hacienda",
       "location": "Carara National Park, Costa Rica",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -803,6 +864,7 @@
     {
       "name": "Sheraton Jeju",
       "location": "Jeju, South Korea",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -816,6 +878,7 @@
     {
       "name": "Shompole Lodge",
       "location": "Great Rift Valley, Kenya",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -829,6 +892,7 @@
     {
       "name": "Six Senses Amaala",
       "location": "Amaala, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Six Senses",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -842,6 +906,7 @@
     {
       "name": "Six Senses Lisbon",
       "location": "Lisbon, Portugal",
+      "region": "portugal",
       "hotelGroup": "Six Senses",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -855,6 +920,7 @@
     {
       "name": "Soho House Los Cabos",
       "location": "Los Cabos, Mexico",
+      "region": "other",
       "hotelGroup": "Soho House",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -868,6 +934,7 @@
     {
       "name": "Soho House Tokyo",
       "location": "Tokyo, Japan",
+      "region": "asia",
       "hotelGroup": "Soho House",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -881,6 +948,7 @@
     {
       "name": "Soori Penang",
       "location": "Penang, Malaysia",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -894,6 +962,7 @@
     {
       "name": "St. Clement",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -907,6 +976,7 @@
     {
       "name": "The Chedi Wadi Safar",
       "location": "Diriyah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -920,6 +990,7 @@
     {
       "name": "The Hoxton Madrid",
       "location": "Madrid, Spain",
+      "region": "other",
       "hotelGroup": "The Hoxton",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -933,6 +1004,7 @@
     {
       "name": "The Langham, Custom House",
       "location": "Bangkok, Thailand",
+      "region": "asia",
       "hotelGroup": "The Langham",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -946,6 +1018,7 @@
     {
       "name": "The Newman Fitzrovia",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -959,6 +1032,7 @@
     {
       "name": "The Red Palace",
       "location": "Riyadh, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -972,6 +1046,7 @@
     {
       "name": "The Shepherd Mayfair",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -985,6 +1060,7 @@
     {
       "name": "The Standard Lisbon",
       "location": "Lisbon, Portugal",
+      "region": "portugal",
       "hotelGroup": "The Standard",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -998,6 +1074,7 @@
     {
       "name": "Tulah Clinical Wellness Sanctuary",
       "location": "Kerala, India",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1011,6 +1088,7 @@
     {
       "name": "Uga Ghiri",
       "location": "Ella, Sri Lanka",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1024,6 +1102,7 @@
     {
       "name": "Umi Resort Bali",
       "location": "Bali, Indonesia",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1037,6 +1116,7 @@
     {
       "name": "V Villas Maldives at Mirihi – MGallery Collection",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1050,6 +1130,7 @@
     {
       "name": "Vestige Can Jordi",
       "location": "Formentera, Spain",
+      "region": "other",
       "hotelGroup": "Vestige",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1063,6 +1144,7 @@
     {
       "name": "Vestige Collection Namibia",
       "location": "Northern Namibia, Namibia",
+      "region": "other",
       "hotelGroup": "Vestige",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1076,6 +1158,7 @@
     {
       "name": "W Riyadh",
       "location": "Riyadh, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "W Hotels",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1089,6 +1172,7 @@
     {
       "name": "Waimarino Lodge",
       "location": "Queenstown, New Zealand",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1102,6 +1186,7 @@
     {
       "name": "Aethos Milan",
       "location": "Milan, Italy",
+      "region": "other",
       "hotelGroup": "Aethos",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1115,6 +1200,7 @@
     {
       "name": "Alila Mayakoba",
       "location": "Riviera Maya, Mexico",
+      "region": "other",
       "hotelGroup": "Alila",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1128,6 +1214,7 @@
     {
       "name": "Andaz Lisbon",
       "location": "Lisbon, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1141,6 +1228,7 @@
     {
       "name": "Casa Gitano Tulum",
       "location": "Tulum, Mexico",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1154,6 +1242,7 @@
     {
       "name": "Conrad Bora Bora Nui",
       "location": "Bora Bora, French Polynesia",
+      "region": "other",
       "hotelGroup": "Conrad",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1167,6 +1256,7 @@
     {
       "name": "Hotel Shanghai Hongqiao - Handwritten Collection",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1180,6 +1270,7 @@
     {
       "name": "Hyde Mexico City Reforma",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1193,6 +1284,7 @@
     {
       "name": "ibis Styles Petrolina",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1206,6 +1298,7 @@
     {
       "name": "L'Aventure",
       "location": "Paris, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1219,6 +1312,7 @@
     {
       "name": "L'Opale Noire",
       "location": "Paris, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1232,6 +1326,7 @@
     {
       "name": "Le Relais d'Amboise",
       "location": "Loire Valley, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1245,6 +1340,7 @@
     {
       "name": "Maison Résaurie",
       "location": "Biarritz, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1258,6 +1354,7 @@
     {
       "name": "Mantis Hiddn in Addo",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1271,6 +1368,7 @@
     {
       "name": "Mercure Melbourne La Trobe Street",
       "location": "Australia",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1284,6 +1382,7 @@
     {
       "name": "MGallery in Jilin Beida Lake",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1297,6 +1396,7 @@
     {
       "name": "Mondrian Maldives",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1310,6 +1410,7 @@
     {
       "name": "MontAzure Phuket, MGallery Collection",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1323,6 +1424,7 @@
     {
       "name": "Mövenpick Hotel & Residences Teuta Kotor Bay",
       "location": "Montenegro",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1336,6 +1438,7 @@
     {
       "name": "Not A Hotel Setouchi",
       "location": "Sagishima Island, Japan",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1349,6 +1452,7 @@
     {
       "name": "Novotel Bhopal, India",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1362,6 +1466,7 @@
     {
       "name": "Novotel Makkah South Central",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1375,6 +1480,7 @@
     {
       "name": "Pullman Kolašin Breza",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1388,6 +1494,7 @@
     {
       "name": "Pullman Ninh Binh",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1401,6 +1508,7 @@
     {
       "name": "Raffles Residences Jeddah",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1414,6 +1522,7 @@
     {
       "name": "Rixos Murjana",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1427,6 +1536,7 @@
     {
       "name": "Six Senses Xala",
       "location": "Costalegre, Mexico",
+      "region": "other",
       "hotelGroup": "Six Senses",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1440,6 +1550,7 @@
     {
       "name": "Surin Beach, Navera Phuket, MGallery Collection",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1453,6 +1564,7 @@
     {
       "name": "Swissôtel Mariánské Lázně",
       "location": "Czech Republic",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1466,6 +1578,7 @@
     {
       "name": "The Cooper Charleston",
       "location": "Charleston, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1479,6 +1592,7 @@
     {
       "name": "The Malkai",
       "location": "Muscat, Oman",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1492,6 +1606,7 @@
     {
       "name": "The Monteleone",
       "location": "Umbria, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1505,6 +1620,7 @@
     {
       "name": "Airelles Palladio",
       "location": "Venice, Italy",
+      "region": "other",
       "hotelGroup": "Airelles",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1518,6 +1634,7 @@
     {
       "name": "Anantara Kafue River Tented Camp",
       "location": "Kafue National Park, Zambia",
+      "region": "other",
       "hotelGroup": "Anantara",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1531,6 +1648,7 @@
     {
       "name": "Azuma Farm Koiwai",
       "location": "Iwate, Japan",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1544,6 +1662,7 @@
     {
       "name": "Black Sand Hotel",
       "location": "Ölfus, Iceland",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1557,6 +1676,7 @@
     {
       "name": "BLESS Ibiza The Site",
       "location": "Ibiza, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1570,6 +1690,7 @@
     {
       "name": "Casa J.K. Place Roma",
       "location": "Rome, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1583,6 +1704,7 @@
     {
       "name": "Ella Rocrita Crete",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1596,6 +1718,7 @@
     {
       "name": "Experimental Comporta",
       "location": "Comporta, Portugal",
+      "region": "portugal",
       "hotelGroup": "Experimental",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1609,6 +1732,7 @@
     {
       "name": "Four Seasons Cartagena",
       "location": "Cartagena, Colombia",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1622,6 +1746,7 @@
     {
       "name": "Four Seasons Yacht",
       "location": "Caribbean, International",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1635,6 +1760,7 @@
     {
       "name": "Hôtel Villa Colette",
       "location": "Cap Ferret, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1648,6 +1774,7 @@
     {
       "name": "Indigo Turks & Caicos Grace Bay",
       "location": "Grace Bay, Turks & Caicos",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1661,6 +1788,7 @@
     {
       "name": "Mercer Madrid",
       "location": "Madrid, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1674,6 +1802,7 @@
     {
       "name": "Oku Bodrum",
       "location": "Bodrum, Turkey",
+      "region": "other",
       "hotelGroup": "Oku",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1687,6 +1816,7 @@
     {
       "name": "Orient Express Venezia",
       "location": "Venice, Italy",
+      "region": "other",
       "hotelGroup": "Orient Express",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1700,6 +1830,7 @@
     {
       "name": "Palacio de los Ángeles",
       "location": "La Rioja, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1713,6 +1844,7 @@
     {
       "name": "Parador Ibiza",
       "location": "Ibiza, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1726,6 +1858,7 @@
     {
       "name": "Six Senses London",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Six Senses",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1739,6 +1872,7 @@
     {
       "name": "The Fiction",
       "location": "Athens, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1752,6 +1886,7 @@
     {
       "name": "The Lake Como Edition",
       "location": "Lake Como, Italy",
+      "region": "other",
       "hotelGroup": "Edition",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1765,6 +1900,7 @@
     {
       "name": "The St. Regis Budapest",
       "location": "Budapest, Hungary",
+      "region": "other",
       "hotelGroup": "St. Regis",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1778,6 +1914,7 @@
     {
       "name": "The Vineta Hotel",
       "location": "Palm Beach, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1791,6 +1928,7 @@
     {
       "name": "The Zetter Bloomsbury",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1804,6 +1942,7 @@
     {
       "name": "Unframed Miami Beach",
       "location": "Miami Beach, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1817,6 +1956,7 @@
     {
       "name": "Venturo",
       "location": "Split, Croatia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1830,6 +1970,7 @@
     {
       "name": "Villa San Michele, A Belmond Hotel",
       "location": "Florence, Italy",
+      "region": "other",
       "hotelGroup": "Belmond",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1843,6 +1984,7 @@
     {
       "name": "Voyage Kundu",
       "location": "Antalya, Turkey",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q1 2026",
@@ -1856,6 +1998,7 @@
     {
       "name": "Crowne Plaza Al Jubail",
       "location": "Al Jubail",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1869,6 +2012,7 @@
     {
       "name": "Crowne Plaza Alexandria Mirage",
       "location": "Egypt",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1882,6 +2026,7 @@
     {
       "name": "Crowne Plaza Lucknow",
       "location": "Lucknow",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1895,6 +2040,7 @@
     {
       "name": "Holiday Inn Dubai Village Circle",
       "location": "Dubai",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1908,6 +2054,7 @@
     {
       "name": "Holiday Inn Express Greater Noida Knowledge Park",
       "location": "Greater Noida",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1921,6 +2068,7 @@
     {
       "name": "Holiday Inn Express Kolkata New Town",
       "location": "Kolkata",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1934,6 +2082,7 @@
     {
       "name": "Holiday Inn Gurgaon NH8",
       "location": "Gurgaon",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1947,6 +2096,7 @@
     {
       "name": "Holiday Inn Resort Kathmandu Budhanilkantha",
       "location": "Kathmandu",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1960,6 +2110,7 @@
     {
       "name": "Holiday Inn Riyadh Al Malaz",
       "location": "Riyadh",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1973,6 +2124,7 @@
     {
       "name": "Hotel Indigo Jabal Akhdar Resort & Spa",
       "location": "Oman",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1986,6 +2138,7 @@
     {
       "name": "InterContinental Residences Dubai Business Bay",
       "location": "Dubai",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -1999,6 +2152,7 @@
     {
       "name": "InterContinental Table Bay Cape Town",
       "location": "Cape Town",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -2012,6 +2166,7 @@
     {
       "name": "InterContinental The Red Sea Resort",
       "location": "The Red Sea",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -2025,6 +2180,7 @@
     {
       "name": "Kimpton KAFD Riyadh",
       "location": "Riyadh",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -2038,6 +2194,7 @@
     {
       "name": "voco Beirut Central District",
       "location": "Beirut",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -2051,6 +2208,7 @@
     {
       "name": "voco Jeddah Gate",
       "location": "Jeddah",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -2064,6 +2222,7 @@
     {
       "name": "voco Jim Corbett",
       "location": "Ramnagar",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H1 2026",
@@ -2077,6 +2236,7 @@
     {
       "name": "Amoh, A Luxury Collection Resort",
       "location": "Rhodes, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2090,6 +2250,7 @@
     {
       "name": "Besai Ibiza",
       "location": "Ibiza, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2103,6 +2264,7 @@
     {
       "name": "Blue Monkey Barbados",
       "location": "Barbados, Barbados",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2116,6 +2278,7 @@
     {
       "name": "Casa Bonavita",
       "location": "Valletta, Malta",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2129,6 +2292,7 @@
     {
       "name": "COMO Le Beauvallon",
       "location": "St.Tropez, France",
+      "region": "other",
       "hotelGroup": "Como",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2142,6 +2306,7 @@
     {
       "name": "Eréma",
       "location": "Milos, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2155,6 +2320,7 @@
     {
       "name": "Falkenstein Resort Lake Garda",
       "location": "Lake Garda, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2168,6 +2334,7 @@
     {
       "name": "Gran Hotel Margalida",
       "location": "Mallorca, Spain",
+      "region": "other",
       "hotelGroup": "Annua",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2181,6 +2348,7 @@
     {
       "name": "Highstay Ibiza - Villa Escondida",
       "location": "Ibiza, Spain",
+      "region": "other",
       "hotelGroup": "Highstay",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2194,6 +2362,7 @@
     {
       "name": "Ikos Kissamos",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Ikos",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2207,6 +2376,7 @@
     {
       "name": "Inkaterra Cabo Blanco",
       "location": "Cabo Blanco, Peru",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2220,6 +2390,7 @@
     {
       "name": "Lagen Island Resort, El Nido",
       "location": "El Nido, Philippines",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2233,6 +2404,7 @@
     {
       "name": "Le Bel Hôtel Oléron – MGallery Collection",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2246,6 +2418,7 @@
     {
       "name": "Le Graal Cortina",
       "location": "Cortina d'Ampezzo, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2259,6 +2432,7 @@
     {
       "name": "Mandarin Oriental Punta Negra",
       "location": "Mallorca, Spain",
+      "region": "other",
       "hotelGroup": "Mandarin Oriental",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2272,6 +2446,7 @@
     {
       "name": "NeMe Slow Living Retreat",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2285,6 +2460,7 @@
     {
       "name": "NIHI Rote",
       "location": "Rote Island, Indonesia",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2298,6 +2474,7 @@
     {
       "name": "Nomade Temple Madrid",
       "location": "Madrid, Spain",
+      "region": "other",
       "hotelGroup": "Nomade Temple",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2311,6 +2488,7 @@
     {
       "name": "Olen Syros",
       "location": "Syros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2324,6 +2502,7 @@
     {
       "name": "Omeon Mykonos",
       "location": "Mykonos, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2337,6 +2516,7 @@
     {
       "name": "Orient Express Corinthian",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2350,6 +2530,7 @@
     {
       "name": "Orient Express Venezia at Palazzo Donà Giovannelli",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2363,6 +2544,7 @@
     {
       "name": "Rah Gili Maldives",
       "location": "South Malé Atoll, Maldives",
+      "region": "asia",
       "hotelGroup": "Six & Six Private Islands",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2376,6 +2558,7 @@
     {
       "name": "Sublime Sand Comporta",
       "location": "Comporta, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2389,6 +2572,7 @@
     {
       "name": "The Huntington Hotel",
       "location": "San Francisco, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2402,6 +2586,7 @@
     {
       "name": "Ytri",
       "location": "Helgeland, Norway",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2415,6 +2600,7 @@
     {
       "name": "Zannier Île de Bendor",
       "location": "Ile de Bendor, France",
+      "region": "other",
       "hotelGroup": "Zannier",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2428,6 +2614,7 @@
     {
       "name": "Anook Signature Anyang",
       "location": "Anyang, South Korea",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2441,6 +2628,7 @@
     {
       "name": "Anook Signature Busan Haeundae",
       "location": "Busan, South Korea",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2454,6 +2642,7 @@
     {
       "name": "Anook Signature Incheon Guwol",
       "location": "Incheon, South Korea",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2467,6 +2656,7 @@
     {
       "name": "Anook Signature Seoul Guro",
       "location": "Seoul, South Korea",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2480,6 +2670,7 @@
     {
       "name": "Bel Hôtel Oléron Thalasso & Spa",
       "location": "Île d'Oléron, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2493,6 +2684,7 @@
     {
       "name": "Casa Simona",
       "location": "Panama City, Panama",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2506,6 +2698,7 @@
     {
       "name": "Château du Portereau",
       "location": "Loire Valley, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2519,6 +2712,7 @@
     {
       "name": "Conrad Athens The Ilisian",
       "location": "Athens, Greece",
+      "region": "other",
       "hotelGroup": "Conrad",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2532,6 +2726,7 @@
     {
       "name": "Courtyard by Marriott Okinawa Resort",
       "location": "Okinawa, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2545,6 +2740,7 @@
     {
       "name": "Delano Miami Beach",
       "location": "Miami Beach, United States",
+      "region": "other",
       "hotelGroup": "Delano",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2558,6 +2754,7 @@
     {
       "name": "EST Hotel Palais Chotek",
       "location": "Vienna, Austria",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2571,6 +2768,7 @@
     {
       "name": "Fairmont The Red Sea",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2584,6 +2782,7 @@
     {
       "name": "Four Seasons Red Sea at Shura Island",
       "location": "Red Sea, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2597,6 +2796,7 @@
     {
       "name": "Hotel Koo, a Member of Design Hotels",
       "location": "Otsu, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2610,6 +2810,7 @@
     {
       "name": "Hôtel Luxia & Spa",
       "location": "Paris, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2623,6 +2824,7 @@
     {
       "name": "Iniala Valletta",
       "location": "Valletta, Malta",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2636,6 +2838,7 @@
     {
       "name": "JW Marriott Ranthambore Resort & Spa",
       "location": "Ranthambore, India",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2649,6 +2852,7 @@
     {
       "name": "Kensho Paros",
       "location": "Paros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2662,6 +2866,7 @@
     {
       "name": "Kimamaya by Odin, a Member of Design Hotels",
       "location": "Niseko, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2675,6 +2880,7 @@
     {
       "name": "LUX* Lake Kivu",
       "location": "Lake Kivu, Rwanda",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2688,6 +2894,7 @@
     {
       "name": "Matsumoto Jujo, a Member of Design Hotels",
       "location": "Matsumoto, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2701,6 +2908,7 @@
     {
       "name": "Momi Slow Living",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2714,6 +2922,7 @@
     {
       "name": "Ovea Paros",
       "location": "Paros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2727,6 +2936,7 @@
     {
       "name": "Palais Jamaï Fès",
       "location": "Fes, Morocco",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2740,6 +2950,7 @@
     {
       "name": "Pazziella, a Luxury Collection Hotel",
       "location": "Capri, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2753,6 +2964,7 @@
     {
       "name": "Perroquet",
       "location": "Fort Lauderdale, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2766,6 +2978,7 @@
     {
       "name": "Principessa",
       "location": "Forte dei Marmi, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2779,6 +2992,7 @@
     {
       "name": "Quinta Amala Melides",
       "location": "Melides, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2792,6 +3006,7 @@
     {
       "name": "Riad Palais Beit Al Noor",
       "location": "Marrakech, Morocco",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2805,6 +3020,7 @@
     {
       "name": "SALA Bang Pa-In, a Member of Design Hotels",
       "location": "Bang Pa-In , Thailand",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2818,6 +3034,7 @@
     {
       "name": "The Ivory",
       "location": "Los Angeles, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2831,6 +3048,7 @@
     {
       "name": "The London, a Luxury Collection Hotel",
       "location": "New York, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2844,6 +3062,7 @@
     {
       "name": "Tierra Villas",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2857,6 +3076,7 @@
     {
       "name": "Ubuyu, a Banyan Tree Escape",
       "location": "Ruaha, Tanzania",
+      "region": "other",
       "hotelGroup": "Banyan Tree",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2870,6 +3090,7 @@
     {
       "name": "UH Seoul Insadong",
       "location": "Seoul, South Korea",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2883,6 +3104,7 @@
     {
       "name": "V Villas Maldives",
       "location": "Alifu Dhaalu Atoll, Maldives",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2896,6 +3118,7 @@
     {
       "name": "Villa Dorothéa",
       "location": "Lisbon, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2909,6 +3132,7 @@
     {
       "name": "Waldorf Astoria London Admiralty Arch",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Waldorf Astoria",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2922,6 +3146,7 @@
     {
       "name": "1Hotel Tokyo",
       "location": "Tokyo, Japan",
+      "region": "asia",
       "hotelGroup": "1Hotel",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2935,6 +3160,7 @@
     {
       "name": "Amorgina",
       "location": "Amorgos, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2948,6 +3174,7 @@
     {
       "name": "Ando Living Comporta House",
       "location": "Comporta, Portugal",
+      "region": "portugal",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2961,6 +3188,7 @@
     {
       "name": "Bulgari Resort Ranfushi",
       "location": "Ranfushi, Maldives",
+      "region": "asia",
       "hotelGroup": "Bulgari",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2974,6 +3202,7 @@
     {
       "name": "Cori Hornbæk",
       "location": "Hornbæk, Denmark",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -2987,6 +3216,7 @@
     {
       "name": "Costa Ragusa Borgo & Resort",
       "location": "Ragusa, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3000,6 +3230,7 @@
     {
       "name": "Enorme Eos Santorini",
       "location": "Santorini, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3013,6 +3244,7 @@
     {
       "name": "ENVI Paje Beach Lodge",
       "location": "Zanzibar, Tanzania",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3026,6 +3258,7 @@
     {
       "name": "Épi",
       "location": "St.Tropez, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3039,6 +3272,7 @@
     {
       "name": "Experimental Rome",
       "location": "Rome, Italy",
+      "region": "other",
       "hotelGroup": "Experimental",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3052,6 +3286,7 @@
     {
       "name": "Fairmont New Orleans",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3065,6 +3300,7 @@
     {
       "name": "Finca La Bobadilla",
       "location": "Archidona, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3078,6 +3314,7 @@
     {
       "name": "Fouquet’s Mykonos",
       "location": "Mykonos, Greece",
+      "region": "other",
       "hotelGroup": "Fouquet",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3091,6 +3328,7 @@
     {
       "name": "Four Seasons Mykonos",
       "location": "Mykonos, Greece",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3104,6 +3342,7 @@
     {
       "name": "Innside by Meliá Crete Elounda",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3117,6 +3356,7 @@
     {
       "name": "La Darbia Chianti",
       "location": "Chianti, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3130,6 +3370,7 @@
     {
       "name": "La Maison du Bassin",
       "location": "Cap Ferret, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3143,6 +3384,7 @@
     {
       "name": "La Reserve Seychelles",
       "location": "Praslin, Seychelles",
+      "region": "other",
       "hotelGroup": "La Reserve",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3156,6 +3398,7 @@
     {
       "name": "La Tiara di Cervo",
       "location": "Sardinia, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3169,6 +3412,7 @@
     {
       "name": "Luura Paros Cliff",
       "location": "Paros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3182,6 +3426,7 @@
     {
       "name": "Ma'a Salama Boutique Resort",
       "location": "Zanzibar, Tanzania",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3195,6 +3440,7 @@
     {
       "name": "Maison Zamane",
       "location": "Marrakesh, Morocco",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3208,6 +3454,7 @@
     {
       "name": "Mama Shelter Cape Town",
       "location": "Cape Town, South Africa",
+      "region": "other",
       "hotelGroup": "Mama Shelter",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3221,6 +3468,7 @@
     {
       "name": "Mangia's Costa Ragusa Borgo",
       "location": "Sicily, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3234,6 +3482,7 @@
     {
       "name": "Meros, Santikos Collection",
       "location": "Paros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3247,6 +3496,7 @@
     {
       "name": "Oroséa Paros",
       "location": "Paros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3260,6 +3510,7 @@
     {
       "name": "Parian Chronicle",
       "location": "Paros, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3273,6 +3524,7 @@
     {
       "name": "Six Senses Milan",
       "location": "Milan, Italy",
+      "region": "other",
       "hotelGroup": "Six Senses",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3286,6 +3538,7 @@
     {
       "name": "The Landmark Villas & Spa",
       "location": "Rhodes, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3299,6 +3552,7 @@
     {
       "name": "The Park Gstaad, A Four Seasons Hotel",
       "location": "Gstaad, Switzerland",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3312,6 +3566,7 @@
     {
       "name": "Vestige Binidufà",
       "location": "Menorca, Spain",
+      "region": "other",
       "hotelGroup": "Vestige",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3325,6 +3580,7 @@
     {
       "name": "Villa Argentina",
       "location": "Dubrovnik, Croatia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3338,6 +3594,7 @@
     {
       "name": "Villa Helios",
       "location": "Capri, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3351,6 +3608,7 @@
     {
       "name": "Villa Orsula",
       "location": "Dubrovnik, Croatia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q2 2026",
@@ -3364,6 +3622,7 @@
     {
       "name": "Don Maaga Maldives",
       "location": "South Malé Atoll, Maldives",
+      "region": "asia",
       "hotelGroup": "Six & Six Private Islands",
       "openDate": null,
       "openDateLabel": "2026",
@@ -3377,6 +3636,7 @@
     {
       "name": "Nirema Hotel & Spa Samos - MGallery Collection",
       "location": "Samos, Greece",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "2026",
@@ -3390,6 +3650,7 @@
     {
       "name": "Nomade Temple Ibiza",
       "location": "Ibiza, Spain",
+      "region": "other",
       "hotelGroup": "Nomade Temple",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3403,6 +3664,7 @@
     {
       "name": "Park Hyatt Phu Quoc",
       "location": "Phu Quoc, Vietnam",
+      "region": "asia",
       "hotelGroup": "Park Hyatt",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3416,6 +3678,7 @@
     {
       "name": "The Revery Crete",
       "location": "Crete, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3429,6 +3692,7 @@
     {
       "name": "The St. Regis Costa Mujeres Resort",
       "location": "Costa Mujeres, Mexico",
+      "region": "other",
       "hotelGroup": "St.Regis",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3442,6 +3706,7 @@
     {
       "name": "Villa Timeo, A Belmond Hotel",
       "location": "Taormina, Italy",
+      "region": "other",
       "hotelGroup": "Belmond",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3455,6 +3720,7 @@
     {
       "name": "Amanvari",
       "location": "Baja California Sur, Mexico",
+      "region": "other",
       "hotelGroup": "Aman",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3468,6 +3734,7 @@
     {
       "name": "Apartments by Marriott Bonvoy, Australia",
       "location": "Australia",
+      "region": "other",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3481,6 +3748,7 @@
     {
       "name": "Aura Maldives",
       "location": "Baa Atoll, Maldives",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3494,6 +3762,7 @@
     {
       "name": "Borgo Pignano Florence",
       "location": "Florence, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3507,6 +3776,7 @@
     {
       "name": "Cicada Resort Bali Ubud",
       "location": "Bali, Indonesia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3520,6 +3790,7 @@
     {
       "name": "City Express by Marriott Udaipur, Nathdwara Highway",
       "location": "Udaipur, India",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3533,6 +3804,7 @@
     {
       "name": "Courtyard By Marriott Ghaziabad India",
       "location": "Ghaziabad, India",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3546,6 +3818,7 @@
     {
       "name": "Courtyard By Marriott Kuala Lumpur City Center",
       "location": "Kuala Lumpur, Malaysia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3559,6 +3832,7 @@
     {
       "name": "Courtyard By Marriott Subang",
       "location": "Subang, Malaysia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3572,6 +3846,7 @@
     {
       "name": "Erebero Hills",
       "location": "Bwindi Impenetrable Forest, Uganda",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3585,6 +3860,7 @@
     {
       "name": "Fairfield by Marriott Krabi Ao Nang Beach",
       "location": "Krabi, Thailand",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3598,6 +3874,7 @@
     {
       "name": "Fairmont Dalian",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3611,6 +3888,7 @@
     {
       "name": "Four Points by Sheraton Beach Resort",
       "location": "Krabi, Thailand",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3624,6 +3902,7 @@
     {
       "name": "Four Seasons Caye Chapel",
       "location": "Caye Chapel, Belize",
+      "region": "other",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3637,6 +3916,7 @@
     {
       "name": "Grand Hotel Preanger, Bandung, a Tribute Portfolio Hotel",
       "location": "Bandung, Indonesia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3650,6 +3930,7 @@
     {
       "name": "greet Alicante Centro",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3663,6 +3944,7 @@
     {
       "name": "Hymnos",
       "location": "Zakynthos, Greece",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3676,6 +3958,7 @@
     {
       "name": "ibis Bangkok Ratchathaewi",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3689,6 +3972,7 @@
     {
       "name": "ibis Mogi Guaçu",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3702,6 +3986,7 @@
     {
       "name": "Luxnam Phu Quoc",
       "location": "Phu Quoc, Vietnam",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3715,6 +4000,7 @@
     {
       "name": "Marriott Executive Apartments Danang, Han River",
       "location": "Danang, Vietnam",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3728,6 +4014,7 @@
     {
       "name": "Masseria Furnirussi, Emblems Collection",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3741,6 +4028,7 @@
     {
       "name": "Mercure Bangkok Ratchathaewi",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3754,6 +4042,7 @@
     {
       "name": "Mercure Tokyu Stay Hiroshima",
       "location": "Japan",
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3767,6 +4056,7 @@
     {
       "name": "Mövenpick Hotel & Residences Kvarner Bay",
       "location": "Croatia",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3780,6 +4070,7 @@
     {
       "name": "Novotel Dhahran Hotel & Residences",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3793,6 +4084,7 @@
     {
       "name": "Public West Hollywood",
       "location": "Los Angeles, United States",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3806,6 +4098,7 @@
     {
       "name": "Rimrock Banff, Emblems Collection",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3819,6 +4112,7 @@
     {
       "name": "Rixos Phu Quoc Vietnam",
       "location": null,
+      "region": "asia",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3832,6 +4126,7 @@
     {
       "name": "Rosewood Hangzhou",
       "location": "Hangzhou, China",
+      "region": "asia",
       "hotelGroup": "Rosewood",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3845,6 +4140,7 @@
     {
       "name": "Rosewood Shenzhen",
       "location": "Shenzhen, China",
+      "region": "asia",
       "hotelGroup": "Rosewood",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3858,6 +4154,7 @@
     {
       "name": "Saij Mountain Lodge by Mantis",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3871,6 +4168,7 @@
     {
       "name": "SHA Wellness Clinic Emirates",
       "location": "Abu Dhabi, United Arab Emirates",
+      "region": "other",
       "hotelGroup": "Sha Wellness Clinic",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3884,6 +4182,7 @@
     {
       "name": "Sofitel Riyadh Hotel & Convention Centre",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3897,6 +4196,7 @@
     {
       "name": "The Cape Town Edition",
       "location": "Cape Town, South Africa",
+      "region": "other",
       "hotelGroup": "Edition",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3910,6 +4210,7 @@
     {
       "name": "KAIA Koh Phangan",
       "location": "Koh Phangan, Thailand",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q3 2026",
@@ -3923,6 +4224,7 @@
     {
       "name": "Crowne Plaza Dhaka Airport",
       "location": "Dhaka",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H2 2026",
@@ -3936,6 +4238,7 @@
     {
       "name": "Crowne Plaza Riyadh – Al Takhassusi",
       "location": "Riyadh",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H2 2026",
@@ -3949,6 +4252,7 @@
     {
       "name": "voco Cairo Arabella Plaza",
       "location": "Cairo",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H2 2026",
@@ -3962,6 +4266,7 @@
     {
       "name": "voco Muscat Al Mouj",
       "location": "Muscat",
+      "region": "other",
       "hotelGroup": "IHG",
       "openDate": null,
       "openDateLabel": "H2 2026",
@@ -3975,6 +4280,7 @@
     {
       "name": "El Cortes",
       "location": "Mexico City, Mexico",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -3988,6 +4294,7 @@
     {
       "name": "Kulu Ora",
       "location": "Northwestern Uganda, Uganda",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4001,6 +4308,7 @@
     {
       "name": "Lanserhof Marbella",
       "location": "Marbella, Spain",
+      "region": "other",
       "hotelGroup": "Lanserhof",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4014,6 +4322,7 @@
     {
       "name": "Long Lane",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4027,6 +4336,7 @@
     {
       "name": "Louis Vuitton Hotel Paris",
       "location": "Paris, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4040,6 +4350,7 @@
     {
       "name": "Mama Shelter Mexico City",
       "location": "Mexico City, Mexico",
+      "region": "other",
       "hotelGroup": "Mama Shelter",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4053,6 +4364,7 @@
     {
       "name": "NoMad Singapore",
       "location": "Singapore, Singapore",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4066,6 +4378,7 @@
     {
       "name": "Only YOU New York",
       "location": "New York, United States",
+      "region": "other",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4079,6 +4392,7 @@
     {
       "name": "Rocco Forte Hotel Costa Smeralda",
       "location": "Sardinia, Italy",
+      "region": "other",
       "hotelGroup": "Rocco Forte",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4092,6 +4406,7 @@
     {
       "name": "Six Senses The Palm",
       "location": "Dubai, United Arab Emirates",
+      "region": "other",
       "hotelGroup": "Six Senses",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4105,6 +4420,7 @@
     {
       "name": "The St. Regis London",
       "location": "London, United Kingdom",
+      "region": "other",
       "hotelGroup": "St. Regis",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4118,6 +4434,7 @@
     {
       "name": "Zest Ibiza",
       "location": "Ibiza, Spain",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4131,6 +4448,7 @@
     {
       "name": "AC Hotel By Marriott Gold Coast",
       "location": "Gold Coast, Australia",
+      "region": "other",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4144,6 +4462,7 @@
     {
       "name": "Clinique La Prairie Phuket",
       "location": "Phuket, Thailand",
+      "region": "asia",
       "hotelGroup": "Clinique La Prairie",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4157,6 +4476,7 @@
     {
       "name": "Courtyard By Marriott Kita Kyushu",
       "location": "Kita Kyushu, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4170,6 +4490,7 @@
     {
       "name": "Courtyard By Marriott Kobe",
       "location": "Kobe, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4183,6 +4504,7 @@
     {
       "name": "Courtyard by Marriott Kyoto Station",
       "location": "Kyoto, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4196,6 +4518,7 @@
     {
       "name": "Courtyard by Marriott Manado",
       "location": "Manado, Indonesia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4209,6 +4532,7 @@
     {
       "name": "Courtyard by Marriott Medan",
       "location": "Medan, Indonesia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4222,6 +4546,7 @@
     {
       "name": "Courtyard by Marriott Shin-Yokohama Station",
       "location": "Shin-Yokohama, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4235,6 +4560,7 @@
     {
       "name": "Eha Wellness Retreat",
       "location": "Hiiumaa Island, Estonia",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4248,6 +4574,7 @@
     {
       "name": "Fairfield By Marriott Dak Mil Vietnam",
       "location": "Dak Mil, Vietnam",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4261,6 +4588,7 @@
     {
       "name": "Fairmont Cheshire, The Mere",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4274,6 +4602,7 @@
     {
       "name": "Hoi An Marriott Resort & Spa",
       "location": "Hoi An, Vietnam",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4287,6 +4616,7 @@
     {
       "name": "Hotel The Mitsui Hakone",
       "location": "Hakone, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4300,6 +4630,7 @@
     {
       "name": "Kyoto Marriott Hotel",
       "location": "Kyoto, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4313,6 +4644,7 @@
     {
       "name": "Lily of the Valley Courchevel",
       "location": "Courchevel, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4326,6 +4658,7 @@
     {
       "name": "Lime Resort Myoko – MGallery Collection",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4339,6 +4672,7 @@
     {
       "name": "Mama Shelter Cape Town Hotel and Residences",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4352,6 +4686,7 @@
     {
       "name": "Manado Marriott Resort & Spa",
       "location": "Manado, Indonesia",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4365,6 +4700,7 @@
     {
       "name": "Marriott Executive Apartments",
       "location": "Bangkok, Thailand",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4378,6 +4714,7 @@
     {
       "name": "Moxy Niseko Village",
       "location": "Niseko, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4391,6 +4728,7 @@
     {
       "name": "Mumbai Fort, a Tribute Portfolio Hotel",
       "location": "Mumbai, India",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4404,6 +4742,7 @@
     {
       "name": "Novotel Hamburg HafenCity",
       "location": "Germany",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4417,6 +4756,7 @@
     {
       "name": "Okinawa Marriott Rizzan Resort & Spa",
       "location": "Okinawa, Japan",
+      "region": "asia",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4430,6 +4770,7 @@
     {
       "name": "Pullman Hamilton",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4443,6 +4784,7 @@
     {
       "name": "Pullman Royal Key Wellness Resort",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4456,6 +4798,7 @@
     {
       "name": "Sheraton Port Moresby Stanley Hotel & Suites",
       "location": "Port Moresby, Papua New Guinea",
+      "region": "other",
       "hotelGroup": "Marriott",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4469,6 +4812,7 @@
     {
       "name": "SO/ Jeddah Hotel & Residences",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4482,6 +4826,7 @@
     {
       "name": "Capella Diriyah",
       "location": "Diriyah, Saudi Arabia",
+      "region": "other",
       "hotelGroup": "Capella",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4495,6 +4840,7 @@
     {
       "name": "Four Seasons Hanoi at Hoan Kiem Lake",
       "location": "Hanoi, Vietnam",
+      "region": "asia",
       "hotelGroup": "Four Seasons",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4508,6 +4854,7 @@
     {
       "name": "Grand Mercure Amritsar Airport Road",
       "location": null,
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4521,6 +4868,7 @@
     {
       "name": "Île Seguin Hotel",
       "location": "Paris, France",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4534,6 +4882,7 @@
     {
       "name": "Mama Shelter Lake Como",
       "location": "Lake Como, Italy",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4547,6 +4896,7 @@
     {
       "name": "Mondrian Abu Dhabi",
       "location": "Abu Dhabi, United Arab Emirates",
+      "region": "other",
       "hotelGroup": "Accor",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4560,6 +4910,7 @@
     {
       "name": "Nobu Hotel Madrid",
       "location": "Madrid, Spain",
+      "region": "other",
       "hotelGroup": "Nobu",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4573,6 +4924,7 @@
     {
       "name": "Palazzo Castelluccio",
       "location": "Noto, Italy",
+      "region": "other",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4586,6 +4938,7 @@
     {
       "name": "Rosewood Milan",
       "location": "Milan, Italy",
+      "region": "other",
       "hotelGroup": "Rosewood",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4599,6 +4952,7 @@
     {
       "name": "The Leela Jaisalmer",
       "location": "Rajasthan, India",
+      "region": "asia",
       "hotelGroup": "Independent",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4612,6 +4966,7 @@
     {
       "name": "The Standard Mexico City",
       "location": "Mexico City, Mexico",
+      "region": "other",
       "hotelGroup": "The Standard",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4625,6 +4980,7 @@
     {
       "name": "Waldorf Astoria Kuala Lumpur",
       "location": "Kuala Lumpur, Malaysia",
+      "region": "asia",
       "hotelGroup": "Waldorf Astoria",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4638,6 +4994,7 @@
     {
       "name": "Waldorf Astoria New York",
       "location": "New York, United States",
+      "region": "other",
       "hotelGroup": "Waldorf Astoria",
       "openDate": null,
       "openDateLabel": "Q4 2026",
@@ -4651,6 +5008,7 @@
     {
       "name": "Waldorf Astoria Nile River Experience",
       "location": "Luxor, Egypt",
+      "region": "other",
       "hotelGroup": "Waldorf Astoria",
       "openDate": null,
       "openDateLabel": "Q4 2026",

@@ -248,6 +248,38 @@ export function statusFromSort(sort, today) {
   return sort < today ? "opened" : "upcoming";
 }
 
+/**
+ * Map free-text location / source region into filter buckets.
+ * Returns "portugal" | "asia" | "other" | null.
+ */
+export function inferLocationRegion(location, sourceRegion = null, name = "") {
+  const blob = `${location || ""} ${sourceRegion || ""} ${name || ""}`.toLowerCase();
+  if (!blob.trim()) return null;
+
+  if (
+    /\bportugal\b|\blisbon\b|\bporto\b|\bcomporta\b|\bmelides\b|\balgarve\b|\bcascais\b|\bsintra\b|\bmadeira\b|\bazores\b|\bportugal\b/.test(
+      blob,
+    )
+  ) {
+    return "portugal";
+  }
+
+  // Prefer explicit Asia region labels from Opening List / similar
+  if (/\basia\b/.test(String(sourceRegion || "").toLowerCase())) {
+    return "asia";
+  }
+
+  if (
+    /\bjapan\b|\bchina\b|\bhong kong\b|\bmacao\b|\bmacau\b|\btaiwan\b|\bkorea\b|\bseoul\b|\bbusan\b|\bincheon\b|\bthailand\b|\bbangkok\b|\bphuket\b|\bvietnam\b|\bhanoi\b|\bho chi minh\b|\bsaigon\b|\bdanang\b|\bsingapore\b|\bmalaysia\b|\bkuala lumpur\b|\bpenang\b|\bindonesia\b|\bbali\b|\bjakarta\b|\bphilippines\b|\bmanila\b|\bboracay\b|\bindia\b|\bmumbai\b|\bdelhi\b|\bgoa\b|\bkerala\b|\budai?pur\b|\blaos\b|\bcambodia\b|\bmyanmar\b|\byangon\b|\bmongolia\b|\bsri lanka\b|\bmaldives\b|\bnepal\b|\bbhutan\b|\bbangladesh\b|\bpakistan\b|\buzbekistan\b|\bkazakhstan\b|\bkyoto\b|\btokyo\b|\bosaka\b|\bokinawa\b|\bshanghai\b|\bbeijing\b|\bshenzhen\b|\bguangzhou\b|\bchengdu\b|\bjilin\b/.test(
+      blob,
+    )
+  ) {
+    return "asia";
+  }
+
+  return "other";
+}
+
 /** Infer brand/group from hotel name when source doesn't provide one. */
 export function inferHotelGroup(name, fallback = null) {
   if (fallback) return fallback;
