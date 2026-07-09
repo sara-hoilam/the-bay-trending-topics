@@ -12,7 +12,13 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { hktDateStr, hktIsoDateTime } from "./hkt-date.mjs";
 import { NEW_HOTELS_WINDOW_MONTHS, NEW_HOTELS_SOURCES } from "./new-hotels-config.mjs";
-import { windowBounds, inOpenWindow } from "./new-hotels-date-utils.mjs";
+import {
+  windowBounds,
+  inOpenWindow,
+  isAsiaOrPortugal,
+  inferCountry,
+  inferLocationRegion,
+} from "./new-hotels-date-utils.mjs";
 import { fetchHotelsForSource } from "./new-hotels-fetch-handlers.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -127,6 +133,14 @@ async function main() {
   for (const h of merged.values()) {
     if (!inOpenWindow(h, bounds)) continue;
     if (!h.name || !h.openDateLabel) continue;
+    // Enrich region/country for cached rows, then keep Asia + Portugal only
+    if (!h.country) {
+      h.country = inferCountry(h.location, null, h.name);
+    }
+    if (!h.region || h.region === "other") {
+      h.region = inferLocationRegion(h.location, null, h.name);
+    }
+    if (!isAsiaOrPortugal(h)) continue;
     const key = h.name.toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ").trim();
     const prev = byName.get(key);
     if (!prev) {
@@ -140,20 +154,27 @@ async function main() {
   }
 
   const hotels = sortHotels([...byName.values()]);
+  const countries = [
+    ...new Set(hotels.map((h) => h.country).filter(Boolean)),
+  ].sort((a, b) => a.localeCompare(b));
   const payload = {
     generatedFrom: "source-links-data.json (New Hotels)",
+    scope: "Asia and Portugal only",
     updatedAt: today,
     refreshedAt: hktIsoDateTime(),
     windowMonths: NEW_HOTELS_WINDOW_MONTHS,
     windowStart: bounds.start,
     windowEnd: bounds.end,
     count: hotels.length,
+    countries,
     sourceErrors: sourceErrors.length ? sourceErrors : undefined,
     hotels,
   };
 
   fs.writeFileSync(outPath, JSON.stringify(payload, null, 2) + "\n");
-  console.log(`Wrote ${outPath} (${hotels.length} hotels in ±${NEW_HOTELS_WINDOW_MONTHS}mo window)`);
+  console.log(
+    `Wrote ${outPath} (${hotels.length} Asia/Portugal hotels in ±${NEW_HOTELS_WINDOW_MONTHS}mo window; countries: ${countries.join(", ")})`,
+  );
 }
 
 main().catch((err) => {

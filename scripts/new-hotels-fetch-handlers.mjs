@@ -10,6 +10,7 @@ import {
   parseFromYearMonth,
   inferHotelGroup,
   inferLocationRegion,
+  inferCountry,
   statusFromSort,
 } from "./new-hotels-date-utils.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
@@ -75,9 +76,11 @@ function hotelRecord({
 }) {
   const sort = openMeta?.openDateSort || openMeta?.openDate || null;
   const loc = (location || "").trim() || null;
+  const country = inferCountry(loc, sourceRegion, name);
   return {
     name: name.trim(),
     location: loc,
+    country: country || null,
     region: inferLocationRegion(loc, sourceRegion, name),
     hotelGroup: hotelGroup || inferHotelGroup(name),
     openDate: openMeta?.openDate || null,
