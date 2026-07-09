@@ -19,6 +19,7 @@
     "editor:compare": "node scripts/compare-daily-brief.mjs",
     "source-links:generate": "node scripts/generate-source-links-data.mjs",
     "happenings:generate": "node scripts/generate-happenings-data.mjs",
+    "new-hotels:generate": "node scripts/generate-new-hotels-data.mjs",
     "ig:capture": "node scripts/capture-ig-leaderboard.mjs",
     "ig:refresh": "node scripts/capture-ig-leaderboard.mjs --refresh",
     "ig:sheet-sync": "node scripts/sync-ig-leaderboard-sheet.mjs",

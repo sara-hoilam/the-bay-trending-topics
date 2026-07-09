@@ -22,6 +22,7 @@ const CATEGORY_MAP = {
   Official: "Official",
   News: "News",
   Lifestyle: "Lifestyle",
+  "New Hotels": "New Hotels",
 };
 
 const SKIP_SECTIONS = new Set(["Social", "Event"]);
@@ -274,6 +275,11 @@ const DISPLAY_NAMES = {
   "10times.com": "10times (Trade Shows)",
   "eyeshenzhen.com": "Amazing Shenzhen (Events)",
   "ticketflap.com": "Ticketflap",
+  // New Hotels
+  "theopeninglist.com": "The Opening List",
+  "marriott.com": "Marriott Bonvoy Openings",
+  "group.accor.com": "Accor 2026 Openings",
+  "ihg.com": "IHG New Hotels",
 };
 
 const URL_OVERRIDES = {
@@ -307,6 +313,12 @@ const URL_OVERRIDES = {
     HAPPENINGS_FETCH_BY_DOMAIN["shenzhenmuseum.com"].listingUrl,
   "macaotourism.gov.mo": macaotourismWhatsonUrl(),
   "ticketflap.com": HAPPENINGS_FETCH_BY_DOMAIN["ticketflap.com"].listingUrl,
+  "theopeninglist.com": "https://theopeninglist.com/collection/true",
+  "marriott.com":
+    "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
+  "group.accor.com":
+    "https://group.accor.com/en/news-stories/accor-2026-openings",
+  "ihg.com": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
 };
 
 function displayName(domain) {
@@ -337,7 +349,7 @@ function parseDomains(md) {
   let category = null;
 
   for (const line of md.split(/\r?\n/)) {
-    const head = line.match(/^## (Official|News|Lifestyle|Social|Event)/);
+    const head = line.match(/^## (Official|News|Lifestyle|Social|Event|New Hotels)/);
     if (head) {
       category = SKIP_SECTIONS.has(head[1]) ? null : head[1];
       continue;
