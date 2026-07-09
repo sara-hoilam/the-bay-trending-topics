@@ -1,5 +1,5 @@
 /**
- * New Hotels tab — upcoming / recently opened hotels from new-hotels-data.json
+ * New Hotels tab — Asia & Portugal openings from new-hotels-data.json
  */
 (function () {
   var DATA_V = window.GBA_DATA_VERSION || "1";
@@ -9,12 +9,7 @@
   var allHotels = [];
   var activeStatus = "all";
   var activeGroup = "all";
-  var activeLocation = "all";
-
-  var PORTUGAL_RE =
-    /\bportugal\b|\blisbon\b|\bporto\b|\bcomporta\b|\bmelides\b|\balgarve\b|\bcascais\b|\bsintra\b|\bmadeira\b|\bazores\b/i;
-  var ASIA_RE =
-    /\basia\b|\bjapan\b|\bchina\b|\bhong kong\b|\bmacao\b|\bmacau\b|\btaiwan\b|\bkorea\b|\bseoul\b|\bbusan\b|\bincheon\b|\bthailand\b|\bbangkok\b|\bphuket\b|\bvietnam\b|\bhanoi\b|\bho chi minh\b|\bsaigon\b|\bdanang\b|\bsingapore\b|\bmalaysia\b|\bkuala lumpur\b|\bpenang\b|\bindonesia\b|\bbali\b|\bjakarta\b|\bphilippines\b|\bmanila\b|\bboracay\b|\bindia\b|\bmumbai\b|\bdelhi\b|\bgoa\b|\bkerala\b|\budaipur\b|\blaos\b|\bcambodia\b|\bmyanmar\b|\byangon\b|\bmongolia\b|\bsri lanka\b|\bmaldives\b|\bnepal\b|\bbhutan\b|\bbangladesh\b|\bpakistan\b|\bkyoto\b|\btokyo\b|\bosaka\b|\bokinawa\b|\bshanghai\b|\bbeijing\b|\bshenzhen\b|\bguangzhou\b|\bjilin\b/i;
+  var activeCountry = "all";
 
   function esc(s) {
     var d = document.createElement("div");
@@ -22,18 +17,10 @@
     return d.innerHTML;
   }
 
-  function hotelRegion(h) {
-    if (h.region === "portugal" || h.region === "asia") return h.region;
-    var blob = (h.location || "") + " " + (h.name || "");
-    if (PORTUGAL_RE.test(blob)) return "portugal";
-    if (ASIA_RE.test(blob) || /\basia\b/i.test(h.region || "")) return "asia";
-    return h.region || "other";
-  }
-
-  function uniqueGroups(hotels) {
+  function uniqueSorted(values) {
     var set = {};
-    hotels.forEach(function (h) {
-      if (h.hotelGroup) set[h.hotelGroup] = true;
+    values.forEach(function (v) {
+      if (v) set[v] = true;
     });
     return Object.keys(set).sort(function (a, b) {
       return a.localeCompare(b);
@@ -45,27 +32,27 @@
       if (activeStatus === "upcoming" && h.status !== "upcoming") return false;
       if (activeStatus === "opened" && h.status !== "opened") return false;
       if (activeGroup !== "all" && h.hotelGroup !== activeGroup) return false;
-      if (activeLocation === "portugal" && hotelRegion(h) !== "portugal") return false;
-      if (activeLocation === "asia" && hotelRegion(h) !== "asia") return false;
+      if (activeCountry !== "all" && h.country !== activeCountry) return false;
       return true;
     });
   }
 
-  function fillGroupFilter(hotels) {
-    var sel = document.getElementById("nh-group-filter");
-    if (!sel) return;
-    var groups = uniqueGroups(hotels);
-    var current = sel.value || "all";
+  function fillSelect(id, values, allLabel, current) {
+    var sel = document.getElementById(id);
+    if (!sel) return "all";
+    var keep = current || sel.value || "all";
     sel.innerHTML =
-      '<option value="all">All groups</option>' +
-      groups
-        .map(function (g) {
-          return '<option value="' + esc(g) + '">' + esc(g) + "</option>";
+      '<option value="all">' +
+      esc(allLabel) +
+      "</option>" +
+      values
+        .map(function (v) {
+          return '<option value="' + esc(v) + '">' + esc(v) + "</option>";
         })
         .join("");
-    if (groups.indexOf(current) !== -1) sel.value = current;
+    if (values.indexOf(keep) !== -1) sel.value = keep;
     else sel.value = "all";
-    activeGroup = sel.value;
+    return sel.value;
   }
 
   function renderRows() {
@@ -99,7 +86,7 @@
       html += "<tr>";
       html += '<td class="nh-name">' + esc(h.name) + "</td>";
       html += '<td class="nh-date">' + esc(h.openDateLabel || "—") + "</td>";
-      html += '<td class="nh-loc">' + esc(h.location || "—") + "</td>";
+      html += '<td class="nh-loc">' + esc(h.location || h.country || "—") + "</td>";
       html += '<td class="nh-group">' + esc(h.hotelGroup || "—") + "</td>";
       html +=
         '<td class="nh-status"><span class="nh-status-badge ' +
@@ -129,9 +116,30 @@
           ? " · window " + data.windowStart + " → " + data.windowEnd
           : "";
       meta.textContent =
-        "As of " + (data.updatedAt || "—") + " · ±6 months" + win;
+        "Asia & Portugal · as of " +
+        (data.updatedAt || "—") +
+        " · ±6 months" +
+        win;
     }
-    fillGroupFilter(allHotels);
+
+    activeGroup = fillSelect(
+      "nh-group-filter",
+      uniqueSorted(allHotels.map(function (h) {
+        return h.hotelGroup;
+      })),
+      "All groups",
+      activeGroup,
+    );
+    activeCountry = fillSelect(
+      "nh-location-filter",
+      data.countries && data.countries.length
+        ? data.countries
+        : uniqueSorted(allHotels.map(function (h) {
+            return h.country;
+          })),
+      "All countries",
+      activeCountry,
+    );
     renderRows();
   }
 
@@ -152,7 +160,7 @@
   var locationEl = document.getElementById("nh-location-filter");
   if (locationEl) {
     locationEl.addEventListener("change", function () {
-      activeLocation = locationEl.value || "all";
+      activeCountry = locationEl.value || "all";
       renderRows();
     });
   }
