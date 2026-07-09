@@ -394,3 +394,111 @@ export function inferHotelGroup(name, fallback = null) {
   }
   return fallback || "Independent";
 }
+
+/**
+ * Prefer a direct hotel website URL. Skip affiliate booking wrappers
+ * (stay22, etc.) — those are not the hotel's own site.
+ */
+export function normalizeWebsiteUrl(url) {
+  if (!url || typeof url !== "string") return null;
+  const trimmed = url.trim();
+  if (!/^https?:\/\//i.test(trimmed)) return null;
+  try {
+    const host = new URL(trimmed).hostname.toLowerCase();
+    if (
+      host.includes("stay22.com") ||
+      host.includes("booking.com") ||
+      host.includes("expedia.") ||
+      host.includes("hotels.com") ||
+      host.includes("agoda.com")
+    ) {
+      return null;
+    }
+  } catch {
+    return null;
+  }
+  return trimmed;
+}
+
+/**
+ * Infer star rating (1–5) from explicit text or well-known brand positioning.
+ * Returns null when not applicable / unknown (UI shows "—").
+ */
+export function inferStars({ name = "", hotelGroup = "", category = "", description = "" } = {}) {
+  const blob = `${description} ${name} ${category}`;
+  const explicit = blob.match(/\b([1-5])\s*[-–]?\s*stars?\b/i);
+  if (explicit) return Number(explicit[1]);
+
+  const n = String(name || "");
+  const group = String(hotelGroup || "");
+
+  // More specific brand needles first
+  const brandStars = [
+    [/\bRitz[- ]Carlton\b/i, 5],
+    [/\bSt\.?\s*Regis\b/i, 5],
+    [/\bJW Marriott\b/i, 5],
+    [/\bFour Seasons\b/i, 5],
+    [/\bMandarin Oriental\b/i, 5],
+    [/\bPeninsula\b/i, 5],
+    [/\bRosewood\b/i, 5],
+    [/\bAman\b/i, 5],
+    [/\bCapella\b/i, 5],
+    [/\bBulgari\b/i, 5],
+    [/\bWaldorf Astoria\b/i, 5],
+    [/\bConrad\b/i, 5],
+    [/\bShangri-?La\b/i, 5],
+    [/\bPark Hyatt\b/i, 5],
+    [/\bGrand Hyatt\b/i, 5],
+    [/\bRaffles\b/i, 5],
+    [/\bFairmont\b/i, 5],
+    [/\bSofitel\b/i, 5],
+    [/\bOrient Express\b/i, 5],
+    [/\bSix Senses\b/i, 5],
+    [/\bRegent\b/i, 5],
+    [/\bInterContinental\b/i, 5],
+    [/\bEmblems\b/i, 5],
+    [/\bDelano\b/i, 5],
+    [/\bW Hotel|\bW \b/i, 5],
+    [/\bPullman\b/i, 4],
+    [/\bSheraton\b/i, 4],
+    [/\bWestin\b/i, 4],
+    [/\bSwiss[oô]tel\b/i, 4],
+    [/\bM[öo]venpick\b/i, 4],
+    [/\bMGallery\b/i, 4],
+    [/\bCrowne Plaza\b/i, 4],
+    [/\bHotel Indigo\b/i, 4],
+    [/\bKimpton\b/i, 4],
+    [/\bvoco\b/i, 4],
+    [/\bHyde\b/i, 4],
+    [/\bMondrian\b/i, 4],
+    [/\bSO\//i, 4],
+    [/\bRixos\b/i, 4],
+    [/\bNovotel\b/i, 4],
+    [/\bAC Hotel\b/i, 4],
+    [/\bAutograph\b/i, 4],
+    [/\bTribute Portfolio\b/i, 4],
+    [/\bHUALUXE\b/i, 4],
+    [/\bCourtyard\b/i, 3],
+    [/\bFour Points\b/i, 3],
+    [/\bHoliday Inn(?!\s+Express)\b/i, 3],
+    [/\bMercure\b/i, 3],
+    [/\bMama Shelter\b/i, 3],
+    [/\bAloft\b/i, 3],
+    [/\bElement\b/i, 3],
+    [/\bEven Hotels\b/i, 3],
+    [/\bFairfield\b/i, 3],
+    [/\bHoliday Inn Express\b/i, 2],
+    [/\bMoxy\b/i, 2],
+    [/\bibis\b/i, 2],
+    [/\bgreet\b/i, 2],
+  ];
+  for (const [re, stars] of brandStars) {
+    if (re.test(n) || re.test(group)) return stars;
+  }
+
+  // Opening List category hint when brand is unknown
+  if (/^luxury$/i.test(category)) return 5;
+  if (/^boutique$/i.test(category)) return 4;
+
+  return null;
+}

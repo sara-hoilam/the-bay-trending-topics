@@ -11,6 +11,8 @@ import {
   inferHotelGroup,
   inferLocationRegion,
   inferCountry,
+  inferStars,
+  normalizeWebsiteUrl,
   statusFromSort,
 } from "./new-hotels-date-utils.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
@@ -73,16 +75,32 @@ function hotelRecord({
   status,
   today,
   sourceRegion = null,
+  websiteUrl = null,
+  category = null,
+  description = null,
+  stars = undefined,
 }) {
   const sort = openMeta?.openDateSort || openMeta?.openDate || null;
   const loc = (location || "").trim() || null;
   const country = inferCountry(loc, sourceRegion, name);
+  const group = hotelGroup || inferHotelGroup(name);
+  const resolvedStars =
+    stars === undefined
+      ? inferStars({
+          name,
+          hotelGroup: group,
+          category: category || "",
+          description: description || "",
+        })
+      : stars;
   return {
     name: name.trim(),
     location: loc,
     country: country || null,
     region: inferLocationRegion(loc, sourceRegion, name),
-    hotelGroup: hotelGroup || inferHotelGroup(name),
+    hotelGroup: group,
+    stars: resolvedStars == null ? null : resolvedStars,
+    websiteUrl: normalizeWebsiteUrl(websiteUrl),
     openDate: openMeta?.openDate || null,
     openDateLabel: openMeta?.openDateLabel || null,
     openDatePrecision: openMeta?.openDatePrecision || null,
@@ -103,7 +121,7 @@ export async function fetchOpeningList(today) {
     Authorization: `Bearer ${OPENING_LIST_SUPABASE.anonKey}`,
   };
   const select =
-    "name,location,country,region,category,opening_year,opening_month,is_opened,collection,slug";
+    "name,location,country,region,category,opening_year,opening_month,is_opened,collection,slug,booking_url,description";
 
   const [soon, opened] = await Promise.all([
     fetchJson(
@@ -137,6 +155,9 @@ export async function fetchOpeningList(today) {
       status: row.is_opened ? "opened" : statusFromSort(openMeta?.openDateSort, today),
       today,
       sourceRegion: row.region || null,
+      websiteUrl: row.booking_url || null,
+      category: row.category || null,
+      description: row.description || null,
     });
   });
 }

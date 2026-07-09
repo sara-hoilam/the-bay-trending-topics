@@ -55,6 +55,45 @@
     return sel.value;
   }
 
+  function renderName(h) {
+    var label = esc(h.name);
+    if (h.websiteUrl) {
+      return (
+        '<a class="nh-hotel-link" href="' +
+        esc(h.websiteUrl) +
+        '" target="_blank" rel="noopener noreferrer">' +
+        label +
+        "</a>"
+      );
+    }
+    return label;
+  }
+
+  function renderStars(stars) {
+    var n = Number(stars);
+    if (!n || n < 1 || n > 5) {
+      return '<span class="nh-stars nh-stars--na">—</span>';
+    }
+    var icons = "";
+    for (var i = 0; i < n; i++) {
+      icons +=
+        '<span class="nh-star" aria-hidden="true">★</span>';
+    }
+    return (
+      '<span class="nh-stars" title="' +
+      n +
+      ' star' +
+      (n === 1 ? "" : "s") +
+      '" aria-label="' +
+      n +
+      ' star' +
+      (n === 1 ? "" : "s") +
+      '">' +
+      icons +
+      "</span>"
+    );
+  }
+
   function renderRows() {
     var rows = filtered();
     var countEl = document.getElementById("nh-count");
@@ -75,6 +114,7 @@
       '<th scope="col">Open date</th>' +
       '<th scope="col">Location</th>' +
       '<th scope="col">Hotel group</th>' +
+      '<th scope="col">Stars</th>' +
       '<th scope="col">Status</th>' +
       '<th scope="col">Source</th>' +
       "</tr></thead><tbody>";
@@ -84,10 +124,11 @@
         h.status === "opened" ? "nh-status--opened" : "nh-status--upcoming";
       var statusLabel = h.status === "opened" ? "Opened" : "Opening soon";
       html += "<tr>";
-      html += '<td class="nh-name">' + esc(h.name) + "</td>";
+      html += '<td class="nh-name">' + renderName(h) + "</td>";
       html += '<td class="nh-date">' + esc(h.openDateLabel || "—") + "</td>";
       html += '<td class="nh-loc">' + esc(h.location || h.country || "—") + "</td>";
       html += '<td class="nh-group">' + esc(h.hotelGroup || "—") + "</td>";
+      html += '<td class="nh-stars-cell">' + renderStars(h.stars) + "</td>";
       html +=
         '<td class="nh-status"><span class="nh-status-badge ' +
         statusClass +

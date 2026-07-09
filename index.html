@@ -1524,6 +1524,15 @@
     color: var(--ink);
     min-width: 160px;
   }
+  .nh-hotel-link {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .nh-hotel-link:hover {
+    color: var(--neu);
+    border-bottom-color: var(--neu);
+  }
   .nh-date {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
@@ -1531,6 +1540,27 @@
   }
   .nh-loc, .nh-group {
     color: var(--muted);
+  }
+  .nh-stars-cell {
+    white-space: nowrap;
+    min-width: 72px;
+  }
+  .nh-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+    color: #c9a227;
+    letter-spacing: 0;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .nh-star {
+    display: inline-block;
+  }
+  .nh-stars--na {
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
   }
   .nh-status-badge {
     display: inline-block;
@@ -5415,9 +5445,9 @@
   if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard", "newhotels"].indexOf(h) !== -1) show(h);
 })();
 </script>
-<script>window.GBA_DATA_VERSION = "20260709c";</script>
+<script>window.GBA_DATA_VERSION = "20260709d";</script>
 <script src="ig-leaderboard-panel.js?v=20260615d" defer></script>
-<script src="new-hotels-panel.js?v=20260709c" defer></script>
+<script src="new-hotels-panel.js?v=20260709d" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
 <script src="happenings-panel.js?v=20260615a" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
