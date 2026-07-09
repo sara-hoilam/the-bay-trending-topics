@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-09",
-  "refreshedAt": "2026-07-09T08:27:59+08:00",
+  "refreshedAt": "2026-07-09T08:31:05+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 661562,
+      "followers": 661566,
       "followersGrowthPct7d": 0.7,
       "history": [
         {
@@ -99,7 +99,7 @@
         },
         {
           "date": "2026-07-09",
-          "followers": 661562
+          "followers": 661566
         }
       ]
     },
@@ -108,7 +108,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 261644,
+      "followers": 261646,
       "followersGrowthPct7d": 0.54,
       "history": [
         {
@@ -197,7 +197,7 @@
         },
         {
           "date": "2026-07-09",
-          "followers": 261644
+          "followers": 261646
         }
       ]
     },
@@ -296,7 +296,7 @@
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 95535,
+      "followers": 95533,
       "followersGrowthPct7d": 0.35,
       "history": [
         {
@@ -385,7 +385,7 @@
         },
         {
           "date": "2026-07-09",
-          "followers": 95535
+          "followers": 95533
         }
       ]
     },
@@ -582,8 +582,8 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 35461,
-      "followersGrowthPct7d": 5.52,
+      "followers": 35460,
+      "followersGrowthPct7d": 5.51,
       "history": [
         {
           "date": "2026-06-15",
@@ -671,7 +671,7 @@
         },
         {
           "date": "2026-07-09",
-          "followers": 35461
+          "followers": 35460
         }
       ]
     },
