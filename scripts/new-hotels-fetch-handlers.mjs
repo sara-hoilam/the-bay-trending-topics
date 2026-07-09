@@ -13,6 +13,7 @@ import {
   inferCountry,
   inferStars,
   normalizeWebsiteUrl,
+  formatCityCountry,
   statusFromSort,
 } from "./new-hotels-date-utils.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
@@ -81,8 +82,8 @@ function hotelRecord({
   stars = undefined,
 }) {
   const sort = openMeta?.openDateSort || openMeta?.openDate || null;
-  const loc = (location || "").trim() || null;
-  const country = inferCountry(loc, sourceRegion, name);
+  const country = inferCountry(location, sourceRegion, name);
+  const loc = formatCityCountry(location, country, name);
   const group = hotelGroup || inferHotelGroup(name);
   const resolvedStars =
     stars === undefined
@@ -302,13 +303,6 @@ export async function fetchAccor(today) {
     }
 
     let location = null;
-    const locM = afterText.match(
-      new RegExp(
-        `^\\s*,\\s*([A-Z][^.]{2,40}?)\\s+will\\b`,
-        "i",
-      ),
-    );
-    // "Name, Country will…" often starts the following paragraph
     const paraLoc = afterText.match(
       new RegExp(
         `${title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*,\\s*([A-Z][^.]{2,40}?)\\s+will\\b`,
@@ -316,7 +310,6 @@ export async function fetchAccor(today) {
       ),
     );
     if (paraLoc) location = paraLoc[1].replace(/,\s*$/, "").trim();
-    else if (locM) location = locM[1].replace(/,\s*$/, "").trim();
 
     // Default Mid-2026 when press lists under 2026 openings without a phrase
     push(title, openPhrase || "Mid 2026", location);

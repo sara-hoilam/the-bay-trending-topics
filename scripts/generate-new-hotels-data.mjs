@@ -18,6 +18,7 @@ import {
   isAsiaOrPortugal,
   inferCountry,
   inferLocationRegion,
+  formatCityCountry,
 } from "./new-hotels-date-utils.mjs";
 import { fetchHotelsForSource } from "./new-hotels-fetch-handlers.mjs";
 
@@ -133,10 +134,11 @@ async function main() {
   for (const h of merged.values()) {
     if (!inOpenWindow(h, bounds)) continue;
     if (!h.name || !h.openDateLabel) continue;
-    // Enrich region/country for cached rows, then keep Asia + Portugal only
+    // Enrich region/country/location for cached rows, then keep Asia + Portugal only
     if (!h.country) {
       h.country = inferCountry(h.location, null, h.name);
     }
+    h.location = formatCityCountry(h.location, h.country, h.name);
     if (!h.region || h.region === "other") {
       h.region = inferLocationRegion(h.location, null, h.name);
     }
