@@ -2,7 +2,7 @@
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
   "updatedAt": "2026-07-09",
-  "refreshedAt": "2026-07-09T22:07:24+08:00",
+  "refreshedAt": "2026-07-09T22:15:23+08:00",
   "windowMonths": 6,
   "windowStart": "2026-01-07",
   "windowEnd": "2027-01-08",
@@ -282,7 +282,7 @@
     },
     {
       "name": "V Villas Maldives at Mirihi – MGallery Collection",
-      "location": null,
+      "location": "Mirihi, Maldives",
       "country": "Maldives",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -316,7 +316,7 @@
     },
     {
       "name": "Hotel Shanghai Hongqiao - Handwritten Collection",
-      "location": null,
+      "location": "Shanghai, China",
       "country": "China",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -333,7 +333,7 @@
     },
     {
       "name": "MGallery in Jilin Beida Lake",
-      "location": null,
+      "location": "Jilin Beida Lake, China",
       "country": "China",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -350,7 +350,7 @@
     },
     {
       "name": "Mondrian Maldives",
-      "location": null,
+      "location": "Noonu Atoll, Maldives",
       "country": "Maldives",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -367,7 +367,7 @@
     },
     {
       "name": "MontAzure Phuket, MGallery Collection",
-      "location": null,
+      "location": "Phuket, Thailand",
       "country": "Thailand",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -401,7 +401,7 @@
     },
     {
       "name": "Novotel Bhopal, India",
-      "location": null,
+      "location": "Bhopal, India",
       "country": "India",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -418,7 +418,7 @@
     },
     {
       "name": "Surin Beach, Navera Phuket, MGallery Collection",
-      "location": null,
+      "location": "Phuket, Thailand",
       "country": "Thailand",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -469,7 +469,7 @@
     },
     {
       "name": "Holiday Inn Resort Kathmandu Budhanilkantha",
-      "location": "Kathmandu",
+      "location": "Kathmandu, Nepal",
       "country": "Nepal",
       "region": "asia",
       "hotelGroup": "IHG",
@@ -724,7 +724,7 @@
     },
     {
       "name": "SALA Bang Pa-In, a Member of Design Hotels",
-      "location": "Bang Pa-In , Thailand",
+      "location": "Bang Pa-In, Thailand",
       "country": "Thailand",
       "region": "asia",
       "hotelGroup": "Marriott",
@@ -996,7 +996,7 @@
     },
     {
       "name": "Fairmont Dalian",
-      "location": null,
+      "location": "Dalian, China",
       "country": "China",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -1047,7 +1047,7 @@
     },
     {
       "name": "ibis Bangkok Ratchathaewi",
-      "location": null,
+      "location": "Bangkok, Thailand",
       "country": "Thailand",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -1098,7 +1098,7 @@
     },
     {
       "name": "Mercure Bangkok Ratchathaewi",
-      "location": null,
+      "location": "Bangkok, Thailand",
       "country": "Thailand",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -1115,7 +1115,7 @@
     },
     {
       "name": "Mercure Tokyu Stay Hiroshima",
-      "location": "Japan",
+      "location": "Hiroshima, Japan",
       "country": "Japan",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -1132,7 +1132,7 @@
     },
     {
       "name": "Rixos Phu Quoc Vietnam",
-      "location": null,
+      "location": "Phu Quoc, Vietnam",
       "country": "Vietnam",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -1200,7 +1200,7 @@
     },
     {
       "name": "Crowne Plaza Dhaka Airport",
-      "location": "Dhaka",
+      "location": "Dhaka, Bangladesh",
       "country": "Bangladesh",
       "region": "asia",
       "hotelGroup": "IHG",
@@ -1217,7 +1217,7 @@
     },
     {
       "name": "NoMad Singapore",
-      "location": "Singapore, Singapore",
+      "location": "NoMad, Singapore",
       "country": "Singapore",
       "region": "asia",
       "hotelGroup": "Independent",
@@ -1421,7 +1421,7 @@
     },
     {
       "name": "Lime Resort Myoko – MGallery Collection",
-      "location": null,
+      "location": "Myoko, Japan",
       "country": "Japan",
       "region": "asia",
       "hotelGroup": "Accor",
@@ -1540,7 +1540,7 @@
     },
     {
       "name": "Grand Mercure Amritsar Airport Road",
-      "location": null,
+      "location": "Amritsar, India",
       "country": "India",
       "region": "asia",
       "hotelGroup": "Accor",

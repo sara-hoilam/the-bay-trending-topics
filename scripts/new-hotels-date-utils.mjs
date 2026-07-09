@@ -330,6 +330,208 @@ export function isAsiaOrPortugal(hotel) {
   return region === "asia" || region === "portugal";
 }
 
+/** Known country display names (for stripping / matching). */
+const COUNTRY_NAMES = COUNTRY_RULES.map((r) => r.country);
+
+/** Known hotel → city overrides when sources omit a city. */
+const HOTEL_CITY_OVERRIDES = [
+  { re: /^Mondrian Maldives$/i, city: "Noonu Atoll" },
+  { re: /^Rixos Phu Quoc/i, city: "Phu Quoc" },
+  { re: /^Fairmont Dalian$/i, city: "Dalian" },
+  { re: /^MGallery in Jilin/i, city: "Jilin Beida Lake" },
+  { re: /^Hotel Shanghai Hongqiao/i, city: "Shanghai" },
+  { re: /^Lime Resort Myoko/i, city: "Myoko" },
+  { re: /^Grand Mercure Amritsar/i, city: "Amritsar" },
+  { re: /^MontAzure Phuket/i, city: "Phuket" },
+  { re: /^Surin Beach/i, city: "Phuket" },
+  { re: /^V Villas Maldives at Mirihi/i, city: "Mirihi" },
+  { re: /Bangkok Ratchath/i, city: "Bangkok" },
+  { re: /Tokyu Stay Hiroshima/i, city: "Hiroshima" },
+  { re: /Novotel Bhopal/i, city: "Bhopal" },
+];
+
+/**
+ * Infer a city/place label from hotel name when location is missing or
+ * country-only. Returns null if nothing useful can be extracted.
+ */
+export function inferCityFromName(name, country = null) {
+  if (!name) return null;
+  for (const rule of HOTEL_CITY_OVERRIDES) {
+    if (rule.re.test(name)) return rule.city;
+  }
+  let n = String(name).replace(/\s+/g, " ").trim();
+
+  // Drop collection / brand suffixes first
+  n = n
+    .replace(/\s*[–—-]\s*(?:MGallery|Handwritten|Emblems|Morgans)[^]*$/i, "")
+    .replace(/\s*,\s*(?:MGallery|Handwritten|Emblems)\s*Collection.*$/i, "")
+    .replace(/\s+Collection$/i, "")
+    .trim();
+
+  // Drop trailing ", Country" or trailing country word
+  if (country) {
+    const cRe = new RegExp(
+      `(?:,\\s*)?\\b${country.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*$`,
+      "i",
+    );
+    n = n.replace(cRe, "").trim();
+  }
+
+  // "… at Place"
+  const atPlace = n.match(
+    /\bat\s+([A-ZÀ-ÖØ-Þ][\wÀ-ÖØ-öø-ÿ'’\-]+(?:\s+[A-ZÀ-ÖØ-Þ][\wÀ-ÖØ-öø-ÿ'’\-]+)?)/,
+  );
+  if (atPlace) return atPlace[1].trim();
+
+  // Explicit well-known place phrases inside the name
+  const placeHints = [
+    /\b(Shanghai(?:\s+Hongqiao)?)\b/i,
+    /\b(Hongqiao)\b/i,
+    /\b(Phu Quoc)\b/i,
+    /\b(Hon Thom)\b/i,
+    /\b(Jilin(?:\s+Beida\s+Lake)?)\b/i,
+    /\b(Beida Lake)\b/i,
+    /\b(Surin Beach)\b/i,
+    /\b(Phuket)\b/i,
+    /\b(Bangkok)\b/i,
+    /\b(Ratchathaewi|Ratchathewi)\b/i,
+    /\b(Hiroshima)\b/i,
+    /\b(Myoko)\b/i,
+    /\b(Amritsar)\b/i,
+    /\b(Bhopal)\b/i,
+    /\b(Dalian)\b/i,
+    /\b(Kathmandu)\b/i,
+    /\b(Dhaka)\b/i,
+    /\b(Lisbon|Lisboa)\b/i,
+    /\b(Comporta|Melides)\b/i,
+    /\b(Kyoto|Tokyo|Osaka|Okinawa|Niseko)\b/i,
+    /\b(Jeju|Seoul|Busan|Incheon)\b/i,
+    /\b(Hanoi|Danang|Da Nang|Hoi An)\b/i,
+    /\b(Bali|Jakarta|Ubud|Manado)\b/i,
+    /\b(Penang|Kuala Lumpur)\b/i,
+    /\b(Singapore)\b/i,
+    /\b(Kuredhivaru|Noonu Atoll|Malé|Male|Baa Atoll|South Mal[eé] Atoll)\b/i,
+  ];
+  for (const re of placeHints) {
+    const m = n.match(re);
+    if (m) {
+      let city = m[1];
+      // Normalize spellings
+      if (/^lisboa$/i.test(city)) city = "Lisbon";
+      if (/^ratchathaewi$/i.test(city)) city = "Ratchathewi";
+      if (/^jilin$/i.test(city)) city = "Jilin Beida Lake";
+      return city;
+    }
+  }
+
+  // Common brand prefixes to strip
+  const brandPrefixes = [
+    "JW Marriott", "Courtyard by Marriott", "Courtyard By Marriott",
+    "Fairfield by Marriott", "Fairfield By Marriott", "AC Hotel By Marriott",
+    "AC Hotel by Marriott", "Four Points by Sheraton", "Holiday Inn Express",
+    "Holiday Inn Resort", "Holiday Inn", "Crowne Plaza", "Hotel Indigo",
+    "InterContinental Residences", "InterContinental", "Grand Mercure",
+    "Mercure Tokyu Stay", "Mercure", "Novotel", "Sofitel", "Fairmont",
+    "Raffles", "Pullman", "Swissôtel", "Swissotel", "Mövenpick", "Movenpick",
+    "MGallery", "Mama Shelter", "Orient Express", "Rixos", "Hyde", "Mondrian",
+    "Delano", "ibis Styles", "ibis", "greet", "voco", "Kimpton", "Six Senses",
+    "Park Hyatt", "Grand Hyatt", "Four Seasons", "The Ritz-Carlton",
+    "Ritz-Carlton", "Ritz Carlton", "St. Regis", "St Regis", "Sheraton",
+    "Westin", "Marriott", "Moxy", "Capella", "Aman", "Rosewood", "Conrad",
+    "Waldorf Astoria", "Bulgari", "SO/", "V Villas", "Lime Resort",
+    "Hotel Shanghai", "Hotel",
+  ];
+
+  let rest = n;
+  for (const brand of brandPrefixes.sort((a, b) => b.length - a.length)) {
+    const re = new RegExp(
+      `^${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}(?:\\s+|$)`,
+      "i",
+    );
+    if (re.test(rest)) {
+      rest = rest.replace(re, "").trim();
+      break;
+    }
+  }
+
+  // Drop generic words
+  rest = rest
+    .replace(/\b(Hotel|Resort|Villas?|Lodge|Palace|House|Residences?|Spa|Centre|Center|Airport|Road|Beach|Club)\b/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (country) {
+    const cRe = new RegExp(`\\b${country.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+    rest = rest.replace(cRe, "").replace(/\s+/g, " ").trim();
+  }
+
+  // Reject leftover brand tokens (e.g. "Mondrian" from "Mondrian Maldives")
+  const brandTokenRe = new RegExp(
+    `^(?:${brandPrefixes.map((b) => b.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})$`,
+    "i",
+  );
+  if (brandTokenRe.test(rest)) rest = "";
+
+  const tokens = rest.split(/\s+/).filter(Boolean);
+  if (tokens.length >= 1 && tokens.length <= 4) {
+    const cand = tokens.join(" ");
+    if (
+      cand.length >= 3 &&
+      !/^(the|a|an|by|and)$/i.test(cand) &&
+      (!country || cand.toLowerCase() !== country.toLowerCase())
+    ) {
+      return cand;
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Normalize location to "City, Country". Infers city from hotel name when the
+ * source only provided a country (or nothing).
+ */
+export function formatCityCountry(location, country, name = "") {
+  const resolvedCountry =
+    country || inferCountry(location, null, name) || null;
+  const raw = String(location || "").replace(/\s+/g, " ").trim();
+
+  let city = null;
+  if (raw) {
+    const parts = raw.split(",").map((s) => s.trim()).filter(Boolean);
+    if (parts.length >= 2) {
+      const tail = parts[parts.length - 1];
+      const head = parts.slice(0, -1).join(", ");
+      const tailIsCountry =
+        resolvedCountry &&
+        tail.toLowerCase() === resolvedCountry.toLowerCase();
+      if (tailIsCountry && head) {
+        city = head;
+      } else if (!tailIsCountry) {
+        city = head || parts[0];
+      }
+    } else if (parts.length === 1) {
+      const only = parts[0];
+      const onlyIsCountry =
+        (resolvedCountry && only.toLowerCase() === resolvedCountry.toLowerCase()) ||
+        COUNTRY_NAMES.some((c) => c.toLowerCase() === only.toLowerCase());
+      if (!onlyIsCountry) city = only;
+    }
+  }
+
+  if (!city) city = inferCityFromName(name, resolvedCountry);
+
+  if (city && resolvedCountry) {
+    if (city.toLowerCase() === resolvedCountry.toLowerCase()) {
+      return resolvedCountry;
+    }
+    return `${city}, ${resolvedCountry}`;
+  }
+  if (city) return city;
+  if (resolvedCountry) return resolvedCountry;
+  return raw || null;
+}
+
 /** Infer brand/group from hotel name when source doesn't provide one. */
 export function inferHotelGroup(name, fallback = null) {
   if (fallback) return fallback;
