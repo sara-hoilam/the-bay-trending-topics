@@ -1,0 +1,169 @@
+THE BAY: Daily Brief
+Date: 10 July 2026 · 30 articles · method: daily-brief-agent-prompt (live source scan)
+
+<!-- article count verified: 30 numbered blocks -->
+
+
+GBA News (4):
+
+1. **Super Typhoon Bavi nears Taiwan; Hong Kong carriers cancel 40+ flights**
+https://www.scmp.com/news/hong-kong/transport/article/3359975/super-typhoon-bavi-dozens-hong-kong-flights-cancelled-storm-nears-taiwan
+https://news.rthk.hk/rthk/en/component/k2/1861617-20260709.htm
+https://english.news.cn/20260710/b891c6b0365945c78aaa255a56d70ca7/c.html
+Super Typhoon Bavi churned southeast of Taiwan on 9 July with sustained winds near 200 km/h, with forecasters warning it could be the strongest storm to hit China since Kong-rey in 2024. More than 40 Hong Kong departures to Taiwan, the mainland and Japan were cancelled for 10–11 July as Zhejiang and Fujian raised Level III typhoon responses and evacuated 17,110 people in Zhejiang alone.
+
+2. **Guangdong widespread torrential rain forecast 10–12 July as Danas remnants approach**
+https://www.newsgd.com/node_fd19c5daa2/f36adf228b.shtml
+https://www.newsgd.com/node_1299786306/c645e56981.shtml
+Guangdong's observatory said on 8 July that remnants of Typhoon Danas will trigger province-wide heavy rain from 10–12 July after central and northern areas hit 35–37°C on 9 July, easing the heatwave. The Pearl River Delta is expected to see moderate to strong thunderstorms on 10 July, with eastern Guangdong facing heavy to torrential downpours through 12 July.
+
+3. **Pearl River basin floods kill 39 in Guangxi; zoo animals and snakes escape**
+https://news.rthk.hk/rthk/en/component/k2/1861615-20260709.htm
+https://english.news.cn/20260709/ada97888f504408cbdd9a2fe61ba8018/c.html
+https://hongkongfp.com/2026/07/09/cleanup-operations-underway-as-death-toll-from-china-floods-hits-39/
+Authorities said on 9 July that Tropical Storm Maysak flooding killed 39 people in southern China, including 26 when a Nanning dam breached, while about 130,000 residents were evacuated. Rescuers used powered pontoon bridges to evacuate stranded students in Guigang, Guigang Zoo reported more than 100 animals loose after enclosure damage, and up to 900 snakes escaped from a washed-away breeding farm in Hengzhou.
+
+4. **Guangdong to host ASEAN trade conference on 15–16 July**
+https://www.newsgd.com/node_99363c4f3b/f2e4224b6f.shtml
+Guangdong announced on 8 July that the 2026 China (Guangdong)-ASEAN Trade Promotion and Supply Chain Cooperation Mechanism conference will gather about 1,000 participants in Guangzhou, including 250 ASEAN guests. CCPIT Guangdong will sign MOUs with regional business bodies, establish trade service centres in Laos, Myanmar and the Philippines, and release country handbooks after Guangdong-ASEAN trade hit a record 1.53 trillion yuan in 2025.
+
+
+Macao (2):
+
+5. **700 taxi licences tender requires winning fleets on ride-hailing platforms** — Macao Business
+https://macaubusiness.com/new-taxi-permits-require-shift-to-ride-hailing-platforms/
+The Transport Bureau received 47 bids on 9 July for 14 permits covering up to 50 taxis each, with a MOP2.5 million starting price and MOP3.5 million guarantee per corporate bidder. Successful operators must run vehicles through registered online platforms, with results due in the fourth quarter of 2026 and new taxis entering service in 2027–2028 as 303 of the current 1,553 fleet retire in 2028.
+
+6. **Court confirms ex-lawmaker Au Kam San to stand trial for subversion** — Macao Business + HKFP
+https://macaubusiness.com/court-upholds-charge-against-ex-lawmaker-in-national-security-case/
+https://hongkongfp.com/2026/07/09/macau-to-put-former-pro-democracy-lawmaker-au-kam-san-on-trial/
+A Macau preliminary hearing court upheld prosecutors' indictment on 2 July, confirming 69-year-old former legislator Au Kam San as principal offender in subversion, breach of secrecy and foreign-contact offences under the city's national security law. Au, arrested in July 2025, will face a criminal court schedule after the national security committee endorsed his court-appointed lawyer.
+
+
+Hong Kong (18):
+
+7. **Cathay A330 tail struck runway during go-around from Tokyo** — SCMP
+https://www.scmp.com/news/hong-kong/transport/article/3360022/cathay-pacific-aircrafts-tail-hit-runway-hong-kong-airport-airline-confirms
+Cathay Pacific confirmed on 9 July that the tail of an Airbus A330-300 operating flight CX509 from Narita contacted the runway during a go-around at Hong Kong International Airport last Friday before landing safely with no injuries. The Civil Aviation Department ordered the airline to submit a report on the incident.
+
+8. **CAD orders comprehensive Cathay review after NATO fighter intercept** — SCMP + HKFP
+https://www.scmp.com/news/hong-kong/transport/article/3360023/regulator-outlines-review-after-cathay-flight-intercepted-nato-jets
+https://hongkongfp.com/2026/07/08/cathay-pacific-confirms-london-bound-flight-briefly-lost-contact-nato-alert-triggered/
+Hong Kong's Civil Aviation Department said on 9 July that Cathay flight CX257 adhered to its authorised routing but must submit a one-week report after Hungarian NATO fighters scrambled on 4 July when the London-bound A350 briefly lost Romanian ATC contact with more than 300 passengers aboard. The review will cover aircraft systems, communication equipment and crew procedures.
+
+9. **Cargolux Boeing 747 fuel leak triggers emergency response at HKIA** — SCMP
+https://www.scmp.com/news/hong-kong/transport/article/3360014/authorities-investigate-fuel-leak-cargo-plane-hong-kong-airport
+Police and firefighters responded around 8.32am on 9 July to a suspected fuel spill from a Cargolux Boeing 747 parked outside the Cathay Pacific Cargo Terminal before its scheduled departure to Baku. The Airport Authority confirmed the left-wing leakage and said authorities are investigating.
+
+10. **Pak Shek Kok East Rail station targeted for 2033 opening** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360021/pak-shek-kok-station-east-rail-line-scheduled-open-early-2033
+https://news.rthk.hk/rthk/en/component/k2/1861656-20260709.htm
+The Development Bureau said on 9 July that Pak Shek Kok station between Tai Po Market and University will open by 2033, financed by private flats on resumed EduHK and Ma On Shan sites rather than public housing. Construction starts in the second half of 2028 and is expected to cut commutes to Hong Kong Island or Kowloon by about 20 minutes.
+
+11. **EduHK backs relocating sports centre for Pak Shek Kok station** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861678-20260709.htm
+The Education University welcomed on 9 July a plan to move its Pak Shek Kok sports ground to a 7.5-hectare site beside its Tai Po campus, with reprovisioning due from the second half of 2028 and completion targeted for 2031. MTR Corp CEO Jeny Yeung said the operator will balance railway operations with the station-first, residential-development-later financing model.
+
+12. **IVF parent New Frontier Group apologises for embryo specimen mix-up** — SCMP + HKFP
+https://www.scmp.com/news/hong-kong/health-environment/article/3360019/parent-company-hong-kong-ivf-clinic-says-sorry-over-embryo-specimen-mix
+https://hongkongfp.com/2026/07/09/hong-kong-fertility-clinic-probed-after-sending-wrong-embryo-samples-for-dna-testing/
+New Frontier Group apologised on 9 July after Heal Fertility Centre in Central mishandled embryo biopsy specimens from two couples in May and June without reporting within 24 hours. The Council on Human Reproductive Technology, Department of Health and police are investigating, and the clinic must submit a four-week improvement report.
+
+13. **176 suspected child abuse cases logged in five months of mandatory reporting** — SCMP + HKFP
+https://www.scmp.com/news/hong-kong/society/article/3359978/176-child-abuse-cases-5-months-after-start-hong-kongs-new-reporting-regime
+https://hongkongfp.com/2026/07/09/hong-kong-records-176-suspected-child-abuse-cases-in-first-5-months-of-mandatory-reporting-mechanism/
+Labour and Welfare Secretary Chris Sun said on 9 July that 176 reports involving 188 children were filed by end-June since mandatory reporting began on 20 January, with 83 cases suspected sexual abuse. Sun said screenings found no large-scale abusive reporting and that professionals are strengthening protection networks.
+
+14. **More than 900 restaurants welcome dogs on pet-dining launch day** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/society/article/3359960/more-900-hong-kong-restaurants-welcome-dogs-day-1-pet-licensing-scheme
+https://news.rthk.hk/rthk/en/component/k2/1861637-20260709.htm
+The Food and Environmental Hygiene Department approved 940 of more than 2,100 applications as dog-friendly permits took effect on 9 July, ending a 30-year rabies-era ban. Environment and Ecology Secretary Tse Chin-wan said operations started smoothly and phase-two applications could open within six months.
+
+15. **Thunderstorm warning cancels 10 July flag-raising ceremony** — info.gov.hk
+https://www.info.gov.hk/gia/general/202607/10/P2026071000179.htm
+The government cancelled the 8am flag-raising at Golden Bauhinia Square on 10 July because a thunderstorm warning was in force, saying the ceremony may resume without notice if the alert is lifted and weather permits. The announcement was issued at 7.38am HKT.
+
+16. **HK$20.9 million paid to seven M+ and Palace Museum executives in 2025-26** — HKFP
+https://hongkongfp.com/2026/07/10/hk20-million-spent-on-salaries-of-m-palace-museum-executives-last-year-despite-west-kowloon-art-hubs-deficit-govt-figures-show/
+Culture minister Rosanna Law told Legco on 9 July that seven executives at M+ and Hong Kong Palace Museum earned HK$20.9 million in 2025-26 as West Kowloon Cultural District Authority recorded a HK$466.2 million deficit. Remuneration has risen every year since 2021-22, with increases of up to 8.5 per cent.
+
+17. **Woman charged with murder after Aberdeen minibus stop brawl** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359913/woman-50-arrested-murder-after-minibus-stop-fight-hong-kong
+Police charged a 50-year-old woman on 9 July after a scuffle with a 53-year-old passenger aboard an Aberdeen minibus on 8 July escalated into a fatal fight at Wah Fu Estate, where the victim was pronounced dead at Queen Mary Hospital. The dispute began when the victim accidentally stepped on the suspect's foot while alighting.
+
+18. **Eight teens arrested over social-media paint-splashing debt intimidation** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359999/8-hong-kong-teens-arrested-over-taking-cash-gang-splash-paint-doors
+Police said on 9 July that eight teenagers and a 24-year-old man were arrested after a syndicate recruited youths via messaging apps to splash red paint on debtor premises for HK$800–HK$2,000 per job. Three suspects were allegedly triad-linked recruiters operating across Hong Kong.
+
+19. **ICAC charges trio over HK$1.3 million elderly care voucher fraud** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359965/hong-kong-corruption-watchdog-charges-3-over-hk13-million-elderly-care-voucher-fraud
+The ICAC charged two care-home directors and an officer on 9 July with inflating Community Care Service Voucher attendance by more than 5,000 hours across 130 users to obtain about HK$1.3 million in subsidies. Healthy Life Association and Spark Plus were registered providers when the alleged offences occurred.
+
+20. **AI StreetSights model to help taxis find high-demand streets by mid-2027** — SCMP
+https://www.scmp.com/news/hong-kong/transport/article/3360018/how-ai-could-help-hong-kong-taxi-drivers-find-customers-streets
+Payment start-up Dash and HKUST said on 9 July that their StreetSights big-data model is up to 90 per cent accurate in forecasting street-hail demand and could roll out to cabbies by mid-2027. Developers said the tool gives independent taxis aggregate demand data as Hong Kong's ride-hailing regulatory regime takes effect in August.
+
+21. **40% of DSE candidates cite AI and economy as top stress sources** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/education/article/3359968/ai-and-economy-fuel-stress-40-dse-candidates-hong-kong-youth-group-poll
+https://news.rthk.hk/rthk/en/component/k2/1861641-20260709.htm
+A Hong Kong Federation of Youth Groups survey released on 9 July found 45.6 per cent of 445 DSE candidates reported high stress, down from 52.9 per cent last year, while 38 per cent cited AI disruption and economic uncertainty as pressure sources. Nearly half of respondents had never heard of Universities of Applied Sciences programmes.
+
+22. **Fashion Fest moves to September to align with Centrestage trade fair** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861636-20260709.htm
+Hong Kong Fashion Fest will run from 1–14 September 2026 under the theme "Rhythm of the Heart", shifted from November to coincide with HKTDC's Centrestage event. Cultural and Creative Industries Commissioner Drew Lai said combining showcase and buyer programmes should boost orders after the 2024 edition drew 160,000 participants.
+
+23. **Former PolyU student arrested over forged transcripts** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359927/former-polyu-student-arrested-allegedly-submitting-fake-academic-documents
+A 22-year-old former electrical engineering student was arrested on 9 July after allegedly submitting a fake certificate and two forged transcripts dated 15 July 2026 without the university watermark at PolyU's Li Ka Shing Tower. He had been dismissed in May 2025 for poor academic performance after enrolling in 2022.
+
+24. **Saudi tech firm Elm eyes Hong Kong gateway and Northern Metropolis tie-up** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3359885/saudi-arabian-tech-giant-eyes-hong-kong-asia-gateway-and-smart-city-partner
+https://news.rthk.hk/rthk/en/component/k2/1861486-20260708.htm
+PIF-backed digital solutions provider Elm said on 9 July at LEAP East 2026 that Hong Kong is its first Asian market stop, expressing appetite to partner on Northern Metropolis smart-city development after the Wan Chai conference drew 35,000 participants from 30-plus jurisdictions. Financial Secretary Paul Chan said he will lead a second Saudi business delegation later this year.
+
+
+Zhuhai inc. Hengqin (1):
+
+25. **Hengqin launches month-long cycling campaign from 12 July** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/a565c7bcd3.shtml
+The Guangdong-Macao In-Depth Cooperation Zone will open a cycling campaign on 12 July at the Hengqin Flower Sea Corridor, running through 12 August with a six-kilometre route linking seven scenic checkpoints. The first 100 registrants at the launch receive a one-week shared-bike pass and a Macao Pass card for the 2026 Hengqin-Macao Camping Festival.
+
+
+Shenzhen (1):
+
+26. **Global Writers in Guangdong Program begins Shenzhen field visits** — NewsGD
+https://www.newsgd.com/node_d36b0ef83f/33a57cf974.shtml
+Six writers from APEC economies began the 2026 Global Writers in Guangdong Program in Shenzhen on 8 July, touring the Museum of Contemporary Art and Urban Planning, Luohu Fishermen's Village, and Qianhai media offices. The initiative highlights reform-era Pearl River Delta stories ahead of regional cultural exchanges.
+
+
+Nation (3):
+
+27. **Fujian shoe factory fire kills 28; Xi orders accountability** — RTHK + Xinhua
+https://news.rthk.hk/rthk/en/component/k2/1861674-20260709.htm
+https://english.news.cn/20260709/0dffac7330e748d58e8c0130e51f413a/c.html
+A blaze at Huiteng Shoes in Jinjiang, Fujian, on 9 July killed 28 of 239 people on site as more than 500 firefighters responded, with the owner detained and company accounts frozen. President Xi Jinping ordered full rescue efforts, cause identification and a national push to root out workplace safety risks after multiple major accidents this year.
+
+28. **June factory-gate prices rise 4.1% while CPI gains slow to 1%** — RTHK + Xinhua
+https://news.rthk.hk/rthk/en/component/k2/1861599-20260709.htm
+https://english.news.cn/20260709/46765d5ad1504c1a87fa39455f66c743/c.html
+National Bureau of Statistics data on 9 July showed producer prices up 4.1 per cent year on year in June, the fastest since July 2022, while consumer inflation eased to 1 per cent from 1.2 per cent in May. Coal mining, electrical machinery and electronics led PPI gains as lower crude oil pulled gasoline prices down 4.9 per cent month on month.
+
+29. **Strengthening El Niño likely to be among largest on record** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861689-20260710.htm
+Forecasters warned on 10 July that an intensifying El Niño could become one of the largest ever recorded, raising temperatures and potentially fuelling more frequent intense typhoons as Bavi approaches East Asia. Scientists link the pattern to climate-change-driven extreme weather affecting southern China and the Pearl River basin.
+
+
+GBA sport (1):
+
+30. **PSG legend N'Gotty to host free youth football clinic in Guangzhou Nansha** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/2163645488.shtml
+Paris Saint-Germain Academy Greater Bay Area will hold a free open day at Puzhou Square in Guangzhou's Nansha District on 11 July, with technical director Bruno N'Gotty leading drills for boys aged 10–17 and girls 13–15. The event marks the academy's first public session since signing a cooperation agreement with the Greater Bay Area Culture and Sports Center on 11 June.
+
+
+<!-- DAILY BRIEF AUDIT
+Date: 2026-07-10 HKT
+Stories: 30
+GBA filter drops: Russia-Ukraine OSCE report (international, no GBA tie); Portugal/Venezuela quake items (no GBA tie); UK Burnham premiership track (off-footprint); Florida airport rename (off-footprint); France World Cup quarter-final (no GBA athlete/venue); China-Russia Joint Sea-2026 Qingdao drills (no GBA geography); Zhanjiang mangrove story (outside nine GBA municipalities); Europe AC export feature (no GBA primary impact)
+Single-source items: Thunderstorm flag-raising cancellation (gov.hk only — kept as official disruption); Global Writers Shenzhen visit (NewsGD only — kept as Shenzhen culture/policy showcase); El Niño outlook (RTHK only — kept as national weather driver with Pearl River relevance)
+Out of catalog: none
+-->
