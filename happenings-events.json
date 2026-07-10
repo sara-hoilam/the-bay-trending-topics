@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-09",
+  "updatedAt": "2026-07-10",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 50,
+  "highlightedCount": 52,
   "events": [
     {
       "title": "From Dawn to Dusk — Life and Art in the Forbidden City",
@@ -143,17 +143,6 @@
       "region": "shenzhen",
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/16/content_32091413.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "New thematic exhibition on Forbidden City opens at HKPM",
-      "start": "2026-06-22",
-      "end": "2026-08-21",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/22/content_32098089.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 18,
       "highlighted": false
@@ -720,11 +709,11 @@
       "title": "Picasso's printmaking legacy presented in Futian",
       "start": "2026-07-06",
       "end": "2026-09-04",
-      "region": "international",
-      "location": "International",
+      "region": "shenzhen",
+      "location": "Futian, Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -736,17 +725,6 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112587.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "Global Consumer and Healthcare Forum",
-      "start": "2026-07-08",
-      "end": "2026-07-09",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://10times.com/e1hx-dffh-49s3-0-global-consumer-healthcare-forum",
-      "sourceDomain": "10times.com",
-      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -857,15 +835,15 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC World of Snacks 2026 (HKCEC)",
+      "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/worldofsnacks/en",
+      "url": "https://hkbookfair.hktdc.com/en/index.html",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 16,
-      "highlighted": false
+      "highlightScore": 58,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
@@ -879,15 +857,15 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
+      "title": "HKTDC World of Snacks 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://hkbookfair.hktdc.com/en/index.html",
+      "url": "https://www.hktdc.com/event/worldofsnacks/en",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 58,
-      "highlighted": true
+      "highlightScore": 16,
+      "highlighted": false
     },
     {
       "title": "Shenzhen International Medical Tourism Fair",
@@ -1164,6 +1142,17 @@
       "highlighted": false
     },
     {
+      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/foodexpopro/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Food Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
@@ -1197,17 +1186,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-15",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/foodexpopro/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-15",
@@ -1216,6 +1194,28 @@
       "url": "https://www.hktdc.com/event/hkteafair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "International Smart Retail Expo (ISRE)",
+      "start": "2026-08-26",
+      "end": "2026-08-28",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1rg-40dx-4s3r",
+      "sourceDomain": "10times.com",
+      "highlightScore": 44,
+      "highlighted": true
+    },
+    {
+      "title": "Smart Warehousing & Material Handling Expo",
+      "start": "2026-08-26",
+      "end": "2026-08-28",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1d5-6d36-zgsg-z",
+      "sourceDomain": "10times.com",
+      "highlightScore": 34,
       "highlighted": true
     },
     {
@@ -1474,17 +1474,6 @@
       "highlighted": true
     },
     {
-      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1493,6 +1482,17 @@
       "url": "https://www.hktdc.com/event/hkprintpackfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 52,
+      "highlighted": true
+    },
+    {
+      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
       "highlighted": true
     },
     {
