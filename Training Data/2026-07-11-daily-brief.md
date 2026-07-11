@@ -1,0 +1,175 @@
+THE BAY: Daily Brief
+Date: 11 July 2026 · 30 articles · method: daily-brief-agent-prompt (live source scan)
+
+<!-- article count verified: 30 numbered blocks -->
+
+
+GBA News (4):
+
+1. **Typhoon Bavi prompts Level II alerts in Zhejiang and Fujian; Hong Kong faces extreme weekend heat**
+https://english.news.cn/20260710/f49c0fafad4a4032967071e979ac7ca5/c.html
+https://news.rthk.hk/rthk/en/component/k2/1861735-20260710.htm
+https://www.scmp.com/news/hong-kong/health-environment/article/3360063/extremely-hot-weather-hong-kong-over-weekend-typhoon-bavi-subsides
+Zhejiang and Fujian raised typhoon emergency responses to Level II on 10 July as Bavi tracked toward a Saturday-night landfall between Fuqing and Wenling, with China renewing an orange alert and deploying more than 9,300 surveyors and 75,000 relief supplies in Zhejiang. Hong Kong's Observatory said Bavi's outer airstream will subside from 11 July, bringing mainly fine weather with temperatures up to 35°C and isolated showers through the weekend.
+
+2. **Vice Premier Zhang Guoqing orders early Bavi defences and tours flood-hit Guangxi**
+https://english.news.cn/20260710/d96154cf0f9e4589a23b5a8c070472e2/c.html
+https://news.rthk.hk/rthk/en/component/k2/1861615-20260709.htm
+Vice Premier Zhang Guoqing told a State Flood Control headquarters meeting on 10 July that officials must drain defective reservoirs, pre-position rescue teams and evacuate vulnerable groups before Bavi strikes, then visited Guigang and Hengzhou to speed post-flood recovery. His trip followed Maysak-linked flooding that killed 39 people in southern China and left Guangxi clearing silt while searching for missing residents.
+
+3. **Premier Li chairs State Council meeting on nationwide flood prevention**
+https://news.rthk.hk/rthk/en/component/k2/1861818-20260710.htm
+https://english.news.cn/20260709/ada97888f504408cbdd9a2fe61ba8018/c.html
+Premier Li Qiang chaired an executive meeting on 10 July urging constant vigilance, thorough risk inspections and immediate evacuations in high-risk areas as China faces concurrent typhoon and flood threats. The meeting called for stronger inter-agency coordination and fully stocked emergency teams to protect lives and property along major rivers and in Pearl River basin communities still recovering from recent deluges.
+
+4. **Guangdong and ASEAN to spotlight industrial complementarity at July supply-chain forum**
+https://www.newsgd.com/node_5c070fdd03/b1dd6d4d87.shtml
+https://www.newsgd.com/node_99363c4f3b/f2e4224b6f.shtml
+Guangdong officials said on 10 July that next week's ASEAN-China (Guangdong) Trade Promotion and Supply Chain Cooperation Mechanism conference in Guangzhou will gather more than 1,000 participants to discuss AI-driven upgrading, new energy and "Guangdong manufacturing plus ASEAN resources" pairings. CCPIT Guangdong cited photovoltaic, EV and storage chains on the province side and nickel, bauxite and infrastructure demand across ASEAN markets.
+
+
+Macao (2):
+
+5. **Sixth ex-security officer arrested in MOP790 million prostitution syndicate case** — Macao Business
+https://macaubusiness.com/one-more-retired-police-detective-caught-for-harbouring-prostitution-ring/
+Judiciary Police arrested a 63-year-old former detective on 10 July upon entering Macau, alleging he joined the ring in 2024 and received MOP100,000 monthly to tip off operators evading enforcement. The case now involves six current or former security personnel who allegedly took up to MOP12.2 million in kickbacks from a network that earned MOP790 million since 2024.
+
+6. **Macau home prices hit 2013 lows despite stamp-duty relief and higher LTV cap** — Macao Business
+https://macaubusiness.com/spring-yet-to-come/
+Financial Services Bureau data show average residential prices fell to MOP68,000 per square metre in April 2026, the lowest since August 2013, before a modest May rebound to MOP70,806 as buyers focused on smaller and aged flats. Industry leaders said first-quarter transactions rose 59 per cent year on year to 1,847 units but remain well below pre-pandemic volumes despite MOP6 million stamp-duty exemptions and 80 per cent mortgage caps introduced in early 2026.
+
+
+Hong Kong (16):
+
+7. **Hong Kong secures three-year exclusive Asian hosting rights for LEAP East** — SCMP + Macao Business
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360183/hong-kongs-3-year-deal-host-leap-east-affirms-global-it-role
+https://macaubusiness.com/hong-kong-hosts-first-leap-east-drawing-35000-global-innovators/
+The inaugural LEAP East expo closed on 10 July with more than 25,000 visitors and a deal making Hong Kong the Middle East flagship's sole Asian host through 2029. Tourism Board chairman Peter Lam said the city now anchors three global I&T gatherings alongside Consensus Hong Kong and the Hong Kong Web3 Festival, reinforcing its role as a superconnector for investors and innovators.
+
+8. **Statutory injury compensation proposed for gig delivery workers** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360106/hong-kong-extend-injury-protection-gig-delivery-workers
+https://news.rthk.hk/rthk/en/component/k2/1861808-20260710.htm
+The Labour and Welfare Bureau proposed on 10 July legislation covering food and goods couriers injured or killed while performing platform tasks, with payouts for sick leave, medical costs and permanent incapacity. Coverage would run from departure for a pickup until delivery completion, extend up to four hours after the last job during typhoon No. 8 or black rainstorm signals, and require operators to notify the labour commissioner within seven to 14 days of serious incidents.
+
+9. **Commercial drivers face health checks from age 65 under eased proposal** — SCMP + RTHK + HKFP
+https://www.scmp.com/news/hong-kong/transport/article/3360180/hong-kong-eases-proposed-health-check-rules-elderly-commercial-drivers
+https://news.rthk.hk/rthk/en/component/k2/1861813-20260710.htm
+https://hongkongfp.com/2026/07/10/hong-kong-to-water-down-proposed-health-checks-for-elderly-commercial-drivers-reports/
+Authorities lowered the commercial-driver medical threshold from 70 to 65 but relaxed frequency after industry backlash, allowing 65–67-year-olds three-year licences and 68–69-year-olds two-year licences after exams rather than annual checks. Stricter vision and hearing standards and commissioner powers to demand medical reports are slated for mid-2027 implementation.
+
+10. **Only one Kowloon residential site tendered this quarter as supply stays high** — SCMP + RTHK
+https://www.scmp.com/business/article/3360157/hong-kong-keeps-tight-grip-housing-land-supply-despite-property-rebound
+https://news.rthk.hk/rthk/en/component/k2/1861787-20260710.htm
+Development Secretary Bernadette Linn said on 10 July that a 19,300-square-metre Ho Man Tin plot on Fat Kwong Street will be the sole government land tender in July–September, yielding about 250 flats. Combined with MTR and Urban Renewal Authority projects, first-half private housing land is expected to support 12,430 units, near the 12,600-unit annual target.
+
+11. **New People's Party urges dedicated aerospace office and fourth cross-harbour tunnel** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861768-20260710.htm
+Regina Ip's party submitted 29 proposals on 10 July for Hong Kong's first five-year plan and the Policy Address, calling for a space-economy office with open recruitment within six months and a Tseung Kwan O–Hong Kong Island tunnel to relieve near-capacity harbour crossings. Other ideas include GBA airport collaboration, AI governance and expanded childbirth incentives.
+
+12. **Hang Seng logs best week since October as mainland chip rally cools** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861775-20260710.htm
+Hong Kong's Hang Seng Index rose 0.6 per cent to 24,175 on 10 July, capping a nearly 4 per cent weekly gain on brighter internet sentiment while mainland bourses retreated as investors took profits on semiconductor stocks after Changxin Memory Technologies listing fever. Turnover reached HK$339.59 billion as the tech index still climbed about 5 per cent for the week.
+
+13. **Central Kowloon Bypass reopens after prefab housing truck crash** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/transport/article/3360077/driver-loses-control-truck-central-kowloon-bypass-fallen-goods-causing-jam
+https://news.rthk.hk/rthk/en/component/k2/1861757-20260710.htm
+A medium goods vehicle swerved into the tunnel wall around 9am on 10 July, shedding two prefabricated housing components and damaging the structure in one of the severest incidents since the HK$42 billion bypass opened in December 2025. Police reported no injuries and the Transport Department reopened all Yau Ma Tei-bound lanes later the same day.
+
+14. **Customs arrest two women smuggling puppy and endangered birds at border** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/society/article/3360103/2-women-arrested-hong-kong-border-after-dog-endangered-birds-found-bags
+https://news.rthk.hk/rthk/en/component/k2/1861742-20260710.htm
+Officers seized a HK$3,000 puppy from a 57-year-old mainland woman at Lo Wu on 9 July and two CITES-listed birds worth HK$5,000 from a 46-year-old local woman at Lok Ma Chau Spur Line. Cases were referred to the Agriculture, Fisheries and Conservation Department, with customs warning that illegal animal imports carry fines up to HK$50,000 and one year's imprisonment.
+
+15. **Parties urge fertility access for single women and extended newborn bonus** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3360134/hong-kong-political-parties-urge-access-fertility-services-single-women
+New People's Party convenor Regina Ip told Chief Executive John Lee on 10 July that Hong Kong should allow unmarried women assisted reproduction and extend the HK$20,000 newborn bonus that has paid more than HK$1.3 billion to 65,000 families since births fell to a record 31,100 in 2025. The party also proposed progressive bonuses of HK$30,000 for second children and 30 per cent increments for each additional child.
+
+16. **Very hot weather warning and heat-stroke alerts issued for 11 July** — info.gov.hk
+https://www.info.gov.hk/gia/general/202607/11/P2026071100137.htm
+https://www.info.gov.hk/gia/general/202607/11/P2026071100139.htm
+https://www.info.gov.hk/gia/general/202607/11/P2026071100160.htm
+The Observatory issued a very hot weather warning at 6.45am on 11 July as the Health Department urged the public to guard against heat cramps, exhaustion and stroke and the Labour Department activated its work heat-stress warning. Officials reminded outdoor workers and the elderly to take shade breaks, drink water and avoid caffeine or alcohol during the heatwave that follows Typhoon Bavi's departure from nearby seas.
+
+17. **Pak Shek Kok station fast-tracked for I&T hub as councillors press timeline** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/society/article/3360076/hong-kong-official-defends-u-turn-public-flats-pak-shek-kok-rail-stop-site
+https://news.rthk.hk/rthk/en/component/k2/1861752-20260710.htm
+The Development Bureau confirmed on 10 July that Pak Shek Kok East Rail station will be financed by private flats on resumed university land and targeted for opening by 2033, with construction from late 2028. Tai Po district councillors demanded faster mainland-style delivery, while highways officials said building on the operating East Rail corridor limits modern construction methods.
+
+18. **RTHK to refresh TV32 with anchor-led daytime bulletins from 20 July** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861782-20260710.htm
+Radio Television Hong Kong will launch half-hourly anchor summaries from 11am to 6.30pm and flagship 7pm Cantonese and 8pm English bulletins on TV32 starting 20 July, alongside new current affairs such as "Vision 15: Hong Kong's Chapter" on the city's five-year plan. Director of Broadcasting Angelina Kwan said the revamp aims to deliver objective Hong Kong and national perspectives through expanded English programming.
+
+19. **Privacy watchdog orders removal of viral ride-hailing video allegedly showing David Lui** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3360155/hong-kong-watchdog-orders-removal-viral-video-allegedly-involving-singer-david-lui
+The Privacy Commissioner for Personal Data directed a social media platform on 10 July to take down dashcam footage of a profanity-laced dispute between a driver and a passenger identified as singer David Lui over a GPS routing error. The office said identifiable in-vehicle recordings are personal data requiring explicit passenger consent before publication.
+
+20. **Woman charged with murder after Aberdeen minibus-stop brawl** — SCMP + HKFP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3359913/woman-50-arrested-murder-after-minibus-stop-fight-hong-kong
+https://hongkongfp.com/2026/07/10/woman-charged-with-murder-after-fight-at-minibus-stop-leaves-passenger-dead/
+Police charged 50-year-old cleaner Tian Xiaoying on 10 July with murdering 53-year-old Fung Chuk-lam after a fight at a Wah Fu Estate No. 63A minibus stop on 8 July; the victim died at Queen Mary Hospital. The case was adjourned to 4 September for autopsy reports and Tian was remanded in custody without bail.
+
+21. **Former senior prosecutor faces drink-driving charges over January Tai Wai crash** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3360065/former-top-hong-kong-prosecutor-court-over-injuring-man-while-drink-driving
+Barrister Franco Kuan Bak-on, 45, appeared in Sha Tin Court on 10 July accused of dangerous driving causing grievous bodily harm and exceeding the breath-alcohol limit after allegedly injuring Tou King-pan on Hung Mui Kuk Road around 1.50am on 11 January. A breath test recorded 47 micrograms per 100 millilitres, more than double the 22-microgram legal cap, and prosecutors sought a seven-week adjournment to move the case to the District Court.
+
+22. **HKEX pipeline grows with Kazakhstan railway and other overseas issuers** — SCMP
+https://www.scmp.com/business/banking-finance/article/3360049/hong-kong-exchange-marks-progress-luring-more-listings-abroad
+Hong Kong Exchanges and Clearing is fielding more international listing candidates after Kazakhstan Temir Zholy filed on 30 June and Canada's Silvercorp Metals and Indonesia's MNC Digital Entertainment joined the queue. PwC said on 10 July that most inquiries come from Southeast Asia and the Middle East, with consumer firms aiming to price deals before US midterm election volatility.
+
+
+Zhuhai inc. Hengqin (1):
+
+23. **Hengqin offers up to 3 million yuan for Macao construction firms and professionals** — NewsGD + Macao Business
+https://www.newsgd.com/node_99363c4f3b/77697895c9.shtml
+https://macaubusiness.com/hengqin-offers-up-to-3-million-yuan-for-macau-construction-firms/
+The Guangdong-Macao In-Depth Cooperation Zone opened 2025 support-funding applications on 10 July, offering Macao-funded builders and Hengqin-based professionals grants from 20,000 to 3 million yuan for eligible 2025 projects in construction, planning and infrastructure. Applications close on 10 August 2026 via the zone's online government platform, with an extra 30,000 yuan for each nationally recognised qualification obtained during the period.
+
+
+Guangzhou (2):
+
+24. **Guangdong Quality Products Exhibition opens 24 July with nearly 1,000 foreign buyers** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/b2501bb782.shtml
+Organisers said on 10 July that the second Guangdong Quality Products Exhibition will run 24–26 July at the Canton Fair Complex with about 1,500 manufacturers and nearly 1,000 overseas buyers, up from fewer than 300 last year. The fair will host three 150-delegate matchmaking sessions linking Asian, African and European buyers with Guangdong appliance, toy, food and furnishings producers.
+
+25. **Guangzhou cold-chain hub showcases GBA digital logistics for rural goods** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/517a9fce43.shtml
+Media toured the 380,000-square-metre Yuhu Cold Chain centre in Huadu on 9 July, where automated warehouses, real-time dashboards and the "Yuhu Code" traceability platform serve more than 600 firms trading meat, seafood and prepared meals. Operators said integrated cross-border procurement, customs and finance services are linking Pearl River Delta farms to domestic and overseas markets.
+
+
+Shenzhen (2):
+
+26. **APEC Tech for Good workshop closes in Qianhai after three-day governance forum** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/8e2bd6bb89.shtml
+More than 50 officials, academics and business leaders from 17 APEC economies attended the PPSTI-approved workshop in Qianhai from 8–10 July, debating AI ethics, digital economies and climate-related technology governance. Delegates will publish an "APEC Tech for Good Report" and the "Shenzhen Tech for Good Initiative" after site visits to local semiconductor, green-energy and drone-logistics firms.
+
+27. **Shenzhen drone network delivers coffee seven minutes from 10 km away** — NewsGD
+https://www.newsgd.com/node_d36b0ef83f/0dd0c0efaa.shtml
+A NewsGD feature on 10 July highlighted Shenzhen's operational low-altitude logistics network, where unmanned aircraft now carry coffee and parcels across roughly 10 kilometres in about seven minutes. The report said rooftop and hub-based drone routes are bypassing ground congestion to make urban delivery faster and more predictable.
+
+
+Nation (2):
+
+28. **China achieves first controlled orbital rocket booster recovery at sea** — RTHK + Xinhua
+https://news.rthk.hk/rthk/en/component/k2/1861744-20260710.htm
+https://english.news.cn/20260710/d861c323ce3840eb8678c00e7b60fd0a/c.html
+The Long March-10B lifted off from Wenchang on 10 July and returned its first stage vertically to an offshore platform about six minutes later, marking China's first retrieval of an orbital-class booster using a sea-based net system. State media said the test supports reusable-rocket development for crewed lunar missions before 2030 and another booster reuse attempt is planned by year-end.
+
+29. **China and Namibia elevate ties to a community with shared future** — Xinhua
+https://english.news.cn/20260711/335d046bb1394e4d96805af445c4fc02/c.html
+President Xi Jinping and Namibian President Netumbo Nandi-Ndaitwah announced upgraded relations on 10 July in Beijing, pledging closer high-level exchanges and cooperation on infrastructure, energy, mining, agriculture and science. Xi urged Namibia to use China's zero-tariff access and fast-track export channels while both sides signed economy, health, education and human-resources agreements.
+
+
+GBA sport (1):
+
+30. **PSG legend N'Gotty hosts free youth football clinic in Guangzhou Nansha today** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/2163645488.shtml
+Paris Saint-Germain Academy Greater Bay Area will hold a free open day at Puzhou Square in Guangzhou's Nansha District on 11 July from 10am to 4.20pm, with technical director Bruno N'Gotty leading drills for boys aged 10–17 and girls 13–15. The event is the academy's first public session since signing with the Greater Bay Area Culture and Sports Center on 11 June and includes UEFA-certified coaching and on-site raffle prizes.
+
+
+<!-- DAILY BRIEF AUDIT
+Date: 2026-07-11 HKT
+Stories: 30
+GBA filter drops: UK ex-minister murder probe (off-footprint); Ryanair window incident (international); Trump Air Force One security row (US politics); US-UAE export controls (no GBA primary impact); Spain/Belgium World Cup results (no GBA athlete/venue); H5N1 Philippines outbreak (no GBA geography); Spanish wildfire deaths (off-footprint); UK Burnham premiership track (off-footprint)
+Single-source items: Shenzhen drone logistics feature (NewsGD/Xinhua video only — kept as Shenzhen tech showcase); Namibia state visit (Xinhua only — kept as major diplomacy covered by GBA wire)
+Out of catalog: none
+-->
