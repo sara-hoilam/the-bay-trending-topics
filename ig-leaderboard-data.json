@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-11",
-  "refreshedAt": "2026-07-11T08:16:06+08:00",
+  "refreshedAt": "2026-07-11T08:19:05+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 663576,
+      "followers": 663578,
       "followersGrowthPct7d": 0.72,
       "history": [
         {
@@ -107,7 +107,7 @@
         },
         {
           "date": "2026-07-11",
-          "followers": 663576
+          "followers": 663578
         }
       ]
     },
@@ -630,8 +630,8 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 35905,
-      "followersGrowthPct7d": 4.79,
+      "followers": 35906,
+      "followersGrowthPct7d": 4.8,
       "history": [
         {
           "date": "2026-06-15",
@@ -727,7 +727,7 @@
         },
         {
           "date": "2026-07-11",
-          "followers": 35905
+          "followers": 35906
         }
       ]
     },
