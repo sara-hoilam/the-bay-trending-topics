@@ -161,9 +161,9 @@
     {
       "title": "Exhibition traces Chunshui academy's legacy and transformation",
       "start": "2026-06-26",
-      "end": "2026-09-09",
+      "end": "2026-08-25",
       "region": "shenzhen",
-      "location": "Guan Shanyue Art Museum, Futian",
+      "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/26/content_32103262.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 18,
@@ -742,14 +742,14 @@
       "highlighted": false
     },
     {
-      "title": "Picasso: A Retrospective of Printmaking — Futian",
+      "title": "Picasso's printmaking legacy presented in Futian",
       "start": "2026-07-06",
-      "end": "2026-07-31",
-      "region": "shenzhen",
-      "location": "cdPark, Futian, Shenzhen",
+      "end": "2026-09-04",
+      "region": "international",
+      "location": "International",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
+      "highlightScore": 22,
       "highlighted": false
     },
     {
@@ -882,17 +882,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://hkbookfair.hktdc.com/en/index.html",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 58,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
@@ -901,6 +890,17 @@
       "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 32,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
+      "start": "2026-07-15",
+      "end": "2026-07-21",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://hkbookfair.hktdc.com/en/index.html",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 58,
       "highlighted": true
     },
     {
@@ -1201,28 +1201,6 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-15",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/foodexpopro/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-15",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkteafair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 36,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
@@ -1240,6 +1218,28 @@
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkteafair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/foodexpopro/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
@@ -1445,17 +1445,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1475,6 +1464,17 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1511,17 +1511,6 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
-      "start": "2027-04-13",
-      "end": "2027-04-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkelectronicsfairse",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "InnoEX 2027 (HKCEC)",
       "start": "2027-04-13",
       "end": "2027-04-16",
@@ -1531,6 +1520,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
+      "start": "2027-04-13",
+      "end": "2027-04-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairse",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
     },
     {
       "title": "HKTDC Hong Kong International Lighting Fair (Spring Edition) 2027 (HKCEC)",
@@ -1555,6 +1555,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
+      "start": "2027-04-27",
+      "end": "2027-04-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hklicensingshow/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 14,
+      "highlighted": false
+    },
+    {
       "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1575,17 +1586,6 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
-      "start": "2027-04-27",
-      "end": "2027-04-29",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hklicensingshow/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 14,
-      "highlighted": false
     },
     {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",

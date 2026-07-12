@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-12",
-  "refreshedAt": "2026-07-12T08:11:41+08:00",
+  "refreshedAt": "2026-07-12T08:14:42+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 664065,
+      "followers": 664066,
       "followersGrowthPct7d": 0.75,
       "history": [
         {
@@ -111,7 +111,7 @@
         },
         {
           "date": "2026-07-12",
-          "followers": 664065
+          "followers": 664066
         }
       ]
     },
@@ -230,7 +230,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 123788,
+      "followers": 123789,
       "followersGrowthPct7d": 0.55,
       "history": [
         {
@@ -323,7 +323,7 @@
         },
         {
           "date": "2026-07-12",
-          "followers": 123788
+          "followers": 123789
         }
       ]
     },
