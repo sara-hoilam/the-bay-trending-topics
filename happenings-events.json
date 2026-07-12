@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-11",
+  "updatedAt": "2026-07-12",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 52,
+  "highlightedCount": 53,
   "events": [
     {
       "title": "From Dawn to Dusk — Life and Art in the Forbidden City",
@@ -161,9 +161,9 @@
     {
       "title": "Exhibition traces Chunshui academy's legacy and transformation",
       "start": "2026-06-26",
-      "end": "2026-08-25",
+      "end": "2026-09-09",
       "region": "shenzhen",
-      "location": "Shenzhen",
+      "location": "Guan Shanyue Art Museum, Futian",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-06/26/content_32103262.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 18,
@@ -742,14 +742,14 @@
       "highlighted": false
     },
     {
-      "title": "Picasso's printmaking legacy presented in Futian",
+      "title": "Picasso: A Retrospective of Printmaking — Futian",
       "start": "2026-07-06",
-      "end": "2026-09-04",
-      "region": "international",
-      "location": "International",
+      "end": "2026-07-31",
+      "region": "shenzhen",
+      "location": "cdPark, Futian, Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -1212,14 +1212,14 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Food Expo 2026 (HKCEC)",
+      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
       "start": "2026-08-13",
-      "end": "2026-08-17",
+      "end": "2026-08-15",
       "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
-      "url": "https://www.hktdc.com/event/hkfoodexpo/en",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkteafair",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
+      "highlightScore": 36,
       "highlighted": true
     },
     {
@@ -1245,13 +1245,24 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
+      "title": "HKTDC Food Expo 2026 (HKCEC)",
       "start": "2026-08-13",
-      "end": "2026-08-15",
+      "end": "2026-08-17",
       "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkteafair",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
+      "url": "https://www.hktdc.com/event/hkfoodexpo/en",
       "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "IWF Shenzhen International Fitness Expo",
+      "start": "2026-08-14",
+      "end": "2026-08-16",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center",
+      "url": "https://10times.com/e1h1-70r0-hkdh-k-iwf-shenzhen-international-fitness-expo",
+      "sourceDomain": "10times.com",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -1276,6 +1287,17 @@
       "sourceDomain": "10times.com",
       "highlightScore": 34,
       "highlighted": true
+    },
+    {
+      "title": "International Internet of Things Exhibition (IOTE) Shenzhen",
+      "start": "2026-08-26",
+      "end": "2026-08-28",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center",
+      "url": "https://10times.com/iote-shenzhen",
+      "sourceDomain": "10times.com",
+      "highlightScore": 20,
+      "highlighted": false
     },
     {
       "title": "Salon de TIME 2026 (HKCEC)",
@@ -1423,6 +1445,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1442,17 +1475,6 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1555,6 +1577,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
+      "start": "2027-04-27",
+      "end": "2027-04-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hklicensingshow/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 14,
+      "highlighted": false
+    },
+    {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1585,17 +1618,6 @@
       "url": "https://www.hktdc.com/event/fashioninstyle/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
-      "start": "2027-04-27",
-      "end": "2027-04-29",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hklicensingshow/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 14,
       "highlighted": false
     }
   ]
