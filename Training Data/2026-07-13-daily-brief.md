@@ -1,0 +1,166 @@
+THE BAY: Daily Brief
+Date: 13 July 2026 · 30 articles · method: daily-brief-agent-prompt (live source scan)
+
+<!-- article count verified: 30 numbered blocks -->
+
+
+GBA News (5):
+
+1. **HZMB Hong Kong private car quotas take effect with new open category**
+https://www.info.gov.hk/gia/general/202605/01/P2026043000320.htm
+https://www.info.gov.hk/gia/general/202607/13/P2026071300060.htm
+Private cars issued with 1,400 regular Hong Kong-Zhuhai-Macao Bridge quotas may enter Macao from 13 July, including 400 new open-category permits available to all permanent residents and registered companies without Macao employment ties. Quotas remain valid until 12 July 2029, with the Transport Department saying the arrangement strengthens cross-boundary driving after a May ballot.
+
+2. **Water Ministry upgrades flood alert as Typhoon Bavi weakens inland**
+https://news.rthk.hk/rthk/en/component/k2/1861960-20260712.htm
+https://english.news.cn/20260712/388adccf21094937af9c0d6ecdd3ec73/c.html
+https://hongkongfp.com/2026/07/12/typhoon-bavi-makes-landfall-in-china-as-death-toll-in-philippines-rises-to-18/
+China's Ministry of Water Resources raised its national flood warning to yellow on 12 July as the year's ninth typhoon moved northwest after double landfalls in Zhejiang with centre winds of 40 metres per second. Forecasters warned accumulative rainfall of 40–90 millimetres across eastern, central and southern basins, with some areas exceeding 260 millimetres and heightened risks of flash floods and urban waterlogging.
+
+3. **GBA clinical trial conference seeks faster lab-to-bedside translation**
+https://info.newsgd.com/node_91423f6a55/448ad6e699.shtml
+The Greater Bay Area International Clinical Trial Conference convened in Shenzhen on 12 July with global journal editors and hospital leaders discussing cross-border ethical review reciprocity and data sharing. The Guangdong Health Management Association event, co-hosted by Sun Yat-sen University's Seventh Affiliated Hospital and the Shenzhen Medical Academy of Research and Translation, showcased precision oncology and cardiovascular emergency protocols.
+
+4. **Southbound Guangdong driving quota doubles to 200 daily from 25 July**
+https://www.scmp.com/news/hong-kong/transport/article/3358583/hong-kong-expand-southbound-travel-scheme-all-21-guangdong-cities-demand-surges
+Transport Secretary Mable Chan said about 15,000 motorists applied for July's southbound urban entry permits — roughly triple the available quota — with 60 per cent from newly eligible Shenzhen, Foshan and Dongguan. Authorities will extend the scheme to all nine GBA mainland cities this month and aim to cover all 21 Guangdong prefectures by early 2027.
+
+5. **Gulf capital shifts toward Asia as Hong Kong trade jumps 35%**
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360263/gulf-capital-flowing-asia-hong-kong-middle-east-trade-35-paul-chan
+https://news.rthk.hk/rthk/en/component/k2/1861939-20260712.htm
+Financial Secretary Paul Chan said on 12 July that bilateral trade between Hong Kong and Gulf states rose 35 per cent year on year in the first five months of 2026, with UAE commerce up more than 52 per cent. He wrote that sovereign wealth funds allocated about 40 per cent of tens of billions of dollars in global investments to Asia last year, signalling diversified asset flows beyond Europe and North America.
+
+
+Macao (2):
+
+6. **Gaming concession taxes reach MOP51.2 billion in first half** — Macao Business
+https://macaubusiness.com/macau-gaming-taxes-rise-13-y-on-y-to-mop51-2-bln-in-h1/
+Macao collected MOP51.19 billion in gaming-related concession taxes in the six months to June 2026, up 13 per cent from MOP45.26 billion a year earlier and equal to 55.3 per cent of the annual authorised forecast. Gaming receipts accounted for nearly 92 per cent of combined tax and concession income as total government revenue reached MOP59.54 billion.
+
+7. **Chief Executive Sam orders tighter summer disaster coordination** — Macao Business + Xinhua
+https://macaubusiness.com/sam-urges-government-departments-to-boost-summer-disaster-response-security-coordination/
+https://english.news.cn/20260711/ac947ec749314093a40a7caadf5ce476/c.html
+Sam Hou Fai chaired a high-level summer security meeting on 11 July after instructions from President Xi Jinping on flood prevention, demanding named officials correct safety hazards and raise rescue readiness in old neighbourhoods. The session followed nationwide typhoon preparations as Bavi approached China's eastern coast and Guangdong authorities intensified cross-border disaster coordination.
+
+
+Hong Kong (16):
+
+8. **Tseung Kwan O line suspended between Hang Hau and Po Lam** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861986-20260713.htm
+The MTR Corporation suspended services between Hang Hau and Po Lam on 13 July morning because of an equipment fault on a train at Po Lam, running 12-minute intervals between North Point and Hang Hau and four-minute headways to Lohas Park. Commuters were advised to use alternative transport while the operator arranged free shuttle buses.
+
+9. **Observatory warns of heavy rain and squally thunderstorms midweek** — SCMP + RTHK
+https://www.scmp.com/news/hong-kong/health-environment/article/3360282/brace-heavy-rain-and-squally-thunderstorms-hong-kong-observatory-warns
+https://news.rthk.hk/rthk/en/component/k2/1861960-20260712.htm
+The Hong Kong Observatory said on 12 July that a broad trough over the central South China Sea would bring heavy showers and squally thunderstorms on 14 and 15 July, with temperatures between 26 and 30 degrees Celsius. Forecasters said it remained uncertain whether the low-pressure area would intensify into a tropical cyclone as it edged closer to the southern China coast.
+
+10. **65 arrested in raids on unlicensed nightclubs and gambling dens** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3360280/65-arrested-hong-kong-police-raid-unlicensed-nightclubs-gambling-dens
+Police arrested 40 men and 25 women aged 25 to 63 during a two-day operation ending 12 July that raided 10 venues across Hung Hom, Yau Ma Tei, Tsim Sha Tsui, Mong Kok and Sham Shui Po. Officers seized illicit drugs worth HK$190,000 and accused a syndicate of running illegal nightclubs in industrial buildings and supplying narcotics to patrons.
+
+11. **Medical Council to deploy clinicians on complaint investigations** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861935-20260712.htm
+Health Secretary Lo Chung-mau said on 12 July that investigators with medical backgrounds would be assigned to Medical Council cases under a revamp intended to halve initial screening from 12 months and cut full inquiries to about 2.5 years. He acknowledged avoidable delays in a 16-year case that left a newborn with cerebral palsy after a 2009 seizure at Baptist Hospital.
+
+12. **Civil service bureau to probe 15-year delay in baby blunder case** — SCMP
+https://www.scmp.com/news/hong-kong/health-environment/article/3360273/hong-kong-probes-civil-service-negligence-15-year-delay-over-baby-blunder-case
+https://www.scmp.com/news/hong-kong/society/article/3360248/parents-boy-paralysed-medical-blunder-welcome-penalty-vow-fight
+Lo Chung-mau said on 12 July that the Civil Service Bureau would examine whether staff neglected duties during the Medical Council's handling of a 2010 complaint over newborn Li Yuanjian, who suffered cerebral palsy after a December 2009 seizure. The boy's parents welcomed a nine-month suspension of paediatrician Dr Sit Sou-chi but vowed to pursue civil litigation for lifelong care costs.
+
+13. **Youth suicides confirmed by coroner hit decade high of 46** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3360213/youth-suicides-hong-kong-hit-10-year-high-court-report
+Hong Kong Coroner's Court data show 46 adolescents aged 10 to 19 died by suicide in 2025, up from 34 cases in 2024 and the highest level in a decade, even as overall confirmed suicides fell 10 per cent to 1,019. Most youth deaths involved falls from height, prompting warnings about "virtual alienation" among school-age residents.
+
+14. **Dog-friendly restaurant scheme sparks hygiene debate online** — SCMP
+https://www.scmp.com/news/hong-kong/society/article/3360288/hong-kongs-dog-friendly-licence-scheme-triggers-fierce-online-debate
+https://hongkongfp.com/2026/07/11/hong-kong-welcomes-dogs-into-restaurants-to-pet-owners-delight/
+More than 940 eateries welcomed leashed dogs indoors from 9 July, but viral clips of pets on tables fuelled online arguments over hygiene as a Ma On Shan Cafe 100% branch withdrew on 11 July citing tight spaces and boiling-water safety risks. The Food and Environmental Hygiene Department website listed nine other Cafe 100% outlets still participating.
+
+15. **Finance chief urges DSE graduates to pair passions with AI skills** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861939-20260712.htm
+Paul Chan said in his 12 July blog that students awaiting Wednesday's Diploma of Secondary Education results should combine subject interests with artificial-intelligence literacy to access new careers. He cited Hong Kong's hosting of Middle East technology forums as a window for youth to study AI applications in healthcare, finance and manufacturing.
+
+16. **Unionist welcomes statutory injury cover for gig delivery workers** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861948-20260712.htm
+https://news.rthk.hk/rthk/en/component/k2/1861866-20260711.htm
+Legislative Council manpower panel member Lam Chun-sing backed the government's plan on 12 July to require platforms to fund work-injury compensation for couriers, proposing apportionment by market share and workforce size. He said payouts could follow the Employees' Compensation Ordinance's two-year ceiling and urged future coverage of occupational diseases from heavy lifting.
+
+17. **Northern Metropolis heritage trail pilot targets rural tourism** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861945-20260712.htm
+Development Bureau official Liu Chiu-wing said on 12 July that authorities would revitalise historic buildings and launch a San Tin Timewalk trail under a HK$200 million budget pilot to promote urban-rural integration in the Northern Metropolis. Liu said government-led projects should encourage NGOs to restore privately owned village houses and draw visitors to New Territories cultural sites.
+
+18. **World Cup screenings lift Lan Kwai Fong trade up to 70%** — SCMP
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3360266/world-cup-2026-hong-kong-pubs-restaurants-enjoy-net-gains-big-matches
+Lan Kwai Fong Group chairman Allan Zeman said on 12 July that nightlife turnover jumped 60 to 70 per cent during early-morning England and other marquee matches, with Central bars packed until 4am by locals and tourists. Operators said the tournament offered respite after years of Hongkongers crossing the border for cheaper mainland dining.
+
+19. **Sun Hung Kai releases 120 flats at Garden Regency in Kam Tin** — SCMP
+https://www.scmp.com/business/article/3360152/hong-kong-developers-ready-new-home-launches-amid-forecasts-muted-price-increases
+Sun Hung Kai Properties priced 120 units at Garden Regency on 13 July with discounts of up to 16 per cent, ranging from HK$3.93 million for 289-square-foot flats to HK$5.88 million for 412-square-foot homes in the 566-unit Kam Tin North project. Wheelock Properties is also preparing the first batch at its 781-flat Park Silicon development in Kwu Tung North.
+
+20. **DSE candidates urged to prepare contingency plans before Wednesday results** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861943-20260712.htm
+Hok Yau Club adviser Clement Ng said on 12 July that about 59,000 Diploma of Secondary Education candidates should map best- and worst-case scores before results day and identify backup courses if they miss the minimum university threshold. Roughly 15,000 publicly funded degree places and 13,000 Vocational Training Council slots are available this year.
+
+21. **Student of the Year Awards to add AI literacy and GBA categories** — SCMP
+https://www.scmp.com/news/hong-kong/education/article/3360233/student-year-awards-40-pupils-lauded-organiser-reveals-expansion-plan
+Organisers honoured 40 pupils at the Hong Kong Convention and Exhibition Centre on 11 July after more than 900 nominations from 181 schools, announcing a new artificial-intelligence literacy category and recognition for excellence elsewhere in the Greater Bay Area from 2027. The South China Morning Post and Hong Kong Jockey Club scheme marked its 45th anniversary under the theme "Leadership in Action".
+
+22. **Nine arrested in New Territories North dangerous-driving crackdown** — SCMP
+https://www.scmp.com/news/hong-kong/law-and-crime/article/3360271/hong-kong-police-arrest-9-crackdown-dangerous-driving
+Police arrested eight men and one woman aged 37 to 62 between 5 and 12 July for dangerous and drink-driving after issuing 194 fixed-penalty tickets in a New Territories North highway operation. Officers seized six suspected illegally modified vehicles and said two arrestees were wanted for prior offences, with all suspects released on bail reporting in early August.
+
+23. **Dubai trade office promotes Hong Kong and GBA in Oman forum** — Hong Kong Government
+https://www.info.gov.hk/gia/general/202607/13/P2026071300060.htm
+Hong Kong's Dubai economic and trade office hosted an Oman-Hong Kong business forum in Muscat on 7 July with more than 150 officials and executives, highlighting the city as a gateway to the Greater Bay Area and Gulf investment flows. Director Chan Shang-man said China-Oman cooperation under the Belt and Road and Oman Vision 2040 is expanding into renewables, technology and digital economy projects.
+
+
+Shenzhen (2):
+
+24. **Huaqiangbei memory prices triple as AI boom squeezes PC vendors** — SCMP
+https://www.scmp.com/tech/tech-trends/article/3360212/chinas-electronics-hub-memory-chip-crisis-hitting-consumers-hard
+Traders in Shenzhen's Huaqiangbei hub said on 12 July that memory and solid-state drive costs have tripled over the past year and in some cases risen fivefold, forcing computer assemblers to raise prices and deterring casual buyers. Vendors inside SEG Plaza warned the supply squeeze driven by data-centre demand could push components higher through late 2026.
+
+25. **Window of the World pivots to immersive performances for Gen Z visitors** — NewsGD
+https://www.newsgd.com/node_5c070fdd03/eecb77ea16.shtml
+Shenzhen's Window of the World theme park is adding NPC interactions, live stages and a "9037 Street" retail zone to attract experience-driven young travellers rather than passive sightseeing. CBRE said family visitors still dominate summer traffic but Generation Z tourists increasingly choose destinations for concerts and tech showcases over landmark photography.
+
+
+Guangzhou (1):
+
+26. **Animation and game carnival set for 17 July launch** — NewsGD
+https://www.newsgd.com/node_5c070fdd03/eecb77ea16.shtml
+Guangzhou malls are preparing an animation and game carnival opening on 17 July alongside World Cup-themed pop-ups as part of a national summer cultural-tourism campaign distributing more than 450 million yuan in consumption vouchers through August. Organisers said youth subculture events aim to convert online fandoms into offline spending across the Pearl River Delta.
+
+
+Nation (3):
+
+27. **Beijing rejects South China Sea arbitration on tenth anniversary**
+https://macaubusiness.com/china-issues-statement-on-certain-countries-playing-up-of-so-called-south-china-sea-arbitration-award/
+https://www.news.cn/politics/20260710/d17906d32ba7445e86e3e70d790a9f96/c.html
+China's foreign ministry declared on 12 July that the 2016 South China Sea arbitration award is illegal, null and void, responding to a joint statement by the United States, Philippines and 13 other governments marking the ruling's tenth anniversary. Beijing said it would continue negotiating with directly concerned states and urged external powers to stop militarising the waterway.
+
+28. **China deplores Japanese foreign minister's South China Sea remarks** — Macao Business
+https://macaubusiness.com/china-strongly-deplores-japanese-fms-statement-on-south-china-sea-spokesperson/
+https://www.news.cn/world/20260710/d254cca03709431186901e64999460e7/c.html
+A foreign ministry spokesperson said on 12 July that Tokyo's endorsement of the arbitration award mischaracterised Japan as a legitimate South China Sea stakeholder and demanded that Foreign Minister Toshimitsu Motegi stop spreading disinformation. China pledged to defend its territorial sovereignty and maritime rights while calling for regional peace through ASEAN dialogue.
+
+29. **State Council safety body to oversee Fujian shoe factory fire probe** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861878-20260711.htm
+https://hongkongfp.com/2026/07/10/at-least-28-dead-in-china-factory-fire/
+The State Council work-safety commission said on 11 July it would supervise investigation of a Jinjiang shoe-factory blaze on 9 July that killed 28 workers, dispatching a National Fire and Rescue Administration team to determine causes and accountability. Quanzhou authorities pledged a comprehensive safety crackdown after blocked stairwells and adhesives fuelled the fire in a major footwear hub.
+
+
+GBA sport (1):
+
+30. **Guo Hanyu wins Wimbledon women's doubles with Kristina Mladenovic** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1861961-20260712.htm
+Tenth seeds Guo Hanyu and Kristina Mladenovic defeated second seeds Gabriela Dabrowski and Luisa Stefani 6-3, 7-5 on 12 July to capture the Wimbledon women's doubles title in Guo's first major final. The Chinese-French pair saved break points at 5-5 in the second set before Mladenovic served out the championship with a forehand winner.
+
+
+<!-- DAILY BRIEF AUDIT
+Date: 2026-07-13 HKT
+Stories: 30
+GBA filter drops: US strikes on Iran (Middle East conflict without GBA impact); Sinner Wimbledon men's singles (no GBA athlete); Bangkok pub blaze (Thailand local crime); Lindsey Graham death (US politics); Toronto shooting (North America local crime); Ukraine government reshuffle (Europe conflict); Portugal cocaine seizure (off-footprint)
+Single-source items: Garden Regency price list (SCMP only — kept as major developer launch); Animation carnival Guangzhou (NewsGD only — kept as provincial consumption campaign); Gaming taxes H1 (Macao Business only — kept as key fiscal indicator); Dubai Oman forum (info.gov.hk only — kept as GBA trade promotion)
+Out of catalog: none
+-->
