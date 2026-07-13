@@ -6,7 +6,7 @@ You are refreshing **`ig-leaderboard-data.json`** for the **IG Leaderboard** tab
 
 ## Goal
 
-Capture public Instagram follower counts for the nine benchmark accounts in `references/ig-leaderboard-accounts.json`.
+Capture public Instagram follower counts for the ten benchmark accounts in `references/ig-leaderboard-accounts.json`.
 
 ## Metrics per account
 
@@ -26,6 +26,7 @@ Capture public Instagram follower counts for the nine benchmark accounts in `ref
 | `thebeatasia` | The Beat Asia |
 | `o.cultmag` | O! Cult |
 | `lifestyleasiahk` | Lifestyle Asia HK |
+| `timeouthk` | Time Out Hong Kong |
 
 ## Steps
 
