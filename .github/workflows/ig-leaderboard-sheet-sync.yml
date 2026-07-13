@@ -9,6 +9,8 @@ on:
       - "scripts/sync-ig-leaderboard-sheet.mjs"
       - "scripts/capture-ig-leaderboard.mjs"
       - "scripts/fetch-ig-benchmark.mjs"
+      - "references/ig-leaderboard-accounts.json"
+      - "ig-leaderboard-data.json"
 
 run-name: "IG sheet sync · run ${{ github.run_number }}"
 
