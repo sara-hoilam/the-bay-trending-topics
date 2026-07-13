@@ -258,7 +258,7 @@ node scripts/sync-ig-leaderboard-sheet.mjs
 **Success log:**
 
 ```
-Appended 9 row(s) to Daily_Datalog for 2026-06-17 (sheet …)
+Appended 10 row(s) to Daily_Datalog for 2026-07-13 (sheet …)
 ```
 
 If secrets are missing, sync is skipped with a log message — the JSON refresh still succeeds.
@@ -334,7 +334,7 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 - [ ] Share sheet with service account (Editor)
 - [ ] Add GitHub secrets (`GOOGLE_SHEETS_IG_LEADERBOARD_ID`, `GOOGLE_SHEETS_IG_TAB`, `GOOGLE_SHEETS_CREDENTIALS`)
 - [ ] Test: `node scripts/sync-ig-leaderboard-sheet.mjs --dry-run`
-- [ ] Confirm 9 rows appended per daily run
+- [ ] Confirm 10 rows appended per daily run
 
 ### Automation
 
