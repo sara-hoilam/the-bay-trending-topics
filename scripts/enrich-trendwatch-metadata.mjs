@@ -53,7 +53,7 @@ const GLOSSARY = {
   "低 氣壓": {
     titleEn: "Low pressure (weather)",
     whyTrending:
-      "Weather searches jumped after Hong Kong Observatory flagged a low-pressure system affecting local conditions in early June.",
+      "Weather searches jumped after Hong Kong Observatory flagged a low-pressure system affecting local conditions during the active monsoon season.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -61,7 +61,7 @@ const GLOSSARY = {
   低氣壓: {
     titleEn: "Low pressure (weather)",
     whyTrending:
-      "Weather searches jumped after Hong Kong Observatory flagged a low-pressure system affecting local conditions in early June.",
+      "Weather searches jumped after Hong Kong Observatory flagged a low-pressure system affecting local conditions during the active monsoon season.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -163,6 +163,94 @@ const GLOSSARY = {
     titleEn: "Tencent Cloud DeepSeek cuts prices up to 97.5%",
     whyTrending:
       "Tencent Cloud's aggressive DeepSeek model pricing cuts hit Weibo tech hot search as enterprises compare AI inference costs — relevant to Shenzhen/HK cloud and fintech buyers.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  施南生: {
+    titleEn: "Shi Nansheng (film producer)",
+    whyTrending:
+      "Veteran Hong Kong film producer Shi Nansheng trended after fresh media coverage of her industry legacy and recent public appearances circulated in the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  龔嘉欣: {
+    titleEn: "Grace Wong (TVB actress)",
+    whyTrending:
+      "TVB actress Grace Wong spiked entertainment searches after on-screen and social-media coverage during the capture window.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  劉亦菲: {
+    titleEn: "Liu Yifei (actress)",
+    whyTrending:
+      "Mainland actress Liu Yifei drove celebrity entertainment searches on Hong Kong Google as fans looked up recent drama and appearance headlines.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  消費: {
+    titleEn: "Consumption / spending",
+    whyTrending:
+      "Consumer-spending keywords climbed as Hong Kong shoppers tracked mid-year retail promotions, dining deals and travel spending during the summer window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  香港施政報告: {
+    titleEn: "Hong Kong Policy Address",
+    whyTrending:
+      "Policy Address searches rose as Hong Kong residents looked up Chief Executive priorities, consultation timelines and expected livelihood measures ahead of the annual address season.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "熱帶 擾動": {
+    titleEn: "Tropical disturbance",
+    whyTrending:
+      "Tropical-disturbance queries jumped alongside Hong Kong Observatory monitoring as a weather system in the South China Sea drew typhoon-season attention.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  台风: {
+    titleEn: "Typhoon",
+    whyTrending:
+      "Typhoon-related searches rose across Hong Kong and the GBA as residents checked storm tracks, rain warnings and travel disruption during active monsoon season.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  习近平将出席世界人工智能大会开幕式: {
+    titleEn: "Xi to attend World AI Conference opening",
+    whyTrending:
+      "Baidu realtime topped out on Xi Jinping's planned attendance at the World AI Conference opening in Shanghai — a major national tech-policy signal with GBA AI-hub relevance.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "海南将禁售燃油车 释放什么信号": {
+    titleEn: "Hainan ICE ban — what signal?",
+    whyTrending:
+      "Hainan's plan to ban new fuel-vehicle sales by 2030 dominated Baidu as analysts debated EV transition timing and implications for GBA auto supply chains.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  中国自研AI芯片取得架构突破: {
+    titleEn: "China homegrown AI chip architecture breakthrough",
+    whyTrending:
+      "Weibo tech hot ranked domestic AI-chip architecture progress as users debated self-reliance and competition with Nvidia amid the Shanghai AI conference build-up.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  超强厄尔尼诺真要来了: {
+    titleEn: "Super El Niño may be coming",
+    whyTrending:
+      "Weibo traffic spiked on forecasts that a strong El Niño could form this autumn, with users sharing climate impacts on southern China weather and agriculture.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
