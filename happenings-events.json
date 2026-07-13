@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-12",
+  "updatedAt": "2026-07-13",
   "highlightScoreThreshold": 24,
   "highlightedCount": 53,
   "events": [
@@ -882,17 +882,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Hengqin New Area,Qianhai Shekou",
-      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 32,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
       "start": "2026-07-15",
       "end": "2026-07-21",
@@ -901,6 +890,17 @@
       "url": "https://hkbookfair.hktdc.com/en/index.html",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 58,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
+      "start": "2026-07-15",
+      "end": "2026-07-21",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Hengqin New Area,Qianhai Shekou",
+      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 32,
       "highlighted": true
     },
     {
