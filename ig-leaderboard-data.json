@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-14",
-  "refreshedAt": "2026-07-14T08:10:06+08:00",
+  "refreshedAt": "2026-07-14T08:13:12+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 664915,
+      "followers": 664916,
       "followersGrowthPct7d": 0.78,
       "history": [
         {
@@ -119,7 +119,7 @@
         },
         {
           "date": "2026-07-14",
-          "followers": 664915
+          "followers": 664916
         }
       ]
     },
@@ -128,7 +128,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 262378,
+      "followers": 262377,
       "followersGrowthPct7d": 0.5,
       "history": [
         {
@@ -237,7 +237,7 @@
         },
         {
           "date": "2026-07-14",
-          "followers": 262378
+          "followers": 262377
         }
       ]
     },
@@ -610,7 +610,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 44728,
+      "followers": 44729,
       "followersGrowthPct7d": 1,
       "history": [
         {
@@ -711,7 +711,7 @@
         },
         {
           "date": "2026-07-14",
-          "followers": 44728
+          "followers": 44729
         }
       ]
     },
