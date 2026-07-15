@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-07-14",
-  "refreshedAt": "2026-07-14T08:12:17+08:00",
+  "updatedAt": "2026-07-15",
+  "refreshedAt": "2026-07-15T08:12:46+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-01-12",
-  "windowEnd": "2027-01-13",
+  "windowStart": "2026-01-13",
+  "windowEnd": "2027-01-14",
   "count": 94,
   "countries": [
     "Bangladesh",
@@ -108,23 +108,6 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/la-salvada-melides",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Na Praia",
-      "location": "Comporta, Portugal",
-      "country": "Portugal",
-      "region": "portugal",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": "https://www.napraia.com/en",
-      "openDate": null,
-      "openDateLabel": "Q1 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-01-15",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/na-praia",
       "sourceName": "The Opening List"
     },
     {
@@ -261,23 +244,6 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/uga-ghiri",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Umi Resort Bali",
-      "location": "Bali, Indonesia",
-      "country": "Indonesia",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": null,
-      "websiteUrl": "https://umiresort.com",
-      "openDate": null,
-      "openDateLabel": "Q1 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-01-15",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/umiresortbali",
       "sourceName": "The Opening List"
     },
     {
@@ -499,6 +465,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/philippines-lagenislandresort",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Na Praia",
+      "location": "Comporta, Portugal",
+      "country": "Portugal",
+      "region": "portugal",
+      "hotelGroup": "Independent",
+      "stars": 5,
+      "websiteUrl": "https://www.napraia.com/en",
+      "openDate": null,
+      "openDateLabel": "Q2 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-04-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/na-praia",
       "sourceName": "The Opening List"
     },
     {
@@ -873,6 +856,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/quinta-amala-melides",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Umi Resort",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-07-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/umiresortbali",
       "sourceName": "The Opening List"
     },
     {
@@ -1562,7 +1562,7 @@
       "region": "asia",
       "hotelGroup": "Four Seasons",
       "stars": 5,
-      "websiteUrl": "https://www.fourseasons.com/",
+      "websiteUrl": null,
       "openDate": null,
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "month",
