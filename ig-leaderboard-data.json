@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-16",
-  "refreshedAt": "2026-07-16T08:15:56+08:00",
+  "refreshedAt": "2026-07-16T08:19:02+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 666068,
+      "followers": 666071,
       "followersGrowthPct7d": 0.68,
       "history": [
         {
@@ -127,7 +127,7 @@
         },
         {
           "date": "2026-07-16",
-          "followers": 666068
+          "followers": 666071
         }
       ]
     },
@@ -288,7 +288,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 124278,
+      "followers": 124279,
       "followersGrowthPct7d": 0.76,
       "history": [
         {
@@ -397,7 +397,7 @@
         },
         {
           "date": "2026-07-16",
-          "followers": 124278
+          "followers": 124279
         }
       ]
     },
@@ -406,7 +406,7 @@
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 95743,
+      "followers": 95744,
       "followersGrowthPct7d": 0.22,
       "history": [
         {
@@ -523,7 +523,7 @@
         },
         {
           "date": "2026-07-16",
-          "followers": 95743
+          "followers": 95744
         }
       ]
     },

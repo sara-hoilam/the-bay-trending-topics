@@ -148,6 +148,17 @@
       "highlighted": false
     },
     {
+      "title": "New thematic exhibition on Forbidden City opens at HKPM",
+      "start": "2026-06-22",
+      "end": "2026-08-21",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/22/content_32098089.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "Exhibition traces Chunshui academy's legacy and transformation",
       "start": "2026-06-26",
       "end": "2026-08-25",
@@ -430,6 +441,18 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "Macao 2026 Specialized World Stamp Exhibition",
+      "start": "2026-07-01",
+      "end": "2026-07-01",
+      "region": "macao",
+      "location": "Cotai Expo, The Venetian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 22,
       "highlighted": false
     },
     {
@@ -719,22 +742,22 @@
       "highlighted": false
     },
     {
-      "title": "Picasso: A Retrospective of Printmaking — Futian",
+      "title": "Picasso's printmaking legacy presented in Futian",
       "start": "2026-07-06",
-      "end": "2026-07-31",
-      "region": "shenzhen",
-      "location": "cdPark, Futian District",
+      "end": "2026-09-04",
+      "region": "international",
+      "location": "International",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 22,
       "highlighted": false
     },
     {
-      "title": "Tintin, Smurfs & Belgian comics — Guangming Culture and Art Center",
-      "start": "2026-07-02",
-      "end": "2026-09-19",
+      "title": "Come to Guangming for Tintin, Smurfs, and 100 years of magic",
+      "start": "2026-07-06",
+      "end": "2026-09-04",
       "region": "shenzhen",
-      "location": "Guangming Culture and Art Center",
+      "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112587.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
