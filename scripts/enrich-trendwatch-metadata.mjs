@@ -255,6 +255,326 @@ const GLOSSARY = {
     isNewsworthy: true,
     isGbaRelevant: true,
   },
+  英格蘭對阿根廷: {
+    titleEn: "England vs Argentina",
+    whyTrending:
+      "Argentina beat England 2-1 in the World Cup semifinal overnight on 16 July, sending Hong Kong users to Google for live scores, highlights and Argentina–Spain final preview.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  八达通: {
+    titleEn: "Octopus card",
+    whyTrending:
+      "Hong Kong's Octopus contactless payment card trended as users searched fare updates, mobile-wallet linking and retail promotions during the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  天文台: {
+    titleEn: "Hong Kong Observatory",
+    whyTrending:
+      "Observatory searches spiked as Hong Kong tracked thunderstorm and rain warnings through the active summer monsoon season.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "大 快活": {
+    titleEn: "Café de Coral",
+    whyTrending:
+      "Café de Coral fast-food chain queries rose as Hong Kong diners looked up menu deals, branch hours and summer promotions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  書展: {
+    titleEn: "Hong Kong Book Fair",
+    whyTrending:
+      "Book Fair searches climbed ahead of the annual Hong Kong event as readers hunted exhibitor lists, ticket details and author schedules.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  羅家英: {
+    titleEn: "Law Kar-ying (actor)",
+    whyTrending:
+      "Veteran actor Law Kar-ying trended after renewed media coverage of his health update and public appearances circulated locally.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  dse: {
+    titleEn: "HKDSE exams",
+    whyTrending:
+      "Hong Kong DSE results season pushed exam-grade and university-admission queries as students and parents checked release timelines and cut-off scores.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "法國 對 西班牙": {
+    titleEn: "France vs Spain",
+    whyTrending:
+      "Spain's 2-0 World Cup semifinal win over France kept match replay and final-preview searches high among Hong Kong football fans.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  逃票: {
+    titleEn: "Fare evasion",
+    whyTrending:
+      "MTR fare-evasion enforcement stories drew commuter searches for penalties, appeals and recent crackdown cases.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  梅西: {
+    titleEn: "Lionel Messi",
+    whyTrending:
+      "Messi searches followed Argentina's semifinal win as fans looked up his assists, fitness and role in the World Cup final against Spain.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  安素費南迪斯: {
+    titleEn: "Enzo Fernández",
+    whyTrending:
+      "Enzo Fernández trended after his combative role in Argentina's physical World Cup semifinal against England drew highlight and discipline searches.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿根廷: {
+    titleEn: "Argentina",
+    whyTrending:
+      "Argentina national team queries surged after the 2-1 semifinal win set up a World Cup final showdown with Spain on 20 July.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  天文台時間: {
+    titleEn: "Observatory time",
+    whyTrending:
+      "Users checked official Hong Kong Observatory clock and warning-issue times alongside active thunderstorm alerts.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  天气: {
+    titleEn: "Weather",
+    whyTrending:
+      "Weather keyword searches rose among Hong Kong users tracking local rain warnings and cross-border travel conditions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  私煙: {
+    titleEn: "Contraband cigarettes",
+    whyTrending:
+      "Illegal-cigarette enforcement and duty-evasion cases pushed tobacco-control and customs-penalty searches in Hong Kong.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  世界杯: {
+    titleEn: "World Cup",
+    whyTrending:
+      "World Cup bracket and final-preview searches dominated after Argentina and Spain reached the championship match.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  杜曹: {
+    titleEn: "Du Chao (football pundit)",
+    whyTrending:
+      "Football pundit Du Chao trended on Hong Kong Google as World Cup semifinal commentary and post-match analysis clips circulated.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  习近平在上海考察: {
+    titleEn: "Xi Jinping inspects Shanghai",
+    whyTrending:
+      "President Xi Jinping's Shanghai inspection tour topped Baidu realtime as state media amplified tech, manufacturing and urban-development visits ahead of major policy messaging.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "美军对驶往伊朗油轮射“地狱火”导弹": {
+    titleEn: "US fires Hellfire at tanker bound for Iran",
+    whyTrending:
+      "Middle East escalation drove Baidu traffic as reports said US forces struck an oil tanker heading for Iran, deepening Iran–US tension searches.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  家长月薪3500元请大学生暑假带娃: {
+    titleEn: "Parent on ¥3,500 salary hires student nanny",
+    whyTrending:
+      "A viral childcare-cost debate trended as a parent on a modest salary hired a university student for summer childcare, sparking nationwide affordability discussion.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "伊朗“无意谈判”再袭美军基地": {
+    titleEn: "Iran hits US base, says no talks intent",
+    whyTrending:
+      "Iran-related military headlines spiked after Tehran signalled no interest in negotiations while reporting fresh strikes on US facilities.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "飞了40多年 深圳这座机场要搬了": {
+    titleEn: "Shenzhen airport relocating after 40 years",
+    whyTrending:
+      "Shenzhen's long-serving airport relocation plan trended on Baidu as GBA residents searched timeline, new site details and aviation impact for the Bay Area hub.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿根廷绝杀英格兰: {
+    titleEn: "Argentina stoppage-time win over England",
+    whyTrending:
+      "Argentina's 2-1 World Cup semifinal comeback over England topped Weibo realtime hot overnight on 16 July with highlight clips and referee-debate threads.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "贝林厄姆 赛后打人": {
+    titleEn: "Bellingham confronts opponent post-match",
+    whyTrending:
+      "Jude Bellingham's post-match confrontation after England's semifinal loss trended on Weibo with video clips of the touchline scuffle.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  Apple智能: {
+    titleEn: "Apple Intelligence",
+    whyTrending:
+      "Apple Intelligence approval and China launch timing drove Weibo tech search after regulators cleared on-device AI features for mainland iPhones.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "苹果AI 千问": {
+    titleEn: "Apple AI × Qwen",
+    whyTrending:
+      "Alibaba Qwen integration into Apple AI for China trended as users debated Siri replacements and on-device model access for mainland iPhones.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  小米MiMo通过国家大模型备案: {
+    titleEn: "Xiaomi MiMo passes LLM filing",
+    whyTrending:
+      "Xiaomi's MiMo large-model filing approval hit Weibo tech hot as users tracked domestic AI compliance and product launch timelines.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  苹果AI国行版已过审: {
+    titleEn: "Apple AI China version approved",
+    whyTrending:
+      "Regulatory clearance for Apple Intelligence on mainland iPhones spiked tech search as users anticipated iOS feature rollouts.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  什么工作不会被AI替代: {
+    titleEn: "Jobs AI won't replace",
+    whyTrending:
+      "Career-anxiety debate trended on Weibo tech as AI rollouts prompted users to discuss which professions remain resilient to automation.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿根廷2比1淘汰英格兰: {
+    titleEn: "Argentina beats England 2-1, faces Spain in final",
+    whyTrending:
+      "Argentina's 2-1 World Cup semifinal win over England dominated Baidu realtime as users searched highlights, scorers and the 20 July final against Spain.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "阿根廷2比1淘汰英格兰 决赛战西班牙": {
+    titleEn: "Argentina beats England 2-1, faces Spain in final",
+    whyTrending:
+      "Argentina's 2-1 World Cup semifinal win over England dominated Baidu realtime as users searched highlights, scorers and the 20 July final against Spain.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  世界杯决赛对阵图来了: {
+    titleEn: "World Cup final bracket graphic",
+    whyTrending:
+      "Spain versus Argentina final matchup graphics trended on Baidu after both teams won their semifinals, setting up the 20 July championship.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿根廷连续4场绝杀: {
+    titleEn: "Argentina four straight late winners",
+    whyTrending:
+      "Argentina's streak of four consecutive stoppage-time knockout wins in the 2026 World Cup trended as fans searched comeback highlights and final odds.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  英格兰vs阿根廷: {
+    titleEn: "England vs Argentina",
+    whyTrending:
+      "The England–Argentina World Cup semifinal dominated Weibo realtime hot as users shared foul-heavy highlight reels and Argentina's 2-1 comeback win.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "二季度GDP增长4.3% 怎么看": {
+    titleEn: "Q2 GDP growth 4.3% — analysis",
+    whyTrending:
+      "China's Q2 GDP print at 4.3% YoY trended on Baidu as analysts debated the slowdown from Q1's 5.0% and implications for stimulus and GBA manufacturing.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  网红白狮阿杭离世: {
+    titleEn: "Guangzhou Zoo star lion Ah Hang dies",
+    whyTrending:
+      "Guangzhou Zoo's beloved white lion Ah Hang died on 14 July, trending on Baidu as visitors mourned the 17-year-old 'fringe-cut lion' icon.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  DeepSeek工资待遇太恐怖了: {
+    titleEn: "DeepSeek pay packages shock netizens",
+    whyTrending:
+      "DeepSeek compensation figures trended on Weibo tech as users debated AI talent wars and mainland tech-sector pay scales.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  中国用户终于迎来满血iPhone: {
+    titleEn: "China users get full-featured iPhone",
+    whyTrending:
+      "Weibo tech traffic rose as Apple Intelligence and Qwen integration promised mainland iPhone users parity with global AI features after regulatory approval.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  长鑫科技IPO: {
+    titleEn: "ChangXin Technology IPO",
+    whyTrending:
+      "Memory-chip maker ChangXin's IPO filing trended on Weibo tech amid domestic semiconductor self-reliance debates relevant to GBA electronics supply chains.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  小米人形机器人: {
+    titleEn: "Xiaomi humanoid robot",
+    whyTrending:
+      "Xiaomi humanoid-robot demos hit Weibo tech hot as users compared domestic robotics progress with global AI hardware competition.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
 };
 
 function normTitle(t) {
@@ -264,10 +584,15 @@ function normTitle(t) {
 function lookupGlossary(title) {
   const t = normTitle(title);
   if (GLOSSARY[t]) return GLOSSARY[t];
+  let best = null;
+  let bestLen = 0;
   for (const [key, val] of Object.entries(GLOSSARY)) {
-    if (t.includes(key) || key.includes(t)) return val;
+    if (t.includes(key) && key.length > bestLen) {
+      best = val;
+      bestLen = key.length;
+    }
   }
-  return null;
+  return best;
 }
 
 function applyMeta(it, candidate) {
@@ -293,6 +618,9 @@ function applyMeta(it, candidate) {
       it.isGossip = true;
       it.isNewsworthy = false;
     }
+  }
+  if (/[\u4e00-\u9fff]/.test(it.title) && it.titleEn === it.title) {
+    delete it.titleEn;
   }
   if (it.isGbaRelevant == null && !it.isGossip) it.isGbaRelevant = true;
   if (it.isNewsworthy == null && !it.isGossip) it.isNewsworthy = true;
