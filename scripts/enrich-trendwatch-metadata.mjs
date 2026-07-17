@@ -575,6 +575,165 @@ const GLOSSARY = {
     isNewsworthy: true,
     isGbaRelevant: true,
   },
+  "紅 雨 停課": {
+    titleEn: "Red rainstorm class suspension",
+    whyTrending:
+      "Hong Kong's red rainstorm warning overlapped with school hours on 16–17 July, driving searches for Education Bureau suspension notices and Observatory alert updates.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "英格蘭 對 阿根廷": {
+    titleEn: "England vs Argentina",
+    whyTrending:
+      "Argentina beat England 2-1 in the World Cup semifinal overnight on 16 July, sending Hong Kong users to Google for live scores, highlights and Argentina–Spain final preview.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "hku space": {
+    titleEn: "HKU SPACE",
+    whyTrending:
+      "HKU School of Professional and Continuing Education queries rose as Hong Kong learners searched summer course enrolment, exam timetables and campus updates.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  張學友: {
+    titleEn: "Jacky Cheung (singer)",
+    whyTrending:
+      "Cantopop star Jacky Cheung spiked entertainment searches after fresh concert and media coverage circulated during the 48-hour capture window.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  杜汶澤: {
+    titleEn: "Chapman To (actor)",
+    whyTrending:
+      "Actor Chapman To trended on Hong Kong Google after controversial social-media posts and entertainment headlines drew fan searches.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  吳綺莉: {
+    titleEn: "Marylin Wu (actress)",
+    whyTrending:
+      "Actress Marylin Wu drove celebrity entertainment searches amid renewed tabloid coverage during the capture window.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  人民的小事就是我们的大事: {
+    titleEn: "People's small matters are our big matters (Xi line)",
+    whyTrending:
+      "President Xi Jinping's Shanghai community visit on 15 July — highlighting urban renewal and 'toilet-free' housing upgrades — topped Baidu realtime as state media amplified the livelihood slogan.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "前一秒石库门 下一秒进未来": {
+    titleEn: "From shikumen lanes to the AI future",
+    whyTrending:
+      "Shanghai's World AI Conference (WAIC) build-up trended on Baidu as promotional content contrasted historic shikumen neighbourhoods with the city's AI-industry ambitions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "TVB演员梁爱在养老院去世": {
+    titleEn: "TVB actress Leung Oi dies in nursing home",
+    whyTrending:
+      "Veteran TVB actress Leung Oi died aged 87 at a Shenzhen nursing home on 8 July; her family announced the news on 16 July, trending across Baidu and GBA entertainment searches.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "伊朗：美军事打击构成“战争罪”": {
+    titleEn: "Iran: US strikes are war crimes",
+    whyTrending:
+      "Tehran's accusation that US military strikes constitute war crimes trended on Baidu as Middle East escalation and oil-tanker incidents kept Iran–US tension in national search traffic.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "外露式、半隐藏门把手“集体回归”": {
+    titleEn: "Exposed and semi-hidden car door handles return",
+    whyTrending:
+      "A wave of July 16 new-car launches — including XPeng MONA L03 and Li Auto L6 — revived debate on door-handle safety after hidden-handle incidents, topping Baidu auto search.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  FIFA回应是否处罚阿根廷: {
+    titleEn: "FIFA response on Argentina penalty",
+    whyTrending:
+      "Weibo users searched whether FIFA would sanction Argentina after a physical World Cup semifinal against England, following controversy over fouls and stoppage-time goals.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  世界杯也有冠军戒指了: {
+    titleEn: "World Cup now has championship rings",
+    whyTrending:
+      "FIFA's new World Cup winner ring design trended on Weibo as fans debated memorabilia and compared the rings to US sports championship traditions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿根廷西班牙争夺大力神杯: {
+    titleEn: "Argentina vs Spain for World Cup trophy",
+    whyTrending:
+      "Argentina–Spain final preview searches surged on Weibo after both teams won their semifinals, setting up the 20 July championship in New York.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿根廷的最后十分钟怎么了: {
+    titleEn: "What happened in Argentina's last ten minutes",
+    whyTrending:
+      "Highlight clips of Argentina's stoppage-time comeback against England trended on Weibo as users rewatched the chaotic final minutes of the semifinal.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  A股: {
+    titleEn: "A-shares (mainland stocks)",
+    whyTrending:
+      "Mainland A-share market moves trended on Weibo as investors tracked chip, EV and AI sector volatility during the mid-July trading week.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  服务员帮人传话多次叫女顾客去包厢: {
+    titleEn: "Waiter repeatedly summons diner to private room",
+    whyTrending: "",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  補貼: {
+    titleEn: "Subsidies / rebates",
+    whyTrending:
+      "Government subsidy and consumer-rebate keywords trended as Hong Kong residents searched transport concessions, energy allowances and retail cashback schemes.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  退休: {
+    titleEn: "Retirement",
+    whyTrending:
+      "Retirement-planning searches rose in Hong Kong amid discussions of MPF withdrawals, pension age and post-pandemic workforce transitions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  陣風: {
+    titleEn: "Squalls / gusty winds",
+    whyTrending:
+      "Squally-shower and gust warnings from the Hong Kong Observatory pushed wind-related weather searches during the active summer monsoon period.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
 };
 
 function normTitle(t) {
