@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
   "updatedAt": "2026-07-17",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 52,
+  "highlightedCount": 53,
   "events": [
     {
       "title": "From Dawn to Dusk — Life and Art in the Forbidden City",
@@ -201,6 +201,18 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
       "highlightScore": 116,
+      "highlighted": true
+    },
+    {
+      "title": "Feast of Na Tcha",
+      "start": "2026-07-01",
+      "end": "2026-07-02",
+      "region": "macao",
+      "location": "Na Tcha Temple",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": true,
+      "highlightScore": 40,
       "highlighted": true
     },
     {
@@ -429,6 +441,18 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "Macao 2026 Specialized World Stamp Exhibition",
+      "start": "2026-07-01",
+      "end": "2026-07-01",
+      "region": "macao",
+      "location": "Cotai Expo, The Venetian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 22,
       "highlighted": false
     },
     {
@@ -720,12 +744,12 @@
     {
       "title": "Picasso's printmaking legacy presented in Futian",
       "start": "2026-07-06",
-      "end": "2026-07-31",
-      "region": "shenzhen",
-      "location": "Futian, Shenzhen",
+      "end": "2026-09-04",
+      "region": "international",
+      "location": "International",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
+      "highlightScore": 22,
       "highlighted": false
     },
     {
