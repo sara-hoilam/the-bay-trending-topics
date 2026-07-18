@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-17",
+  "updatedAt": "2026-07-18",
   "highlightScoreThreshold": 24,
   "highlightedCount": 53,
   "events": [
@@ -36,17 +36,6 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
       "highlighted": true
-    },
-    {
-      "title": "Ryuichi Sakamoto | seeing sound, hearing time at M+",
-      "start": "2026-02-14",
-      "end": "2026-07-12",
-      "region": "hk",
-      "location": "M+, West Kowloon",
-      "url": "https://www.westk.hk/en/event/ryuichi-sakamoto-seeing-sound-hearing-time",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 20,
-      "highlighted": false
     },
     {
       "title": "Lee Bul: From 1998 to Now at M+",
@@ -254,7 +243,7 @@
     {
       "title": "Tourism and “Leisure” Buses",
       "start": "2026-07-01",
-      "end": "2026-07-26",
+      "end": "2027-01-03",
       "region": "macao",
       "location": "Leisure Area of Kun Iam Statue Waterfront",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
@@ -883,14 +872,14 @@
       "highlighted": true
     },
     {
-      "title": "Greater Bay Area International Children Baby and Maternity Products Expo",
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
       "start": "2026-07-15",
-      "end": "2026-07-17",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/e14d-dg8s-sx0f-8",
-      "sourceDomain": "10times.com",
-      "highlightScore": 36,
+      "end": "2026-07-21",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Hengqin New Area,Qianhai Shekou",
+      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 32,
       "highlighted": true
     },
     {
@@ -902,17 +891,6 @@
       "url": "https://hkbookfair.hktdc.com/en/index.html",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 58,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Hengqin New Area,Qianhai Shekou",
-      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 32,
       "highlighted": true
     },
     {
@@ -1141,6 +1119,17 @@
       "highlighted": true
     },
     {
+      "title": "HSBC Life presents The Big Big Day",
+      "start": "2026-07-24",
+      "end": "2026-08-16",
+      "region": "hk",
+      "location": "The Box, Freespace, West Kowloon",
+      "url": "https://www.westk.hk/en/whats-on",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "Macao Orchestra 2025-26 Season Closing Concert “Chopin by Zitong Wang”",
       "start": "2026-07-25",
       "end": "2026-07-25",
@@ -1225,12 +1214,45 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "title": "Echoes of Eternity — Tan Weiwei concert",
+      "start": "2026-08-01",
+      "end": "2026-08-01",
+      "region": "hk",
+      "location": "Grand Theatre, Xiqu Centre, West Kowloon",
+      "url": "https://www.westk.hk/en/whats-on",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
+      "title": "CATS The Musical at Xiqu Centre",
+      "start": "2026-08-06",
+      "end": "2026-09-06",
+      "region": "hk",
+      "location": "Grand Theatre, Xiqu Centre, West Kowloon",
+      "url": "https://www.westk.hk/en/event/cats-musical",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
+      "title": "Home Furnishing Expo Shenzhen",
+      "start": "2026-08-07",
+      "end": "2026-08-09",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center",
+      "url": "https://10times.com/shenzhen-cn/tradeshows",
+      "sourceDomain": "10times.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
       "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
+      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
@@ -1269,12 +1291,12 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
       "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
-      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
@@ -1357,6 +1379,17 @@
       "highlighted": false
     },
     {
+      "title": "Book of Mountains and Seas — Finale",
+      "start": "2026-09-07",
+      "end": "2026-09-14",
+      "region": "hk",
+      "location": "Freespace, West Kowloon",
+      "url": "https://www.westk.hk/en/event/book-mountains-seas-finale",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 16,
+      "highlighted": false
+    },
+    {
       "title": "BABYMONSTER WORLD TOUR [춤 (CHOOM)] IN MACAO",
       "start": "2026-09-12",
       "end": "2026-09-12",
@@ -1399,6 +1432,17 @@
       "sourceDomain": "ticketflap.com",
       "highlightScore": 32,
       "highlighted": true
+    },
+    {
+      "title": "Myths and Monsters — Art of Fantasy in Asia at M+",
+      "start": "2026-10-17",
+      "end": "2027-04-04",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.westk.hk/en/event/mplus-exhibitions",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
     },
     {
       "title": "Eco Expo Asia 2026 (AsiaWorld-Expo)",
@@ -1535,17 +1579,6 @@
       "highlighted": false
     },
     {
-      "title": "InnoEX 2027 (HKCEC)",
-      "start": "2027-04-13",
-      "end": "2027-04-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/innoex",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
       "start": "2027-04-13",
       "end": "2027-04-16",
@@ -1555,6 +1588,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "InnoEX 2027 (HKCEC)",
+      "start": "2027-04-13",
+      "end": "2027-04-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/innoex",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "HKTDC Hong Kong International Lighting Fair (Spring Edition) 2027 (HKCEC)",
