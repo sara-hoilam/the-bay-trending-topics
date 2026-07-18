@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-18",
-  "refreshedAt": "2026-07-18T08:13:47+08:00",
+  "refreshedAt": "2026-07-18T08:17:07+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 667927,
+      "followers": 667928,
       "followersGrowthPct7d": 0.66,
       "history": [
         {
@@ -135,7 +135,7 @@
         },
         {
           "date": "2026-07-18",
-          "followers": 667927
+          "followers": 667928
         }
       ]
     },
@@ -278,7 +278,7 @@
       "displayName": "Time Out Hong Kong",
       "url": "https://www.instagram.com/timeouthk/",
       "highlight": false,
-      "followers": 203116,
+      "followers": 203115,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -303,7 +303,7 @@
         },
         {
           "date": "2026-07-18",
-          "followers": 203116
+          "followers": 203115
         }
       ]
     },
@@ -312,7 +312,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 124630,
+      "followers": 124631,
       "followersGrowthPct7d": 0.78,
       "history": [
         {
@@ -429,7 +429,7 @@
         },
         {
           "date": "2026-07-18",
-          "followers": 124630
+          "followers": 124631
         }
       ]
     },
