@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-20",
-  "refreshedAt": "2026-07-20T08:12:16+08:00",
+  "refreshedAt": "2026-07-20T08:15:39+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -152,7 +152,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 263080,
+      "followers": 263079,
       "followersGrowthPct7d": 0.29,
       "history": [
         {
@@ -285,7 +285,7 @@
         },
         {
           "date": "2026-07-20",
-          "followers": 263080
+          "followers": 263079
         }
       ]
     },
@@ -336,7 +336,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 124918,
+      "followers": 124919,
       "followersGrowthPct7d": 0.83,
       "history": [
         {
@@ -461,7 +461,7 @@
         },
         {
           "date": "2026-07-20",
-          "followers": 124918
+          "followers": 124919
         }
       ]
     },
@@ -613,7 +613,7 @@
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
       "followers": 91341,
-      "followersGrowthPct7d": 0.03,
+      "followersGrowthPct7d": 0.02,
       "history": [
         {
           "date": "2026-06-15",
@@ -889,7 +889,7 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 36574,
-      "followersGrowthPct7d": 1.01,
+      "followersGrowthPct7d": 0.99,
       "history": [
         {
           "date": "2026-06-15",
@@ -1030,7 +1030,7 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 18465,
+      "followers": 18466,
       "followersGrowthPct7d": 0.98,
       "history": [
         {
@@ -1163,7 +1163,7 @@
         },
         {
           "date": "2026-07-20",
-          "followers": 18465
+          "followers": 18466
         }
       ]
     },
