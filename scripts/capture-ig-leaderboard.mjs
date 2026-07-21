@@ -19,6 +19,7 @@ import {
   loadAccountConfig,
   loadLeaderboardData,
   mergeSnapshot,
+  parseFollowerCount,
   writeLeaderboardData,
 } from "./ig-leaderboard-utils.mjs";
 import { hktDateStr } from "./hkt-date.mjs";
@@ -41,13 +42,14 @@ function readSnapshotArg() {
 function normalizeSnapshot(snapshot) {
   if (!snapshot) return null;
   if (snapshot.accounts && typeof snapshot.accounts === "object") {
-    return snapshot.accounts;
+    snapshot = snapshot.accounts;
   }
   const out = {};
   for (const [handle, val] of Object.entries(snapshot)) {
     if (handle === "capturedAt" || handle === "notes") continue;
     if (val && typeof val === "object" && "followers" in val) {
-      out[handle] = { followers: val.followers ?? null };
+      const followers = parseFollowerCount(val.followers);
+      if (followers != null) out[handle] = { followers };
     }
   }
   return Object.keys(out).length ? out : null;
@@ -123,14 +125,47 @@ function main() {
     console.log("No existing ig-leaderboard-data.json — seeding from competitors benchmark.");
   }
 
+  const staleHandles = [];
+  let apiHandles = new Set();
+  let manualHandles = new Set();
+
+  if (process.argv.includes("--refresh")) {
+    const snapPath = path.join(root, "orchestration/ig-leaderboard-snapshot.json");
+    const manualPath = path.join(root, "references/ig-leaderboard-manual-snapshot.json");
+    apiHandles = new Set(
+      fs.existsSync(snapPath)
+        ? Object.keys(
+            normalizeSnapshot(JSON.parse(fs.readFileSync(snapPath, "utf8"))) || {}
+          )
+        : []
+    );
+    manualHandles = new Set(
+      fs.existsSync(manualPath)
+        ? Object.keys(
+            normalizeSnapshot(JSON.parse(fs.readFileSync(manualPath, "utf8"))) || {}
+          )
+        : []
+    );
+  }
+
   const accounts = configs.map((cfg) => {
     const prev = existingByHandle[cfg.handle];
     const snap = snapshot?.[cfg.handle];
     if (snap) {
-      return mergeSnapshot(prev, cfg, snapshotFields(snap, prev), today);
+      const row = mergeSnapshot(prev, cfg, snapshotFields(snap, prev), today);
+      if (apiHandles.has(cfg.handle)) row.followersSource = "instagram-api";
+      else if (manualHandles.has(cfg.handle)) row.followersSource = "manual";
+      else row.followersSource = "snapshot";
+      return row;
     }
-    if (prev) {
-      return mergeSnapshot(prev, cfg, { followers: prev.followers }, today);
+    if (prev?.followers != null) {
+      staleHandles.push(cfg.handle);
+      console.warn(
+        `STALE ${cfg.handle}: Instagram fetch missed — carrying forward ${prev.followers.toLocaleString()} from prior snapshot (may be outdated)`
+      );
+      const row = mergeSnapshot(prev, cfg, { followers: prev.followers }, today);
+      row.followersSource = "carried-forward";
+      return row;
     }
     return mergeSnapshot(null, cfg, {}, today);
   });
@@ -143,6 +178,11 @@ function main() {
   console.log(
     `OK ig-leaderboard updatedAt=${data.updatedAt} (${withFollowers}/${data.accounts.length} accounts with follower counts, ${withGrowth} with 7d growth)`
   );
+  if (staleHandles.length) {
+    console.warn(
+      `WARNING: ${staleHandles.length} stale handle(s) carried forward: ${staleHandles.join(", ")}. Update references/ig-leaderboard-manual-snapshot.json with verified follower counts, then re-run.`
+    );
+  }
 
   if (!process.argv.includes("--no-sheet-sync")) {
     const sheetPath = path.join(__dirname, "sync-ig-leaderboard-sheet.mjs");
