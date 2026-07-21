@@ -353,7 +353,7 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 | `Requested entity was not found` | Wrong sheet ID or service account not shared | Check ID + share sheet as Editor |
 | Growth % always empty | Fewer than 7 days of sheet rows | Normal for first week |
 | Sheet sync skipped | Missing env secrets | Add GitHub secrets or export locally |
-| Stale follower counts | Manual snapshot outdated | Update `ig-leaderboard-manual-snapshot.json` followers only |
+| Stale follower counts | Instagram `web_profile_info` HTTP 400 schema error (`ig_business_category_subvertical`) for some business profiles, or outdated manual snapshot | Check `orchestration/ig-leaderboard-snapshot.json` notes for `fetch failed`. Update `ig-leaderboard-manual-snapshot.json` with verified followers (supports `37.1K`), then `npm run ig:refresh` |
 
 ---
 

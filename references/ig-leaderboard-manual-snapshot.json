@@ -1,12 +1,7 @@
 {
-  "capturedAt": "2026-06-17",
-  "notes": "Followers-only fallback when Instagram API is rate-limited.",
+  "capturedAt": "2026-07-21",
+  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. thebayasia verified ~37.1K on 2026-07-21.",
   "accounts": {
-    "scmpnews": { "followers": 649567 },
-    "tatlerhongkong": { "followers": 256584 },
-    "the_trip_addict": { "followers": 94501 },
-    "greaterbayvibes": { "followers": 17299 },
-    "thebeatasia": { "followers": 1988 },
-    "lifestyleasiahk": { "followers": 122107 }
+    "thebayasia": { "followers": "37.1K" }
   }
 }

@@ -100,12 +100,32 @@ async function request(method, url, headers = {}) {
   return resp;
 }
 
+function isRateLimitStatus(status) {
+  return status === 429 || status === 401 || status === 403;
+}
+
+function isSchemaError(status, json) {
+  if (status !== 400) return false;
+  const msg = String(json?.message || "");
+  return /schema|asset:\/\/laser\.provider/i.test(msg);
+}
+
 async function requestWithRetry(label, fn, maxAttempts = 4) {
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     const resp = await fn();
-    if ((resp.status === 429 || resp.status === 401) && attempt < maxAttempts) {
-      const waitMs = attempt * 4000;
-      console.warn(`${label}: Instagram rate limit — retry in ${waitMs}ms`);
+    const rateLimited = isRateLimitStatus(resp.status);
+    const schemaError = isSchemaError(resp.status, resp.json);
+    // Schema 400s are often persistent for specific business profiles — retry once, then bail.
+    const canRetry =
+      (rateLimited && attempt < maxAttempts) ||
+      (schemaError && attempt < 2);
+    if (canRetry) {
+      const waitMs = schemaError ? 3000 : attempt * 4000;
+      console.warn(
+        `${label}: Instagram HTTP ${resp.status}${
+          resp.json?.message ? ` (${resp.json.message})` : ""
+        } — retry in ${waitMs}ms`
+      );
       await sleep(waitMs);
       continue;
     }
@@ -124,12 +144,19 @@ async function fetchProfile(handle) {
 async function fetchHandle(handle) {
   const resp = await fetchProfile(handle);
   if (resp.status !== 200 || !resp.json?.data?.user) {
-    return { handle, ok: false, status: resp.status };
+    return {
+      handle,
+      ok: false,
+      status: resp.status,
+      error: resp.json?.message || null,
+    };
   }
 
   const user = resp.json.data.user;
   const followers = user.edge_followed_by?.count ?? null;
-  if (followers == null) return { handle, ok: false, status: resp.status };
+  if (followers == null) {
+    return { handle, ok: false, status: resp.status, error: "missing follower count" };
+  }
 
   return {
     handle,
@@ -139,23 +166,57 @@ async function fetchHandle(handle) {
   };
 }
 
+function recordResult(snapshot, notes, result) {
+  if (result.ok) {
+    snapshot[result.handle] = { followers: result.followers };
+    notes.push(
+      `${result.handle}: ${result.followers.toLocaleString()} followers (${result.source})`
+    );
+    return;
+  }
+  const detail = result.error ? ` — ${result.error}` : "";
+  notes.push(
+    `${result.handle}: fetch failed (HTTP ${result.status ?? "error"})${detail}`
+  );
+}
+
 async function main() {
   const runDate = hktDateStr();
   const configs = loadAccountConfig();
   const snapshot = {};
   const notes = [];
+  const failed = [];
 
   for (const cfg of configs) {
     const result = await fetchHandle(cfg.handle);
     if (result.ok) {
-      snapshot[cfg.handle] = { followers: result.followers };
-      notes.push(
-        `${cfg.handle}: ${result.followers.toLocaleString()} followers (${result.source})`
-      );
+      recordResult(snapshot, notes, result);
     } else {
-      notes.push(`${cfg.handle}: fetch failed (HTTP ${result.status ?? "error"})`);
+      failed.push(cfg.handle);
+      recordResult(snapshot, notes, result);
     }
     await sleep(ACCOUNT_DELAY_MS);
+  }
+
+  // Second pass for transient failures — schema 400s often persist, but rate limits may clear.
+  if (failed.length) {
+    console.warn(
+      `Retrying ${failed.length} failed handle(s) after cooldown: ${failed.join(", ")}`
+    );
+    await sleep(10000);
+    for (const handle of failed) {
+      const result = await fetchHandle(handle);
+      if (result.ok) {
+        const idx = notes.findIndex((n) => n.startsWith(`${handle}:`));
+        if (idx >= 0) notes.splice(idx, 1);
+        recordResult(snapshot, notes, result);
+      } else {
+        console.warn(
+          `${handle}: still failing after retry (HTTP ${result.status ?? "error"})`
+        );
+      }
+      await sleep(ACCOUNT_DELAY_MS);
+    }
   }
 
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
@@ -168,7 +229,10 @@ async function main() {
   const count = Object.keys(snapshot).length;
   console.log(`Wrote ${outPath} (${count}/${configs.length} accounts from Instagram API)`);
   if (count < configs.length) {
-    console.log("Missing handles will keep prior follower counts; manual snapshot can fill gaps.");
+    const missing = configs.map((c) => c.handle).filter((h) => !snapshot[h]);
+    console.warn(
+      `Missing handles (${missing.join(", ")}) will use manual snapshot or prior counts — check for stale data.`
+    );
   }
   if (!count) process.exit(1);
 }
