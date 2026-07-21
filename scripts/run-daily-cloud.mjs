@@ -165,7 +165,13 @@ async function main() {
   if (only === 1 || only == null) await runStep(1, apiKey);
 
   if (only === 2 || only == null) await runStep(2, apiKey);
-  if (only === 3 || only == null) await runStep(3, apiKey);
+  // Happenings: optional — Cursor sometimes returns status:error in ~5–10s while the
+  // agent is still running (or after a transient abort). Do not retry (avoids a second
+  // agent racing the first). Post-pipeline regenerates happenings-events.json via
+  // generate-happenings-data.mjs either way.
+  if (only === 3 || only == null) {
+    await runStep(3, apiKey, { optional: true, retries: 0 });
+  }
   if (only === 4 || only == null) {
     await runStep(4, apiKey, { optional: true, retries: 1 });
   }
