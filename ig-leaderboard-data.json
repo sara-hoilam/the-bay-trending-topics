@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-21",
-  "refreshedAt": "2026-07-21T09:02:24+08:00",
+  "refreshedAt": "2026-07-21T09:06:49+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -302,7 +302,7 @@
       "displayName": "Time Out Hong Kong",
       "url": "https://www.instagram.com/timeouthk/",
       "highlight": false,
-      "followers": 203138,
+      "followers": 203139,
       "followersGrowthPct7d": 0.04,
       "history": [
         {
@@ -339,7 +339,7 @@
         },
         {
           "date": "2026-07-21",
-          "followers": 203138
+          "followers": 203139
         }
       ]
     },
