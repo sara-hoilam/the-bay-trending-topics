@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-21",
+  "updatedAt": "2026-07-22",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 53,
+  "highlightedCount": 49,
   "events": [
     {
       "title": "From Dawn to Dusk — Life and Art in the Forbidden City",
@@ -137,17 +137,6 @@
       "highlighted": true
     },
     {
-      "title": "New art exhibition opens at L-Art Gallery in Futian",
-      "start": "2026-06-16",
-      "end": "2026-08-15",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/16/content_32091413.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
       "title": "New thematic exhibition on Forbidden City opens at HKPM",
       "start": "2026-06-22",
       "end": "2026-08-21",
@@ -204,18 +193,6 @@
       "highlighted": true
     },
     {
-      "title": "Feast of Na Tcha",
-      "start": "2026-07-01",
-      "end": "2026-07-02",
-      "region": "macao",
-      "location": "Na Tcha Temple",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": true,
-      "highlightScore": 40,
-      "highlighted": true
-    },
-    {
       "title": "June – Month of Portugal",
       "start": "2026-07-01",
       "end": "2026-07-09",
@@ -262,18 +239,6 @@
       "featured": true,
       "highlightScore": 52,
       "highlighted": true
-    },
-    {
-      "title": "Lai Chi Vun Shipyards – Shipbuilding Master Demonstration",
-      "start": "2026-07-01",
-      "end": "2026-07-04",
-      "region": "macao",
-      "location": "Lai Chi Vun Shipyards",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 4,
-      "highlighted": false
     },
     {
       "title": "Garden Wonderland at Spectacle",
@@ -444,18 +409,6 @@
       "highlighted": false
     },
     {
-      "title": "Macao 2026 Specialized World Stamp Exhibition",
-      "start": "2026-07-01",
-      "end": "2026-07-01",
-      "region": "macao",
-      "location": "Cotai Expo, The Venetian Macao",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 22,
-      "highlighted": false
-    },
-    {
       "title": "“Timeless Macau” Visual Imprints of Macau’s World Heritage - An Illustration Exhibition b…",
       "start": "2026-07-01",
       "end": "2026-08-28",
@@ -551,90 +504,6 @@
       "highlighted": false
     },
     {
-      "title": "MGM Riesling Uncorked 2026",
-      "start": "2026-07-03",
-      "end": "2026-07-03",
-      "region": "macao",
-      "location": "MGM Cotai",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
-      "title": "25th Mega Sale Carnival",
-      "start": "2026-07-03",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Macau Fisherman’s Wharf",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 16,
-      "highlighted": false
-    },
-    {
-      "title": "Katch Presents: ANSON LO “KINGDOM” LIVE TOUR 2026 – MACAO",
-      "start": "2026-07-03",
-      "end": "2026-07-04",
-      "region": "macao",
-      "location": "The Londoner Arena",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
-      "title": "“Gareth.T – Prince Of nothing” Macau",
-      "start": "2026-07-03",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Galaxy Arena, Galaxy Macau™",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 4,
-      "highlighted": false
-    },
-    {
-      "title": "Art Everywhere – Cultural vibes at the weekend",
-      "start": "2026-07-03",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Anim’Arte NAM VAN",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 4,
-      "highlighted": false
-    },
-    {
-      "title": "Fun Fishing Boat Cruise",
-      "start": "2026-07-04",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Doca da Ilha Verde",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
-      "title": "Taste the Streets: Urban Awakening",
-      "start": "2026-07-04",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Largo do Pagode do Bazar",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
       "title": "“Creativity in Recovery: 10 Years of ARTM’s Ka-Ho Integrated Service Center” Exhibition",
       "start": "2026-07-04",
       "end": "2026-07-26",
@@ -645,18 +514,6 @@
       "featured": false,
       "highlightScore": 18,
       "highlighted": false
-    },
-    {
-      "title": "The Venetian Macao Proudly Presents: Rainie Yang “The Elephant We See” World Tour Concert…",
-      "start": "2026-07-04",
-      "end": "2026-07-04",
-      "region": "macao",
-      "location": "The Venetian Arena",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 40,
-      "highlighted": true
     },
     {
       "title": "Sustainable Future – Exploring Infinite Possibilities with Imagination: Prolongation & Vi…",
@@ -683,54 +540,6 @@
       "highlighted": false
     },
     {
-      "title": "Skaiisyourgod Exclusive Solo Show Macau",
-      "start": "2026-07-04",
-      "end": "2026-07-04",
-      "region": "macao",
-      "location": "Broadway Theatre, Broadway Macau",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
-      "title": "Hong Kung Night Market",
-      "start": "2026-07-04",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Rua de Cinco de Outubro",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
-      "title": "Series of Events Celebrating the 450th Anniversary of the Establishment of the Diocese of…",
-      "start": "2026-07-04",
-      "end": "2026-07-04",
-      "region": "macao",
-      "location": "St. Lawrence's Church",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
-      "title": "2026 Mango Jump “Heartbeat Defense <3 Rescue Your Heart” Live in Macau",
-      "start": "2026-07-05",
-      "end": "2026-07-05",
-      "region": "macao",
-      "location": "Galaxy Macau™ Integrated Resort",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
-      "sourceDomain": "macaotourism.gov.mo",
-      "featured": false,
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
       "title": "VR, rocket debris and zero-gravity fun at space exhibition",
       "start": "2026-07-06",
       "end": "2026-09-04",
@@ -745,11 +554,11 @@
       "title": "Picasso's printmaking legacy presented in Futian",
       "start": "2026-07-06",
       "end": "2026-09-04",
-      "region": "international",
-      "location": "International",
+      "region": "shenzhen",
+      "location": "Futian, Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -883,39 +692,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Hengqin New Area,Qianhai Shekou",
-      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 32,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Book Fair 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://hkbookfair.hktdc.com/en/index.html",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 58,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC World of Snacks 2026 (HKCEC)",
-      "start": "2026-07-15",
-      "end": "2026-07-21",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/worldofsnacks/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 16,
-      "highlighted": false
-    },
-    {
       "title": "Place, Culture, Time – Design for High-quality Development in China, Selected Architectur…",
       "start": "2026-07-15",
       "end": "2026-08-13",
@@ -1023,6 +799,17 @@
       "highlighted": false
     },
     {
+      "title": "Beyond the taboo: Upcoming exhibition explores death as part of life",
+      "start": "2026-07-21",
+      "end": "2026-09-19",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/21/content_32127832.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "The Macao Youth Symphony Orchestra 29th Anniversary Concert",
       "start": "2026-07-21",
       "end": "2026-07-21",
@@ -1122,6 +909,18 @@
       "end": "2026-07-29",
       "region": "macao",
       "location": "Wynn Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "Dragon Lights the Sky in Cotai Strip",
+      "start": "2026-07-24",
+      "end": "2026-07-26",
+      "region": "macao",
+      "location": "The Venetian Macao ",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
@@ -1258,6 +1057,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/foodexpopro/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-15",
@@ -1269,12 +1079,12 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
       "start": "2026-08-13",
-      "end": "2026-08-15",
+      "end": "2026-08-17",
       "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/foodexpopro/en",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
@@ -1297,17 +1107,6 @@
       "region": "hk",
       "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
       "url": "https://www.hktdc.com/event/hkfoodexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
@@ -1524,6 +1323,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1543,17 +1353,6 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1634,6 +1433,17 @@
       "highlighted": true
     },
     {
+      "title": "Home InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/homeinstyle/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
       "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
       "start": "2027-04-27",
       "end": "2027-04-29",
@@ -1676,17 +1486,6 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
-    },
-    {
-      "title": "Home InStyle 2027 (HKCEC)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/homeinstyle/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
     },
     {
       "title": "Fashion InStyle 2027 (HKCEC)",
