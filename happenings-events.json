@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-22",
+  "updatedAt": "2026-07-23",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 51,
+  "highlightedCount": 52,
   "events": [
     {
       "title": "From Dawn to Dusk — Life and Art in the Forbidden City",
@@ -135,17 +135,6 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
       "highlighted": true
-    },
-    {
-      "title": "New thematic exhibition on Forbidden City opens at HKPM",
-      "start": "2026-06-22",
-      "end": "2026-08-21",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-06/22/content_32098089.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
     },
     {
       "title": "Exhibition traces Chunshui academy's legacy and transformation",
@@ -731,14 +720,14 @@
       "highlighted": false
     },
     {
-      "title": "Picasso's printmaking legacy presented in Futian",
+      "title": "Picasso: A Retrospective of Printmaking — Futian",
       "start": "2026-07-06",
-      "end": "2026-09-04",
-      "region": "international",
-      "location": "International",
+      "end": "2026-07-31",
+      "region": "shenzhen",
+      "location": "cdPark, Futian District",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -1014,6 +1003,17 @@
       "highlighted": true
     },
     {
+      "title": "From coffee, chocolate to whisky, this upcoming exhibition has it all",
+      "start": "2026-07-22",
+      "end": "2026-09-20",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/22/content_32128915.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "Women’s Volleyball Nations League – Finals Macao 2026 presented by Galaxy Entertainment G…",
       "start": "2026-07-22",
       "end": "2026-07-23",
@@ -1237,6 +1237,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-15",
@@ -1281,17 +1292,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "IWF Shenzhen International Fitness Expo",
       "start": "2026-08-14",
       "end": "2026-08-16",
@@ -1300,6 +1300,17 @@
       "url": "https://10times.com/e1h1-70r0-hkdh-k-iwf-shenzhen-international-fitness-expo",
       "sourceDomain": "10times.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "Shenzhen International Medical Equipment Exhibition (CMEH)",
+      "start": "2026-08-19",
+      "end": "2026-08-21",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1dh-33dr-37xp-k",
+      "sourceDomain": "10times.com",
+      "highlightScore": 28,
       "highlighted": true
     },
     {
@@ -1635,28 +1646,6 @@
       "highlighted": false
     },
     {
-      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkprintpackfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 52,
-      "highlighted": true
-    },
-    {
-      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1677,6 +1666,28 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkprintpackfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 52,
+      "highlighted": true
+    },
+    {
+      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
     }
   ]
 }
