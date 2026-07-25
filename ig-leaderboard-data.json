@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-25",
-  "refreshedAt": "2026-07-25T08:19:32+08:00",
+  "refreshedAt": "2026-07-25T08:23:11+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -173,7 +173,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 263646,
+      "followers": 263647,
       "followersGrowthPct7d": 0.3,
       "history": [
         {
@@ -326,7 +326,7 @@
         },
         {
           "date": "2026-07-25",
-          "followers": 263646
+          "followers": 263647
         }
       ],
       "followersSource": "instagram-api"
@@ -399,8 +399,8 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 125931,
-      "followersGrowthPct7d": 1.04,
+      "followers": 125934,
+      "followersGrowthPct7d": 1.05,
       "history": [
         {
           "date": "2026-06-17",
@@ -544,7 +544,7 @@
         },
         {
           "date": "2026-07-25",
-          "followers": 125931
+          "followers": 125934
         }
       ],
       "followersSource": "instagram-api"
