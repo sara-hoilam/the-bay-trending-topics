@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-07-25",
+  "updatedAt": "2026-07-26",
   "highlightScoreThreshold": 24,
   "highlightedCount": 53,
   "events": [
@@ -709,14 +709,14 @@
       "highlighted": false
     },
     {
-      "title": "Picasso's printmaking legacy presented in Futian",
+      "title": "Picasso: A Retrospective of Printmaking — Futian",
       "start": "2026-07-06",
-      "end": "2026-09-04",
-      "region": "international",
-      "location": "International",
+      "end": "2026-07-31",
+      "region": "shenzhen",
+      "location": "cdPark, Futian District",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -957,17 +957,6 @@
       "highlighted": false
     },
     {
-      "title": "Beyond the taboo: Upcoming exhibition explores death as part of life",
-      "start": "2026-07-21",
-      "end": "2026-09-19",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/21/content_32127832.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
       "title": "The Macao Youth Symphony Orchestra 29th Anniversary Concert",
       "start": "2026-07-21",
       "end": "2026-07-21",
@@ -992,17 +981,6 @@
       "highlighted": true
     },
     {
-      "title": "From coffee, chocolate to whisky, this upcoming exhibition has it all",
-      "start": "2026-07-22",
-      "end": "2026-09-20",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/22/content_32128915.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
       "title": "Women’s Volleyball Nations League – Finals Macao 2026 presented by Galaxy Entertainment G…",
       "start": "2026-07-22",
       "end": "2026-07-23",
@@ -1015,14 +993,14 @@
       "highlighted": true
     },
     {
-      "title": "Exhibition sheds light on artifacts from Three Gorges",
+      "title": "Three Gorges artifacts — Nanshan Museum",
       "start": "2026-07-23",
-      "end": "2026-09-21",
+      "end": "2026-10-25",
       "region": "shenzhen",
-      "location": "Shenzhen",
+      "location": "Nanshan Museum, Nanshan District",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/23/content_32129994.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -1118,6 +1096,17 @@
       "featured": true,
       "highlightScore": 62,
       "highlighted": true
+    },
+    {
+      "title": "Bringing Death back into Life — Sea World Culture and Arts Center",
+      "start": "2026-07-25",
+      "end": "2026-10-11",
+      "region": "shenzhen",
+      "location": "Sea World Culture and Arts Center, Nanshan",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/21/content_32127832.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "Macao Orchestra 2025-26 Season Closing Concert “Chopin by Zitong Wang”",
@@ -1237,28 +1226,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Food Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
-      "url": "https://www.hktdc.com/event/hkfoodexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
-      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
@@ -1289,6 +1256,28 @@
       "url": "https://www.hktdc.com/event/hkteafair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Food Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Hengqin New Area,Qianhai Shekou",
+      "url": "https://www.hktdc.com/event/hkfoodexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
       "highlighted": true
     },
     {
