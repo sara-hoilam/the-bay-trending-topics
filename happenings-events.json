@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
   "updatedAt": "2026-07-28",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 50,
+  "highlightedCount": 53,
   "events": [
     {
       "title": "From Dawn to Dusk — Life and Art in the Forbidden City",
@@ -160,6 +160,30 @@
       "highlighted": true
     },
     {
+      "title": "Feast of Na Tcha",
+      "start": "2026-07-01",
+      "end": "2026-07-02",
+      "region": "macao",
+      "location": "Na Tcha Temple",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": true,
+      "highlightScore": 40,
+      "highlighted": true
+    },
+    {
+      "title": "June – Month of Portugal",
+      "start": "2026-07-01",
+      "end": "2026-07-09",
+      "region": "macao",
+      "location": "Albergue SCM",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
       "title": "San Kio Lin Kai Night Market",
       "start": "2026-07-01",
       "end": "2026-07-17",
@@ -194,6 +218,18 @@
       "featured": true,
       "highlightScore": 52,
       "highlighted": true
+    },
+    {
+      "title": "Lai Chi Vun Shipyards – Shipbuilding Master Demonstration",
+      "start": "2026-07-01",
+      "end": "2026-07-04",
+      "region": "macao",
+      "location": "Lai Chi Vun Shipyards",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 4,
+      "highlighted": false
     },
     {
       "title": "Garden Wonderland at Spectacle",
@@ -352,6 +388,30 @@
       "highlighted": false
     },
     {
+      "title": "18th Cultural Week of China and Portuguese-speaking Countries",
+      "start": "2026-07-01",
+      "end": "2026-07-10",
+      "region": "macao",
+      "location": "Senado Square",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "Macao 2026 Specialized World Stamp Exhibition",
+      "start": "2026-07-01",
+      "end": "2026-07-01",
+      "region": "macao",
+      "location": "Cotai Expo, The Venetian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 22,
+      "highlighted": false
+    },
+    {
       "title": "“Timeless Macau” Visual Imprints of Macau’s World Heritage - An Illustration Exhibition b…",
       "start": "2026-07-01",
       "end": "2026-08-28",
@@ -436,6 +496,90 @@
       "highlighted": false
     },
     {
+      "title": "MGM Riesling Uncorked 2026",
+      "start": "2026-07-03",
+      "end": "2026-07-03",
+      "region": "macao",
+      "location": "MGM Cotai",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "25th Mega Sale Carnival",
+      "start": "2026-07-03",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Macau Fisherman’s Wharf",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 16,
+      "highlighted": false
+    },
+    {
+      "title": "Katch Presents: ANSON LO “KINGDOM” LIVE TOUR 2026 – MACAO",
+      "start": "2026-07-03",
+      "end": "2026-07-04",
+      "region": "macao",
+      "location": "The Londoner Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "“Gareth.T – Prince Of nothing” Macau",
+      "start": "2026-07-03",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Galaxy Arena, Galaxy Macau™",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "Art Everywhere – Cultural vibes at the weekend",
+      "start": "2026-07-03",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Anim’Arte NAM VAN",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "Fun Fishing Boat Cruise",
+      "start": "2026-07-04",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Doca da Ilha Verde",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Taste the Streets: Urban Awakening",
+      "start": "2026-07-04",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Largo do Pagode do Bazar",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "“Creativity in Recovery: 10 Years of ARTM’s Ka-Ho Integrated Service Center” Exhibition",
       "start": "2026-07-04",
       "end": "2026-07-26",
@@ -446,6 +590,18 @@
       "featured": false,
       "highlightScore": 18,
       "highlighted": false
+    },
+    {
+      "title": "The Venetian Macao Proudly Presents: Rainie Yang “The Elephant We See” World Tour Concert…",
+      "start": "2026-07-04",
+      "end": "2026-07-04",
+      "region": "macao",
+      "location": "The Venetian Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 40,
+      "highlighted": true
     },
     {
       "title": "Sustainable Future – Exploring Infinite Possibilities with Imagination: Prolongation & Vi…",
@@ -469,6 +625,54 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Skaiisyourgod Exclusive Solo Show Macau",
+      "start": "2026-07-04",
+      "end": "2026-07-04",
+      "region": "macao",
+      "location": "Broadway Theatre, Broadway Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Hong Kung Night Market",
+      "start": "2026-07-04",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Rua de Cinco de Outubro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Series of Events Celebrating the 450th Anniversary of the Establishment of the Diocese of…",
+      "start": "2026-07-04",
+      "end": "2026-07-04",
+      "region": "macao",
+      "location": "St. Lawrence's Church",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "2026 Mango Jump “Heartbeat Defense <3 Rescue Your Heart” Live in Macau",
+      "start": "2026-07-05",
+      "end": "2026-07-05",
+      "region": "macao",
+      "location": "Galaxy Macau™ Integrated Resort",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -517,6 +721,30 @@
       "highlighted": false
     },
     {
+      "title": "2026 Central and Southern District Waterfront Exploration Carnival",
+      "start": "2026-07-09",
+      "end": "2026-07-12",
+      "region": "macao",
+      "location": "Árvore em forma de Coração (Centro de Ciência de Macau)",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 16,
+      "highlighted": false
+    },
+    {
+      "title": "The Adventures of ALICE @ Grand Lisboa Palace Resort Macau",
+      "start": "2026-07-09",
+      "end": "2026-07-12",
+      "region": "macao",
+      "location": "Grand Lisboa Palace Resort Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
       "title": "Mak Mak Experience Hub",
       "start": "2026-07-10",
       "end": "2027-01-03",
@@ -538,6 +766,54 @@
       "sourceDomain": "ticketflap.com",
       "featured": true,
       "highlightScore": 66,
+      "highlighted": true
+    },
+    {
+      "title": "Rosy Zhao STAY ROMANTIC Macau Concert",
+      "start": "2026-07-11",
+      "end": "2026-07-12",
+      "region": "macao",
+      "location": "Galaxy Arena, Galaxy Macau™",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "2026 NCT JNJM FANMEETING TOUR [DUALITY] # MACAU",
+      "start": "2026-07-11",
+      "end": "2026-07-12",
+      "region": "macao",
+      "location": "The Londoner Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "2026 HYERI ASIA TOUR FANMEETING <HYERIDE> IN MACAU",
+      "start": "2026-07-11",
+      "end": "2026-07-11",
+      "region": "macao",
+      "location": "Broadway Theatre, Broadway Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Procession of Saint Roque",
+      "start": "2026-07-12",
+      "end": "2026-07-12",
+      "region": "macao",
+      "location": "St. Lazarus Church",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202607",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": true,
+      "highlightScore": 40,
       "highlighted": true
     },
     {
@@ -1348,45 +1624,12 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
-      "start": "2027-04-27",
-      "end": "2027-04-29",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hklicensingshow/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 14,
-      "highlighted": false
-    },
-    {
       "title": "Home InStyle 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
       "region": "hk",
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/homeinstyle/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/hkgiftspremiumfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
-      "title": "Fashion InStyle 2027 (HKCEC)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/fashioninstyle/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
@@ -1412,6 +1655,39 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
+      "start": "2027-04-27",
+      "end": "2027-04-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hklicensingshow/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 14,
+      "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkgiftspremiumfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
+      "title": "Fashion InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/fashioninstyle/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
     }
   ]
 }

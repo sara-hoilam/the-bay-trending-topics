@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-28",
-  "refreshedAt": "2026-07-28T08:19:33+08:00",
+  "refreshedAt": "2026-07-28T08:23:38+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -11,7 +11,7 @@
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
       "followers": 672828,
-      "followersGrowthPct7d": 0.55,
+      "followersGrowthPct7d": 0.53,
       "history": [
         {
           "date": "2026-06-15",
@@ -185,7 +185,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 265395,
+      "followers": 265398,
       "followersGrowthPct7d": 0.85,
       "history": [
         {
@@ -350,7 +350,7 @@
         },
         {
           "date": "2026-07-28",
-          "followers": 265395
+          "followers": 265398
         }
       ],
       "followersSource": "instagram-api"
@@ -436,7 +436,7 @@
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
       "followers": 126682,
-      "followersGrowthPct7d": 1.26,
+      "followersGrowthPct7d": 1.23,
       "history": [
         {
           "date": "2026-06-17",
@@ -953,7 +953,7 @@
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
       "followers": 46187,
-      "followersGrowthPct7d": 0.89,
+      "followersGrowthPct7d": 0.86,
       "history": [
         {
           "date": "2026-06-17",
@@ -1295,7 +1295,7 @@
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
       "followers": 18688,
-      "followersGrowthPct7d": 1.14,
+      "followersGrowthPct7d": 1.13,
       "history": [
         {
           "date": "2026-06-15",
@@ -1470,7 +1470,7 @@
       "url": "https://www.instagram.com/thebeatasia/",
       "highlight": false,
       "followers": 2027,
-      "followersGrowthPct7d": 0.3,
+      "followersGrowthPct7d": 0.25,
       "history": [
         {
           "date": "2026-06-17",
