@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-29",
-  "refreshedAt": "2026-07-29T08:16:49+08:00",
+  "refreshedAt": "2026-07-29T08:20:26+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 673314,
+      "followers": 673313,
       "followersGrowthPct7d": 0.56,
       "history": [
         {
@@ -179,7 +179,7 @@
         },
         {
           "date": "2026-07-29",
-          "followers": 673314
+          "followers": 673313
         }
       ],
       "followersSource": "instagram-api"
@@ -1148,7 +1148,7 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 38102,
-      "followersGrowthPct7d": 2.7,
+      "followersGrowthPct7d": 2.11,
       "history": [
         {
           "date": "2026-06-15",
@@ -1326,7 +1326,7 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 18729,
+      "followers": 18730,
       "followersGrowthPct7d": 1.34,
       "history": [
         {
@@ -1495,7 +1495,7 @@
         },
         {
           "date": "2026-07-29",
-          "followers": 18729
+          "followers": 18730
         }
       ],
       "followersSource": "instagram-api"
