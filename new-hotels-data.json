@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-07-30",
-  "refreshedAt": "2026-07-30T09:48:43+08:00",
+  "updatedAt": "2026-07-31",
+  "refreshedAt": "2026-07-31T08:25:26+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-01-28",
-  "windowEnd": "2027-01-29",
+  "windowStart": "2026-01-29",
+  "windowEnd": "2027-01-30",
   "count": 103,
   "countries": [
     "Bangladesh",
@@ -466,23 +466,6 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/hoshinoya-nara-prison",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Don Maaga Maldives",
-      "location": "South Malé Atoll, Maldives",
-      "country": "Maldives",
-      "region": "asia",
-      "hotelGroup": "Six & Six Private Islands",
-      "stars": 5,
-      "websiteUrl": "https://www.donmaaga.com",
-      "openDate": null,
-      "openDateLabel": "2026",
-      "openDatePrecision": "year",
-      "openDateSort": "2026-07-01",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/don-maaga-maldives",
       "sourceName": "The Opening List"
     },
     {
@@ -1724,6 +1707,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/aman-singapore",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Don Maaga Maldives",
+      "location": "South Malé Atoll, Maldives",
+      "country": "Maldives",
+      "region": "asia",
+      "hotelGroup": "Six & Six Private Islands",
+      "stars": 5,
+      "websiteUrl": "https://www.donmaaga.com",
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-01-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/don-maaga-maldives",
       "sourceName": "The Opening List"
     },
     {

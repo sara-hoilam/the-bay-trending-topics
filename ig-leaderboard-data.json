@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-07-31",
-  "refreshedAt": "2026-07-31T08:23:20+08:00",
+  "refreshedAt": "2026-07-31T08:26:56+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 674919,
+      "followers": 674920,
       "followersGrowthPct7d": 0.61,
       "history": [
         {
@@ -187,7 +187,7 @@
         },
         {
           "date": "2026-07-31",
-          "followers": 674919
+          "followers": 674920
         }
       ],
       "followersSource": "instagram-api"
@@ -384,7 +384,7 @@
       "displayName": "Time Out Hong Kong",
       "url": "https://www.instagram.com/timeouthk/",
       "highlight": false,
-      "followers": 203578,
+      "followers": 203577,
       "followersGrowthPct7d": 0.17,
       "history": [
         {
@@ -461,7 +461,7 @@
         },
         {
           "date": "2026-07-31",
-          "followers": 203578
+          "followers": 203577
         }
       ],
       "followersSource": "instagram-api"
@@ -1024,7 +1024,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 47169,
+      "followers": 47170,
       "followersGrowthPct7d": 2.55,
       "history": [
         {
@@ -1193,7 +1193,7 @@
         },
         {
           "date": "2026-07-31",
-          "followers": 47169
+          "followers": 47170
         }
       ],
       "followersSource": "instagram-api"
