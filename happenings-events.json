@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
   "updatedAt": "2026-08-01",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 45,
+  "highlightedCount": 47,
   "events": [
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
@@ -85,12 +85,24 @@
       "title": "Picasso's printmaking legacy presented in Futian",
       "start": "2026-07-06",
       "end": "2026-09-04",
-      "region": "shenzhen",
-      "location": "Futian, Shenzhen",
+      "region": "international",
+      "location": "International",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
+      "highlightScore": 22,
       "highlighted": false
+    },
+    {
+      "title": "Glow Festival by Prudential 2026",
+      "start": "2026-07-10",
+      "end": "2026-07-19",
+      "region": "international",
+      "location": "Sentosa, Singapore",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "featured": true,
+      "highlightScore": 66,
+      "highlighted": true
     },
     {
       "title": "From coffee, chocolate to whisky, this upcoming exhibition has it all",
@@ -135,6 +147,18 @@
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "Fuji Rock Festival '26",
+      "start": "2026-07-24",
+      "end": "2026-07-26",
+      "region": "international",
+      "location": "Naeba Ski Resort, Japan",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "featured": true,
+      "highlightScore": 62,
+      "highlighted": true
     },
     {
       "title": "Dinosaur showdown exhibition opens at science museum",
@@ -1258,17 +1282,6 @@
       "highlighted": true
     },
     {
-      "title": "BABYMONSTER WORLD TOUR [춤 (CHOOM)] IN MACAO",
-      "start": "2026-09-12",
-      "end": "2026-09-12",
-      "region": "macao",
-      "location": "The Venetian Arena, Macao",
-      "url": "https://www.ticketflap.com/",
-      "sourceDomain": "ticketflap.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "Herzog & de Meuron: In Focus at M+",
       "start": "2026-09-12",
       "end": "2027-02-28",
@@ -1278,6 +1291,17 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
       "highlighted": false
+    },
+    {
+      "title": "BABYMONSTER WORLD TOUR [춤 (CHOOM)] IN MACAO",
+      "start": "2026-09-12",
+      "end": "2026-09-12",
+      "region": "macao",
+      "location": "The Venetian Arena, Macao",
+      "url": "https://www.ticketflap.com/",
+      "sourceDomain": "ticketflap.com",
+      "highlightScore": 28,
+      "highlighted": true
     },
     {
       "title": "electronicAsia 2026 (HKCEC)",
@@ -1502,28 +1526,6 @@
       "highlighted": true
     },
     {
-      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkprintpackfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 52,
-      "highlighted": true
-    },
-    {
-      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong International Licensing Show & Asian Licensing Conference 2027",
       "start": "2027-04-27",
       "end": "2027-04-29",
@@ -1566,6 +1568,28 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
       "highlighted": false
+    },
+    {
+      "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkprintpackfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 52,
+      "highlighted": true
+    },
+    {
+      "title": "DeLuxe PrintPack Hong Kong 2027 (AsiaWorld-Expo)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/deluxeprintpackhk",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
     }
   ]
 }
