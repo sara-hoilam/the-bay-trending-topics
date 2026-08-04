@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-08-03",
+  "updatedAt": "2026-08-04",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 48,
+  "highlightedCount": 49,
   "events": [
     {
       "title": "Art Plaza Project — HK Palace Museum",
@@ -101,17 +101,6 @@
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112699.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "Picasso's printmaking legacy presented in Futian",
-      "start": "2026-07-06",
-      "end": "2026-09-04",
-      "region": "international",
-      "location": "International",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/06/content_32112584.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
       "highlighted": false
     },
     {
@@ -720,6 +709,17 @@
       "highlighted": false
     },
     {
+      "title": "UNFOLD Shenzhen 2026 Art Book Fair to open",
+      "start": "2026-08-03",
+      "end": "2026-10-02",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/03/content_32139642.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 54,
+      "highlighted": true
+    },
+    {
       "title": "Macau Band Fair 2026",
       "start": "2026-08-03",
       "end": "2026-08-04",
@@ -943,17 +943,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-15",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
-      "url": "https://www.hktdc.com/event/hkteafair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 36,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
@@ -962,6 +951,17 @@
       "url": "https://www.hktdc.com/event/homedelights/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong International Tea Fair 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-15",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/hkteafair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 36,
       "highlighted": true
     },
     {
