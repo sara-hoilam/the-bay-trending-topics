@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-08",
-  "refreshedAt": "2026-08-08T07:47:18+08:00",
+  "refreshedAt": "2026-08-08T07:51:15+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 679356,
+      "followers": 679368,
       "followersGrowthPct7d": 0.55,
       "history": [
         {
@@ -211,7 +211,7 @@
         },
         {
           "date": "2026-08-08",
-          "followers": 679356
+          "followers": 679368
         }
       ],
       "followersSource": "instagram-api"
@@ -221,7 +221,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 269436,
+      "followers": 269437,
       "followersGrowthPct7d": 0.75,
       "history": [
         {
@@ -422,7 +422,7 @@
         },
         {
           "date": "2026-08-08",
-          "followers": 269436
+          "followers": 269437
         }
       ],
       "followersSource": "instagram-api"
@@ -746,7 +746,7 @@
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 96529,
+      "followers": 96530,
       "followersGrowthPct7d": 0.2,
       "history": [
         {
@@ -947,7 +947,7 @@
         },
         {
           "date": "2026-08-08",
-          "followers": 96529
+          "followers": 96530
         }
       ],
       "followersSource": "instagram-api"
