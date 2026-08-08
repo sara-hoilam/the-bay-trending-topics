@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-09",
-  "refreshedAt": "2026-08-09T07:46:15+08:00",
+  "refreshedAt": "2026-08-09T07:50:03+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 681098,
+      "followers": 681099,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -215,7 +215,7 @@
         },
         {
           "date": "2026-08-09",
-          "followers": 681098
+          "followers": 681099
         }
       ],
       "followersSource": "instagram-api"
@@ -1192,7 +1192,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 49503,
+      "followers": 49504,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -1389,7 +1389,7 @@
         },
         {
           "date": "2026-08-09",
-          "followers": 49503
+          "followers": 49504
         }
       ],
       "followersSource": "instagram-api"
