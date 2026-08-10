@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-11",
-  "refreshedAt": "2026-08-11T07:52:29+08:00",
+  "refreshedAt": "2026-08-11T07:56:25+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 682034,
+      "followers": 682035,
       "followersGrowthPct7d": 0.68,
       "history": [
         {
@@ -223,7 +223,7 @@
         },
         {
           "date": "2026-08-11",
-          "followers": 682034
+          "followers": 682035
         }
       ],
       "followersSource": "instagram-api"
