@@ -1,9 +1,31 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-08-11",
+  "updatedAt": "2026-08-12",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 45,
+  "highlightedCount": 46,
   "events": [
+    {
+      "title": "Pottery Stars — Shenzhen Museum Collection",
+      "start": "2025-09-27",
+      "end": "2026-12-31",
+      "region": "shenzhen",
+      "location": "Shenzhen Museum, Tongxin Road (Ancient Art), Hall 8",
+      "url": "https://www.shenzhenmuseum.com/exhibitiondetail?resId=381ca765f2ad4c9490faf126a79dd723&clazzName=CmsExhibition&type=1",
+      "sourceDomain": "shenzhenmuseum.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Tri-color Horses — Tang Dynasty Treasures",
+      "start": "2025-11-04",
+      "end": "2026-08-23",
+      "region": "shenzhen",
+      "location": "Shenzhen Museum, Tongxin Road (Ancient Art), Halls 5–6",
+      "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=2ea4edd71d85433b89bf9e68b0e4c68e&type=2",
+      "sourceDomain": "shenzhenmuseum.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
     {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
       "start": "2025-11-20",
@@ -34,6 +56,17 @@
       "location": "Shenzhen Museum (History & Folk Culture), Jintian Road",
       "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=659c5f681ef04429a67813e8aa3502b9&type=2",
       "sourceDomain": "shenzhenmuseum.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "New exhibitions at SZ Art Museum",
+      "start": "2026-07-24",
+      "end": "2026-09-22",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/24/content_32134010.htm",
+      "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -763,6 +796,18 @@
       "highlighted": false
     },
     {
+      "title": "A Dazzling 10th Anniversary Celebration",
+      "start": "2026-08-07",
+      "end": "2026-08-09",
+      "region": "macao",
+      "location": "Le Jardin",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
       "title": "GMMTV Fan Fest 2026 In Macau",
       "start": "2026-08-08",
       "end": "2026-08-08",
@@ -823,6 +868,54 @@
       "highlighted": true
     },
     {
+      "title": "An Interstellar Dream with Le Petit Prince",
+      "start": "2026-08-08",
+      "end": "2026-10-11",
+      "region": "macao",
+      "location": "The Parisian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "JOGUMAN ROAMING MACAU’S DISTRICTS",
+      "start": "2026-08-08",
+      "end": "2026-08-31",
+      "region": "macao",
+      "location": "Former Iec Long Firecracker Factory",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Iec Long Summer Vacation",
+      "start": "2026-08-08",
+      "end": "2026-08-31",
+      "region": "macao",
+      "location": "Former Iec Long Firecracker Factory",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "MakMak & AmazeStar Puppet Theatre Story Adventure for Families",
+      "start": "2026-08-08",
+      "end": "2026-08-09",
+      "region": "macao",
+      "location": "Barra Pier",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "KIM YOON SIK & SI WOO FAN MEETING IN MACAU",
       "start": "2026-08-09",
       "end": "2026-08-09",
@@ -844,39 +937,6 @@
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 22,
       "highlighted": false
-    },
-    {
-      "title": "Exhibition presents a cosmic stage to local audiences",
-      "start": "2026-08-10",
-      "end": "2026-10-09",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/10/content_32144465.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
-      "start": "2026-08-13",
-      "end": "2026-08-17",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
-      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
     },
     {
       "title": "HKTDC Food Expo PRO 2026 (HKCEC)",
@@ -901,6 +961,28 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Beauty & Wellness Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Hengqin New Area,Nansha New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Home Delights Expo 2026 (HKCEC)",
+      "start": "2026-08-13",
+      "end": "2026-08-17",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Food Expo 2026 (HKCEC)",
       "start": "2026-08-13",
       "end": "2026-08-17",
@@ -910,6 +992,18 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
       "highlighted": true
+    },
+    {
+      "title": "Studio City Stardust",
+      "start": "2026-08-13",
+      "end": "2026-08-31",
+      "region": "macao",
+      "location": "Studio City Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "ITZY 3RD WORLD TOUR <TUNNEL VISION> in MACAO",
@@ -1096,6 +1190,17 @@
       "region": "shenzhen",
       "location": "Shenzhen World Exhibition & Convention Center",
       "url": "https://10times.com/rfid-shenzhen",
+      "sourceDomain": "10times.com",
+      "highlightScore": 34,
+      "highlighted": true
+    },
+    {
+      "title": "ARE Shenzhen 2026 — Automation & Robot Expo",
+      "start": "2026-08-26",
+      "end": "2026-08-28",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1z4-314f-fxhk",
       "sourceDomain": "10times.com",
       "highlightScore": 34,
       "highlighted": true
@@ -1353,17 +1458,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1383,6 +1477,17 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
       "highlighted": true
     },
     {
