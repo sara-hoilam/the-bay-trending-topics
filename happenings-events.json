@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-08-12",
+  "updatedAt": "2026-08-13",
   "highlightScoreThreshold": 24,
   "highlightedCount": 46,
   "events": [
@@ -18,7 +18,7 @@
     {
       "title": "Tri-color Horses — Tang Dynasty Treasures",
       "start": "2025-11-04",
-      "end": "2026-08-23",
+      "end": "2026-08-22",
       "region": "shenzhen",
       "location": "Shenzhen Museum, Tongxin Road (Ancient Art), Halls 5–6",
       "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=2ea4edd71d85433b89bf9e68b0e4c68e&type=2",
@@ -50,8 +50,8 @@
     },
     {
       "title": "Pet Love — Cats and Dogs World",
-      "start": "2026-05-30",
-      "end": "2026-10-08",
+      "start": "2026-05-29",
+      "end": "2026-10-07",
       "region": "shenzhen",
       "location": "Shenzhen Museum (History & Folk Culture), Jintian Road",
       "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=659c5f681ef04429a67813e8aa3502b9&type=2",
@@ -60,14 +60,14 @@
       "highlighted": false
     },
     {
-      "title": "New exhibitions at SZ Art Museum",
-      "start": "2026-07-24",
-      "end": "2026-09-22",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/24/content_32134010.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
+      "title": "Design Ah! — Everyday Design at M+",
+      "start": "2026-06-27",
+      "end": "2027-01-10",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/design-ah-experience-the-wonder-of-everyday-design/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
       "highlighted": false
     },
     {
@@ -632,17 +632,6 @@
       "highlighted": false
     },
     {
-      "title": "UNFOLD Shenzhen 2026 Art Book Fair to open",
-      "start": "2026-08-03",
-      "end": "2026-10-02",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/03/content_32139642.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 54,
-      "highlighted": true
-    },
-    {
       "title": "Macau Band Fair 2026",
       "start": "2026-08-03",
       "end": "2026-08-04",
@@ -657,12 +646,12 @@
     {
       "title": "Artist showcases hot-glue dot paintings",
       "start": "2026-08-04",
-      "end": "2026-08-18",
+      "end": "2026-08-10",
       "region": "shenzhen",
-      "location": "Shenzhen",
+      "location": "OCAT B10 Gallery, Nanshan",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-08/04/content_32140613.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
+      "highlightScore": 8,
       "highlighted": false
     },
     {
@@ -702,6 +691,17 @@
       "highlighted": false
     },
     {
+      "title": "Andy Warhol: Screen Tests, Sleep at M+",
+      "start": "2026-08-04",
+      "end": "2026-10-04",
+      "region": "hk",
+      "location": "M+ Grand Stair, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/andy-warhol-screen-tests-sleep/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "19 ongoing and upcoming events at Shenzhen's two exhibitions centers in August",
       "start": "2026-08-05",
       "end": "2026-10-04",
@@ -734,6 +734,17 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "UNFOLD Shenzhen 2026 Art Book Fair to open",
+      "start": "2026-08-06",
+      "end": "2026-08-09",
+      "region": "shenzhen",
+      "location": "Sea World Culture and Arts Center, Nanshan",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/03/content_32139642.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 46,
       "highlighted": true
     },
     {
@@ -928,14 +939,14 @@
       "highlighted": false
     },
     {
-      "title": "Shenzhen International Auto Show returns this October",
+      "title": "'Sails on the Silk Road' brings maritime history to life",
       "start": "2026-08-10",
-      "end": "2026-10-09",
+      "end": "2026-11-29",
       "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/10/content_32144634.htm",
+      "location": "Pingshan Exhibition Gallery, Pingshan",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/10/content_32146058.htm",
       "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 22,
+      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -1040,6 +1051,17 @@
       "featured": true,
       "highlightScore": 70,
       "highlighted": true
+    },
+    {
+      "title": "Janet Cardiff: The Forty Part Motet at M+",
+      "start": "2026-08-15",
+      "end": "2027-01-10",
+      "region": "hk",
+      "location": "M+ The Studio, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/janet-cardiff-the-forty-part-motet/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
     },
     {
       "title": "Falling, Falling, Marine Snow – Children’s Multimedia Dance Theatre (Rerun)",
@@ -1346,6 +1368,17 @@
       "highlighted": true
     },
     {
+      "title": "Shenzhen International Auto Show returns this October",
+      "start": "2026-10-01",
+      "end": "2026-10-05",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention and Exhibition Center, Futian",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/10/content_32144634.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "electronicAsia 2026 (HKCEC)",
       "start": "2026-10-13",
       "end": "2026-10-16",
@@ -1458,17 +1491,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1488,6 +1510,17 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1568,17 +1601,6 @@
       "highlighted": true
     },
     {
-      "title": "Fashion InStyle 2027 (HKCEC)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/fashioninstyle/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1588,6 +1610,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "Fashion InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/fashioninstyle/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
@@ -1631,6 +1664,17 @@
       "url": "https://www.hktdc.com/event/homeinstyle/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "HKTDC World of Snacks 2027 (HKCEC)",
+      "start": "2027-07-14",
+      "end": "2027-07-20",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
+      "url": "https://www.hktdc.com/event/worldofsnacks/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 16,
       "highlighted": false
     }
   ]
