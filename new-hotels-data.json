@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-08-11",
-  "refreshedAt": "2026-08-11T07:54:42+08:00",
+  "updatedAt": "2026-08-12",
+  "refreshedAt": "2026-08-12T07:59:12+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-02-09",
-  "windowEnd": "2027-02-10",
-  "count": 104,
+  "windowStart": "2026-02-10",
+  "windowEnd": "2027-02-11",
+  "count": 106,
   "countries": [
     "Bangladesh",
     "China",
@@ -503,6 +503,23 @@
       "sourceName": "The Opening List"
     },
     {
+      "name": "Amber Yao Noi",
+      "location": "Koh Yao Noi, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-08-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/amber-yao-noi",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Anook Signature Busan Haeundae",
       "location": "Busan, South Korea",
       "country": "South Korea",
@@ -860,6 +877,23 @@
       "sourceName": "The Opening List"
     },
     {
+      "name": "Roswyn, A Morgans Originals Hotel",
+      "location": "Mumbai, India",
+      "country": "India",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-08-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/roswyn-mumbai",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Sheraton Jeju",
       "location": "Jeju, South Korea",
       "country": "South Korea",
@@ -892,6 +926,23 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "The Barai Hua Hin",
+      "location": "Hua Hin, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-08-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/the-barai-hua-hin",
+      "sourceName": "The Opening List"
     },
     {
       "name": "The Fern Lucknow City Center, Series by Marriott​",
@@ -1027,23 +1078,6 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/nomad-singapore",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Amber Yao Noi",
-      "location": "Koh Yao Noi, Thailand",
-      "country": "Thailand",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-11-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/amber-yao-noi",
       "sourceName": "The Opening List"
     },
     {

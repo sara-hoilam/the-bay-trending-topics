@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-12",
-  "refreshedAt": "2026-08-12T07:57:10+08:00",
+  "refreshedAt": "2026-08-12T08:01:01+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 682343,
+      "followers": 682346,
       "followersGrowthPct7d": 0.66,
       "history": [
         {
@@ -227,7 +227,7 @@
         },
         {
           "date": "2026-08-12",
-          "followers": 682343
+          "followers": 682346
         }
       ],
       "followersSource": "instagram-api"
@@ -237,7 +237,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 271103,
+      "followers": 271102,
       "followersGrowthPct7d": 0.96,
       "history": [
         {
@@ -454,7 +454,7 @@
         },
         {
           "date": "2026-08-12",
-          "followers": 271103
+          "followers": 271102
         }
       ],
       "followersSource": "instagram-api"
@@ -591,7 +591,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 128744,
+      "followers": 128746,
       "followersGrowthPct7d": 0.79,
       "history": [
         {
@@ -800,7 +800,7 @@
         },
         {
           "date": "2026-08-12",
-          "followers": 128744
+          "followers": 128746
         }
       ],
       "followersSource": "instagram-api"
@@ -1037,8 +1037,8 @@
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 91619,
-      "followersGrowthPct7d": 0.17,
+      "followers": 91570,
+      "followersGrowthPct7d": 0.12,
       "history": [
         {
           "date": "2026-06-15",
@@ -1254,7 +1254,7 @@
         },
         {
           "date": "2026-08-12",
-          "followers": 91619
+          "followers": 91570
         }
       ],
       "followersSource": "manual"
@@ -1264,7 +1264,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 50115,
+      "followers": 50116,
       "followersGrowthPct7d": 3.89,
       "history": [
         {
@@ -1473,7 +1473,7 @@
         },
         {
           "date": "2026-08-12",
-          "followers": 50115
+          "followers": 50116
         }
       ],
       "followersSource": "instagram-api"
@@ -1483,8 +1483,8 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 39388,
-      "followersGrowthPct7d": 1.98,
+      "followers": 39165,
+      "followersGrowthPct7d": 1.4,
       "history": [
         {
           "date": "2026-06-15",
@@ -1700,7 +1700,7 @@
         },
         {
           "date": "2026-08-12",
-          "followers": 39388
+          "followers": 39165
         }
       ],
       "followersSource": "manual"
