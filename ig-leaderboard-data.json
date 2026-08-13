@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-13",
-  "refreshedAt": "2026-08-13T08:09:05+08:00",
+  "refreshedAt": "2026-08-13T08:13:30+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 682621,
+      "followers": 682623,
       "followersGrowthPct7d": 0.63,
       "history": [
         {
@@ -231,7 +231,7 @@
         },
         {
           "date": "2026-08-13",
-          "followers": 682621
+          "followers": 682623
         }
       ],
       "followersSource": "instagram-api"
@@ -241,7 +241,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 271324,
+      "followers": 271325,
       "followersGrowthPct7d": 0.91,
       "history": [
         {
@@ -462,7 +462,7 @@
         },
         {
           "date": "2026-08-13",
-          "followers": 271324
+          "followers": 271325
         }
       ],
       "followersSource": "instagram-api"
@@ -603,7 +603,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 128910,
+      "followers": 128912,
       "followersGrowthPct7d": 0.76,
       "history": [
         {
@@ -816,7 +816,7 @@
         },
         {
           "date": "2026-08-13",
-          "followers": 128910
+          "followers": 128912
         }
       ],
       "followersSource": "instagram-api"
