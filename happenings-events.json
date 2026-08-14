@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-08-13",
+  "updatedAt": "2026-08-14",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 46,
+  "highlightedCount": 47,
   "events": [
     {
       "title": "Pottery Stars — Shenzhen Museum Collection",
@@ -27,6 +27,17 @@
       "highlighted": false
     },
     {
+      "title": "Art Plaza Project — Hong Kong Palace Museum",
+      "start": "2025-11-08",
+      "end": "2026-11-02",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-the-art-plaza-project-at-the-hong-kong-palace-museum",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
       "start": "2025-11-20",
       "end": "2026-08-31",
@@ -49,6 +60,17 @@
       "highlighted": true
     },
     {
+      "title": "Dial-A-Poem Hong Kong at M+",
+      "start": "2026-04-25",
+      "end": "2026-08-30",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/dial-a-poem-hong-kong/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "Pet Love — Cats and Dogs World",
       "start": "2026-05-29",
       "end": "2026-10-07",
@@ -57,6 +79,28 @@
       "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=659c5f681ef04429a67813e8aa3502b9&type=2",
       "sourceDomain": "shenzhenmuseum.com",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Wael Shawky — I Am Hymns of the New Temples",
+      "start": "2026-05-30",
+      "end": "2026-10-25",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/wael-shawky-i-am-hymns-of-the-new-temples/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
+      "title": "Heri Dono — Fermentation of the Mind at M+",
+      "start": "2026-05-30",
+      "end": "2026-10-25",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/heri-dono-fermentation-of-the-mind/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
       "highlighted": false
     },
     {
@@ -1028,6 +1072,18 @@
       "highlighted": false
     },
     {
+      "title": "Fai Chi Kei × Qixi Starry Market",
+      "start": "2026-08-13",
+      "end": "2026-08-20",
+      "region": "macao",
+      "location": "Rua do Comandante João Belo",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
       "title": "Janet Cardiff: The Forty Part Motet at M+",
       "start": "2026-08-15",
       "end": "2027-01-10",
@@ -1412,6 +1468,17 @@
       "highlighted": true
     },
     {
+      "title": "Myths and Monsters — Fantasy in Asia at M+",
+      "start": "2026-10-17",
+      "end": "2027-04-04",
+      "region": "hk",
+      "location": "M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "Eco Expo Asia 2026 (AsiaWorld-Expo)",
       "start": "2026-10-26",
       "end": "2026-10-29",
@@ -1491,17 +1558,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1521,6 +1577,17 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -1601,17 +1668,6 @@
       "highlighted": true
     },
     {
-      "title": "Fashion InStyle 2027 (HKCEC)",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/fashioninstyle/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Hong Kong Gifts & Premium Fair 2027 (HKCEC)",
       "start": "2027-04-27",
       "end": "2027-04-30",
@@ -1621,6 +1677,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "Fashion InStyle 2027 (HKCEC)",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/fashioninstyle/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 12,
+      "highlighted": false
     },
     {
       "title": "Hong Kong International Printing & Packaging Fair 2027 (AsiaWorld-Expo)",
