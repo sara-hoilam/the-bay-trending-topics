@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-14",
-  "refreshedAt": "2026-08-14T08:07:58+08:00",
+  "refreshedAt": "2026-08-14T08:12:01+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -245,7 +245,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 271545,
+      "followers": 271546,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -470,7 +470,7 @@
         },
         {
           "date": "2026-08-14",
-          "followers": 271545
+          "followers": 271546
         }
       ],
       "followersSource": "instagram-api"
@@ -615,7 +615,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 129204,
+      "followers": 129205,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -832,7 +832,7 @@
         },
         {
           "date": "2026-08-14",
-          "followers": 129204
+          "followers": 129205
         }
       ],
       "followersSource": "instagram-api"
@@ -1774,7 +1774,7 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 19075,
+      "followers": 19076,
       "followersGrowthPct7d": null,
       "history": [
         {
@@ -1999,7 +1999,7 @@
         },
         {
           "date": "2026-08-14",
-          "followers": 19075
+          "followers": 19076
         }
       ],
       "followersSource": "instagram-api"
