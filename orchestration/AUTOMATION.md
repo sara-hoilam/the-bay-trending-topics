@@ -107,6 +107,7 @@ This happens **before** the agent runs. Almost always:
 | Weibo rows `—` | Expected sometimes; agent may need mirror URL in disclaimer |
 | **Cloud Run 3/4 `exit code 2`** (~5–10s) | Cursor cloud agent returned `status: error` early — often transient after prior runs, or a premature SDK poll while the agent is still setting up. **Not** a Happenings/Instagram script failure. Check run id in [Cursor dashboard](https://cursor.com/dashboard). Runs 3–4 are optional so post-pipeline still runs. |
 | **Workflow red but Happenings commit on `main`** | Same premature `status: error`: the SDK reported failure in ~7s while the cloud agent continued and pushed. Confirm with `git log` / Cursor agent URL; re-run workflow or post-pipeline for IG + merge if those steps were skipped. |
+| **`[resource_exhausted]` / HTTP 429 on Cloud Run 1** | Rate/quota limit on `POST /v1/agents` — **not** an expired API key (preflight already passed). Check [Usage](https://cursor.com/dashboard): Composer can show headroom while agent create is blocked (Other Models 100%, on-demand spend off/capped, or short-window capacity). Re-run after spend is enabled or the window resets. |
 
 ### Cloud Run 3 (Happenings) or Run 4 (IG) fails after Runs 1–2 succeed
 
