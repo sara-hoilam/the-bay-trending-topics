@@ -16,6 +16,7 @@ import { fileURLToPath } from "url";
 import { execFileSync } from "child_process";
 import { Agent, Cursor, CursorAgentError } from "@cursor/sdk";
 import {
+  isRateLimitError,
   logSdkError,
   normalizeRepoUrl,
   printIntegrationHelp,
@@ -75,15 +76,18 @@ async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
   if (!cfg) throw new Error(`Unknown run step: ${step}`);
   const prompt = readPrompt(cfg.file);
   const label = cfg.label;
+  // Rate-limit (429) is often capacity / short-window; allow a few backed-off retries
+  // even when the step itself has retries: 0.
+  const rateLimitRetries = Math.max(retries, 2);
 
   console.log(`\n=== Cloud Run ${step}: ${label}${optional ? " (optional)" : ""} ===`);
   console.log(`Repo: ${REPO_URL}`);
   console.log(`Model: ${MODEL_ID}\n`);
 
-  for (let attempt = 0; attempt <= retries; attempt++) {
+  for (let attempt = 0; ; attempt++) {
     if (attempt > 0) {
-      const waitSec = 30;
-      console.warn(`Cloud Run ${step} retry ${attempt}/${retries} in ${waitSec}s…`);
+      const waitSec = Math.min(180, 45 * attempt);
+      console.warn(`Cloud Run ${step} retry ${attempt} in ${waitSec}s…`);
       await new Promise((r) => setTimeout(r, waitSec * 1000));
     }
 
@@ -98,15 +102,23 @@ async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
     } catch (err) {
       if (err instanceof CursorAgentError) {
         logSdkError(err, `Cloud Run ${step} startup failed`);
-        printIntegrationHelp();
-        if (optional && attempt < retries) continue;
+        printIntegrationHelp(err);
+        const rateLimited = isRateLimitError(err);
+        const maxAttempts = rateLimited ? rateLimitRetries : retries;
+        if (attempt < maxAttempts) continue;
         if (optional) {
           console.warn(
             `Cloud Run ${step} skipped — post-pipeline will refresh IG via scripts/run-daily-post.mjs`
           );
           return false;
         }
-        console.error("\nRun: npm run daily:diagnose");
+        if (rateLimited) {
+          console.error(
+            "\nAborting: Cursor returned resource_exhausted (429). API key/GitHub are OK — check Usage / on-demand spend, then re-run the workflow."
+          );
+        } else {
+          console.error("\nRun: npm run daily:diagnose");
+        }
         process.exit(1);
       }
       throw err;
@@ -127,7 +139,7 @@ async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
       if (attempt < retries) continue;
       if (optional) {
         console.warn(
-          `Cloud Run ${step} failed after ${retries + 1} attempt(s) — post-pipeline will refresh IG via capture-ig-leaderboard.mjs --refresh`
+          `Cloud Run ${step} failed after ${attempt + 1} attempt(s) — post-pipeline will refresh IG via capture-ig-leaderboard.mjs --refresh`
         );
         return false;
       }

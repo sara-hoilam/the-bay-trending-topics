@@ -28,7 +28,7 @@ async function section(title, fn) {
     await fn();
   } catch (err) {
     logSdkError(err, title);
-    printIntegrationHelp();
+    printIntegrationHelp(err);
     process.exit(1);
   }
 }
