@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 /**
- * Daily GBA Pulse — four cloud Composer 2.5 runs (Trend Watch, Daily Brief, Happenings, IG Leaderboard).
+ * Daily GBA Pulse — four cloud runs (Trend Watch, Daily Brief, Happenings, IG Leaderboard).
+ * Default model: latest Cursor Grok in the Cursor Models pool (not Other Models).
  *
  * Env:
- *   CURSOR_API_KEY — required
- *   GITHUB_TOKEN   — optional; passed to cloud agent for git push
+ *   CURSOR_API_KEY      — required
+ *   CURSOR_CLOUD_MODEL  — optional model id override (e.g. composer-2.5, grok-4.6)
+ *   GITHUB_TOKEN        — optional; passed to cloud agent for git push
  *
  * Usage:
  *   node scripts/run-daily-cloud.mjs
@@ -13,13 +15,15 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { execFileSync } from "child_process";
 import { Agent, Cursor, CursorAgentError } from "@cursor/sdk";
 import {
+  DEFAULT_CLOUD_MODEL_ID,
   isRateLimitError,
+  listModelIds,
   logSdkError,
   normalizeRepoUrl,
   printIntegrationHelp,
+  resolveCloudModelId,
   TARGET_REPO,
 } from "./cloud-sdk-utils.mjs";
 
@@ -27,7 +31,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 
 const REPO_URL = TARGET_REPO;
-const MODEL_ID = "composer-2.5";
 
 function readPrompt(name) {
   return fs.readFileSync(path.join(root, "prompts", name), "utf8");
@@ -45,6 +48,24 @@ function cloudOptions() {
   return opts;
 }
 
+async function resolveModel(apiKey) {
+  try {
+    const models = await Cursor.models.list({ apiKey });
+    const resolved = resolveCloudModelId(listModelIds(models));
+    if (resolved.source === "forced-unlisted" || resolved.source === "default-unlisted") {
+      console.warn(
+        `⚠ Model ${resolved.modelId} not in Cursor.models.list — launching anyway. Available: ${resolved.available.slice(0, 12).join(", ") || "(none)"}`
+      );
+    } else if (resolved.source.startsWith("fallback")) {
+      console.warn(`⚠ ${resolved.source}; using ${resolved.modelId}`);
+    }
+    return resolved.modelId;
+  } catch (err) {
+    console.warn(`⚠ Could not list models (${err?.message ?? err}); defaulting to ${DEFAULT_CLOUD_MODEL_ID}`);
+    return process.env.CURSOR_CLOUD_MODEL?.trim() || DEFAULT_CLOUD_MODEL_ID;
+  }
+}
+
 async function preflight(apiKey) {
   const target = normalizeRepoUrl(REPO_URL);
   try {
@@ -59,7 +80,7 @@ async function preflight(apiKey) {
     }
   } catch (err) {
     logSdkError(err, "Preflight failed");
-    printIntegrationHelp();
+    printIntegrationHelp(err);
     process.exit(1);
   }
 }
@@ -71,7 +92,7 @@ const RUN_PROMPTS = {
   4: { file: "gba-pulse-cloud-run4-ig-leaderboard.md", label: "IG Leaderboard" },
 };
 
-async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
+async function runStep(step, apiKey, modelId, { optional = false, retries = 0 } = {}) {
   const cfg = RUN_PROMPTS[step];
   if (!cfg) throw new Error(`Unknown run step: ${step}`);
   const prompt = readPrompt(cfg.file);
@@ -82,7 +103,7 @@ async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
 
   console.log(`\n=== Cloud Run ${step}: ${label}${optional ? " (optional)" : ""} ===`);
   console.log(`Repo: ${REPO_URL}`);
-  console.log(`Model: ${MODEL_ID}\n`);
+  console.log(`Model: ${modelId} (Cursor Models pool — not Other Models)\n`);
 
   for (let attempt = 0; ; attempt++) {
     if (attempt > 0) {
@@ -96,7 +117,7 @@ async function runStep(step, apiKey, { optional = false, retries = 0 } = {}) {
     try {
       result = await Agent.prompt(prompt, {
         apiKey,
-        model: { id: MODEL_ID },
+        model: { id: modelId },
         cloud: cloudOptions(),
       });
     } catch (err) {
@@ -174,18 +195,26 @@ async function main() {
     console.log("Preflight OK.\n");
   }
 
-  if (only === 1 || only == null) await runStep(1, apiKey);
+  const modelId = await resolveModel(apiKey);
+  console.log(`Cloud model: ${modelId}`);
+  if (process.env.CURSOR_CLOUD_MODEL?.trim()) {
+    console.log(`(from CURSOR_CLOUD_MODEL=${process.env.CURSOR_CLOUD_MODEL.trim()})`);
+  } else {
+    console.log("(Cursor Models pool default — override with CURSOR_CLOUD_MODEL)");
+  }
 
-  if (only === 2 || only == null) await runStep(2, apiKey);
+  if (only === 1 || only == null) await runStep(1, apiKey, modelId);
+
+  if (only === 2 || only == null) await runStep(2, apiKey, modelId);
   // Happenings: optional — Cursor sometimes returns status:error in ~5–10s while the
   // agent is still running (or after a transient abort). Do not retry (avoids a second
   // agent racing the first). Post-pipeline regenerates happenings-events.json via
   // generate-happenings-data.mjs either way.
   if (only === 3 || only == null) {
-    await runStep(3, apiKey, { optional: true, retries: 0 });
+    await runStep(3, apiKey, modelId, { optional: true, retries: 0 });
   }
   if (only === 4 || only == null) {
-    await runStep(4, apiKey, { optional: true, retries: 1 });
+    await runStep(4, apiKey, modelId, { optional: true, retries: 1 });
   }
 
   console.log("\nDone. Pull main and open index.html, or wait for GitHub Pages.");

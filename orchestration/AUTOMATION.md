@@ -1,6 +1,6 @@
 # GBA Pulse — daily cloud automation (06:00 HKT scheduled, ~08:30 start after queue)
 
-Runs on **GitHub Actions** — your Mac can be off. Uses **Cursor Cloud agents** with **Composer 2.5 Standard** (~$0.35–0.50 per day target).
+Runs on **GitHub Actions** — your Mac can be off. Uses **Cursor Cloud agents** with the **Cursor Models** pool by default (**Grok 4.6**, falling back to Grok 4.5 / Composer 2.5) so a drained **Other Models** (Claude/GPT) quota does not block the daily job.
 
 ## What is a PR?
 
@@ -61,13 +61,14 @@ node scripts/run-daily-cloud.mjs --run=2
 - **Cron:** `0 22 * * *` UTC = **06:00 Asia/Hong_Kong** (GitHub queue delay usually pushes actual start to ~08:30 HKT; job runtime ~10–20 min)
 - Workflow file: `.github/workflows/daily-gba-pulse.yml`
 
-## Cost (~$0.50 / day)
+## Cost (Cursor Models pool)
 
-- **Composer 2.5 Standard:** ~$0.50/M input, ~$2.50/M output ([pricing](https://cursor.com/docs/models/cursor-composer-2-5))
-- **2 runs** (boards + edition only) with capped news searches → ~600k–1M input + ~40–60k output → **~$0.35–0.50** API-style
-- Individual plans may use **included Composer pool** — check **Cursor → Usage** after the first run
+- Default model: **`grok-4.6`** (Cursor Models). Override with `CURSOR_CLOUD_MODEL` or the workflow_dispatch **cloud_model** input (`composer-2.5`, `grok-4.5`, …).
+- Preference order when the requested id is missing: `grok-4.6` → `grok-4.5` → `composer-2.5`.
+- Do **not** point the daily job at Claude/GPT ids — those draw from **Other Models** and fail when that pool is at 100%.
+- Individual plans use the included Cursor Models pool — check **Cursor → Usage** after the first run.
 
-Do **not** enable Fast tier in the workflow (`composer-2.5` Fast is ~6× more expensive).
+Do **not** enable Fast tier in the workflow when you can avoid it (Fast is much more expensive for Composer/Grok).
 
 ## Troubleshooting
 

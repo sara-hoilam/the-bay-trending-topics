@@ -7,9 +7,12 @@
  */
 import { Cursor } from "@cursor/sdk";
 import {
+  CURSOR_MODELS_POOL_PREFERENCE,
+  listModelIds,
   logSdkError,
   normalizeRepoUrl,
   printIntegrationHelp,
+  resolveCloudModelId,
   TARGET_REPO,
 } from "./cloud-sdk-utils.mjs";
 
@@ -39,15 +42,22 @@ await section("API key / account", async () => {
   if (me.createdAt) console.log(`  key created: ${me.createdAt}`);
 });
 
-await section("Models (composer-2.5)", async () => {
+await section("Models (Cursor Models pool)", async () => {
   const models = await Cursor.models.list(opts);
-  const ids = models.map((m) => m.id ?? m.model?.id).filter(Boolean);
-  const has = ids.some((id) => id === "composer-2.5");
+  const ids = listModelIds(models);
+  const resolved = resolveCloudModelId(ids);
   console.log(`  available: ${ids.slice(0, 8).join(", ")}${ids.length > 8 ? "…" : ""}`);
-  if (!has) {
-    console.warn("  ⚠ composer-2.5 not listed — cloud run may fail; try model id from list above");
+  console.log(`  preference: ${CURSOR_MODELS_POOL_PREFERENCE.join(" → ")}`);
+  if (process.env.CURSOR_CLOUD_MODEL?.trim()) {
+    console.log(`  CURSOR_CLOUD_MODEL: ${process.env.CURSOR_CLOUD_MODEL.trim()}`);
+  }
+  const listed = ids.includes(resolved.modelId);
+  if (!listed) {
+    console.warn(
+      `  ⚠ ${resolved.modelId} not listed — cloud run may fail; try a model id from the list above`
+    );
   } else {
-    console.log("  ✓ composer-2.5");
+    console.log(`  ✓ will use ${resolved.modelId} (${resolved.source})`);
   }
 });
 
