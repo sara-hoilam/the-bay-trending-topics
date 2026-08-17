@@ -2,12 +2,19 @@
 # GitHub Actions queue delay is typically ~2–3 h, so runs start ~08:30 HKT and finish ~08:45.
 # Tabs updated: Trend Watch, Daily Brief, Happenings, IG Leaderboard, New Hotels, Source Links (data JSON).
 # Requires repo secret: CURSOR_API_KEY
+# Cloud agents use Cursor Models pool (default grok-4.6) — not Other Models (Claude/GPT).
 name: Daily GBA Pulse
 
 on:
   schedule:
     - cron: "0 23 * * *"
   workflow_dispatch:
+    inputs:
+      cloud_model:
+        description: "Cursor Models pool id (blank = grok-4.6, then grok-4.5, then composer-2.5)"
+        required: false
+        default: ""
+        type: string
 
 run-name: "GBA Pulse refresh · run ${{ github.run_number }}"
 
@@ -39,11 +46,13 @@ jobs:
       - name: Preflight (API key + GitHub repo access)
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_CLOUD_MODEL: ${{ inputs.cloud_model }}
         run: node scripts/diagnose-cloud.mjs
 
       - name: Cloud agents (Trend Watch + Daily Brief + Happenings + IG Leaderboard)
         env:
           CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+          CURSOR_CLOUD_MODEL: ${{ inputs.cloud_model }}
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/run-daily-cloud.mjs --skip-preflight
 

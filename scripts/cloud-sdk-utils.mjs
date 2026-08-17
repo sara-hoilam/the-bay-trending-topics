@@ -6,6 +6,55 @@ import {
 export const TARGET_REPO =
   "https://github.com/sara-hoilam/the-bay-trending-topics";
 
+/**
+ * Preferred cloud models from the Cursor Models pool (Grok / Composer).
+ * Avoid Claude/GPT "Other Models" so a drained Other Models quota cannot block
+ * the daily job. Prefer latest Grok, then older Grok, then Composer.
+ *
+ * Override with env CURSOR_CLOUD_MODEL (exact model id).
+ */
+export const CURSOR_MODELS_POOL_PREFERENCE = [
+  "grok-4.6",
+  "grok-4.5",
+  "composer-2.5",
+];
+
+export const DEFAULT_CLOUD_MODEL_ID = CURSOR_MODELS_POOL_PREFERENCE[0];
+
+export function requestedCloudModelId() {
+  const fromEnv = process.env.CURSOR_CLOUD_MODEL?.trim();
+  return fromEnv || DEFAULT_CLOUD_MODEL_ID;
+}
+
+export function listModelIds(models) {
+  return (models ?? []).map((m) => m.id ?? m.model?.id).filter(Boolean);
+}
+
+/**
+ * Pick a Cursor Models–pool id. If CURSOR_CLOUD_MODEL is set, use it when listed
+ * (or keep it with a warning). Otherwise walk the preference list.
+ */
+export function resolveCloudModelId(availableIds, preferred = requestedCloudModelId()) {
+  const ids = availableIds ?? [];
+  const set = new Set(ids);
+  if (preferred && set.has(preferred)) {
+    return { modelId: preferred, source: preferred === process.env.CURSOR_CLOUD_MODEL?.trim() ? "env" : "default", available: ids };
+  }
+  for (const id of CURSOR_MODELS_POOL_PREFERENCE) {
+    if (set.has(id)) {
+      return {
+        modelId: id,
+        source: preferred && preferred !== id ? `fallback (wanted ${preferred})` : "preference",
+        available: ids,
+      };
+    }
+  }
+  if (preferred) {
+    return { modelId: preferred, source: "forced-unlisted", available: ids };
+  }
+  return { modelId: DEFAULT_CLOUD_MODEL_ID, source: "default-unlisted", available: ids };
+}
+
 export function normalizeRepoUrl(url) {
   return String(url)
     .trim()
