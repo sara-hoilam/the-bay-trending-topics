@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-20",
-  "refreshedAt": "2026-08-20T07:50:40+08:00",
+  "refreshedAt": "2026-08-20T07:54:44+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 685290,
+      "followers": 685293,
       "followersGrowthPct7d": 0.39,
       "history": [
         {
@@ -247,7 +247,7 @@
         },
         {
           "date": "2026-08-20",
-          "followers": 685290
+          "followers": 685293
         }
       ],
       "followersSource": "instagram-api"
@@ -651,7 +651,7 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 130195,
+      "followers": 130197,
       "followersGrowthPct7d": 1,
       "history": [
         {
@@ -880,7 +880,7 @@
         },
         {
           "date": "2026-08-20",
-          "followers": 130195
+          "followers": 130197
         }
       ],
       "followersSource": "instagram-api"
@@ -1384,7 +1384,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 51333,
+      "followers": 51334,
       "followersGrowthPct7d": 2,
       "history": [
         {
@@ -1613,7 +1613,7 @@
         },
         {
           "date": "2026-08-20",
-          "followers": 51333
+          "followers": 51334
         }
       ],
       "followersSource": "instagram-api"
@@ -1624,7 +1624,7 @@
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
       "followers": 41955,
-      "followersGrowthPct7d": 3.84,
+      "followersGrowthPct7d": 3.11,
       "history": [
         {
           "date": "2026-06-15",
