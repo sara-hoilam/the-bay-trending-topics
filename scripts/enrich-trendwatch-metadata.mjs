@@ -18,6 +18,70 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  癌症疫苗: {
+    titleEn: "Cancer vaccine",
+    whyTrending:
+      "Moderna and Merck reported the first positive Phase 3 readout for a personalised mRNA cancer vaccine in resected melanoma, sending Moderna shares sharply higher then lower as traders digested the news.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  肿瘤疫苗迎百年破局: {
+    titleEn: "Tumour vaccine hailed as a century breakthrough",
+    whyTrending:
+      "Weibo framed the Moderna–Merck Phase 3 melanoma result as a once-in-a-century opening for therapeutic cancer vaccines, pulling medical and biotech searches onto the realtime board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  首个治疗性癌症疫苗: {
+    titleEn: "First therapeutic cancer vaccine",
+    whyTrending:
+      "Coverage of intismeran autogene plus Keytruda meeting recurrence-free and distant-metastasis endpoints made 'first therapeutic cancer vaccine' a national search spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  雷暴: {
+    titleEn: "Thunderstorm",
+    whyTrending:
+      "Hong Kong Observatory issued thunderstorm warnings and special weather tips as heavy-rain cells approached from the south and east. Related queries for low pressure and HKO spiked with the 48h monsoon pulse.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  許家印: {
+    titleEn: "Hui Ka Yan (Evergrande)",
+    whyTrending:
+      "Shenzhen Intermediate People's Court on 20 August sentenced Evergrande founder Hui Ka Yan to life imprisonment and confiscation of personal assets. The GBA verdict also fined Evergrande Group and Evergrande Real Estate billions of yuan.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  许家印: {
+    titleEn: "Hui Ka Yan (Evergrande)",
+    whyTrending:
+      "Simplified-character searches tracked the same Shenzhen first-instance verdict sentencing Hui Ka Yan to life and confiscating his assets over the Evergrande fraud case.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  風暴: {
+    titleEn: "Storm",
+    whyTrending:
+      "Storm-related searches rose with Observatory thunderstorm warnings and two low-pressure areas near the South China Sea and east of Taiwan that could affect the Guangdong coast into the weekend.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  华为PuraXView: {
+    titleEn: "Huawei Pura X View",
+    whyTrending:
+      "Huawei unveiled Pura X View, billed as the first wide-screen candybar phone, at the Harmony Intelligent Mobility launch alongside the Stelato G9. Yu Chengdong said it will ship with HarmonyOS 7, with pre-sales from 28 August.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   翁金驊: {
     titleEn: "Angie Ng (TVB artist)",
     whyTrending:

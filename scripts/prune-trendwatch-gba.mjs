@@ -96,7 +96,13 @@ function pruneData(data) {
   for (const id of ["baidu", "weibo"]) {
     const sec = data.sections.find((s) => s.id === id);
     if (!sec) continue;
-    for (const it of sec.items || []) {
+    const pool = [...(sec.items || [])];
+    if (id === "weibo") {
+      for (const boardRows of Object.values(sec.itemsByBoard || {})) {
+        pool.push(...(boardRows || []));
+      }
+    }
+    for (const it of pool) {
       if (!it.title || it.title === "—") continue;
       rows.push({
         platform: id,
@@ -109,11 +115,40 @@ function pruneData(data) {
     }
   }
 
+  function clusterKey(title) {
+    const t = String(title).trim().toLowerCase();
+    if (/许家印|許家印/.test(t)) return "cluster:hui-ka-yan";
+    if (/雷暴|風暴|风暴/.test(t)) return "cluster:hk-storm";
+    if (/癌症疫苗|肿瘤疫苗|治疗性癌症疫苗|moderna/i.test(t)) return "cluster:cancer-vaccine";
+    if (/华为pura|pura x view|阔直板/i.test(t)) return "cluster:huawei-pura-x-view";
+    if (/诺基亚/.test(t)) return "cluster:nokia-china";
+    if (/大数据杀熟/.test(t)) return "cluster:price-discrimination";
+    if (/樊振东/.test(t)) return "cluster:fan-zhendong";
+    if (/阿里/.test(t)) return "cluster:alibaba-earnings";
+    if (/肖戰|肖战/.test(t)) return "cluster:xiao-zhan";
+    if (/气候异常|秋裤/.test(t)) return "cluster:china-climate";
+    if (/宇树/.test(t)) return "cluster:unitree";
+    if (/医院能办结婚证/.test(t)) return "cluster:hospital-marriage";
+    if (/瑜伽垫/.test(t)) return "cluster:yoga-mat-hpv";
+    if (/中国铁路/.test(t)) return "cluster:china-railway-ai";
+    if (/智界rx|享界g9|余承东|鸿蒙智行/i.test(t)) return "cluster:huawei-auto";
+    return t;
+  }
+
   const byTitle = new Map();
   for (const r of rows) {
-    const key = r.title.trim().toLowerCase();
+    const key = clusterKey(r.title);
     if (!byTitle.has(key)) byTitle.set(key, { title: r.title, hits: [] });
     byTitle.get(key).hits.push(r);
+  }
+  for (const cluster of byTitle.values()) {
+    const gHit = cluster.hits.find((h) => h.platform === "google_trends");
+    if (gHit) {
+      cluster.title = gHit.title;
+      continue;
+    }
+    cluster.hits.sort((a, b) => (b.volumeEstimate || 0) - (a.volumeEstimate || 0));
+    cluster.title = cluster.hits[0].title;
   }
 
   const candidates = [];
@@ -162,7 +197,62 @@ function pruneData(data) {
   });
 
   topicCandidates.sort((a, b) => b.compositeScore - a.compositeScore);
-  data.topicCandidates = topicCandidates.slice(0, 25);
+
+  const editorialTitles = new Set();
+  for (const sec of data.sections || []) {
+    const rows =
+      sec.id === "google_trends"
+        ? Object.values(sec.itemsByLocation || {}).flat()
+        : [...(sec.items || []), ...Object.values(sec.itemsByBoard || {}).flat()];
+    for (const it of rows) {
+      if (!it?.title || it.title === "—") continue;
+      if (it.isGossip === true || it.isNewsworthy === false) continue;
+      if (sec.id === "google_trends" || it.isGbaRelevant === true) {
+        editorialTitles.add(String(it.title).trim().toLowerCase());
+      }
+    }
+  }
+  const whyByTitle = new Map();
+  for (const sec of data.sections || []) {
+    const rows =
+      sec.id === "google_trends"
+        ? Object.values(sec.itemsByLocation || {}).flat()
+        : [...(sec.items || []), ...Object.values(sec.itemsByBoard || {}).flat()];
+    for (const it of rows) {
+      const k = String(it.title || "").trim().toLowerCase();
+      if (it.whyTrending && !whyByTitle.has(k)) whyByTitle.set(k, it.whyTrending);
+      if (it.titleEn && !whyByTitle.has(k + "::en")) whyByTitle.set(k + "::en", it.titleEn);
+      if (it.isGossip) whyByTitle.set(k + "::gossip", true);
+    }
+  }
+  for (const c of topicCandidates) {
+    const keys = [c.displayTitle, ...(c.platformHits || []).map((h) => h.title)].map((t) =>
+      String(t || "").trim().toLowerCase(),
+    );
+    for (const k of keys) {
+      if (!c.whyTrending && whyByTitle.get(k)) c.whyTrending = whyByTitle.get(k);
+      if (!c.titleEn && whyByTitle.get(k + "::en")) c.titleEn = whyByTitle.get(k + "::en");
+      if (whyByTitle.get(k + "::gossip")) c.isGossip = true;
+    }
+  }
+  const head = [];
+  const restEditorial = [];
+  for (const c of topicCandidates) {
+    const titles = [c.displayTitle, ...(c.platformHits || []).map((h) => h.title)].map((t) =>
+      String(t).trim().toLowerCase(),
+    );
+    const editorial = titles.some((t) => editorialTitles.has(t));
+    if (head.length < 20) head.push(c);
+    else if (editorial) restEditorial.push(c);
+  }
+  const GBA_PLACE = /香港|澳门|广州|深圳|珠海|佛山|东莞|富士康|横琴|前海|南沙|jupas|百 佳|雷暴|許家印|许家印/i;
+  restEditorial.sort((a, b) => {
+    const aLoc = GBA_PLACE.test(a.displayTitle + a.platformHits.map((h) => h.title).join()) ? 1 : 0;
+    const bLoc = GBA_PLACE.test(b.displayTitle + b.platformHits.map((h) => h.title).join()) ? 1 : 0;
+    if (aLoc !== bLoc) return bLoc - aLoc;
+    return b.compositeScore - a.compositeScore;
+  });
+  data.topicCandidates = [...head, ...restEditorial].slice(0, 40);
 
   for (const secId of ["baidu", "weibo"]) {
     const sec = data.sections.find((s) => s.id === secId);
@@ -176,7 +266,9 @@ function pruneData(data) {
       const c = prior || live;
       if (!c) continue;
       if (c.gbaRelevance === "low") it.isGbaRelevant = false;
-      else if (c.gbaRelevance === "high" || c.gbaRelevance === "medium") it.isGbaRelevant = true;
+      else if (it.isGbaRelevant !== false && (c.gbaRelevance === "high" || c.gbaRelevance === "medium")) {
+        it.isGbaRelevant = true;
+      }
       if (c.whyTrending && !it.whyTrending) it.whyTrending = c.whyTrending;
       if (c.titleEn && !it.titleEn) it.titleEn = c.titleEn;
     }
