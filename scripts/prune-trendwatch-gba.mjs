@@ -118,8 +118,18 @@ function pruneData(data) {
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
     if (/许家印|許家印/.test(t)) return "cluster:hui-ka-yan";
-    if (/雷暴|風暴|风暴/.test(t)) return "cluster:hk-storm";
-    if (/癌症疫苗|肿瘤疫苗|治疗性癌症疫苗|moderna/i.test(t)) return "cluster:cancer-vaccine";
+    if (/鬥牛梗|狗咬死人|打鼓嶺|格鬥犬/.test(t)) return "cluster:ta-kwu-ling-dog";
+    if (/英超|arsenal|兵工廠|epl|科芬特里|coventry/i.test(t)) return "cluster:epl-opener";
+    if (/長江存储|长江存储|长存控股/.test(t)) return "cluster:ymtc-ipo";
+    if (/deepseek/i.test(t)) return "cluster:deepseek-v4";
+    if (/召回|门把手/.test(t)) return "cluster:auto-recall";
+    if (/中际旭创/.test(t)) return "cluster:zhongji-inchon";
+    if (/微信|按住转文字/.test(t)) return "cluster:wechat-stt";
+    if (/12\.4万亿|民生资金|育儿补贴/.test(t)) return "cluster:minsheng-124";
+    if (/台湾海峡|美军机过航/.test(t)) return "cluster:taiwan-strait";
+    if (/占座放零食|席位使用权/.test(t)) return "cluster:train-seat";
+    if (/雷暴|風暴|风暴|热带气旋|热带低压|熱帶/.test(t)) return "cluster:hk-storm";
+    if (/癌症疫苗|肿瘤疫苗|治疗性癌症疫苗|moderna|mrna癌症/i.test(t)) return "cluster:cancer-vaccine";
     if (/华为pura|pura x view|阔直板/i.test(t)) return "cluster:huawei-pura-x-view";
     if (/诺基亚/.test(t)) return "cluster:nokia-china";
     if (/大数据杀熟/.test(t)) return "cluster:price-discrimination";

@@ -18,6 +18,118 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  周嘉洛: {
+    titleEn: "Koo Ka-lok (TVB actor)",
+    whyTrending:
+      "TVB actor Koo Ka-lok trended at 10K+ after 驅魔速遞 filming and co-star coverage. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  遺囑: {
+    titleEn: "Will / testament",
+    whyTrending:
+      "Hong Kong Google listed 遗嘱 at 5K+ with 1,000% growth in the same 48-hour window as Hui Ka Yan's Shenzhen life sentence and full asset confiscation. Users searched estate-and-will language around the Evergrande verdict rather than a separate gossip spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  遗嘱: {
+    titleEn: "Will / testament",
+    whyTrending:
+      "Hong Kong Google listed 遗嘱 at 5K+ with 1,000% growth in the same 48-hour window as Hui Ka Yan's Shenzhen life sentence and full asset confiscation. Users searched estate-and-will language around the Evergrande verdict rather than a separate gossip spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  鬥牛梗: {
+    titleEn: "Bull terrier",
+    whyTrending:
+      "Related queries for 格鬥犬, 唐狗 and 打鼓嶺 spiked after a 33-year-old pet-hotel operator in Ta Kwu Ling was fatally attacked on 20 August. Police said CCTV showed a ~30kg mixed bull terrier mauling her for about a minute.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  狗咬死人: {
+    titleEn: "Fatal dog attack",
+    whyTrending:
+      "Hong Kong searches for a fatal dog mauling jumped after the 20 August Ta Kwu Ling pet-hotel death. AFCD took the dog for observation while Border District crime squad investigated possible negligence.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  英超: {
+    titleEn: "English Premier League",
+    whyTrending:
+      "Hong Kong searches for the Premier League jumped as the 2026–27 season opened overnight. Arsenal beat Coventry City 3–0 in the curtain-raiser, also ranking in Chinese as 兵工廠對科芬特里城.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  兵工廠對科芬特里城: {
+    titleEn: "Arsenal vs Coventry City",
+    whyTrending:
+      "Cantonese search wording for Arsenal's 3–0 opening-day win over newly promoted Coventry. Related queries included 阿仙奴 and 高雲地利 as Hong Kong fans tracked the EPL kickoff.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "熱帶 風暴": {
+    titleEn: "Tropical storm",
+    whyTrending:
+      "Hong Kong Observatory tropical-storm and cyclone queries climbed as a weather system near the South China Sea drew typhoon-season attention. Related terms included 熱帶氣旋 and 天文台時間.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  热带气旋: {
+    titleEn: "Tropical cyclone",
+    whyTrending:
+      "Simplified-character searches for a tropical cyclone tracked the same Observatory alert window, with related queries for HKO clock and local warning times.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  热带低压: {
+    titleEn: "Tropical depression",
+    whyTrending:
+      "Tropical-depression searches rose alongside 熱帶 風暴 as Hong Kong users checked whether a nearby low would intensify during the 48-hour capture.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "超級 市場": {
+    titleEn: "Supermarket",
+    whyTrending:
+      "Hong Kong supermarket queries, including 百佳超市 / ParknShop, climbed in the 48-hour window as shoppers tracked grocery prices. The spike overlapped mainland coverage of egg prices jumping 15.5% in nine days.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  宣萱: {
+    titleEn: "Jessica Hsuan (actress)",
+    whyTrending:
+      "Actress Jessica Hsuan trended with related queries for 古天樂 and his concert. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  梁朝偉: {
+    titleEn: "Tony Leung (actor)",
+    whyTrending:
+      "Tony Leung Chiu-wai ranked on Hong Kong Google during the 48-hour window. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  补贴: {
+    titleEn: "Subsidies",
+    whyTrending:
+      "Simplified-character subsidy searches in Hong Kong tracked the same 48-hour window as Beijing's 12.4 trillion yuan livelihood-funding briefing and childcare-subsidy rollout.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   癌症疫苗: {
     titleEn: "Cancer vaccine",
     whyTrending:
