@@ -119,16 +119,39 @@ function pruneData(data) {
     const t = String(title).trim().toLowerCase();
     if (/许家印|許家印/.test(t)) return "cluster:hui-ka-yan";
     if (/鬥牛梗|狗咬死人|打鼓嶺|格鬥犬/.test(t)) return "cluster:ta-kwu-ling-dog";
-    if (/英超|arsenal|兵工廠|epl|科芬特里|coventry/i.test(t)) return "cluster:epl-opener";
-    if (/長江存储|长江存储|长存控股/.test(t)) return "cluster:ymtc-ipo";
+    if (/英超|arsenal|兵工廠|epl|\bpl\b|科芬特里|coventry|曼联|曼聯|赫爾|赫尔|hull/i.test(t))
+      return "cluster:epl-opener";
+    if (/熱刺|热刺|tottenham|布蘭特福德|brentford/i.test(t)) return "cluster:tottenham";
+    if (/長江存储|长江存储|长存控股|科创板史上最大ipo/i.test(t)) return "cluster:ymtc-ipo";
     if (/deepseek/i.test(t)) return "cluster:deepseek-v4";
-    if (/召回|门把手/.test(t)) return "cluster:auto-recall";
+    if (/召回|门把手|小米汽车召回|su7/i.test(t)) return "cluster:auto-recall";
     if (/中际旭创/.test(t)) return "cluster:zhongji-inchon";
     if (/微信|按住转文字/.test(t)) return "cluster:wechat-stt";
     if (/12\.4万亿|民生资金|育儿补贴/.test(t)) return "cluster:minsheng-124";
     if (/台湾海峡|美军机过航/.test(t)) return "cluster:taiwan-strait";
-    if (/占座放零食|席位使用权/.test(t)) return "cluster:train-seat";
-    if (/雷暴|風暴|风暴|热带气旋|热带低压|熱帶/.test(t)) return "cluster:hk-storm";
+    if (/占座放零食|席位使用权|火车零食|零食占座|座位是给人坐的/.test(t))
+      return "cluster:train-seat";
+    if (
+      /雷暴|風暴|风暴|热带气旋|热带低压|熱帶|台风|颱風|简拉维|三台风|三个台风/.test(
+        t,
+      )
+    )
+      return "cluster:hk-storm";
+    if (/日本.*地震|东京地震|東京地震|mount fuji/i.test(t)) return "cluster:japan-quake";
+    if (/甲醛白菜|白菜蘸甲醛/.test(t)) return "cluster:formaldehyde-cabbage";
+    if (/谁得罪谁/.test(t)) return "cluster:xi-anticorruption";
+    if (/韩国.*狗肉|狗肉馆/.test(t)) return "cluster:korea-dog-meat";
+    if (/皇马|real madrid|西甲|西班牙人/i.test(t)) return "cluster:la-liga-madrid";
+    if (/拜仁|多特蒙德|德超杯/i.test(t)) return "cluster:bundesliga-supercup";
+    if (/hpv疫苗/i.test(t)) return "cluster:hpv-school";
+    if (/山洪/.test(t)) return "cluster:flash-flood";
+    if (/邹幸彤|鄒幸彤|支聯會|李卓人/.test(t)) return "cluster:chow-hang-tung";
+    if (
+      /人形机器人|机器人运动会|机器人方阵|机器人方队|机器人百米|荣耀机器人|世界机器人大会|具身智能|宇树/.test(
+        t,
+      )
+    )
+      return "cluster:humanoid-games";
     if (/癌症疫苗|肿瘤疫苗|治疗性癌症疫苗|moderna|mrna癌症/i.test(t)) return "cluster:cancer-vaccine";
     if (/华为pura|pura x view|阔直板/i.test(t)) return "cluster:huawei-pura-x-view";
     if (/诺基亚/.test(t)) return "cluster:nokia-china";

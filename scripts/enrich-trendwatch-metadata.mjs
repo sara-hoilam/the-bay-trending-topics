@@ -61,7 +61,7 @@ const GLOSSARY = {
   英超: {
     titleEn: "English Premier League",
     whyTrending:
-      "Hong Kong searches for the Premier League jumped as the 2026–27 season opened overnight. Arsenal beat Coventry City 3–0 in the curtain-raiser, also ranking in Chinese as 兵工廠對科芬特里城.",
+      "Hong Kong's 48-hour board topped out on 英超 at 20K+ after Hull City beat Manchester United 2–0 on the opening weekend. Related queries included 赫爾城對曼聯 and the English-language twin epl.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
