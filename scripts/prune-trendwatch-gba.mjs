@@ -129,25 +129,41 @@ function pruneData(data) {
     if (/微信|按住转文字/.test(t)) return "cluster:wechat-stt";
     if (/12\.4万亿|民生资金|育儿补贴/.test(t)) return "cluster:minsheng-124";
     if (/台湾海峡|美军机过航/.test(t)) return "cluster:taiwan-strait";
-    if (/占座放零食|席位使用权|火车零食|零食占座|座位是给人坐的/.test(t))
+    if (/占座放零食|席位使用权|火车零食|零食占座|座位是给人坐的|买票占座|旅客买票占座/.test(t))
       return "cluster:train-seat";
     if (
-      /雷暴|風暴|风暴|热带气旋|热带低压|熱帶|台风|颱風|简拉维|三台风|三个台风/.test(
+      /雷暴|風暴|风暴|热带气旋|热带低压|熱帶|台风|颱風|简拉维|三台风|三个台风|三台共舞/.test(
         t,
       )
     )
       return "cluster:hk-storm";
-    if (/日本.*地震|东京地震|東京地震|mount fuji/i.test(t)) return "cluster:japan-quake";
+    if (/日本.*地震|东京地震|東京地震|北海道地震|mount fuji/i.test(t))
+      return "cluster:japan-quake";
+    if (/嫦娥七号/.test(t)) return "cluster:change7";
+    if (/唐师曾/.test(t)) return "cluster:tang-shizeng";
+    if (/金价|买一斤多黄金|水贝黄金/.test(t)) return "cluster:gold-price";
+    if (/曼城|man city|bournemouth|伯恩茅斯|般尼茅夫|夏蘭特|haaland/i.test(t))
+      return "cluster:man-city";
+    if (/liverpool|利物浦|newcastle vs liverpool/i.test(t)) return "cluster:liverpool";
+    if (/梁王|梁伟铿|王昶/.test(t)) return "cluster:liang-wang-worlds";
+    if (/东风日产/.test(t)) return "cluster:dongfeng-nissan";
+    if (/李嘉诚|李嘉誠/.test(t)) return "cluster:li-ka-shing";
+    if (/去世亲人存款查询/.test(t)) return "cluster:deceased-deposits";
+    if (/文和旅的融合|文旅融合/.test(t)) return "cluster:xi-culture-tourism";
+    if (/伊朗.*石油|石油出口反制/.test(t)) return "cluster:iran-oil";
+    if (/赵世勇|张忠当选中纪委/.test(t)) return "cluster:ccdi";
+    if (/四六级成绩/.test(t)) return "cluster:cet-scores";
     if (/甲醛白菜|白菜蘸甲醛/.test(t)) return "cluster:formaldehyde-cabbage";
     if (/谁得罪谁/.test(t)) return "cluster:xi-anticorruption";
     if (/韩国.*狗肉|狗肉馆/.test(t)) return "cluster:korea-dog-meat";
-    if (/皇马|real madrid|西甲|西班牙人/i.test(t)) return "cluster:la-liga-madrid";
+    if (/皇马|real madrid|西甲|西班牙人|elche vs barcelona|\bla liga\b/i.test(t))
+      return "cluster:la-liga";
     if (/拜仁|多特蒙德|德超杯/i.test(t)) return "cluster:bundesliga-supercup";
     if (/hpv疫苗/i.test(t)) return "cluster:hpv-school";
     if (/山洪/.test(t)) return "cluster:flash-flood";
     if (/邹幸彤|鄒幸彤|支聯會|李卓人/.test(t)) return "cluster:chow-hang-tung";
     if (
-      /人形机器人|机器人运动会|机器人方阵|机器人方队|机器人百米|荣耀机器人|世界机器人大会|具身智能|宇树/.test(
+      /人形机器人|机器人运动会|机器人方阵|机器人方队|机器人百米|荣耀机器人|世界机器人大会|具身智能|宇树|羞答答的机器人|跑得很羞涩的机器人|天工机器人|天工团队|荣耀闪电|magic9|现实版钢铁侠|机器人只做人类|累瘫的机器人|倒地机器人|机器人“大厨”/.test(
         t,
       )
     )

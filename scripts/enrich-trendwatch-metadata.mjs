@@ -910,6 +910,118 @@ const GLOSSARY = {
     isNewsworthy: true,
     isGbaRelevant: true,
   },
+  "“三台共舞” 今年台风为何如此活跃": {
+    titleEn: "Three typhoons at once — why this year's season is so active",
+    whyTrending:
+      "Meteorologists said Typhoons Saudel, Zitan and Jelawat were all active over the western Pacific and South China Sea, with 20 named storms so far under an El Niño backdrop. Direct GBA weather risk.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  日本地震: {
+    titleEn: "Japan earthquake",
+    whyTrending:
+      "Hong Kong searches for a Japan earthquake jumped to 5K+ with 1,000% growth. Related queries included 北海道, 北海道地震 and 地震 as users checked a Hokkaido shock, injuries and travel disruption.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  尹景順: {
+    titleEn: "Wan King-shun (Midlife Good Voice)",
+    whyTrending:
+      "Wan King-shun topped Hong Kong's 48-hour board at 20K+ with 600% growth as Midlife Good Voice 4 finals coverage circulated. Related queries included 中年好聲音4 and 李克勤. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  曼城: {
+    titleEn: "Manchester City",
+    whyTrending:
+      "Manchester City searches hit 5K+ with 1,000% growth after the weekend meeting with Bournemouth. Related queries included 曼城對伯恩茅斯 and 曼城對般尼茅夫.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  嫦娥七号任务不能在今年预定窗口实施: {
+    titleEn: "Chang'e-7 cannot fly in this year's planned window",
+    whyTrending:
+      "CMSA said on 23 August that Chang'e-7 cannot fly in this year's planned window after a reliability review. Major national space story across Baidu, Weibo realtime and Weibo tech.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  嫦娥七号任务不满足发射条件: {
+    titleEn: "Chang'e-7 mission does not meet launch conditions",
+    whyTrending:
+      "The official wording that Chang'e-7 does not meet launch conditions recirculated on Baidu and Weibo tech after the 23 August delay.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  DeepSeek计费再调整: {
+    titleEn: "DeepSeek adjusts billing again",
+    whyTrending:
+      "Less than a week after an 17 August price hike and peak/off-peak split, DeepSeek said weekend hours from 23 August would all bill at the off-peak rate. National AI-cost story with GBA developer relevance.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿里巴巴拟配售800亿港元新股: {
+    titleEn: "Alibaba plans an HK$80 billion share placement",
+    whyTrending:
+      "Alibaba's reported plan to place about HK$80 billion of new shares is a Hong Kong-market story. Direct GBA listing-and-capital spike on the Weibo tech board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  买票占座规则明确了然后呢: {
+    titleEn: "Seat-hogging rules are clear — what next?",
+    whyTrending:
+      "Weibo realtime topped out on the railway snack-on-a-paid-seat row after official rules said unused tickets cannot be occupied by a third party. Same national 民生 debate as People's Daily on Baidu.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  甲醛白菜让多重抽检成摆设: {
+    titleEn: "Formaldehyde cabbage makes multi-layer inspections look decorative",
+    whyTrending:
+      "Weibo users argued that Hebei Kangbao cabbages dipped in formaldehyde exposed gaps in layered food-safety checks. Same national 民生 case as Baidu's three-ministry probe.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  梁王世锦赛夺冠: {
+    titleEn: "Liang–Wang win the Worlds",
+    whyTrending:
+      "Liang Weikeng and Wang Chang's first Worlds men's-doubles title trended after the 23 August final. Guangzhou's Liang makes it a GBA sports story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  梁王组合世锦赛夺冠: {
+    titleEn: "Liang–Wang win Worlds men's doubles",
+    whyTrending:
+      "Guangzhou's Liang Weikeng and Wang Chang swept Malaysia 2–0 for their first Worlds men's-doubles title on 23 August — China's only gold of the championships.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "427万辆召回 没有一款油车": {
+    titleEn: "4.27 million vehicles recalled — none of them ICE",
+    whyTrending:
+      "SAMR listed 4.2751 million new-energy cars from Tesla, Xiaomi and seven other brands over hidden powered door-handle faults. A national auto-safety story with GBA EV manufacturing in the frame.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  李嘉诚: {
+    titleEn: "Li Ka-shing",
+    whyTrending:
+      "Hong Kong searches for Li Ka-shing rose 500% in the 48-hour window as users looked up the Cheung Kong founder's latest business headlines.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
 };
 
 function normTitle(t) {
