@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-25",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 56,
+  "highlightedCount": 59,
   "events": [
     {
       "title": "Galloping Sancai Horses",
@@ -137,23 +137,23 @@
       "highlighted": false
     },
     {
+      "title": "Brilliance — Ming Dynasty Ceramic Treasures",
+      "start": "2026-07-01",
+      "end": "2028-01-02",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/exhibition/brilliance-ming-dynasty-ceramic-treasures-from-the-palace-museum-1368-1644",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "Dinosaur showdown exhibition opens at science museum",
       "start": "2026-07-27",
       "end": "2026-09-25",
       "region": "shenzhen",
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-07/27/content_32133623.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "Interdisciplinary exhibition delves into death and human dignity",
-      "start": "2026-07-27",
-      "end": "2026-09-25",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-07/27/content_32133541.htm",
       "sourceDomain": "eyeshenzhen.com",
       "highlightScore": 18,
       "highlighted": false
@@ -1192,6 +1192,17 @@
       "highlighted": true
     },
     {
+      "title": "Bamboo weaving artist Qian Lihuai's solo exhibition coming to Shenzhen",
+      "start": "2026-08-22",
+      "end": "2026-10-21",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/22/content_32154830.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "TERESA CHEUNG Concert Tour in Macao",
       "start": "2026-08-22",
       "end": "2026-08-22",
@@ -1294,6 +1305,29 @@
       "sourceDomain": "10times.com",
       "highlightScore": 44,
       "highlighted": true
+    },
+    {
+      "title": "PCIM Asia Shenzhen 2026",
+      "start": "2026-08-26",
+      "end": "2026-08-28",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/e1sk-k10g-z23f",
+      "sourceDomain": "10times.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Sacred Music Appreciation Series by the Diocesan Liturgical Commission – Chamber Choir of…",
+      "start": "2026-08-28",
+      "end": "2026-08-28",
+      "region": "macao",
+      "location": "Cathedral",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "highlightScore": 0,
+      "highlighted": false
     },
     {
       "title": "22nd Macau Comic Festival",
@@ -1535,6 +1569,18 @@
       "highlighted": false
     },
     {
+      "title": "Contemporary Design in Dialogue with Palace Display",
+      "start": "2026-09-30",
+      "end": "2027-06-30",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-unveils-exciting-2026-exhibition-lineup-with-nine-new-exhibitions-showcasing-chinese-treasures-and-world-art-masterpieces",
+      "sourceDomain": "westk.hk",
+      "dateNote": "From 30 Sep 2026",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "China Clean Expo Shenzhen 2026",
       "start": "2026-10-13",
       "end": "2026-10-15",
@@ -1686,6 +1732,18 @@
       "url": "https://www.hktdc.com/event/hklightingfairae/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "Qing Court in Four Seasons — HK Palace Museum",
+      "start": "2026-11-04",
+      "end": "2027-08-04",
+      "region": "hk",
+      "location": "Hong Kong Palace Museum, West Kowloon",
+      "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-unveils-exciting-2026-exhibition-lineup-with-nine-new-exhibitions-showcasing-chinese-treasures-and-world-art-masterpieces",
+      "sourceDomain": "westk.hk",
+      "dateNote": "From 4 Nov 2026",
+      "highlightScore": 28,
       "highlighted": true
     },
     {
