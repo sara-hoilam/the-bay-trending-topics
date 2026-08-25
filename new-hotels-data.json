@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-08-24",
-  "refreshedAt": "2026-08-24T08:14:58+08:00",
+  "updatedAt": "2026-08-25",
+  "refreshedAt": "2026-08-25T07:59:25+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-02-22",
-  "windowEnd": "2027-02-23",
+  "windowStart": "2026-02-23",
+  "windowEnd": "2027-02-24",
   "count": 116,
   "countries": [
     "Bangladesh",
@@ -25,12 +25,6 @@
     "Sri Lanka",
     "Thailand",
     "Vietnam"
-  ],
-  "sourceErrors": [
-    {
-      "domain": "ihg.com",
-      "error": "IHG page unreachable (bot protection)"
-    }
   ],
   "hotels": [
     {
