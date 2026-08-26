@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
-  "updatedAt": "2026-08-25",
-  "refreshedAt": "2026-08-25T08:01:17+08:00",
+  "updatedAt": "2026-08-26",
+  "refreshedAt": "2026-08-26T08:07:13+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,8 +10,8 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 686922,
-      "followersGrowthPct7d": 0.38,
+      "followers": 687303,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -268,6 +268,10 @@
         {
           "date": "2026-08-25",
           "followers": 686922
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 687303
         }
       ],
       "followersSource": "instagram-api"
@@ -277,8 +281,8 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 274327,
-      "followersGrowthPct7d": 0.6,
+      "followers": 274573,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -535,6 +539,10 @@
         {
           "date": "2026-08-25",
           "followers": 274327
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 274573
         }
       ],
       "followersSource": "instagram-api"
@@ -544,8 +552,8 @@
       "displayName": "Time Out Hong Kong",
       "url": "https://www.instagram.com/timeouthk/",
       "highlight": false,
-      "followers": 204581,
-      "followersGrowthPct7d": 0.18,
+      "followers": 204603,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-07-13",
@@ -702,6 +710,10 @@
         {
           "date": "2026-08-25",
           "followers": 204581
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 204603
         }
       ],
       "followersSource": "instagram-api"
@@ -711,8 +723,8 @@
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 130631,
-      "followersGrowthPct7d": 0.56,
+      "followers": 130677,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-17",
@@ -961,6 +973,10 @@
         {
           "date": "2026-08-25",
           "followers": 130631
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 130677
         }
       ],
       "followersSource": "instagram-api"
@@ -970,8 +986,8 @@
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 97086,
-      "followersGrowthPct7d": 0.22,
+      "followers": 97095,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -1228,6 +1244,10 @@
         {
           "date": "2026-08-25",
           "followers": 97086
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 97095
         }
       ],
       "followersSource": "instagram-api"
@@ -1237,8 +1257,8 @@
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 91876,
-      "followersGrowthPct7d": 0.14,
+      "followers": 91894,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -1495,6 +1515,10 @@
         {
           "date": "2026-08-25",
           "followers": 91876
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 91894
         }
       ],
       "followersSource": "manual"
@@ -1504,8 +1528,8 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 51652,
-      "followersGrowthPct7d": 0.93,
+      "followers": 51740,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-17",
@@ -1754,6 +1778,10 @@
         {
           "date": "2026-08-25",
           "followers": 51652
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 51740
         }
       ],
       "followersSource": "instagram-api"
@@ -1763,8 +1791,8 @@
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 42676,
-      "followersGrowthPct7d": 2.59,
+      "followers": 42734,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -2021,6 +2049,10 @@
         {
           "date": "2026-08-25",
           "followers": 42676
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 42734
         }
       ],
       "followersSource": "manual"
@@ -2030,8 +2062,8 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 19212,
-      "followersGrowthPct7d": 0.49,
+      "followers": 19221,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-15",
@@ -2288,6 +2320,10 @@
         {
           "date": "2026-08-25",
           "followers": 19212
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 19221
         }
       ],
       "followersSource": "instagram-api"
@@ -2297,8 +2333,8 @@
       "displayName": "The Beat Asia",
       "url": "https://www.instagram.com/thebeatasia/",
       "highlight": false,
-      "followers": 2017,
-      "followersGrowthPct7d": -0.3,
+      "followers": 2015,
+      "followersGrowthPct7d": null,
       "history": [
         {
           "date": "2026-06-17",
@@ -2547,6 +2583,10 @@
         {
           "date": "2026-08-25",
           "followers": 2017
+        },
+        {
+          "date": "2026-08-26",
+          "followers": 2015
         }
       ],
       "followersSource": "instagram-api"
