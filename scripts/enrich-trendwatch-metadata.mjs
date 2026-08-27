@@ -450,7 +450,71 @@ const GLOSSARY = {
   天文台: {
     titleEn: "Hong Kong Observatory",
     whyTrending:
-      "Observatory searches spiked as Hong Kong tracked thunderstorm and rain warnings through the active summer monsoon season.",
+      "Hong Kong Observatory searches hit 50K+ on the 48-hour board as a red rainstorm warning and squally showers drove users to radar and signal pages. Related queries included 天气. The same window also lifted English HKO and hk observatory lookups.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  紅雨: {
+    titleEn: "Red rainstorm warning",
+    whyTrending:
+      "A red rainstorm warning (紅雨) jumped to 20K+ as Hong Kong checked Observatory alerts. Related queries included 天氣, 香港天文台 and 香港天氣. The signal overlapped the same 48-hour weather burst as 天文台.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "徐 杰 歌手": {
+    titleEn: "Xu Jie (Taiwan child-star singer)",
+    whyTrending:
+      "Hong Kong users searched Taiwan child-star singer Xu Jie after reports he died of liver disease at 29. Family handled the funeral quietly in July; local media confirmed the death this week. Obituaries are treated as news, not gossip, on this board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  泥石流: {
+    titleEn: "Mudslide / debris flow",
+    whyTrending:
+      "Searches for 泥石流 hit 10K+ after a Nepal-side debris flow struck Gyirong Port in Tibet, with related queries 西藏泥石流, 尼泊爾 and 吉隆口岸. Hong Kong users tracked casualty and rescue headlines alongside mainland boards.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  草間彌生: {
+    titleEn: "Yayoi Kusama",
+    whyTrending:
+      "Yayoi Kusama (草間彌生) spiked after reports of the Japanese artist's death. Hong Kong searches followed international art-world coverage within the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  周國豐: {
+    titleEn: "Chow Kwok-fung (singer)",
+    whyTrending:
+      "TVB singing-contest personality Chow Kwok-fung trended with related query 中年好聲音系列. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  "惠 康": {
+    titleEn: "Wellcome (supermarket)",
+    whyTrending:
+      "Wellcome (惠康) supermarket searches hit 5K+ with 1,000% growth in Hong Kong. Users looked up store news and promotions during the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "apm 打小朋友": {
+    titleEn: "APM mall child-assault reports",
+    whyTrending:
+      "Local searches for an alleged assault on a child at Kwun Tong's APM mall reached 1K+ with related query apm 打人. Hong Kong users looked up incident reports and mall security updates.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  中元節: {
+    titleEn: "Hungry Ghost Festival",
+    whyTrending:
+      "Hungry Ghost Festival (中元節) queries rose around the lunar 14th/15th of the seventh month. Related term 農曆七月14 marked the Hong Kong observance date.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,

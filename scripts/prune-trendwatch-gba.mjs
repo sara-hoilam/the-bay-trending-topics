@@ -117,6 +117,30 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (
+      /泥石流|吉隆口岸|吉隆泥石流|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔山洪|尼泊尔泥石流|调派中国救援队/i.test(
+        t,
+      )
+    )
+      return "cluster:gyirong-mudslide";
+    if (/草間彌生|草间弥生|yayoi kusama|\bkusama\b/i.test(t)) return "cluster:kusama";
+    if (/徐 杰|徐杰/.test(t)) return "cluster:xu-jie";
+    if (/天文台|^紅雨$|hk observatory|\bhko\b|^weather$|^observatory$/i.test(t))
+      return "cluster:hk-observatory";
+    if (/苹果首款折叠|苹果发布会|^apple$|iphone 18|华为苹果小米/i.test(t))
+      return "cluster:apple-sept";
+    if (/比尔盖茨|盖茨.*ai|gates/i.test(t)) return "cluster:gates-ai";
+    if (/藿香正气水/.test(t)) return "cluster:huoxiang";
+    if (/惠 康|^惠康$/.test(t)) return "cluster:wellcome";
+    if (/apm 打/.test(t)) return "cluster:apm-assault";
+    if (/霍尔木兹/.test(t)) return "cluster:hormuz";
+    if (/自梳女/.test(t)) return "cluster:zishu-nu";
+    if (/周觅.*腾讯|腾讯合资/.test(t)) return "cluster:zhoumi-tencent";
+    if (/巡检无人机|网联无人机/.test(t)) return "cluster:uav-spy";
+    if (/黄仁勋|英伟达q2|英伟达称行业/i.test(t)) return "cluster:nvidia-huang";
+    if (/中元節|中元节/.test(t)) return "cluster:hungry-ghost";
+    if (/杀害在韩女生|杀中国女生|韩拟对杀中国女生/.test(t)) return "cluster:korea-student";
+    if (/老人.*索赔|扶老人|店内离世|店主已收到|祁东/.test(t)) return "cluster:qidong-shop";
     if (/许家印|許家印/.test(t)) return "cluster:hui-ka-yan";
     if (/鬥牛梗|狗咬死人|打鼓嶺|格鬥犬/.test(t)) return "cluster:ta-kwu-ling-dog";
     if (/英超|arsenal|兵工廠|epl|\bpl\b|科芬特里|coventry|曼联|曼聯|赫爾|赫尔|hull/i.test(t))
