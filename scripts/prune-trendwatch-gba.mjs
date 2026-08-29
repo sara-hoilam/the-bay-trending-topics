@@ -118,7 +118,7 @@ function pruneData(data) {
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
     if (
-      /泥石流|吉隆口岸|吉隆泥石流|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机/i.test(
+      /泥石流|吉隆|闻令而动|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机/i.test(
         t,
       )
     )
@@ -143,7 +143,7 @@ function pruneData(data) {
     if (/康佳去年巨亏|康佳退市/i.test(t)) return "cluster:konka";
     if (/中芯国际/i.test(t)) return "cluster:smic";
     if (/高通6G|6G终端/i.test(t)) return "cluster:qualcomm-6g";
-    if (/神23乘组/i.test(t)) return "cluster:shenzhou-23";
+    if (/神23乘组|神23航天员/i.test(t)) return "cluster:shenzhou-23";
     if (/胜宏科技/i.test(t)) return "cluster:sun-and-king";
     if (/景甜|孙宇晨|孫宇晨/i.test(t)) return "cluster:jing-tian-sun";
     if (/bruno mars/i.test(t)) return "cluster:bruno-mars";
@@ -157,7 +157,11 @@ function pruneData(data) {
     if (/\bnvda\b|nvidia stock|^nvidia$/i.test(t)) return "cluster:nvda";
     if (/比尔盖茨|盖茨.*ai|gates/i.test(t)) return "cluster:gates-ai";
     if (/藿香正气水/.test(t)) return "cluster:huoxiang";
-    if (/惠 康|^惠康$/.test(t)) return "cluster:wellcome";
+    if (/吳文傑|戴淑娆|戴淑嬈/.test(t)) return "cluster:hk-postmaster";
+    if (/楼市重磅新政|房贷40年|能拿房再还贷|^房贷$/.test(t)) return "cluster:mortgage-40y";
+    if (/长鑫|玄戒|lpddr6|江波龙/i.test(t)) return "cluster:cxmt-dram";
+    if (/郑钦文/.test(t)) return "cluster:zheng-qinwen";
+    if (/惠 康|^惠康$|優惠 券|优惠券/.test(t)) return "cluster:wellcome";
     if (/apm 打/.test(t)) return "cluster:apm-assault";
     if (/霍尔木兹/.test(t)) return "cluster:hormuz";
     if (/自梳女/.test(t)) return "cluster:zishu-nu";
@@ -183,6 +187,7 @@ function pruneData(data) {
     if (/台湾海峡|美军机过航/.test(t)) return "cluster:taiwan-strait";
     if (/占座放零食|席位使用权|火车零食|零食占座|座位是给人坐的|买票占座|旅客买票占座/.test(t))
       return "cluster:train-seat";
+    if (/镇水兽/.test(t)) return t;
     if (
       /雷暴|風暴|风暴|热带气旋|热带低压|熱帶|台风|颱風|简拉维|三台风|三个台风|三台共舞/.test(
         t,

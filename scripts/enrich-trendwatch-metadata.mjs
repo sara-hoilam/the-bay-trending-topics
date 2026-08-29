@@ -242,6 +242,30 @@ const GLOSSARY = {
     isNewsworthy: true,
     isGbaRelevant: true,
   },
+  熱帶性低氣壓: {
+    titleEn: "Tropical depression",
+    whyTrending:
+      "Tropical-depression queries rose with 熱帶氣旋警報 as HKO tracked TD Sardel about 540 km north-northeast of Hong Kong and weakening inland. Related weather searches stayed active through the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  西藏泥石流已致7人遇难554人失联: {
+    titleEn: "Xizang mudslide: 7 dead, 554 missing",
+    whyTrending:
+      "Xizang emergency authorities said that as of 01:00 on 29 August the Gyirong debris flow had killed 7 and left 554 missing, with 2 villagers rescued. Casualty updates kept the national realtime board elevated.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  西藏吉隆泥石流: {
+    titleEn: "Gyirong, Xizang debris flow",
+    whyTrending:
+      "Weibo's main disaster keyword as rescue teams pushed into Gyirong Port after the 26 August transboundary debris flow. Ranked just behind the table-tennis row with ~804k heat.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   更好担负起新的文化使命: {
     titleEn: "Shoulder the new cultural mission (Xi line)",
     whyTrending:
@@ -1001,7 +1025,71 @@ const GLOSSARY = {
   曼城: {
     titleEn: "Manchester City",
     whyTrending:
-      "Manchester City searches hit 5K+ with 1,000% growth after the weekend meeting with Bournemouth. Related queries included 曼城對伯恩茅斯 and 曼城對般尼茅夫.",
+      "Manchester City searches jumped after a 4–1 Premier League win at Crystal Palace, with Erling Haaland scoring twice in the 03:00 HKT window. Related queries included 水晶宮對曼城, palace vs man city and 艾寧·夏蘭特.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  水晶宮對曼城: {
+    titleEn: "Crystal Palace vs Manchester City",
+    whyTrending:
+      "Cantonese searches for Crystal Palace vs Manchester City jumped after City won 4–1 in Premier League matchweek 2, with Erling Haaland scoring twice. Related queries included 艾寧·夏蘭特. The English twin palace vs man city also ranked on the same 48-hour board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  吳文傑: {
+    titleEn: "Ng Man-kit (Postmaster General designate)",
+    whyTrending:
+      "The HKSAR government announced on 28 August that former FEHD director Ng Man-kit will become Postmaster General on 26 September, succeeding Tai Suk-yiu. Related queries included 戴淑嬈, 退休 and 香港特別行政區政府.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  景甜: {
+    titleEn: "Jing Tian (actress)",
+    whyTrending:
+      "Actress Jing Tian topped Hong Kong's 48-hour board at 20K+ after TRON founder Justin Sun's civil suit. Celebrity/tabloid spike; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  优惠券: {
+    titleEn: "Coupons / promo codes",
+    whyTrending:
+      "Coupon searches hit 5K+ as Wellcome's 88-fold supermarket promo circulated. Related queries included 惠康88折.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "優惠 券": {
+    titleEn: "Coupons / promo codes",
+    whyTrending:
+      "Coupon searches hit 5K+ (800% growth) as Wellcome's 88-fold supermarket promo circulated. Related queries included 惠康88折, 優惠券 and 惠 康 優惠.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  热带气旋警报: {
+    titleEn: "Tropical cyclone warning",
+    whyTrending:
+      "Hong Kong Observatory tropical-cyclone warning searches rose as tropical depression Sardel tracked north of the territory. Users checked whether a higher signal would follow.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  熱帶氣旋警報: {
+    titleEn: "Tropical cyclone warning",
+    whyTrending:
+      "Hong Kong Observatory tropical-cyclone warning searches hit 2K+ as tropical depression 沙德爾 (Sardel) tracked north of the territory and Signal No. 1 coverage circulated.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  张又侠: {
+    titleEn: "Zhang Youxia (CMC vice chairman)",
+    whyTrending:
+      "Hong Kong searches for Zhang Youxia rose after the 14th NPC Standing Committee on 28 August voted to remove him as CMC vice chairman. Major PLA personnel story.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
