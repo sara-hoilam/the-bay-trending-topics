@@ -18,6 +18,318 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  六合彩: {
+    titleEn: "Mark Six lottery",
+    whyTrending:
+      "Hong Kong's Mark Six lottery hit 10K+ on the 48-hour board as users checked 六合彩結果 and 六合彩攪珠結果 after the latest draw. Related queries stayed on results pages rather than a separate entertainment spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  熱刺對紐卡索聯: {
+    titleEn: "Tottenham vs Newcastle United",
+    whyTrending:
+      "Cantonese searches for Tottenham vs Newcastle jumped to 5K+ with 1,000% growth after the Premier League weekend. Related queries included 利物浦對諾丁漢森林 and 熱刺 as Hong Kong fans tracked Saturday's English-football slate.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "麥當勞 優惠": {
+    titleEn: "McDonald's deals",
+    whyTrending:
+      "McDonald's promotion searches hit 2K+ as Hong Kong users looked up app coupons and limited-time meal deals. Related queries included 麥當勞 and 麥當勞優惠 during the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "天 晴 邨": {
+    titleEn: "Tin Ching Estate",
+    whyTrending:
+      "Tin Ching Estate (天晴邨) in Tin Shui Wai climbed to 1K+ with 800% growth. Local users searched the estate name after neighbourhood headlines circulated in the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿森纳足球俱乐部: {
+    titleEn: "Arsenal Football Club",
+    whyTrending:
+      "Simplified-character Arsenal searches hit 1K+ as Hong Kong fans tracked the Gunners after the Premier League opening weekend. The spike sat alongside other EPL club queries on the same 48-hour board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  王楚欽: {
+    titleEn: "Wang Chuqin (table tennis)",
+    whyTrending:
+      "Olympic table-tennis star Wang Chuqin trended at 1K+ with 1,000% growth as Hong Kong users checked his latest match results. Sports searches, not celebrity gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  氣旋: {
+    titleEn: "Cyclone",
+    whyTrending:
+      "Short-form cyclone searches rose 700% alongside 熱帶氣旋警報 as Hong Kong users checked whether a nearby tropical system would bring a higher signal.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  星岛日报: {
+    titleEn: "Sing Tao Daily",
+    whyTrending:
+      "The Chinese-language newspaper Sing Tao Daily ticked up on Hong Kong Google as readers searched the masthead and latest local headlines.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  謝賢: {
+    titleEn: "Patrick Tse (actor)",
+    whyTrending:
+      "Veteran actor Patrick Tse (謝賢) hit 5K+ with 1,000% growth on Hong Kong's 48-hour board. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  李焯寧: {
+    titleEn: "Lee Cheuk-ning",
+    whyTrending:
+      "Lee Cheuk-ning trended at 2K+ after entertainment coverage circulated locally. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  陳懿德: {
+    titleEn: "Chan Yi-tak",
+    whyTrending:
+      "Chan Yi-tak ranked at 5K+ with related queries for 羅天宇 and 梁凱晴. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  黎諾懿: {
+    titleEn: "Wayne Lai (actor)",
+    whyTrending:
+      "TVB actor Wayne Lai (黎諾懿) hit 5K+ with 1,000% growth. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  何超雲: {
+    titleEn: "Ho Chiu-wan",
+    whyTrending:
+      "Ho Chiu-wan trended at 500+ after social-circle coverage. Celebrity/socialite; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  莊雅婷: {
+    titleEn: "Chong Nga-ting",
+    whyTrending:
+      "Chong Nga-ting ranked on Hong Kong Google during the 48-hour window. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  許廷鏗: {
+    titleEn: "Alfred Hui (singer)",
+    whyTrending:
+      "Cantopop singer Alfred Hui (許廷鏗) trended at 500+. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  張繼科: {
+    titleEn: "Zhang Jike (table tennis)",
+    whyTrending:
+      "Zhang Jike hit 2K+ with related query 景甜張繼科 after tabloid coverage of the retired paddler. Celebrity/tabloid spike; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  '弘扬“上海精神” 凝聚“上合力量”': {
+    titleEn: "Carry forward the Shanghai Spirit — SCO cohesion",
+    whyTrending:
+      "Baidu realtime topped out as Xi Jinping prepared to attend the 2026 SCO summit in Bishkek (30 Aug–3 Sep) and pay state visits to Kyrgyzstan and Egypt. State media framed 25 years of the Shanghai Spirit as the diplomatic headline of the week.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  西藏泥石流已致16人遇难546人失联: {
+    titleEn: "Xizang mudslide: 16 dead, 546 missing",
+    whyTrending:
+      "Xizang authorities updated the Gyirong debris-flow toll to 16 dead and 546 missing as of the 30 August briefing. The transboundary disaster from a Nepal-side ice-rock avalanche kept national search traffic at the top of Baidu.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  西藏泥石流灾害原因现已查明: {
+    titleEn: "Xizang mudslide cause identified",
+    whyTrending:
+      "A 30 August Gyirong press briefing said a glacier on Nepal's Lanangtse south face fractured at about 5,200 m at 10:52 on 26 August, triggering an ice-rock avalanche that became a debris flow. Officials said the surge reached China's Gyirong Port in only six to seven minutes.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  中国汽车何以全球圈粉: {
+    titleEn: "Why Chinese cars are winning globally",
+    whyTrending:
+      "State-media explainers on Chinese NEV exports — from vehicle shipments to full industrial-ecosystem outbound investment — dominated Baidu as analysts debated the sector's overseas push. Directly relevant to GBA auto manufacturing.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "12306回应乘客称二等座变无座": {
+    titleEn: "12306 responds after second-class seats became standing",
+    whyTrending:
+      "A G116 Changchun–Shenyang train swapped a Fuxing set for a Hexie, leaving some second-class passengers without seats; a pregnant traveller stood for over an hour. 12306 said the rolling-stock change was last-minute and offered no compensation, sparking a national railway-rights debate.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "常冰玉10-7击败世界第一赵心童夺冠": {
+    titleEn: "Chang Bingyu beats world No.1 Zhao Xintong 10–7",
+    whyTrending:
+      "Chang Bingyu won his first ranking title at the Wuhan Open, beating world No.1 Zhao Xintong 10–7 after a world-class clearance in a deficit frame. National snooker traffic spiked across Baidu and Weibo.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  多地立法严控学生带手机入校: {
+    titleEn: "Cities legislate school phone bans — including Guangzhou",
+    whyTrending:
+      "Chongqing, Guangzhou, Zhengzhou and Fujian issued rules letting schools bar student phones, upgrading campus mobile policy into local law. Guangzhou's inclusion makes it a direct GBA education story; the rules also limit schools to custody, not destruction, of devices.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  中国集成电路海外大爆发: {
+    titleEn: "China IC exports surge overseas",
+    whyTrending:
+      "China's integrated-circuit exports in the first seven months already topped last year's full-year total, up 99.5% year on year, with memory chips the main driver. Factories reported cash-up-front orders booked into 2028 — a national semiconductor story with GBA electronics-supply relevance.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  硬科技开始拯救商场了: {
+    titleEn: "Hard-tech brands move into malls — Guangzhou store cited",
+    whyTrending:
+      "3D-printer maker Bambu Lab opened an East China flagship in Hangzhou MixC after a Guangzhou experience store, as humanoid robots and AI glasses brands chase mall traffic. The Guangzhou footprint keeps the retail-tech story inside the GBA.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  王毅同尼泊尔外长通电话: {
+    titleEn: "Wang Yi phones Nepal's foreign minister",
+    whyTrending:
+      "Foreign Minister Wang Yi told Nepal's FM the Gyirong ice-avalanche debris flow was the most serious cross-border disaster between the two countries in years. The call kept the rescue-diplomacy thread on Baidu after the 30 August casualty update.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "网友建议取消ETC 官方回应": {
+    titleEn: "MOT responds to calls to scrap ETC",
+    whyTrending:
+      "China's transport ministry said ETC remains voluntary and highlighted a phone-plus licence-plate 'cardless' pilot already running in several provinces. A national mobility-policy story that also ranked on Weibo tech.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  吉隆泥石流已致16人遇难546人失联: {
+    titleEn: "Gyirong mudslide: 16 dead, 546 missing",
+    whyTrending:
+      "Weibo realtime topped out on the same 30 August Gyirong casualty update as Baidu — 16 dead and 546 missing after the 26 August transboundary debris flow. Rescue and briefing clips kept the topic at rank 1.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  尼泊尔山洪已致675死2498失联: {
+    titleEn: "Nepal floods: 675 dead, 2,498 missing",
+    whyTrending:
+      "Nepal's flood-and-debris-flow toll — 675 dead and 2,498 missing — trended as the upstream half of the same Gyirong transboundary disaster. Weibo users compared Nepal-side and Tibet-side casualty figures after the 30 August briefings.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  AI赋能新电商发展: {
+    titleEn: "AI-powered new e-commerce",
+    whyTrending:
+      "A national digital-commerce policy thread — AI enabling 'new e-commerce' — held Weibo rank 3 with ~729k heat. Mainland platforms and GBA cross-border sellers are the practical audience for the campaign.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  吉隆口岸小邬警官确认平安: {
+    titleEn: "Gyirong Port officer Xiao Wu confirmed safe",
+    whyTrending:
+      "Weibo users circulated confirmation that a widely followed Gyirong Port officer survived the debris flow. The human-interest update sat inside the same national rescue story, not a separate gossip spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  户上隼辅回应3比2樊振东: {
+    titleEn: "Tojo Shunsuke on beating Fan Zhendong 3–2",
+    whyTrending:
+      "Japan's Tojo Shunsuke spoke after beating Olympic champion Fan Zhendong 3–2 in the German Cup last 16, knocking Fan's club out. National table-tennis traffic followed the 29 August result.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  金价暴跌之前有人直接清仓: {
+    titleEn: "Some dumped gold before the price crash",
+    whyTrending:
+      "Weibo gold-price threads claimed some traders cleared positions before a sharp bullion drop. The same national gold-retail debate that has recurred on mainland boards this month.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "14家央国企将开放超60亿条高价值数据": {
+    titleEn: "14 central SOEs to open 6 billion-plus high-value data records",
+    whyTrending:
+      "A national data-element reform item — 14 central state firms opening more than 6 billion high-value records — ranked on both Weibo realtime and the tech board. Directly relevant to GBA cloud and fintech buyers.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  小米18Fold: {
+    titleEn: "Xiaomi 18 Fold",
+    whyTrending:
+      "Weibo tech listed Xiaomi 18 Fold after Lei Jun said the foldable will ship with ChangXin's LPDDR6 memory — a domestic chip-plus-phone pairing. Configuration, price-guess and '国产芯存协同' variants filled the rest of the board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  中国半导体两个好消息: {
+    titleEn: "Two pieces of good news for China's semiconductors",
+    whyTrending:
+      "Weibo tech framed ChangXin LPDDR6 mass production and related memory-export strength as twin semiconductor wins. The same capture window as Baidu's IC-export surge story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  华为三折叠11年前手稿: {
+    titleEn: "Huawei's trifold sketches from 11 years ago",
+    whyTrending:
+      "Huawei circulated 11-year-old trifold-phone sketches as Yu Chengdong previewed a new triple-fold device. A national hardware story with Shenzhen HQ relevance.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  长鑫存储: {
+    titleEn: "ChangXin Memory (CXMT)",
+    whyTrending:
+      "ChangXin Memory dominated Weibo tech after LPDDR6 mass-production headlines and a reported lawsuit involving the US Pentagon. Domestic DRAM self-reliance is a GBA electronics-supply story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  波场前高管说孙宇晨做事底线很低: {
+    titleEn: "Ex-Tron exec says Justin Sun has a very low bar",
+    whyTrending:
+      "A former Tron executive's attack on Justin Sun topped Weibo tech, overlapping the same week's Jing Tian civil-suit chatter. Crypto-governance news rather than entertainment gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   周嘉洛: {
     titleEn: "Koo Ka-lok (TVB actor)",
     whyTrending:
@@ -498,7 +810,7 @@ const GLOSSARY = {
   泥石流: {
     titleEn: "Mudslide / debris flow",
     whyTrending:
-      "Searches for 泥石流 hit 10K+ after a Nepal-side debris flow struck Gyirong Port in Tibet, with related queries 西藏泥石流, 尼泊爾 and 吉隆口岸. Hong Kong users tracked casualty and rescue headlines alongside mainland boards.",
+      "Gyirong Port debris-flow searches stayed elevated after the 26 August Nepal-side ice-rock avalanche. The 30 August briefing raised the Tibet-side toll to 16 dead and 546 missing, with 261 missing foreigners identified.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,

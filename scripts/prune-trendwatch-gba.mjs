@@ -118,7 +118,7 @@ function pruneData(data) {
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
     if (
-      /泥石流|吉隆|闻令而动|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机/i.test(
+      /泥石流|吉隆|闻令而动|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|堰塞体|冰岩崩|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机|王毅同尼泊尔|S弯道打通|冲锋舟穿S弯|2141人|废墟之上 这一幕|小邬警官/i.test(
         t,
       )
     )
@@ -133,7 +133,22 @@ function pruneData(data) {
       return "cluster:hk-observatory";
     if (/苹果折叠屏|苹果6款新品|苹果首款折叠|苹果发布会|^apple$|iphone 18|华为苹果小米/i.test(t))
       return "cluster:apple-sept";
-    if (/上海精神|上合组织|上海合作组织|习近平将出席.*峰会/i.test(t)) return "cluster:sco-summit";
+    if (/上海精神|上合组织|上海合作组织|上合力量|习近平将出席.*峰会|习近平主席推动上海精神/i.test(t))
+      return "cluster:sco-summit";
+    if (/小米18Fold|雷军官宣小米18Fold|小米玄戒O3|小米18Fold 国产芯|小米18Fold售价|小米18Fold 配置/i.test(t))
+      return "cluster:xiaomi-18fold";
+    if (/华为三折叠|余承东上手华为全新三折叠|华为三折叠11年前手稿/i.test(t))
+      return "cluster:huawei-trifold";
+    if (/中国汽车何以全球圈粉|中国车交付总统/i.test(t)) return "cluster:china-nev-export";
+    if (/12306回应|二等座变无座/i.test(t)) return "cluster:12306-seat";
+    if (/取消ETC|没装ETC|官方回应建议取消ETC/i.test(t)) return "cluster:etc-mobile";
+    if (/学生带手机入校|多地立法严控学生带手机/i.test(t)) return "cluster:phone-school-ban";
+    if (/14家央国企将开放|超60亿条高价值数据/i.test(t)) return "cluster:soe-data";
+    if (/熱刺對紐卡索聯|热刺对纽卡索|tottenham.*newcastle|紐卡索聯/i.test(t))
+      return "cluster:tottenham-newcastle";
+    if (/六合彩/i.test(t)) return "cluster:mark-six";
+    if (/宋亚东KO|黄景瑜疯狂拥抱宋亚东/i.test(t)) return "cluster:song-yadong-ufc";
+    if (/集成电路海外|中国集成电路|我国集成电路出口/i.test(t)) return "cluster:ic-export";
     if (/四川内江地震|四川地震|四川隆昌|隆昌市5\.1|重庆震感/i.test(t)) return "cluster:sichuan-quake";
     if (/中华第一舰|战舰是怎样炼成的|哈尔滨舰/i.test(t)) return "cluster:plan-destroyer";
     if (/安大略湖|美国湖/i.test(t)) return "cluster:ontario-lake";
@@ -159,7 +174,7 @@ function pruneData(data) {
     if (/藿香正气水/.test(t)) return "cluster:huoxiang";
     if (/吳文傑|戴淑娆|戴淑嬈/.test(t)) return "cluster:hk-postmaster";
     if (/楼市重磅新政|房贷40年|能拿房再还贷|^房贷$/.test(t)) return "cluster:mortgage-40y";
-    if (/长鑫|玄戒|lpddr6|江波龙/i.test(t)) return "cluster:cxmt-dram";
+    if (/长鑫|玄戒|lpddr6|江波龙|长鑫存储|长鑫LPDDR6|长鑫存储起诉/i.test(t)) return "cluster:cxmt-dram";
     if (/郑钦文/.test(t)) return "cluster:zheng-qinwen";
     if (/惠 康|^惠康$|優惠 券|优惠券/.test(t)) return "cluster:wellcome";
     if (/apm 打/.test(t)) return "cluster:apm-assault";
