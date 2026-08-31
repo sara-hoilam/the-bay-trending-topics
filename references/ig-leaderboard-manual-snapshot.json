@@ -1,8 +1,8 @@
 {
-  "capturedAt": "2026-08-30",
-  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. Counts verified from Instagram embed pages on 2026-08-30 (sassyhongkong 92,032; thebayasia 44,623).",
+  "capturedAt": "2026-08-31",
+  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. Counts verified from Instagram embed pages on 2026-08-31 (sassyhongkong 92,049; thebayasia 45,218).",
   "accounts": {
-    "sassyhongkong": { "followers": 92032 },
-    "thebayasia": { "followers": 44623 }
+    "sassyhongkong": { "followers": 92049 },
+    "thebayasia": { "followers": 45218 }
   }
 }
