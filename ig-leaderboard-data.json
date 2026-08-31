@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-08-31",
-  "refreshedAt": "2026-08-31T09:54:24+08:00",
+  "refreshedAt": "2026-08-31T09:58:07+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,7 +10,7 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 690159,
+      "followers": 690158,
       "followersGrowthPct7d": 0.5,
       "history": [
         {
@@ -291,7 +291,7 @@
         },
         {
           "date": "2026-08-31",
-          "followers": 690159
+          "followers": 690158
         }
       ],
       "followersSource": "instagram-api"
@@ -301,7 +301,7 @@
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 275658,
+      "followers": 275660,
       "followersGrowthPct7d": 0.56,
       "history": [
         {
@@ -582,7 +582,7 @@
         },
         {
           "date": "2026-08-31",
-          "followers": 275658
+          "followers": 275660
         }
       ],
       "followersSource": "instagram-api"
@@ -2222,7 +2222,7 @@
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 19316,
+      "followers": 19315,
       "followersGrowthPct7d": 0.61,
       "history": [
         {
@@ -2503,7 +2503,7 @@
         },
         {
           "date": "2026-08-31",
-          "followers": 19316
+          "followers": 19315
         }
       ],
       "followersSource": "instagram-api"
