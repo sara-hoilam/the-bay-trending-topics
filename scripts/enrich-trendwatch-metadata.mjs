@@ -18,6 +18,102 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  袁絲珩: {
+    titleEn: "Yuen Sze-hang / Bernice Yuen (Miss HK 2026)",
+    whyTrending:
+      "Bernice Yuen (袁絲珩) won the 2026 Miss Hong Kong pageant on 30 August at TVB City. Related queries included 香港小姐2026, 香港小姐 and first runner-up 李澤欣. Pageant/celebrity spike; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  梅艷芳: {
+    titleEn: "Anita Mui",
+    whyTrending:
+      "Anita Mui searches hit 20K+ after her mother Tam Mei-kam died at 102 on 30 August. Related queries included 覃美金, 梅啟明 and 梅艷芳 母親. An obituary/estate story, not celebrity gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "快速 增強": {
+    titleEn: "Rapid intensification (tropical cyclone)",
+    whyTrending:
+      "Hong Kong users searched 快速 增強 at 5K+ with 1,000% growth as Observatory and weather pages discussed whether a nearby tropical system could rapidly intensify. Related query 快速增強 sat on the same 48-hour board as 氣旋.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  曼聯對葉士域治: {
+    titleEn: "Manchester United vs Ipswich Town",
+    whyTrending:
+      "Cantonese searches for Manchester United vs Ipswich jumped to 10K+ with 1,000% growth after the Premier League weekend. Related queries included 曼聯, 葉士域治 and the English twin man united vs ipswich town.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  洪水: {
+    titleEn: "Floods",
+    whyTrending:
+      "Flood searches hit 2K+ with 700% growth on Hong Kong Google. Related query 地震 sat alongside Gyirong/Nepal disaster coverage and local rain-risk checks in the same 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "miss hk 2026": {
+    titleEn: "Miss Hong Kong 2026",
+    whyTrending:
+      "English Miss Hong Kong 2026 searches tracked Bernice Yuen's 30 August win. Related queries included bernice yuen miss hong kong 2026. Pageant/celebrity; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  麥當勞優惠: {
+    titleEn: "McDonald's deals",
+    whyTrending:
+      "McDonald's promotion searches hit 500+ as Hong Kong users looked up app coupons and limited-time meal deals during the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "man united vs ipswich town": {
+    titleEn: "Manchester United vs Ipswich Town",
+    whyTrending:
+      "English-language searches for Manchester United vs Ipswich hit 2K+ with 800% growth after the Premier League fixture. Related query manchester united paired with the Cantonese twin 曼聯對葉士域治.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "coleman wong": {
+    titleEn: "Coleman Wong (tennis)",
+    whyTrending:
+      "Hong Kong tennis player Coleman Wong trended at 1K+ as users checked his US Open 2026 results. Sports searches, not celebrity gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  天水圍: {
+    titleEn: "Tin Shui Wai",
+    whyTrending:
+      "Tin Shui Wai district searches hit 2K+ with 1,000% growth on Hong Kong's 48-hour board. The spike sat in the same weather-and-local-news window as flood and cyclone queries.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  蔬菜: {
+    titleEn: "Vegetables",
+    whyTrending:
+      "Vegetable-price searches hit 1K+ as Hong Kong shoppers tracked wet-market and supermarket costs during the 48-hour capture.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  切爾西對布萊頓: {
+    titleEn: "Chelsea vs Brighton",
+    whyTrending:
+      "Cantonese searches for Chelsea vs Brighton jumped to 2K+ after the Premier League weekend. Hong Kong fans tracked the same English-football slate as the Manchester United fixture.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   六合彩: {
     titleEn: "Mark Six lottery",
     whyTrending:
@@ -69,7 +165,7 @@ const GLOSSARY = {
   氣旋: {
     titleEn: "Cyclone",
     whyTrending:
-      "Short-form cyclone searches rose 700% alongside 熱帶氣旋警報 as Hong Kong users checked whether a nearby tropical system would bring a higher signal.",
+      "Cyclone searches hit 2K+ with 1,000% growth on Hong Kong's 48-hour board. Related query 天文台時間 tracked Observatory clock and warning times as users watched a nearby tropical system.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -1377,7 +1473,7 @@ const GLOSSARY = {
   "優惠 券": {
     titleEn: "Coupons / promo codes",
     whyTrending:
-      "Coupon searches hit 5K+ (800% growth) as Wellcome's 88-fold supermarket promo circulated. Related queries included 惠康88折, 優惠券 and 惠 康 優惠.",
+      "Hong Kong coupon searches hit 500+ with 400% growth on the 48-hour board. Related query 百佳 pointed shoppers to ParknShop deals rather than a separate entertainment spike.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,

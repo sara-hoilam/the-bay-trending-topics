@@ -118,7 +118,7 @@ function pruneData(data) {
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
     if (
-      /泥石流|吉隆|闻令而动|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|堰塞体|冰岩崩|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机|王毅同尼泊尔|S弯道打通|冲锋舟穿S弯|2141人|废墟之上 这一幕|小邬警官/i.test(
+      /泥石流|吉隆|闻令而动|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|堰塞体|冰岩崩|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机|王毅同尼泊尔|S弯道打通|冲锋舟穿S弯|2141人|废墟之上 这一幕|小邬警官|网友意外拍到泥石流|医疗防疫分队前往救援|吉隆口岸大楼|吉隆口岸通信|挖掘机意外坠河|吉隆泥石流痕迹|西藏吉隆救援|尼泊尔泥石流联系|尼泊尔冰崩|被吉隆口岸淤泥/i.test(
         t,
       )
     )
@@ -133,11 +133,11 @@ function pruneData(data) {
       return "cluster:hk-observatory";
     if (/苹果折叠屏|苹果6款新品|苹果首款折叠|苹果发布会|^apple$|iphone 18|华为苹果小米/i.test(t))
       return "cluster:apple-sept";
-    if (/上海精神|上合组织|上海合作组织|上合力量|习近平将出席.*峰会|习近平主席推动上海精神/i.test(t))
+    if (/上海精神|上合组织|上海合作组织|上合力量|习近平将出席.*峰会|习近平主席推动上海精神|习近平抵达比什凯克|习主席访问吉尔吉斯斯坦|比什凯克出席上合/i.test(t))
       return "cluster:sco-summit";
     if (/小米18Fold|雷军官宣小米18Fold|小米玄戒O3|小米18Fold 国产芯|小米18Fold售价|小米18Fold 配置/i.test(t))
       return "cluster:xiaomi-18fold";
-    if (/华为三折叠|余承东上手华为全新三折叠|华为三折叠11年前手稿/i.test(t))
+    if (/华为三折叠|余承东上手华为全新三折叠|华为三折叠11年前手稿|华为新三折叠|余承东回应三折叠|华为首款三折叠|何刚问华为三折叠|MateXT2|mate xt/i.test(t))
       return "cluster:huawei-trifold";
     if (/中国汽车何以全球圈粉|中国车交付总统/i.test(t)) return "cluster:china-nev-export";
     if (/12306回应|二等座变无座/i.test(t)) return "cluster:12306-seat";
@@ -173,7 +173,23 @@ function pruneData(data) {
     if (/比尔盖茨|盖茨.*ai|gates/i.test(t)) return "cluster:gates-ai";
     if (/藿香正气水/.test(t)) return "cluster:huoxiang";
     if (/吳文傑|戴淑娆|戴淑嬈/.test(t)) return "cluster:hk-postmaster";
-    if (/楼市重磅新政|房贷40年|能拿房再还贷|^房贷$/.test(t)) return "cluster:mortgage-40y";
+    if (/楼市重磅新政|房贷40年|能拿房再还贷|^房贷$|房贷最长40年/.test(t)) return "cluster:mortgage-40y";
+    if (/袁絲珩|袁丝珩|miss hk 2026|香港小姐2026|2026年香港小姐/.test(t)) return "cluster:miss-hk-2026";
+    if (/梅艷芳|梅艳芳/.test(t)) return "cluster:anita-mui";
+    if (/曼聯對葉士域治|man united vs ipswich|曼联对叶士域治/.test(t)) return "cluster:man-utd-ipswich";
+    if (/快速 增強|快速增強|^氣旋$|^气旋$|^windy$/.test(t)) return "cluster:hk-cyclone-ri";
+    if (/特斯拉推出.*model\s*3|平价版model\s*3/i.test(t)) return "cluster:tesla-model3";
+    if (/女排|朱婷|赵勇考砸|泰国女排/.test(t)) return "cluster:china-volleyball";
+    if (/coleman wong|黃澤林|黄泽林/.test(t)) return "cluster:coleman-wong";
+    if (/切爾西對布萊頓|chelsea vs brighton/.test(t)) return "cluster:chelsea-brighton";
+    if (/小鹏汽车六年半亏|小鹏汽车/.test(t)) return "cluster:xpeng-loss";
+    if (/深圳海边新开了一个|黄金超市/.test(t)) return "cluster:sz-gold-hub";
+    if (/9月新规来了|涉及公积金/.test(t)) return "cluster:sept-housing-fund";
+    if (/美军袭击伊朗|伊朗打击驻约旦|伊朗最高领袖/.test(t)) return "cluster:iran-us";
+    if (/片仔癀/.test(t)) return "cluster:pianzihuang";
+    if (/超3000亿外资A股/.test(t)) return "cluster:a-share-foreign";
+    if (/开学三件套/.test(t)) return "cluster:school-kit-prices";
+    if (/华为李小龙称花11年/.test(t)) return "cluster:huawei-dream-11y";
     if (/长鑫|玄戒|lpddr6|江波龙|长鑫存储|长鑫LPDDR6|长鑫存储起诉/i.test(t)) return "cluster:cxmt-dram";
     if (/郑钦文/.test(t)) return "cluster:zheng-qinwen";
     if (/惠 康|^惠康$|優惠 券|优惠券/.test(t)) return "cluster:wellcome";
