@@ -18,10 +18,130 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  沙德爾: {
+    titleEn: "Typhoon Sardel (沙德爾)",
+    whyTrending:
+      "Hong Kong searches for 沙德爾 hit 5K+ with 600% growth as the Observatory kept Signal No. 1 up on 1 September after the storm revived over the northern South China Sea. Related queries included 打風, 一號戒備信號 and 颱風. HKO said it would review whether to raise Signal No. 3 as Sardel neared eastern Guangdong.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  夜生活: {
+    titleEn: "Nightlife",
+    whyTrending:
+      "Hong Kong users searched 夜生活 at 5K+ with 1,000% growth over about 22 hours on the 48-hour board. No related-query cluster was shown; the spike sat beside typhoon-signal and dining-deal searches as residents checked going-out plans on 1 September.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  房屋署: {
+    titleEn: "Housing Department",
+    whyTrending:
+      "Housing Department searches hit 1K+ with 700% growth after the Housing Authority posted the 2026 Express Flat Allocation Scheme unit list on 31 August. Family applicants start choosing flats from 2 September among more than 2,200 public-rental and subsidised-sale units.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  阿斯頓維拉對兵工廠: {
+    titleEn: "Aston Villa vs Arsenal",
+    whyTrending:
+      "Cantonese searches for Aston Villa vs Arsenal jumped to 2K+ with 1,000% growth after the Premier League midweek fixture. Related query 阿仙奴 paired with the English twin aston villa vs arsenal on the same 48-hour board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "aston villa vs arsenal": {
+    titleEn: "Aston Villa vs Arsenal",
+    whyTrending:
+      "English-language searches for Aston Villa vs Arsenal hit 1K+ with 500% growth. Related queries included arsenal and english premier league on Hong Kong's 48-hour board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  謝振軒: {
+    titleEn: "Lucas Tse (Cecilia Cheung / Nicholas Tse's son)",
+    whyTrending:
+      "Lucas Tse (謝振軒) ranked at 5K+ with related queries 張柏芝 and 謝霆鋒 after entertainment coverage of the 19-year-old. Celebrity/family tabloid; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  馬國明: {
+    titleEn: "Kenneth Ma (actor)",
+    whyTrending:
+      "TVB actor Kenneth Ma ranked at 5K+ with related query 湯鎮宗. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  习近平会见普京: {
+    titleEn: "Xi Jinping meets Putin",
+    whyTrending:
+      "Baidu realtime topped out as Xi Jinping met Vladimir Putin in Bishkek on 31 August on the sidelines of the 2026 SCO summit. State media carried the bilateral meeting as the diplomatic headline of the capture window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  华为小米荣耀手机今日集体调价: {
+    titleEn: "Huawei, Xiaomi and Honor raise phone prices",
+    whyTrending:
+      "On 1 September Huawei, Xiaomi and Honor raised prices on several handsets, with Mate 80 up ¥500–1,000. Coverage blamed Qualcomm's planned September chip hike and rising memory costs — a national hardware story with Shenzhen/GBA brand relevance.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  多款手机正式涨价: {
+    titleEn: "Several phone models officially raise prices",
+    whyTrending:
+      "Weibo realtime and tech both topped out on the 1 September handset price-hike wave covering Huawei, Xiaomi and Honor. The same story led Baidu as memory and Qualcomm cost pressure hit retail tags.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "“香港大药房”不卖药也不在香港": {
+    titleEn: "'Hong Kong Grand Pharmacy' sells no medicine and is not in Hong Kong",
+    whyTrending:
+      "China's TCM administration named a viral 'Hong Kong Grand Pharmacy' e-commerce scam that neither sold medicine nor operated in Hong Kong. Platforms took down 35 unlicensed shops and 3,318 product links — a direct GBA brand-misuse story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  百度完成双重主要上市: {
+    titleEn: "Baidu completes dual primary listing in Hong Kong",
+    whyTrending:
+      "Baidu said on 1 September its conversion from a secondary to a dual-primary listing on the Hong Kong Stock Exchange took effect, alongside Nasdaq. A direct HK-market and GBA listing story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  库克正式卸任苹果CEO: {
+    titleEn: "Tim Cook steps down as Apple CEO",
+    whyTrending:
+      "Tim Cook's last day as Apple CEO was 31 August, with hardware SVP John Ternus taking over on 1 September and Cook moving to executive chairman. Weibo tech and realtime both ranked the succession.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "20项措施推动消费扩容升级": {
+    titleEn: "20 measures to expand and upgrade consumption",
+    whyTrending:
+      "Seven ministries issued an 31 August implementation plan with 20 measures to expand goods consumption in the 15th Five-Year Plan period, covering autos, silver-economy goods and AI consumer products. A national 民生/demand-side policy spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "深圳校服 去商场自己买": {
+    titleEn: "Shenzhen school uniforms — buy them at the mall",
+    whyTrending:
+      "Shenzhen parents searched a back-to-school rule that uniforms should be bought at malls rather than through campus bulk orders. A direct GBA education-cost story on 1 September term opening.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   袁絲珩: {
     titleEn: "Yuen Sze-hang / Bernice Yuen (Miss HK 2026)",
     whyTrending:
-      "Bernice Yuen (袁絲珩) won the 2026 Miss Hong Kong pageant on 30 August at TVB City. Related queries included 香港小姐2026, 香港小姐 and first runner-up 李澤欣. Pageant/celebrity spike; skipped in the displayed top-5.",
+      "Bernice Yuen (袁絲珩) led Hong Kong's 48-hour board at 50K+ with 1,000% growth after winning Miss Hong Kong 2026 on 30 August. Related queries included 李澤欣, 謝淑怡 and 香港小姐2026. Pageant/celebrity spike; skipped in the displayed top-5.",
     isGossip: true,
     isNewsworthy: false,
     isGbaRelevant: true,
@@ -826,7 +946,7 @@ const GLOSSARY = {
   台风: {
     titleEn: "Typhoon",
     whyTrending:
-      "Typhoon-related searches rose across Hong Kong and the GBA as residents checked storm tracks, rain warnings and travel disruption during active monsoon season.",
+      "Typhoon searches rose across Hong Kong as Sardel (沙德爾) revived over the northern South China Sea and HKO kept Signal No. 1 in force on 1 September. Related weather queries sat on the same 48-hour board as 沙德爾 and 快速 增強.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
