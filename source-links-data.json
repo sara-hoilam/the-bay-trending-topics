@@ -33,7 +33,7 @@
     {
       "domain": "macaotourism.gov.mo",
       "displayName": "Macao Government Tourism Office",
-      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202608",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "category": "Lifestyle",
       "happeningsFetch": {
         "method": "macaotourism-whatson-api"
