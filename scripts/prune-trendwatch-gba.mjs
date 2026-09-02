@@ -133,17 +133,25 @@ function pruneData(data) {
       return "cluster:hk-observatory";
     if (/苹果折叠屏|苹果6款新品|苹果首款折叠|苹果发布会|^apple$|iphone 18|华为苹果小米|你在等iPhone18还是折叠|折叠屏手机大战/i.test(t))
       return "cluster:apple-sept";
-    if (/上海精神|上合组织|上海合作组织|上合力量|习近平将出席.*峰会|习近平主席推动上海精神|习近平抵达比什凯克|习主席访问吉尔吉斯斯坦|比什凯克出席上合|习近平会见普京|会见普京/i.test(t))
+    if (/上海精神|上合组织|上海合作组织|上合峰会|上合力量|习近平将出席.*峰会|习近平主席推动上海精神|习近平抵达比什凯克|习主席访问吉尔吉斯斯坦|比什凯克出席上合|习近平会见普京|会见普京|习近平出席.“上海合作组织/i.test(t))
       return "cluster:sco-summit";
     if (/小米18Fold|雷军官宣小米18Fold|小米玄戒O3|小米18Fold 国产芯|小米18Fold售价|小米18Fold 配置|曝小米18Fold|小米搭载玄戒O3/i.test(t))
       return "cluster:xiaomi-18fold";
-    if (/多款手机正式涨价|华为小米荣耀手机今日集体调价/i.test(t))
+    if (/多款手机正式涨价|华为小米荣耀手机今日集体调价|老款手机集体涨价|手机涨价|华为、小米、荣耀回应涨价|手机一夜涨价|等发新机老款降价结果更贵|专家称手机售价很难大幅回落|新机涨价消费者花式抢救旧手机|华为小米荣耀手机集体涨价|手机涨价多家门店销售发声/i.test(t))
       return "cluster:phone-price-hike";
-    if (/库克正式卸任|库克任苹果CEO|库克担任苹果CEO/i.test(t))
+    if (/库克正式卸任|库克任苹果CEO|库克担任苹果CEO|库克变更为执行主席|苹果新任CEO|苹果CEO特努斯|苹果51岁新CEO|苹果官网已更新领导层|特努斯入驻微博|特努斯到底什么来头|特努斯年薪/i.test(t))
       return "cluster:cook-ceo";
     if (/百度完成双重主要上市/.test(t)) return "cluster:baidu-hk-listing";
     if (/香港大药房/.test(t)) return "cluster:hk-pharmacy";
-    if (/20项措施推动消费/.test(t)) return "cluster:consumption-20";
+    if (/20项措施推动消费|10万亿级消费新赛道/.test(t)) return "cluster:consumption-20";
+    if (/豆包手机/.test(t)) return "cluster:doubao-phone";
+    if (/智驾强制国标|智能驾驶强制性国家标准/.test(t)) return "cluster:adas-gb";
+    if (/皇马.*西藏|请使用.“中国西藏”|将西藏与尼泊尔并列/.test(t)) return "cluster:rm-tibet";
+    if (/enzo fernández|曼城1\.46亿|切尔西告别恩佐|签下恩佐/i.test(t)) return "cluster:enzo-city";
+    if (/机器鸭|microduck/i.test(t)) return "cluster:microduck";
+    if (/iphoneultra|iPhoneUltra/i.test(t)) return "cluster:iphone-ultra";
+    if (/日本签署投降书|日本投降仪式/.test(t)) return "cluster:vj-day";
+    if (/雙台风|双台风最新路径|^台风$|^颱風$/.test(t)) return "cluster:hk-storm";
     if (/阿斯頓維拉對兵工廠|aston villa vs arsenal/i.test(t))
       return "cluster:villa-arsenal";
     if (/深圳校服/.test(t)) return "cluster:sz-uniform";

@@ -18,10 +18,186 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
-  沙德爾: {
-    titleEn: "Typhoon Sardel (沙德爾)",
+  "熱帶風暴 沙德爾": {
+    titleEn: "Tropical Storm Saudel",
     whyTrending:
-      "Hong Kong searches for 沙德爾 hit 5K+ with 600% growth as the Observatory kept Signal No. 1 up on 1 September after the storm revived over the northern South China Sea. Related queries included 打風, 一號戒備信號 and 颱風. HKO said it would review whether to raise Signal No. 3 as Sardel neared eastern Guangdong.",
+      "Hong Kong's 48-hour board was led by 熱帶風暴 沙德爾 at 100K+ with 1,000% growth as Tropical Storm Saudel tracked the northern South China Sea. Related queries included 熱帶風暴沙德爾, 熱帶低氣壓 沙德爾 and 林超英. A simplified-character twin and English low-pressure-area searches sat on the same board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "热带低气压 沙德尔": {
+    titleEn: "Tropical depression Saudel",
+    whyTrending:
+      "Simplified-character searches for 热带低气压 沙德尔 hit 5K+ with 1,000% growth and lasted about seven hours. Related query 台风 paired it with the traditional-character 100K+ tropical-storm row on the same 48-hour board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  楊思琦: {
+    titleEn: "Shirley Yeung",
+    whyTrending:
+      "TVB actress Shirley Yeung (楊思琦) ranked at 5K+ with 1,000% growth over about 20 hours. Celebrity entertainment; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  香港小姐競選: {
+    titleEn: "Miss Hong Kong pageant",
+    whyTrending:
+      "Miss Hong Kong pageant searches hit 5K+ with 600% growth. Related queries included 謝淑怡, 林婷婷 and 香港 小姐 競選 after the 2026 contest. Pageant/celebrity; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  麦当劳: {
+    titleEn: "McDonald's",
+    whyTrending:
+      "McDonald's searches hit 5K+ with 300% growth over about 17 hours. Related queries included mcdonald 優惠, 麥樂雞 and m記優惠 as Hong Kong users looked up app deals and McNuggets promotions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  麥當勞: {
+    titleEn: "McDonald's",
+    whyTrending:
+      "McDonald's searches hit 5K+ with 300% growth over about 17 hours. Related queries included mcdonald 優惠, 麥樂雞 and m記優惠 as Hong Kong users looked up app deals and McNuggets promotions.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "活期 存款": {
+    titleEn: "Demand deposits",
+    whyTrending:
+      "Hong Kong searches for 活期 存款 hit 1K+ with 700% growth over about 16 hours. Users checked savings and current-account rates as HKD and deposit headlines circulated in the same 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  黃之鋒: {
+    titleEn: "Joshua Wong",
+    whyTrending:
+      "Joshua Wong (黃之鋒) searches hit 500+ with 300% growth over about 11 hours. A political-news spike, not celebrity gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  港元: {
+    titleEn: "Hong Kong dollar",
+    whyTrending:
+      "HKD searches hit 100+ with 500% growth starting about 40 minutes before capture. Users checked the peg and local FX headlines alongside 活期 存款 on the same 48-hour board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "白雪 仙": {
+    titleEn: "Pak Suet-sin",
+    whyTrending:
+      "Cantonese-opera legend Pak Suet-sin (白雪仙) hit 2K+ with 1,000% growth over about 16 hours. Related query 白雪仙 marked a cultural/obituary-style spike, not tabloid gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  南韓: {
+    titleEn: "South Korea",
+    whyTrending:
+      "South Korea searches hit 2K+ with 1,000% growth and lasted about 15 hours on Hong Kong's 48-hour board. Users checked regional headlines in the same window as local weather and FX queries.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  何超瓊: {
+    titleEn: "Pansy Ho",
+    whyTrending:
+      "Pansy Ho (何超瓊) searches hit 1K+ with 700% growth and lasted about 1 day 3 hours. The Macao casino heiress is a GBA business name; not treated as tabloid gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  海關: {
+    titleEn: "Customs and Excise",
+    whyTrending:
+      "Hong Kong Customs searches hit 100+ with 200% growth over about an hour. Users checked enforcement and cross-border clearance headlines during the 48-hour window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  西漢姆聯對狼隊: {
+    titleEn: "West Ham vs Wolves",
+    whyTrending:
+      "Cantonese searches for West Ham vs Wolves hit 100+ with 200% growth after the Premier League fixture. Hong Kong fans tracked the same English-football slate as the Villa–Arsenal row.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "习近平出席“上海合作组织+”会议": {
+    titleEn: "Xi attends SCO+ meeting",
+    whyTrending:
+      "Baidu realtime led on Xi Jinping's 1 September SCO+ speech in Bishkek, titled on equal and orderly multipolarity and global governance. Weibo pinned 2026上合峰会习近平提出4点主张 in the same window — major national diplomacy.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  老款手机集体涨价: {
+    titleEn: "Older phone models rise in price together",
+    whyTrending:
+      "Weibo realtime and tech both led on 老款手机集体涨价 after Huawei, Xiaomi and Honor lifted tags on 1 September. Follow-on rows covered unsold stock and cancelled discount-wait plans — a national hardware story with Shenzhen/GBA brands.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  深圳校服真香: {
+    titleEn: "Shenzhen school uniforms — actually good",
+    whyTrending:
+      "Shenzhen school-uniform rules stayed on Baidu and Weibo as parents debated mall self-buy versus campus bulk orders. A direct GBA education-cost story as the new term opened.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  深圳校服火了背后是教育边界问题: {
+    titleEn: "Shenzhen uniforms viral — an education-boundary issue",
+    whyTrending:
+      "Weibo ranked a follow-on row arguing the Shenzhen uniform rush is about the boundary between school and family. Same GBA back-to-school cost story as Baidu's 深圳校服真香.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "双台风最新路径": {
+    titleEn: "Latest dual-typhoon tracks",
+    whyTrending:
+      "Baidu ranked dual-typhoon tracks for Saudel (沙德尔) and Kolawan (科罗旺). The same weather window drove Hong Kong Google's 100K+ 熱帶風暴 沙德爾 spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "曼城1.46亿欧元签下恩佐": {
+    titleEn: "Man City sign Enzo Fernández for €146m",
+    whyTrending:
+      "Weibo ranked Manchester City's reported €146m signing of Enzo Fernández from Chelsea. Hong Kong Google also carried enzo fernández and 切尔西告别恩佐 in the same 48-hour sports window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  尼泊尔泥石流灾害遇难人数升至1093人: {
+    titleEn: "Nepal mudslide death toll rises to 1,093",
+    whyTrending:
+      "Baidu ranked the Nepal-side death toll at 1,093 after the Himalayan ice-rock collapse that also hit Gyirong Port. Related rescue rows stayed on the same realtime board.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  云南文山12级台风致人伤亡系谣言: {
+    titleEn: "Yunnan Wenshan 'typhoon casualties' is a rumour",
+    whyTrending:
+      "Officials said a viral clip of a 12-level typhoon causing casualties in Wenshan, Yunnan, was fabricated. A provincial rumour row, not a GBA weather story.",
+    isGossip: false,
+    isNewsworthy: false,
+    isGbaRelevant: false,
+  },
+  沙德爾: {
+    titleEn: "Tropical Storm Saudel (沙德爾)",
+    whyTrending:
+      "Hong Kong's 48-hour board was led by 熱帶風暴 沙德爾 at 100K+ with 1,000% growth as Tropical Storm Saudel tracked the northern South China Sea. Related queries included 熱帶風暴沙德爾, 熱帶低氣壓 沙德爾 and 林超英. A twin simplified-character row and English low-pressure-area searches sat on the same board as Baidu's dual-typhoon path update.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -29,7 +205,7 @@ const GLOSSARY = {
   夜生活: {
     titleEn: "Nightlife",
     whyTrending:
-      "Hong Kong users searched 夜生活 at 5K+ with 1,000% growth over about 22 hours on the 48-hour board. No related-query cluster was shown; the spike sat beside typhoon-signal and dining-deal searches as residents checked going-out plans on 1 September.",
+      "Hong Kong users searched 夜生活 at 5K+ with 1,000% growth; the spike lasted about 1 day 21 hours on the 48-hour board. It sat beside typhoon and dining-deal searches as residents checked going-out plans while Saudel lingered offshore.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -37,7 +213,7 @@ const GLOSSARY = {
   房屋署: {
     titleEn: "Housing Department",
     whyTrending:
-      "Housing Department searches hit 1K+ with 700% growth after the Housing Authority posted the 2026 Express Flat Allocation Scheme unit list on 31 August. Family applicants start choosing flats from 2 September among more than 2,200 public-rental and subsidised-sale units.",
+      "Housing Department searches hit 2K+ with 600% growth and lasted about 19 hours. Users checked Express Flat Allocation and public-rental notices as the September selection window continued.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -85,7 +261,7 @@ const GLOSSARY = {
   华为小米荣耀手机今日集体调价: {
     titleEn: "Huawei, Xiaomi and Honor raise phone prices",
     whyTrending:
-      "On 1 September Huawei, Xiaomi and Honor raised prices on several handsets, with Mate 80 up ¥500–1,000. Coverage blamed Qualcomm's planned September chip hike and rising memory costs — a national hardware story with Shenzhen/GBA brand relevance.",
+      "On 1–2 September Huawei, Xiaomi and Honor raised prices on several handsets, with some Mate models up several hundred to ¥1,000. The three brands blamed chip and memory costs; Weibo realtime led on 老款手机集体涨价 while Baidu ranked their customer-service replies — a national hardware story with Shenzhen/GBA brand relevance.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -93,7 +269,7 @@ const GLOSSARY = {
   多款手机正式涨价: {
     titleEn: "Several phone models officially raise prices",
     whyTrending:
-      "Weibo realtime and tech both topped out on the 1 September handset price-hike wave covering Huawei, Xiaomi and Honor. The same story led Baidu as memory and Qualcomm cost pressure hit retail tags.",
+      "Weibo realtime and tech both topped out on the handset price-hike wave covering Huawei, Xiaomi and Honor. The same story led Baidu as memory and Qualcomm cost pressure hit retail tags, with follow-on rows about unsold stock and cancelled 'wait for a discount' plans.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -946,7 +1122,7 @@ const GLOSSARY = {
   台风: {
     titleEn: "Typhoon",
     whyTrending:
-      "Typhoon searches rose across Hong Kong as Sardel (沙德爾) revived over the northern South China Sea and HKO kept Signal No. 1 in force on 1 September. Related weather queries sat on the same 48-hour board as 沙德爾 and 快速 增強.",
+      "Weibo ranked 台风 as Tropical Storm Saudel (沙德爾) and a second system, Kolawan (科罗旺), tracked the western Pacific. The same weather window drove Hong Kong Google's 100K+ 熱帶風暴 沙德爾 spike and Baidu's dual-typhoon path update.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -1026,7 +1202,7 @@ const GLOSSARY = {
   泥石流: {
     titleEn: "Mudslide / debris flow",
     whyTrending:
-      "Gyirong Port debris-flow searches stayed elevated after the 26 August Nepal-side ice-rock avalanche. The 30 August briefing raised the Tibet-side toll to 16 dead and 546 missing, with 261 missing foreigners identified.",
+      "Gyirong Port and Nepal-side debris-flow searches stayed elevated after the Himalayan ice-rock collapse. Baidu put the Nepal death toll at 1,093; Weibo ranked the barrier lake above Gyirong as fully drained.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
