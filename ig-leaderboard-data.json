@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-09-02",
-  "refreshedAt": "2026-09-02T09:28:54+08:00",
+  "refreshedAt": "2026-09-02T09:40:57+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -302,7 +302,7 @@
           "followers": 691372
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "tatlerhongkong",
@@ -601,7 +601,7 @@
           "followers": 275992
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "timeouthk",
@@ -800,7 +800,7 @@
           "followers": 204763
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "lifestyleasiahk",
@@ -1091,7 +1091,7 @@
           "followers": 132428
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "the_trip_addict",
@@ -1390,7 +1390,7 @@
           "followers": 97517
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "sassyhongkong",
@@ -1980,7 +1980,7 @@
           "followers": 52621
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "thebayasia",
@@ -2578,7 +2578,7 @@
           "followers": 19351
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "thebeatasia",
@@ -2869,7 +2869,7 @@
           "followers": 2013
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     }
   ]
 }
