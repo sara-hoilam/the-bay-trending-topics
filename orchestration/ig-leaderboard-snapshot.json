@@ -1,41 +1,44 @@
 {
-  "capturedAt": "2026-09-02",
+  "capturedAt": "2026-09-03",
   "notes": [
-    "scmpnews: 691,372 followers (instagram-api)",
-    "tatlerhongkong: 275,992 followers (instagram-api)",
-    "the_trip_addict: 97,517 followers (instagram-api)",
+    "scmpnews: 692,235 followers (instagram-api)",
+    "tatlerhongkong: 276,144 followers (instagram-api)",
+    "the_trip_addict: 97,540 followers (instagram-api)",
     "sassyhongkong: fetch failed (HTTP 400) — Asset asset://laser.provider/ig_business_category_subvertical has been deleted. You cannot use this schema",
-    "thebayasia: fetch failed (HTTP 400) — Asset asset://laser.provider/ig_business_category_subvertical has been deleted. You cannot use this schema",
-    "greaterbayvibes: 19,351 followers (instagram-api)",
-    "thebeatasia: 2,013 followers (instagram-api)",
-    "o.cultmag: 52,621 followers (instagram-api)",
-    "lifestyleasiahk: 132,428 followers (instagram-api)",
-    "timeouthk: 204,763 followers (instagram-api)"
+    "thebayasia: 46,286 followers (instagram-api)",
+    "greaterbayvibes: 19,384 followers (instagram-api)",
+    "thebeatasia: 2,012 followers (instagram-api)",
+    "o.cultmag: 52,715 followers (instagram-api)",
+    "lifestyleasiahk: 132,591 followers (instagram-api)",
+    "timeouthk: 204,780 followers (instagram-api)"
   ],
   "accounts": {
     "scmpnews": {
-      "followers": 691372
+      "followers": 692235
     },
     "tatlerhongkong": {
-      "followers": 275992
+      "followers": 276144
     },
     "the_trip_addict": {
-      "followers": 97517
+      "followers": 97540
+    },
+    "thebayasia": {
+      "followers": 46286
     },
     "greaterbayvibes": {
-      "followers": 19351
+      "followers": 19384
     },
     "thebeatasia": {
-      "followers": 2013
+      "followers": 2012
     },
     "o.cultmag": {
-      "followers": 52621
+      "followers": 52715
     },
     "lifestyleasiahk": {
-      "followers": 132428
+      "followers": 132591
     },
     "timeouthk": {
-      "followers": 204763
+      "followers": 204780
     }
   }
 }
