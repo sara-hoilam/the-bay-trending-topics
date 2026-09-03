@@ -18,6 +18,158 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  黃之鋒: {
+    titleEn: "Joshua Wong",
+    whyTrending:
+      "Joshua Wong (黃之鋒) searches hit 5K+ with 800% growth on Hong Kong's 48-hour board. The English twin joshua wong also ranked at 1K+. A political-news spike, not celebrity gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  港元: {
+    titleEn: "Hong Kong dollar",
+    whyTrending:
+      "HKD searches hit 200+ with 800% growth on the 48-hour board. Users checked the peg alongside 利息 and 債券 市場 in the same capture window.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  麥當勞: {
+    titleEn: "McDonald's",
+    whyTrending:
+      "McDonald's searches hit 2K+ with 300% growth on Hong Kong's 48-hour board. Users looked up the chain during the same window as typhoon and dining-deal queries.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "热带低气压 沙德尔": {
+    titleEn: "Tropical depression Saudel",
+    whyTrending:
+      "Simplified-character searches for 热带低气压 沙德尔 hit 2K+ with 1,000% growth. The row paired with the traditional 100K+ tropical-storm leader as Saudel tracked Fujian and the northern South China Sea.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  香港小姐競選: {
+    titleEn: "Miss Hong Kong pageant",
+    whyTrending:
+      "Miss Hong Kong pageant searches hit 1K+ with 600% growth. Related queries included 林婷婷 and 黃翠如. Pageant/celebrity; skipped in the displayed top-5.",
+    isGossip: true,
+    isNewsworthy: false,
+    isGbaRelevant: true,
+  },
+  "热带风暴 沙德尔": {
+    titleEn: "Tropical Storm Saudel (simplified)",
+    whyTrending:
+      "Simplified-character searches for 热带风暴 沙德尔 hit 2K+ with 1,000% growth. The row sat beside the traditional-character 100K+ leader as Saudel's Fujian landfall circulated.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  劉兆銘: {
+    titleEn: "Lau Siu-ming (actor)",
+    whyTrending:
+      "Hong Kong character actor Lau Siu-ming (劉兆銘) hit 5K+ with 1,000% growth after local media reported his death at 93. Baidu and Weibo carried the same A Chinese Ghost Story 'Granny' obituary in this window. Obituaries are treated as news, not gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "习近平同埃及总统塞西会谈": {
+    titleEn: "Xi Jinping meets Egypt's President Sisi",
+    whyTrending:
+      "Baidu realtime led on Xi Jinping's 2 September talks with Egyptian President Abdel Fattah el-Sisi at Cairo's Ittihadiya Palace. Weibo pinned #习近平圆满结束对埃及的国事访问# in the same window — major national diplomacy.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "今天 致敬伟大胜利": {
+    titleEn: "Today — salute the great victory (V-J Day)",
+    whyTrending:
+      "3 September is China's Victory Day marking the 81st anniversary of the end of the War of Resistance. Baidu ranked memorial explainers as state media recalled 14 years of war and more than 35 million Chinese casualties.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  全球股市大反转: {
+    titleEn: "Global stock markets reverse sharply",
+    whyTrending:
+      "Overnight on 2 September global equities staged a deep-V reversal as US Treasury yields dropped after an oil-driven inflation scare. The same headline led Weibo realtime — a cross-platform markets spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  告别机顶盒: {
+    titleEn: "Saying goodbye to the set-top box",
+    whyTrending:
+      "China Broadcasting Network opened a nationwide tender for integrated TV adapters on 31 August so households can watch live TV without an external set-top box. Weibo realtime and tech both ranked the same hardware-policy story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "香港辟谣有一针防多癌疫苗": {
+    titleEn: "Hong Kong debunks a one-shot multi-cancer vaccine rumour",
+    whyTrending:
+      "Weibo ranked a Hong Kong fact-check that no single injection prevents multiple cancers. A direct HK/GBA public-health rumour row in the same window as mainland vaccine-misconception explainers.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "台风沙德尔在福建漳州第三次登陆": {
+    titleEn: "Typhoon Saudel makes third landfall in Zhangzhou, Fujian",
+    whyTrending:
+      "Saudel made a third landfall in Zhangzhou, Fujian. The same storm led Hong Kong Google at 100K+ and Weibo as 沙德尔第3次登陆 — a South China / GBA weather story.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "黄色预警！7省区部分地区有大到暴雨": {
+    titleEn: "Yellow alert: heavy-to-torrential rain in 7 provincial areas",
+    whyTrending:
+      "The National Meteorological Centre kept a rainstorm yellow warning at 06:00 on 3 September for Guangdong, Fujian, Jiangxi and four other provinces, with locally extreme rain in eastern Guangdong. Direct GBA weather risk.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "《倩女幽魂》“姥姥”刘兆铭去世": {
+    titleEn: "A Chinese Ghost Story's 'Granny' Lau Siu-ming dies",
+    whyTrending:
+      "Hong Kong media reported on 2 September that veteran actor Lau Siu-ming died at 93. He was known as the tree demon 'Granny' in A Chinese Ghost Story and won TVB's Ten Thousand Radiance award — a direct HK/GBA obituary.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  演员刘兆铭去世: {
+    titleEn: "Actor Lau Siu-ming dies",
+    whyTrending:
+      "Weibo ranked the Hong Kong actor's death at 93. Same A Chinese Ghost Story obituary as Baidu and Hong Kong Google's 5K+ 劉兆銘 row.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  沙德尔第3次登陆: {
+    titleEn: "Saudel makes a third landfall",
+    whyTrending:
+      "Weibo ranked Saudel's third landfall as the storm came ashore in Zhangzhou, Fujian. Hong Kong Google led at 100K+ on 熱帶風暴 沙德爾 and Baidu carried 台风沙德尔在福建漳州第三次登陆.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "微信新功能专治各种看不见": {
+    titleEn: "WeChat features that catch what you missed",
+    whyTrending:
+      "WeChat added a long-press unread-session list and a badge for unclaimed red packets or transfers. The same row ranked on Weibo realtime and tech — a national super-app product spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "雷军称小米18Fold比例根号二比一": {
+    titleEn: "Lei Jun: Xiaomi 18 Fold aspect ratio is √2:1",
+    whyTrending:
+      "Lei Jun said Xiaomi 18 Fold will use a √2:1 aspect ratio. Follow-on rows compared it with Huawei's foldable on the same tech board — GBA handset hardware.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   "熱帶風暴 沙德爾": {
     titleEn: "Tropical Storm Saudel",
     whyTrending:
@@ -29,7 +181,7 @@ const GLOSSARY = {
   "热带低气压 沙德尔": {
     titleEn: "Tropical depression Saudel",
     whyTrending:
-      "Simplified-character searches for 热带低气压 沙德尔 hit 5K+ with 1,000% growth and lasted about seven hours. Related query 台风 paired it with the traditional-character 100K+ tropical-storm row on the same 48-hour board.",
+      "Simplified-character searches for 热带低气压 沙德尔 hit 2K+ with 1,000% growth. The row paired with the traditional 100K+ tropical-storm leader as Saudel tracked Fujian and the northern South China Sea.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -45,7 +197,7 @@ const GLOSSARY = {
   香港小姐競選: {
     titleEn: "Miss Hong Kong pageant",
     whyTrending:
-      "Miss Hong Kong pageant searches hit 5K+ with 600% growth. Related queries included 謝淑怡, 林婷婷 and 香港 小姐 競選 after the 2026 contest. Pageant/celebrity; skipped in the displayed top-5.",
+      "Miss Hong Kong pageant searches hit 1K+ with 600% growth. Related queries included 林婷婷 and 黃翠如. Pageant/celebrity; skipped in the displayed top-5.",
     isGossip: true,
     isNewsworthy: false,
     isGbaRelevant: true,
@@ -61,7 +213,7 @@ const GLOSSARY = {
   麥當勞: {
     titleEn: "McDonald's",
     whyTrending:
-      "McDonald's searches hit 5K+ with 300% growth over about 17 hours. Related queries included mcdonald 優惠, 麥樂雞 and m記優惠 as Hong Kong users looked up app deals and McNuggets promotions.",
+      "McDonald's searches hit 2K+ with 300% growth on Hong Kong's 48-hour board. Users looked up the chain during the same window as typhoon and dining-deal queries.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -77,7 +229,7 @@ const GLOSSARY = {
   黃之鋒: {
     titleEn: "Joshua Wong",
     whyTrending:
-      "Joshua Wong (黃之鋒) searches hit 500+ with 300% growth over about 11 hours. A political-news spike, not celebrity gossip.",
+      "Joshua Wong (黃之鋒) searches hit 5K+ with 800% growth on Hong Kong's 48-hour board. The English twin joshua wong also ranked at 1K+. A political-news spike, not celebrity gossip.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -85,7 +237,7 @@ const GLOSSARY = {
   港元: {
     titleEn: "Hong Kong dollar",
     whyTrending:
-      "HKD searches hit 100+ with 500% growth starting about 40 minutes before capture. Users checked the peg and local FX headlines alongside 活期 存款 on the same 48-hour board.",
+      "HKD searches hit 200+ with 800% growth on the 48-hour board. Users checked the peg alongside 利息 and 債券 市場 in the same capture window.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
@@ -685,7 +837,7 @@ const GLOSSARY = {
   小米18Fold: {
     titleEn: "Xiaomi 18 Fold",
     whyTrending:
-      "Weibo tech listed Xiaomi 18 Fold after Lei Jun said the foldable will ship with ChangXin's LPDDR6 memory — a domestic chip-plus-phone pairing. Configuration, price-guess and '国产芯存协同' variants filled the rest of the board.",
+      "Lei Jun said Xiaomi 18 Fold will use a √2:1 aspect ratio, and Weibo tech compared the foldable with Huawei on the same board. A GBA handset-hardware spike.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
