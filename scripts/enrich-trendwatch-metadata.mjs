@@ -18,6 +18,46 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  劉兆銘: {
+    titleEn: "Lau Siu-ming (actor)",
+    whyTrending:
+      "Hong Kong character actor Lau Siu-ming (劉兆銘) hit 20K+ with 1,000% growth after local media reported his death at 94 on 2 September. Related query 謝君豪 sat on the same 48-hour board. Obituaries are treated as news, not gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "銀色 債券 2026": {
+    titleEn: "Silver Bond 2026",
+    whyTrending:
+      "Hong Kong's 11th Silver Bond subscription closed at 14:00 on 4 September. The three-year notes guarantee 4.25% and targeted HK$50–55 billion. Related queries included 銀色 債券 and 銀色債券 as eligible residents rushed the cutoff.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "熱帶 風暴 沙 德爾": {
+    titleEn: "Tropical Storm Saudel",
+    whyTrending:
+      "熱帶 風暴 沙 德爾 stayed at 10K+ with 1,000% growth on Hong Kong's 48-hour board after the storm tracked the northern South China Sea. Related queries included 熱帶 氣旋 警報, 三號強風信號 and 熱帶 風暴.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  GPT6正式发布: {
+    titleEn: "GPT-6 officially launches",
+    whyTrending:
+      "OpenAI released GPT-6 Astra on 4 September and framed it as its most capable aligned model. The same launch led Baidu as OpenAI总裁宣布AGI到来 and lifted Hong Kong ChatGPT searches — a cross-platform AI spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "OpenAI总裁宣布AGI到来": {
+    titleEn: "OpenAI president declares the AGI era",
+    whyTrending:
+      "Baidu realtime ranked OpenAI's 4 September GPT-6 Astra launch after president Greg Brockman closed the event with 'Welcome to the AGI era.' Follow-on rows covered the model card and a same-night US AI outage.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   黃之鋒: {
     titleEn: "Joshua Wong",
     whyTrending:
@@ -69,7 +109,7 @@ const GLOSSARY = {
   劉兆銘: {
     titleEn: "Lau Siu-ming (actor)",
     whyTrending:
-      "Hong Kong character actor Lau Siu-ming (劉兆銘) hit 5K+ with 1,000% growth after local media reported his death at 93. Baidu and Weibo carried the same A Chinese Ghost Story 'Granny' obituary in this window. Obituaries are treated as news, not gossip.",
+      "Hong Kong character actor Lau Siu-ming (劉兆銘) hit 20K+ with 1,000% growth after local media reported his death at 94 on 2 September. Related query 謝君豪 sat on the same 48-hour board. Obituaries are treated as news, not gossip.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,

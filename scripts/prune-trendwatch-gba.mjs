@@ -124,7 +124,18 @@ function pruneData(data) {
     )
       return "cluster:gyirong-mudslide";
     if (/刘兆铭|劉兆銘|倩女幽魂.*姥姥/i.test(t)) return "cluster:lau-siu-ming";
-    if (/习近平同埃及|塞西会谈|对埃及的国事访问/i.test(t)) return "cluster:xi-egypt";
+    if (/习近平同埃及|塞西会谈|对埃及的国事访问|中埃两大文明/i.test(t)) return "cluster:xi-egypt";
+    if (/GPT-?6|GPT6|OpenAI总裁宣布AGI|OpenAI发布GPT-6|地球最强大模型GPT-6|美国AI大宕机|\bchatgpt\b/i.test(t))
+      return "cluster:gpt6-astra";
+    if (/Token贷/.test(t)) return "cluster:token-loan";
+    if (/银色.?债券|銀色.?債券/i.test(t)) return "cluster:silver-bond";
+    if (/广州取消校服|广州取消中小学校服/.test(t)) return "cluster:gz-uniform";
+    if (/人人影视/.test(t)) return "cluster:yyets";
+    if (/Cybercab|特斯拉汽车|特斯拉汽車|特斯拉预告|特斯拉預告/i.test(t)) return "cluster:tesla-cybercab";
+    if (/折叠屏三国杀/.test(t)) return "cluster:fold-war";
+    if (/外交部：已向韩方|光州双年展/.test(t)) return "cluster:gwangju-taiwan";
+    if (/问界M9/i.test(t)) return "cluster:huawei-auto";
+    if (/比什凯克时间|习近平再谈上合初心/.test(t)) return "cluster:sco-summit";
     if (/致敬伟大胜利|每个中国人都该记住0903|抗日战争胜利81|中国抗日战争拯救|九三盛大阅兵|今天 致敬伟大胜利/i.test(t))
       return "cluster:vj-day-2026";
     if (/告别机顶盒|广电一体化电视/i.test(t)) return "cluster:set-top-box";
