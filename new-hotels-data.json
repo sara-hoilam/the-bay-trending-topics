@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-09-03",
-  "refreshedAt": "2026-09-03T09:44:58+08:00",
+  "updatedAt": "2026-09-04",
+  "refreshedAt": "2026-09-04T09:32:33+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-03-04",
-  "windowEnd": "2027-03-05",
-  "count": 116,
+  "windowStart": "2026-03-05",
+  "windowEnd": "2027-03-06",
+  "count": 118,
   "countries": [
     "Bangladesh",
     "China",
@@ -25,12 +25,6 @@
     "Sri Lanka",
     "Thailand",
     "Vietnam"
-  ],
-  "sourceErrors": [
-    {
-      "domain": "ihg.com",
-      "error": "IHG page unreachable (bot protection)"
-    }
   ],
   "hotels": [
     {
@@ -557,7 +551,7 @@
       "openDateSort": "2026-08-15",
       "status": "opened",
       "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
     },
     {
@@ -591,7 +585,7 @@
       "openDateSort": "2026-08-15",
       "status": "opened",
       "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
     },
     {
@@ -625,7 +619,7 @@
       "openDateSort": "2026-08-15",
       "status": "opened",
       "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
     },
     {
@@ -642,7 +636,7 @@
       "openDateSort": "2026-08-15",
       "status": "opened",
       "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
     },
     {
@@ -710,7 +704,7 @@
       "openDateSort": "2026-08-15",
       "status": "opened",
       "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
     },
     {
@@ -1305,7 +1299,7 @@
       "openDateSort": "2026-11-15",
       "status": "upcoming",
       "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://group.accor.com/en/news-stories/accor-2026-openings",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
     },
     {
@@ -1530,6 +1524,23 @@
       "sourceName": "The Opening List"
     },
     {
+      "name": "Grand Mercure Amritsar Airport Road",
+      "location": "Amritsar, India",
+      "country": "India",
+      "region": "asia",
+      "hotelGroup": "Accor",
+      "stars": 3,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-12-15",
+      "status": "upcoming",
+      "sourceDomain": "group.accor.com",
+      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
+      "sourceName": "Accor 2026 Openings"
+    },
+    {
       "name": "The Leela Jaisalmer",
       "location": "Rajasthan, India",
       "country": "India",
@@ -1663,6 +1674,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/nammos-maldives",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Rosewood Seoul",
+      "location": "Seoul, South Korea",
+      "country": "South Korea",
+      "region": "asia",
+      "hotelGroup": "Rosewood",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-01-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/rosewood-seoul",
       "sourceName": "The Opening List"
     },
     {
