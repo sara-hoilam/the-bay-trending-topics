@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-09-05",
-  "refreshedAt": "2026-09-05T09:16:52+08:00",
+  "refreshedAt": "2026-09-05T09:29:23+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -314,7 +314,7 @@
           "followers": 693410
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "tatlerhongkong",
@@ -625,7 +625,7 @@
           "followers": 276325
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "timeouthk",
@@ -836,7 +836,7 @@
           "followers": 204795
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "lifestyleasiahk",
@@ -1139,7 +1139,7 @@
           "followers": 132807
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "the_trip_addict",
@@ -1450,7 +1450,7 @@
           "followers": 97707
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "sassyhongkong",
@@ -2064,7 +2064,7 @@
           "followers": 52841
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "thebayasia",
@@ -2375,7 +2375,7 @@
           "followers": 46734
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "manual"
     },
     {
       "handle": "greaterbayvibes",
@@ -2686,7 +2686,7 @@
           "followers": 19484
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "thebeatasia",
@@ -2989,7 +2989,7 @@
           "followers": 2008
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     }
   ]
 }
