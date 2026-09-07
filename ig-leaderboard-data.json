@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
-  "updatedAt": "2026-09-06",
-  "refreshedAt": "2026-09-06T09:18:07+08:00",
+  "updatedAt": "2026-09-07",
+  "refreshedAt": "2026-09-07T09:15:33+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -10,8 +10,8 @@
       "displayName": "South China Morning Post",
       "url": "https://www.instagram.com/scmpnews/",
       "highlight": false,
-      "followers": 694042,
-      "followersGrowthPct7d": 0.62,
+      "followers": 694376,
+      "followersGrowthPct7d": 0.61,
       "history": [
         {
           "date": "2026-06-15",
@@ -316,16 +316,20 @@
         {
           "date": "2026-09-06",
           "followers": 694042
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 694376
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "tatlerhongkong",
       "displayName": "Tatler HK",
       "url": "https://www.instagram.com/tatlerhongkong/",
       "highlight": false,
-      "followers": 276560,
+      "followers": 276798,
       "followersGrowthPct7d": 0.41,
       "history": [
         {
@@ -631,16 +635,20 @@
         {
           "date": "2026-09-06",
           "followers": 276560
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 276798
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "timeouthk",
       "displayName": "Time Out Hong Kong",
       "url": "https://www.instagram.com/timeouthk/",
       "highlight": false,
-      "followers": 204844,
+      "followers": 204857,
       "followersGrowthPct7d": 0.07,
       "history": [
         {
@@ -846,17 +854,21 @@
         {
           "date": "2026-09-06",
           "followers": 204844
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 204857
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "lifestyleasiahk",
       "displayName": "Lifestyle Asia HK",
       "url": "https://www.instagram.com/lifestyleasiahk/",
       "highlight": false,
-      "followers": 132808,
-      "followersGrowthPct7d": 0.88,
+      "followers": 132859,
+      "followersGrowthPct7d": 0.66,
       "history": [
         {
           "date": "2026-06-17",
@@ -1153,17 +1165,21 @@
         {
           "date": "2026-09-06",
           "followers": 132808
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 132859
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "the_trip_addict",
       "displayName": "The Trip Addict",
       "url": "https://www.instagram.com/the_trip_addict/",
       "highlight": false,
-      "followers": 97787,
-      "followersGrowthPct7d": 0.56,
+      "followers": 97849,
+      "followersGrowthPct7d": 0.51,
       "history": [
         {
           "date": "2026-06-15",
@@ -1468,17 +1484,21 @@
         {
           "date": "2026-09-06",
           "followers": 97787
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 97849
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "sassyhongkong",
       "displayName": "Sassy HK",
       "url": "https://www.instagram.com/sassyhongkong/",
       "highlight": false,
-      "followers": 92144,
-      "followersGrowthPct7d": 0.12,
+      "followers": 92148,
+      "followersGrowthPct7d": 0.11,
       "history": [
         {
           "date": "2026-06-15",
@@ -1783,6 +1803,10 @@
         {
           "date": "2026-09-06",
           "followers": 92144
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 92148
         }
       ],
       "followersSource": "manual"
@@ -1792,7 +1816,7 @@
       "displayName": "O! Cult",
       "url": "https://www.instagram.com/o.cultmag/",
       "highlight": false,
-      "followers": 52897,
+      "followers": 52948,
       "followersGrowthPct7d": 1.76,
       "history": [
         {
@@ -2090,17 +2114,21 @@
         {
           "date": "2026-09-06",
           "followers": 52897
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 52948
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "thebayasia",
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 47033,
-      "followersGrowthPct7d": 5.4,
+      "followers": 47344,
+      "followersGrowthPct7d": 4.7,
       "history": [
         {
           "date": "2026-06-15",
@@ -2405,17 +2433,21 @@
         {
           "date": "2026-09-06",
           "followers": 47033
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 47344
         }
       ],
-      "followersSource": "manual"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "greaterbayvibes",
       "displayName": "Greater Bay Vibes",
       "url": "https://www.instagram.com/greaterbayvibes/",
       "highlight": false,
-      "followers": 19505,
-      "followersGrowthPct7d": 1.03,
+      "followers": 19521,
+      "followersGrowthPct7d": 1.07,
       "history": [
         {
           "date": "2026-06-15",
@@ -2720,17 +2752,21 @@
         {
           "date": "2026-09-06",
           "followers": 19505
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 19521
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     },
     {
       "handle": "thebeatasia",
       "displayName": "The Beat Asia",
       "url": "https://www.instagram.com/thebeatasia/",
       "highlight": false,
-      "followers": 2009,
-      "followersGrowthPct7d": -0.25,
+      "followers": 2008,
+      "followersGrowthPct7d": -0.3,
       "history": [
         {
           "date": "2026-06-17",
@@ -3027,9 +3063,13 @@
         {
           "date": "2026-09-06",
           "followers": 2009
+        },
+        {
+          "date": "2026-09-07",
+          "followers": 2008
         }
       ],
-      "followersSource": "carried-forward"
+      "followersSource": "instagram-api"
     }
   ]
 }
