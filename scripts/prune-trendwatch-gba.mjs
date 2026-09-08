@@ -124,7 +124,25 @@ function pruneData(data) {
     )
       return "cluster:gyirong-mudslide";
     if (/刘兆铭|劉兆銘|倩女幽魂.*姥姥/i.test(t)) return "cluster:lau-siu-ming";
-    if (/习近平同埃及|塞西会谈|对埃及的国事访问|中埃两大文明/i.test(t)) return "cluster:xi-egypt";
+    if (/习近平同埃及|塞西会谈|对埃及的国事访问|中埃两大文明|中国元首外交|书写中埃友好/i.test(t))
+      return "cluster:xi-egypt";
+    if (/小米澎程|小米汽车最便宜/i.test(t)) return "cluster:xiaomi-pengcheng";
+    if (/偷拍未公开战机|国安部披露案件/i.test(t)) return "cluster:mss-jet";
+    if (/山姆.*三文鱼|三文鱼寿司/i.test(t)) return "cluster:sams-sushi";
+    if (/租者置其屋/i.test(t)) return "cluster:tps-scheme";
+    if (/華姐冰室|华姐冰室/i.test(t)) return "cluster:wah-jie-cafe";
+    if (/^布 文$|^布文$/i.test(t)) return "cluster:hugh-bowman";
+    if (/艾佛頓對曼聯|everton vs man/i.test(t)) return "cluster:everton-utd";
+    if (/女篮世界杯|中国女篮|意大利女篮/i.test(t)) return "cluster:china-womens-basketball";
+    if (/绝不允许歪曲篡改抗战|钧正平评郭德纲|郭德纲篡改/i.test(t)) return "cluster:guo-degange-song";
+    if (/联合国发布了新版世界地图/i.test(t)) return "cluster:un-map";
+    if (/高息存款密集到期/i.test(t)) return "cluster:high-rate-deposits";
+    if (/伊朗公布新型导弹/i.test(t)) return "cluster:iran-missile";
+    if (/特斯拉降价/i.test(t)) return "cluster:tesla-price-cut";
+    if (/鸿蒙7正式发布/i.test(t)) return "cluster:harmonyos-7";
+    if (/余承东建议苹果|余承东 华为|余承东 pura/i.test(t)) return "cluster:yu-chengdong-hw";
+    if (/用AI训练AI/i.test(t)) return "cluster:ai-train-ai";
+    if (/iphone duo/i.test(t)) return "cluster:apple-sept";
     if (/GPT-?6|GPT6|OpenAI总裁宣布AGI|OpenAI发布GPT-6|地球最强大模型GPT-6|美国AI大宕机|\bchatgpt\b/i.test(t))
       return "cluster:gpt6-astra";
     if (/Token贷/.test(t)) return "cluster:token-loan";
@@ -211,7 +229,7 @@ function pruneData(data) {
     if (/安大略湖|美国湖/i.test(t)) return "cluster:ontario-lake";
     if (/中共中央政治局召开会议/i.test(t)) return "cluster:politburo";
     if (/华为MateBook|MateBookProS/i.test(t)) return "cluster:huawei-matebook";
-    if (/人民日报评小米|小米为中国半导体|小米澎程/i.test(t)) return "cluster:xiaomi-semiconductor";
+    if (/人民日报评小米|小米为中国半导体/i.test(t)) return "cluster:xiaomi-semiconductor";
     if (/康佳去年巨亏|康佳退市/i.test(t)) return "cluster:konka";
     if (/中芯国际/i.test(t)) return "cluster:smic";
     if (/高通6G|6G终端/i.test(t)) return "cluster:qualcomm-6g";

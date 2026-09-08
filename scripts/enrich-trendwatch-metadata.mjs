@@ -405,7 +405,7 @@ const GLOSSARY = {
   房屋署: {
     titleEn: "Housing Department",
     whyTrending:
-      "Housing Department searches hit 2K+ with 600% growth and lasted about 19 hours. Users checked Express Flat Allocation and public-rental notices as the September selection window continued.",
+      "Housing Department (房屋署) searches hit 2K+ with 1,000% growth for about six hours. The spike sat beside Tenants Purchase Scheme queries as users checked public-rental and sale notices.",
     isGossip: false,
     isNewsworthy: true,
     isGbaRelevant: true,
