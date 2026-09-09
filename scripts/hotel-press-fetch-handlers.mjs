@@ -1,10 +1,17 @@
 /**
  * Per-source fetch handlers for generate-hotel-press-data.mjs.
  */
-import { HOTEL_PRESS_SOURCES } from "./hotel-press-config.mjs";
+import { matchHotelPressListing } from "./hotel-press-config.mjs";
 import {
   parseWynnNewsroomHtml,
   parseSandsPressHtml,
+  parseGalaxyPressHtml,
+  parseMelcoPressHtml,
+  parseMgmPressHtml,
+  parseSjmPressHtml,
+  parseMandarinPressHtml,
+  parseFourSeasonsPressHtml,
+  parseShangriArticlesJson,
   stripTags,
   decodeHtml,
 } from "./hotel-press-parse.mjs";
@@ -12,17 +19,32 @@ import {
 export const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36";
 
+const FETCH_HEADERS = {
+  "User-Agent": UA,
+  Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+  "Accept-Language": "en-US,en;q=0.9",
+};
+
 async function fetchText(url) {
   const res = await fetch(url, {
-    headers: {
-      "User-Agent": UA,
-      Accept: "text/html,application/xhtml+xml",
-    },
+    headers: FETCH_HEADERS,
     redirect: "follow",
     signal: AbortSignal.timeout(25000),
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   return res.text();
+}
+
+async function fetchTextWithFallback(urls) {
+  let lastErr;
+  for (const url of urls.filter(Boolean)) {
+    try {
+      return { html: await fetchText(url), url };
+    } catch (err) {
+      lastErr = err;
+    }
+  }
+  throw lastErr || new Error("No listing URLs");
 }
 
 function isJunkLede(t) {
@@ -61,6 +83,12 @@ function firstLede(html, title) {
 
 async function enrichSummary(item) {
   if (!item.url) return item;
+  if (/\.pdf(?:[?#]|$)/i.test(item.url)) {
+    return {
+      ...item,
+      summary: item.summary || `${item.hotelGroup || "Hotel"} press: ${item.title}.`,
+    };
+  }
   try {
     const html = await fetchText(item.url);
     const summary = firstLede(html, item.title);
@@ -70,32 +98,83 @@ async function enrichSummary(item) {
   }
   return {
     ...item,
-    summary: `${item.hotelGroup || "Hotel"} press: ${item.title}.`,
+    summary: item.summary || `${item.hotelGroup || "Hotel"} press: ${item.title}.`,
   };
 }
 
-export async function fetchHotelPressForSource(source) {
-  const cfg = HOTEL_PRESS_SOURCES[source.domain] || {};
-  const method = source.hotelPressFetch?.method || cfg.method || "html";
-  const listingUrl = source.url || cfg.listingUrl;
-  const html = await fetchText(listingUrl);
-  const ctx = {
+function listingContext(source, cfg) {
+  return {
     ...source,
     hotelGroup: cfg.hotelGroup || source.hotelPressFetch?.hotelGroup,
     displayName: source.displayName || cfg.displayName,
+    url: source.url || cfg.listingUrl,
+    domain: source.domain || cfg.domain,
   };
-  let items;
+}
+
+function parseListingHtml(method, html, ctx) {
   switch (method) {
     case "wynn-newsroom":
-      items = parseWynnNewsroomHtml(html, ctx);
-      break;
+      return parseWynnNewsroomHtml(html, ctx);
     case "sands-press":
-      items = parseSandsPressHtml(html, ctx);
-      break;
+      return parseSandsPressHtml(html, ctx);
+    case "galaxy-press":
+      return parseGalaxyPressHtml(html, ctx);
+    case "melco-press":
+      return parseMelcoPressHtml(html, ctx);
+    case "mgm-press":
+      return parseMgmPressHtml(html, ctx);
+    case "sjm-press":
+      return parseSjmPressHtml(html, ctx);
+    case "mandarin-press":
+      return parseMandarinPressHtml(html, ctx);
+    case "fourseasons-press":
+      return parseFourSeasonsPressHtml(html, ctx);
     default:
       throw new Error(`Unknown hotelPressFetch.method: ${method}`);
   }
-  return items;
+}
+
+async function fetchShangriArticles(ctx) {
+  const res = await fetch("https://www.shangri-la.com/group/data/loadArticles", {
+    method: "POST",
+    headers: {
+      "User-Agent": UA,
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      Origin: "https://www.shangri-la.com",
+      Referer: "https://www.shangri-la.com/group/media/",
+    },
+    body: JSON.stringify({
+      type: "PressReleases",
+      year: "*",
+      category: "*",
+      search: "",
+      page: 1,
+    }),
+    redirect: "follow",
+    signal: AbortSignal.timeout(25000),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} for Shangri-La loadArticles`);
+  const payload = await res.json();
+  return parseShangriArticlesJson(payload, ctx);
+}
+
+export async function fetchHotelPressForSource(source) {
+  const cfg =
+    matchHotelPressListing({
+      domain: source.domain,
+      url: source.url,
+      displayName: source.displayName,
+    }) || {};
+  const method = source.hotelPressFetch?.method || cfg.method || "html";
+  const ctx = listingContext(source, cfg);
+  if (method === "shangri-articles") {
+    return fetchShangriArticles(ctx);
+  }
+  const urls = [source.url || cfg.listingUrl, ...(cfg.fallbackUrls || [])];
+  const { html } = await fetchTextWithFallback(urls);
+  return parseListingHtml(method, html, ctx);
 }
 
 export async function enrichHotelPressSummaries(articles, { max = 12 } = {}) {

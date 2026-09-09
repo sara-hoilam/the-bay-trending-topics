@@ -15,6 +15,7 @@ import {
 import {
   hotelPressFetchMeta,
   hotelPressListingUrl,
+  matchHotelPressListing,
 } from "./hotel-press-config.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -284,7 +285,14 @@ const DISPLAY_NAMES = {
   "group.accor.com": "Accor 2026 Openings",
   "ihg.com": "IHG New Hotels",
   // Hotels (press rooms)
+  "galaxyentertainment.com": "Galaxy Entertainment",
+  "ir.melco-resorts.com": "Melco Resorts",
+  "en.mgmchinaholdings.com": "MGM China",
+  "sjmholdings.com": "SJM Holdings",
   "newsroom.wynnresorts.com": "Wynn Palace Newsroom",
+  "press.mandarinoriental.com": "Mandarin Oriental",
+  "shangri-la.com": "Shangri-La Group",
+  "press.fourseasons.com": "Four Seasons Hong Kong",
   "en.sandsresortsmacao.com": "Sands China Press",
 };
 
@@ -325,8 +333,17 @@ const URL_OVERRIDES = {
   "group.accor.com":
     "https://group.accor.com/en/news-stories/accor-2026-openings",
   "ihg.com": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
+  "galaxyentertainment.com":
+    "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
+  "ir.melco-resorts.com": "https://ir.melco-resorts.com/press-releases",
+  "en.mgmchinaholdings.com": "https://en.mgmchinaholdings.com/media-releases",
+  "sjmholdings.com": "https://www.sjmholdings.com/en/media-center/press-release",
   "newsroom.wynnresorts.com":
     "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+  "press.mandarinoriental.com":
+    "https://press.mandarinoriental.com/section/press-releases",
+  "shangri-la.com": "https://www.shangri-la.com/group/media/",
+  "press.fourseasons.com": "https://press.fourseasons.com/hongkong/hotel-news/",
   "en.sandsresortsmacao.com":
     "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
 };
@@ -364,24 +381,41 @@ function parseDomains(md) {
       category = SKIP_SECTIONS.has(head[1]) ? null : head[1];
       continue;
     }
-    const item = line.match(/^- `([^`]+)`/);
+    const item = line.match(
+      /^- `([^`]+)`(?:\s+\(([^)]+)\))?(?:\s+[—–-]\s+(https?:\/\/\S+))?/,
+    );
     if (item && category) {
       const domain = item[1];
       if (shouldSkipDomain(domain)) continue;
       const categoryName = CATEGORY_MAP[category] || category;
-      const url = homepageUrl(domain);
+      const note = item[2] || "";
+      const explicitUrl = item[3] || "";
+      const isHotelNote = categoryName === "Hotels" && note && !/^\d+\s+links/i.test(note);
+      const url = explicitUrl || homepageUrl(domain);
+      const listing = matchHotelPressListing({
+        domain,
+        url,
+        displayName: isHotelNote ? note : undefined,
+      });
       const row = {
         domain,
-        displayName: displayName(domain),
-        url: hotelPressListingUrl(domain, happeningsListingUrl(domain, url)),
+        displayName: isHotelNote ? note : displayName(domain),
+        url:
+          listing?.listingUrl ||
+          hotelPressListingUrl(domain, happeningsListingUrl(domain, url)),
         category: categoryName,
       };
+      if (explicitUrl) row.url = explicitUrl;
       if (categoryName === "Lifestyle") {
         const meta = happeningsFetchMeta(domain);
         if (meta) row.happeningsFetch = meta;
       }
       if (categoryName === "Hotels") {
-        const meta = hotelPressFetchMeta(domain);
+        const meta = hotelPressFetchMeta({
+          domain,
+          url: row.url,
+          displayName: row.displayName,
+        });
         if (meta) row.hotelPressFetch = meta;
       }
       rows.push(row);

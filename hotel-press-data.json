@@ -1,24 +1,76 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
   "updatedAt": "2026-09-09",
-  "refreshedAt": "2026-09-09T13:46:38+08:00",
+  "refreshedAt": "2026-09-09T14:07:29+08:00",
   "windowDays": 14,
   "windowStart": "2026-08-26",
   "windowEnd": "2026-09-09",
-  "count": 4,
+  "count": 9,
   "articles": [
     {
+      "title": "Three MGM Restaurants Recognized in Trip.Gourmet’s 2027 Global Fine Dining Selection",
+      "url": "https://en.mgmchinaholdings.com/media-releases?item=854",
+      "posted": "2026-09-08",
+      "rawDate": "Sep 08, 2026",
+      "hotelGroup": "MGM China",
+      "sourceName": "MGM China",
+      "sourceDomain": "en.mgmchinaholdings.com",
+      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
+      "kind": "award",
+      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…",
+      "rank": 1
+    },
+    {
+      "title": "MGM Donates MOP5 Million to Support Relief and Recovery Efforts in Xizang",
+      "url": "https://en.mgmchinaholdings.com/media-releases?item=853",
+      "posted": "2026-09-04",
+      "rawDate": "Sep 04, 2026",
+      "hotelGroup": "MGM China",
+      "sourceName": "MGM China",
+      "sourceDomain": "en.mgmchinaholdings.com",
+      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
+      "kind": "good-news",
+      "summary": "[ September 4 , 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope…",
+      "rank": 2
+    },
+    {
+      "title": "SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County",
+      "url": "https://www.sjmholdings.com/resources/images/uploads/2026-09-04-03-57-31.pdf",
+      "posted": "2026-09-04",
+      "rawDate": "04 Sep 2026",
+      "hotelGroup": "SJM",
+      "sourceName": "SJM Holdings",
+      "sourceDomain": "sjmholdings.com",
+      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
+      "kind": "good-news",
+      "summary": "SJM press: SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County.",
+      "rank": 3
+    },
+    {
       "title": "Wynn Donates MOP5 Million to Support Relief and Recovery Efforts in Gyirong, Xizang",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnpalace/wp-pressreleases/wynn-donates-mop5-million-to-support-relief-and-recovery-efforts-in-gyirong--xizang/s/8ca657bf-9f3a-4b78-b2be-aaf489808885",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-donates-mop5-million-to-support-relief-and-recovery-efforts-in-gyirong--xizang/s/8ca657bf-9f3a-4b78-b2be-aaf489808885",
       "posted": "2026-09-04",
       "rawDate": "04 Sep 2026",
       "hotelGroup": "Wynn",
-      "sourceName": "Wynn Palace Newsroom",
+      "sourceName": "Wynn Macau Newsroom",
       "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "good-news",
       "summary": "Macao, September 4, 2026 – A severe mudslide recently struck Gyirong County, Xigaze City, Xizang Autonomous Region, resulting in significant casualties and property losses. The disaster has drawn widespread concern from all sectors of society. Wynn Macau, Limited today announced a donation of MOP5 million to support emergency relief and post-disaster recovery efforts, with the assistance of the Liaison Office of…",
-      "rank": 1
+      "rank": 4
+    },
+    {
+      "title": "GEG and Lui Che Woo Family Charitable Foundation Donate MOP10 Million to Support Relief and Recovery Efforts in Xizang",
+      "url": "https://www.galaxyentertainment.com/en/media/press-releases/1211/20260903",
+      "posted": "2026-09-03",
+      "rawDate": "Sep 03, 2026",
+      "hotelGroup": "Galaxy Entertainment",
+      "sourceName": "Galaxy Entertainment",
+      "sourceDomain": "galaxyentertainment.com",
+      "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
+      "kind": "good-news",
+      "summary": "September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods, as well as significant casualties and property losses. To support emergency relief and post-disaster recovery efforts, Galaxy Entertainment Group (“GEG”) announced today that, with the…",
+      "rank": 5
     },
     {
       "title": "Sands China Receives Two MICE Honours at M&C Asia Stella Awards 2026",
@@ -31,20 +83,20 @@
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
       "summary": "(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the eminent M&C Asia Stella Awards 2026, with Sands ® Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian ® Macao clinching the Best Meetings Hotel (Macao) . The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events…",
-      "rank": 2
+      "rank": 6
     },
     {
       "title": "Wynn Launches 20th Anniversary Share Award for Team Members",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnpalace/wp-pressreleases/wynn-launches-20th-anniversary-share-award-for-team-members/s/594944f8-e638-4f42-941a-299b1271baf0",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-launches-20th-anniversary-share-award-for-team-members/s/594944f8-e638-4f42-941a-299b1271baf0",
       "posted": "2026-09-03",
       "rawDate": "03 Sep 2026",
       "hotelGroup": "Wynn",
-      "sourceName": "Wynn Palace Newsroom",
+      "sourceName": "Wynn Macau Newsroom",
       "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Macao, September 3, 2026 – As this year marks the company's 20th anniversary in Macao, Wynn Macau, Limited is pleased to announce the launch of a one-time \"Wynn Macau 20th Anniversary Share Award\", under which eligible team members of Wynn Macau and Wynn Palace will be granted shares in Wynn Macau, Limited. Through this initiative, Wynn aims to extend appreciation to team members for their outstanding…",
-      "rank": 3
+      "rank": 7
     },
     {
       "title": "Wynn Palace Becomes the First in Macao to Debut on The World's 50 Best Hotels 2026 Extended 51-100 List",
@@ -57,7 +109,20 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
       "kind": "award",
       "summary": "Macao, September 2, 2026 – Wynn Palace has been named No.96 on The World's 50 Best Hotels 2026 extended 51–100 list, becoming the first hotel in Macao to be recognized in the prestigious global award. The accolade recognizes Wynn Palace's commitment to bespoke hospitality, world-class gastronomy and resort experiences. This prestigious international distinction further reinforces the resort's position as a…",
-      "rank": 4
+      "rank": 8
+    },
+    {
+      "title": "Four Seasons Hotel Hong Kong Recognized in the World’s 50 Best Hotels 2026 Extended List",
+      "url": "https://press.fourseasons.com/hongkong/hotel-news/2026/worlds-50-best",
+      "posted": "2026-09-01",
+      "rawDate": "September 1, 2026, Hong Kong, China",
+      "hotelGroup": "Four Seasons",
+      "sourceName": "Four Seasons Hong Kong",
+      "sourceDomain": "press.fourseasons.com",
+      "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
+      "kind": "award",
+      "summary": "Four Seasons Hotel Hong Kong has once again been recognized in the extended ranking of The World’s 50 Best Hotels 2026, placing at No. 86. This continued recognition is a meaningful testament to the team’s dedication to delivering luxury hospitality, service excellence, and memorable guest experiences.",
+      "rank": 9
     }
   ]
 }
