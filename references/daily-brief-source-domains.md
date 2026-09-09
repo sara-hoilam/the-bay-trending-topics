@@ -138,9 +138,17 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `group.accor.com` (Accor anticipated openings)
 - `ihg.com` (IHG new & upcoming hotels)
 
-## Hotels (2 domains)
+## Hotels (10 listings)
 
-Official hotel / integrated-resort press rooms for the **Hotel Press** tab (awards and good news, last 14 days). Not Daily Brief news sources.
+Official hotel / integrated-resort press rooms for the **Hotel Press** tab (awards and good news, last 14 days). Not Daily Brief news sources. Duplicate domains are allowed when one newsroom hosts more than one property listing.
 
-- `newsroom.wynnresorts.com` (Wynn Palace press releases)
-- `en.sandsresortsmacao.com` (Sands China / Sands Lifestyle press center)
+- `galaxyentertainment.com` (Galaxy Entertainment) — https://www.galaxyentertainment.com/en/media/press-releases?year=all
+- `ir.melco-resorts.com` (Melco Resorts) — https://ir.melco-resorts.com/press-releases
+- `en.mgmchinaholdings.com` (MGM China) — https://en.mgmchinaholdings.com/media-releases
+- `sjmholdings.com` (SJM Holdings) — https://www.sjmholdings.com/en/media-center/press-release
+- `newsroom.wynnresorts.com` (Wynn Palace Newsroom) — https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases
+- `newsroom.wynnresorts.com` (Wynn Macau Newsroom) — https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases
+- `press.mandarinoriental.com` (Mandarin Oriental) — https://press.mandarinoriental.com/section/press-releases
+- `shangri-la.com` (Shangri-La Group) — https://www.shangri-la.com/group/media/
+- `press.fourseasons.com` (Four Seasons Hong Kong) — https://press.fourseasons.com/hongkong/hotel-news/
+- `en.sandsresortsmacao.com` (Sands China Press) — https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html

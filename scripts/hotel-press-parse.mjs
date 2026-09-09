@@ -92,8 +92,32 @@ export function parseDateFromUrl(url) {
   if (iso) return `${iso[1]}-${iso[2]}-${iso[3]}`;
   const sand = u.match(/\/(20\d{2})\/(\d{2})-(\d{2})-/);
   if (sand) return `${sand[1]}-${sand[2]}-${sand[3]}`;
+  const compact = u.match(/\/(20\d{2})(\d{2})(\d{2})(?:[a-z])?(?:\/|$|\?)/i);
+  if (compact) return isoFromParts(compact[1], compact[2], compact[3]);
   const year = u.match(/\/(20\d{2})\//);
   return year ? year[1] : null;
+}
+
+/** Parse "8/27/2025 4:00:00 PM" / "3/7/2026" (US M/D/YYYY). */
+export function parseUsDateTime(text) {
+  const m = String(text || "").match(/\b(\d{1,2})\/(\d{1,2})\/(20\d{2})\b/);
+  if (!m) return null;
+  return isoFromParts(m[3], m[1], m[2]);
+}
+
+export function wynnStoryGuid(url) {
+  const m = String(url || "").match(/\/s\/([0-9a-f-]{8,})/i);
+  return m ? m[1].toLowerCase() : null;
+}
+
+function storyKey(it) {
+  const guid = wynnStoryGuid(it.url);
+  if (guid) return `g:${guid}`;
+  const title = (it.title || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ")
+    .trim();
+  return `t:${title}`;
 }
 
 export function classifyHeadline(title) {
@@ -178,6 +202,164 @@ export function parseSandsPressHtml(html, source) {
   return decorateItems(items, source);
 }
 
+export function parseGalaxyPressHtml(html, source) {
+  const items = [];
+  const re =
+    /<a href="([^"]*\/en\/media\/press-releases\/[^"]+)"[\s\S]*?<span class="date">([\s\S]*?)<\/span>[\s\S]*?<span class="title">([\s\S]*?)<\/span>/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    const url = absUrl(m[1], "https://www.galaxyentertainment.com/");
+    const rawDate = stripTags(m[2].replace(/<!--[\s\S]*?-->/g, " "));
+    const title = stripTags(m[3].replace(/<!--[\s\S]*?-->/g, " "));
+    if (!url || !title) continue;
+    const posted = parseLooseDate(rawDate) || parseDateFromUrl(url);
+    items.push({ title, url, posted, rawDate });
+  }
+  return decorateItems(items, source);
+}
+
+export function parseMelcoPressHtml(html, source) {
+  const items = [];
+  const re =
+    /<span class="NewsDate">([\s\S]*?)<\/span>[\s\S]*?NewsTitle">\s*<a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    const url = absUrl(m[2], "https://ir.melco-resorts.com/");
+    const title = stripTags(m[3]);
+    const rawDate = stripTags(m[1]);
+    if (!url || !title) continue;
+    items.push({
+      title,
+      url,
+      posted: parseLooseDate(rawDate),
+      rawDate,
+    });
+  }
+  return decorateItems(items, source);
+}
+
+export function parseMgmPressHtml(html, source) {
+  const items = [];
+  const blocks = html.split(/class="[^"]*wd_item[^"]*"/i).slice(1);
+  for (const block of blocks) {
+    const dateMatch = block.match(/class="[^"]*wd_date[^"]*"[\s\S]*?>([\s\S]*?)<\/div>/i);
+    const hrefMatch = block.match(
+      /class="[^"]*wd_title[^"]*"[\s\S]*?<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i,
+    );
+    if (!hrefMatch) continue;
+    const url = absUrl(hrefMatch[1], "https://en.mgmchinaholdings.com/");
+    const title = stripTags(hrefMatch[2]);
+    const rawDate = stripTags(dateMatch?.[1] || "");
+    if (!url || !title) continue;
+    items.push({
+      title,
+      url,
+      posted: parseLooseDate(rawDate),
+      rawDate,
+    });
+  }
+  return decorateItems(items, source);
+}
+
+export function parseSjmPressHtml(html, source) {
+  const items = [];
+  const rows = html.split(/<tr\b/i).slice(1);
+  for (const row of rows) {
+    const dateMatch = row.match(
+      /class="[^"]*field_displayDate[^"]*"[\s\S]*?>([\s\S]*?)<\/td>/i,
+    );
+    const hrefMatch = row.match(
+      /<a[^>]+href="([^"]+)"[^>]*itemprop="url"[^>]*>([\s\S]*?)<\/a>/i,
+    ) || row.match(
+      /<a[^>]*itemprop="url"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i,
+    );
+    if (!hrefMatch) continue;
+    const url = absUrl(hrefMatch[1], "https://www.sjmholdings.com/");
+    const title = stripTags(hrefMatch[2]);
+    const rawDate = stripTags(dateMatch?.[1] || "");
+    if (!url || !title) continue;
+    items.push({
+      title,
+      url,
+      posted: parseLooseDate(rawDate),
+      rawDate,
+    });
+  }
+  return decorateItems(items, source);
+}
+
+export function parseMandarinPressHtml(html, source) {
+  const items = [];
+  const slides = html.split(/class="swiper-slide"/i).slice(1);
+  for (const slide of slides) {
+    const dateMatch = slide.match(/class="date"[^>]*>([\s\S]*?)<\/div>/i);
+    const titleMatch = slide.match(/<h3[^>]*>([\s\S]*?)<\/h3>/i);
+    const hrefMatch = slide.match(
+      /<a[^>]+href="(https?:\/\/press\.mandarinoriental\.com\/[^"]+)"[^>]*>/i,
+    );
+    const title = stripTags(titleMatch?.[1] || "");
+    const url = hrefMatch ? hrefMatch[1] : null;
+    if (!title || !url) continue;
+    const rawDate = stripTags(dateMatch?.[1] || "");
+    items.push({
+      title,
+      url,
+      posted: parseLooseDate(rawDate),
+      rawDate,
+    });
+  }
+  return decorateItems(items, source);
+}
+
+export function parseFourSeasonsPressHtml(html, source) {
+  const items = [];
+  const re =
+    /<a class="article-blurb[^"]*" href="([^"]+)"[\s\S]*?<div class="detail">([\s\S]*?)<\/div>[\s\S]*?<div class="title">([\s\S]*?)<\/div>/gi;
+  let m;
+  while ((m = re.exec(html))) {
+    const url = absUrl(m[1], "https://press.fourseasons.com/");
+    const rawDate = stripTags(m[2]);
+    const title = stripTags(m[3]);
+    if (!url || !title) continue;
+    items.push({
+      title,
+      url,
+      posted: parseLooseDate(rawDate),
+      rawDate,
+    });
+  }
+  return decorateItems(items, source);
+}
+
+export function parseShangriArticlesJson(payload, source) {
+  const items =
+    payload?.data?.search?.results?.items ||
+    payload?.search?.results?.items ||
+    [];
+  return decorateItems(
+    items
+      .map((it) => {
+        const name = it.name || it.title;
+        const title = stripTags(it.title || it.name || "");
+        if (!name || !title) return null;
+        const url = absUrl(
+          `media_post?post=${encodeURIComponent(name)}`,
+          "https://www.shangri-la.com/group/media/",
+        );
+        const rawDate = String(it.date || "");
+        return {
+          title,
+          url,
+          posted: parseUsDateTime(rawDate),
+          rawDate,
+          summary: it.description ? stripTags(it.description) : undefined,
+        };
+      })
+      .filter(Boolean),
+    source,
+  );
+}
+
 function decorateItems(items, source) {
   return items.map((it) => ({
     ...it,
@@ -195,9 +377,14 @@ export function selectHotelPressArticles(items, { start, end }) {
     if (!inWindow(it.posted, start, end)) continue;
     const kind = classifyHeadline(it.title);
     if (!kind) continue;
-    const key = `${(it.title || "").toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]+/g, " ").trim()}|${it.sourceDomain || ""}`;
+    const key = storyKey(it);
     if (seen.has(key)) continue;
     seen.add(key);
+    const titleKey = storyKey({ title: it.title, url: "" });
+    if (titleKey !== key) {
+      if (seen.has(titleKey)) continue;
+      seen.add(titleKey);
+    }
     out.push({ ...it, kind });
   }
   return out.sort((a, b) => {

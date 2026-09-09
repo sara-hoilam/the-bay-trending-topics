@@ -13,7 +13,7 @@ import { fileURLToPath } from "url";
 import { hktDateStr, hktIsoDateTime } from "./hkt-date.mjs";
 import {
   HOTEL_PRESS_WINDOW_DAYS,
-  HOTEL_PRESS_SOURCES,
+  matchHotelPressListing,
 } from "./hotel-press-config.mjs";
 import {
   windowBounds,
@@ -36,13 +36,14 @@ function loadHotelSources() {
   return (sl.sources ?? [])
     .filter((s) => s.category === "Hotels")
     .map((s) => {
-      const cfg = HOTEL_PRESS_SOURCES[s.domain];
+      const cfg = matchHotelPressListing(s);
       return {
         ...s,
         url: s.url || cfg?.listingUrl,
         hotelPressFetch: s.hotelPressFetch || {
           method: cfg?.method || "html",
           hotelGroup: cfg?.hotelGroup,
+          listingId: cfg?.id,
         },
       };
     });
@@ -57,12 +58,16 @@ function loadExisting() {
   }
 }
 
-function groupByDomain(articles) {
+function listingKey(src) {
+  return src.url || src.domain || "unknown";
+}
+
+function groupByListing(articles) {
   const map = new Map();
   for (const a of articles) {
-    const domain = a.sourceDomain ?? "unknown";
-    if (!map.has(domain)) map.set(domain, []);
-    map.get(domain).push(a);
+    const key = a.sourceUrl || a.sourceDomain || "unknown";
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(a);
   }
   return map;
 }
@@ -85,29 +90,36 @@ async function main() {
   }
 
   const existing = loadExisting();
-  const existingByDomain = groupByDomain(existing.articles ?? []);
+  const existingByListing = groupByListing(existing.articles ?? []);
   const fetched = [];
   const kept = [];
   const sourceErrors = [];
 
   for (const src of sources) {
     const method = src.hotelPressFetch?.method ?? "html";
-    console.log(`Fetching ${src.domain} [${method}] (${src.url})`);
-    let domainItems = [];
+    const key = listingKey(src);
+    console.log(`Fetching ${src.displayName || src.domain} [${method}] (${src.url})`);
+    let listingItems = [];
     try {
-      domainItems = await fetchHotelPressForSource(src);
-      console.log(`  ${domainItems.length} raw items from ${src.domain}`);
+      listingItems = await fetchHotelPressForSource(src);
+      console.log(`  ${listingItems.length} raw items from ${src.displayName || src.domain}`);
     } catch (err) {
-      console.warn(`  Skip ${src.domain}: ${err.message}`);
-      sourceErrors.push({ domain: src.domain, error: err.message });
+      console.warn(`  Skip ${src.displayName || src.domain}: ${err.message}`);
+      sourceErrors.push({
+        domain: src.domain,
+        listingUrl: src.url,
+        error: err.message,
+      });
     }
 
-    if (domainItems.length > 0) {
-      fetched.push(...domainItems);
+    if (listingItems.length > 0) {
+      fetched.push(...listingItems);
     } else {
-      const fallback = existingByDomain.get(src.domain) ?? [];
+      const fallback = existingByListing.get(key) ?? [];
       if (fallback.length) {
-        console.log(`  Keeping ${fallback.length} cached item(s) for ${src.domain}`);
+        console.log(
+          `  Keeping ${fallback.length} cached item(s) for ${src.displayName || src.domain}`,
+        );
         kept.push(...fallback);
       }
     }

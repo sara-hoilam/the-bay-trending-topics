@@ -1,7 +1,67 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 124,
+  "count": 132,
   "sources": [
+    {
+      "domain": "press.fourseasons.com",
+      "displayName": "Four Seasons Hong Kong",
+      "url": "https://press.fourseasons.com/hongkong/hotel-news/",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "fourseasons-press",
+        "listingUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
+        "hotelGroup": "Four Seasons",
+        "listingId": "four-seasons-hk"
+      }
+    },
+    {
+      "domain": "galaxyentertainment.com",
+      "displayName": "Galaxy Entertainment",
+      "url": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "galaxy-press",
+        "listingUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
+        "hotelGroup": "Galaxy Entertainment",
+        "listingId": "galaxy-entertainment"
+      }
+    },
+    {
+      "domain": "press.mandarinoriental.com",
+      "displayName": "Mandarin Oriental",
+      "url": "https://press.mandarinoriental.com/section/press-releases",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "mandarin-press",
+        "listingUrl": "https://press.mandarinoriental.com/section/press-releases",
+        "hotelGroup": "Mandarin Oriental",
+        "listingId": "mandarin-oriental"
+      }
+    },
+    {
+      "domain": "ir.melco-resorts.com",
+      "displayName": "Melco Resorts",
+      "url": "https://ir.melco-resorts.com/press-releases",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "melco-press",
+        "listingUrl": "https://ir.melco-resorts.com/press-releases",
+        "hotelGroup": "Melco",
+        "listingId": "melco-resorts"
+      }
+    },
+    {
+      "domain": "en.mgmchinaholdings.com",
+      "displayName": "MGM China",
+      "url": "https://en.mgmchinaholdings.com/media-releases",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "mgm-press",
+        "listingUrl": "https://en.mgmchinaholdings.com/media-releases",
+        "hotelGroup": "MGM China",
+        "listingId": "mgm-china"
+      }
+    },
     {
       "domain": "en.sandsresortsmacao.com",
       "displayName": "Sands China Press",
@@ -10,7 +70,44 @@
       "hotelPressFetch": {
         "method": "sands-press",
         "listingUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-        "hotelGroup": "Sands China"
+        "hotelGroup": "Sands China",
+        "listingId": "sands-china"
+      }
+    },
+    {
+      "domain": "shangri-la.com",
+      "displayName": "Shangri-La Group",
+      "url": "https://www.shangri-la.com/group/media/",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "shangri-articles",
+        "listingUrl": "https://www.shangri-la.com/group/media/",
+        "hotelGroup": "Shangri-La",
+        "listingId": "shangri-la"
+      }
+    },
+    {
+      "domain": "sjmholdings.com",
+      "displayName": "SJM Holdings",
+      "url": "https://www.sjmholdings.com/en/media-center/press-release",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "sjm-press",
+        "listingUrl": "https://www.sjmholdings.com/en/media-center/press-release",
+        "hotelGroup": "SJM",
+        "listingId": "sjm-holdings"
+      }
+    },
+    {
+      "domain": "newsroom.wynnresorts.com",
+      "displayName": "Wynn Macau Newsroom",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "wynn-newsroom",
+        "listingUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
+        "hotelGroup": "Wynn",
+        "listingId": "wynn-macau"
       }
     },
     {
@@ -21,7 +118,8 @@
       "hotelPressFetch": {
         "method": "wynn-newsroom",
         "listingUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
-        "hotelGroup": "Wynn"
+        "hotelGroup": "Wynn",
+        "listingId": "wynn-palace"
       }
     },
     {
