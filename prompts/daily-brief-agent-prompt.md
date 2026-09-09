@@ -23,7 +23,7 @@ Include a story only if it is **primarily about** or **materially affects** at l
 
 ## Approved sources (120 domains)
 
-**Only cite URLs whose registrable domain appears in** `references/daily-brief-source-domains.md` (derived from 8 training briefs). Full historical article URLs for pattern reference: `Training Data/all-sources-and-links.md`.
+**Only cite URLs whose registrable domain appears in** `references/daily-brief-source-domains.md` (Official, News, Lifestyle, New Hotels). **Do not** cite **Hotels** press-room domains — those feed the Hotel Press tab. Full historical article URLs for pattern reference: `Training Data/all-sources-and-links.md`.
 
 If a breaking story has **no** outlet on the list, note it in a final **Out of catalog** line — do not silently use random blogs.
 

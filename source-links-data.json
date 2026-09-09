@@ -1,7 +1,29 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 122,
+  "count": 124,
   "sources": [
+    {
+      "domain": "en.sandsresortsmacao.com",
+      "displayName": "Sands China Press",
+      "url": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "sands-press",
+        "listingUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+        "hotelGroup": "Sands China"
+      }
+    },
+    {
+      "domain": "newsroom.wynnresorts.com",
+      "displayName": "Wynn Palace Newsroom",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+      "category": "Hotels",
+      "hotelPressFetch": {
+        "method": "wynn-newsroom",
+        "listingUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+        "hotelGroup": "Wynn"
+      }
+    },
     {
       "domain": "10times.com",
       "displayName": "10times (Trade Shows)",

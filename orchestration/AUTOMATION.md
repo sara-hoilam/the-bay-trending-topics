@@ -7,13 +7,16 @@ Runs on **GitHub Actions** — your Mac can be off. Uses **Cursor Cloud agents**
 A **Pull Request (PR)** is a GitHub proposal: “merge this branch into `main` after review.”  
 This automation **does not use PRs** — agents **push directly to `main`**, and GitHub Pages serves `index.html`.
 
-## Pipeline (2 cloud runs)
+## Pipeline (cloud runs + post-pipeline)
 
 | Step | Script / agent | Output |
 |------|----------------|--------|
 | 1 | `prompts/gba-pulse-cloud-run1-trendwatch.md` | `orchestration/fragments/trendwatch.html` |
-| 2 | `prompts/gba-pulse-cloud-run2-edition.md` | `overall.html` + `node scripts/merge-briefing-panels.mjs` → `index.html` |
-| Fallback | Workflow merges again if the agent skipped merge | `index.html` |
+| 2 | `prompts/gba-pulse-cloud-run2-daily-brief.md` | Daily Brief markdown + `overall.html` |
+| 3 | `prompts/gba-pulse-cloud-run3-happenings.md` (optional) | Happenings events (script also refreshes in post-pipeline) |
+| 4 | `prompts/gba-pulse-cloud-run4-ig-leaderboard.md` (optional) | IG Leaderboard |
+| 5 | `prompts/gba-pulse-cloud-run5-hotel-press.md` (optional) | Hotel Press (script also refreshes in post-pipeline) |
+| Post | `scripts/run-daily-post.mjs` | source links, happenings, new hotels, **hotel press**, IG, merge `index.html` |
 
 Skipped in automation: `claude.html`, `composer.html`, `chatgpt.html`.
 

@@ -1,6 +1,6 @@
 # Daily refresh scheduled 06:00 Hong Kong Time (23:00 UTC).
 # GitHub Actions queue delay is typically ~2–3 h, so runs start ~08:30 HKT and finish ~08:45.
-# Tabs updated: Trend Watch, Daily Brief, Happenings, IG Leaderboard, New Hotels, Source Links (data JSON).
+# Tabs updated: Trend Watch, Daily Brief, Happenings, IG Leaderboard, New Hotels, Hotel Press, Source Links (data JSON).
 # Requires repo secret: CURSOR_API_KEY
 # Cloud agents use Cursor Models pool (default grok-4.6) — not Other Models (Claude/GPT).
 name: Daily GBA Pulse
@@ -89,6 +89,7 @@ jobs:
             happenings-events.json \
             source-links-data.json \
             new-hotels-data.json \
+            hotel-press-data.json \
             ig-leaderboard-data.json \
             references/editor-selection-weights.json \
             "Training Data/"
