@@ -117,6 +117,25 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/董建華|董建华逝世|香港首任特首董建华|董建華逝世|董建华逝世生平|梁振英沉痛哀悼/i.test(t))
+      return "cluster:tung-chee-hwa";
+    if (/波圖對曼城|porto vs man city|哈兰德|歐冠|^champions league$|uefa champions|real madrid vs inter|皇马2比1国际米兰/i.test(t))
+      return "cluster:ucl-night";
+    if (/毛泽东逝世50周年|毛泽东广场|缅怀毛主席|纪念毛泽东/i.test(t))
+      return "cluster:mao-50th";
+    if (/习近平同英国首相|伯纳姆通电话/i.test(t)) return "cluster:xi-uk";
+    if (/铜价深夜狂飙|抢铜潮/i.test(t)) return "cluster:copper-rally";
+    if (/这样的吃播该全面叫停了/i.test(t)) return "cluster:mukbang-ban";
+    if (/高考数学132分/i.test(t)) return "cluster:xidian-math";
+    if (/OpenAI宣布攻克千禧年|OpenAI提出NS方程|GPTImages/i.test(t))
+      return "cluster:openai-ns";
+    if (/小米回应澎程|小米澎程|澎程N90|小米 宁德时代/i.test(t))
+      return "cluster:xiaomi-pengcheng";
+    if (/苹果用户换华为|华为 备用机/i.test(t)) return "cluster:hw-backup";
+    if (/iPhone18Pro发布会|苹果发布会前瞻|iPhone18Pro会涨价|特努斯苹果首秀|苹果发新带动闲鱼/i.test(t))
+      return "cluster:apple-sept";
+    if (/卤米松原研药|30元皮肤药涨到800元/i.test(t)) return "cluster:halometasone";
+    if (/劣质燃油厂|央视曝光后 安徽山东河南/i.test(t)) return "cluster:dirty-diesel";
     if (
       /泥石流|吉隆|闻令而动|运-20赴西藏|生命至上闻令而动|生命至上！各方力量|nepal flood|^nepal$|尼泊尔|尼泊爾|调派中国救援队|救援队抵达西藏|多方力量向救灾|堰塞湖|堰塞体|冰岩崩|向西藏泥石流遇难|救援任务暂缓|消防救援力量向受灾|吉隆口岸卫星无人机|王毅同尼泊尔|S弯道打通|冲锋舟穿S弯|2141人|废墟之上 这一幕|小邬警官|网友意外拍到泥石流|医疗防疫分队前往救援|吉隆口岸大楼|吉隆口岸通信|挖掘机意外坠河|吉隆泥石流痕迹|西藏吉隆救援|尼泊尔泥石流联系|尼泊尔冰崩|被吉隆口岸淤泥|为何不炸开一条泄流通道|喜马拉雅冰川消融/i.test(
         t,
