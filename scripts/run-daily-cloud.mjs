@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Daily GBA Pulse — four cloud runs (Trend Watch, Daily Brief, Happenings, IG Leaderboard).
+ * Daily GBA Pulse — five cloud runs (Trend Watch, Daily Brief, Happenings, IG Leaderboard, Hotel Press).
  * Default model: latest Cursor Grok in the Cursor Models pool (not Other Models).
  *
  * Env:
@@ -10,7 +10,7 @@
  *
  * Usage:
  *   node scripts/run-daily-cloud.mjs
- *   node scripts/run-daily-cloud.mjs --run 1|2|3   # single step
+ *   node scripts/run-daily-cloud.mjs --run 1|2|3|4|5   # single step
  */
 import fs from "fs";
 import path from "path";
@@ -90,6 +90,7 @@ const RUN_PROMPTS = {
   2: { file: "gba-pulse-cloud-run2-daily-brief.md", label: "Daily Brief" },
   3: { file: "gba-pulse-cloud-run3-happenings.md", label: "Happenings" },
   4: { file: "gba-pulse-cloud-run4-ig-leaderboard.md", label: "IG Leaderboard" },
+  5: { file: "gba-pulse-cloud-run5-hotel-press.md", label: "Hotel Press" },
 };
 
 async function runStep(step, apiKey, modelId, { optional = false, retries = 0 } = {}) {
@@ -215,6 +216,11 @@ async function main() {
   }
   if (only === 4 || only == null) {
     await runStep(4, apiKey, modelId, { optional: true, retries: 1 });
+  }
+  // Hotel Press: optional — post-pipeline regenerates hotel-press-data.json via
+  // generate-hotel-press-data.mjs either way.
+  if (only === 5 || only == null) {
+    await runStep(5, apiKey, modelId, { optional: true, retries: 0 });
   }
 
   console.log("\nDone. Pull main and open index.html, or wait for GitHub Pages.");

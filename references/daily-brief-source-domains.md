@@ -1,6 +1,8 @@
-# Daily Brief — approved source domains (120)
+# Daily Brief — approved source domains
 
 Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring and citation** only — article URLs must be live on the day of the brief. Excludes social/event platforms, `.edu.hk` domains, non-news corporate sites, and domains removed from the allowlist.
+
+**Hotels** domains at the bottom feed the Hotel Press tab only — do not cite them in the Daily Brief.
 
 ## Official (24 domains)
 
@@ -135,3 +137,10 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `marriott.com` (Marriott Bonvoy portfolio openings)
 - `group.accor.com` (Accor anticipated openings)
 - `ihg.com` (IHG new & upcoming hotels)
+
+## Hotels (2 domains)
+
+Official hotel / integrated-resort press rooms for the **Hotel Press** tab (awards and good news, last 14 days). Not Daily Brief news sources.
+
+- `newsroom.wynnresorts.com` (Wynn Palace press releases)
+- `en.sandsresortsmacao.com` (Sands China / Sands Lifestyle press center)

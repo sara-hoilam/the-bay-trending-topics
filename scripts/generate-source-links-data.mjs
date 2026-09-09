@@ -12,6 +12,10 @@ import {
   happeningsListingUrl,
   macaotourismWhatsonUrl,
 } from "./happenings-fetch-config.mjs";
+import {
+  hotelPressFetchMeta,
+  hotelPressListingUrl,
+} from "./hotel-press-config.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -23,6 +27,7 @@ const CATEGORY_MAP = {
   News: "News",
   Lifestyle: "Lifestyle",
   "New Hotels": "New Hotels",
+  Hotels: "Hotels",
 };
 
 const SKIP_SECTIONS = new Set(["Social", "Event"]);
@@ -78,7 +83,6 @@ const EXCLUDED_DOMAINS = new Set([
   "163.com",
   "static.nfnews.com",
   // Non-news / corporate / platform (News category cleanup)
-  "newsroom.wynnresorts.com",
   "google.com",
   "indexbox.io",
   "gdghospital.org.cn",
@@ -240,7 +244,6 @@ const DISPLAY_NAMES = {
   "news.gscn.com.cn": "GSCN News",
   "news.qq.com": "Tencent News",
   "news.un.org": "UN News",
-  "newsroom.wynnresorts.com": "Wynn Resorts Newsroom",
   "nypost.com": "New York Post",
   "pbs.org": "PBS",
   "ppatour-asia.com": "PPA Tour Asia",
@@ -280,6 +283,9 @@ const DISPLAY_NAMES = {
   "marriott.com": "Marriott Bonvoy Openings",
   "group.accor.com": "Accor 2026 Openings",
   "ihg.com": "IHG New Hotels",
+  // Hotels (press rooms)
+  "newsroom.wynnresorts.com": "Wynn Palace Newsroom",
+  "en.sandsresortsmacao.com": "Sands China Press",
 };
 
 const URL_OVERRIDES = {
@@ -319,6 +325,10 @@ const URL_OVERRIDES = {
   "group.accor.com":
     "https://group.accor.com/en/news-stories/accor-2026-openings",
   "ihg.com": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
+  "newsroom.wynnresorts.com":
+    "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+  "en.sandsresortsmacao.com":
+    "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
 };
 
 function displayName(domain) {
@@ -349,7 +359,7 @@ function parseDomains(md) {
   let category = null;
 
   for (const line of md.split(/\r?\n/)) {
-    const head = line.match(/^## (Official|News|Lifestyle|Social|Event|New Hotels)/);
+    const head = line.match(/^## (Official|News|Lifestyle|Social|Event|New Hotels|Hotels)/);
     if (head) {
       category = SKIP_SECTIONS.has(head[1]) ? null : head[1];
       continue;
@@ -363,12 +373,16 @@ function parseDomains(md) {
       const row = {
         domain,
         displayName: displayName(domain),
-        url: happeningsListingUrl(domain, url),
+        url: hotelPressListingUrl(domain, happeningsListingUrl(domain, url)),
         category: categoryName,
       };
       if (categoryName === "Lifestyle") {
         const meta = happeningsFetchMeta(domain);
         if (meta) row.happeningsFetch = meta;
+      }
+      if (categoryName === "Hotels") {
+        const meta = hotelPressFetchMeta(domain);
+        if (meta) row.hotelPressFetch = meta;
       }
       rows.push(row);
     }

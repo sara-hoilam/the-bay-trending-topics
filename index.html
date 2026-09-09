@@ -150,6 +150,9 @@
   #panel-overall .topic {
     grid-template-columns: 56px 1fr auto;
   }
+  #panel-hotelpress .topic {
+    grid-template-columns: 56px 1fr;
+  }
   #panel-overall .topic.brief-article.is-selected {
     background: #faf8f4;
     margin-left: -12px;
@@ -1293,6 +1296,7 @@
   .sl-cat-lifestyle { background: #f3e8fd; color: #5b3d8a; border-color: #c9a8e8; }
   .sl-cat-social { background: #e6f5ed; color: var(--pos); border-color: #a8dbbe; }
   .sl-cat-new-hotels { background: #e8f7f4; color: #1a6b5c; border-color: #9ad4c6; }
+  .sl-cat-hotels { background: #fdeee8; color: #8a3d1f; border-color: #e8b89a; }
   .sl-err {
     color: var(--neg);
     font-size: 13px;
@@ -1448,7 +1452,8 @@
   }
 
   /* —— New Hotels —— */
-  #panel-newhotels main.wrapper {
+  #panel-newhotels main.wrapper,
+  #panel-hotelpress main.wrapper {
     max-width: 1100px;
     padding-top: 24px;
   }
@@ -1622,6 +1627,7 @@
       <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Instagram competitors benchmark">IG Leaderboard</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-newhotels" data-panel="newhotels" aria-selected="false" title="New and upcoming hotel openings in Asia and Portugal">New Hotels</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-hotelpress" data-panel="hotelpress" aria-selected="false" title="Hotel press awards and good news from the last 14 days">Hotel Press</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -6056,6 +6062,7 @@
         <option value="Lifestyle">Lifestyle</option>
         <option value="News">News</option>
         <option value="New Hotels">New Hotels</option>
+        <option value="Hotels">Hotels</option>
         <option value="Official">Official</option>
       </select>
     </div>
@@ -6112,6 +6119,22 @@
   </main>
 </div>
 
+<div id="panel-hotelpress" class="model-panel" role="tabpanel" aria-labelledby="tab-hotelpress" hidden>
+  <main class="wrapper">
+    <div class="nh-header">
+      <h2>Hotel Press</h2>
+      <p class="nh-meta"><span id="hp-press-count">Loading…</span> · <span id="hp-press-meta">awards &amp; good news · last 14 days</span></p>
+    </div>
+    <div class="nh-toolbar">
+      <label for="hp-group-filter">Hotel group</label>
+      <select id="hp-group-filter" aria-label="Filter hotel press by group">
+        <option value="all">All groups</option>
+      </select>
+    </div>
+    <div id="hotel-press-root"></div>
+  </main>
+</div>
+
 <footer>
   <span id="gba-footer-edition">GBA Pulse · 粤港澳大湾区脉搏 · 2026-09-09</span>
   <span>For informational purposes only — verify all data with primary sources</span>
@@ -6138,12 +6161,13 @@
     t.addEventListener("click", function () { show(t.getAttribute("data-panel")); });
   });
   var h = (location.hash || "").replace("#", "");
-  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard", "newhotels"].indexOf(h) !== -1) show(h);
+  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard", "newhotels", "hotelpress"].indexOf(h) !== -1) show(h);
 })();
 </script>
-<script>window.GBA_DATA_VERSION = "20260709e";</script>
+<script>window.GBA_DATA_VERSION = "20260909a";</script>
 <script src="ig-leaderboard-panel.js?v=20260615d" defer></script>
 <script src="new-hotels-panel.js?v=20260709e" defer></script>
+<script src="hotel-press-panel.js?v=20260909a" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
 <script src="happenings-panel.js?v=20260615a" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
