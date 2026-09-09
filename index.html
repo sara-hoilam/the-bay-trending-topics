@@ -1624,10 +1624,10 @@
       <button type="button" class="masthead-pill hot" role="tab" id="tab-overall" data-panel="overall" aria-selected="true" title="THE BAY Daily Brief — GBA news scan">📰 Daily Brief</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-trendwatch" data-panel="trendwatch" aria-selected="false" title="Trend Watch dashboards">Trend Watch</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-happenings" data-panel="happenings" aria-selected="false" title="Lifestyle events calendar">Happenings</button>
-      <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
-      <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Instagram competitors benchmark">IG Leaderboard</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-newhotels" data-panel="newhotels" aria-selected="false" title="New and upcoming hotel openings in Asia and Portugal">New Hotels</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-hotelpress" data-panel="hotelpress" aria-selected="false" title="Hotel press awards and good news from the last 14 days">Hotel Press</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Instagram competitors benchmark">IG Leaderboard</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -6161,7 +6161,7 @@
     t.addEventListener("click", function () { show(t.getAttribute("data-panel")); });
   });
   var h = (location.hash || "").replace("#", "");
-  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "sourcelinks", "igleaderboard", "newhotels", "hotelpress"].indexOf(h) !== -1) show(h);
+  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "newhotels", "hotelpress", "igleaderboard", "sourcelinks"].indexOf(h) !== -1) show(h);
 })();
 </script>
 <script>window.GBA_DATA_VERSION = "20260909b";</script>
