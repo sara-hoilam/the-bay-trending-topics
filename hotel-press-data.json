@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
   "updatedAt": "2026-09-10",
-  "refreshedAt": "2026-09-10T09:23:38+08:00",
+  "refreshedAt": "2026-09-10T09:31:56+08:00",
   "windowDays": 14,
   "windowStart": "2026-08-27",
   "windowEnd": "2026-09-10",
-  "count": 10,
+  "count": 11,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -37,7 +37,7 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection. Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively.",
+      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…",
       "rank": 2
     },
     {
@@ -50,7 +50,7 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "good-news",
-      "summary": "[September 4, 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope of providing support for emergency relief operations and post-disaster recovery efforts.",
+      "summary": "[ September 4 , 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope…",
       "rank": 3
     },
     {
@@ -63,7 +63,7 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "(Macau, 4 September 2026) — Devastating mudslides have recently struck Gyirong County, Shigatse City, Tibet Autonomous Region, causing serious loss and extensive damage. SJM Resorts has donated MOP 5 million through the Liaison Office of the Central People's Government in the Macao SAR to support emergency rescue operations, the resettlement of displaced residents, and post-disaster reconstruction.",
+      "summary": "SJM press: SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County.",
       "rank": 4
     },
     {
@@ -89,7 +89,7 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods. Galaxy Entertainment Group announced that, with the assistance of the Liaison Office of the Central People's Government in the Macau SAR, GEG and Lui Che Woo Family Charitable Foundation will jointly donate MOP10 million for emergency search and rescue, relief supplies, temporary resettlement, medical assistance, and subsequent reconstruction.",
+      "summary": "September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods, as well as significant casualties and property losses. To support emergency relief and post-disaster recovery efforts, Galaxy Entertainment Group (“GEG”) announced today that, with the…",
       "rank": 6
     },
     {
@@ -102,7 +102,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the M&C Asia Stella Awards 2026, with Sands Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian Macao clinching the Best Meetings Hotel (Macao). The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events landscape.",
+      "summary": "(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the eminent M&C Asia Stella Awards 2026, with Sands ® Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian ® Macao clinching the Best Meetings Hotel (Macao) . The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events…",
       "rank": 7
     },
     {
@@ -143,6 +143,19 @@
       "kind": "award",
       "summary": "Four Seasons Hotel Hong Kong has once again been recognized in the extended ranking of The World’s 50 Best Hotels 2026, placing at No. 86. This continued recognition is a meaningful testament to the team’s dedication to delivering luxury hospitality, service excellence, and memorable guest experiences.",
       "rank": 10
+    },
+    {
+      "title": "Macau Artist Society 70th Anniversary Invitational Exhibition Opens",
+      "url": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-08-29/macau-artist-society.html",
+      "posted": "2026-08-29",
+      "rawDate": "Aug.29 Macau Artist Society 70th Anniversary Invitational Exhibition Opens",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, August 29, 2026) Organised by the Cultural Affairs Bureau of the Macao S.A.R. Government and the Macau Artist Society (MAS), co-organised by Sands China Ltd., and supported by the Federation of Associations of Cultural Sectors of Macau, the “Art in the New Era – The 70th Anniversary Invitational Exhibition of the Macau Artist Society” held its opening ceremony today (29 August) at the Ballroom on Level 4…",
+      "rank": 11
     }
   ]
 }
