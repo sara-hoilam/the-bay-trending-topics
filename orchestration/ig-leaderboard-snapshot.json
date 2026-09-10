@@ -1,44 +1,44 @@
 {
-  "capturedAt": "2026-09-09",
+  "capturedAt": "2026-09-10",
   "notes": [
-    "scmpnews: 694,844 followers (instagram-api)",
-    "tatlerhongkong: 277,475 followers (instagram-api)",
-    "the_trip_addict: 97,968 followers (instagram-api)",
+    "scmpnews: 694,992 followers (instagram-api)",
+    "tatlerhongkong: 277,772 followers (instagram-api)",
+    "the_trip_addict: 97,988 followers (instagram-api)",
     "sassyhongkong: fetch failed (HTTP 400) — Asset asset://laser.provider/ig_business_category_subvertical has been deleted. You cannot use this schema",
-    "thebayasia: 47,834 followers (instagram-api)",
-    "greaterbayvibes: 19,624 followers (instagram-api)",
-    "thebeatasia: 2,001 followers (instagram-api)",
-    "o.cultmag: 53,019 followers (instagram-api)",
-    "lifestyleasiahk: 132,901 followers (instagram-api)",
-    "timeouthk: 204,909 followers (instagram-api)"
+    "greaterbayvibes: 19,645 followers (instagram-api)",
+    "thebeatasia: 2,003 followers (instagram-api)",
+    "o.cultmag: 53,037 followers (instagram-api)",
+    "lifestyleasiahk: 132,922 followers (instagram-api)",
+    "timeouthk: 204,922 followers (instagram-api)",
+    "thebayasia: 48,019 followers (instagram-api)"
   ],
   "accounts": {
     "scmpnews": {
-      "followers": 694844
+      "followers": 694992
     },
     "tatlerhongkong": {
-      "followers": 277475
+      "followers": 277772
     },
     "the_trip_addict": {
-      "followers": 97968
-    },
-    "thebayasia": {
-      "followers": 47834
+      "followers": 97988
     },
     "greaterbayvibes": {
-      "followers": 19624
+      "followers": 19645
     },
     "thebeatasia": {
-      "followers": 2001
+      "followers": 2003
     },
     "o.cultmag": {
-      "followers": 53019
+      "followers": 53037
     },
     "lifestyleasiahk": {
-      "followers": 132901
+      "followers": 132922
     },
     "timeouthk": {
-      "followers": 204909
+      "followers": 204922
+    },
+    "thebayasia": {
+      "followers": 48019
     }
   }
 }
