@@ -6,10 +6,10 @@ Source: training designs in [Canva folder FAHUw3DTDC0](https://www.canva.com/fol
 
 | Channel | Size | Ratio | Canva type |
 |---------|------|-------|------------|
-| Instagram / Facebook feed (News, Gallery) | **1080 × 1350** | 4:5 | Instagram portrait |
+| Instagram / Facebook / **LinkedIn** feed (News, Gallery) | **1080 × 1350** | 4:5 | Instagram portrait |
 | Instagram / Facebook Story | **1080 × 1920** | 9:16 | Story |
 
-Never resize a copied template to square 1080×1080 or landscape unless the user explicitly asks. If they do, copy first, then `resize-design`, then fix overflow by hand in Canva (API cannot add text boxes).
+Never resize a copied template to square 1080×1080 or landscape 1200×627 unless the user explicitly asks. LinkedIn uses the **4:5 News** card (`linkedin.md`). If they insist on a landscape crop, copy first, then `resize-design`, then fix overflow by hand in Canva (API cannot add text boxes).
 
 ## Type (visual, locked in the templates)
 
@@ -91,8 +91,11 @@ Never stretch logos. Never recolor them. Never add a second logo to a page that 
 
 ## Image rules
 
+**Accuracy first.** Follow `images.md`. The hero must be the named subject (XPeng’s IRON, Hengqin Port), not a generic robot or skyline from the same category.
+
+Crop / frame (unchanged):
+
 - Photography is **full-bleed** or **top-bleed** into a fixed frame. Crop to fill; do not letterbox.
-- Prefer real reportage / architecture / city photos. No stock-illustration collages.
 - Keep faces and signage out from under the B mark, wordmark, and footer.
 - Interior News frames are ~**1080 × 823** at the top; Gallery interiors are full 1080×1350.
 - Stories hero is ~**1080 × 1085–1110** at the top (slight overflow is already in the template).

@@ -5,7 +5,9 @@
 - Folder: `FAHUw3DTDC0`
 - Pages: 9 (cover → key facts ×2 → photo+caption ×4 → timeline → closer)
 
-Copy this template for news, policy, travel, and “what changed” stories.
+Copy this template for news, policy, travel, and “what changed” stories — including **LinkedIn** image posts (`linkedin.md`).
+
+**Photo:** follow `images.md`. The cover still must be the named subject, not a category-similar stock shot.
 
 ## Page 1 — Cover
 

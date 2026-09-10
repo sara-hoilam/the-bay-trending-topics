@@ -1,13 +1,17 @@
 ---
-description: Apply The Bay Canva post template guidelines whenever creating, editing, generating, or exporting a Canva design, Instagram post, Instagram Story, news carousel, or gallery post.
+description: Apply The Bay Canva post template guidelines whenever creating, editing, generating, or exporting a Canva design for Instagram (feed, Story, carousel) or LinkedIn. Always copy folder FAHUw3DTDC0 templates, use accurate subject photos, and post the PNG plus Canva link in the thread.
 alwaysApply: false
+globs:
+  - ".cursor/skills/canva-the-bay-posts/**"
 ---
 
 # The Bay Canva posts
 
-When making any Canva / Instagram post for The Bay, follow **`.cursor/skills/canva-the-bay-posts/SKILL.md`**.
+When making **any** Canva / Instagram / **LinkedIn** post for The Bay, follow **`.cursor/skills/canva-the-bay-posts/SKILL.md`**.
 
 - Copy a training template from folder `FAHUw3DTDC0` — do not `generate-design` from scratch (font family cannot be set via API).
-- News `DAHUw4eva3Y` (1080×1350), Gallery `DAHUw9cEaPQ` (1080×1350), Stories `DAHUw1YJMeQ` (1080×1920).
+- News `DAHUw4eva3Y` (1080×1350, also for LinkedIn), Gallery `DAHUw9cEaPQ` (1080×1350), Stories `DAHUw1YJMeQ` (1080×1920).
 - Keep logo size and position, lime `#DAE480`, charcoal `#363B44`, paper `#EFEDE8`, and existing text colors.
 - Replace photo, title, body, chips, date, credit, and location only.
+- Photos must be the **named subject** (`images.md`), not a category-similar stock shot.
+- Always attach the exported PNG **in the Slack / chat thread** plus the Canva edit link.

@@ -7,6 +7,8 @@
 
 Copy this template for photo essays, architecture, art, and place features. Most interior pages are image-only plus chrome — that is intentional.
 
+**Photos:** every frame must be **that** place or work (`images.md`). Do not pad a Hengqin or Foshan story with a generic GBA skyline.
+
 ## Page 1 — Cover
 
 Full-bleed photo. Type sits in the lower half. Optional faint script watermark in the template may exist; do not try to recreate it.

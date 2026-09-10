@@ -63,6 +63,8 @@ If a story needs a new place, still use **lowercase** and the same pill. Prefer 
 
 After copy, replace photo, chip label, title, body, and date. Leave logo, pill, and panel.
 
+**Photo:** follow `images.md`. Search for the named subject (XPeng IRON, Hengqin Port vehicle channels, Hotelex Shenzhen) and inspect the thumbnail before commit. Do not use a generic robot, skyline, or conference hall.
+
 ## Copy limits (from the templates)
 
 - Title: about 8–18 words. Break with `\n` to match 2–4 lines.
