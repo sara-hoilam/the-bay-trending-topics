@@ -12,7 +12,7 @@ The Canva API **cannot change font family**. Copying a template is the only way 
 Before editing, read:
 
 1. `guidelines.md` (tokens, logos, palette)
-2. `images.md` (hero photos must be the named subject)
+2. `images.md` (hero photos must be the named subject **and** sharp enough for the frame)
 3. The matching format file: `news.md`, `gallery.md`, `stories.md`, or `linkedin.md`
 
 ## Pick a template
@@ -36,11 +36,11 @@ If the user does not specify a format: **News** for a reported story, **Gallery*
 5. **Do not** add new text boxes (API cannot). Fit copy to the existing slots.
 6. After copy: `start-editing-transaction` → `replace_text` / `update_fill` → inspect the thumbnail → `commit-editing-transaction`. Follow `canva-edit-design` for the transaction protocol. Do not wait for a second “please save” if the user already asked you to make the post.
 7. Leave a read-only inspection transaction **cancelled**, never committed.
-8. **Photos:** follow `images.md`. A category-similar stock shot is a fail.
+8. **Photos:** follow `images.md`. A category-similar stock shot is a fail. A correct still that upscales into the frame (`scale > 1.0`) is also a fail.
 
 ## Fill order (every post)
 
-1. **Hero photo(s)** — find an **accurate** still (`images.md`), `upload-asset-from-url`, then `update_fill`. Crop to fill the existing frame; do not change frame size/position.
+1. **Hero photo(s)** — find an **accurate** still (`images.md`), confirm it passes the cover-crop test, `upload-asset-from-url`, then `update_fill`. Crop to fill the existing frame; do not change frame size/position.
 2. **Title** — serif, existing color (white on photos, near-black on cream/gray). Keep line count close to the template so type does not overflow.
 3. **Body / kicker** — shorter than the template slot when possible.
 4. **Category / location chip** — lowercase city or beat (`hong kong`, `shenzhen`, `macao`, `guangdong`, `travel`, `art`). Use the chip vocabulary in `stories.md` when posting Stories.
@@ -69,7 +69,7 @@ The user must see the **graphic in the thread**, not only a Canva URL.
 
 After `commit-editing-transaction`:
 
-1. `get-export-formats` then `export-design` as **PNG** (every page you filled).
+1. `get-export-formats` then `export-design` as **PNG** at the template size (Stories 1080×1920, News/Gallery 1080×1350). Use `export_quality: "pro"` when available. Do not attach a 335px thumbnail.
 2. Save files under `/opt/cursor/artifacts/` (or the session artifacts folder).
 3. Post in the **current Slack thread** (or the Cursor chat if there is no Slack) with:
    - The PNG inline (`<img alt="…" src="/opt/cursor/artifacts/….png" />` on Slack)

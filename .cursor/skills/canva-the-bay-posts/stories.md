@@ -63,7 +63,7 @@ If a story needs a new place, still use **lowercase** and the same pill. Prefer 
 
 After copy, replace photo, chip label, title, body, and date. Leave logo, pill, and panel.
 
-**Photo:** follow `images.md`. Search for the named subject (XPeng IRON, Hengqin Port vehicle channels, Hotelex Shenzhen) and inspect the thumbnail before commit. Do not use a generic robot, skyline, or conference hall.
+**Photo:** follow `images.md` (accuracy **and** the cover-crop test). Search for the named subject (XPeng IRON, Hengqin Port vehicle channels, Hotelex Shenzhen). The Stories hero is ~1080×1085, so a 1280×670 landscape will upscale and look soft — reject it. Inspect the thumbnail at a large size before commit. Do not use a generic robot, skyline, or conference hall.
 
 ## Copy limits (from the templates)
 
