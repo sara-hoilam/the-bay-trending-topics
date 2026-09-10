@@ -117,9 +117,13 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/董建華|董建华逝世|香港首任特首董建华|董建華逝世|董建华逝世生平|梁振英沉痛哀悼/i.test(t))
+    if (/董建華|董建华|香港首任特首董建华|董建華逝世|董建华逝世生平|梁振英沉痛哀悼/i.test(t))
       return "cluster:tung-chee-hwa";
-    if (/波圖對曼城|porto vs man city|哈兰德|歐冠|^champions league$|uefa champions|real madrid vs inter|皇马2比1国际米兰/i.test(t))
+    if (
+      /波圖對曼城|porto vs man city|哈兰德|歐冠|^champions league$|uefa champions|real madrid vs inter|皇马2比1国际米兰|拿坡里對兵工廠|napoli vs arsenal|利物浦對馬德里競技|liverpool vs atlético|巴萨欧冠|巴萨欧冠5比1/i.test(
+        t,
+      )
+    )
       return "cluster:ucl-night";
     if (/毛泽东逝世50周年|毛泽东广场|缅怀毛主席|纪念毛泽东/i.test(t))
       return "cluster:mao-50th";
@@ -161,7 +165,8 @@ function pruneData(data) {
     if (/鸿蒙7正式发布/i.test(t)) return "cluster:harmonyos-7";
     if (/余承东建议苹果|余承东 华为|余承东 pura/i.test(t)) return "cluster:yu-chengdong-hw";
     if (/用AI训练AI/i.test(t)) return "cluster:ai-train-ai";
-    if (/iphone duo/i.test(t)) return "cluster:apple-sept";
+    if (/iphone duo|iphoneduo|iphone18pro|iphone 18 pro|airpods ?5|ios27|苹果下架iphone|爱马仕橙|牙膏挤|苹果发布会|苹果秋季|国行iphone|iphoneair|iphone air|apple watch|苹果官网|^苹果$|苹果新机|史上最贵iphone|折叠屏iphone|四卡双待/i.test(t))
+      return "cluster:apple-sept";
     if (/GPT-?6|GPT6|OpenAI总裁宣布AGI|OpenAI发布GPT-6|地球最强大模型GPT-6|美国AI大宕机|\bchatgpt\b/i.test(t))
       return "cluster:gpt6-astra";
     if (/Token贷/.test(t)) return "cluster:token-loan";
@@ -285,7 +290,15 @@ function pruneData(data) {
     if (/开学三件套/.test(t)) return "cluster:school-kit-prices";
     if (/华为李小龙称花11年/.test(t)) return "cluster:huawei-dream-11y";
     if (/长鑫|玄戒|lpddr6|江波龙|长鑫存储|长鑫LPDDR6|长鑫存储起诉/i.test(t)) return "cluster:cxmt-dram";
-    if (/郑钦文/.test(t)) return "cluster:zheng-qinwen";
+    if (/郑钦文|萊巴金娜|莱巴金娜/.test(t)) return "cluster:zheng-qinwen";
+    if (/教师节|最美教师|做党和人民满意的好老师|习近平向广大教师/.test(t))
+      return "cluster:teachers-day";
+    if (/宁德时代/.test(t)) return "cluster:catl-alarm";
+    if (/服贸会/.test(t)) return "cluster:ciftis-2026";
+    if (/共享投资机遇|投洽会/.test(t)) return "cluster:cifit-xiamen";
+    if (/天宮課堂|天宫课堂/.test(t)) return "cluster:tiangong-class";
+    if (/黄金白银大跌|金价|黄金白银/.test(t)) return "cluster:gold-price";
+    if (/租者置其屋/.test(t)) return "cluster:tps-scheme";
     if (/惠 康|^惠康$|優惠 券|优惠券/.test(t)) return "cluster:wellcome";
     if (/apm 打/.test(t)) return "cluster:apm-assault";
     if (/霍尔木兹/.test(t)) return "cluster:hormuz";
@@ -463,7 +476,8 @@ function pruneData(data) {
     for (const k of keys) {
       if (!c.whyTrending && whyByTitle.get(k)) c.whyTrending = whyByTitle.get(k);
       if (!c.titleEn && whyByTitle.get(k + "::en")) c.titleEn = whyByTitle.get(k + "::en");
-      if (whyByTitle.get(k + "::gossip")) c.isGossip = true;
+      if (whyByTitle.get(k + "::gossip") && k === String(c.displayTitle || "").trim().toLowerCase())
+        c.isGossip = true;
     }
   }
   const head = [];
