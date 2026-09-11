@@ -23,33 +23,33 @@ MGM China (2):
 
 5. **Three MGM Restaurants Recognized in Trip.Gourmet’s 2027 Global Fine Dining Selection** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=854
-[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection. Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively.
+[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…
 
 6. **MGM Donates MOP5 Million to Support Relief and Recovery Efforts in Xizang** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=853
-[September 4, 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced a donation of MOP5 million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, to support emergency relief and post-disaster recovery.
+[ September 4 , 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope…
 
 SJM (1):
 
 7. **SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/2026-09-04-03-57-31.pdf
-(Macau, 4 September 2026) Devastating mudslides have recently struck Gyirong County, Shigatse City, Tibet Autonomous Region, causing serious loss and extensive damage. SJM Resorts, S.A. has donated MOP 5 million through the Liaison Office of the Central People’s Government in the Macao SAR to support emergency rescue, resettlement of displaced residents, and post-disaster reconstruction.
+SJM press: SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County.
 
 Galaxy Entertainment (1):
 
 8. **GEG and Lui Che Woo Family Charitable Foundation Donate MOP10 Million to Support Relief and Recovery Efforts in Xizang** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1211/20260903
-September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage and significant casualties. Galaxy Entertainment Group and Lui Che Woo Family Charitable Foundation will jointly donate MOP10 million, with the assistance of the Liaison Office of the Central People's Government in the Macau SAR, to support emergency relief and post-disaster recovery.
+September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods, as well as significant casualties and property losses. To support emergency relief and post-disaster recovery efforts, Galaxy Entertainment Group (“GEG”) announced today that, with the…
 
 Sands China (2):
 
 9. **Sands China Receives Two MICE Honours at M&C Asia Stella Awards 2026** — Sands China Press
 https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-09-03/Stella-Awards-2026.html
-(Macao, September 3, 2026) Sands China Ltd. has won two major awards at the M&C Asia Stella Awards 2026, with Sands Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian Macao clinching the Best Meetings Hotel (Macao). The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences.
+(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the eminent M&C Asia Stella Awards 2026, with Sands ® Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian ® Macao clinching the Best Meetings Hotel (Macao) . The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events…
 
 10. **Macau Artist Society 70th Anniversary Invitational Exhibition Opens** — Sands China Press
 https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-08-29/macau-artist-society.html
-(Macao, August 29, 2026) Organised by the Cultural Affairs Bureau of the Macao S.A.R. Government and the Macau Artist Society, and co-organised by Sands China Ltd., the “Art in the New Era – The 70th Anniversary Invitational Exhibition of the Macau Artist Society” held its opening ceremony at the Ballroom on Level 4 of Sands Macao.
+(Macao, August 29, 2026) Organised by the Cultural Affairs Bureau of the Macao S.A.R. Government and the Macau Artist Society (MAS), co-organised by Sands China Ltd., and supported by the Federation of Associations of Cultural Sectors of Macau, the “Art in the New Era – The 70th Anniversary Invitational Exhibition of the Macau Artist Society” held its opening ceremony today (29 August) at the Ballroom on Level 4…
 
 Four Seasons (1):
 
