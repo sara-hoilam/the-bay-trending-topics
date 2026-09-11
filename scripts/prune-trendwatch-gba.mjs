@@ -117,10 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/青岛货轮|青島貨輪|北海造船/i.test(t)) return "cluster:qingdao-ship-fire";
+    if (/胡塞|油价要调了|^油价$|^油價$|红海要地|曼德海峡/i.test(t))
+      return "cluster:oil-houthi";
+    if (/一箭六星/i.test(t)) return "cluster:six-sat-launch";
+    if (/林行止/i.test(t)) return "cluster:lam-hang-chi";
+    if (/余偉文|余伟文/i.test(t)) return "cluster:eddie-yue";
+    if (/许绍雄|許紹雄/i.test(t)) return "cluster:hui-siu-hung";
+    if (/普通人出境变难|出境变难/i.test(t)) return "cluster:exit-rules";
+    if (/日韩股市大跌/i.test(t)) return "cluster:kr-jp-stocks";
+    if (/智己LS6|智己ls6/i.test(t)) return "cluster:im-ls6";
+    if (/罗永浩|vivo折叠|讽刺广告/i.test(t)) return "cluster:luo-yonghao";
+    if (/华为Mate90|mate90/i.test(t)) return "cluster:huawei-mate90";
+    if (/中汽认证中心/i.test(t)) return "cluster:cata-suspend";
+    if (/双休购/i.test(t)) return "cluster:shuangxiugou";
+    if (/千里浩瀚/i.test(t)) return "cluster:avatr-qianli";
+    if (/^火鍋$|^火锅$/i.test(t)) return "cluster:hotpot";
+    if (/^彩票$|^彩票 /i.test(t)) return "cluster:lottery";
+    if (/^911$|911事件25周年/i.test(t)) return "cluster:911-25";
+    if (/和黃醫藥|和黄医药/i.test(t)) return "cluster:hutchmed";
+    if (/^anthropic$/i.test(t)) return "cluster:anthropic";
+    if (/看不见的贸易|服贸会|哈兰德立牌/i.test(t)) return "cluster:ciftis-2026";
+    if (/燃油车卖不动|加油站怎么办/i.test(t)) return "cluster:ice-stations";
+    if (/手机进入奢侈品|苹果价格把我的购物欲/i.test(t)) return "cluster:phone-luxury";
     if (/董建華|董建华|香港首任特首董建华|董建華逝世|董建华逝世生平|梁振英沉痛哀悼/i.test(t))
       return "cluster:tung-chee-hwa";
     if (
-      /波圖對曼城|porto vs man city|哈兰德|歐冠|^champions league$|uefa champions|real madrid vs inter|皇马2比1国际米兰|拿坡里對兵工廠|napoli vs arsenal|利物浦對馬德里競技|liverpool vs atlético|巴萨欧冠|巴萨欧冠5比1/i.test(
+      /波圖對曼城|porto vs man city|哈兰德|歐冠|^champions league$|uefa champions|man utd vs sabah|曼联4-0|拜仁5比0|五大联赛欧冠|real madrid vs inter|皇马2比1国际米兰|拿坡里對兵工廠|napoli vs arsenal|利物浦對馬德里競技|liverpool vs atlético|巴萨欧冠|巴萨欧冠5比1/i.test(
         t,
       )
     )

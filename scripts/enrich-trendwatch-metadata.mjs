@@ -18,6 +18,94 @@ const GOSSIP_TITLE =
   /豆包不会做馒头|玩山姆|托举梗|洞洞鞋|角化型脚气|暴食|秘嫁|阔太|综艺|抄袭|恋情|绯闻|灵魂摆渡|瘦腿|砸店|崩溃痛哭/i;
 
 const GLOSSARY = {
+  火鍋: {
+    titleEn: "Hotpot",
+    whyTrending:
+      "Hong Kong searches for 火鍋 hit 5K+ with 1,000% growth on the 48-hour board as cooler mid-September evenings pulled diners toward hotpot. The row sat beside Apple-launch and local-news spikes rather than a celebrity feud.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  林行止: {
+    titleEn: "Lam Hang-chi (Hong Kong Economic Journal founder)",
+    whyTrending:
+      "Hong Kong Economic Journal founder Lam Hang-chi (林行止) died at 86, with local and mainland obituaries circulating from 10 September. An obituary spike, not celebrity gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  余偉文: {
+    titleEn: "Eddie Yue (HKMA chief)",
+    whyTrending:
+      "HKMA chief Eddie Yue (余偉文) hit 500+ with 1,000% growth after saying a new batch of government green bonds would use tokenised deposits or stablecoins for settlement. A Hong Kong markets-policy spike.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  租者置其屋计划: {
+    titleEn: "Tenants Purchase Scheme",
+    whyTrending:
+      "Tenants Purchase Scheme (租者置其屋计划) searches hit 2K+ with 400% growth as public-housing tenants checked sale notices. Direct Hong Kong housing policy.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "习近平对青岛货轮火灾作出重要指示": {
+    titleEn: "Xi Jinping issues instructions on the Qingdao cargo-ship fire",
+    whyTrending:
+      "A foreign cargo ship caught fire on 10 September while under repair at Qingdao Beihai Shipbuilding, causing heavy casualties. Xi Jinping ordered a search for the missing, care for families and a serious investigation — Weibo pinned the same line as hotgov.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "车主留意！油价要调了": {
+    titleEn: "Drivers: fuel prices are about to be adjusted",
+    whyTrending:
+      "China's retail fuel-price window opens at 24:00 on 11 September. Agencies projected a rise of about ¥360 per tonne after crude's reference change hit 8.16%, before the official print.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  "胡塞攻占红海要地 油价“爆了”": {
+    titleEn: "Houthis seize a Red Sea stronghold — oil prices spike",
+    whyTrending:
+      "Houthi forces seized Mocha on Yemen's Red Sea coast. WTI and Brent jumped about 8% as the Bab el-Mandeb risk premium returned; Weibo ranked the same port seizure.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  iPhone18Pro全球售价对比: {
+    titleEn: "iPhone 18 Pro global price comparison",
+    whyTrending:
+      "After the 10 September event, users compared iPhone 18 Pro / Pro Max tags across official stores. The US listed the lowest dollar prices; Turkey the highest. Same row led Weibo tech.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  我国成功发射一箭六星: {
+    titleEn: "China successfully launches one rocket, six satellites",
+    whyTrending:
+      "Weibo ranked a successful one-rocket, six-satellite launch as a domestic space headline. Major national aerospace, not gossip.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  青岛货轮火灾25人遇难: {
+    titleEn: "Qingdao cargo-ship fire: 25 dead",
+    whyTrending:
+      "The Qingdao repair-yard fire death toll was given as 25. Xi's instruction led Baidu and Weibo hotgov in the same capture.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
+  美联储9月加息概率: {
+    titleEn: "Odds of a September Fed hike",
+    whyTrending:
+      "Weibo tracked September FOMC hike odds as oil jumped on the Red Sea shock. Cross-border rates story that also moves Hong Kong dollar and H-share screens.",
+    isGossip: false,
+    isNewsworthy: true,
+    isGbaRelevant: true,
+  },
   劉兆銘: {
     titleEn: "Lau Siu-ming (actor)",
     whyTrending:
