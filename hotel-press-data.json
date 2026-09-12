@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-09-11",
-  "refreshedAt": "2026-09-11T09:34:46+08:00",
+  "updatedAt": "2026-09-12",
+  "refreshedAt": "2026-09-12T09:45:45+08:00",
   "windowDays": 14,
-  "windowStart": "2026-08-28",
-  "windowEnd": "2026-09-11",
-  "count": 11,
+  "windowStart": "2026-08-29",
+  "windowEnd": "2026-09-12",
+  "count": 14,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -37,8 +37,21 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…",
+      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection. Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively.",
       "rank": 2
+    },
+    {
+      "title": "Sands China Hosts ‘The Parisian Macao 10th Anniversary Community Fun Day’",
+      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-06-parisian-10th-community.html",
+      "posted": "2026-09-06",
+      "rawDate": "Sep.6 Sands China Hosts ‘The Parisian Macao 10th Anniversary Community Fun Day’",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Sept. 6, 2026) – To celebrate the 10th anniversary of The Parisian Macao, Sands China hosted The Parisian Macao 10th Anniversary Community Fun Day on Sept. 5, welcoming 130 participants, including family members from local social service organisations and Sands Cares Ambassadors.",
+      "rank": 3
     },
     {
       "title": "MGM Donates MOP5 Million to Support Relief and Recovery Efforts in Xizang",
@@ -50,8 +63,21 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "good-news",
-      "summary": "[ September 4 , 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope…",
-      "rank": 3
+      "summary": "[September 4, 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR.",
+      "rank": 4
+    },
+    {
+      "title": "Sands China Donates MOP 10 Million in Support of Xizang Mudslide Relief Efforts",
+      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-04-donation-for-xizang.html",
+      "posted": "2026-09-04",
+      "rawDate": "Sep.4 Sands China Donates MOP 10 Million in Support of Xizang Mudslide Relief Efforts",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Sept. 4, 2026) – Sands China Ltd. announced today that the company will donate MOP 10 million to support relief efforts in Gyirong County, Xigaze, Xizang Autonomous Region, following a devastating mudslide. The donation will be made with the assistance of the Liaison Office of the Central People’s Government in the Macao SAR.",
+      "rank": 5
     },
     {
       "title": "SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County",
@@ -63,8 +89,8 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "SJM press: SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County.",
-      "rank": 4
+      "summary": "(Macau, 4 September 2026) — Devastating mudslides have recently struck Gyirong County, Shigatse City, Tibet Autonomous Region, causing serious loss and extensive damage. SJM Resorts, S.A. has donated MOP 5 million through the Liaison Office of the Central People's Government in the Macao SAR to support emergency rescue, resettlement of displaced residents, and post-disaster reconstruction.",
+      "rank": 6
     },
     {
       "title": "Wynn Donates MOP5 Million to Support Relief and Recovery Efforts in Gyirong, Xizang",
@@ -77,7 +103,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "good-news",
       "summary": "Macao, September 4, 2026 – A severe mudslide recently struck Gyirong County, Xigaze City, Xizang Autonomous Region, resulting in significant casualties and property losses. Wynn Macau, Limited today announced a donation of MOP5 million to support emergency relief and post-disaster recovery efforts, with the assistance of the Liaison Office of the Central People's Government in the Macao Special Administrative Region.",
-      "rank": 5
+      "rank": 7
     },
     {
       "title": "GEG and Lui Che Woo Family Charitable Foundation Donate MOP10 Million to Support Relief and Recovery Efforts in Xizang",
@@ -89,8 +115,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods, as well as significant casualties and property losses. To support emergency relief and post-disaster recovery efforts, Galaxy Entertainment Group (“GEG”) announced today that, with the…",
-      "rank": 6
+      "summary": "September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region. Galaxy Entertainment Group and Lui Che Woo Family Charitable Foundation will jointly donate MOP10 million, with the assistance of the Liaison Office of the Central People's Government in the Macau SAR, to support emergency rescue, relief supplies, resettlement, medical assistance, and reconstruction.",
+      "rank": 8
     },
     {
       "title": "Sands China Receives Two MICE Honours at M&C Asia Stella Awards 2026",
@@ -102,8 +128,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the eminent M&C Asia Stella Awards 2026, with Sands ® Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian ® Macao clinching the Best Meetings Hotel (Macao) . The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events…",
-      "rank": 7
+      "summary": "(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the M&C Asia Stella Awards 2026, with Sands Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian Macao clinching the Best Meetings Hotel (Macao).",
+      "rank": 9
     },
     {
       "title": "Wynn Launches 20th Anniversary Share Award for Team Members",
@@ -115,8 +141,21 @@
       "sourceDomain": "newsroom.wynnresorts.com",
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
-      "summary": "Macao, September 3, 2026 – As this year marks the company's 20th anniversary in Macao, Wynn Macau, Limited announced a one-time \"Wynn Macau 20th Anniversary Share Award\", under which eligible team members of Wynn Macau and Wynn Palace will be granted shares in Wynn Macau, Limited. Nearly 95% of the company's current full-time workforce of 11,660 will benefit from this initiative.",
-      "rank": 8
+      "summary": "Macao, September 3, 2026 – As this year marks the company's 20th anniversary in Macao, Wynn Macau, Limited announced a one-time \"Wynn Macau 20th Anniversary Share Award\", under which eligible team members of Wynn Macau and Wynn Palace will be granted shares in Wynn Macau, Limited.",
+      "rank": 10
+    },
+    {
+      "title": "‘Sands Cares in the Greater Bay Area: The Macao and Hengqin Study Tour for Youth 2026’",
+      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-02-sca-hengqin-tour.html",
+      "posted": "2026-09-02",
+      "rawDate": "Sep.2 ‘Sands Cares in the Greater Bay Area: The Macao and Hengqin Study Tour for Youth 2026’",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Sept. 2, 2026) – Sands China and the Macau Youth Development Service Centre co-organised ‘Sands Cares in the Greater Bay Area: The Macao and Hengqin Study Tour 2026’ on Sept. 2 for social-work students from the City University of Macau and the University of Saint Joseph.",
+      "rank": 11
     },
     {
       "title": "Wynn Palace Becomes the First in Macao to Debut on The World's 50 Best Hotels 2026 Extended 51-100 List",
@@ -129,7 +168,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
       "kind": "award",
       "summary": "Macao, September 2, 2026 – Wynn Palace has been named No.96 on The World's 50 Best Hotels 2026 extended 51–100 list, becoming the first hotel in Macao to be recognized in the prestigious global award. The accolade recognizes Wynn Palace's commitment to bespoke hospitality, world-class gastronomy and resort experiences.",
-      "rank": 9
+      "rank": 12
     },
     {
       "title": "Four Seasons Hotel Hong Kong Recognized in the World’s 50 Best Hotels 2026 Extended List",
@@ -142,7 +181,7 @@
       "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
       "kind": "award",
       "summary": "Four Seasons Hotel Hong Kong has once again been recognized in the extended ranking of The World’s 50 Best Hotels 2026, placing at No. 86. This continued recognition is a meaningful testament to the team’s dedication to delivering luxury hospitality, service excellence, and memorable guest experiences.",
-      "rank": 10
+      "rank": 13
     },
     {
       "title": "Macau Artist Society 70th Anniversary Invitational Exhibition Opens",
@@ -154,8 +193,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "(Macao, August 29, 2026) Organised by the Cultural Affairs Bureau of the Macao S.A.R. Government and the Macau Artist Society (MAS), co-organised by Sands China Ltd., and supported by the Federation of Associations of Cultural Sectors of Macau, the “Art in the New Era – The 70th Anniversary Invitational Exhibition of the Macau Artist Society” held its opening ceremony today (29 August) at the Ballroom on Level 4…",
-      "rank": 11
+      "summary": "(Macao, August 29, 2026) Organised by the Cultural Affairs Bureau of the Macao S.A.R. Government and the Macau Artist Society, and co-organised by Sands China Ltd., the “Art in the New Era – The 70th Anniversary Invitational Exhibition of the Macau Artist Society” opened at The Venetian Macao.",
+      "rank": 14
     }
   ]
 }
