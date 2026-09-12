@@ -132,6 +132,35 @@ function pruneData(data) {
     if (/中汽认证中心/i.test(t)) return "cluster:cata-suspend";
     if (/双休购/i.test(t)) return "cluster:shuangxiugou";
     if (/千里浩瀚/i.test(t)) return "cluster:avatr-qianli";
+    if (/金砖|金磚|习近平离京出席金砖|习近平主席深刻阐述金砖/i.test(t))
+      return "cluster:brics-2026";
+    if (/DeepSeek\s*开口说话|DeepSeek.*语音|DeepSeek.*说话/i.test(t))
+      return "cluster:deepseek-voice";
+    if (/小米澎程|雷总去哪开门|雷军回应科技新一|网友最关心的不是车/i.test(t))
+      return "cluster:xiaomi-pengcheng-delivery";
+    if (/2030年进入世界汽车强国|智能网联新能源汽车产业发展/i.test(t))
+      return "cluster:nev-15th-plan";
+    if (/中国天眼|FAST中性氢|深海矿床|中国找矿有重大突破/i.test(t))
+      return "cluster:fast-seabed";
+    if (/渣打馬拉松|渣打马拉松/i.test(t)) return "cluster:sc-marathon-2027";
+    if (/青马大桥|青馬大橋/i.test(t)) return "cluster:tsing-ma";
+    if (/^食環署$|^食环署$/i.test(t)) return "cluster:fehd";
+    if (/^長者$|^长者$/i.test(t)) return "cluster:hk-elderly";
+    if (/^偷竊$|^偷窃$/i.test(t)) return "cluster:hk-theft";
+    if (/^風$|^风$/i.test(t)) return "cluster:hk-wind";
+    if (/meta ai/i.test(t)) return "cluster:meta-ai";
+    if (/us open|兹维列夫|茲維列夫/i.test(t)) return "cluster:us-open-2026";
+    if (/美股三大指数|美股.*四连跌/i.test(t)) return "cluster:us-stocks";
+    if (/糖尿病患者人数突破两亿/i.test(t)) return "cluster:diabetes-233m";
+    if (/携程|杀熟|罚了51\.79亿/i.test(t)) return "cluster:ctrip-kill";
+    if (/铁头获刑|铁头退庭|网红铁头/i.test(t)) return "cluster:tietou";
+    if (/哪吒汽车重整/i.test(t)) return "cluster:neta-auto";
+    if (/网易UU远程|鸿蒙翻车/i.test(t)) return "cluster:uu-harmony";
+    if (/一天已经不足24小时/i.test(t)) return "cluster:earth-spin";
+    if (/18岁女子与男友争吵后坠亡/i.test(t)) return "cluster:gz-fall";
+    if (/雷宇揚|simon lui/i.test(t)) return "cluster:simon-lui";
+    if (/iPhoneDuo|iPhone Duo|阔折叠|折叠屏最关键秘密|折叠屏比例泄密|库克亚洲行后对折叠屏|10台手机卖不出1台折叠屏|折叠屏三国杀/i.test(t))
+      return "cluster:iphone-duo";
     if (/^火鍋$|^火锅$/i.test(t)) return "cluster:hotpot";
     if (/^彩票$|^彩票 /i.test(t)) return "cluster:lottery";
     if (/^911$|911事件25周年/i.test(t)) return "cluster:911-25";
