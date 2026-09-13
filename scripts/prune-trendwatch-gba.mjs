@@ -158,7 +158,7 @@ function pruneData(data) {
     if (/网易UU远程|鸿蒙翻车/i.test(t)) return "cluster:uu-harmony";
     if (/一天已经不足24小时/i.test(t)) return "cluster:earth-spin";
     if (/18岁女子与男友争吵后坠亡/i.test(t)) return "cluster:gz-fall";
-    if (/雷宇揚|simon lui/i.test(t)) return "cluster:simon-lui";
+    if (/雷宇揚|雷宇扬|simon lui/i.test(t)) return "cluster:simon-lui";
     if (/iPhoneDuo|iPhone Duo|阔折叠|折叠屏最关键秘密|折叠屏比例泄密|库克亚洲行后对折叠屏|10台手机卖不出1台折叠屏|折叠屏三国杀/i.test(t))
       return "cluster:iphone-duo";
     if (/^火鍋$|^火锅$/i.test(t)) return "cluster:hotpot";
@@ -222,7 +222,25 @@ function pruneData(data) {
     if (/GPT-?6|GPT6|OpenAI总裁宣布AGI|OpenAI发布GPT-6|地球最强大模型GPT-6|美国AI大宕机|\bchatgpt\b/i.test(t))
       return "cluster:gpt6-astra";
     if (/Token贷/.test(t)) return "cluster:token-loan";
-    if (/银色.?债券|銀色.?債券/i.test(t)) return "cluster:silver-bond";
+    if (/银色.?债券|銀色.?債券|銀.?債|银.?债/i.test(t)) return "cluster:silver-bond";
+    if (/敬一丹/.test(t)) return "cluster:jing-yidan";
+    if (/孙心然/.test(t)) return "cluster:sun-xinran";
+    if (/AI短剧/i.test(t)) return "cluster:ai-short-drama";
+    if (/海姆立克/.test(t)) return "cluster:heimlich";
+    if (/微信：别取这种名字|微信.*封号/.test(t)) return "cluster:wechat-names";
+    if (/下周上班时间有变/.test(t)) return "cluster:midautumn-shift";
+    if (/习近平会见莫迪|会见莫迪/.test(t)) return "cluster:xi-modi";
+    if (/沙田.*食物.?中毒|沙田 小學/.test(t)) return "cluster:shatin-food";
+    if (/譚詠麟|谭咏麟|李克勤谭咏麟/.test(t)) return "cluster:alan-tam";
+    if (/鍾麗淇/.test(t)) return "cluster:joyce-chung";
+    if (/黃翠如/.test(t)) return "cluster:wong-tsui-ka";
+    if (/陳松伶/.test(t)) return "cluster:chan-chung-ling";
+    if (/苗.?彤/.test(t)) return "cluster:miao-tong";
+    if (/^資產$|^资产$/.test(t)) return "cluster:hk-assets";
+    if (/^退休$/.test(t)) return "cluster:hk-retirement";
+    if (/支付宝.*假APP/.test(t)) return "cluster:alipay-fake";
+    if (/发改委.*车企改革|大型车企改革与兼并/.test(t)) return "cluster:ndrc-auto-merger";
+    if (/赵雷当爸爸/.test(t)) return "cluster:zhao-lei-dad";
     if (/广州取消校服|广州取消中小学校服/.test(t)) return "cluster:gz-uniform";
     if (/人人影视/.test(t)) return "cluster:yyets";
     if (/Cybercab|特斯拉汽车|特斯拉汽車|特斯拉预告|特斯拉預告/i.test(t)) return "cluster:tesla-cybercab";
@@ -250,7 +268,7 @@ function pruneData(data) {
     if (/草間彌生|草间弥生|yayoi kusama|\bkusama\b/i.test(t)) return "cluster:kusama";
     if (/徐 杰|徐杰/.test(t)) return "cluster:xu-jie";
     if (
-      /天文台|^紅雨$|^天氣$|^天气$|hk observatory|\bhko\b|^weather$|^observatory$|紅色暴雨/i.test(
+      /天文台|^紅雨$|^天氣$|^天气$|hk observatory|\bhko\b|^weather$|^observatory$|紅色暴雨|低.?氣壓|低.?气压/i.test(
         t,
       )
     )
@@ -342,7 +360,9 @@ function pruneData(data) {
     if (/开学三件套/.test(t)) return "cluster:school-kit-prices";
     if (/华为李小龙称花11年/.test(t)) return "cluster:huawei-dream-11y";
     if (/长鑫|玄戒|lpddr6|江波龙|长鑫存储|长鑫LPDDR6|长鑫存储起诉/i.test(t)) return "cluster:cxmt-dram";
-    if (/郑钦文|萊巴金娜|莱巴金娜/.test(t)) return "cluster:zheng-qinwen";
+    if (/郑钦文/.test(t)) return "cluster:zheng-qinwen";
+    if (/萊巴金娜|莱巴金娜|elena rybakina|萨巴伦卡|薩巴倫卡/.test(t))
+      return "cluster:us-open-wta";
     if (/教师节|最美教师|做党和人民满意的好老师|习近平向广大教师/.test(t))
       return "cluster:teachers-day";
     if (/宁德时代/.test(t)) return "cluster:catl-alarm";
