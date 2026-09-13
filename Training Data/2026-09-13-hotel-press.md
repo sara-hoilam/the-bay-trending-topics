@@ -23,45 +23,45 @@ MGM China (2):
 
 5. **Three MGM Restaurants Recognized in Trip.Gourmet’s 2027 Global Fine Dining Selection** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=854
-[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection. Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively.
+[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…
 
 6. **MGM Donates MOP5 Million to Support Relief and Recovery Efforts in Xizang** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=853
-[September 4, 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, to support emergency relief and post-disaster recovery.
+[ September 4 , 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope…
 
 Sands China (4):
 
 7. **Sands China Hosts ‘The Parisian Macao 10th Anniversary Community Fun Day’** — Sands China Press
 https://www.sandschina.com/the-company/company-information/press-release/2026/09-06-parisian-10th-community.html
-(Macao, Sept. 6, 2026) – To celebrate the 10th anniversary of The Parisian Macao, Sands China hosted The Parisian Macao 10th Anniversary Community Fun Day on Sept. 5, welcoming 130 participants, including family members from local social service organisations and Sands Cares Ambassadors. The initiative reflects the Sands Cares spirit of caring for Macao and serving the community.
+(Macao, Sept. 6, 2026) – To celebrate the 10th anniversary of The Parisian ® Macao, Sands China hosted The Parisian Macao 10th Anniversary Community Fun Day on Sept. 5, welcoming 130 participants, including family members from local social service organisations and Sands Cares Ambassadors, to share in the milestone celebration and enjoy a tour of The Parisian Macao together. Filled with joy and laughter, families…
 
 8. **Sands China Donates MOP 10 Million in Support of Xizang Mudslide Relief Efforts** — Sands China Press
 https://www.sandschina.com/the-company/company-information/press-release/2026/09-04-donation-for-xizang.html
-(Macao, Sept. 4, 2026) – Sands China Ltd. announced today that the company will donate MOP 10 million to support relief efforts in Gyirong County, Xigaze, Xizang Autonomous Region, following a devastating mudslide. The donation will be made with the assistance of the Liaison Office of the Central People’s Government in the Macao SAR to support relief and reconstruction in the affected area.
+(Macao, Sept. 4, 2026) – Sands China Ltd. announced today that the company will donate MOP 10 million to support relief efforts in Gyirong County, Xigaze, Xizang Autonomous Region, following a devastating mudslide that recently struck the area, causing significant loss of life, injuries, and widespread destruction. The donation will be made with the assistance of the Liaison Office of the Central People’s…
 
 9. **Sands China Receives Two MICE Honours at M&C Asia Stella Awards 2026** — Sands China Press
 https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-09-03/Stella-Awards-2026.html
-(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the M&C Asia Stella Awards 2026, with Sands Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian Macao clinching the Best Meetings Hotel (Macao). The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences.
+(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the eminent M&C Asia Stella Awards 2026, with Sands ® Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian ® Macao clinching the Best Meetings Hotel (Macao) . The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events…
 
 10. **‘Sands Cares in the Greater Bay Area: The Macao and Hengqin Study Tour for Youth 2026’** — Sands China Press
 https://www.sandschina.com/the-company/company-information/press-release/2026/09-02-sca-hengqin-tour.html
-(Macao, Sept. 2, 2026) – Sands China and the Macau Youth Development Service Centre co-organised ‘Sands Cares in the Greater Bay Area: The Macao and Hengqin Study Tour 2026’ on Sept. 2. Students from Macao universities and Sands Cares Ambassadors joined the study tour to the Guangdong-Macao In-Depth Cooperation Zone in Hengqin.
+(Macao, Sept. 2, 2026) – To consistently strengthen exchange between Hengqin and Macao and facilitate Macao young people to integrate into national development, Sands China and the Macau Youth Development Service Centre co-organised ‘Sands Cares in the Greater Bay Area: The Macao and Hengqin Study Tour 2026’ on Sept. 2. Students majoring in social work at the City University of Macau and the University of Saint…
 
 SJM (1):
 
 11. **SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/2026-09-04-03-57-31.pdf
-SJM Holdings announced a donation of MOP 5 million to support disaster relief and reconstruction efforts in Gyirong County, Xigaze, Xizang Autonomous Region.
+SJM press: SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County.
 
 Galaxy Entertainment (1):
 
 12. **GEG and Lui Che Woo Family Charitable Foundation Donate MOP10 Million to Support Relief and Recovery Efforts in Xizang** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1211/20260903
-September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage and significant casualties and property losses. Galaxy Entertainment Group and Lui Che Woo Family Charitable Foundation will jointly donate MOP10 million, with the assistance of the Liaison Office of the Central People's Government in the Macau SAR, to support emergency relief and post-disaster recovery.
+September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods, as well as significant casualties and property losses. To support emergency relief and post-disaster recovery efforts, Galaxy Entertainment Group (“GEG”) announced today that, with the…
 
 Four Seasons (1):
 
 13. **Four Seasons Hotel Hong Kong Recognized in the World’s 50 Best Hotels 2026 Extended List** — Four Seasons Hong Kong
 https://press.fourseasons.com/hongkong/hotel-news/2026/worlds-50-best
-Four Seasons Hotel Hong Kong has once again been recognized in the extended ranking of The World’s 50 Best Hotels 2026, placing at No. 86. This continued recognition is a testament to the team’s dedication to delivering luxury hospitality, service excellence, and memorable guest experiences.
+Four Seasons press: Four Seasons Hotel Hong Kong Recognized in the World’s 50 Best Hotels 2026 Extended List.
 

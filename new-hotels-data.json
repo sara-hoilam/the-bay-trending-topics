@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-09-12",
-  "refreshedAt": "2026-09-12T09:50:46+08:00",
+  "updatedAt": "2026-09-13",
+  "refreshedAt": "2026-09-13T09:20:20+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-03-13",
-  "windowEnd": "2027-03-14",
-  "count": 122,
+  "windowStart": "2026-03-14",
+  "windowEnd": "2027-03-15",
+  "count": 124,
   "countries": [
     "Bangladesh",
     "China",
@@ -2100,6 +2100,40 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "JW Marriott Bali Ubud",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Marriott",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/jw-marriott-bali-ubud",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Park Hyatt Phu Quoc",
+      "location": "Phu Quoc, Vietnam",
+      "country": "Vietnam",
+      "region": "asia",
+      "hotelGroup": "Park Hyatt",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/park-hyatt-phu-quoc",
+      "sourceName": "The Opening List"
     }
   ]
 }
