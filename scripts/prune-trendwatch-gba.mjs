@@ -117,6 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/三大AI巨头|马斯克呼吁减缓AI|马斯克支持减速AI|AI三大死敌|25位菲奖得主联名炮轰AI/i.test(t))
+      return "cluster:ai-slowdown";
+    if (/人类语言被AI一秒抛弃/i.test(t)) return "cluster:ai-language";
+    if (/我国硬核成果上新了/i.test(t)) return "cluster:hardtech-results";
+    if (/iPhone18预定后香港信用卡盗刷/i.test(t)) return "cluster:hk-iphone-fraud";
+    if (/任正非/.test(t)) return "cluster:ren-zhengfei";
+    if (/六合彩.?故障|六合彩.?壞.?機|mark six jackpot/i.test(t))
+      return "cluster:mark-six-fault";
+    if (/韩国股市放大招/.test(t)) return "cluster:kr-stocks";
+    if (/王曼昱/.test(t)) return "cluster:wang-manyu";
+    if (/出现这种感觉 说明你AI成瘾|AI成瘾/.test(t)) return "cluster:ai-addiction";
+    if (/在读75万 中国博士|中国博士真的过剩/.test(t)) return "cluster:phd-surplus";
+    if (/四大国有行今年缩招/.test(t)) return "cluster:socb-hiring";
+    if (/巴基斯坦副总理兼外长最新涉华/.test(t)) return "cluster:pk-china";
+    if (/也门冲突快速升级|数千人伤亡！也门/.test(t)) return "cluster:yemen";
+    if (/东北季风/.test(t)) return "cluster:hk-observatory";
+    if (/OPPO FindX10/i.test(t)) return "cluster:oppo-findx10";
+    if (/麒麟9050/.test(t)) return "cluster:kirin-9050";
+    if (/华为Mate90/.test(t)) return "cluster:huawei-mate90";
+    if (/智谱完成约50亿美元/.test(t)) return "cluster:zhipu-funding";
+    if (/上5休1/.test(t)) return "cluster:work-roster";
+    if (/我国从来没有第一学历/.test(t)) return "cluster:first-degree";
+    if (/罗永浩骂苹果/.test(t)) return "cluster:luo-yonghao";
+    if (/wtt澳門|wtt澳门|2025年wtt/i.test(t)) return "cluster:wtt-macao";
+    if (/筑牢金砖|寻找.?金砖温度/.test(t)) return "cluster:brics-2026";
+    if (/十人曼城|英超官方：哈兰德|英超承认哈兰德|哈兰德 恩佐|哈兰德进球应无效/.test(t))
+      return "cluster:man-city";
     if (/青岛货轮|青島貨輪|北海造船/i.test(t)) return "cluster:qingdao-ship-fire";
     if (/胡塞|油价要调了|^油价$|^油價$|红海要地|曼德海峡/i.test(t))
       return "cluster:oil-houthi";

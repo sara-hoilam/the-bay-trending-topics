@@ -2183,11 +2183,12 @@ function applyMeta(it, candidate) {
   const g = lookupGlossary(it.title);
   const c = candidate;
   if (g) {
-    if (g.titleEn) it.titleEn = g.titleEn;
-    if (g.whyTrending) it.whyTrending = g.whyTrending;
-    if (g.isGossip != null) it.isGossip = g.isGossip;
-    if (g.isNewsworthy != null) it.isNewsworthy = g.isNewsworthy;
-    if (g.isGbaRelevant != null) it.isGbaRelevant = g.isGbaRelevant;
+    // Prefer live-capture metadata; glossary only fills gaps.
+    if (g.titleEn && !it.titleEn) it.titleEn = g.titleEn;
+    if (g.whyTrending && !it.whyTrending) it.whyTrending = g.whyTrending;
+    if (g.isGossip != null && it.isGossip == null) it.isGossip = g.isGossip;
+    if (g.isNewsworthy != null && it.isNewsworthy == null) it.isNewsworthy = g.isNewsworthy;
+    if (g.isGbaRelevant != null && it.isGbaRelevant == null) it.isGbaRelevant = g.isGbaRelevant;
   }
   if (GOSSIP_TITLE.test(it.title)) {
     it.isGossip = true;
