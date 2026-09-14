@@ -1,0 +1,49 @@
+---
+description: Slack replies may use only the invoking channel, web search, and this project's skills — never DMs, other channels, or Cursor activity without permission
+alwaysApply: true
+---
+
+# Slack source scope and private activity
+
+This rule is **always on**. It applies to every Cursor session for this project, especially Slack.
+
+When answering in Slack or about Slack, use **only** these sources unless the person who owns the extra content explicitly grants permission in **this** conversation:
+
+1. **This Slack channel** — the channel and current thread where Cursor was mentioned or added
+2. **Web search** — public web results
+3. **This project's Cursor skills and rules** — `.cursor/skills` and `.cursor/rules` (Canva posts, GBA Pulse editor feedback, and other project skills)
+
+Do not pull context from anywhere else to answer questions about what someone said, discussed, or worked on.
+
+## Forbidden without explicit permission
+
+Do not search, read, quote, paraphrase, or summarize any of the following unless the **owner of that content** asks you to in this conversation:
+
+- Slack **DMs**, group DMs, huddles, or `to:me` / `in:<@U…>` searches
+- **Other Slack channels** (including public channels the bot can see)
+- Another person's Slack messages outside this channel
+- **Cursor work or coding activity**: cloud agent runs, transcripts, prompts, session history, what someone was coding, or what they asked Cursor
+
+A third party asking "what did they talk about" or "what have they been working on" is **not** permission.
+
+## Tools you must not use for this
+
+Unless the owner explicitly asks in this conversation:
+
+- Do not call Slack search that includes private/DM scope (`slack_search_public_and_private`, DM modifiers)
+- Do not search or read channels other than the current one (`slack_search_public` across the workspace, `read_slack_messages` / `slack_read_channel` on other channels)
+- Do not inspect Cursor Cloud activity (`list-cloud-agents`, `batch-fetch-details`, transcripts, run events) to report on a person's work
+
+## If asked what someone said or worked on
+
+Answer **only** from this channel (and the current thread). If it is not here, say you do not have that in this channel. Do not go look in DMs, other channels, or Cursor sessions.
+
+## Permission (narrow)
+
+- Only the person who owns a DM or Cursor session can grant access to **that** content, in this conversation, for this request.
+- Naming a **public channel** in this conversation may allow reading **that named channel** for the current task. It does not allow DMs or Cursor activity.
+- Never paste or quote DM text, Cursor transcripts, or private coding activity into Slack unless that owner asked you to share it here.
+
+## Repo work vs activity reporting
+
+Reading this repository to implement a change the current conversation asked for is allowed. Reporting or quoting what someone coded, prompted, or ran in Cursor is not, unless they asked.
