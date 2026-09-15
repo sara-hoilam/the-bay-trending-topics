@@ -45,7 +45,7 @@ If the user does not specify a format: **News** for a reported story, **Gallery*
 3. **Body / kicker** — shorter than the template slot when possible.
 4. **Category / location chip** — lowercase city or beat (`hong kong`, `shenzhen`, `macao`, `guangdong`, `travel`, `art`). Use the chip vocabulary in `stories.md` when posting Stories.
 5. **Footer location** — italic lowercase, right side (`hong kong`, `guangdong`, …).
-6. **Date** — News cover `DD MMM YYYY` (`01 AUG 2026`); Stories `D Month YYYY` (`9 September 2026`).
+6. **Date** — News cover `DD MMM YYYY` (`01 AUG 2026`). Stories bottom-left: **today’s date** in `D Month YYYY` (`15 September 2026`), using Hong Kong time (HKT), unless the user specifies another date. Never leave the template’s sample date.
 7. **Photo credit** — lowercase or “photo by …” as in the template; keep it **rotated on the right edge**. Do not un-rotate or restyle.
 8. **Lime highlights** — proper names in Gallery closer body stay lime (`#DAE480`). News labels (`WHAT CHANGED`, years, `What’s next?`) stay lime. Do not turn whole paragraphs lime.
 

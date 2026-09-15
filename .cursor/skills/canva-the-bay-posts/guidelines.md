@@ -104,5 +104,6 @@ Crop / frame (unchanged):
 
 - Titles are full sentences or sharp news heads, not hashtags.
 - Location footer is geographic, lowercase, one place (`hong kong`, not `Hong Kong SAR`).
+- Stories date (bottom left): **today’s date in HKT**, `D Month YYYY` (`15 September 2026`), unless the user specifies another date.
 - Credits: `photo by Name/Outlet` or `photo courtesy of …`.
 - Lime is for **labels and proper-name highlights**, not decoration.
