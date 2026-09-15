@@ -12,6 +12,6 @@ When making **any** Canva / Instagram / **LinkedIn** post for The Bay, follow **
 - Copy a training template from folder `FAHUw3DTDC0` — do not `generate-design` from scratch (font family cannot be set via API).
 - News `DAHUw4eva3Y` (1080×1350, also for LinkedIn), Gallery `DAHUw9cEaPQ` (1080×1350), Stories `DAHUw1YJMeQ` (1080×1920).
 - Keep logo size and position, lime `#DAE480`, charcoal `#363B44`, paper `#EFEDE8`, and existing text colors.
-- Replace photo, title, body, chips, date, credit, and location only.
+- Replace photo, title, body, chips, date, credit, and location only. Stories bottom-left date is **today (HKT, `D Month YYYY`)** unless the user specifies another date.
 - Photos must be the **named subject** (`images.md`), not a category-similar stock shot, and must pass the cover-crop test (no upscaling into the frame).
 - Always attach the exported PNG **in the Slack / chat thread** plus the Canva edit link.
