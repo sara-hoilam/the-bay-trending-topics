@@ -117,7 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/三大AI巨头|马斯克呼吁减缓AI|马斯克支持减速AI|AI三大死敌|25位菲奖得主联名炮轰AI/i.test(t))
+    if (/广汽|一汽股份|南北丰田|广汽集团/i.test(t)) return "cluster:gac-faw";
+    if (/醫療券|医疗券/i.test(t)) return "cluster:hk-hcv";
+    if (/hyrox|joanna wietrzyk/i.test(t)) return "cluster:hyrox";
+    if (/始终把人民生命安全放在首位/i.test(t)) return "cluster:flood-safety";
+    if (/牛肉价格持续上涨/i.test(t)) return "cluster:beef-prices";
+    if (/未来五年民生健康重磅规划/i.test(t)) return "cluster:health-15th";
+    if (/灵活就业人员规模已超过2亿/i.test(t)) return "cluster:flex-work";
+    if (/中国AI 美国AI|中国AI.*美国AI/i.test(t)) return "cluster:cn-us-ai";
+    if (/王毅：希望法方恪守一个中国|恪守一个中国原则/i.test(t))
+      return "cluster:wang-yi-fr";
+    if (/“钨”呼|钨呼 起飞/i.test(t)) return "cluster:tungsten";
+    if (/社保缴费新基数/i.test(t)) return "cluster:社保-base";
+    if (/楼盘.?抱团涨价|多城楼盘/i.test(t)) return "cluster:home-prices";
+    if (/^債券$|^债券$/i.test(t)) return "cluster:hk-bonds";
+    if (/快達票/i.test(t)) return "cluster:kkday";
+    if (/格價資訊通/i.test(t)) return "cluster:price-app";
+    if (/萊萬特對巴塞隆納|莱万特对巴塞/i.test(t)) return "cluster:levante-barca";
+    if (/SiriAI正式发布|SiriAI/i.test(t)) return "cluster:siri-ai";
+    if (/荣耀Magic9/i.test(t)) return "cluster:honor-magic9";
+    if (/白云展览中心|静音\+无尘/i.test(t)) return "cluster:gz-airfilm";
+    if (/饮用水报告/i.test(t)) return "cluster:drinking-water";
+    if (/中国人挖运河顺手造万亩良田/i.test(t)) return "cluster:canal-farmland";
+    if (/特朗普急了 致电黄仁勋|致电黄仁勋斥责AI危险论/i.test(t))
+      return "cluster:trump-huang";
+    if (/iPhone终于支持调休闹钟|iOS27闹钟支持调休/i.test(t))
+      return "cluster:ios27-alarm";
+    if (/三大AI巨头|马斯克呼吁减缓AI|马斯克支持减速AI|AI三大死敌|25位菲奖得主联名炮轰AI|AI降速呼声重挫芯片股/i.test(t))
       return "cluster:ai-slowdown";
     if (/人类语言被AI一秒抛弃/i.test(t)) return "cluster:ai-language";
     if (/我国硬核成果上新了/i.test(t)) return "cluster:hardtech-results";
@@ -244,7 +270,7 @@ function pruneData(data) {
     if (/鸿蒙7正式发布/i.test(t)) return "cluster:harmonyos-7";
     if (/余承东建议苹果|余承东 华为|余承东 pura/i.test(t)) return "cluster:yu-chengdong-hw";
     if (/用AI训练AI/i.test(t)) return "cluster:ai-train-ai";
-    if (/iphone duo|iphoneduo|iphone18pro|iphone 18 pro|airpods ?5|ios27|苹果下架iphone|爱马仕橙|牙膏挤|苹果发布会|苹果秋季|国行iphone|iphoneair|iphone air|apple watch|苹果官网|^苹果$|苹果新机|史上最贵iphone|折叠屏iphone|四卡双待/i.test(t))
+    if (/iphone duo|iphoneduo|iphone18pro|iphone 18 pro|airpods ?5|ios.?27|苹果下架iphone|爱马仕橙|牙膏挤|苹果发布会|苹果秋季|国行iphone|iphoneair|iphone air|apple watch|苹果官网|^苹果$|苹果新机|史上最贵iphone|折叠屏iphone|四卡双待/i.test(t))
       return "cluster:apple-sept";
     if (/GPT-?6|GPT6|OpenAI总裁宣布AGI|OpenAI发布GPT-6|地球最强大模型GPT-6|美国AI大宕机|\bchatgpt\b/i.test(t))
       return "cluster:gpt6-astra";
