@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-09-14",
+  "updatedAt": "2026-09-15",
   "highlightScoreThreshold": 24,
   "highlightedCount": 73,
   "events": [
@@ -106,17 +106,6 @@
       "region": "hk",
       "location": "Hong Kong Palace Museum, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-the-art-plaza-project-at-the-hong-kong-palace-museum",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "Ancient Egypt Unveiled — Hong Kong Palace Museum",
-      "start": "2025-11-20",
-      "end": "2026-08-31",
-      "region": "hk",
-      "location": "Hong Kong Palace Museum, West Kowloon",
-      "url": "https://www.hkpm.org.hk/en/exhibition/ancient-egypt-unveiled-treasures-from-egyptian-museums",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
       "highlighted": true
@@ -1979,6 +1968,17 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -1998,17 +1998,6 @@
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -2225,17 +2214,6 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Hong Kong Book Fair 2027 (HKCEC)",
-      "start": "2027-07-14",
-      "end": "2027-07-20",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkbookfair/en",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 58,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC World of Snacks 2027 (HKCEC)",
       "start": "2027-07-14",
       "end": "2027-07-20",
@@ -2245,6 +2223,17 @@
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 16,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Book Fair 2027 (HKCEC)",
+      "start": "2027-07-14",
+      "end": "2027-07-20",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkbookfair/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 58,
+      "highlighted": true
     },
     {
       "title": "Tarek Atoui: The Ground, The Rain, and The Harvesters at M+",
@@ -2259,14 +2248,14 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Hong Kong International Tea Fair 2027 (HKCEC)",
+      "title": "HKTDC Food Expo 2027 (HKCEC)",
       "start": "2027-08-12",
-      "end": "2027-08-14",
+      "end": "2027-08-16",
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkteafair",
+      "url": "https://www.hktdc.com/event/hkfoodexpo/en",
       "sourceDomain": "event.hktdc.com",
-      "highlightScore": 36,
+      "highlightScore": 28,
       "highlighted": true
     },
     {
@@ -2278,6 +2267,17 @@
       "url": "https://www.hktdc.com/event/foodexpopro/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong International Tea Fair 2027 (HKCEC)",
+      "start": "2027-08-12",
+      "end": "2027-08-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkteafair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 36,
       "highlighted": true
     },
     {
