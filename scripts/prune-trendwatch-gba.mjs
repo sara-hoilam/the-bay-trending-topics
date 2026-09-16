@@ -117,6 +117,28 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/施政報告|施政报告|醫療券|医疗券/i.test(t)) return "cluster:hk-policy-address";
+    if (/百\s*佳|parknshop|超級\s*市場|超级市场/i.test(t)) return "cluster:parknshop-88";
+    if (/利物浦對熱刺|liverpool vs spurs|英聯盃|carabao cup/i.test(t))
+      return "cluster:lfc-spurs-carabao";
+    if (/消费券|消費券|^补贴$|^補貼$/i.test(t)) return "cluster:hk-vouchers";
+    if (/银色债券|銀色債券|銀.?債|银.?债/i.test(t)) return "cluster:silver-bond";
+    if (/平陆运河|西部多了一个|沿海城市/i.test(t)) return "cluster:pinglu-canal";
+    if (/一劳永逸解决台湾|崔天凯/i.test(t)) return "cluster:cui-taiwan";
+    if (/习近平南亚之行|南亚之行三大成果/i.test(t)) return "cluster:xi-brics-delhi";
+    if (/问界售后|问界大饭店|问界说明|问界将独立/i.test(t)) return "cluster:aito-seres";
+    if (/黄仁勋表示中国没人谈AI末日|中国没人谈AI末日/i.test(t)) return "cluster:huang-ai-doom";
+    if (/一箭9星|引力一号|直击引力一号/i.test(t)) return "cluster:gravity1-9sat";
+    if (/用AI裁了70多人/i.test(t)) return "cluster:ai-layoffs";
+    if (/一线城市二手房价|楼市基本触底/i.test(t)) return "cluster:tier1-homes";
+    if (/40年房贷全面落地/i.test(t)) return "cluster:mortgage-40y";
+    if (/弟弟离世数周|社恐哥哥无法自理/i.test(t)) return "cluster:hk-brothers";
+    if (/国乒出征亚运会|^亚运会$|王楚钦“一老带四新”/i.test(t)) return "cluster:asian-games-tt";
+    if (/女律师被砸身亡|女子被高空抛物致死/i.test(t)) return "cluster:changchun-brick";
+    if (/纳指跌超200点|美國加息|^加息$/i.test(t)) return "cluster:us-rates";
+    if (/华为\s*造车|任正非曾谈华为不造车|华为高管谈超越苹果|华为ICT目标是成为英伟达/i.test(t))
+      return "cluster:huawei-auto-split";
+    if (/雷军四天四城|小米高管回应澎程/i.test(t)) return "cluster:xiaomi-pengcheng";
     if (/广汽|一汽股份|南北丰田|广汽集团/i.test(t)) return "cluster:gac-faw";
     if (/醫療券|医疗券/i.test(t)) return "cluster:hk-hcv";
     if (/hyrox|joanna wietrzyk/i.test(t)) return "cluster:hyrox";
@@ -537,7 +559,7 @@ function pruneData(data) {
       const gp = h.growthPercent || 0;
       const fromGrowth = gp ? Math.min(100, Math.round(gp / 10)) : 0;
       const fromRank = rankVelocity(h.rank);
-      velocityScore = Math.max(velocityScore, fromGrowth || fromRank);
+      velocityScore = Math.max(velocityScore, fromGrowth, fromRank);
     }
     const cpScore = crossPlatformScore(hits);
     const families = new Set(hits.map((h) => h.platform));
