@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 73,
+  "highlightedCount": 75,
   "events": [
     {
       "title": "Conserving Neon Culture at M+",
@@ -278,9 +278,9 @@
     {
       "title": "Janet Cardiff: The Forty Part Motet at M+",
       "start": "2026-08-15",
-      "end": "2026-12-31",
+      "end": "2027-12-31",
       "region": "hk",
-      "location": "The Studio, M+, West Kowloon",
+      "location": "The Studio, B2, M+, West Kowloon",
       "url": "https://www.mplus.org.hk/en/exhibitions/janet-cardiff-the-forty-part-motet/",
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
@@ -1041,9 +1041,9 @@
     {
       "title": "Herzog & de Meuron: In Focus at M+",
       "start": "2026-09-12",
-      "end": "2027-01-10",
+      "end": "2027-12-31",
       "region": "hk",
-      "location": "M+ Focus Gallery, West Kowloon",
+      "location": "Focus Gallery, L2, M+, West Kowloon",
       "url": "https://www.mplus.org.hk/en/exhibitions/herzog-de-meuron-in-focus/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
@@ -1823,6 +1823,17 @@
       "highlighted": true
     },
     {
+      "title": "International Shenzhen Metal Casting Show 2026",
+      "start": "2026-11-04",
+      "end": "2026-11-07",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/international-shenzhen-metal-casting-show-shenzhen",
+      "sourceDomain": "10times.com",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong International Wine and Spirits Fair 2026 (HKCEC)",
       "start": "2026-11-05",
       "end": "2026-11-07",
@@ -2212,6 +2223,17 @@
       "dateNote": "From 26 Jun 2027",
       "highlightScore": 20,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2027 (HKCEC)",
+      "start": "2027-07-14",
+      "end": "2027-07-20",
+      "region": "hk",
+      "location": "Other Mainland cities,Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 32,
+      "highlighted": true
     },
     {
       "title": "HKTDC World of Snacks 2027 (HKCEC)",
