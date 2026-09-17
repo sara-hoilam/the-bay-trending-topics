@@ -4,18 +4,18 @@ You are a **cloud agent** on repo `sara-hoilam/the-bay-trending-topics` (branch 
 
 ## Deliverable
 
-Refresh **`happenings-events.json`** with upcoming lifestyle events for the **Happenings** tab, then commit and push **`main`**.
+Refresh **`happenings-events.json`** with upcoming lifestyle and entrepreneur events for the **Happenings** tab, then commit and push **`main`**.
 
 ## Required steps
 
-1. Regenerate source links (embeds Lifestyle `happeningsFetch` metadata), then fetch events:
+1. Regenerate source links (embeds Lifestyle / Entrepreneur `happeningsFetch` metadata), then fetch events:
 
    ```bash
    node scripts/generate-source-links-data.mjs
    node scripts/generate-happenings-data.mjs
    ```
 
-   The script reads **every Lifestyle row** in `source-links-data.json`. Fetch methods and listing URLs are defined in `scripts/happenings-fetch-config.mjs` and embedded at generation time — do not hardcode domain logic in the agent run.
+   The script reads **every Lifestyle and Entrepreneur row** in `source-links-data.json`. Fetch methods and listing URLs are defined in `scripts/happenings-fetch-config.mjs` and embedded at generation time — do not hardcode domain logic in the agent run.
 
 2. Browse **lifestyle sources** from `source-links-data.json` (category **Lifestyle**) and add or update events **not** covered by the script:
 
@@ -25,6 +25,8 @@ Refresh **`happenings-events.json`** with upcoming lifestyle events for the **Ha
    | `westk.hk` | M+, Palace Museum, performing arts |
    | `10times.com` | Shenzhen trade shows |
    | `shenzhenmuseum.com` | Museum exhibitions |
+
+   Entrepreneur sources (e.g. `hkstartupsociety.hktdc.com`) are scraped automatically from embedded `listingJSON`; tag those events with `"sourceCategory": "Entrepreneur"`.
 
 3. Each event object:
 
@@ -36,11 +38,13 @@ Refresh **`happenings-events.json`** with upcoming lifestyle events for the **Ha
      "region": "hk|shenzhen|macao|gba|international",
      "location": "City or venue area",
      "url": "https://…",
-     "sourceDomain": "event.hktdc.com"
+     "sourceDomain": "event.hktdc.com",
+     "sourceCategory": "Lifestyle"
    }
    ```
 
    **Region rules:** Hong Kong → `hk`; Shenzhen → `shenzhen`; Macao → `macao`; other GBA cities (Guangzhou, Foshan, etc.) → `gba`; outside GBA (e.g. France/VivaTech) → `international`.
+   **sourceCategory:** `Lifestyle` for lifestyle calendar domains; `Entrepreneur` for Entrepreneur source links.
 
 4. Keep **8–20 upcoming events** (end date ≥ today HKT). Remove events that ended more than 14 days ago. Do **not** duplicate the same fair under multiple titles.
 
