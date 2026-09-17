@@ -1,5 +1,5 @@
 {
-  "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
+  "generatedFrom": "Lifestyle (7) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
   "updatedAt": "2026-09-17",
   "highlightScoreThreshold": 24,
   "highlightedCount": 75,
@@ -14,7 +14,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "The Cabinet at M+",
@@ -26,7 +27,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Things, Spaces, Interactions at M+",
@@ -38,7 +40,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shanshui: Echoes and Signals at M+",
@@ -50,7 +53,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Danh Vo in Situ: Akari by Noguchi at M+",
@@ -62,7 +66,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Making It Matters at M+",
@@ -74,7 +79,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Nakagin and Kiyotomo at M+",
@@ -86,7 +92,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "M+ Sigg Collection: Inner Worlds",
@@ -97,7 +104,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/m-sigg-collection-inner-worlds/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Art Plaza Project — Hong Kong Palace Museum",
@@ -108,7 +116,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-the-art-plaza-project-at-the-hong-kong-palace-museum",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Heavenly Horses — Hong Kong Palace Museum",
@@ -119,7 +128,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/heavenly-horses-masterpieces-from-the-palace-museum",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Treasures of Global Jewellery — HK Palace Museum",
@@ -130,7 +140,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/treasures-of-global-jewellery-from-the-metropolitan-museum-of-art-the-body-transformed",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Myth into Art — HK Palace Museum",
@@ -141,7 +152,8 @@
       "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-unveils-exciting-2026-exhibition-lineup-with-nine-new-exhibitions-showcasing-chinese-treasures-and-world-art-masterpieces",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Pet Love — Cats and Dogs World",
@@ -152,7 +164,8 @@
       "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=659c5f681ef04429a67813e8aa3502b9&type=2",
       "sourceDomain": "shenzhenmuseum.com",
       "highlightScore": 12,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Heri Dono: Fermentation of the Mind at M+",
@@ -163,7 +176,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/heri-dono-fermentation-of-the-mind/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Wael Shawky: I Am Hymns of the New Temples at M+",
@@ -174,7 +188,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/wael-shawky-i-am-hymns-of-the-new-temples/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Forbidden City and the World — HK Palace Museum",
@@ -185,7 +200,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-the-forbidden-city-and-the-world-cultural-encounters",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Joyful Encounters — HK Palace Museum",
@@ -196,7 +212,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/joyful-encounters-the-connoisseurship-and-art-of-wong-kwan-shut",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Design Ah! Everyday Design at M+",
@@ -207,7 +224,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/design-ah-experience-the-wonder-of-everyday-design/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Brilliance — Ming Dynasty Ceramic Treasures",
@@ -218,7 +236,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/brilliance-ming-dynasty-ceramic-treasures-from-the-palace-museum-1368-1644",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Encore! Stair in the Dark Favourites at M+",
@@ -229,7 +248,8 @@
       "url": "https://www.mplus.org.hk/en/cinema/encore-stair-in-the-dark-favourites/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Stair in the Dark — Big Leap Forward at M+",
@@ -240,7 +260,8 @@
       "url": "https://www.mplus.org.hk/en/cinema/stair-in-the-dark-big-leap-forward/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "A Day in the City — Hong Kong Palace Museum",
@@ -251,7 +272,8 @@
       "url": "https://www.hkpm.org.hk/en/exhibition/the-hong-kong-jockey-club-series-a-day-in-the-city-an-experimental-study-of-things-across-time",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Andy Warhol: Screen Tests, Sleep at M+",
@@ -262,7 +284,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/andy-warhol-screen-tests-sleep/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "CATS The Musical at Xiqu Centre",
@@ -273,7 +296,8 @@
       "url": "https://www.westk.hk/en/event/cats-musical",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Janet Cardiff: The Forty Part Motet at M+",
@@ -285,7 +309,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Mak Mak Experience Hub",
@@ -296,6 +321,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 52,
       "highlighted": true
     },
@@ -308,6 +334,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -320,6 +347,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -332,6 +360,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -344,6 +373,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -356,6 +386,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -368,6 +399,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -380,6 +412,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -392,6 +425,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 14,
       "highlighted": false
     },
@@ -404,6 +438,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -416,6 +451,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -428,6 +464,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -440,6 +477,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 10,
       "highlighted": false
     },
@@ -452,6 +490,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 10,
       "highlighted": false
     },
@@ -464,6 +503,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -476,6 +516,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 14,
       "highlighted": false
     },
@@ -488,6 +529,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 14,
       "highlighted": false
     },
@@ -500,6 +542,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -512,6 +555,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -524,6 +568,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -536,6 +581,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -548,6 +594,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -560,6 +607,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -572,6 +620,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -584,6 +633,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -596,6 +646,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -608,7 +659,8 @@
       "url": "https://10times.com/e1hk-g4hg-k1d1-7-chuhaiwang-global-cross-border-e-commerce-selection-exhibition",
       "sourceDomain": "10times.com",
       "highlightScore": 10,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "IEAE Shenzhen 2026 — Electronics & Smart Appliances",
@@ -619,7 +671,8 @@
       "url": "https://10times.com/e1xd-07rr-02kh",
       "sourceDomain": "10times.com",
       "highlightScore": 10,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "14 upcoming events at Shenzhen's two exhibition centers in September",
@@ -629,6 +682,7 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/03/content_32162383.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -640,6 +694,7 @@
       "location": "Hong Kong",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/03/content_32162400.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -652,7 +707,8 @@
       "url": "https://www.mplus.org.hk/en/events/mplus-at-night-sonic-phantoms/",
       "sourceDomain": "westk.hk",
       "highlightScore": 8,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Inmates and Juvenile Delinquents’ Handicraft Exhibition 2026",
@@ -663,6 +719,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 10,
       "highlighted": false
     },
@@ -675,6 +732,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 40,
       "highlighted": true
     },
@@ -687,6 +745,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -699,6 +758,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -711,6 +771,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -723,6 +784,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 20,
       "highlighted": false
     },
@@ -735,6 +797,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -747,6 +810,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -759,6 +823,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -771,6 +836,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -783,6 +849,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -795,6 +862,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -807,6 +875,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 20,
       "highlighted": false
     },
@@ -819,6 +888,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 54,
       "highlighted": true
     },
@@ -830,6 +900,7 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/07/content_32165809.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -842,6 +913,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -854,6 +926,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 44,
       "highlighted": true
     },
@@ -866,7 +939,8 @@
       "url": "https://10times.com/cioe",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Elexcon 2026",
@@ -877,7 +951,8 @@
       "url": "https://10times.com/elexcon",
       "sourceDomain": "10times.com",
       "highlightScore": 10,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shenzhen International Embedded Exhibition 2026",
@@ -888,7 +963,8 @@
       "url": "https://10times.com/e1dk-591x-p5kf-d",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shenzhen International Integrated Circuit Industry Exhibition 2026",
@@ -899,7 +975,8 @@
       "url": "https://10times.com/e1dd-p4k7-p5z2-z",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shenzhen International Jewellery Fair 2026",
@@ -910,7 +987,8 @@
       "url": "https://10times.com/shenzhen-international-jewellery",
       "sourceDomain": "10times.com",
       "highlightScore": 34,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Felicidade Tipsy Weekend",
@@ -921,6 +999,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -933,7 +1012,8 @@
       "url": "https://10times.com/e117-ddzs-pzs1-1",
       "sourceDomain": "10times.com",
       "highlightScore": 36,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Paintings glow at Yan Jingliang's 'Silk Road Luminous Convergence'",
@@ -943,6 +1023,7 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/11/content_32172792.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -954,6 +1035,7 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/11/content_32169366.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -966,6 +1048,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 66,
       "highlighted": true
     },
@@ -978,6 +1061,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -990,6 +1074,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 34,
       "highlighted": true
     },
@@ -1002,6 +1087,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 14,
       "highlighted": false
     },
@@ -1015,7 +1101,8 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
       "highlighted": false,
-      "dateNote": "Ongoing"
+      "dateNote": "Ongoing",
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Rediscoveries at M+",
@@ -1026,7 +1113,8 @@
       "url": "https://www.mplus.org.hk/en/cinema/rediscoveries/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "34th Macao International Fireworks Display Contest",
@@ -1037,6 +1125,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 50,
       "highlighted": true
     },
@@ -1049,6 +1138,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1061,6 +1151,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -1073,6 +1164,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1085,6 +1177,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1097,6 +1190,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1108,6 +1202,7 @@
       "location": "The Venetian Arena, Macao",
       "url": "https://www.ticketflap.com/",
       "sourceDomain": "ticketflap.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -1120,6 +1215,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1131,6 +1227,7 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/14/content_32173067.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -1142,6 +1239,7 @@
       "location": "International",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/14/content_32172804.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 22,
       "highlighted": false
     },
@@ -1154,7 +1252,8 @@
       "url": "https://10times.com/shenzhen-cn?month=september",
       "sourceDomain": "10times.com",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "FLOWEXPO 2026 — Fluid Technology & Valves",
@@ -1165,7 +1264,8 @@
       "url": "https://10times.com/e1g0-5d1s-6hdz-g-guangdong-international-fluid-technology-exhibition-semiconductor-new-energy-valve-pipeline-exhibition",
       "sourceDomain": "10times.com",
       "highlightScore": 10,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "PCRE EXPO 2026 — Power Electronics & Renewables",
@@ -1176,7 +1276,8 @@
       "url": "https://10times.com/shenzhen-cn?month=september",
       "sourceDomain": "10times.com",
       "highlightScore": 26,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "When landscape becomes memory: Yan Shanchun exhibition in SZ",
@@ -1186,6 +1287,7 @@
       "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-09/15/content_32172823.htm",
       "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -1198,6 +1300,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -1210,7 +1313,8 @@
       "url": "https://10times.com/e1zx-dgpf-5743",
       "sourceDomain": "10times.com",
       "highlightScore": 32,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "CPHI & PMEC Shenzhen 2026",
@@ -1221,7 +1325,8 @@
       "url": "https://10times.com/e1d4-d0r5-r5sg-r",
       "sourceDomain": "10times.com",
       "highlightScore": 10,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Double Keys & Harmonies – A Concert by Wendy & Gloria",
@@ -1232,6 +1337,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 20,
       "highlighted": false
     },
@@ -1244,7 +1350,8 @@
       "url": "https://10times.com/e1kk-4rx6-h5k9",
       "sourceDomain": "10times.com",
       "highlightScore": 26,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "2026 SUPER JUNIOR-83z FANCON TOUR [1983] in MACAU",
@@ -1255,6 +1362,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1267,6 +1375,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1279,6 +1388,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1291,6 +1401,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 20,
       "highlighted": false
     },
@@ -1303,6 +1414,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -1315,7 +1427,8 @@
       "url": "https://10times.com/e1hk-z20k-z5pd-4-china-shenzhen-international-pet-expo",
       "sourceDomain": "10times.com",
       "highlightScore": 36,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "When the World is Your Enemy — Epic Edition",
@@ -1326,7 +1439,8 @@
       "url": "https://www.westk.hk/en/event/when-the-world-is-your-enemy",
       "sourceDomain": "westk.hk",
       "highlightScore": 16,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "“Full Moon and Floral Scent” Mid-Autumn Evening Celebration",
@@ -1337,6 +1451,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1349,6 +1464,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -1361,6 +1477,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 30,
       "highlighted": true
     },
@@ -1373,6 +1490,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 22,
       "highlighted": false
     },
@@ -1385,6 +1503,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1397,7 +1516,8 @@
       "url": "https://10times.com/e1hk-dk38-ds14-g-shenzhen-international-smart-port-equipment-exhibition",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "2026 STAYC FAN CONCERT TOUR [STAY CLOSER] IN MACAU",
@@ -1408,6 +1528,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -1420,6 +1541,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 0,
       "highlighted": false
     },
@@ -1432,6 +1554,7 @@
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
+      "sourceCategory": "Lifestyle",
       "highlightScore": 68,
       "highlighted": true
     },
@@ -1444,7 +1567,8 @@
       "url": "https://www.westk.hk/en/whats-on",
       "sourceDomain": "westk.hk",
       "highlightScore": 8,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Contemporary Design in Dialogue with Palace Display",
@@ -1456,7 +1580,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 30 Sep 2026",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Xu Bing: You Inhuman Thing at M+",
@@ -1467,7 +1592,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/xu-bing-you-inhuman-thing/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "FIRSTborn Dance Series at Xiqu Centre",
@@ -1478,7 +1604,8 @@
       "url": "https://www.westk.hk/en/whats-on",
       "sourceDomain": "westk.hk",
       "highlightScore": 12,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Stair in the Dark — Laughing Matters at M+",
@@ -1489,7 +1616,8 @@
       "url": "https://www.mplus.org.hk/en/cinema/stair-in-the-dark-laughing-matters/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Cross-Cuts: Screening and Artists’ Talk at M+",
@@ -1500,7 +1628,8 @@
       "url": "https://www.mplus.org.hk/en/events/cross-cuts-screening-and-artists-talk/",
       "sourceDomain": "westk.hk",
       "highlightScore": 8,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Tea and Chinese Music at Xiqu Centre",
@@ -1511,7 +1640,8 @@
       "url": "https://www.westk.hk/en/whats-on",
       "sourceDomain": "westk.hk",
       "highlightScore": 8,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "WestK × HK Phil: Echoes on the Horizon",
@@ -1522,6 +1652,19 @@
       "url": "https://www.westk.hk/en/whats-on",
       "sourceDomain": "westk.hk",
       "highlightScore": 8,
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
+    },
+    {
+      "title": "HKUST-SINO One Million Dollar Entrepreneurship Competition 2026",
+      "start": "2026-10-12",
+      "end": "2026-10-12",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://hkstartupsociety.hktdc.com/en/events/hkust-sino-one-million-dollar-entrepreneurship-competition-2026",
+      "sourceDomain": "hkstartupsociety.hktdc.com",
+      "sourceCategory": "Entrepreneur",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -1533,7 +1676,8 @@
       "url": "https://10times.com/e14r-gzdh-5g09",
       "sourceDomain": "10times.com",
       "highlightScore": 34,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Connexion Shenzhen 2026",
@@ -1544,7 +1688,8 @@
       "url": "https://10times.com/e10r-gzf8-xx48",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Hotel & Shop Plus Shenzhen 2026",
@@ -1555,7 +1700,8 @@
       "url": "https://10times.com/e1h3-p8s2-x2dd-s",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HOTELEX Shenzhen 2026",
@@ -1566,7 +1712,8 @@
       "url": "https://10times.com/e1r1-g3z3-f1dx",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shenzhen International Health and Nutrition Products Exhibition",
@@ -1577,7 +1724,8 @@
       "url": "https://10times.com/e1r1-g1zd-0d3r",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2026 (HKCEC)",
@@ -1587,6 +1735,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkelectronicsfairae",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -1598,6 +1747,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/electronicasia",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -1610,7 +1760,8 @@
       "url": "https://10times.com/tct-shenzhen-shenzhen",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "ENHYPEN WORLD TOUR 'BLOOD SAGA' IN MACAU",
@@ -1620,6 +1771,7 @@
       "location": "Galaxy Arena, Macao",
       "url": "https://www.ticketflap.com/",
       "sourceDomain": "ticketflap.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 32,
       "highlighted": true
     },
@@ -1632,7 +1784,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "China (Shenzhen) International Gifts and Home Products Fair",
@@ -1643,7 +1796,8 @@
       "url": "https://10times.com/china-gifts-home",
       "sourceDomain": "10times.com",
       "highlightScore": 42,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Fashion Source Shenzhen 2026",
@@ -1654,7 +1808,8 @@
       "url": "https://10times.com/shenzhen-fashion-accessories-exhibition",
       "sourceDomain": "10times.com",
       "highlightScore": 10,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Windows into Heaven — HK Palace Museum",
@@ -1665,7 +1820,8 @@
       "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-unveils-exciting-2026-exhibition-lineup-with-nine-new-exhibitions-showcasing-chinese-treasures-and-world-art-masterpieces",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "China Marine Economy Expo 2026",
@@ -1676,7 +1832,8 @@
       "url": "https://10times.com/e1h5-r7x4-s9rp-d-china-marine-equipment-expo",
       "sourceDomain": "10times.com",
       "highlightScore": 34,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong International Outdoor and Tech Light Expo 2026 (AsiaWorld-Expo)",
@@ -1686,6 +1843,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/hkotlexpo/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 38,
       "highlighted": true
     },
@@ -1697,6 +1855,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/ecoexpoasia",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -1709,7 +1868,8 @@
       "url": "https://10times.com/automotive-world-china",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "C-Touch & Display 2026",
@@ -1720,7 +1880,8 @@
       "url": "https://10times.com/internationaltouch-screen-shenzhen",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "IC Packaging Fair (ICPF) 2026",
@@ -1731,7 +1892,8 @@
       "url": "https://10times.com/e1d4-02k9-dkxx-g",
       "sourceDomain": "10times.com",
       "highlightScore": 32,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "NEPCON Asia 2026",
@@ -1742,7 +1904,8 @@
       "url": "https://10times.com/nepconasia",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "S-Factory Expo Shenzhen 2026",
@@ -1753,7 +1916,8 @@
       "url": "https://10times.com/s-factory-expo-china",
       "sourceDomain": "10times.com",
       "highlightScore": 34,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shenzhen International Film & Tape Exhibition 2026",
@@ -1764,7 +1928,8 @@
       "url": "https://10times.com/film-expo",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong International Lighting Fair (Autumn Edition) 2026 (HKCEC)",
@@ -1774,6 +1939,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hklightingfairae/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -1786,7 +1952,8 @@
       "url": "https://www.mplus.org.hk/en/cinema/mplus-restored-festival-2026/",
       "sourceDomain": "westk.hk",
       "highlightScore": 38,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "DMP China 2026 — Mould, Metalworking & Plastics",
@@ -1797,7 +1964,8 @@
       "url": "https://10times.com/china-dmp-international-mould-metalworking-plastic",
       "sourceDomain": "10times.com",
       "highlightScore": 18,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Greater Bay Area Industrial Expo 2026",
@@ -1808,7 +1976,8 @@
       "url": "https://10times.com/greaterbayexpo",
       "sourceDomain": "10times.com",
       "highlightScore": 34,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "International Shenzhen Metal Casting Show 2026",
@@ -1819,7 +1988,8 @@
       "url": "https://10times.com/international-shenzhen-metal-casting-show-shenzhen",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Qing Court in Four Seasons — HK Palace Museum",
@@ -1831,7 +2001,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 4 Nov 2026",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong International Optical Fair 2026",
@@ -1841,6 +2012,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Qianhai Shekou,Nansha New Area,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkopticalfair/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -1852,6 +2024,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/hkwinefair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -1864,7 +2037,8 @@
       "url": "https://www.mplus.org.hk/en/events/mplus-at-night-five-with-us/",
       "sourceDomain": "westk.hk",
       "highlightScore": 8,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "DesignInspire 2026",
@@ -1874,6 +2048,7 @@
       "location": "Hong Kong",
       "url": "https://designinspire.hktdc.com?utm_source=Event+Listing&utm_medium=banner&utm_campaign=Event+Listing",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
     },
@@ -1886,7 +2061,8 @@
       "url": "https://www.mplus.org.hk/en/cinema/lightcatcher-the-cinematography-of-mark-lee-ping-bing/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "China Hi-Tech Fair (CHTF) 2026",
@@ -1897,7 +2073,8 @@
       "url": "https://10times.com/china-high-tech",
       "sourceDomain": "10times.com",
       "highlightScore": 32,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "CIEE 2026 — Shenzhen International Electronics Exhibition",
@@ -1908,7 +2085,8 @@
       "url": "https://10times.com/e1dd-5847-sspf-p",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Shenzhen International Scientific Instruments Exhibition",
@@ -1919,7 +2097,8 @@
       "url": "https://10times.com/e14d-zp1f-0kss-7",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "CILF 2026 — Shenzhen Logistics & Supply Chain Fair",
@@ -1930,7 +2109,8 @@
       "url": "https://10times.com/shenzhen-logistics-transportation",
       "sourceDomain": "10times.com",
       "highlightScore": 24,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Clockenflap 2026",
@@ -1942,6 +2122,7 @@
       "sourceDomain": "ticketflap.com",
       "featured": true,
       "dateNote": "Dates TBD",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 72,
       "highlighted": true
     },
@@ -1954,7 +2135,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/lin-tianmiao-wang-gongxin/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "CMEH 2026 — Shenzhen International Medical Devices Exhibition",
@@ -1965,7 +2147,8 @@
       "url": "https://10times.com/international-medical-devices-expo",
       "sourceDomain": "10times.com",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Buddhist Art along the Silk Roads — HK Palace Museum",
@@ -1976,7 +2159,8 @@
       "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-unveils-exciting-2026-exhibition-lineup-with-nine-new-exhibitions-showcasing-chinese-treasures-and-world-art-masterpieces",
       "sourceDomain": "westk.hk",
       "highlightScore": 28,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "CIBE 2026 — China International Beauty Expo Shenzhen",
@@ -1987,7 +2171,8 @@
       "url": "https://10times.com/cibe-shenzhen",
       "sourceDomain": "10times.com",
       "highlightScore": 40,
-      "highlighted": true
+      "highlighted": true,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
@@ -1997,6 +2182,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/hkbabyfair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
     },
@@ -2008,6 +2194,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkstationeryfair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -2019,6 +2206,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hktoyfair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -2030,6 +2218,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/hkeducationexpo",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -2043,7 +2232,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 6 Feb 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "LuYang: DOKU—Māyā Field at M+",
@@ -2055,7 +2245,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 27 Feb 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong International Diamond, Gem & Pearl Show 2027 (AsiaWorld-Expo)",
@@ -2065,6 +2256,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/hkdgp/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 38,
       "highlighted": true
     },
@@ -2076,6 +2268,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/hkjewellery/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 22,
       "highlighted": false
     },
@@ -2088,7 +2281,8 @@
       "url": "https://www.mplus.org.hk/en/exhibitions/hong-kong-here-and-beyond-2027/",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong Electronics Fair (Spring Edition) 2027 (HKCEC)",
@@ -2098,6 +2292,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/hkelectronicsfairse",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -2109,6 +2304,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/innoex",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -2120,6 +2316,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hklightingfairse/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -2131,6 +2328,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://smartlightingexpo.hktdc.com/",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -2142,6 +2340,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/hklicensingshow/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 14,
       "highlighted": false
     },
@@ -2153,6 +2352,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/homeinstyle/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -2164,6 +2364,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/fashioninstyle/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -2175,6 +2376,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/hkgiftspremiumfair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
     },
@@ -2186,6 +2388,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Other Mainland cities,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/deluxeprintpackhk",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 12,
       "highlighted": false
     },
@@ -2197,6 +2400,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/hkprintpackfair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -2208,6 +2412,7 @@
       "location": "Hong Kong",
       "url": "https://www.hktdc.com/event/hkmedicalfair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -2221,7 +2426,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 12 Jun 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Geoffrey Bawa: Architecture for the Senses at M+",
@@ -2233,7 +2439,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 26 Jun 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Hong Kong Book Fair 2027 (HKCEC)",
@@ -2243,6 +2450,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkbookfair/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 58,
       "highlighted": true
     },
@@ -2254,6 +2462,7 @@
       "location": "Other Mainland cities,Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 32,
       "highlighted": true
     },
@@ -2265,6 +2474,7 @@
       "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area,Other Mainland cities",
       "url": "https://www.hktdc.com/event/worldofsnacks/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 16,
       "highlighted": false
     },
@@ -2278,7 +2488,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 31 Jul 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "HKTDC Food Expo PRO 2027 (HKCEC)",
@@ -2288,6 +2499,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/foodexpopro/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -2299,6 +2511,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkteafair",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 36,
       "highlighted": true
     },
@@ -2310,6 +2523,7 @@
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkfoodexpo/en",
       "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
     },
@@ -2323,7 +2537,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 4 Sep 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Do Ho Suh: Belonging at M+",
@@ -2335,7 +2550,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 25 Sep 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     },
     {
       "title": "Sigg Prize 2027 at M+",
@@ -2347,7 +2563,8 @@
       "sourceDomain": "westk.hk",
       "dateNote": "From 30 Oct 2027",
       "highlightScore": 20,
-      "highlighted": false
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
     }
   ]
 }

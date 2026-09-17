@@ -204,8 +204,85 @@ function parseJsonLdEvents(html, sourceDomain, listUrl) {
   return events;
 }
 
+/** Extract `var listingJSON = [...]` from HK Startup Society events HTML. */
+export function extractListingJson(html) {
+  const marker = "var listingJSON = ";
+  const idx = html.indexOf(marker);
+  if (idx < 0) return [];
+  const start = idx + marker.length;
+  let i = start;
+  let depth = 0;
+  let inStr = false;
+  let esc = false;
+  for (; i < html.length; i++) {
+    const c = html[i];
+    if (inStr) {
+      if (esc) esc = false;
+      else if (c === "\\") esc = true;
+      else if (c === '"') inStr = false;
+      continue;
+    }
+    if (c === '"') {
+      inStr = true;
+      continue;
+    }
+    if (c === "[") depth++;
+    else if (c === "]") {
+      depth--;
+      if (depth === 0) {
+        i++;
+        break;
+      }
+    }
+  }
+  if (depth !== 0) return [];
+  try {
+    const data = JSON.parse(html.slice(start, i));
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+}
+
+function absoluteStartupSocietyUrl(link, listUrl) {
+  if (!link) return listUrl;
+  if (/^https?:\/\//i.test(link)) return link;
+  try {
+    return new URL(link, "https://hkstartupsociety.hktdc.com").href;
+  } catch {
+    return listUrl;
+  }
+}
+
+function parseStartupSocietyListingJson(html, sourceDomain, listUrl) {
+  const origin = "https://hkstartupsociety.hktdc.com";
+  return extractListingJson(html)
+    .map((item) => {
+      const title = truncateTitle(decodeHtml(String(item.title ?? "").trim()));
+      const start = String(item.startDate ?? item.startDate ?? item.start ?? "").slice(0, 10);
+      if (!title || !/^\d{4}-\d{2}-\d{2}$/.test(start)) return null;
+      const endRaw = String(item.endDate ?? item.endDate ?? item.end ?? start).slice(0, 10);
+      const end = /^\d{4}-\d{2}-\d{2}$/.test(endRaw) ? endRaw : start;
+      const locText = decodeHtml(String(item.location ?? "").trim());
+      const blob = `${title} ${locText}`;
+      const inferred = inferRegion(blob);
+      const link = item.link ?? item.url ?? "";
+      return {
+        title,
+        start,
+        end,
+        region: locText ? inferred.region : undefined,
+        location: locText || undefined,
+        url: absoluteStartupSocietyUrl(link, listUrl || `${origin}/en/events`),
+        sourceDomain,
+      };
+    })
+    .filter(Boolean);
+}
+
 const HTML_PARSERS = {
   eyeshenzhen: parseEyeshenzhen,
+  "startup-society-listing-json": parseStartupSocietyListingJson,
   generic: (html, sourceDomain, listUrl) => parseJsonLdEvents(html, sourceDomain, listUrl),
 };
 

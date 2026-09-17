@@ -138,6 +138,12 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `group.accor.com` (Accor anticipated openings)
 - `ihg.com` (IHG new & upcoming hotels)
 
+## Entrepreneur (1 domain)
+
+Startup / entrepreneurship event calendars for the **Happenings** Entrepreneur filter. Not Daily Brief news sources.
+
+- `hkstartupsociety.hktdc.com` (HK Startup Society events) — https://hkstartupsociety.hktdc.com/en/events
+
 ## Hotels (10 listings)
 
 Official hotel / integrated-resort press rooms for the **Hotel Press** tab (awards and good news, last 14 days). Not Daily Brief news sources. Duplicate domains are allowed when one newsroom hosts more than one property listing.

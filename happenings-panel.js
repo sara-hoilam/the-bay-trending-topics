@@ -14,6 +14,7 @@
     { id: "macao", label: "Macao" },
     { id: "gba", label: "Other GBA" },
     { id: "international", label: "International" },
+    { id: "entrepreneur", label: "Entrepreneur" },
   ];
 
   var REGIONS = {
@@ -162,6 +163,9 @@
 
   function matchesFilter(ev, filter) {
     if (filter === "all") return true;
+    if (filter === "entrepreneur") {
+      return ev.sourceCategory === "Entrepreneur";
+    }
     return normalizeRegion(ev) === filter;
   }
 
@@ -285,7 +289,7 @@
   function renderSourcesBar() {
     if (!state.sources.length) return "";
     var html = '<div class="hp-sources-bar">';
-    html += '<p class="hp-sources-bar-label">Lifestyle calendar sources</p>';
+    html += '<p class="hp-sources-bar-label">Event calendar sources</p>';
     html += '<ul class="hp-sources-chips">';
     state.sources.forEach(function (src) {
       var count = state.eventCountByDomain[src.domain] || 0;
@@ -326,7 +330,7 @@
     var html = renderSourcesBar();
     html += '<div class="hp-layout">';
 
-    html += '<div class="hp-filters" role="tablist" aria-label="Event region filter">';
+    html += '<div class="hp-filters" role="tablist" aria-label="Event filter">';
     FILTERS.forEach(function (f) {
       html +=
         '<button type="button" class="hp-filter' +
@@ -472,7 +476,7 @@
           return Object.assign({}, ev, { region: normalizeRegion(ev) });
         });
         state.sources = (results[1].sources || []).filter(function (s) {
-          return s.category === "Lifestyle";
+          return s.category === "Lifestyle" || s.category === "Entrepreneur";
         });
         state.eventCountByDomain = {};
         state.sources.forEach(function (src) {
@@ -494,11 +498,19 @@
         }
         var meta = document.getElementById("hp-meta");
         if (meta) {
+          var lifestyleN = state.sources.filter(function (s) {
+            return s.category === "Lifestyle";
+          }).length;
+          var entrepreneurN = state.sources.filter(function (s) {
+            return s.category === "Entrepreneur";
+          }).length;
           meta.textContent =
             state.events.length +
             " events · " +
-            state.sources.length +
-            " lifestyle sources";
+            lifestyleN +
+            " lifestyle + " +
+            entrepreneurN +
+            " entrepreneur sources";
         }
         render();
       })
