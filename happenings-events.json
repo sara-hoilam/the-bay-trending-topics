@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "highlightScoreThreshold": 24,
   "highlightedCount": 75,
   "events": [
@@ -285,50 +285,6 @@
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "highlightScore": 20,
-      "highlighted": false
-    },
-    {
-      "title": "Pan Yuliang exhibition takes visitors on a cinematic journey",
-      "start": "2026-08-24",
-      "end": "2026-10-23",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/24/content_32156301.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "Explore future tech at two fairs in Bao'an",
-      "start": "2026-08-27",
-      "end": "2026-10-26",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/27/content_32157496.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "Children's arts exhibition opens in Macao",
-      "start": "2026-08-29",
-      "end": "2026-10-28",
-      "region": "macao",
-      "location": "Macao",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/29/content_32160167.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "'Vessel as Rhetoric' painting exhibition opens at L-Art Gallery in Futian",
-      "start": "2026-08-31",
-      "end": "2026-10-30",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-08/31/content_32160353.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -980,6 +936,17 @@
       "highlighted": true
     },
     {
+      "title": "Paintings glow at Yan Jingliang's 'Silk Road Luminous Convergence'",
+      "start": "2026-09-11",
+      "end": "2026-09-25",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/11/content_32172792.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
       "title": "Exhibition examines urban life through cross-media art",
       "start": "2026-09-11",
       "end": "2026-11-10",
@@ -1145,6 +1112,17 @@
       "highlighted": true
     },
     {
+      "title": "French artists hold exhibitions at Pingshan Art Museum",
+      "start": "2026-09-12",
+      "end": "2026-11-13",
+      "region": "shenzhen",
+      "location": "Pingshan Art Museum, Pingshan",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/14/content_32173067.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
       "title": "2026 Mong-Ha Villas Cultural & Creative Market Series Activities – Chill Relax Buzzed Aut…",
       "start": "2026-09-13",
       "end": "2026-09-14",
@@ -1154,6 +1132,17 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Picasso, Dalí and Miró prints shown at 'Charm of Plurality'",
+      "start": "2026-09-14",
+      "end": "2026-10-07",
+      "region": "shenzhen",
+      "location": "Guan Shanyue Art Museum, Futian",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/14/content_32172804.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -1188,6 +1177,17 @@
       "sourceDomain": "10times.com",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "When landscape becomes memory: Yan Shanchun exhibition in SZ",
+      "start": "2026-09-15",
+      "end": "2026-11-14",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/15/content_32172823.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
     },
     {
       "title": "“Encounter Ancient China through Cultural and Creative Products” Exhibition in Macau",
@@ -1459,6 +1459,17 @@
       "highlighted": true
     },
     {
+      "title": "Xu Bing: You Inhuman Thing at M+",
+      "start": "2026-10-05",
+      "end": "2027-01-03",
+      "region": "hk",
+      "location": "Grand Stair, M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/xu-bing-you-inhuman-thing/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "FIRSTborn Dance Series at Xiqu Centre",
       "start": "2026-10-08",
       "end": "2026-10-13",
@@ -1668,17 +1679,6 @@
       "highlighted": true
     },
     {
-      "title": "Eco Expo Asia 2026 (AsiaWorld-Expo)",
-      "start": "2026-10-26",
-      "end": "2026-10-29",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.hktdc.com/event/ecoexpoasia",
-      "sourceDomain": "event.hktdc.com",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong International Outdoor and Tech Light Expo 2026 (AsiaWorld-Expo)",
       "start": "2026-10-26",
       "end": "2026-10-29",
@@ -1687,6 +1687,17 @@
       "url": "https://www.hktdc.com/event/hkotlexpo/en",
       "sourceDomain": "event.hktdc.com",
       "highlightScore": 38,
+      "highlighted": true
+    },
+    {
+      "title": "Eco Expo Asia 2026 (AsiaWorld-Expo)",
+      "start": "2026-10-26",
+      "end": "2026-10-29",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/ecoexpoasia",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 28,
       "highlighted": true
     },
     {
