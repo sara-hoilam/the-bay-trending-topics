@@ -117,6 +117,24 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/朱振國|廖智勇/i.test(t)) return "cluster:chu-chun-kwok";
+    if (/五年規劃|五年规划|照顧 者|照顾者津貼|施政報告2026|施政报告2026/i.test(t))
+      return "cluster:hk-policy-address";
+    if (/^918$|九一八|勿忘九一八|勿忘！勿忘/i.test(t)) return "cluster:918-95";
+    if (/第23届东博会|东博会峰会/i.test(t)) return "cluster:caexpo-2026";
+    if (/楼市进入.?二手房|全款买房的人越来越多/i.test(t)) return "cluster:secondhand-homes";
+    if (/南医大导师被造谣/i.test(t)) return "cluster:smu-rumour";
+    if (/中俄安理会投下反对票|中国和俄罗斯投下反对票/i.test(t)) return "cluster:unsc-iran";
+    if (/英特尔市值一夜暴涨/i.test(t)) return "cluster:intel-rally";
+    if (/华为发布全新AI计算架构|华为突破鸿蒙依旧靠单核/i.test(t))
+      return "cluster:huawei-ai-arch";
+    if (/小鹏G9L价格炸裂|小鹏G9L起步即满配/i.test(t)) return "cluster:xpeng-g9l";
+    if (/上1休1上5休3/i.test(t)) return "cluster:work-roster";
+    if (/机顶盒即将退场/i.test(t)) return "cluster:set-top-box";
+    if (/曼城對諾里奇|man city vs norwich/i.test(t)) return "cluster:man-city";
+    if (/今日亚运会半决赛中国男篮|亚运会有日本选手被分配/i.test(t))
+      return "cluster:asian-games-bball";
+    if (/中医暂不纳入首批医保/i.test(t)) return "cluster:tcm-nhsa";
     if (/施政報告|施政报告|醫療券|医疗券/i.test(t)) return "cluster:hk-policy-address";
     if (/百\s*佳|parknshop|超級\s*市場|超级市场/i.test(t)) return "cluster:parknshop-88";
     if (/利物浦對熱刺|liverpool vs spurs|英聯盃|carabao cup/i.test(t))
@@ -126,7 +144,8 @@ function pruneData(data) {
     if (/平陆运河|西部多了一个|沿海城市/i.test(t)) return "cluster:pinglu-canal";
     if (/一劳永逸解决台湾|崔天凯/i.test(t)) return "cluster:cui-taiwan";
     if (/习近平南亚之行|南亚之行三大成果/i.test(t)) return "cluster:xi-brics-delhi";
-    if (/问界售后|问界大饭店|问界说明|问界将独立/i.test(t)) return "cluster:aito-seres";
+    if (/问界售后|问界大饭店|问界说明|问界将独立|问界独立迎接暴风雨|问界撤出鸿蒙智行|赛力斯华为分家|华为赛力斯合作模式|^赛力斯$/i.test(t))
+      return "cluster:aito-seres";
     if (/黄仁勋表示中国没人谈AI末日|中国没人谈AI末日/i.test(t)) return "cluster:huang-ai-doom";
     if (/一箭9星|引力一号|直击引力一号/i.test(t)) return "cluster:gravity1-9sat";
     if (/用AI裁了70多人/i.test(t)) return "cluster:ai-layoffs";
