@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-09-17",
-  "refreshedAt": "2026-09-17T09:51:01+08:00",
+  "updatedAt": "2026-09-18",
+  "refreshedAt": "2026-09-18T09:32:53+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-03",
-  "windowEnd": "2026-09-17",
-  "count": 13,
+  "windowStart": "2026-09-04",
+  "windowEnd": "2026-09-18",
+  "count": 10,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -143,45 +143,6 @@
       "kind": "good-news",
       "summary": "Macao, September 4, 2026 – Wynn Macau, Limited announced a donation of MOP5 million to support emergency relief and post-disaster recovery efforts in Gyirong County, Xigaze City, Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People's Government in the Macao SAR.",
       "rank": 10
-    },
-    {
-      "title": "GEG and Lui Che Woo Family Charitable Foundation Donate MOP10 Million to Support Relief and Recovery Efforts in Xizang",
-      "url": "https://www.galaxyentertainment.com/en/media/press-releases/1211/20260903",
-      "posted": "2026-09-03",
-      "rawDate": "Sep 03, 2026",
-      "hotelGroup": "Galaxy Entertainment",
-      "sourceName": "Galaxy Entertainment",
-      "sourceDomain": "galaxyentertainment.com",
-      "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
-      "kind": "good-news",
-      "summary": "September 3, 2026 – A severe mudslide recently struck Gyirong Port in Gyirong County, Xigaze, Xizang Autonomous Region, causing extensive damage to local transportation networks, infrastructure, and residents' livelihoods, as well as significant casualties and property losses. To support emergency relief and post-disaster recovery efforts, Galaxy Entertainment Group (“GEG”) announced today that, with the…",
-      "rank": 11
-    },
-    {
-      "title": "Sands China Receives Two MICE Honours at M&C Asia Stella Awards 2026",
-      "url": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-09-03/Stella-Awards-2026.html",
-      "posted": "2026-09-03",
-      "rawDate": "Sep.3 Sands China Receives Two MICE Honours at M&C Asia Stella Awards 2026",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "award",
-      "summary": "(Macao, September 3, 2026) – Sands China Ltd. has won two major awards at the eminent M&C Asia Stella Awards 2026, with Sands ® Resorts Macao retaining its Best Integrated Resort (MICE) title and The Venetian ® Macao clinching the Best Meetings Hotel (Macao) . The accolades recognise Sands China’s dedication to delivering exceptional MICE experiences and its positive impact on Asia’s dynamic business events…",
-      "rank": 12
-    },
-    {
-      "title": "Wynn Launches 20th Anniversary Share Award for Team Members",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-launches-20th-anniversary-share-award-for-team-members/s/594944f8-e638-4f42-941a-299b1271baf0",
-      "posted": "2026-09-03",
-      "rawDate": "03 Sep 2026",
-      "hotelGroup": "Wynn",
-      "sourceName": "Wynn Macau Newsroom",
-      "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
-      "kind": "award",
-      "summary": "Macao, September 3, 2026 – As this year marks the company's 20th anniversary in Macao, Wynn Macau, Limited announced a one-time \"Wynn Macau 20th Anniversary Share Award\", under which eligible team members of Wynn Macau and Wynn Palace will be granted shares in Wynn Macau, Limited.",
-      "rank": 13
     }
   ]
 }
