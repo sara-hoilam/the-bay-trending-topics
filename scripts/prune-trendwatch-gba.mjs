@@ -117,6 +117,35 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/做大做强先进制造业|制造业是立国之本/i.test(t))
+      return "cluster:advanced-manufacturing";
+    if (/公积金提取|“安居钱”|安居钱越来越好用|今起公积金/i.test(t))
+      return "cluster:housing-fund-extract";
+    if (/闲鱼.*涉黄|闲鱼暗藏涉黄/i.test(t)) return "cluster:xianyu-vice";
+    if (/湾区升明月/i.test(t)) return "cluster:gba-moonrise";
+    if (/亞運會2026|^亚运会$|潘展乐|今日亚运将决出/i.test(t))
+      return "cluster:asian-games-2026";
+    if (
+      /iPhone18ProMax1T|iPhone18Pro首销|苹果高管谈iPhone|苹果拆分iPhone18|苹果M6芯片/i.test(
+        t,
+      )
+    )
+      return "cluster:iphone18";
+    if (/智界RX发布会|华为引望声明|华为乾崑将持续推进问界|华为阔直板手机/i.test(t))
+      return "cluster:huawei-auto";
+    if (/小米18Pro|卢伟冰确认小米|卢伟冰爆料小米/i.test(t))
+      return "cluster:xiaomi-18pro";
+    if (/董明珠卸任|格力电商换帅/i.test(t)) return "cluster:gree-zhuhai";
+    if (/北大复旦校长|是什么让北大复旦/i.test(t)) return "cluster:ai-education";
+    if (/卡宴降30万/i.test(t)) return "cluster:cayenne-cut";
+    if (/农民交公粮/i.test(t)) return "cluster:grain-pension";
+    if (/挂靠参保偷取社保/i.test(t)) return "cluster:fake-social-insurance";
+    if (/鹏城首发星/i.test(t)) return "cluster:pengcheng-sat";
+    if (/聚能环/i.test(t)) return "cluster:gas-concentrator";
+    if (/廖碧兒/i.test(t)) return "cluster:bernice-liu";
+    if (/阮嘉敏|吳旭東/i.test(t)) return "cluster:yuen-ka-man";
+    if (/^google$|^ai$/i.test(t)) return "cluster:google-ai";
+    if (/阿仙奴|^arsenal$/i.test(t)) return "cluster:arsenal";
     if (/朱振國|廖智勇/i.test(t)) return "cluster:chu-chun-kwok";
     if (/五年規劃|五年规划|照顧 者|照顾者津貼|施政報告2026|施政报告2026/i.test(t))
       return "cluster:hk-policy-address";
