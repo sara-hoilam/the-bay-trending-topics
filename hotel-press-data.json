@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-09-18",
-  "refreshedAt": "2026-09-18T09:32:53+08:00",
+  "updatedAt": "2026-09-21",
+  "refreshedAt": "2026-09-21T09:57:54+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-04",
-  "windowEnd": "2026-09-18",
-  "count": 10,
+  "windowStart": "2026-09-07",
+  "windowEnd": "2026-09-21",
+  "count": 8,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -24,8 +24,47 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "award",
-      "summary": "September 16, 2026 – Galaxy Entertainment Group (“GEG”) garnered four awards at the 2026 IAG Academy IR Awards held yesterday in Manila, Philippines, making it once again the most awarded integrated resort operator in Macau. Among the honors, GEG’s flagship property, Galaxy Macau was named “Best Integrated Resort” for the fourth consecutive year, while also receiving the “Best IR Gaming Floor” award. Meanwhile,…",
+      "summary": "September 16, 2026 – Galaxy Entertainment Group (“GEG”) garnered four awards at the 2026 IAG Academy IR Awards held in Manila, making it once again the most awarded integrated resort operator in Macau. Galaxy Macau was named “Best Integrated Resort” for the fourth consecutive year and “Best IR Gaming Floor,” Capella at Galaxy Macau was named “Best Hotel in an IR” for the second consecutive year, and the “GEG Sports for Good Community Program” received the “Best Individual CSR Initiative” award.",
       "rank": 1
+    },
+    {
+      "title": "The Parisian Macao Celebrates 10th Anniversary with Exclusive Moët & Chandon Dinners and Stunning Drone Shows",
+      "url": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-09-15/pm-10th-anniversary.html",
+      "posted": "2026-09-15",
+      "rawDate": "Sep.15 The Parisian Macao Celebrates 10th Anniversary with Exclusive Moët & Chandon Dinners and Stunning Drone Shows",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Sept. 15, 2026) – To mark a decade of French-inspired hospitality, The Parisian Macao hosted a three-night Moët & Chandon dinner over the past weekend for government officials, VIPs and media. The celebrations at Le Cristal Parisian were paired with anniversary drone shows featuring 1,500 drones.",
+      "rank": 2
+    },
+    {
+      "title": "2026 MSO Sands China Cup – Inclusive Community Basketball Carnival",
+      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-13-mso-basketball-carnival.html",
+      "posted": "2026-09-13",
+      "rawDate": "Sep.13 2026 MSO Sands China Cup – Inclusive Community Basketball Carnival",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Sept. 13, 2026) – Sands China held the 2026 MSO Sands China Cup – Inclusive Community Basketball Carnival at the University of Saint Joseph, attracting over 250 residents from special education schools, community centres, residential care homes and secondary school basketball teams. Co-organized with Macau Special Olympics and the University of Saint Joseph, the carnival promoted social inclusion and community sports, with Sands Cares Ambassadors and the Sands China basketball team joining competitions and interactive games.",
+      "rank": 3
+    },
+    {
+      "title": "The Parisian Macao Celebrates 10th Anniversary",
+      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-10-parisian-macao-10th-anniv.html",
+      "posted": "2026-09-10",
+      "rawDate": "Sep.10 The Parisian Macao Celebrates 10th Anniversary",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Sept. 10, 2026) – The Parisian Macao will mark its 10th anniversary on Sept. 13. Over the past decade the integrated resort has become a Cotai Strip landmark, attracting more than 100 million visitors while expanding Sands China’s non-gaming hotels, retail, entertainment and MICE offerings.",
+      "rank": 4
     },
     {
       "title": "Four Wynn Restaurants Recognized in the Trip.Gourmet 2027 Global Fine Dining Awards",
@@ -38,7 +77,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Macao, September 9, 2026 – Four of Wynn's signature restaurants have been honored at Trip.Gourmet's 10th Anniversary Edition: Global Restaurant Rankings and Fine Dining Awards Ceremony held in Singapore on September 8. Chef Tam's Seasons received the highest honor of \"Black Diamond\" award, while Mizumi, Wing Lei and Drunken Fish were each honored with the prestigious \"Platinum\" award.",
-      "rank": 2
+      "rank": 5
     },
     {
       "title": "Five SJM Restaurants Are Honoured at Trip.Gourmet’s 10th Anniversary Awards",
@@ -50,8 +89,8 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "award",
-      "summary": "SJM press: Five SJM Restaurants Are Honoured at Trip.Gourmet’s 10th Anniversary Awards.",
-      "rank": 3
+      "summary": "(Macau, 8 September 2026) Robuchon au Dôme of SJM Resorts retained Trip.Gourmet’s 2027 Global Restaurant Selection Black Diamond rating for the fourth consecutive year, one of only four restaurants in Macau at that tier. Palace Garden and The Eight received Diamond ratings, and Don Alfonso 1890 and Mesa by José Avillez received Platinum, bringing SJM’s honours at the 10th-anniversary awards to five restaurants.",
+      "rank": 6
     },
     {
       "title": "SJM Hosts Fortune Leaders Forums Macau Debut at GLP",
@@ -63,8 +102,8 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "award",
-      "summary": "SJM press: SJM Hosts Fortune Leaders Forums Macau Debut at GLP.",
-      "rank": 4
+      "summary": "(Macau, 9 September 2026) SJM Resorts served as host partner and venue supporter of the Fortune Leaders Forum 2026 at Grand Lisboa Palace Resort Macau, the forum’s Macau debut. More than 250 senior executives, policymakers and investors gathered, including C-suite leaders of Fortune Global 500, Fortune Southeast Asia 500 and Fortune China 500 companies.",
+      "rank": 7
     },
     {
       "title": "Three MGM Restaurants Recognized in Trip.Gourmet’s 2027 Global Fine Dining Selection",
@@ -76,73 +115,8 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…",
-      "rank": 5
-    },
-    {
-      "title": "Sands China Hosts ‘The Parisian Macao 10th Anniversary Community Fun Day’",
-      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-06-parisian-10th-community.html",
-      "posted": "2026-09-06",
-      "rawDate": "Sep.6 Sands China Hosts ‘The Parisian Macao 10th Anniversary Community Fun Day’",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "(Macao, Sept. 6, 2026) – To celebrate the 10th anniversary of The Parisian ® Macao, Sands China hosted The Parisian Macao 10th Anniversary Community Fun Day on Sept. 5, welcoming 130 participants, including family members from local social service organisations and Sands Cares Ambassadors, to share in the milestone celebration and enjoy a tour of The Parisian Macao together. Filled with joy and laughter, families…",
-      "rank": 6
-    },
-    {
-      "title": "MGM Donates MOP5 Million to Support Relief and Recovery Efforts in Xizang",
-      "url": "https://en.mgmchinaholdings.com/media-releases?item=853",
-      "posted": "2026-09-04",
-      "rawDate": "Sep 04, 2026",
-      "hotelGroup": "MGM China",
-      "sourceName": "MGM China",
-      "sourceDomain": "en.mgmchinaholdings.com",
-      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
-      "kind": "good-news",
-      "summary": "[ September 4 , 2026, Macau] Gyirong County in Xigaze, Xizang Autonomous Region was affected by a severe mudslide disaster recently, resulting in extensive damage and significant loss of life and property. MGM China Holdings Limited announced today a donation of MOP5 Million to the Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People’s Government in the Macau SAR, in the hope…",
-      "rank": 7
-    },
-    {
-      "title": "Sands China Donates MOP 10 Million in Support of Xizang Mudslide Relief Efforts",
-      "url": "https://www.sandschina.com/the-company/company-information/press-release/2026/09-04-donation-for-xizang.html",
-      "posted": "2026-09-04",
-      "rawDate": "Sep.4 Sands China Donates MOP 10 Million in Support of Xizang Mudslide Relief Efforts",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "(Macao, Sept. 4, 2026) – Sands China Ltd. announced today that the company will donate MOP 10 million to support relief efforts in Gyirong County, Xigaze, Xizang Autonomous Region, following a devastating mudslide that recently struck the area, causing significant loss of life, injuries, and widespread destruction. The donation will be made with the assistance of the Liaison Office of the Central People’s…",
+      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection. Aji makes its debut as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court were recognized as Diamond Restaurant and Platinum Restaurant, respectively.",
       "rank": 8
-    },
-    {
-      "title": "SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/2026-09-04-03-57-31.pdf",
-      "posted": "2026-09-04",
-      "rawDate": "04 Sep 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "good-news",
-      "summary": "SJM press: SJM Donates MOP 5 Million to Support Disaster Relief and Reconstruction Efforts in Gyirong County.",
-      "rank": 9
-    },
-    {
-      "title": "Wynn Donates MOP5 Million to Support Relief and Recovery Efforts in Gyirong, Xizang",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-donates-mop5-million-to-support-relief-and-recovery-efforts-in-gyirong--xizang/s/8ca657bf-9f3a-4b78-b2be-aaf489808885",
-      "posted": "2026-09-04",
-      "rawDate": "04 Sep 2026",
-      "hotelGroup": "Wynn",
-      "sourceName": "Wynn Macau Newsroom",
-      "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
-      "kind": "good-news",
-      "summary": "Macao, September 4, 2026 – Wynn Macau, Limited announced a donation of MOP5 million to support emergency relief and post-disaster recovery efforts in Gyirong County, Xigaze City, Xizang Autonomous Region, with the assistance of the Liaison Office of the Central People's Government in the Macao SAR.",
-      "rank": 10
     }
   ]
 }
