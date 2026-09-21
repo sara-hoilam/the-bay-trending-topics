@@ -1,7 +1,7 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-09-21",
-  "refreshedAt": "2026-09-21T09:55:31+08:00",
+  "refreshedAt": "2026-09-21T10:12:14+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
   "captureMethod": "public-refresh",
   "accounts": [
@@ -370,7 +370,7 @@
           "followers": 700598
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "tatlerhongkong",
@@ -737,7 +737,7 @@
           "followers": 279834
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "timeouthk",
@@ -1004,7 +1004,7 @@
           "followers": 205409
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "lifestyleasiahk",
@@ -1363,7 +1363,7 @@
           "followers": 133188
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "the_trip_addict",
@@ -1730,7 +1730,7 @@
           "followers": 98277
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "sassyhongkong",
@@ -2456,15 +2456,15 @@
           "followers": 53364
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "thebayasia",
       "displayName": "The Bay",
       "url": "https://www.instagram.com/thebayasia/",
       "highlight": true,
-      "followers": 49320,
-      "followersGrowthPct7d": 4.86,
+      "followers": 47033,
+      "followersGrowthPct7d": 0,
       "history": [
         {
           "date": "2026-06-15",
@@ -2820,10 +2820,10 @@
         },
         {
           "date": "2026-09-21",
-          "followers": 49320
+          "followers": 47033
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "manual"
     },
     {
       "handle": "greaterbayvibes",
@@ -3190,7 +3190,7 @@
           "followers": 19820
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     },
     {
       "handle": "thebeatasia",
@@ -3549,7 +3549,7 @@
           "followers": 2005
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "carried-forward"
     }
   ]
 }
