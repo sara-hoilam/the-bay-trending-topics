@@ -58,6 +58,12 @@ test("classifyHeadline keeps awards and drops earnings", () => {
     classifyHeadline("Sands China Earns Great Place To Work Certification"),
     "award",
   );
+  assert.equal(
+    classifyHeadline(
+      "Grand Lisboa Palace Becomes Greater China’s First Sustained Carbon-Neutral Integrated MICE Venue",
+    ),
+    "award",
+  );
   assert.equal(classifyHeadline("Wynn Resorts Announces Second Quarter Earnings"), null);
   assert.equal(
     classifyHeadline("Wynn Donates MOP5 Million to Support Relief and Recovery Efforts in Gyirong, Xizang"),
