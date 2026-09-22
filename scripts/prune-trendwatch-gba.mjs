@@ -117,6 +117,44 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/习近平复信美国|复信美国10所高校/i.test(t))
+      return "cluster:xi-us-students";
+    if (/深圳市委|覃伟中/i.test(t)) return "cluster:qin-weizhong";
+    if (/美心月饼/i.test(t)) return "cluster:maxim-mooncake";
+    if (/二十届五中全会|五中全会10月/i.test(t)) return "cluster:plenum-20-5";
+    if (/代孕机构|贩卖多余婴儿/i.test(t)) return "cluster:surrogacy-trafficking";
+    if (/两部门紧急拨付|2亿支持4省救灾/i.test(t)) return "cluster:disaster-2bn";
+    if (/豪华燃油车|腰斩式.?降价|奥迪中国声明/i.test(t))
+      return "cluster:ice-luxury-cut";
+    if (/商品消费扩容升级|消费扩容升级的三重机制/i.test(t))
+      return "cluster:consumption-20";
+    if (/雷军澄清早餐|雷军回应.?武汉街头|雷军直播|雷军回应打新宇树|打新宇树赚/i.test(t))
+      return "cluster:leijun-unitree";
+    if (/国家电网传来重磅突破/i.test(t)) return "cluster:sgcc-breakthrough";
+    if (/AI或可替代教师|AI真成了大学里的洪水猛兽/i.test(t))
+      return "cluster:ai-campus";
+    if (/潘展乐|张展硕|中国女排vs日本女排|中国队亚运会|看中国游泳队|难民代表队首次亮相亚运会|^亚运会$/i.test(t))
+      return "cluster:asian-games-2026";
+    if (/Meta市值一夜暴增|Muse登上苹果|纳指涨近600点/i.test(t))
+      return "cluster:meta-muse";
+    if (/美半导体股暴涨|美股半导体|AMD总市值|英特尔暴涨|美股科技股集体大涨/i.test(t))
+      return "cluster:us-semi-rally";
+    if (/iPhone18Pro吐槽|网友吐槽iPhone18Pro|iPhone 18系列第一批受害者|iPhone18系列第一批/i.test(t))
+      return "cluster:iphone18";
+    if (/小米开源MiMoV2\.6|小米MiMoV2\.6/i.test(t)) return "cluster:xiaomi-mimo";
+    if (/华为Mate90/i.test(t)) return "cluster:huawei-mate90";
+    if (/西安比亚迪急招/i.test(t)) return "cluster:byd-xian";
+    if (/vivo ?X500|X500系列|X500 Pro Max|灭霸500/i.test(t))
+      return "cluster:vivo-x500";
+    if (/柬埔寨.?8号电诈|柬埔寨电诈园区/i.test(t)) return "cluster:cambodia-scam";
+    if (/油价节前或大涨/i.test(t)) return "cluster:oil-pre-holiday";
+    if (/刘雨昕帮谢金燕|谢金燕回应没戴麦|肖战湾区升明月|闫妮说去年大湾区/i.test(t))
+      return "cluster:gba-moonrise";
+    if (/王一博香港帆船/i.test(t)) return "cluster:wang-yibo-hk-sail";
+    if (/手机厂商大乱斗 闲鱼|^闲鱼的双11$/i.test(t)) return "cluster:xianyu-phones";
+    if (/SpaceXAI发布Grok|Grok4\.7/i.test(t)) return "cluster:grok-47";
+    if (/^gemini$|google gemini/i.test(t)) return "cluster:gemini";
+    if (/多地宣布结婚发钱/i.test(t)) return "cluster:marriage-cash";
     if (/做大做强先进制造业|制造业是立国之本/i.test(t))
       return "cluster:advanced-manufacturing";
     if (/公积金提取|“安居钱”|安居钱越来越好用|今起公积金/i.test(t))
