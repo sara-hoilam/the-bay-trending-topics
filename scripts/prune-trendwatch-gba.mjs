@@ -119,12 +119,46 @@ function pruneData(data) {
     const t = String(title).trim().toLowerCase();
     if (/八达通|八達通/i.test(t)) return "cluster:octopus";
     if (/^月餅$|^月饼$|95后对月饼|美心月饼/i.test(t)) return "cluster:mooncake";
+    if (/闲鱼公布调查结果|闲鱼已报案|闲鱼 天才程序员|闲鱼 甩锅/i.test(t))
+      return "cluster:xianyu-probe";
+    if (/安徽、河南、福建省委书记|安徽河南福建省委书记|刘宁卸任河南省委书记|李乐成任安徽省委书记/i.test(t))
+      return "cluster:provincial-secretaries";
+    if (/live nation|livenation/i.test(t)) return "cluster:live-nation";
+    if (/瑪利諾中學|玛利诺中学/i.test(t)) return "cluster:maryknoll-drinks";
+    if (/莊太量|庄太量/i.test(t)) return "cluster:terence-chong";
+    if (/^房屋署$/i.test(t)) return "cluster:hk-housing-dept";
+    if (/台当局称小红书文化侵略|国台办回应/i.test(t)) return "cluster:tao-xhs";
+    if (/解放军报发表社论/i.test(t)) return "cluster:pla-editorial";
+    if (/教育部：学位跟着人口走|每周至少半天校外实践|中国接受过高等教育人口|双一流本科将扩容/i.test(t))
+      return "cluster:moe-15th";
+    if (/伊朗外长与美特使|伊朗总统抵达纽约/i.test(t)) return "cluster:iran-unga";
+    if (/苹果出手限制开屏摇一摇/i.test(t)) return "cluster:apple-shake-ads";
+    if (/朝鲜街头中国车/i.test(t)) return "cluster:dprk-china-cars";
+    if (/马斯克谈特斯拉上海|马斯克说未来最重要的是会提问|马斯克给年轻人提建议/i.test(t))
+      return "cluster:musk-china";
+    if (/卢伟冰说小米18|卢伟冰称小米18/i.test(t)) return "cluster:xiaomi-18pro";
+    if (/仰望超豪华行政轿车/i.test(t)) return "cluster:yangwang-sedan";
+    if (/油价上涨 换电车|油价上调预期/i.test(t)) return "cluster:oil-pre-holiday";
+    if (/习近平向全国农民/i.test(t)) return "cluster:farmers-day";
+    if (/中国民企500强/i.test(t)) return "cluster:private500";
+    if (/日本女排颁奖仪式/i.test(t)) return "cluster:asian-games-2026";
+    if (/汪顺十年前就说/i.test(t)) return "cluster:asian-games-2026";
+    if (/王楚钦孙颖莎|孙颖莎王楚钦/i.test(t)) return "cluster:asian-games-tt";
+    if (/苹果新款Mac mini/i.test(t)) return "cluster:mac-mini-m6";
+    if (/OpenAI新模型降价/i.test(t)) return "cluster:gpt6-sol";
+    if (/骁龙发布安卓2nm|高通发布两款2纳米/i.test(t)) return "cluster:qualcomm-2nm";
+    if (/摘了面具才发现跳舞的是机器人|机器人和人跳舞已经分不出了/i.test(t))
+      return "cluster:humanoid-games";
+    if (/^司機$|^套餐$/i.test(t)) return "cluster:hk-driver-meal";
     if (/張家朗|张家朗/i.test(t)) return "cluster:cheung-ka-long";
     if (/覃伟中|覃偉中/i.test(t)) return "cluster:qin-weizhong";
     if (/鼓岭情缘|复信.*美国.*高校|跨越山海续写/i.test(t))
       return "cluster:xi-us-students";
     if (/China Haul/i.test(t)) return "cluster:china-haul";
-    if (/马斯克建议有时间|马斯克感叹中国/i.test(t)) return "cluster:musk-china";
+    if (/马斯克建议有时间|马斯克感叹中国|马斯克谈特斯拉上海|马斯克说未来最重要|马斯克给年轻人提建议/i.test(t))
+      return "cluster:musk-china";
+    if (/苹果不建议给iPhone贴膜|苹果客服称苹果并不生产膜|苹果高管称屏幕/i.test(t))
+      return "cluster:iphone-film";
     if (/朱广权 秋天/i.test(t)) return "cluster:zhu-guangquan-autumn";
     if (/5G\+6G|6G核心/i.test(t)) return "cluster:5g-6g";
     if (/小米首发第六代骁龙|第六代骁龙8|小米18Pro/i.test(t))
