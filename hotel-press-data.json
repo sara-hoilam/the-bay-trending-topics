@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-09-22",
-  "refreshedAt": "2026-09-22T10:06:52+08:00",
+  "updatedAt": "2026-09-23",
+  "refreshedAt": "2026-09-23T13:05:09+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-08",
-  "windowEnd": "2026-09-22",
-  "count": 9,
+  "windowStart": "2026-09-09",
+  "windowEnd": "2026-09-23",
+  "count": 8,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -14,6 +14,32 @@
     }
   ],
   "articles": [
+    {
+      "title": "Celebrating Two Michelin Keys for Four Seasons Hotel Hong Kong",
+      "url": "https://press.fourseasons.com/hongkong/hotel-news/2026/two-michelin-keys",
+      "posted": "2026-09-22",
+      "rawDate": "September 22, 2026, Hong Kong, China",
+      "hotelGroup": "Four Seasons",
+      "sourceName": "Four Seasons Hong Kong",
+      "sourceDomain": "press.fourseasons.com",
+      "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
+      "kind": "award",
+      "summary": "Four Seasons Hotel Hong Kong has been elevated from One Michelin Key to Two Michelin Keys in the Michelin Guide’s 2026 hotel selection, marking a significant milestone just one year after the Michelin Key distinction was first introduced in Hong Kong.",
+      "rank": 1
+    },
+    {
+      "title": "Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List",
+      "url": "https://assets.sandsresortsmacao.cn/content/venetianmacao/press-release/2026/09-19-most-restaurants-recognised/en.pdf",
+      "posted": "2026-09-19",
+      "rawDate": "Sep.19 Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "award",
+      "summary": "(Macao, September 19, 2026) – Sands China Ltd. has reinforced its status as a premier gastronomic destination with six of its signature restaurants earning coveted ratings on Trip.Gourmet’s 2027 Fine Dining List, giving it the honour of having the most awardees in Macao under one roof. The Huaiyang Garden at The Londoner Macao received a Black Diamond rating, La Chine at The Parisian Macao a Diamond rating, and four other Sands China venues were named Platinum.",
+      "rank": 2
+    },
     {
       "title": "Grand Lisboa Palace Becomes Greater China’s First Sustained Carbon-Neutral Integrated MICE Venue",
       "url": "https://www.sjmholdings.com/resources/images/uploads/2026-09-18-01-19-36.pdf",
@@ -24,8 +50,8 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "award",
-      "summary": "SJM press: Grand Lisboa Palace Becomes Greater China’s First Sustained Carbon-Neutral Integrated MICE Venue.",
-      "rank": 1
+      "summary": "(Macau, 17 September 2026) — SJM Resorts, S.A. today announced that Grand Lisboa Palace Resort Macau has become the first integrated MICE venue in Greater China to achieve sustained carbon neutrality through the use of high-quality carbon credits. The Company also launched Macau’s first standardised Zero-Carbon MICE Service, further strengthening its sustainable events offering.",
+      "rank": 3
     },
     {
       "title": "GEG Wins Four Accolades at the 2026 IAG Academy IR Awards; Including “Best Integrated Resort” for the Fourth Consecutive Year and “Best Individual CSR Initiative”",
@@ -37,8 +63,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "award",
-      "summary": "September 16, 2026 – Galaxy Entertainment Group (“GEG”) garnered four awards at the 2026 IAG Academy IR Awards held yesterday in Manila, Philippines, making it once again the most awarded integrated resort operator in Macau. Among the honors, GEG’s flagship property, Galaxy Macau was named “Best Integrated Resort” for the fourth consecutive year, while also receiving the “Best IR Gaming Floor” award. Meanwhile,…",
-      "rank": 2
+      "summary": "September 16, 2026 – Galaxy Entertainment Group (“GEG”) garnered four awards at the 2026 IAG Academy IR Awards held yesterday in Manila, Philippines, making it once again the most awarded integrated resort operator in Macau. Among the honors, Galaxy Macau was named “Best Integrated Resort” for the fourth consecutive year and “Best IR Gaming Floor,” Capella at Galaxy Macau was named “Best Hotel in an IR,” and the “GEG Sports for Good Community Program” received the “Best Individual CSR Initiative” award.",
+      "rank": 4
     },
     {
       "title": "The Parisian Macao Celebrates 10th Anniversary with Exclusive Moët & Chandon Dinners and Stunning Drone Shows",
@@ -51,7 +77,7 @@
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
       "summary": "(Macao, Sept. 15, 2026) - To mark the milestone occasion of a decade of French-inspired hospitality, The Parisian ® Macao hosted an elegant, three-night Moët & Chandon dinner event over the past weekend. The dazzling celebration of this iconic Cotai Strip landmark was enjoyed by a distinguished gathering of government officials, VIPs and prominent media representatives.",
-      "rank": 3
+      "rank": 5
     },
     {
       "title": "2026 MSO Sands China Cup – Inclusive Community Basketball Carnival",
@@ -63,8 +89,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "(Macao, Sept. 13, 2026) – To promote social inclusion, support community sports in Macao, and actively respond to the Macao SAR government’s initiative to promote the integrated development of “sports + tourism,” Sands China held the 2026 MSO Sands China Cup – Inclusive Community Basketball Carnival Sept. 13 at the University of Saint Joseph, attracting over 250 residents from the local community. Representatives…",
-      "rank": 4
+      "summary": "(Macao, Sept. 13, 2026) – To promote social inclusion, support community sports in Macao, and actively respond to the Macao SAR government’s initiative to promote the integrated development of “sports + tourism,” Sands China held the 2026 MSO Sands China Cup – Inclusive Community Basketball Carnival Sept. 13 at the University of Saint Joseph, attracting over 250 residents from the local community. Representatives from several special education schools, community centres, and residential care homes, as well as members of four secondary school basketball teams, were invited.",
+      "rank": 6
     },
     {
       "title": "The Parisian Macao Celebrates 10th Anniversary",
@@ -76,8 +102,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "(Macao, Sept. 10, 2026) – The Parisian ® Macao will mark its 10th anniversary on Sept. 13. Over the past decade, the integrated resort has not only evolved into a landmark on the Cotai Strip, but has also demonstrated Sands China’s steadfast confidence in Macao’s long-term growth, as well as its enduring commitment to expanding non-gaming elements, supporting the Macao’s economic diversification and its status as…",
-      "rank": 5
+      "summary": "(Macao, Sept. 10, 2026) – The Parisian ® Macao will mark its 10th anniversary on Sept. 13. Over the past decade, the integrated resort has not only evolved into a landmark on the Cotai Strip, but has also demonstrated Sands China’s steadfast confidence in Macao’s long-term growth, as well as its enduring commitment to expanding non-gaming elements, supporting Macao’s economic diversification and its status as World Centre of Tourism and Leisure.",
+      "rank": 7
     },
     {
       "title": "Four Wynn Restaurants Recognized in the Trip.Gourmet 2027 Global Fine Dining Awards",
@@ -89,47 +115,8 @@
       "sourceDomain": "newsroom.wynnresorts.com",
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
-      "summary": "Macao, September 9, 2026 – Four of Wynn's signature restaurants have been honored at Trip.Gourmet's 10th Anniversary Edition: Global Restaurant Rankings and Fine Dining Awards Ceremony held in Singapore on September 8. Chef Tam's Seasons received the highest honor of \"Black Diamond\" award, while Mizumi, Wing Lei and Drunken Fish were each honored with the prestigious \"Platinum\" award.",
-      "rank": 6
-    },
-    {
-      "title": "Five SJM Restaurants Are Honoured at Trip.Gourmet’s 10th Anniversary Awards",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/2026-09-11-09-05-33.pdf",
-      "posted": "2026-09-08",
-      "rawDate": "08 Sep 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "award",
-      "summary": "SJM press: Five SJM Restaurants Are Honoured at Trip.Gourmet’s 10th Anniversary Awards.",
-      "rank": 7
-    },
-    {
-      "title": "SJM Hosts Fortune Leaders Forums Macau Debut at GLP",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/web-press-release_sjm-hosts-fortune-leaders-forums-macau-debut-at-glp.pdf",
-      "posted": "2026-09-08",
-      "rawDate": "08 Sep 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "award",
-      "summary": "SJM press: SJM Hosts Fortune Leaders Forums Macau Debut at GLP.",
+      "summary": "Macao, September 9, 2026 – Four of Wynn's signature restaurants have been honored at the Trip.Gourmet's 10th Anniversary Edition: Global Restaurant Rankings and Fine Dining Awards Ceremony held in Singapore on September 8. Chef Tam's Seasons received the highest honor of \"Black Diamond\" award, while Mizumi, Wing Lei and Drunken Fish were each honored with the prestigious \"Platinum\" award.",
       "rank": 8
-    },
-    {
-      "title": "Three MGM Restaurants Recognized in Trip.Gourmet’s 2027 Global Fine Dining Selection",
-      "url": "https://en.mgmchinaholdings.com/media-releases?item=854",
-      "posted": "2026-09-08",
-      "rawDate": "Sep 08, 2026",
-      "hotelGroup": "MGM China",
-      "sourceName": "MGM China",
-      "sourceDomain": "en.mgmchinaholdings.com",
-      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
-      "kind": "award",
-      "summary": "[September 8, 2026, Macau] Three of MGM’s signature dining restaurants have been listed on the Trip.Gourmet 2027 Global Fine Dining Selection . Aji makes its debut on the list as a Platinum Restaurant, while returning honorees Five Foot Road and Imperial Court have been recognized as Diamond Restaurant and Platinum Restaurant, respectively. With offerings ranging from refined Asian cuisine and classic Sichuan…",
-      "rank": 9
     }
   ]
 }
