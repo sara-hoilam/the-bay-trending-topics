@@ -11,7 +11,7 @@ Sands China (4):
 
 2. **Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List** — Sands China Press
 https://assets.sandsresortsmacao.cn/content/venetianmacao/press-release/2026/09-19-most-restaurants-recognised/en.pdf
-(Macao, September 19, 2026) – Sands China Ltd. has reinforced its status as a premier gastronomic destination with six of its signature restaurants earning coveted ratings on Trip.Gourmet’s 2027 Fine Dining List, giving it the honour of having the most awardees in Macao under one roof. The Huaiyang Garden at The Londoner Macao received a Black Diamond rating, La Chine at The Parisian Macao a Diamond rating, and four other Sands China venues were named Platinum.
+Sands China press: Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List.
 
 3. **The Parisian Macao Celebrates 10th Anniversary with Exclusive Moët & Chandon Dinners and Stunning Drone Shows** — Sands China Press
 https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-09-15/pm-10th-anniversary.html
@@ -19,26 +19,27 @@ https://en.sandsresortsmacao.com/sands-lifestyle/press-release/2026-09-15/pm-10t
 
 4. **2026 MSO Sands China Cup – Inclusive Community Basketball Carnival** — Sands China Press
 https://www.sandschina.com/the-company/company-information/press-release/2026/09-13-mso-basketball-carnival.html
-(Macao, Sept. 13, 2026) – To promote social inclusion, support community sports in Macao, and actively respond to the Macao SAR government’s initiative to promote the integrated development of “sports + tourism,” Sands China held the 2026 MSO Sands China Cup – Inclusive Community Basketball Carnival Sept. 13 at the University of Saint Joseph, attracting over 250 residents from the local community. Representatives from several special education schools, community centres, and residential care homes, as well as members of four secondary school basketball teams, were invited.
+(Macao, Sept. 13, 2026) – To promote social inclusion, support community sports in Macao, and actively respond to the Macao SAR government’s initiative to promote the integrated development of “sports + tourism,” Sands China held the 2026 MSO Sands China Cup – Inclusive Community Basketball Carnival Sept. 13 at the University of Saint Joseph, attracting over 250 residents from the local community. Representatives…
 
 5. **The Parisian Macao Celebrates 10th Anniversary** — Sands China Press
 https://www.sandschina.com/the-company/company-information/press-release/2026/09-10-parisian-macao-10th-anniv.html
-(Macao, Sept. 10, 2026) – The Parisian ® Macao will mark its 10th anniversary on Sept. 13. Over the past decade, the integrated resort has not only evolved into a landmark on the Cotai Strip, but has also demonstrated Sands China’s steadfast confidence in Macao’s long-term growth, as well as its enduring commitment to expanding non-gaming elements, supporting Macao’s economic diversification and its status as World Centre of Tourism and Leisure.
+(Macao, Sept. 10, 2026) – The Parisian ® Macao will mark its 10th anniversary on Sept. 13. Over the past decade, the integrated resort has not only evolved into a landmark on the Cotai Strip, but has also demonstrated Sands China’s steadfast confidence in Macao’s long-term growth, as well as its enduring commitment to expanding non-gaming elements, supporting the Macao’s economic diversification and its status as…
 
 SJM (1):
 
 6. **Grand Lisboa Palace Becomes Greater China’s First Sustained Carbon-Neutral Integrated MICE Venue** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/2026-09-18-01-19-36.pdf
-(Macau, 17 September 2026) — SJM Resorts, S.A. today announced that Grand Lisboa Palace Resort Macau has become the first integrated MICE venue in Greater China to achieve sustained carbon neutrality through the use of high-quality carbon credits. The Company also launched Macau’s first standardised Zero-Carbon MICE Service, further strengthening its sustainable events offering.
+SJM press: Grand Lisboa Palace Becomes Greater China’s First Sustained Carbon-Neutral Integrated MICE Venue.
 
 Galaxy Entertainment (1):
 
 7. **GEG Wins Four Accolades at the 2026 IAG Academy IR Awards; Including “Best Integrated Resort” for the Fourth Consecutive Year and “Best Individual CSR Initiative”** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1212/20260916
-September 16, 2026 – Galaxy Entertainment Group (“GEG”) garnered four awards at the 2026 IAG Academy IR Awards held yesterday in Manila, Philippines, making it once again the most awarded integrated resort operator in Macau. Among the honors, Galaxy Macau was named “Best Integrated Resort” for the fourth consecutive year and “Best IR Gaming Floor,” Capella at Galaxy Macau was named “Best Hotel in an IR,” and the “GEG Sports for Good Community Program” received the “Best Individual CSR Initiative” award.
+September 16, 2026 – Galaxy Entertainment Group (“GEG”) garnered four awards at the 2026 IAG Academy IR Awards held yesterday in Manila, Philippines, making it once again the most awarded integrated resort operator in Macau. Among the honors, GEG’s flagship property, Galaxy Macau was named “Best Integrated Resort” for the fourth consecutive year, while also receiving the “Best IR Gaming Floor” award. Meanwhile,…
 
 Wynn (1):
 
 8. **Four Wynn Restaurants Recognized in the Trip.Gourmet 2027 Global Fine Dining Awards** — Wynn Macau Newsroom
 https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/four-wynn-restaurants-recognized-in-the----trip.gourmet-2027-global-fine-dining-awards/s/3a3aef76-93d9-4e00-a0cd-6f64c125f9df
 Macao, September 9, 2026 – Four of Wynn's signature restaurants have been honored at the Trip.Gourmet's 10th Anniversary Edition: Global Restaurant Rankings and Fine Dining Awards Ceremony held in Singapore on September 8. Chef Tam's Seasons received the highest honor of "Black Diamond" award, while Mizumi, Wing Lei and Drunken Fish were each honored with the prestigious "Platinum" award.
+
