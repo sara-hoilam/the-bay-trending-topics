@@ -117,6 +117,48 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/八达通|八達通/i.test(t)) return "cluster:octopus";
+    if (/^月餅$|^月饼$|95后对月饼|美心月饼/i.test(t)) return "cluster:mooncake";
+    if (/張家朗|张家朗/i.test(t)) return "cluster:cheung-ka-long";
+    if (/覃伟中|覃偉中/i.test(t)) return "cluster:qin-weizhong";
+    if (/鼓岭情缘|复信.*美国.*高校|跨越山海续写/i.test(t))
+      return "cluster:xi-us-students";
+    if (/China Haul/i.test(t)) return "cluster:china-haul";
+    if (/马斯克建议有时间|马斯克感叹中国/i.test(t)) return "cluster:musk-china";
+    if (/朱广权 秋天/i.test(t)) return "cluster:zhu-guangquan-autumn";
+    if (/5G\+6G|6G核心/i.test(t)) return "cluster:5g-6g";
+    if (/小米首发第六代骁龙|第六代骁龙8|小米18Pro/i.test(t))
+      return "cluster:xiaomi-snapdragon";
+    if (/苹果不建议给iPhone贴膜|苹果高管称屏幕/i.test(t))
+      return "cluster:iphone-film";
+    if (/ClaudeOpus5|Claude Opus 5\.5|Anthropic发布Claude/i.test(t))
+      return "cluster:claude-opus55";
+    if (/GPT6Sol|GPT-6 Sol|GPT-6 Sol和Luna/i.test(t)) return "cluster:gpt6-sol";
+    if (/MetaMuse|Meta Muse|扎克伯格的Muse|中国版Muse/i.test(t))
+      return "cluster:meta-muse";
+    if (/^秋分$|今日秋分|为什么说秋分/i.test(t)) return "cluster:qiufen";
+    if (/維園花燈|维园花灯/i.test(t)) return "cluster:victoria-lantern";
+    if (/定期存款|多家银行存款利息/i.test(t)) return "cluster:deposit-rates";
+    if (/编造.*创始人不喝|深圳罗某某/i.test(t)) return "cluster:sz-rumour-detain";
+    if (/消费帮扶展.*假翡翠|广州.*假翡翠/i.test(t)) return "cluster:gz-jade";
+    if (/林诗栋|王皓质问林诗栋/i.test(t)) return "cluster:lin-shidong";
+    if (/习近平向全国农民|农民致以节日/i.test(t)) return "cluster:farmers-day";
+    if (/祝福祖国大花篮/i.test(t)) return "cluster:nday-baskets";
+    if (/周琦.*亚运会/i.test(t)) return "cluster:zhou-qi-ag";
+    if (/金建宇/i.test(t)) return "cluster:kim-gunwoo";
+    if (/高通发布2纳米/i.test(t)) return "cluster:qualcomm-2nm";
+    if (/OPPO发布会|被OPPO原相机|OPPO新机|OPPO新旗舰/i.test(t))
+      return "cluster:oppo-event";
+    if (/国家发改委推动北斗/i.test(t)) return "cluster:beidou";
+    if (/广汽传祺/i.test(t)) return "cluster:gac-trumpchi";
+    if (/南海海域有火箭发射/i.test(t)) return "cluster:scs-rocket";
+    if (/中国发现超大型铜金矿/i.test(t)) return "cluster:copper-gold";
+    if (/中国首批航天员/i.test(t)) return "cluster:first-astronauts";
+    if (/伊朗外长与美特使/i.test(t)) return "cluster:iran-us-envoy";
+    if (/俄罗斯32座最大炼油厂/i.test(t)) return "cluster:ru-refineries";
+    if (/张兴海.*华为/i.test(t)) return "cluster:zhang-xinghai-hw";
+    if (/江淮回应与华为/i.test(t)) return "cluster:jac-huawei";
+    if (/问界升级为赛力斯/i.test(t)) return "cluster:aito-seres";
     if (/习近平复信美国|复信美国10所高校/i.test(t))
       return "cluster:xi-us-students";
     if (/深圳市委|覃伟中/i.test(t)) return "cluster:qin-weizhong";
