@@ -142,3 +142,20 @@ export function buildLeaderboardData(accounts, captureMethod = "manual") {
 export function writeLeaderboardData(data) {
   fs.writeFileSync(IG_DATA_PATH, JSON.stringify(data, null, 2) + "\n", "utf8");
 }
+
+/** Same-day Cloud Run 4 snapshot with live handles — skip GitHub Actions Instagram refetch. */
+export function igCaptureArgsFromSnapshot(
+  snap,
+  today,
+  snapshotRelPath = "orchestration/ig-leaderboard-snapshot.json"
+) {
+  const liveCount = Object.keys(snap?.accounts || {}).length;
+  if (snap?.capturedAt === today && liveCount > 0) {
+    return {
+      reuse: true,
+      liveCount,
+      args: [`--snapshot=${snapshotRelPath}`],
+    };
+  }
+  return { reuse: false, liveCount, args: ["--refresh"] };
+}

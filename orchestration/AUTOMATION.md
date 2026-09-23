@@ -112,6 +112,8 @@ This happens **before** the agent runs. Almost always:
 | **Cloud Run 3/4 `exit code 2`** (~5–10s) | Cursor cloud agent returned `status: error` early — often transient after prior runs, or a premature SDK poll while the agent is still setting up. **Not** a Happenings/Instagram script failure. Check run id in [Cursor dashboard](https://cursor.com/dashboard). Runs 3–4 are optional so post-pipeline still runs. |
 | **Workflow red but Happenings commit on `main`** | Same premature `status: error`: the SDK reported failure in ~7s while the cloud agent continued and pushed. Confirm with `git log` / Cursor agent URL; re-run workflow or post-pipeline for IG + merge if those steps were skipped. |
 | **`[resource_exhausted]` / HTTP 429 on Cloud Run 1** | Rate/quota limit on `POST /v1/agents` — **not** an expired API key (preflight already passed). Check [Usage](https://cursor.com/dashboard): Composer can show headroom while agent create is blocked (Other Models 100%, on-demand spend off/capped, or short-window capacity). Re-run after spend is enabled or the window resets. |
+| **IG sheet sync cancelled at ~10 min** | The dedicated workflow used to re-fetch Instagram from GitHub Actions IPs, which return HTTP 401 (`Please wait a few minutes`). Retries hit the old 10-minute job timeout. It now only writes the committed JSON to the Google Sheet. Live counts come from Cloud Run 4. |
+| **IG follower counts unchanged / `STALE` in logs** | Instagram blocked the GitHub Actions refetch after Cloud Run 4. Post-pipeline now reuses a same-day `orchestration/ig-leaderboard-snapshot.json` instead of fetching again. |
 
 ### Cloud Run 3 (Happenings) or Run 4 (IG) fails after Runs 1–2 succeed
 
@@ -119,7 +121,7 @@ Runs 1–2 take 2–6 minutes each; Run 3/4 failing in **under 15 seconds** mean
 
 **Why the workflow used to fail entirely:** `run-daily-cloud.mjs` called `process.exit(2)` on any agent `status: error`, which skipped later cloud runs and the post-pipeline step.
 
-**Fallback:** `scripts/run-daily-post.mjs` runs `generate-happenings-data.mjs` and `capture-ig-leaderboard.mjs --refresh` with Google Sheet secrets — the reliable path in GitHub Actions even when Cloud Runs 3–4 fail.
+**Fallback:** `scripts/run-daily-post.mjs` runs `generate-happenings-data.mjs` and the IG capture (reuse today's Cloud Run 4 snapshot when present, otherwise `--refresh`) with Google Sheet secrets — the reliable path in GitHub Actions even when Cloud Runs 3–4 fail.
 
 
 ## Mac scheduler (legacy)
