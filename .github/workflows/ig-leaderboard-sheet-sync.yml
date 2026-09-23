@@ -17,10 +17,14 @@ run-name: "IG sheet sync · run ${{ github.run_number }}"
 permissions:
   contents: read
 
+concurrency:
+  group: ig-leaderboard-sheet-sync
+  cancel-in-progress: true
+
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,10 +37,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Refresh IG metrics and sync Google Sheet
+      # Sheet only — do not re-fetch Instagram from GitHub Actions IPs.
+      # Cloud Run 4 already captured live counts; Actions runners get HTTP 401
+      # ("Please wait a few minutes") and the old ig:refresh path timed out.
+      - name: Sync Google Sheet from committed leaderboard JSON
         env:
           GOOGLE_SHEETS_IG_LEADERBOARD_ID: ${{ secrets.GOOGLE_SHEETS_IG_LEADERBOARD_ID }}
           GOOGLE_SHEETS_IG_TAB: ${{ secrets.GOOGLE_SHEETS_IG_TAB }}
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
           GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
-        run: npm run ig:refresh
+        run: npm run ig:sheet-sync

@@ -281,8 +281,10 @@ Growth stays **empty** for the first ~7 days until history exists for the refere
 In `scripts/run-daily-post.mjs`:
 
 ```javascript
-run("capture-ig-leaderboard.mjs", ["--refresh"]);
+run("capture-ig-leaderboard.mjs", igCaptureArgs(today));
 ```
+
+`igCaptureArgs` reuses `orchestration/ig-leaderboard-snapshot.json` when Cloud Run 4 already captured today's counts. Otherwise it falls back to `--refresh`. GitHub Actions IPs are often HTTP 401'd by Instagram, so a second fetch from the runner is avoided when a live snapshot exists.
 
 The daily workflow passes sheet secrets to the post-pipeline step:
 
@@ -311,7 +313,7 @@ git push origin main
 
 **Actions → IG Leaderboard Sheet Sync → Run workflow**
 
-Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
+Runs `npm run ig:sheet-sync` (push committed `ig-leaderboard-data.json` to the sheet). It does **not** re-fetch Instagram — GitHub Actions IPs are often HTTP 401'd. Use Cloud Run 4 or a local `npm run ig:refresh` for live counts.
 
 ---
 
@@ -354,6 +356,7 @@ Runs `npm run ig:refresh` (fetch + JSON + sheet) with secrets injected.
 | Growth % always empty | Fewer than 7 days of sheet rows | Normal for first week |
 | Sheet sync skipped | Missing env secrets | Add GitHub secrets or export locally |
 | Stale follower counts | Instagram `web_profile_info` HTTP 400 schema error (`ig_business_category_subvertical`) for some business profiles, or outdated manual snapshot | Check `orchestration/ig-leaderboard-snapshot.json` notes for `fetch failed`. Update `ig-leaderboard-manual-snapshot.json` with verified followers (supports `37.1K`), then `npm run ig:refresh` |
+| IG sheet sync cancelled ~10 min | Workflow used to run `ig:refresh` from GitHub Actions; Instagram returns HTTP 401 and retries hit the job timeout | Workflow now runs `ig:sheet-sync` only. Live fetch stays on Cloud Run 4 / local Mac |
 
 ---
 

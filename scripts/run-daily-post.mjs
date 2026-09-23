@@ -15,6 +15,7 @@ import {
   isTrendingNewsFragment,
   resolveDailyBriefInput,
 } from "./daily-brief-utils.mjs";
+import { igCaptureArgsFromSnapshot } from "./ig-leaderboard-utils.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
@@ -38,6 +39,30 @@ function tryRun(script, args = []) {
 
 function relBriefPath(absPath) {
   return path.relative(root, absPath);
+}
+
+/**
+ * Prefer Cloud Run 4's same-day Instagram snapshot. GitHub Actions IPs are
+ * often HTTP 401'd by Instagram; re-fetching then carries stale counts and
+ * burns ~10 minutes of retries.
+ */
+function igCaptureArgs(today) {
+  const snapPath = path.join(root, "orchestration/ig-leaderboard-snapshot.json");
+  if (!fs.existsSync(snapPath)) return ["--refresh"];
+  try {
+    const rel = path.relative(root, snapPath);
+    const snap = JSON.parse(fs.readFileSync(snapPath, "utf8"));
+    const decision = igCaptureArgsFromSnapshot(snap, today, rel);
+    if (decision.reuse) {
+      console.log(
+        `Reusing Cloud Run 4 IG snapshot (${decision.liveCount} live handle(s) from ${snap.capturedAt})`
+      );
+    }
+    return decision.args;
+  } catch (err) {
+    console.warn(`Could not read IG snapshot (${err.message}) — will refresh`);
+    return ["--refresh"];
+  }
 }
 
 function ensureDailyBriefOverall() {
@@ -73,7 +98,7 @@ run("generate-source-links-data.mjs");
 run("generate-happenings-data.mjs");
 run("generate-new-hotels-data.mjs");
 run("generate-hotel-press-data.mjs");
-run("capture-ig-leaderboard.mjs", ["--refresh"]);
+run("capture-ig-leaderboard.mjs", igCaptureArgs(today));
 run("prune-trendwatch-gba.mjs");
 run("enrich-trendwatch-metadata.mjs");
 ensureDailyBriefOverall();
