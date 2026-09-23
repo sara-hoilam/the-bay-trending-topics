@@ -1,8 +1,8 @@
 {
-  "generatedFrom": "Lifestyle (7) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-09-17",
+  "generatedFrom": "Lifestyle source links (7 domains) · source-links-data.json happeningsFetch",
+  "updatedAt": "2026-09-23",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 75,
+  "highlightedCount": 74,
   "events": [
     {
       "title": "Conserving Neon Culture at M+",
@@ -206,7 +206,7 @@
     {
       "title": "Joyful Encounters — HK Palace Museum",
       "start": "2026-06-13",
-      "end": "2026-11-09",
+      "end": "2026-11-23",
       "region": "hk",
       "location": "Hong Kong Palace Museum, West Kowloon",
       "url": "https://www.hkpm.org.hk/en/exhibition/joyful-encounters-the-connoisseurship-and-art-of-wong-kwan-shut",
@@ -282,18 +282,6 @@
       "region": "hk",
       "location": "M+ Grand Stair, West Kowloon",
       "url": "https://www.mplus.org.hk/en/exhibitions/andy-warhol-screen-tests-sleep/",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 20,
-      "highlighted": false,
-      "sourceCategory": "Lifestyle"
-    },
-    {
-      "title": "CATS The Musical at Xiqu Centre",
-      "start": "2026-08-06",
-      "end": "2026-09-06",
-      "region": "hk",
-      "location": "Grand Theatre, Xiqu Centre, West Kowloon",
-      "url": "https://www.westk.hk/en/event/cats-musical",
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
       "highlighted": false,
@@ -651,66 +639,6 @@
       "highlighted": false
     },
     {
-      "title": "CHUHAIWANG Cross-Border E-Commerce Selection Exhibition",
-      "start": "2026-09-03",
-      "end": "2026-09-06",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/e1hk-g4hg-k1d1-7-chuhaiwang-global-cross-border-e-commerce-selection-exhibition",
-      "sourceDomain": "10times.com",
-      "highlightScore": 10,
-      "highlighted": false,
-      "sourceCategory": "Lifestyle"
-    },
-    {
-      "title": "IEAE Shenzhen 2026 — Electronics & Smart Appliances",
-      "start": "2026-09-03",
-      "end": "2026-09-06",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/e1xd-07rr-02kh",
-      "sourceDomain": "10times.com",
-      "highlightScore": 10,
-      "highlighted": false,
-      "sourceCategory": "Lifestyle"
-    },
-    {
-      "title": "14 upcoming events at Shenzhen's two exhibition centers in September",
-      "start": "2026-09-03",
-      "end": "2026-11-02",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/03/content_32162383.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "M+ exhibition explores extraordinary in everyday objects",
-      "start": "2026-09-03",
-      "end": "2026-11-02",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/03/content_32162400.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
-      "title": "M+ at Night: Sonic Phantoms",
-      "start": "2026-09-04",
-      "end": "2026-09-04",
-      "region": "hk",
-      "location": "M+, West Kowloon",
-      "url": "https://www.mplus.org.hk/en/events/mplus-at-night-sonic-phantoms/",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 8,
-      "highlighted": false,
-      "sourceCategory": "Lifestyle"
-    },
-    {
       "title": "Inmates and Juvenile Delinquents’ Handicraft Exhibition 2026",
       "start": "2026-09-04",
       "end": "2026-09-06",
@@ -893,18 +821,6 @@
       "highlighted": true
     },
     {
-      "title": "Layers of time in oil painting",
-      "start": "2026-09-07",
-      "end": "2026-11-06",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/07/content_32165809.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 12,
-      "highlighted": false
-    },
-    {
       "title": "Ticket Stub Privileges x WTT Macau Championship 2026",
       "start": "2026-09-07",
       "end": "2026-09-16",
@@ -1025,18 +941,6 @@
       "sourceDomain": "eyeshenzhen.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
-      "highlighted": false
-    },
-    {
-      "title": "Exhibition examines urban life through cross-media art",
-      "start": "2026-09-11",
-      "end": "2026-11-10",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/11/content_32169366.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -1329,6 +1233,17 @@
       "sourceCategory": "Lifestyle"
     },
     {
+      "title": "'MANA' brings rare Pacific island treasures",
+      "start": "2026-09-16",
+      "end": "2026-11-15",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/16/content_32173068.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
       "title": "Double Keys & Harmonies – A Concert by Wendy & Gloria",
       "start": "2026-09-17",
       "end": "2026-09-17",
@@ -1352,6 +1267,17 @@
       "highlightScore": 26,
       "highlighted": true,
       "sourceCategory": "Lifestyle"
+    },
+    {
+      "title": "Win free tickets for 16th Shenzhen Pet Fair",
+      "start": "2026-09-18",
+      "end": "2026-11-17",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/18/content_32174679.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 26,
+      "highlighted": true
     },
     {
       "title": "2026 SUPER JUNIOR-83z FANCON TOUR [1983] in MACAU",
@@ -1393,6 +1319,17 @@
       "highlighted": false
     },
     {
+      "title": "Jon Burgerman's 'It's Great to Create!' to open as new art museum's inaugural exhibition",
+      "start": "2026-09-20",
+      "end": "2026-11-19",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/20/content_32175781.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "2026 Macau Northern District Flowers, Moon & Hanfu – Mid-Autumn Carnival",
       "start": "2026-09-20",
       "end": "2026-09-27",
@@ -1403,6 +1340,39 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 20,
+      "highlighted": false
+    },
+    {
+      "title": "Exhibition explores design across cultures",
+      "start": "2026-09-21",
+      "end": "2026-11-20",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-09/21/content_32176514.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "10th Shenzhen Folk Crafts Exhibition",
+      "start": "2026-09-22",
+      "end": "2026-10-24",
+      "region": "shenzhen",
+      "location": "Shenzhen Museum (Ancient Art), Tongxin Road",
+      "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=7c5273da81514784a70b439fefd307ce&type=2",
+      "sourceDomain": "shenzhenmuseum.com",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Who Sent the Brocade Letter — Lingnan Family Letters",
+      "start": "2026-09-22",
+      "end": "2027-02-21",
+      "region": "shenzhen",
+      "location": "Shenzhen Museum (History & Folk Culture), Jintian Road",
+      "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=291e7d817a4f4b13a3bc6430d60937c9&type=2",
+      "sourceDomain": "shenzhenmuseum.com",
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -1417,18 +1387,6 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 18,
       "highlighted": false
-    },
-    {
-      "title": "China (Shenzhen) International Pet Expo",
-      "start": "2026-09-24",
-      "end": "2026-09-26",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/e1hk-z20k-z5pd-4-china-shenzhen-international-pet-expo",
-      "sourceDomain": "10times.com",
-      "highlightScore": 36,
-      "highlighted": true,
-      "sourceCategory": "Lifestyle"
     },
     {
       "title": "When the World is Your Enemy — Epic Edition",
@@ -2175,6 +2133,17 @@
       "sourceCategory": "Lifestyle"
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -2196,18 +2165,6 @@
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -2443,18 +2400,6 @@
       "sourceCategory": "Lifestyle"
     },
     {
-      "title": "HKTDC Hong Kong Book Fair 2027 (HKCEC)",
-      "start": "2027-07-14",
-      "end": "2027-07-20",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkbookfair/en",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 58,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
       "start": "2027-07-14",
       "end": "2027-07-20",
@@ -2477,6 +2422,17 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 16,
       "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Book Fair 2027 (HKCEC)",
+      "start": "2027-07-14",
+      "end": "2027-07-20",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkbookfair/en",
+      "sourceDomain": "event.hktdc.com",
+      "highlightScore": 58,
+      "highlighted": true
     },
     {
       "title": "Tarek Atoui: The Ground, The Rain, and The Harvesters at M+",

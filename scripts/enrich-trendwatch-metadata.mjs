@@ -2269,9 +2269,10 @@ function enrichData(data) {
     const g = lookupGlossary(c.displayTitle);
     const next = { ...c };
     if (g) {
-      if (g.titleEn) next.titleEn = g.titleEn;
-      if (g.whyTrending) next.whyTrending = g.whyTrending;
-      if (g.isGossip) {
+      // Prefer live-capture metadata; glossary only fills gaps.
+      if (g.titleEn && !next.titleEn) next.titleEn = g.titleEn;
+      if (g.whyTrending && !next.whyTrending) next.whyTrending = g.whyTrending;
+      if (g.isGossip && next.isGossip == null) {
         next.isGossip = true;
         next.gbaRelevance = "low";
       }

@@ -117,6 +117,167 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/八达通|八達通/i.test(t)) return "cluster:octopus";
+    if (/^月餅$|^月饼$|95后对月饼|美心月饼/i.test(t)) return "cluster:mooncake";
+    if (/闲鱼公布调查结果|闲鱼已报案|闲鱼 天才程序员|闲鱼 甩锅/i.test(t))
+      return "cluster:xianyu-probe";
+    if (/安徽、河南、福建省委书记|安徽河南福建省委书记|刘宁卸任河南省委书记|李乐成任安徽省委书记/i.test(t))
+      return "cluster:provincial-secretaries";
+    if (/live nation|livenation/i.test(t)) return "cluster:live-nation";
+    if (/瑪利諾中學|玛利诺中学/i.test(t)) return "cluster:maryknoll-drinks";
+    if (/莊太量|庄太量/i.test(t)) return "cluster:terence-chong";
+    if (/^房屋署$/i.test(t)) return "cluster:hk-housing-dept";
+    if (/台当局称小红书文化侵略|国台办回应/i.test(t)) return "cluster:tao-xhs";
+    if (/解放军报发表社论/i.test(t)) return "cluster:pla-editorial";
+    if (/教育部：学位跟着人口走|每周至少半天校外实践|中国接受过高等教育人口|双一流本科将扩容/i.test(t))
+      return "cluster:moe-15th";
+    if (/伊朗外长与美特使|伊朗总统抵达纽约/i.test(t)) return "cluster:iran-unga";
+    if (/苹果出手限制开屏摇一摇/i.test(t)) return "cluster:apple-shake-ads";
+    if (/朝鲜街头中国车/i.test(t)) return "cluster:dprk-china-cars";
+    if (/马斯克谈特斯拉上海|马斯克说未来最重要的是会提问|马斯克给年轻人提建议/i.test(t))
+      return "cluster:musk-china";
+    if (/卢伟冰说小米18|卢伟冰称小米18/i.test(t)) return "cluster:xiaomi-18pro";
+    if (/仰望超豪华行政轿车/i.test(t)) return "cluster:yangwang-sedan";
+    if (/油价上涨 换电车|油价上调预期/i.test(t)) return "cluster:oil-pre-holiday";
+    if (/习近平向全国农民/i.test(t)) return "cluster:farmers-day";
+    if (/中国民企500强/i.test(t)) return "cluster:private500";
+    if (/日本女排颁奖仪式/i.test(t)) return "cluster:asian-games-2026";
+    if (/汪顺十年前就说/i.test(t)) return "cluster:asian-games-2026";
+    if (/王楚钦孙颖莎|孙颖莎王楚钦/i.test(t)) return "cluster:asian-games-tt";
+    if (/苹果新款Mac mini/i.test(t)) return "cluster:mac-mini-m6";
+    if (/OpenAI新模型降价/i.test(t)) return "cluster:gpt6-sol";
+    if (/骁龙发布安卓2nm|高通发布两款2纳米/i.test(t)) return "cluster:qualcomm-2nm";
+    if (/摘了面具才发现跳舞的是机器人|机器人和人跳舞已经分不出了/i.test(t))
+      return "cluster:humanoid-games";
+    if (/^司機$|^套餐$/i.test(t)) return "cluster:hk-driver-meal";
+    if (/張家朗|张家朗/i.test(t)) return "cluster:cheung-ka-long";
+    if (/覃伟中|覃偉中/i.test(t)) return "cluster:qin-weizhong";
+    if (/鼓岭情缘|复信.*美国.*高校|跨越山海续写/i.test(t))
+      return "cluster:xi-us-students";
+    if (/China Haul/i.test(t)) return "cluster:china-haul";
+    if (/马斯克建议有时间|马斯克感叹中国|马斯克谈特斯拉上海|马斯克说未来最重要|马斯克给年轻人提建议/i.test(t))
+      return "cluster:musk-china";
+    if (/苹果不建议给iPhone贴膜|苹果客服称苹果并不生产膜|苹果高管称屏幕/i.test(t))
+      return "cluster:iphone-film";
+    if (/朱广权 秋天/i.test(t)) return "cluster:zhu-guangquan-autumn";
+    if (/5G\+6G|6G核心/i.test(t)) return "cluster:5g-6g";
+    if (/小米首发第六代骁龙|第六代骁龙8|小米18Pro/i.test(t))
+      return "cluster:xiaomi-snapdragon";
+    if (/苹果不建议给iPhone贴膜|苹果高管称屏幕/i.test(t))
+      return "cluster:iphone-film";
+    if (/ClaudeOpus5|Claude Opus 5\.5|Anthropic发布Claude/i.test(t))
+      return "cluster:claude-opus55";
+    if (/GPT6Sol|GPT-6 Sol|GPT-6 Sol和Luna/i.test(t)) return "cluster:gpt6-sol";
+    if (/MetaMuse|Meta Muse|扎克伯格的Muse|中国版Muse/i.test(t))
+      return "cluster:meta-muse";
+    if (/^秋分$|今日秋分|为什么说秋分/i.test(t)) return "cluster:qiufen";
+    if (/維園花燈|维园花灯/i.test(t)) return "cluster:victoria-lantern";
+    if (/定期存款|多家银行存款利息/i.test(t)) return "cluster:deposit-rates";
+    if (/编造.*创始人不喝|深圳罗某某/i.test(t)) return "cluster:sz-rumour-detain";
+    if (/消费帮扶展.*假翡翠|广州.*假翡翠/i.test(t)) return "cluster:gz-jade";
+    if (/林诗栋|王皓质问林诗栋/i.test(t)) return "cluster:lin-shidong";
+    if (/习近平向全国农民|农民致以节日/i.test(t)) return "cluster:farmers-day";
+    if (/祝福祖国大花篮/i.test(t)) return "cluster:nday-baskets";
+    if (/周琦.*亚运会/i.test(t)) return "cluster:zhou-qi-ag";
+    if (/金建宇/i.test(t)) return "cluster:kim-gunwoo";
+    if (/高通发布2纳米/i.test(t)) return "cluster:qualcomm-2nm";
+    if (/OPPO发布会|被OPPO原相机|OPPO新机|OPPO新旗舰/i.test(t))
+      return "cluster:oppo-event";
+    if (/国家发改委推动北斗/i.test(t)) return "cluster:beidou";
+    if (/广汽传祺/i.test(t)) return "cluster:gac-trumpchi";
+    if (/南海海域有火箭发射/i.test(t)) return "cluster:scs-rocket";
+    if (/中国发现超大型铜金矿/i.test(t)) return "cluster:copper-gold";
+    if (/中国首批航天员/i.test(t)) return "cluster:first-astronauts";
+    if (/伊朗外长与美特使/i.test(t)) return "cluster:iran-us-envoy";
+    if (/俄罗斯32座最大炼油厂/i.test(t)) return "cluster:ru-refineries";
+    if (/张兴海.*华为/i.test(t)) return "cluster:zhang-xinghai-hw";
+    if (/江淮回应与华为/i.test(t)) return "cluster:jac-huawei";
+    if (/问界升级为赛力斯/i.test(t)) return "cluster:aito-seres";
+    if (/习近平复信美国|复信美国10所高校/i.test(t))
+      return "cluster:xi-us-students";
+    if (/深圳市委|覃伟中/i.test(t)) return "cluster:qin-weizhong";
+    if (/美心月饼/i.test(t)) return "cluster:maxim-mooncake";
+    if (/二十届五中全会|五中全会10月/i.test(t)) return "cluster:plenum-20-5";
+    if (/代孕机构|贩卖多余婴儿/i.test(t)) return "cluster:surrogacy-trafficking";
+    if (/两部门紧急拨付|2亿支持4省救灾/i.test(t)) return "cluster:disaster-2bn";
+    if (/豪华燃油车|腰斩式.?降价|奥迪中国声明/i.test(t))
+      return "cluster:ice-luxury-cut";
+    if (/商品消费扩容升级|消费扩容升级的三重机制/i.test(t))
+      return "cluster:consumption-20";
+    if (/雷军澄清早餐|雷军回应.?武汉街头|雷军直播|雷军回应打新宇树|打新宇树赚/i.test(t))
+      return "cluster:leijun-unitree";
+    if (/国家电网传来重磅突破/i.test(t)) return "cluster:sgcc-breakthrough";
+    if (/AI或可替代教师|AI真成了大学里的洪水猛兽/i.test(t))
+      return "cluster:ai-campus";
+    if (/潘展乐|张展硕|中国女排vs日本女排|中国队亚运会|看中国游泳队|难民代表队首次亮相亚运会|^亚运会$/i.test(t))
+      return "cluster:asian-games-2026";
+    if (/Meta市值一夜暴增|Muse登上苹果|纳指涨近600点/i.test(t))
+      return "cluster:meta-muse";
+    if (/美半导体股暴涨|美股半导体|AMD总市值|英特尔暴涨|美股科技股集体大涨/i.test(t))
+      return "cluster:us-semi-rally";
+    if (/iPhone18Pro吐槽|网友吐槽iPhone18Pro|iPhone 18系列第一批受害者|iPhone18系列第一批/i.test(t))
+      return "cluster:iphone18";
+    if (/小米开源MiMoV2\.6|小米MiMoV2\.6/i.test(t)) return "cluster:xiaomi-mimo";
+    if (/华为Mate90/i.test(t)) return "cluster:huawei-mate90";
+    if (/西安比亚迪急招/i.test(t)) return "cluster:byd-xian";
+    if (/vivo ?X500|X500系列|X500 Pro Max|灭霸500/i.test(t))
+      return "cluster:vivo-x500";
+    if (/柬埔寨.?8号电诈|柬埔寨电诈园区/i.test(t)) return "cluster:cambodia-scam";
+    if (/油价节前或大涨/i.test(t)) return "cluster:oil-pre-holiday";
+    if (/刘雨昕帮谢金燕|谢金燕回应没戴麦|肖战湾区升明月|闫妮说去年大湾区/i.test(t))
+      return "cluster:gba-moonrise";
+    if (/王一博香港帆船/i.test(t)) return "cluster:wang-yibo-hk-sail";
+    if (/手机厂商大乱斗 闲鱼|^闲鱼的双11$/i.test(t)) return "cluster:xianyu-phones";
+    if (/SpaceXAI发布Grok|Grok4\.7/i.test(t)) return "cluster:grok-47";
+    if (/^gemini$|google gemini/i.test(t)) return "cluster:gemini";
+    if (/多地宣布结婚发钱/i.test(t)) return "cluster:marriage-cash";
+    if (/做大做强先进制造业|制造业是立国之本/i.test(t))
+      return "cluster:advanced-manufacturing";
+    if (/公积金提取|“安居钱”|安居钱越来越好用|今起公积金/i.test(t))
+      return "cluster:housing-fund-extract";
+    if (/闲鱼.*涉黄|闲鱼暗藏涉黄/i.test(t)) return "cluster:xianyu-vice";
+    if (/湾区升明月/i.test(t)) return "cluster:gba-moonrise";
+    if (/亞運會2026|^亚运会$|潘展乐|今日亚运将决出/i.test(t))
+      return "cluster:asian-games-2026";
+    if (
+      /iPhone18ProMax1T|iPhone18Pro首销|苹果高管谈iPhone|苹果拆分iPhone18|苹果M6芯片/i.test(
+        t,
+      )
+    )
+      return "cluster:iphone18";
+    if (/智界RX发布会|华为引望声明|华为乾崑将持续推进问界|华为阔直板手机/i.test(t))
+      return "cluster:huawei-auto";
+    if (/小米18Pro|卢伟冰确认小米|卢伟冰爆料小米/i.test(t))
+      return "cluster:xiaomi-18pro";
+    if (/董明珠卸任|格力电商换帅/i.test(t)) return "cluster:gree-zhuhai";
+    if (/北大复旦校长|是什么让北大复旦/i.test(t)) return "cluster:ai-education";
+    if (/卡宴降30万/i.test(t)) return "cluster:cayenne-cut";
+    if (/农民交公粮/i.test(t)) return "cluster:grain-pension";
+    if (/挂靠参保偷取社保/i.test(t)) return "cluster:fake-social-insurance";
+    if (/鹏城首发星/i.test(t)) return "cluster:pengcheng-sat";
+    if (/聚能环/i.test(t)) return "cluster:gas-concentrator";
+    if (/廖碧兒/i.test(t)) return "cluster:bernice-liu";
+    if (/阮嘉敏|吳旭東/i.test(t)) return "cluster:yuen-ka-man";
+    if (/^google$|^ai$/i.test(t)) return "cluster:google-ai";
+    if (/阿仙奴|^arsenal$/i.test(t)) return "cluster:arsenal";
+    if (/朱振國|廖智勇/i.test(t)) return "cluster:chu-chun-kwok";
+    if (/五年規劃|五年规划|照顧 者|照顾者津貼|施政報告2026|施政报告2026/i.test(t))
+      return "cluster:hk-policy-address";
+    if (/^918$|九一八|勿忘九一八|勿忘！勿忘/i.test(t)) return "cluster:918-95";
+    if (/第23届东博会|东博会峰会/i.test(t)) return "cluster:caexpo-2026";
+    if (/楼市进入.?二手房|全款买房的人越来越多/i.test(t)) return "cluster:secondhand-homes";
+    if (/南医大导师被造谣/i.test(t)) return "cluster:smu-rumour";
+    if (/中俄安理会投下反对票|中国和俄罗斯投下反对票/i.test(t)) return "cluster:unsc-iran";
+    if (/英特尔市值一夜暴涨/i.test(t)) return "cluster:intel-rally";
+    if (/华为发布全新AI计算架构|华为突破鸿蒙依旧靠单核/i.test(t))
+      return "cluster:huawei-ai-arch";
+    if (/小鹏G9L价格炸裂|小鹏G9L起步即满配/i.test(t)) return "cluster:xpeng-g9l";
+    if (/上1休1上5休3/i.test(t)) return "cluster:work-roster";
+    if (/机顶盒即将退场/i.test(t)) return "cluster:set-top-box";
+    if (/曼城對諾里奇|man city vs norwich/i.test(t)) return "cluster:man-city";
+    if (/今日亚运会半决赛中国男篮|亚运会有日本选手被分配/i.test(t))
+      return "cluster:asian-games-bball";
+    if (/中医暂不纳入首批医保/i.test(t)) return "cluster:tcm-nhsa";
     if (/施政報告|施政报告|醫療券|医疗券/i.test(t)) return "cluster:hk-policy-address";
     if (/百\s*佳|parknshop|超級\s*市場|超级市场/i.test(t)) return "cluster:parknshop-88";
     if (/利物浦對熱刺|liverpool vs spurs|英聯盃|carabao cup/i.test(t))
@@ -126,7 +287,8 @@ function pruneData(data) {
     if (/平陆运河|西部多了一个|沿海城市/i.test(t)) return "cluster:pinglu-canal";
     if (/一劳永逸解决台湾|崔天凯/i.test(t)) return "cluster:cui-taiwan";
     if (/习近平南亚之行|南亚之行三大成果/i.test(t)) return "cluster:xi-brics-delhi";
-    if (/问界售后|问界大饭店|问界说明|问界将独立/i.test(t)) return "cluster:aito-seres";
+    if (/问界售后|问界大饭店|问界说明|问界将独立|问界独立迎接暴风雨|问界撤出鸿蒙智行|赛力斯华为分家|华为赛力斯合作模式|^赛力斯$/i.test(t))
+      return "cluster:aito-seres";
     if (/黄仁勋表示中国没人谈AI末日|中国没人谈AI末日/i.test(t)) return "cluster:huang-ai-doom";
     if (/一箭9星|引力一号|直击引力一号/i.test(t)) return "cluster:gravity1-9sat";
     if (/用AI裁了70多人/i.test(t)) return "cluster:ai-layoffs";

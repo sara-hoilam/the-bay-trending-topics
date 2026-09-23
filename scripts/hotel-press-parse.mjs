@@ -17,7 +17,7 @@ const MONTHS = {
 };
 
 export const AWARD_RE =
-  /\b(award|awards|honou?rs?|honou?red|recognized|recognised|certif(?:y|ied|ication|ies)|ranked?|ranking|debut|wins?\b|won\b|winner|named|earns?|earned|great place to work|green hotel|50 best|stella|forbes|michelin|iso\s*\d+|share award|employee experience|best hotel|world'?s\s+\d+|gold award|platinum|five-star|five star)\b/i;
+  /\b(award|awards|honou?rs?|honou?red|recognized|recognised|certif(?:y|ied|ication|ies)|ranked?|ranking|debut|wins?\b|won\b|winner|named|earns?|earned|great place to work|green hotel|50 best|stella|forbes|michelin|iso\s*\d+|share award|employee experience|best hotel|world'?s\s+\d+|gold award|platinum|five-star|five star|carbon[-\s]?neutral)\b/i;
 
 export const GOOD_NEWS_RE =
   /\b(donat(?:e|es|ed|ion)|relief|community|cares|team members?|anniversary|first in|launches?|launching)\b/i;
@@ -46,6 +46,8 @@ export function decodeHtml(s) {
     .replace(/&lsquo;/g, "‘")
     .replace(/&rsquo;/g, "’")
     .replace(/&hellip;/gi, "…")
+    .replace(/&euml;/gi, "ë")
+    .replace(/&eacute;/gi, "é")
     .replace(/\s+/g, " ")
     .trim();
 }
