@@ -28,8 +28,11 @@ const CATEGORY_MAP = {
   News: "News",
   Lifestyle: "Lifestyle",
   "New Hotels": "New Hotels",
+  Entrepreneur: "Entrepreneur",
   Hotels: "Hotels",
 };
+
+const HAPPENINGS_CATEGORIES = new Set(["Lifestyle", "Entrepreneur"]);
 
 const SKIP_SECTIONS = new Set(["Social", "Event"]);
 
@@ -284,6 +287,8 @@ const DISPLAY_NAMES = {
   "marriott.com": "Marriott Bonvoy Openings",
   "group.accor.com": "Accor 2026 Openings",
   "ihg.com": "IHG New Hotels",
+  // Entrepreneur
+  "hkstartupsociety.hktdc.com": "HK Startup Society",
   // Hotels (press rooms)
   "galaxyentertainment.com": "Galaxy Entertainment",
   "ir.melco-resorts.com": "Melco Resorts",
@@ -333,6 +338,8 @@ const URL_OVERRIDES = {
   "group.accor.com":
     "https://group.accor.com/en/news-stories/accor-2026-openings",
   "ihg.com": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
+  "hkstartupsociety.hktdc.com":
+    HAPPENINGS_FETCH_BY_DOMAIN["hkstartupsociety.hktdc.com"].listingUrl,
   "galaxyentertainment.com":
     "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
   "ir.melco-resorts.com": "https://ir.melco-resorts.com/press-releases",
@@ -376,7 +383,9 @@ function parseDomains(md) {
   let category = null;
 
   for (const line of md.split(/\r?\n/)) {
-    const head = line.match(/^## (Official|News|Lifestyle|Social|Event|New Hotels|Hotels)/);
+    const head = line.match(
+      /^## (Official|News|Lifestyle|Social|Event|New Hotels|Entrepreneur|Hotels)/,
+    );
     if (head) {
       category = SKIP_SECTIONS.has(head[1]) ? null : head[1];
       continue;
@@ -406,7 +415,7 @@ function parseDomains(md) {
         category: categoryName,
       };
       if (explicitUrl) row.url = explicitUrl;
-      if (categoryName === "Lifestyle") {
+      if (HAPPENINGS_CATEGORIES.has(categoryName)) {
         const meta = happeningsFetchMeta(domain);
         if (meta) row.happeningsFetch = meta;
       }

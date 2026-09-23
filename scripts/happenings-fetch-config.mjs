@@ -1,5 +1,5 @@
 /**
- * Happenings fetch metadata for Lifestyle domains.
+ * Happenings fetch metadata for Lifestyle and Entrepreneur domains.
  * Used by generate-source-links-data.mjs (embed in JSON) and generate-happenings-data.mjs.
  *
  * listingUrl — URL shown on Source Links tab and used as Referer for fetch
@@ -59,6 +59,12 @@ export const HAPPENINGS_FETCH_BY_DOMAIN = {
   "ticketflap.com": {
     method: "ticketflap-top",
     listingUrl: "https://www.ticketflap.com/",
+    defaultRegion: { region: "hk", location: "Hong Kong" },
+  },
+  "hkstartupsociety.hktdc.com": {
+    method: "html",
+    parser: "startup-society-listing-json",
+    listingUrl: "https://hkstartupsociety.hktdc.com/en/events",
     defaultRegion: { region: "hk", location: "Hong Kong" },
   },
 };

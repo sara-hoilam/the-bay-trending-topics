@@ -1,7 +1,17 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 132,
+  "count": 133,
   "sources": [
+    {
+      "domain": "hkstartupsociety.hktdc.com",
+      "displayName": "HK Startup Society",
+      "url": "https://hkstartupsociety.hktdc.com/en/events",
+      "category": "Entrepreneur",
+      "happeningsFetch": {
+        "method": "html",
+        "parser": "startup-society-listing-json"
+      }
+    },
     {
       "domain": "press.fourseasons.com",
       "displayName": "Four Seasons Hong Kong",
