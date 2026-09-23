@@ -26,6 +26,8 @@
     "ig:refresh": "node scripts/capture-ig-leaderboard.mjs --refresh",
     "ig:sheet-sync": "node scripts/sync-ig-leaderboard-sheet.mjs",
     "ig:test": "node --test scripts/ig-capture-args.test.mjs",
+    "seo:verify": "node scripts/verify-seo-rankings.mjs",
+    "seo:test": "node --test scripts/seo-supabase.test.mjs",
     "ticketflap:fetch": "node scripts/fetch-ticketflap-events.mjs",
     "trendwatch:prune": "node scripts/prune-trendwatch-gba.mjs",
     "trendwatch:enrich": "node scripts/enrich-trendwatch-metadata.mjs"
@@ -35,6 +37,7 @@
   },
   "optionalDependencies": {
     "@cursor/sdk": "^1.0.13",
+    "@supabase/supabase-js": "^2.117.0",
     "googleapis": "^173.0.0",
     "puppeteer-core": "^24.43.1"
   },
