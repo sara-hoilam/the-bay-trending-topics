@@ -12,7 +12,7 @@ This automation **does not use PRs** — agents **push directly to `main`**, and
 | Step | Script / agent | Output |
 |------|----------------|--------|
 | 1 | `prompts/gba-pulse-cloud-run1-trendwatch.md` | `orchestration/fragments/trendwatch.html` |
-| 2 | `prompts/gba-pulse-cloud-run2-daily-brief.md` | Daily Brief markdown + `overall.html` |
+| 2 | `prompts/gba-pulse-cloud-run2-daily-brief.md` | Daily Brief markdown + `overall.html`. Selection follows `references/Sep2026-training-data.md`: pool of 100, publish at most 40 (HK 9, Shenzhen 8, Macao 8, Nation 4, World 4, GBA 3, Guangzhou 2, Zhuhai 2; 34 hard / 5 lifestyle / 1 award). |
 | 3 | `prompts/gba-pulse-cloud-run3-happenings.md` (optional) | Happenings events (script also refreshes in post-pipeline) |
 | 4 | `prompts/gba-pulse-cloud-run4-ig-leaderboard.md` (optional) | IG Leaderboard |
 | 5 | `prompts/gba-pulse-cloud-run5-hotel-press.md` (optional) | Hotel Press (script also refreshes in post-pipeline) |
