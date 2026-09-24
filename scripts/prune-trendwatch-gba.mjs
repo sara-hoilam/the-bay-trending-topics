@@ -117,8 +117,22 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/习近平抵达美国|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|特朗普抵达机场|专家称美国总统接机|中美关系三个没有变|习主席访问美国/i.test(t))
+      return "cluster:xi-us-visit";
+    if (/獨居長者|独居长者/i.test(t)) return "cluster:hk-elderly-alone";
+    if (/佳宝食品|佳寶食品/i.test(t)) return "cluster:kai-bo";
+    if (/關嘉敏|关嘉敏|关嘉敦/i.test(t)) return "cluster:carman-kwan";
+    if (/降压疫苗|打一针管数月的降压疫苗/i.test(t)) return "cluster:bp-vaccine";
+    if (/十五五.*养老服务法|5300多万名老年人享受老年人补贴/i.test(t))
+      return "cluster:elderly-care-law";
+    if (/豆包员工感慨|豆包成边缘产品|豆包在最后一刻也不装了/i.test(t))
+      return "cluster:doubao-edge";
+    if (/一张物流网跑出中国加速度/i.test(t)) return "cluster:china-logistics";
+    if (/兰香如故/i.test(t)) return "cluster:lanxiang-tw";
+    if (/中国女排夺冠 香港记者|中国女排/i.test(t)) return "cluster:china-volleyball";
+    if (/任正非重申华为不造车/i.test(t)) return "cluster:ren-zhengfei";
     if (/八达通|八達通/i.test(t)) return "cluster:octopus";
-    if (/^月餅$|^月饼$|95后对月饼|美心月饼/i.test(t)) return "cluster:mooncake";
+    if (/^月餅$|^月饼$|95后对月饼|美心月饼|月饼市场从/i.test(t)) return "cluster:mooncake";
     if (/闲鱼公布调查结果|闲鱼已报案|闲鱼 天才程序员|闲鱼 甩锅/i.test(t))
       return "cluster:xianyu-probe";
     if (/安徽、河南、福建省委书记|安徽河南福建省委书记|刘宁卸任河南省委书记|李乐成任安徽省委书记/i.test(t))
