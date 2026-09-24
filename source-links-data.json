@@ -1,12 +1,13 @@
 {
   "generatedFrom": "references/daily-brief-source-domains.md",
-  "count": 133,
+  "count": 136,
   "sources": [
     {
       "domain": "hkstartupsociety.hktdc.com",
       "displayName": "HK Startup Society",
       "url": "https://hkstartupsociety.hktdc.com/en/events",
       "category": "Entrepreneur",
+      "region": "Hong Kong",
       "happeningsFetch": {
         "method": "html",
         "parser": "startup-society-listing-json"
@@ -17,6 +18,7 @@
       "displayName": "Four Seasons Hong Kong",
       "url": "https://press.fourseasons.com/hongkong/hotel-news/",
       "category": "Hotels",
+      "region": "Hong Kong",
       "hotelPressFetch": {
         "method": "fourseasons-press",
         "listingUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
@@ -29,6 +31,7 @@
       "displayName": "Galaxy Entertainment",
       "url": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "galaxy-press",
         "listingUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
@@ -41,6 +44,7 @@
       "displayName": "Mandarin Oriental",
       "url": "https://press.mandarinoriental.com/section/press-releases",
       "category": "Hotels",
+      "region": "GBA",
       "hotelPressFetch": {
         "method": "mandarin-press",
         "listingUrl": "https://press.mandarinoriental.com/section/press-releases",
@@ -53,6 +57,7 @@
       "displayName": "Melco Resorts",
       "url": "https://ir.melco-resorts.com/press-releases",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "melco-press",
         "listingUrl": "https://ir.melco-resorts.com/press-releases",
@@ -65,6 +70,7 @@
       "displayName": "MGM China",
       "url": "https://en.mgmchinaholdings.com/media-releases",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "mgm-press",
         "listingUrl": "https://en.mgmchinaholdings.com/media-releases",
@@ -77,6 +83,7 @@
       "displayName": "Sands China Press",
       "url": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "sands-press",
         "listingUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
@@ -89,6 +96,7 @@
       "displayName": "Shangri-La Group",
       "url": "https://www.shangri-la.com/group/media/",
       "category": "Hotels",
+      "region": "GBA",
       "hotelPressFetch": {
         "method": "shangri-articles",
         "listingUrl": "https://www.shangri-la.com/group/media/",
@@ -101,6 +109,7 @@
       "displayName": "SJM Holdings",
       "url": "https://www.sjmholdings.com/en/media-center/press-release",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "sjm-press",
         "listingUrl": "https://www.sjmholdings.com/en/media-center/press-release",
@@ -113,6 +122,7 @@
       "displayName": "Wynn Macau Newsroom",
       "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "wynn-newsroom",
         "listingUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
@@ -125,6 +135,7 @@
       "displayName": "Wynn Palace Newsroom",
       "url": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
       "category": "Hotels",
+      "region": "Macao",
       "hotelPressFetch": {
         "method": "wynn-newsroom",
         "listingUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
@@ -137,6 +148,7 @@
       "displayName": "10times (Trade Shows)",
       "url": "https://10times.com/shenzhen-cn/tradeshows",
       "category": "Lifestyle",
+      "region": "Shenzhen",
       "happeningsFetch": {
         "method": "html"
       }
@@ -146,6 +158,7 @@
       "displayName": "Amazing Shenzhen (Events)",
       "url": "https://www.eyeshenzhen.com/node_400950.htm",
       "category": "Lifestyle",
+      "region": "Shenzhen",
       "happeningsFetch": {
         "method": "html",
         "parser": "eyeshenzhen"
@@ -156,6 +169,7 @@
       "displayName": "HKTDC Event Calendar",
       "url": "https://event.hktdc.com/?organizers=hktdc&eventFormat=Exhibition&location=hk",
       "category": "Lifestyle",
+      "region": "Hong Kong",
       "happeningsFetch": {
         "method": "hktdc-phr-api"
       }
@@ -165,15 +179,24 @@
       "displayName": "Macao Government Tourism Office",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202609",
       "category": "Lifestyle",
+      "region": "Macao",
       "happeningsFetch": {
         "method": "macaotourism-whatson-api"
       }
+    },
+    {
+      "domain": "macauonjourney.com",
+      "displayName": "Macao on Journey",
+      "url": "https://macauonjourney.com/",
+      "category": "Lifestyle",
+      "region": "Macao"
     },
     {
       "domain": "shenzhenmuseum.com",
       "displayName": "Shenzhen Museum",
       "url": "https://www.shenzhenmuseum.com/en/exhibition",
       "category": "Lifestyle",
+      "region": "Shenzhen",
       "happeningsFetch": {
         "method": "html"
       }
@@ -183,6 +206,7 @@
       "displayName": "Ticketflap",
       "url": "https://www.ticketflap.com/",
       "category": "Lifestyle",
+      "region": "GBA",
       "happeningsFetch": {
         "method": "ticketflap-top"
       }
@@ -192,6 +216,7 @@
       "displayName": "WestK Hong Kong",
       "url": "https://www.westk.hk/en/whats-on",
       "category": "Lifestyle",
+      "region": "Hong Kong",
       "happeningsFetch": {
         "method": "html"
       }
@@ -200,691 +225,820 @@
       "domain": "group.accor.com",
       "displayName": "Accor 2026 Openings",
       "url": "https://group.accor.com/en/news-stories/accor-2026-openings",
-      "category": "New Hotels"
+      "category": "New Hotels",
+      "region": "International"
     },
     {
       "domain": "ihg.com",
       "displayName": "IHG New Hotels",
       "url": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
-      "category": "New Hotels"
+      "category": "New Hotels",
+      "region": "International"
     },
     {
       "domain": "marriott.com",
       "displayName": "Marriott Bonvoy Openings",
       "url": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
-      "category": "New Hotels"
+      "category": "New Hotels",
+      "region": "International"
     },
     {
       "domain": "theopeninglist.com",
       "displayName": "The Opening List",
       "url": "https://theopeninglist.com/collection/true",
-      "category": "New Hotels"
+      "category": "New Hotels",
+      "region": "International"
     },
     {
       "domain": "21jingji.com",
       "displayName": "21st Century Business Herald",
       "url": "https://www.21jingji.com/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "abcnews.com",
       "displayName": "ABC News",
       "url": "https://www.abcnews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "aerotime.aero",
       "displayName": "AeroTime",
       "url": "https://www.aerotime.aero/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "bbc.com",
       "displayName": "BBC News",
       "url": "https://www.bbc.com/news",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "m.bendibao.com",
       "displayName": "Bendibao (Mobile)",
       "url": "https://m.bendibao.com/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "bloomberg.com",
       "displayName": "Bloomberg",
       "url": "https://www.bloomberg.com/asia",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "cbsnews.com",
       "displayName": "CBS News",
       "url": "https://www.cbsnews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "news.cctv.com",
       "displayName": "CCTV News",
       "url": "https://www.news.cctv.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "news.cgtn.com",
       "displayName": "CGTN",
       "url": "https://www.cgtn.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "channelnewsasia.com",
       "displayName": "Channel NewsAsia",
       "url": "https://www.channelnewsasia.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "chinadaily.com.cn",
       "displayName": "China Daily",
       "url": "https://www.chinadaily.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "cn.chinadaily.com.cn",
       "displayName": "China Daily (CN)",
       "url": "https://cn.chinadaily.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "gd.chinadaily.com.cn",
       "displayName": "China Daily (Guangdong)",
       "url": "https://gd.chinadaily.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "chinadailyasia.com",
       "displayName": "China Daily Asia",
       "url": "https://www.chinadailyasia.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "chinadailyhk.com",
       "displayName": "China Daily Hong Kong",
       "url": "https://www.chinadailyhk.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "chinanews.com.cn",
       "displayName": "China News Service",
       "url": "https://www.chinanews.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "cnbc.com",
       "displayName": "CNBC",
       "url": "https://cnbc.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "cnevpost.com",
       "displayName": "CnEVPost",
       "url": "https://cnevpost.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "edition.cnn.com",
       "displayName": "CNN",
       "url": "https://edition.cnn.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "cryptobriefing.com",
       "displayName": "Crypto Briefing",
       "url": "https://www.cryptobriefing.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "dimsumdaily.hk",
       "displayName": "Dimsum Daily",
       "url": "https://www.dimsumdaily.hk/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "webzdg.sun0769.com",
       "displayName": "Dongguan Daily",
       "url": "https://webzdg.sun0769.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Dongguan"
     },
     {
       "domain": "jjckb.xinhuanet.com",
       "displayName": "Economic Information Daily",
       "url": "https://www.jjckb.xinhuanet.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "exmoo.com",
       "displayName": "Exmoo",
       "url": "https://www.exmoo.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "focustaiwan.tw",
       "displayName": "Focus Taiwan",
       "url": "https://www.focustaiwan.tw/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "foshannews.net",
       "displayName": "Foshan News",
       "url": "https://www.foshannews.net/",
-      "category": "News"
+      "category": "News",
+      "region": "Foshan"
     },
     {
       "domain": "fzs.newoe.cn",
       "displayName": "Foshan News (Newoe)",
       "url": "https://www.fzs.newoe.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "Foshan"
     },
     {
       "domain": "gba.net.cn",
       "displayName": "GBA Net",
       "url": "https://www.gba.net.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "ggrasia.com",
       "displayName": "GGRAsia",
       "url": "https://www.ggrasia.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "globaltimes.cn",
       "displayName": "Global Times",
       "url": "https://www.globaltimes.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "news.gscn.com.cn",
       "displayName": "GSCN News",
       "url": "https://www.news.gscn.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "gdtv.cn",
       "displayName": "Guangdong TV",
       "url": "https://gdtv.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "gzdaily.dayoo.com",
       "displayName": "Guangzhou Daily",
-      "url": "https://gzdaily.dayoo.com/",
-      "category": "News"
+      "url": "https://gzdaily.dayoo.com/pc/html/2026-02/05/index_2026-02-05.htm",
+      "category": "News",
+      "region": "Guangzhou"
     },
     {
       "domain": "huacheng.gz-cmc.com",
       "displayName": "Guangzhou Daily (Huacheng)",
       "url": "https://www.huacheng.gz-cmc.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Guangzhou"
     },
     {
       "domain": "hk01.com",
       "displayName": "HK01",
       "url": "https://hk01.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "hongkongfp.com",
       "displayName": "Hong Kong Free Press",
       "url": "https://hongkongfp.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "xxsb.gz-cmc.com",
       "displayName": "Information Times (Guangzhou)",
       "url": "https://www.xxsb.gz-cmc.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Guangzhou"
     },
     {
       "domain": "jinguxun.com",
       "displayName": "Jingu Xun",
       "url": "https://www.jinguxun.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "zaobao.com",
       "displayName": "Lianhe Zaobao",
       "url": "https://www.zaobao.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "macaubusiness.com",
       "displayName": "Macao Business",
       "url": "https://macaubusiness.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "macaobusinessnews.com",
       "displayName": "Macao Business News",
       "url": "https://macaobusinessnews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "modaily.cn",
       "displayName": "Macao Daily",
-      "url": "https://www.modaily.cn/",
-      "category": "News"
+      "url": "https://www.modaily.cn/amucsite/web/index.html#/home/102",
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "macaodaily.com",
       "displayName": "Macao Daily (macaodaily.com)",
       "url": "https://macaodaily.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "macaudailytimes.com.mo",
       "displayName": "Macao Daily Times",
       "url": "https://macaudailytimes.com.mo/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "macaupostdaily.com",
       "displayName": "Macao Post Daily",
       "url": "https://macaupostdaily.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "epaper.nfnews.com",
       "displayName": "Nanfang Plus (E-paper)",
       "url": "https://epaper.nfnews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "newsgd.com",
       "displayName": "NewsGD",
       "url": "https://www.newsgd.com/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "hk.on.cc",
       "displayName": "on.cc",
       "url": "https://hk.on.cc/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "hm.people.com.cn",
       "displayName": "People's Daily (Hainan)",
       "url": "https://www.hm.people.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "sz.people.com.cn",
       "displayName": "People's Daily (Shenzhen)",
       "url": "https://sz.people.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "Shenzhen"
     },
     {
       "domain": "reuters.com",
       "displayName": "Reuters",
       "url": "https://www.reuters.com/world/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "news.rthk.hk",
       "displayName": "RTHK News",
       "url": "https://news.rthk.hk/rthk/en/latest-news.htm",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "stcn.com",
       "displayName": "Securities Times",
       "url": "https://www.stcn.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "szdaily.sznews.com",
       "displayName": "Shenzhen Daily",
       "url": "https://szdaily.sznews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Shenzhen"
     },
     {
       "domain": "wb.sznews.com",
       "displayName": "Shenzhen Evening News",
       "url": "https://www.wb.sznews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Shenzhen"
     },
     {
       "domain": "sznews.com",
       "displayName": "Shenzhen News",
       "url": "https://www.sznews.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Shenzhen"
     },
     {
       "domain": "sztqb.sznews.com",
       "displayName": "Shenzhen Special Zone Daily",
-      "url": "https://sztqb.sznews.com/",
-      "category": "News"
+      "url": "https://sztqb.sznews.com/PC/layout/202602/27/node_02.html",
+      "category": "News",
+      "region": "Shenzhen"
     },
     {
       "domain": "sztv.com.cn",
       "displayName": "Shenzhen TV",
       "url": "https://sztv.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "Shenzhen"
     },
     {
       "domain": "k.sina.com.cn",
       "displayName": "Sina",
       "url": "https://www.k.sina.com.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "sina.cn",
       "displayName": "Sina",
       "url": "https://www.sina.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "finance.sina.cn",
       "displayName": "Sina Finance",
       "url": "https://finance.sina.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "stheadline.com",
       "displayName": "Sing Tao Headline",
       "url": "https://www.stheadline.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "sohu.com",
       "displayName": "Sohu",
       "url": "https://www.sohu.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "scmp.com",
       "displayName": "South China Morning Post",
       "url": "https://www.scmp.com/topics/greater-bay-area",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "news.southcn.com",
       "displayName": "Southern Net",
-      "url": "https://news.southcn.com/",
-      "category": "News"
+      "url": "https://news.southcn.com/node_b36d35b4e2",
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "info.newsgd.com",
       "displayName": "Southern Net (NewsGD)",
       "url": "https://info.newsgd.com/",
-      "category": "News"
+      "category": "News",
+      "region": "GBA"
     },
     {
       "domain": "epaper.tkww.hk",
       "displayName": "Ta Kung Wen Wei (E-paper)",
       "url": "https://epaper.tkww.hk/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "taichungdaily.com",
       "displayName": "Taichung Daily",
       "url": "https://www.taichungdaily.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "tdm.com.mo",
       "displayName": "TDM (Macao)",
-      "url": "https://www.tdm.com.mo/zh-hant/",
-      "category": "News"
+      "url": "https://www.tdm.com.mo/zh-hant/news_zh",
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "news.qq.com",
       "displayName": "Tencent News",
       "url": "https://www.news.qq.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "independent.co.uk",
       "displayName": "The Independent",
       "url": "https://www.independent.co.uk/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "thepaper.cn",
       "displayName": "The Paper",
       "url": "https://www.thepaper.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "thestandard.com.hk",
       "displayName": "The Standard",
       "url": "https://www.thestandard.com.hk/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "straitstimes.com",
       "displayName": "The Straits Times",
       "url": "https://www.straitstimes.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "telegraph.co.uk",
       "displayName": "The Telegraph",
       "url": "https://www.telegraph.co.uk/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "wsj.com",
       "displayName": "The Wall Street Journal",
       "url": "https://www.wsj.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "news.tvb.com",
-      "displayName": "TVB News",
-      "url": "https://news.tvb.com/tc/local",
-      "category": "News"
+      "displayName": "TVB News — Hong Kong",
+      "url": "https://news.tvb.com/tc/nav/zone/1/1-%E6%B8%AF%E8%81%9E",
+      "category": "News",
+      "region": "Hong Kong"
+    },
+    {
+      "domain": "news.tvb.com",
+      "displayName": "TVB News — simplified",
+      "url": "https://news.tvb.com/sc/nav/channel/6/27-channel",
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "news.un.org",
       "displayName": "UN News",
       "url": "https://www.news.un.org/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "vakiodaily.com",
       "displayName": "Va Kio Daily",
       "url": "https://www.vakiodaily.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "waou.com.mo",
       "displayName": "Wa Ou Daily",
       "url": "https://www.waou.com.mo/",
-      "category": "News"
+      "category": "News",
+      "region": "Macao"
     },
     {
       "domain": "english.news.cn",
       "displayName": "Xinhua English",
       "url": "https://english.news.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "news.cn",
       "displayName": "Xinhua News",
       "url": "https://www.news.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "xinhuanet.com",
       "displayName": "Xinhuanet",
       "url": "https://www.xinhuanet.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "finance.yahoo.com",
       "displayName": "Yahoo Finance",
       "url": "https://finance.yahoo.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "hk.finance.yahoo.com",
       "displayName": "Yahoo Finance HK",
       "url": "https://hk.finance.yahoo.com/",
-      "category": "News"
+      "category": "News",
+      "region": "Hong Kong"
     },
     {
       "domain": "sports.yahoo.com",
       "displayName": "Yahoo Sports",
       "url": "https://www.sports.yahoo.com/",
-      "category": "News"
+      "category": "News",
+      "region": "International"
     },
     {
       "domain": "yicaiglobal.com",
       "displayName": "Yicai Global",
       "url": "https://www.yicaiglobal.com/",
-      "category": "News"
+      "category": "News",
+      "region": "National"
     },
     {
       "domain": "pub-zhtb.hizh.cn",
       "displayName": "Zhuhai Daily",
       "url": "https://pub-zhtb.hizh.cn/",
-      "category": "News"
+      "category": "News",
+      "region": "Zhuhai"
+    },
+    {
+      "domain": "hizh.cn",
+      "displayName": "Zhuhai News (hizh.cn)",
+      "url": "https://www.hizh.cn/",
+      "category": "News",
+      "region": "Zhuhai"
     },
     {
       "domain": "fso.gov.hk",
       "displayName": "Financial Services Office (HK)",
       "url": "https://www.fso.gov.hk/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "eng.gdd.gov.cn",
       "displayName": "Guangdong Government (English)",
       "url": "https://eng.gdd.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "GBA"
     },
     {
       "domain": "gdii.gd.gov.cn",
       "displayName": "Guangdong Industry & IT Dept",
       "url": "https://gdii.gd.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "GBA"
     },
     {
       "domain": "gz.gov.cn",
       "displayName": "Guangzhou Government",
       "url": "https://www.gz.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Guangzhou"
     },
     {
       "domain": "hengqin.gov.cn",
       "displayName": "Hengqin Authority",
       "url": "https://www.hengqin.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Zhuhai"
     },
     {
       "domain": "hkelectric.com",
       "displayName": "HK Electric",
       "url": "https://hkelectric.com/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "info.gov.hk",
       "displayName": "Hong Kong Government",
       "url": "https://www.info.gov.hk/gia/general/ctoday.htm",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "news.gov.hk",
       "displayName": "Hong Kong Government News",
       "url": "https://www.news.gov.hk/eng/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "heritagemuseum.gov.hk",
       "displayName": "Hong Kong Heritage Museum",
       "url": "https://www.heritagemuseum.gov.hk/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "hko.gov.hk",
       "displayName": "Hong Kong Observatory",
       "url": "https://hko.gov.hk/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "legco.gov.hk",
       "displayName": "Legislative Council (HK)",
       "url": "https://www.legco.gov.hk/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "locpg.gov.cn",
       "displayName": "Liaison Office of Central Govt (HK)",
       "url": "https://www.locpg.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Hong Kong"
     },
     {
       "domain": "bo.dsaj.gov.mo",
       "displayName": "Macao Legal Affairs Bureau",
       "url": "https://www.bo.dsaj.gov.mo/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Macao"
     },
     {
       "domain": "mlm.com.mo",
       "displayName": "Macao Lottery",
       "url": "https://mlm.com.mo/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Macao"
     },
     {
       "domain": "gov.mo",
       "displayName": "Macao SAR Government",
       "url": "https://www.gov.mo/zh-hant/news/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Macao"
     },
     {
       "domain": "smg.gov.mo",
       "displayName": "Macao SAR Government (SMG)",
       "url": "https://www.smg.gov.mo/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Macao"
     },
     {
       "domain": "qh.sz.gov.cn",
       "displayName": "Qianhai Authority",
       "url": "https://www.qh.sz.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Shenzhen"
     },
     {
       "domain": "fao.sz.gov.cn",
       "displayName": "Shenzhen Foreign Affairs Office",
       "url": "https://www.fao.sz.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Shenzhen"
     },
     {
       "domain": "szft.gov.cn",
       "displayName": "Shenzhen Futian District Govt",
       "url": "https://szft.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Shenzhen"
     },
     {
       "domain": "sz.gov.cn",
       "displayName": "Shenzhen Government",
       "url": "https://sz.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "Shenzhen"
     },
     {
       "domain": "english.gov.cn",
       "displayName": "State Council (English)",
       "url": "https://english.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "National"
     },
     {
       "domain": "sasac.gov.cn",
       "displayName": "State-owned Assets Commission",
       "url": "https://www.sasac.gov.cn/",
-      "category": "Official"
+      "category": "Official",
+      "region": "National"
     },
     {
       "domain": "who.int",
       "displayName": "World Health Organization",
       "url": "https://www.who.int/",
-      "category": "Official"
+      "category": "Official",
+      "region": "International"
     }
   ]
 }

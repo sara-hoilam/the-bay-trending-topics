@@ -32,7 +32,7 @@
     }
     if (!rows.length) {
       tbody.innerHTML =
-        "<tr><td colspan=\"4\" class=\"sl-err\">No sources in this category.</td></tr>";
+        "<tr><td colspan=\"5\" class=\"sl-err\">No sources in this category.</td></tr>";
       return;
     }
     tbody.innerHTML = rows
@@ -45,6 +45,7 @@
           "<td class=\"sl-name\">" + esc(label) + "</td>" +
           "<td class=\"sl-link\"><a href=\"" + esc(row.url) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" +
           esc(row.url) + "</a></td>" +
+          "<td class=\"sl-region\">" + esc(row.region || "GBA") + "</td>" +
           "<td class=\"sl-cat\"><span class=\"sl-cat-badge sl-cat-" + esc(row.category.toLowerCase().replace(/\s+/g, "-")) + "\">" +
           esc(row.category) + "</span></td>" +
           "</tr>"
@@ -73,7 +74,7 @@
     .then(render)
     .catch(function (err) {
       tbody.innerHTML =
-        "<tr><td colspan=\"4\" class=\"sl-err\">Could not load source links (" +
+        "<tr><td colspan=\"5\" class=\"sl-err\">Could not load source links (" +
         esc(String(err.message)) +
         "). Run <code>node scripts/generate-source-links-data.mjs</code>.</td></tr>";
     });
