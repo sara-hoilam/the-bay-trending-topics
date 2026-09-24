@@ -1,0 +1,15 @@
+{
+  "site": "https://thebay.mo/",
+  "ourDomain": "thebay.mo",
+  "markets": [
+    { "id": "hkg", "label": "Hong Kong", "gl": "hk", "competitors": true },
+    { "id": "usa", "label": "United States", "gl": "us", "competitors": false },
+    { "id": "all", "label": "Global", "gl": null, "competitors": false }
+  ],
+  "keywords": [
+    { "keyword": "greater bay area china", "label": "Greater Bay Area China", "target": true, "since": "2026-09-21" },
+    { "keyword": "greater bay area", "label": "Greater Bay Area", "target": false },
+    { "keyword": "gba", "label": "GBA", "target": false },
+    { "keyword": "gba china", "label": "GBA China", "target": false }
+  ]
+}

@@ -1629,6 +1629,7 @@
       <button type="button" class="masthead-pill" role="tab" id="tab-hotelpress" data-panel="hotelpress" aria-selected="false" title="Hotel press awards and good news from the last 14 days">Hotel Press</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-igleaderboard" data-panel="igleaderboard" aria-selected="false" title="Instagram competitors benchmark">IG Leaderboard</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-sourcelinks" data-panel="sourcelinks" aria-selected="false" title="Approved daily brief source links">Source Links</button>
+      <button type="button" class="masthead-pill" role="tab" id="tab-seoranks" data-panel="seoranks" aria-selected="false" title="Google rank tracker for GBA keywords">SEO Ranks</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-claude" data-panel="claude" aria-selected="false" title="Anthropic Claude Sonnet 4.6" hidden>Claude</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-composer" data-panel="composer" aria-selected="false" title="Cursor Composer 2" hidden>Composer</button>
       <button type="button" class="masthead-pill" role="tab" id="tab-chatgpt" data-panel="chatgpt" aria-selected="false" title="OpenAI GPT-5.5" hidden>GPT-5.5</button>
@@ -5517,6 +5518,16 @@
   </main>
 </div>
 
+<div id="panel-seoranks" class="model-panel" role="tabpanel" aria-labelledby="tab-seoranks" hidden>
+  <main class="wrapper">
+    <div class="seo-header">
+      <h2>Google rank tracker</h2>
+      <p class="seo-meta"><span id="seo-rankings-meta">Loading…</span></p>
+    </div>
+    <div id="seo-rankings-root"></div>
+  </main>
+</div>
+
 <div id="panel-igleaderboard" class="model-panel" role="tabpanel" aria-labelledby="tab-igleaderboard" hidden>
   <main class="wrapper">
     <div class="igl-header">
@@ -5594,7 +5605,7 @@
     t.addEventListener("click", function () { show(t.getAttribute("data-panel")); });
   });
   var h = (location.hash || "").replace("#", "");
-  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "newhotels", "hotelpress", "igleaderboard", "sourcelinks"].indexOf(h) !== -1) show(h);
+  if (["overall", "claude", "composer", "chatgpt", "trendwatch", "happenings", "newhotels", "hotelpress", "igleaderboard", "sourcelinks", "seoranks"].indexOf(h) !== -1) show(h);
 })();
 </script>
 <script>window.GBA_DATA_VERSION = "20260909b";</script>
@@ -5602,6 +5613,7 @@
 <script src="new-hotels-panel.js?v=20260709e" defer></script>
 <script src="hotel-press-panel.js?v=20260909a" defer></script>
 <script src="source-links-panel.js?v=20260609d" defer></script>
+<script src="seo-rankings-panel.js?v=20260923a" defer></script>
 <script src="happenings-panel.js?v=20260615a" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
 <script>
