@@ -29,7 +29,7 @@ If a breaking story has **no** outlet on the list, note it in a final **Out of c
 
 ### Scan order (matches colleague workflow)
 
-Work through sources in this priority until the edition reaches **~30 articles**:
+Work through sources in this priority. **Do not stop once Macao and Hong Kong fill the edition.** Finish the **city balance** sweep below before you close the candidate list. The edition holds a **maximum of 40** story blocks.
 
 1. **Macao & HK broadcast / wire**
    - `tdm.com.mo` — open `https://www.tdm.com.mo/zh-hant/news_zh`
@@ -50,6 +50,25 @@ Work through sources in this priority until the edition reaches **~30 articles**
 6. **National / international corroboration** (sparingly)
    - `english.news.cn`, `news.cn`, `chinadailyasia.com`, `reuters.com`, `bbc.com`, …
 
+### City balance (mandatory)
+
+Source Links labels each outlet with a **Region** (`region` on each object in `source-links-data.json`). Values include Hong Kong, Macao, Shenzhen, Guangzhou, Zhuhai, Foshan, Dongguan, GBA, National, and International. There is no separate country field — use `region`.
+
+Before the edition is treated as full:
+
+1. Load `source-links-data.json`. Keep rows whose `category` is **Official, News, Lifestyle, or New Hotels**. Group those rows by `region`.
+2. For every **Guangdong city region that has at least one row** — Shenzhen, Guangzhou, Foshan, Zhuhai, Dongguan, and Huizhou, Zhongshan, Jiangmen, or Zhaoqing when a row exists — open that row’s `url` and collect headlines from the last **48 hours** HKT. Do this even when Macao and Hong Kong already supply a full candidate list. Also read GBA-wide pages (`news.southcn.com`, `info.newsgd.com`, `newsgd.com`, `epaper.nfnews.com`) for city stories, and count a story toward the city of **dominant impact**.
+3. **Floors when that city has a fresh approved-source story** (do not invent or pad to hit a floor):
+   - **Shenzhen** — at least 3
+   - **Guangzhou** — at least 3
+   - **Foshan** — at least 2
+   - **Zhuhai inc. Hengqin** — at least 2
+   - **Dongguan** — at least 1
+   - **Any other of the nine cities** with a Region row and a fresh story — at least 1
+4. If a listed city has no fresh story on its Region sources, write `No fresh [city] item` in the audit and leave that section out.
+5. Keep **Macao** and **Hong Kong** when they have fresh news. While any city floor above is still unmet, Macao and Hong Kong together must not take more than **20** of the 40 blocks. After the floors that the day’s news allows are met, remaining slots (up to 40) go to the strongest leftover stories, including further Macao or Hong Kong items.
+6. **Stop at 40.** A quieter day may finish below 40 after the city sweep. Never add thin items to reach 40.
+
 ---
 
 ## Selection rules (from training examples)
@@ -66,7 +85,7 @@ Apply these **before** writing summaries:
 | **Cross-border first** | HZMB, Hengqin, Qianhai, dragon-boat/GBA-wide tourism, province-level announcements → **GBA News** section |
 | **Official + media** | When government announces policy, pair **gov** URL with **TDM/TVB/NewsGD** coverage when available |
 | **Background links** | Event/venue pages → prefix `Background:` on its own URL line; video → prefix `Video:` |
-| **Volume** | Target **~30 substantive story blocks** per edition (quality over count; do not pad with thin items) |
+| **Volume** | **Maximum 40** substantive story blocks. Complete the city-balance floors first. Do not pad with thin items, and do not stop at 30. |
 
 ### Section assignment
 
@@ -114,8 +133,9 @@ Drop candidates that fail the geographic scope. Tag survivors: `GBA-wide | Macao
 
 - Merge duplicates across languages (TC/SC/EN same story).  
 - Rank within each section: **hard news & policy > economy > society > soft culture/openings**.  
-- Ensure **Macao** and **Hong Kong** are represented if material exists (training briefs always include both when news is available).
-- Apply **editor selection calibration** (below) when ranking competing candidates.
+- Ensure **Macao** and **Hong Kong** are represented if material exists.
+- Apply the **city balance** floors (Shenzhen, Guangzhou, Foshan, Zhuhai, Dongguan, and any other nine-city Region with fresh news) before treating the edition as full. Editor calibration does not override an unmet city floor.
+- Apply **editor selection calibration** (below) when ranking competing candidates **inside** a section, and when choosing leftover slots after the floors are met.
 
 ### Editor selection calibration (weighted)
 
@@ -189,7 +209,9 @@ Before finishing, produce a hidden audit:
 ```
 <!-- DAILY BRIEF AUDIT
 Date: YYYY-MM-DD HKT
-Stories: N
+Stories: N (maximum 40)
+City balance: Shenzhen n / Guangzhou n / Foshan n / Zhuhai n / Dongguan n / other cities
+Cities with no fresh item: [list, or none]
 GBA filter drops: [list titles removed + reason]
 Single-source items: [list — explain if kept]
 Out of catalog: [any exception URLs]
@@ -234,6 +256,7 @@ Maximum: **2 sentences** (~45 words). Simple incidents may use **1 sentence**.
 When running this prompt, attach:
 
 - `@references/daily-brief-source-domains.md` — approved 124 domains  
+- `@source-links-data.json` — Source Links rows, including the **Region** column (`region`) used for city balance  
 - `@Training Data/editor-comparisons/digest/latest.md` — **editor selection calibration** (weighted picks from comparison docs)  
 - `@references/editor-selection-weights.json` — machine-readable editor pick patterns  
 - `@references/source-links.md` — dashboard entry points  
