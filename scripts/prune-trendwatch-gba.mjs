@@ -117,8 +117,27 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/习近平抵达美国|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|特朗普抵达机场|专家称美国总统接机|中美关系三个没有变|习主席访问美国/i.test(t))
+    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国/i.test(t))
       return "cluster:xi-us-visit";
+    if (/游本昌|济公.*去世|宝总的爷叔/i.test(t)) return "cluster:you-benchang";
+    if (/国羽|羽毛球女团/i.test(t)) return "cluster:asian-games-badminton";
+    if (/腾讯龙虾/i.test(t)) return "cluster:tencent-lobster";
+    if (/美团.?抽成/i.test(t)) return "cluster:meituan-cut";
+    if (/在泰.*囚禁|3名中国女子在泰/i.test(t)) return "cluster:thailand-abduction";
+    if (/张博恒/i.test(t)) return "cluster:zhang-boheng";
+    if (/卫星互联网低轨/i.test(t)) return "cluster:sat-internet";
+    if (/宾利.*电动|宾利.*纯电/i.test(t)) return "cluster:bentley-ev";
+    if (/吉利.*智充|AI智充/i.test(t)) return "cluster:geely-charge";
+    if (/考研报名|考研初试|^考研$/i.test(t)) return "cluster:kaoyan-2027";
+    if (/中秋福利/i.test(t)) return "cluster:midautumn-welfare";
+    if (/菜篮子/i.test(t)) return "cluster:veg-basket";
+    if (/英国向中国返还/i.test(t)) return "cluster:uk-relics";
+    if (/梅姨/i.test(t)) return "cluster:aunt-mei";
+    if (/^mcl$/i.test(t)) return "cluster:mcl-cinema";
+    if (/滙豐|汇丰/i.test(t)) return "cluster:hsbc";
+    if (/AI重构智能手机/i.test(t)) return "cluster:ai-smartphone";
+    if (/杨洋夺得举重|举重男子60公斤/i.test(t)) return "cluster:asian-games-weightlifting";
+    if (/中国队两小时连夺9金|亚运会官网追不上/i.test(t)) return "cluster:asian-games-2026";
     if (/獨居長者|独居长者/i.test(t)) return "cluster:hk-elderly-alone";
     if (/佳宝食品|佳寶食品/i.test(t)) return "cluster:kai-bo";
     if (/關嘉敏|关嘉敏|关嘉敦/i.test(t)) return "cluster:carman-kwan";
