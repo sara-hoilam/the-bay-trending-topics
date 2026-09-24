@@ -29,7 +29,7 @@ If a breaking story has **no** outlet on the list, note it in a final **Out of c
 
 ### Scan order (matches colleague workflow)
 
-Work through sources in this priority. **Do not stop once Macao and Hong Kong fill the edition.** Finish the **city balance** sweep below before you close the candidate list. The edition holds a **maximum of 40** story blocks.
+Work through sources in this priority until the candidate list reaches **100** fresh items from the last 48 hours HKT, or until every band in `references/Sep2026-training-data.md` has been scanned. Hong Kong and Macao do not close the list on their own. The published edition holds a **maximum of 40** story blocks, split as in that file.
 
 1. **Macao & HK broadcast / wire**
    - `tdm.com.mo` — open `https://www.tdm.com.mo/zh-hant/news_zh`
@@ -45,29 +45,34 @@ Work through sources in this priority. **Do not stop once Macao and Hong Kong fi
    - `macauonjourney.com` — `https://macauonjourney.com/`
 4. **Official**
    - `gov.mo`, `info.gov.hk`, `news.gov.hk`, `smg.gov.mo`, `hko.gov.hk`, `who.int`, `gz.gov.cn`, `sz.gov.cn`, `hengqin.gov.cn`, `qh.sz.gov.cn`, …
-5. **Lifestyle** (culture, museums, leisure — use sparingly)
+5. **Lifestyle** (festivals, exhibitions, concerts, museums — fill the lifestyle target)
    - `shenzhenmuseum.com`, `westk.hk`, `event.hktdc.com`, `10times.com`, `eyeshenzhen.com`, `macauonjourney.com`, …
-6. **National / international corroboration** (sparingly)
+6. **National / international** (Nation and Around the World targets)
    - `english.news.cn`, `news.cn`, `chinadailyasia.com`, `reuters.com`, `bbc.com`, …
 
-### City balance (mandatory)
+### Sep2026-training-data (mandatory)
 
-Source Links labels each outlet with a **Region** (`region` on each object in `source-links-data.json`). Values include Hong Kong, Macao, Shenzhen, Guangzhou, Zhuhai, Foshan, Dongguan, GBA, National, and International. There is no separate country field — use `region`.
+Read `references/Sep2026-training-data.md` before ranking. It is the colleague split for August–September 2026. Source Links **Region** (`region` in `source-links-data.json`) tells you which outlets to open for each band. There is no separate country field.
 
-Before the edition is treated as full:
+1. Load `source-links-data.json`. Keep rows whose `category` is **Official, News, Lifestyle, or New Hotels**. Group them by `region`.
+2. Build a candidate pool of **100** headlines from the last **48 hours** HKT. Open Hong Kong, Macao, Shenzhen, Guangzhou, Zhuhai, and the GBA-wide pages (`news.southcn.com`, `info.newsgd.com`, `newsgd.com`, `epaper.nfnews.com`). Also open Nation and international wires for the Nation and Around the World bands. If the day has fewer than 100 fresh approved items, keep the smaller pool and record the count.
+3. From that pool, select at most **40** stories at these targets:
 
-1. Load `source-links-data.json`. Keep rows whose `category` is **Official, News, Lifestyle, or New Hotels**. Group those rows by `region`.
-2. For every **Guangdong city region that has at least one row** — Shenzhen, Guangzhou, Foshan, Zhuhai, Dongguan, and Huizhou, Zhongshan, Jiangmen, or Zhaoqing when a row exists — open that row’s `url` and collect headlines from the last **48 hours** HKT. Do this even when Macao and Hong Kong already supply a full candidate list. Also read GBA-wide pages (`news.southcn.com`, `info.newsgd.com`, `newsgd.com`, `epaper.nfnews.com`) for city stories, and count a story toward the city of **dominant impact**.
-3. **Floors when that city has a fresh approved-source story** (do not invent or pad to hit a floor):
-   - **Shenzhen** — at least 3
-   - **Guangzhou** — at least 3
-   - **Foshan** — at least 2
-   - **Zhuhai inc. Hengqin** — at least 2
-   - **Dongguan** — at least 1
-   - **Any other of the nine cities** with a Region row and a fresh story — at least 1
-4. If a listed city has no fresh story on its Region sources, write `No fresh [city] item` in the audit and leave that section out.
-5. Keep **Macao** and **Hong Kong** when they have fresh news. While any city floor above is still unmet, Macao and Hong Kong together must not take more than **20** of the 40 blocks. After the floors that the day’s news allows are met, remaining slots (up to 40) go to the strongest leftover stories, including further Macao or Hong Kong items.
-6. **Stop at 40.** A quieter day may finish below 40 after the city sweep. Never add thin items to reach 40.
+   | Band | Target |
+   |---|---|
+   | Hong Kong | 9 |
+   | Shenzhen | 8 |
+   | Macao | 8 |
+   | Nation | 4 |
+   | Around the World | 4 |
+   | GBA News | 3 |
+   | Guangzhou | 2 |
+   | Zhuhai inc. Hengqin | 2 |
+
+4. Inside those 40, hold **34 hard news, 5 lifestyle, 1 award** when the pool contains them. Lifestyle is a dated cultural or leisure event. Award is a medal, championship, or final result. Tag each selected story with one type.
+5. A band may finish one story light when it has no fresh approved item. Write that gap in the audit. Do not invent a story and do not pad to 40.
+6. Foshan, Dongguan, Huizhou, Zhongshan, Jiangmen and Zhaoqing have no quota. Place a story about one of those cities in the section of dominant impact, usually GBA News.
+7. June editor marks break ties inside a band. They do not change the targets in this section.
 
 ---
 
@@ -80,12 +85,12 @@ Apply these **before** writing summaries:
 | **Freshness** | Prefer stories from **today and yesterday** (HKT). Older items only if still developing or newly updated with hard news. |
 | **Corroboration** | Prefer stories with **≥2 independent URLs** from the approved list (e.g. TDM + gov.mo; TVB + SCMP; NewsGD + city daily). |
 | **Cluster, don’t duplicate** | One story = one numbered block. Multiple URL lines, then summary paragraph(s). Split into a second block only if a **new factual development** warrants it (e.g. follow-up on same hearing). |
-| **Story types to keep** | Policy & regulation, official stats, infrastructure & transport, cross-border incidents, economy & business, major weather/disruption, diplomacy affecting HK/MO, GBA integration programmes, significant society/culture with regional reach |
-| **Story types to drop** | Celebrity gossip, pure entertainment rankings, speculative rumour, duplicate rewrites of the same press release with no new fact, hyper-local crime with no GBA angle |
+| **Story types to keep** | Hard news: policy, official stats, infrastructure and transport, cross-border incidents, economy, major weather, diplomacy, GBA programmes. Lifestyle and award items fill the Sep2026 targets (5 and 1), not the rest of the edition. |
+| **Story types to drop** | Celebrity gossip with no dated public event, speculative rumour, duplicate rewrites of the same press release, hyper-local crime with no GBA angle |
 | **Cross-border first** | HZMB, Hengqin, Qianhai, dragon-boat/GBA-wide tourism, province-level announcements → **GBA News** section |
 | **Official + media** | When government announces policy, pair **gov** URL with **TDM/TVB/NewsGD** coverage when available |
 | **Background links** | Event/venue pages → prefix `Background:` on its own URL line; video → prefix `Video:` |
-| **Volume** | **Maximum 40** substantive story blocks. Complete the city-balance floors first. Do not pad with thin items, and do not stop at 30. |
+| **Volume** | Candidate pool **100**. Published edition **maximum 40**, at the Sep2026-training-data targets (34 hard / 5 lifestyle / 1 award). Do not pad. |
 
 ### Section assignment
 
@@ -107,13 +112,15 @@ Zhongshan:
 Jiangmen:
 Zhaoqing:
 Nation:
+Around the World:
 GBA sport:
 ```
 
-- **GBA News** — multi-jurisdiction or province-wide Guangdong stories  
+- **GBA News** — multi-jurisdiction or province-wide Guangdong stories, including Foshan, Dongguan and the other cities without their own target  
 - **City sections** — dominant geography of impact (Hengqin → Zhuhai inc. Hengqin)  
-- **Nation** — major national/international; must justify GBA relevance in the summary  
-- **GBA sport** — cross-boundary or HK-hosted regional competition  
+- **Nation** — major national news carried by GBA outlets  
+- **Around the World** — major international stories those same outlets are already running (target 4)  
+- **GBA sport** — use only when a result does not already sit in a city section as the award item  
 
 ---
 
@@ -121,21 +128,20 @@ GBA sport:
 
 ### Step 1 — Source sweep
 
-Open live homepages / latest-news pages for Tier 1–3 domains (see scan order). Collect candidate headlines from the last **48 hours** HKT.
+Open live homepages / latest-news pages (see scan order and Sep2026-training-data). Collect up to **100** candidate headlines from the last **48 hours** HKT.
 
-Do **not** start writing until you have a raw candidate list (title, outlet, URL, date, geography tag).
+Do **not** start writing until you have a raw candidate list (title, outlet, URL, date, geography tag, type: hard / lifestyle / award).
 
 ### Step 2 — GBA filter
 
-Drop candidates that fail the geographic scope. Tag survivors: `GBA-wide | Macao | HK | Zhuhai | GZ | SZ | [other GD city] | Nation | Sport`.
+Drop candidates that fail the geographic scope, except major Around the World items already running in approved outlets. Tag survivors: `GBA-wide | Macao | HK | Zhuhai | GZ | SZ | [other GD city] | Nation | World | Sport`.
 
 ### Step 3 — Cluster & rank
 
 - Merge duplicates across languages (TC/SC/EN same story).  
-- Rank within each section: **hard news & policy > economy > society > soft culture/openings**.  
-- Ensure **Macao** and **Hong Kong** are represented if material exists.
-- Apply the **city balance** floors (Shenzhen, Guangzhou, Foshan, Zhuhai, Dongguan, and any other nine-city Region with fresh news) before treating the edition as full. Editor calibration does not override an unmet city floor.
-- Apply **editor selection calibration** (below) when ranking competing candidates **inside** a section, and when choosing leftover slots after the floors are met.
+- Fill the **Sep2026-training-data** band targets and the **34 / 5 / 1** type targets from the pool of 100. Rank hard news by policy, economy, then society **inside** a band.  
+- Hong Kong, Macao and Shenzhen stay at their targets (9, 8 and 8) when fresh copy exists. They do not absorb leftover slots.  
+- Apply **editor selection calibration** (below) only to break ties inside a band. It does not change band or type targets.
 
 ### Editor selection calibration (weighted)
 
@@ -157,10 +163,10 @@ Managing editors mark manual brief picks in daily comparison docs with **`[selec
 - Story type frequently editor-selected (transport, weather, policy, GBA integration) → **+2**
 
 **Rules:**
-- Prefer stories that match **what** editors historically select (topic, section, outlet patterns in the digest).
-- When two stories are equally fresh and corroborated, pick the one with higher editor-calibration score.
+- Band counts and the hard / lifestyle / award mix come from **Sep2026-training-data**. The June digest has no section floors; do not invent city quotas from it.
+- When two stories in the **same band** are equally fresh and corroborated, pick the one closer to June editor topics (society, GBA integration, weather).
 - Do **not** copy manual summary wording or colleague tone.
-- If digest says “no parsed data yet”, fall back to default selection rules only.
+- Do **not** fit selection on automated files in `Training Data/YYYY-MM-DD-daily-brief.md`. Those are past model editions.
 
 ### Step 4 — Corroborate
 
@@ -209,9 +215,11 @@ Before finishing, produce a hidden audit:
 ```
 <!-- DAILY BRIEF AUDIT
 Date: YYYY-MM-DD HKT
+Pool: N (target 100)
 Stories: N (maximum 40)
-City balance: Shenzhen n / Guangzhou n / Foshan n / Zhuhai n / Dongguan n / other cities
-Cities with no fresh item: [list, or none]
+Bands: HK n/9 · SZ n/8 · Macao n/8 · Nation n/4 · World n/4 · GBA n/3 · GZ n/2 · Zhuhai n/2
+Types: hard n/34 · lifestyle n/5 · award n/1
+Bands short of target: [list, or none]
 GBA filter drops: [list titles removed + reason]
 Single-source items: [list — explain if kept]
 Out of catalog: [any exception URLs]
@@ -256,15 +264,16 @@ Maximum: **2 sentences** (~45 words). Simple incidents may use **1 sentence**.
 When running this prompt, attach:
 
 - `@references/daily-brief-source-domains.md` — approved 124 domains  
-- `@source-links-data.json` — Source Links rows, including the **Region** column (`region`) used for city balance  
-- `@Training Data/editor-comparisons/digest/latest.md` — **editor selection calibration** (weighted picks from comparison docs)  
-- `@references/editor-selection-weights.json` — machine-readable editor pick patterns  
+- `@references/Sep2026-training-data.md` — colleague region and type targets (read this before ranking)  
+- `@references/Sep2026-training-data.json` — same targets, machine-readable  
+- `@source-links-data.json` — Source Links rows, including **Region** (`region`)  
+- `@Training Data/editor-comparisons/digest/latest.md` — June editor topics, tie-break inside a band only  
+- `@references/editor-selection-weights.json` — June editor pick patterns, tie-break only  
 - `@references/source-links.md` — dashboard entry points  
 
 Optional calibration (selection only, not style):
 
 - `@Training Data/all-sources-and-links.md` — URL patterns by outlet  
-- `@Training Data/2026-06-03-trial-daily-brief-20articles.md` — worked example of selection rules  
 
 Editor comparison source: [Google Drive folder](https://drive.google.com/drive/folders/1sUw2ipTfv-UkVOZnrWuX9-7DGsMHshaw?usp=sharing) → `Training Data/editor-comparisons/raw/`  
 

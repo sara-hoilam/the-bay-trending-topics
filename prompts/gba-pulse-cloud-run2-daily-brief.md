@@ -8,16 +8,16 @@ Produce **today’s Daily Brief** markdown, convert it to the **📰 Daily Brief
 
 ## Workflow
 
-0. **Editor feedback (on-demand only):** Do **not** run the editor comparison pipeline unless the user has invoked the **`gba-pulse-editor-feedback`** skill in this session. If `Training Data/editor-comparisons/digest/latest.md` and `references/editor-selection-weights.json` exist, attach them and apply weighted editor picks at Step 3 (Cluster & rank). If missing, proceed with default selection rules.
+0. **Editor feedback (on-demand only):** Do **not** run the editor comparison pipeline unless the user has invoked the **`gba-pulse-editor-feedback`** skill in this session. If the June digest and `references/editor-selection-weights.json` exist, use them only to break ties **inside** a band. Region counts and the hard / lifestyle / award mix come from **Sep2026-training-data**.
 
-1. Read and follow **`prompts/daily-brief-agent-prompt.md`** (GBA scope, 124 approved domains, selection rules, **city balance** via `source-links-data.json` `region`, editor calibration when digest is present).
+1. Read and follow **`prompts/daily-brief-agent-prompt.md`** and **`references/Sep2026-training-data.md`** (100-candidate pool, maximum 40 stories, colleague band targets, 34 hard / 5 lifestyle / 1 award). Do not fit selection on past automated briefs in `Training Data/`.
 2. Use **today’s date in Asia/Hong_Kong** for the edition filename and audit block.
 3. Live-scan approved sources (browser/tools) — do **not** invent URLs or recycle stale stories.
 4. Write markdown to:
 
    `Training Data/YYYY-MM-DD-daily-brief.md`
 
-   **Maximum 40 articles.** Complete the city-balance floors in the agent prompt (Shenzhen, Guangzhou, Foshan, Zhuhai, Dongguan, and any other nine-city Region with fresh news) before closing the edition. Also cover GBA News, Macao, HK, Nation, and GBA sport when warranted. Do not pad to 40.
+   **Maximum 40 articles** at the Sep2026-training-data targets: Hong Kong 9, Shenzhen 8, Macao 8, Nation 4, Around the World 4, GBA News 3, Guangzhou 2, Zhuhai inc. Hengqin 2. Types: 34 hard news, 5 lifestyle, 1 award. Do not pad.
 5. Convert and merge:
 
    ```bash
@@ -42,6 +42,6 @@ Use `GITHUB_TOKEN` from the environment if `git push` needs auth.
 
 ## Cost discipline
 
-- Follow scan order in the prompt. Do **not** stop at 30, and do not stop after Macao and Hong Kong. Finish the city-balance sweep (open each Guangdong city Region’s source URLs), then stop at **40** articles.
+- Build a candidate pool of **100** from the scan order and Source Links regions, then stop the published edition at **40**. Do not stop the pool once Macao and Hong Kong are full.
 - Prefer outlet home/list pages over deep site-wide search.
 - Cluster related stories; do not duplicate the same incident across sections.

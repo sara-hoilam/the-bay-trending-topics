@@ -1,0 +1,124 @@
+{
+  "id": "Sep2026-training-data",
+  "source": {
+    "folderTitle": "The Bay 簡報 - 8月與9月",
+    "folderUrl": "https://drive.google.com/drive/folders/1AzenY2Njzt0gik5edhjjl34mPjLo-Q5l",
+    "whatWasCounted": "Colleague-written sections only. Blocks headed 'from The Pulse' are excluded. Automated editions in Training Data/YYYY-MM-DD-daily-brief.md are not part of this fit."
+  },
+  "editions": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-07",
+    "2026-08-10",
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-31",
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04",
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18"
+  ],
+  "editionCount": 35,
+  "observed": {
+    "storiesTotal": 1605,
+    "storiesPerDay": {
+      "min": 33,
+      "median": 45,
+      "mean": 45.9,
+      "max": 79
+    },
+    "typeCounts": {
+      "hard": 1366,
+      "lifestyle": 199,
+      "award": 40
+    },
+    "typeShare": {
+      "hard": 0.851,
+      "lifestyle": 0.124,
+      "award": 0.025
+    },
+    "regionCounts": {
+      "Hong Kong": 352,
+      "Shenzhen": 321,
+      "Macao": 309,
+      "Nation": 177,
+      "Around the World": 159,
+      "GBA News": 130,
+      "Guangzhou": 88,
+      "Zhuhai inc. Hengqin": 68,
+      "GBA sport": 1
+    },
+    "regionShare": {
+      "Hong Kong": 0.219,
+      "Shenzhen": 0.2,
+      "Macao": 0.193,
+      "Nation": 0.11,
+      "Around the World": 0.099,
+      "GBA News": 0.081,
+      "Guangzhou": 0.055,
+      "Zhuhai inc. Hengqin": 0.042
+    }
+  },
+  "selection": {
+    "candidatePool": 100,
+    "editionMax": 40,
+    "regionTargets": {
+      "Hong Kong": 9,
+      "Shenzhen": 8,
+      "Macao": 8,
+      "Nation": 4,
+      "Around the World": 4,
+      "GBA News": 3,
+      "Guangzhou": 2,
+      "Zhuhai inc. Hengqin": 2
+    },
+    "typeTargets": {
+      "hard": 34,
+      "lifestyle": 5,
+      "award": 1
+    },
+    "note": "Targets are the colleague shares scaled to 40. A band may finish one story light when that band has no fresh approved item. Record the gap. Do not pad."
+  },
+  "examples": {
+    "lifestyle": [
+      "Shaoguan Museum is hosting a special exhibition featuring artifacts from the tomb of the famous Tang Dynasty poet Zang Jiuling. The event runs between 7 August and 31 December.",
+      "The Macao Traditional Chinese Attire Cultural festival will take place on Rua de Felicidade between 8 and 15 August, from 12 pm to 10 pm.",
+      "The Shenzhen Museum of Contemporary Art and Urban Planning is currently hosting an solo exhibition by contemporary Chinese artist Meng Site, which features dozens of paintings that explore the theme of technology and time. The event is scheduled to run until 16 August.",
+      "Macao creative festival MoFest 2026 is scheduled to take place on 4 October. It will feature live wall art, workshops, craft market and DJ performances.",
+      "The 6th French Science Festival will be taking place in Hong Kong between 1 and 12 October, featuring exhibitions, conferences, workshops and film screenings.",
+      "The 18th Guangzhou Oktoberfest is set to run at the China Hotel between 9 and 11 October."
+    ],
+    "award": [
+      "Prior to the official launch of the 17th Guangdong Provincial Games yesterday, Shenzhen had already taken part in multiple pre-ceremony competitions. Currently, the tech hub has amassed 258.5 gold medals, putting it in the top spot in the entire province. Shenzhen swimmers earned 50 gold at the provincial games.",
+      "Chinese table tennis player Chen Xintong placed second in the final match of the women’s singles at the WTT Champions Yokohama, after being defeated by her Japanese opponent Harimoto Miwa 2:4.",
+      "Female Chinese tennis player Zheng Qinwen has been eliminated in the US Open after losing to world number two Elena Rybakina in the quarterfinals on 9 September 2026. Zheng had been making headlines recently for her strong performance at the tennis tournament, which saw her overcome Madison Keys and Iga Swiatek.",
+      "Macao representative Wong Son Ian recently bagged silver in the female open category of the 49th Hong Kong International Open Tenpin Bowling Championships.",
+      "Day three of the WTT Champions Macau 2026 was held at the Macau East Asian Games Dome on 10 September 2026, with Chinese table tennis players Chen Xintong and Zhou Qihao making it to the round of 16.",
+      "The 2026 FIA Karting Asia-Pacific Championship is scheduled to run at the Coloane Karting Track between 11 and 13 September. Participants from 16 countries and regions are competing in the event, which includes junior and senior categories."
+    ]
+  }
+}
