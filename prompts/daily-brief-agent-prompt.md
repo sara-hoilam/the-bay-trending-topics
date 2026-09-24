@@ -21,7 +21,7 @@ Include a story only if it is **primarily about** or **materially affects** at l
 
 ---
 
-## Approved sources (120 domains)
+## Approved sources (124 domains)
 
 **Only cite URLs whose registrable domain appears in** `references/daily-brief-source-domains.md` (Official, News, Lifestyle, New Hotels). **Do not** cite **Hotels** press-room domains — those feed the Hotel Press tab. Full historical article URLs for pattern reference: `Training Data/all-sources-and-links.md`.
 
@@ -32,16 +32,21 @@ If a breaking story has **no** outlet on the list, note it in a final **Out of c
 Work through sources in this priority until the edition reaches **~30 articles**:
 
 1. **Macao & HK broadcast / wire**
-   - `tdm.com.mo`, `news.tvb.com`, `news.rthk.hk`
+   - `tdm.com.mo` — open `https://www.tdm.com.mo/zh-hant/news_zh`
+   - `news.tvb.com` — open Hong Kong news `https://news.tvb.com/tc/nav/zone/1/1-%E6%B8%AF%E8%81%9E` and the simplified channel `https://news.tvb.com/sc/nav/channel/6/27-channel`
+   - `news.rthk.hk`
 2. **GBA & Guangdong dailies**
-   - `info.newsgd.com`, `newsgd.com`, `news.southcn.com`, `epaper.nfnews.com`
-   - City papers: `gzdaily.dayoo.com`, `sztqb.sznews.com`, `szdaily.sznews.com`, `sznews.com`, `wb.sznews.com`, `pub-zhtb.hizh.cn`, `webzdg.sun0769.com`, `foshannews.net`, etc.
+   - `info.newsgd.com`, `newsgd.com`, `epaper.nfnews.com`
+   - `news.southcn.com` — GBA node `https://news.southcn.com/node_b36d35b4e2`
+   - City papers: `gzdaily.dayoo.com` (`https://gzdaily.dayoo.com/pc/html/2026-02/05/index_2026-02-05.htm`), `sztqb.sznews.com` (`https://sztqb.sznews.com/PC/layout/202602/27/node_02.html`), `szdaily.sznews.com`, `sznews.com`, `wb.sznews.com`, `hizh.cn` (`https://www.hizh.cn/`), `pub-zhtb.hizh.cn`, `webzdg.sun0769.com`, `foshannews.net`, etc.
 3. **HK / Macao print & digital**
-   - `scmp.com`, `thestandard.com.hk`, `stheadline.com`, `hk01.com`, `hongkongfp.com`, `modaily.cn`, `macaubusiness.com`, …
+   - `scmp.com`, `thestandard.com.hk`, `stheadline.com`, `hk01.com`, `hongkongfp.com`, `macaubusiness.com`, …
+   - `modaily.cn` — open `https://www.modaily.cn/amucsite/web/index.html#/home/102`
+   - `macauonjourney.com` — `https://macauonjourney.com/`
 4. **Official**
    - `gov.mo`, `info.gov.hk`, `news.gov.hk`, `smg.gov.mo`, `hko.gov.hk`, `who.int`, `gz.gov.cn`, `sz.gov.cn`, `hengqin.gov.cn`, `qh.sz.gov.cn`, …
 5. **Lifestyle** (culture, museums, leisure — use sparingly)
-   - `shenzhenmuseum.com`, `westk.hk`, `event.hktdc.com`, `10times.com`, `eyeshenzhen.com`, …
+   - `shenzhenmuseum.com`, `westk.hk`, `event.hktdc.com`, `10times.com`, `eyeshenzhen.com`, `macauonjourney.com`, …
 6. **National / international corroboration** (sparingly)
    - `english.news.cn`, `news.cn`, `chinadailyasia.com`, `reuters.com`, `bbc.com`, …
 
@@ -228,7 +233,7 @@ Maximum: **2 sentences** (~45 words). Simple incidents may use **1 sentence**.
 
 When running this prompt, attach:
 
-- `@references/daily-brief-source-domains.md` — approved 120 domains  
+- `@references/daily-brief-source-domains.md` — approved 124 domains  
 - `@Training Data/editor-comparisons/digest/latest.md` — **editor selection calibration** (weighted picks from comparison docs)  
 - `@references/editor-selection-weights.json` — machine-readable editor pick patterns  
 - `@references/source-links.md` — dashboard entry points  

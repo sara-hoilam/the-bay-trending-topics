@@ -30,10 +30,11 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `szft.gov.cn` (1 links in training sample)
 - `who.int` (1 links in training sample)
 
-## News (88 domains)
+## News (89 domains)
 
 - `tdm.com.mo` (149 links in training sample)
 - `news.tvb.com` (144 links in training sample)
+- `news.tvb.com` — https://news.tvb.com/sc/nav/channel/6/27-channel
 - `sztqb.sznews.com` (43 links in training sample)
 - `scmp.com` (35 links in training sample)
 - `thestandard.com.hk` (35 links in training sample)
@@ -57,6 +58,7 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `hongkongfp.com` (4 links in training sample)
 - `macaubusiness.com` (4 links in training sample)
 - `pub-zhtb.hizh.cn` (4 links in training sample)
+- `hizh.cn` (Zhuhai news portal)
 - `abcnews.com` (3 links in training sample)
 - `epaper.nfnews.com` (3 links in training sample)
 - `macaupostdaily.com` (3 links in training sample)
@@ -121,7 +123,7 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `yicaiglobal.com` (1 links in training sample)
 - `zaobao.com` (1 links in training sample)
 
-## Lifestyle (7 domains)
+## Lifestyle (8 domains)
 
 - `westk.hk` (events hub)
 - `event.hktdc.com` (trade fairs)
@@ -130,6 +132,7 @@ Extracted from 8 colleague daily briefs (May–June 2026). Use for **monitoring 
 - `shenzhenmuseum.com` (1 links in training sample)
 - `macaotourism.gov.mo` (Macao events calendar)
 - `ticketflap.com` (HK/Macau/GZ ticketing)
+- `macauonjourney.com` (Macao on Journey) — https://macauonjourney.com/
 
 ## New Hotels (4 domains)
 

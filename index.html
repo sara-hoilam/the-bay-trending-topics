@@ -1277,6 +1277,10 @@
   .sl-link a:hover {
     color: var(--accent);
   }
+  .sl-region {
+    white-space: nowrap;
+    font-size: 13px;
+  }
   .sl-cat {
     white-space: nowrap;
     width: 100px;
@@ -5485,7 +5489,7 @@
   <main class="wrapper">
     <div class="sl-header">
       <h2>Approved source links</h2>
-      <p class="sl-meta"><span id="sl-count">118 sources</span> · daily brief prompt allowlist · 1 link per domain</p>
+      <p class="sl-meta"><span id="sl-count">118 sources</span> · daily brief prompt allowlist · region is the closest city, or GBA when the outlet covers more than one</p>
     </div>
     <div class="sl-toolbar">
       <label for="sl-category-filter">Category</label>
@@ -5506,11 +5510,12 @@
             <th scope="col">Source</th>
             <th scope="col">Name</th>
             <th scope="col">Link</th>
+            <th scope="col">Region</th>
             <th scope="col">Category</th>
           </tr>
         </thead>
         <tbody id="source-links-tbody">
-          <tr><td colspan="4" class="sl-err">Loading sources…</td></tr>
+          <tr><td colspan="5" class="sl-err">Loading sources…</td></tr>
         </tbody>
       </table>
     </div>
@@ -5601,7 +5606,7 @@
 <script src="ig-leaderboard-panel.js?v=20260615d" defer></script>
 <script src="new-hotels-panel.js?v=20260709e" defer></script>
 <script src="hotel-press-panel.js?v=20260909a" defer></script>
-<script src="source-links-panel.js?v=20260609d" defer></script>
+<script src="source-links-panel.js?v=20260924a" defer></script>
 <script src="happenings-panel.js?v=20260615a" defer></script>
 <script src="trend-watch-panel.js?v=20260604b" defer></script>
 <script>
