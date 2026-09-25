@@ -117,8 +117,22 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国/i.test(t))
+    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国|习近平同美国总统特朗普会谈|习近平在欢迎宴会上的祝酒辞|习近平和彭丽媛出席欢迎宴会|白宫墙上悬挂中美元首握手照片|特朗普夫妇热情迎接习近平夫妇|特朗普：这是一次“伟大的会晤”|白宫响起“月亮代表我的心”|中美元首夫人参观国立亚洲艺术博物馆|特朗普在欢迎宴会上发表致辞|中美元首会谈的开场白|中美两国元首夫妇观看海军陆战队表演|中美经贸团队达成一份新的联合安排|中美元首不到半年实现互访|战机飞越白宫|中美不必讳言竞争/i.test(t))
       return "cluster:xi-us-visit";
+    if (/^中秋節$|^中秋节$|^中秋$|中秋節 2026/i.test(t)) return "cluster:midautumn-2026";
+    if (/荷蘭對德國|葡萄牙對威爾斯|^歐國聯$|^nations league$|norway vs denmark/i.test(t))
+      return "cluster:nations-league";
+    if (/第一波出发的大聪明堵路上了|广昆高速肇庆/i.test(t)) return "cluster:zq-holiday-traffic";
+    if (/国家对成品油价格实施调控/i.test(t)) return "cluster:oil-price-ctrl";
+    if (/孙卓被拐案/i.test(t)) return "cluster:sun-zhuo";
+    if (/人类或在5年内对AI失去控制/i.test(t)) return "cluster:ai-control";
+    if (/绿色 债券|绿色债券/i.test(t)) return "cluster:green-bond";
+    if (/^e-道$/i.test(t)) return "cluster:e-channel";
+    if (/^蔡天鳳$/i.test(t)) return "cluster:nancy-kwan";
+    if (/美方应慎重处理台湾问题/i.test(t)) return "cluster:taiwan-us-xi";
+    if (/比亚迪第2000座闪充/i.test(t)) return "cluster:byd-flash-charge";
+    if (/四界集体回应余承东|余承东回应四界|余承东称问界今年新车|上汽追加10亿加注尚界|^赛力斯 华为$|重庆小康控股增持赛力斯|问界 四界/i.test(t))
+      return "cluster:aito-seres";
     if (/游本昌|济公.*去世|宝总的爷叔/i.test(t)) return "cluster:you-benchang";
     if (/国羽|羽毛球女团/i.test(t)) return "cluster:asian-games-badminton";
     if (/腾讯龙虾/i.test(t)) return "cluster:tencent-lobster";
