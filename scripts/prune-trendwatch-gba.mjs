@@ -117,9 +117,23 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国|习近平同美国总统特朗普会谈|习近平在欢迎宴会上的祝酒辞|习近平和彭丽媛出席欢迎宴会|白宫墙上悬挂中美元首握手照片|特朗普夫妇热情迎接习近平夫妇|特朗普：这是一次“伟大的会晤”|白宫响起“月亮代表我的心”|中美元首夫人参观国立亚洲艺术博物馆|特朗普在欢迎宴会上发表致辞|中美元首会谈的开场白|中美两国元首夫妇观看海军陆战队表演|中美经贸团队达成一份新的联合安排|中美元首不到半年实现互访|战机飞越白宫|中美不必讳言竞争/i.test(t))
+    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国|习近平同美国总统特朗普会谈|习近平在欢迎宴会上的祝酒辞|习近平和彭丽媛出席欢迎宴会|白宫墙上悬挂中美元首握手照片|特朗普夫妇热情迎接习近平夫妇|特朗普：这是一次“伟大的会晤”|白宫响起“月亮代表我的心”|中美元首夫人参观国立亚洲艺术博物馆|特朗普在欢迎宴会上发表致辞|中美元首会谈的开场白|中美两国元首夫妇观看海军陆战队表演|中美经贸团队达成一份新的联合安排|中美元首不到半年实现互访|战机飞越白宫|中美不必讳言竞争|习近平和彭丽媛同特朗普夫妇茶叙|习近平圆满结束对美国的国事访问|特朗普：这次访问富有成效|中美元首夫妇茶叙|中美两国元首夫妇茶叙|中美两国元首夫妇参观美国国家档案馆|从一撇一捺看中美青年双向奔赴|我和尼克松作出了相同的选择/i.test(t))
       return "cluster:xi-us-visit";
-    if (/^中秋節$|^中秋节$|^中秋$|中秋節 2026/i.test(t)) return "cluster:midautumn-2026";
+    if (/奕境X9|奕境 X9/i.test(t)) return "cluster:avatr-x9";
+    if (/Optimus|特斯拉Optimus/i.test(t)) return "cluster:tesla-optimus";
+    if (/陈妤颉|小孩姐能飞|宁波小孩姐|17岁“女飞人”/i.test(t))
+      return "cluster:chen-yujie";
+    if (/唐寧|唐宁被经纪公司|前TVB花旦唐宁/i.test(t)) return "cluster:tong-ning";
+    if (/四条高铁将开通|京港高铁雄安/i.test(t)) return "cluster:cn-hsr-sep26";
+    if (/一对大熊猫即将赴美|“平平”“福双”将赴美|平平.*福双/i.test(t))
+      return "cluster:pandas-atlanta";
+    if (/国家出手调控油价|国际油价25日下跌/i.test(t)) return "cluster:oil-price-ctrl";
+    if (/宜宾地震|四川宜宾发生4\.5级/i.test(t)) return "cluster:yibin-quake";
+    if (/中国天眼|FAST升级/i.test(t)) return "cluster:fast-seabed";
+    if (/硅基生物看人工智能短剧/i.test(t)) return "cluster:ai-short-drama";
+    if (/維園花燈|维园花灯|雄圖花燈/i.test(t)) return "cluster:victoria-lantern";
+    if (/超級 市場|超级市场/i.test(t)) return "cluster:parknshop-88";
+    if (/^中秋節$|^中秋节$|^中秋$|中秋節 2026|mid-autumn festival|低糖月饼|为什么中秋要在八月十五|第一批中秋月亮/i.test(t)) return "cluster:midautumn-2026";
     if (/荷蘭對德國|葡萄牙對威爾斯|^歐國聯$|^nations league$|norway vs denmark/i.test(t))
       return "cluster:nations-league";
     if (/第一波出发的大聪明堵路上了|广昆高速肇庆/i.test(t)) return "cluster:zq-holiday-traffic";
