@@ -1,12 +1,12 @@
 {
-  "capturedAt": "2026-09-26",
-  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. sassyhongkong 92,716 verified from Instagram embed page (edge_followed_by.count) on 2026-09-26. thebayasia kept as last API-verified fallback (49,782 from web_profile_info on 2026-09-25).",
+  "capturedAt": "2026-09-27",
+  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. sassyhongkong 92,736 verified from Instagram embed page (edge_followed_by.count) on 2026-09-27. thebayasia kept as last API-verified fallback (49,973 from web_profile_info on 2026-09-27).",
   "accounts": {
     "sassyhongkong": {
-      "followers": 92716
+      "followers": 92736
     },
     "thebayasia": {
-      "followers": 49782
+      "followers": 49973
     }
   }
 }
