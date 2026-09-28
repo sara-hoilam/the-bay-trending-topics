@@ -117,8 +117,35 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国|习近平同美国总统特朗普会谈|习近平在欢迎宴会上的祝酒辞|习近平和彭丽媛出席欢迎宴会|白宫墙上悬挂中美元首握手照片|特朗普夫妇热情迎接习近平夫妇|特朗普：这是一次“伟大的会晤”|白宫响起“月亮代表我的心”|中美元首夫人参观国立亚洲艺术博物馆|特朗普在欢迎宴会上发表致辞|中美元首会谈的开场白|中美两国元首夫妇观看海军陆战队表演|中美经贸团队达成一份新的联合安排|中美元首不到半年实现互访|战机飞越白宫|中美不必讳言竞争|习近平和彭丽媛同特朗普夫妇茶叙|习近平圆满结束对美国的国事访问|特朗普：这次访问富有成效|中美元首夫妇茶叙|中美两国元首夫妇茶叙|中美两国元首夫妇参观美国国家档案馆|从一撇一捺看中美青年双向奔赴|我和尼克松作出了相同的选择|习近平主席美国之行|把中美建设性战略稳定关系|中美关系定位内涵|中美达成八点成果|中美八点成果共识|美国罕见超规格接待|习主席圆满结束对美国/i.test(t))
+    if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国|习近平同美国总统特朗普会谈|习近平在欢迎宴会上的祝酒辞|习近平和彭丽媛出席欢迎宴会|白宫墙上悬挂中美元首握手照片|特朗普夫妇热情迎接习近平夫妇|特朗普：这是一次“伟大的会晤”|白宫响起“月亮代表我的心”|中美元首夫人参观国立亚洲艺术博物馆|特朗普在欢迎宴会上发表致辞|中美元首会谈的开场白|中美两国元首夫妇观看海军陆战队表演|中美经贸团队达成一份新的联合安排|中美元首不到半年实现互访|战机飞越白宫|中美不必讳言竞争|习近平和彭丽媛同特朗普夫妇茶叙|习近平圆满结束对美国的国事访问|特朗普：这次访问富有成效|中美元首夫妇茶叙|中美两国元首夫妇茶叙|中美两国元首夫妇参观美国国家档案馆|从一撇一捺看中美青年双向奔赴|我和尼克松作出了相同的选择|习近平主席美国之行|把中美建设性战略稳定关系|中美关系定位内涵|中美达成八点成果|中美八点成果共识|美国罕见超规格接待|习主席圆满结束对美国|大国正确相处的新路|第八轮中美经贸磋商|中美建立推进贸易理事会|80秒回顾习近平美国之行/i.test(t))
       return "cluster:xi-us-visit";
+    if (/电车.?买得起修不起|买得起修不起/i.test(t)) return "cluster:ev-repair-cost";
+    if (/武契奇宣布辞职|武契奇正式辞职|^武契奇/i.test(t)) return "cluster:vucic-resign";
+    if (/特奥多罗极端反华|特奥多罗/i.test(t)) return "cluster:teodoro-ph";
+    if (/贷款中介这几天集体删除|贷款中介集体删除朋友圈/i.test(t)) return "cluster:loan-agent-ban";
+    if (/蔚来吉利.?充换电|吉利安聪慧回应与蔚来/i.test(t)) return "cluster:nio-geely-swap";
+    if (/下半年来最强冷空气/i.test(t)) return "cluster:cold-air-sep";
+    if (/高铁集中上新|四条新线今日开通|京港高铁雄商/i.test(t)) return "cluster:cn-hsr-sep28";
+    if (/陈圆将|110米栏冠军|吴艳妮.?100米栏|吴艳妮决赛/i.test(t)) return "cluster:ag-hurdles";
+    if (/王曼昱亚运女单|王曼昱总共就参加/i.test(t)) return "cluster:ag-tt-2026";
+    if (/原研药和仿制药/i.test(t)) return "cluster:originator-generic";
+    if (/中国四足机器人/i.test(t)) return "cluster:quadruped-robot";
+    if (/小米18Pro.?防窥|小米18Pro 缓解|卢伟冰拉黑10年|雷军评论区呼吁无防窥|^雷军 小米18Pro$/i.test(t))
+      return "cluster:xiaomi-18pro";
+    if (/iPhone18Pro系列国内销量|苹果18Pro开售7天/i.test(t)) return "cluster:iphone18";
+    if (/问界华为合作模式|问界每车十三万|科技新一说问界/i.test(t)) return "cluster:aito-seres";
+    if (/norway vs portugal|挪威1比2葡萄牙|^歐國聯$|^欧国联$/i.test(t))
+      return "cluster:nations-league";
+    if (/^風 眼$|^風眼$|^风眼$/i.test(t)) return "cluster:storm-eye";
+    if (/^旺角$/i.test(t)) return "cluster:mong-kok";
+    if (/传华为或于今年11月推出星耀/i.test(t)) return "cluster:huawei-xingyao";
+    if (/Muse下载量或超ChatGPT/i.test(t)) return "cluster:meta-muse";
+    if (/荣耀Magic9/i.test(t)) return "cluster:honor-magic9";
+    if (/英伟达押注玻璃基板/i.test(t)) return "cluster:nvidia-huang";
+    if (/OpenAI等调查数万起AI/i.test(t)) return "cluster:openai-ns";
+    if (/豆包手机助手致歉/i.test(t)) return "cluster:doubao-phone";
+    if (/一对大熊猫即将赴美|“平平”“福双”将赴美|平平.*福双|美民众热烈期盼大熊猫/i.test(t))
+      return "cluster:pandas-atlanta";
     if (/劉歡|刘欢|缅怀刘欢|痛失我欢|弯弯的月亮|刘欢最瘦|刘欢到退休|春晚导演组发文悼念刘欢/i.test(t))
       return "cluster:liu-huan";
     if (/0元购机|三大运营商为何全面暂停/i.test(t)) return "cluster:zero-yuan-phone";
