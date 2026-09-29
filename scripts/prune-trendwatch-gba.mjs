@@ -117,6 +117,32 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/华为Mate90|Mate90系列正式定档/i.test(t)) return "cluster:huawei-mate90";
+    if (/智界R7售价|智界R7/i.test(t)) return "cluster:aito-r7";
+    if (/AMD收购李飞飞|World Labs|李飞飞初创/i.test(t)) return "cluster:amd-worldlabs";
+    if (/平平.?福双|美民众热切期待见到/i.test(t)) return "cluster:pandas-atlanta";
+    if (/水贝金饰|金饰爆单|金饰降价卖爆/i.test(t)) return "cluster:sz-shuibei-gold";
+    if (/应急办大楼传出麻将|深圳一街道办深夜打麻将/i.test(t)) return "cluster:sz-mahjong-street";
+    if (/特朗普评价中美元首|日方官员称特朗普表态/i.test(t)) return "cluster:trump-xi-amazing";
+    if (/坚定不移贯彻总体国家安全观|更高水平平安中国/i.test(t)) return "cluster:overall-security";
+    if (/中疾控：南方流感|南方流感阳性率/i.test(t)) return "cluster:south-flu";
+    if (/城市售票網|城市售票网|urbtix/i.test(t)) return "cluster:urbtix";
+    if (/^wage$/i.test(t)) return "cluster:hk-wages";
+    if (/盧海鵬|卢海鹏/i.test(t)) return "cluster:lo-hoi-pang";
+    if (/邵首岩/i.test(t)) return "cluster:shao-shou-yan";
+    if (/火车票候补妙招/i.test(t)) return "cluster:12306-waitlist";
+    if (/iOS27\.0\.1/i.test(t)) return "cluster:ios27-001";
+    if (/Manus2\.0|Manus 2\.0/i.test(t)) return "cluster:manus-20";
+    if (/吴艳夺得举重|举重女子86公斤/i.test(t)) return "cluster:ag-wu-yan";
+    if (/中国男乒优势|国乒启程回国|王楚钦称唯一遗憾/i.test(t)) return "cluster:ag-tt-2026";
+    if (/北京大学禁止赴风景名胜区开会|多所高校下发过紧日子/i.test(t)) return "cluster:campus-austerity";
+    if (/仅退款把商家逼成/i.test(t)) return "cluster:only-refund";
+    if (/接力夺冠姑娘们把国旗|女子4×100米接力/i.test(t)) return "cluster:ag-relay";
+    if (/创亚运最差战绩 国羽|羽毛球选手吐槽亚运会/i.test(t)) return "cluster:ag-badminton";
+    if (/教育部：坚决拥护党中央决定/i.test(t)) return "cluster:moe-lixin";
+    if (/国庆大花篮里有什么花/i.test(t)) return "cluster:nday-baskets";
+    if (/比利时对法国|比利時對法國|belgium vs france/i.test(t))
+      return "cluster:nations-league";
     if (/习近平抵达美国|习近平：中美应该成为伙伴|习近平：中国和美国|特朗普夫妇机场迎接|特朗普挥手并目送|美军战机致敬习主席|沿途人群唱起《我的祖国》|在华盛顿遇见中美|跨越太平洋的历史性握手|中美元首半年内|中美元首华盛顿会晤|中美元首华盛顿再次见面|特朗普抵达机场|特朗普提前近1小时抵达机场|特朗普夫人说美方要拿出最高礼遇|特朗普遗憾欢迎晚宴|小球接力|专家称美国总统接机|中美关系三个没有变|习主席访问美国|习近平同美国总统特朗普会谈|习近平在欢迎宴会上的祝酒辞|习近平和彭丽媛出席欢迎宴会|白宫墙上悬挂中美元首握手照片|特朗普夫妇热情迎接习近平夫妇|特朗普：这是一次“伟大的会晤”|白宫响起“月亮代表我的心”|中美元首夫人参观国立亚洲艺术博物馆|特朗普在欢迎宴会上发表致辞|中美元首会谈的开场白|中美两国元首夫妇观看海军陆战队表演|中美经贸团队达成一份新的联合安排|中美元首不到半年实现互访|战机飞越白宫|中美不必讳言竞争|习近平和彭丽媛同特朗普夫妇茶叙|习近平圆满结束对美国的国事访问|特朗普：这次访问富有成效|中美元首夫妇茶叙|中美两国元首夫妇茶叙|中美两国元首夫妇参观美国国家档案馆|从一撇一捺看中美青年双向奔赴|我和尼克松作出了相同的选择|习近平主席美国之行|把中美建设性战略稳定关系|中美关系定位内涵|中美达成八点成果|中美八点成果共识|美国罕见超规格接待|习主席圆满结束对美国|大国正确相处的新路|第八轮中美经贸磋商|中美建立推进贸易理事会|80秒回顾习近平美国之行/i.test(t))
       return "cluster:xi-us-visit";
     if (/电车.?买得起修不起|买得起修不起/i.test(t)) return "cluster:ev-repair-cost";
