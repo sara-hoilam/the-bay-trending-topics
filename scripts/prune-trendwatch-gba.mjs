@@ -117,6 +117,32 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/鄧龍威|邓龙威/i.test(t)) return "cluster:tang-lung-wai";
+    if (/大灣區航空|大湾区航空/i.test(t)) return "cluster:gba-airlines";
+    if (/烈士纪念日|山河永念|念给你听这八个年轻|此刻是他们不曾到达|英魂不朽山河永念/i.test(t))
+      return "cluster:martyrs-day-2026";
+    if (/三张照片.?见证中美|见证中美关系的刻度/i.test(t)) return "cluster:xi-us-visit";
+    if (/买房也有.?国补|购房贴息|房地产迎来史诗级大招/i.test(t))
+      return "cluster:mortgage-subsidy-2026";
+    if (/空姐跪地道歉|东航回应网传空姐/i.test(t)) return "cluster:mu-kneel";
+    if (/世界互联网大会乌镇|2026世界互联网大会/i.test(t)) return "cluster:wuzhen-wic";
+    if (/妙瓦底电诈/i.test(t)) return "cluster:myanmar-mw-scam";
+    if (/邓亚萍|王楚钦：竞技体育|国乒需要一个内心/i.test(t)) return "cluster:ag-tt-2026";
+    if (/GPT6\.1Sol|ChatGPT 智能体平台|ChatGPT智能体/i.test(t)) return "cluster:gpt6-sol";
+    if (/这股冷空气到底有多猛|今年下半年最强冷空气/i.test(t)) return "cluster:cold-air-sep";
+    if (/10月起.?这些新规将影响/i.test(t)) return "cluster:oct-2026-rules";
+    if (/中国海警同日公布/i.test(t)) return "cluster:ccg-taiwan";
+    if (/华为外挂.?巨炮/i.test(t)) return "cluster:huawei-cannon-lens";
+    if (/丁俊晖连丢两赛点|深圳公开赛/i.test(t)) return "cluster:ding-sz-snooker";
+    if (/独居男孩.?母亲|珠海一房东/i.test(t)) return "cluster:zhuhai-tenant-boy";
+    if (/明天的天氣|weather tomorrow|^weather$/i.test(t)) return "cluster:hk-weather-tmr";
+    if (/擎海|the atlas/i.test(t)) return "cluster:yau-tong-atlas";
+    if (/快達票|kkday/i.test(t)) return "cluster:kkday";
+    if (/捷克對英格蘭|czechia vs england/i.test(t)) return "cluster:nations-league";
+    if (/油价暴跌黄金飙涨|金价跌的有多夸张|金价逼近4200/i.test(t))
+      return "cluster:gold-price";
+    if (/亚运会今日决出|亚运MVP|^亚运会$/i.test(t)) return "cluster:asian-games-2026";
+    if (/AI漫剧要拍真人版/i.test(t)) return "cluster:ai-short-drama";
     if (/华为Mate90|Mate90系列正式定档/i.test(t)) return "cluster:huawei-mate90";
     if (/智界R7售价|智界R7/i.test(t)) return "cluster:aito-r7";
     if (/AMD收购李飞飞|World Labs|李飞飞初创/i.test(t)) return "cluster:amd-worldlabs";
