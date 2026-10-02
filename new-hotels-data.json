@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-09-30",
-  "refreshedAt": "2026-09-30T10:45:30+08:00",
+  "updatedAt": "2026-10-02",
+  "refreshedAt": "2026-10-02T10:51:11+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-03-31",
-  "windowEnd": "2027-04-01",
-  "count": 111,
+  "windowStart": "2026-04-02",
+  "windowEnd": "2027-04-03",
+  "count": 107,
   "countries": [
     "Bangladesh",
     "China",
@@ -17,7 +17,6 @@
     "Malaysia",
     "Maldives",
     "Myanmar",
-    "Nepal",
     "Philippines",
     "Portugal",
     "Singapore",
@@ -33,23 +32,6 @@
     }
   ],
   "hotels": [
-    {
-      "name": "Holiday Inn Resort Kathmandu Budhanilkantha",
-      "location": "Kathmandu, Nepal",
-      "country": "Nepal",
-      "region": "asia",
-      "hotelGroup": "IHG",
-      "stars": 3,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "H1 2026",
-      "openDatePrecision": "half",
-      "openDateSort": "2026-04-01",
-      "status": "opened",
-      "sourceDomain": "ihg.com",
-      "sourceUrl": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
-      "sourceName": "IHG New Hotels"
-    },
     {
       "name": "Lagen Island Resort, El Nido",
       "location": "El Nido, Philippines",
@@ -578,23 +560,6 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "Rixos Phu Quoc Vietnam",
-      "location": "Phu Quoc, Vietnam",
-      "country": "Vietnam",
-      "region": "asia",
-      "hotelGroup": "Accor",
-      "stars": 4,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q3 2026",
-      "openDatePrecision": "quarter",
-      "openDateSort": "2026-08-15",
-      "status": "opened",
-      "sourceDomain": "group.accor.com",
-      "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
-      "sourceName": "Accor 2026 Openings"
-    },
-    {
       "name": "Roswyn, A Morgans Originals Hotel",
       "location": "Mumbai, India",
       "country": "India",
@@ -711,6 +676,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/legacy-ithos-porto-santos",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Waldorf Astoria Kuala Lumpur",
+      "location": "Kuala Lumpur, Malaysia",
+      "country": "Malaysia",
+      "region": "asia",
+      "hotelGroup": "Waldorf Astoria",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-09-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/waldorf-astoria-kuala-lumpur",
       "sourceName": "The Opening List"
     },
     {
@@ -1462,40 +1444,6 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
-      "name": "Waldorf Astoria Kuala Lumpur",
-      "location": "Kuala Lumpur, Malaysia",
-      "country": "Malaysia",
-      "region": "asia",
-      "hotelGroup": "Waldorf Astoria",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-11-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/waldorf-astoria-kuala-lumpur",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Four Seasons Hanoi at Hoan Kiem Lake",
-      "location": "Hanoi, Vietnam",
-      "country": "Vietnam",
-      "region": "asia",
-      "hotelGroup": "Four Seasons",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-12-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/four-seasons-hotel-hanoi-hoan-kiem-lake",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "Grand Mercure Amritsar Airport Road",
       "location": "Amritsar, India",
       "country": "India",
@@ -1513,7 +1461,7 @@
       "sourceName": "Accor 2026 Openings"
     },
     {
-      "name": "Rixos Phu Quoc Island",
+      "name": "Rixos Phu Quoc Vietnam",
       "location": "Phu Quoc, Vietnam",
       "country": "Vietnam",
       "region": "asia",
@@ -1527,23 +1475,6 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/rixos-phu-quoc-island",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "The Leela Jaisalmer",
-      "location": "Rajasthan, India",
-      "country": "India",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": "https://www.theleela.com",
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-12-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/the-leela-jaisalmer",
       "sourceName": "The Opening List"
     },
     {
@@ -1874,7 +1805,7 @@
       "location": "Bali, Indonesia",
       "country": "Indonesia",
       "region": "asia",
-      "hotelGroup": "Marriott",
+      "hotelGroup": "JW Marriott",
       "stars": 5,
       "websiteUrl": null,
       "openDate": null,
