@@ -117,6 +117,46 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/東北季風|东北季风|天文台|^weather$|weather tomorrow|明天的天氣/i.test(t))
+      return "cluster:hk-observatory";
+    if (/國慶煙花|国庆烟花/i.test(t)) return "cluster:hk-nday-fireworks";
+    if (/國慶優惠|国庆优惠/i.test(t)) return "cluster:hk-nday-deals";
+    if (/簡約.?公.?屋|简约.?公.?屋/i.test(t)) return "cluster:hk-lph";
+    if (/^惠\s*康$|^惠康$/i.test(t)) return "cluster:wellcome";
+    if (/11 skies/i.test(t)) return "cluster:11-skies";
+    if (/房贷贴息|公积金贷款只能二选一|购房贴息/i.test(t))
+      return "cluster:mortgage-subsidy-2026";
+    if (/银鳕鱼|盒马银鳕鱼/i.test(t)) return "cluster:cod-mercury";
+    if (/歌唱祖国|跟着习近平总书记一起唱/i.test(t)) return "cluster:nday-sing";
+    if (/恒安两创始人|心相印/i.test(t)) return "cluster:hengan-founder";
+    if (/许鞍华|第一炉香/i.test(t)) return "cluster:ann-hui";
+    if (/DeepSeek开源.*昇腾|DeepSeek开源华为/i.test(t)) return "cluster:deepseek-ascend";
+    if (/广东票房领跑|国庆假期首日广东票房/i.test(t)) return "cluster:gd-box-office";
+    if (/赵心童/i.test(t)) return "cluster:zhao-xintong-sz";
+    if (/一根小钻针|鼎泰高科/i.test(t)) return "cluster:pcb-drill";
+    if (/村田晃大|中使馆回应村田/i.test(t)) return "cluster:embassy-tokyo";
+    if (/联大三委|中方在联大/i.test(t)) return "cluster:unga-3c";
+    if (/国庆假期流动的中国|这一帧的中国很精彩/i.test(t)) return "cluster:nday-travel";
+    if (/开国大典上他驾机|我们的飞机不用再飞第二遍/i.test(t))
+      return "cluster:nday-airshow";
+    if (/丹麥對葡萄牙|denmark vs portugal|葡萄牙4比2丹麦|葡萄牙首次在无C罗|C罗退队|霍伊伦|门德斯回应葡萄牙/i.test(t))
+      return "cluster:nations-league";
+    if (/日本對厄瓜多/i.test(t)) return "cluster:japan-ecuador";
+    if (/argentina vs bolivia/i.test(t)) return "cluster:arg-bolivia";
+    if (/华为赛力斯 复合|华为与赛力斯达成新五年/i.test(t)) return "cluster:aito-seres";
+    if (/Mate90开售|华为Mate万元旗舰|华为Mate90已有版本缺货/i.test(t))
+      return "cluster:huawei-mate90";
+    if (/上京东和蒋欣一起买华为Mate/i.test(t)) return "cluster:huawei-mate90";
+    if (/华为泡泡玛特/i.test(t)) return "cluster:huawei-popmart";
+    if (/iPhoneDuo/i.test(t)) return "cluster:iphone-duo";
+    if (/Figure机器人|Figure让退役机器人/i.test(t)) return "cluster:figure-robot";
+    if (/高速充电充至80%/i.test(t)) return "cluster:ev-charge-holiday";
+    if (/美股光通信芯片/i.test(t)) return "cluster:us-optical-chips";
+    if (/皮皮虾梭子蟹/i.test(t)) return "cluster:sz-seafood";
+    if (/手机号注销后被免密支付/i.test(t)) return "cluster:gz-silent-pay";
+    if (/享界V8/i.test(t)) return "cluster:stels-v8";
+    if (/美议员称绝不能让中国AI/i.test(t)) return "cluster:us-china-ai";
+    if (/合肥人造太阳/i.test(t)) return "cluster:hefei-east";
     if (/鄧龍威|邓龙威/i.test(t)) return "cluster:tang-lung-wai";
     if (/大灣區航空|大湾区航空/i.test(t)) return "cluster:gba-airlines";
     if (/烈士纪念日|山河永念|念给你听这八个年轻|此刻是他们不曾到达|英魂不朽山河永念/i.test(t))
