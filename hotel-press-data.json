@@ -1,16 +1,16 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-02",
-  "refreshedAt": "2026-10-02T10:52:16+08:00",
+  "updatedAt": "2026-10-03",
+  "refreshedAt": "2026-10-03T10:34:37+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-18",
-  "windowEnd": "2026-10-02",
-  "count": 6,
+  "windowStart": "2026-09-19",
+  "windowEnd": "2026-10-03",
+  "count": 5,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
       "listingUrl": "https://ir.melco-resorts.com/press-releases",
-      "error": "The operation was aborted due to timeout"
+      "error": "HTTP 403 for https://ir.melco-resorts.com/news-releases"
     }
   ],
   "articles": [
@@ -24,12 +24,12 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards.",
+      "summary": "(Macao, Sept. 25, 2026) – Londoner Grand has once again been awarded “Best Hotel - Macao” at the TTG Travel Awards for its consistent delivery of distinctive guest experiences. Organised annually by TTG Asia, the 2026 winners are the top Asia-Pacific travel sector performers as voted by readers of TTG Travel Trade Publishing’s major publications.",
       "rank": 1
     },
     {
       "title": "Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally",
-      "url": "https://assets.sandsresortsmacao.cn/content/venetianmacao/press-release/2026/09-24-michelin-keys/en.pdf",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/0924-michelin-keys-2026-recognises-three-of-Sands-Chinas-esteemed-properties-as-among-the-best-globally_en.pdf",
       "posted": "2026-09-24",
       "rawDate": "Sep.24 Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally",
       "hotelGroup": "Sands China",
@@ -37,7 +37,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally.",
+      "summary": "(Macao, Sept. 24, 2026) – Three Sands China properties secured Michelin Keys in the 2026 selection. For the second consecutive year, The Londoner Hotel, Four Seasons Hotel Macao, and The St. Regis Macao have all been awarded One Key.",
       "rank": 2
     },
     {
@@ -50,7 +50,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises.",
+      "summary": "(Macao, Sept. 23, 2026) – An award presentation ceremony at The Londoner Macao announced and recognised 24 enterprises selected for Sands China’s Community Revitalization Programme for Rua das Estalagens 2026. The programme comprises the Entrepreneurship Recruitment Programme 2.0 and a newly introduced Shop Rebranding Programme.",
       "rank": 3
     },
     {
@@ -76,21 +76,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List.",
+      "summary": "(Macao, September 19, 2026) – Six Sands China restaurants earned ratings on Trip.Gourmet’s 2027 Fine Dining List, giving the company the most awardees in Macao under one roof. The Huaiyang Garden received Black Diamond; La Chine received Diamond; and Gordon Ramsay Pub & Grill, Jiang Nan by Jereme Leung, Zi Yat Heen, and The Manor received Platinum.",
       "rank": 5
-    },
-    {
-      "title": "SJM’s Three Flagship Hotels Garner Six MICHELIN Keys the Most in Macau",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/2026-09-25-06-26-07.pdf",
-      "posted": "2026-09-18",
-      "rawDate": "18 Sep 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "award",
-      "summary": "SJM press: SJM’s Three Flagship Hotels Garner Six MICHELIN Keys the Most in Macau.",
-      "rank": 6
     }
   ]
 }
