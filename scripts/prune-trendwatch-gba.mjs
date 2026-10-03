@@ -117,7 +117,17 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/東北季風|东北季风|天文台|^weather$|weather tomorrow|明天的天氣/i.test(t))
+    if (/蔡天凤|蔡天鳳/i.test(t)) return "cluster:nancy-kwan";
+    if (/黄泽林|黃澤林|吴易昺|吳易昺/i.test(t)) return "cluster:coleman-wong";
+    if (/华为赛力斯|问界二手车|二手车商否认问界/i.test(t)) return "cluster:aito-seres";
+    if (/七国集团将释放|美法德英意日加7国/i.test(t)) return "cluster:g7-oil";
+    if (/国足争亚运|中国男足争亚运|邵佳一|董路.?国足|国足首发身价|国足没找回信心|韩媒：中国男足|有球员还想着联赛/i.test(t))
+      return "cluster:team-china-football";
+    if (/迈步新征程|万里边关|多国点亮.?中国红/i.test(t)) return "cluster:nday-77";
+    if (/新能源车 假日充电|跑4个服务区排队|1780万辆新能源车|高速充电充至80%|鼓励新能源车主充电/i.test(t))
+      return "cluster:ev-charge-holiday";
+    if (/Mate90|杨长顺拆解华为Mate90|央视赞Mate90/i.test(t)) return "cluster:huawei-mate90";
+    if (/東北季風|东北季风|天文台|^weather$|weather tomorrow|明天的天氣|\bhko\b/i.test(t))
       return "cluster:hk-observatory";
     if (/國慶煙花|国庆烟花/i.test(t)) return "cluster:hk-nday-fireworks";
     if (/國慶優惠|国庆优惠/i.test(t)) return "cluster:hk-nday-deals";
