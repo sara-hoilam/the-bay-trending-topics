@@ -117,8 +117,38 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/蔡天凤|蔡天鳳/i.test(t)) return "cluster:nancy-kwan";
-    if (/黄泽林|黃澤林|吴易昺|吳易昺/i.test(t)) return "cluster:coleman-wong";
+    if (/蔡天凤|蔡天鳳|林锦岐当面烧毁沈嘉兰/i.test(t)) return "cluster:nancy-kwan";
+    if (/黄泽林|黃澤林|吴易昺|吳易昺|coleman wong|亞運網球/i.test(t)) return "cluster:coleman-wong";
+    if (/克羅埃西亞對英格蘭|克罗地亚0比7英格兰|croatia vs england|莫德里奇称首次感到羞愧|0比7惨败 莫德里奇/i.test(t))
+      return "cluster:cro-eng-7-0";
+    if (/西班牙對捷克|spain vs czechia/i.test(t)) return "cluster:esp-cze";
+    if (/東張西望|东张西望/i.test(t)) return "cluster:tvb-scoop";
+    if (/苹果将为受影响用户免费更换新机|苹果手机突发网络故障|苹果回应iPhone18ProMax故障|美版iPhone18ProMax/i.test(t))
+      return "cluster:iphone18-signal";
+    if (/李飞飞称十年后只剩两类劳动/i.test(t)) return "cluster:li-feifei-labor";
+    if (/argentina vs burkina faso|阿根廷7比0布基纳法索/i.test(t)) return "cluster:arg-bfa";
+    if (/東盟盃|东盟盃|香港對柬埔寨/i.test(t)) return "cluster:asean-cup-hk";
+    if (/胆固醇/i.test(t)) return "cluster:cholesterol";
+    if (/外傭最低工資|外佣最低工资/i.test(t)) return "cluster:fdh-wage";
+    if (/一国两制.?台湾方案|解放军报评论员：推进祖国统一/i.test(t))
+      return "cluster:one-country-two-systems-tw";
+    if (/古树新翠|总书记心中的家与国/i.test(t)) return "cluster:xi-ancient-trees";
+    if (/男足亚运摘铜|国足摘铜|张玉宁在赛后冲突|亚运会男足颁奖礼韩国国旗|韩国网友不满亚运夺金免兵役/i.test(t))
+      return "cluster:ag-football-2026";
+    if (/用九宫格打开亚运|亚运会最有价值运动员|闭幕式中国旗手 毕焜|亚运会夺奖牌回家|张继科复刻王楚钦/i.test(t))
+      return "cluster:asian-games-2026";
+    if (/中方回应“美方批星巴克在新疆|中方回应是否延长.“喀秋莎”/i.test(t))
+      return "cluster:mfa-oct4";
+    if (/中俄白等八国超4.7万人集结大练兵/i.test(t)) return "cluster:cn-ru-drill";
+    if (/全球债市拉响警报/i.test(t)) return "cluster:global-bonds";
+    if (/WTT中国大满贯/i.test(t)) return "cluster:wtt-china";
+    if (/台积电或与马斯克/i.test(t)) return "cluster:tsmc-musk";
+    if (/12家上市车企前三季度/i.test(t)) return "cluster:auto-q3";
+    if (/DeepSeek更新后被指变冷漠|DeepSeek评论区啊对对对/i.test(t)) return "cluster:deepseek-cold";
+    if (/雷军回应假期安排|雷军回应小米VisionGT/i.test(t)) return "cluster:leijun-holiday";
+    if (/男子高速开智驾睡着|司机被拍到高速开智驾睡着/i.test(t)) return "cluster:adas-asleep";
+    if (/新能源电车还有多少想象空间|纯电车主称增程车应让出充电桩|服务区闪充变慢充|科技新一谈服务区电车排队充电|增程车主称理解高速充电80%离场|专家发表3分钟充电80%|国庆高速公路2天充电量/i.test(t))
+      return "cluster:ev-charge-holiday";
     if (/华为赛力斯|问界二手车|二手车商否认问界/i.test(t)) return "cluster:aito-seres";
     if (/七国集团将释放|美法德英意日加7国/i.test(t)) return "cluster:g7-oil";
     if (/国足争亚运|中国男足争亚运|邵佳一|董路.?国足|国足首发身价|国足没找回信心|韩媒：中国男足|有球员还想着联赛/i.test(t))
