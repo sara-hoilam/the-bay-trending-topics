@@ -1,10 +1,10 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-03",
-  "refreshedAt": "2026-10-03T10:38:40+08:00",
+  "updatedAt": "2026-10-04",
+  "refreshedAt": "2026-10-04T11:34:31+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-19",
-  "windowEnd": "2026-10-03",
+  "windowStart": "2026-09-20",
+  "windowEnd": "2026-10-04",
   "count": 5,
   "sourceErrors": [
     {
@@ -24,7 +24,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards.",
+      "summary": "Londoner Grand has once again been awarded the distinction of “Best Hotel - Macao” at the TTG Travel Awards for its consistent delivery of distinctive guest experiences. Organised annually by TTG Asia, the 2026 winners are considered the top Asia-Pacific travel sector performers as voted by readers of TTG Travel Trade Publishing’s major publications.",
       "rank": 1
     },
     {
@@ -37,7 +37,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally.",
+      "summary": "Sands China Ltd. has three celebrated properties securing Michelin Keys in the 2026 selection. For the second consecutive year, The Londoner Hotel, Four Seasons Hotel Macao, and The St. Regis Macao have all been awarded One Key.",
       "rank": 2
     },
     {
@@ -50,8 +50,21 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises.",
+      "summary": "An award presentation ceremony at The Londoner Macao announced and recognised a total of 24 enterprises selected for Sands China’s Community Revitalization Programme for Rua das Estalagens 2026. The programme comprises the Entrepreneurship Recruitment Programme 2.0 for Rua das Estalagens and a newly introduced Shop Rebranding Programme.",
       "rank": 3
+    },
+    {
+      "title": "Melco’s Morpheus becomes Macau’s first hotel to receive Three MICHELIN Keys",
+      "url": "https://www.globenewswire.com/news-release/2026/09/23/3367155/0/en/melco-s-morpheus-becomes-macau-s-first-hotel-to-receive-three-michelin-keys.html",
+      "posted": "2026-09-23",
+      "rawDate": "Sep 23, 2026",
+      "hotelGroup": "Melco",
+      "sourceName": "Melco Resorts",
+      "sourceDomain": "ir.melco-resorts.com",
+      "sourceUrl": "https://ir.melco-resorts.com/press-releases",
+      "kind": "award",
+      "summary": "Melco Resorts & Entertainment announces that Morpheus at City of Dreams has been awarded Three MICHELIN Keys in the MICHELIN Guide’s 2026 global hotel selection, becoming the first hotel in Macau to receive the distinction. Morpheus was promoted from Two Keys, which it held in the 2025 selection.",
+      "rank": 4
     },
     {
       "title": "Celebrating Two Michelin Keys for Four Seasons Hotel Hong Kong",
@@ -64,19 +77,6 @@
       "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
       "kind": "award",
       "summary": "Four Seasons Hotel Hong Kong has been elevated from One Michelin Key to Two Michelin Keys in the Michelin Guide’s 2026 hotel selection, marking a significant milestone just one year after the Michelin Key distinction was first introduced in Hong Kong.",
-      "rank": 4
-    },
-    {
-      "title": "Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List",
-      "url": "https://assets.sandsresortsmacao.cn/content/venetianmacao/press-release/2026/09-19-most-restaurants-recognised/en.pdf",
-      "posted": "2026-09-19",
-      "rawDate": "Sep.19 Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "award",
-      "summary": "Sands China press: Sands China Leads Macao Awardees with Most Restaurants Recognised on Trip.Gourmet's 2027 Fine Dining List.",
       "rank": 5
     }
   ]
