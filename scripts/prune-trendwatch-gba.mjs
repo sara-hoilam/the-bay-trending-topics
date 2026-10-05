@@ -117,6 +117,34 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/蔡康永|零跑汽车下线蔡康永|大量网友抵制蔡康永/i.test(t)) return "cluster:kevin-tsai-leapmotor";
+    if (/超10万份孕妇血样|孕妇血样被偷运/i.test(t)) return "cluster:pregnant-blood-smuggle";
+    if (/^天文台$|香港天文台|天文台時間|\bhko\b|hk observatory/i.test(t))
+      return "cluster:hk-observatory";
+    if (/日本罕见1天3次强烈抗议|高市早苗称已向美国提出强烈抗议|日本197人专案组|驻日美士兵|驻冲绳美军/i.test(t))
+      return "cluster:japan-us-okinawa";
+    if (/邓紫棋演唱会大屏|邓紫棋.*深圳/i.test(t)) return "cluster:gem-sz-concert";
+    if (/75岁王石|深石城市更新|再造一个.“万科”/i.test(t)) return "cluster:wangshi-sz";
+    if (/格力技工学校|董明珠担任校长/i.test(t)) return "cluster:gree-zhuhai-school";
+    if (/深圳无人驾驶网约车/i.test(t)) return "cluster:sz-robotaxi";
+    if (/民进党用高压水炮|云林舰|金沙号/i.test(t)) return "cluster:dpp-water-cannon";
+    if (/全国客流持续高位|国庆出行警惕票务诈骗/i.test(t)) return "cluster:nday-travel-2026";
+    if (/因为国 所以潮|怀爱国之心立报国之志/i.test(t)) return "cluster:nday-guochao";
+    if (/中国正在织六张超级大网/i.test(t)) return "cluster:six-super-networks";
+    if (/缅北电诈/i.test(t)) return "cluster:myanmar-scam-cctv";
+    if (/^muse狂飙|muse狂飙 龙虾退潮/i.test(t)) return "cluster:meta-muse";
+    if (/高铁座椅|HPV感染重灾区|担心高铁座椅/i.test(t)) return "cluster:hsr-seat-hpv";
+    if (/八分饱.*新能源|新能源车.*八分饱/i.test(t)) return "cluster:ev-charge-holiday";
+    if (/明厨亮灶/i.test(t)) return "cluster:waimai-kitchen-fake";
+    if (/portugal vs norway|葡萄牙2比1挪威|詹俊称葡萄牙/i.test(t))
+      return "cluster:por-nor";
+    if (/六合彩|mark six/i.test(t)) return "cluster:mark-six";
+    if (/零跑汽车|leapmotor/i.test(t)) return "cluster:kevin-tsai-leapmotor";
+    if (/于子迪|亚运女子mvp/i.test(t)) return "cluster:yu-zidi-mvp";
+    if (/李昊：无所谓|安东尼奥：这一代|乌兹别克球员扔李昊|男足.*铜/i.test(t))
+      return "cluster:ag-football-2026";
+    if (/^f1$|f1 線上直播|f1直播/i.test(t)) return "cluster:f1";
+    if (/^湯怡$|^汤怡$/i.test(t)) return "cluster:tong-yi";
     if (/蔡天凤|蔡天鳳|林锦岐当面烧毁沈嘉兰/i.test(t)) return "cluster:nancy-kwan";
     if (/黄泽林|黃澤林|吴易昺|吳易昺|coleman wong|亞運網球/i.test(t)) return "cluster:coleman-wong";
     if (/克羅埃西亞對英格蘭|克罗地亚0比7英格兰|croatia vs england|莫德里奇称首次感到羞愧|0比7惨败 莫德里奇/i.test(t))
@@ -127,7 +155,7 @@ function pruneData(data) {
       return "cluster:iphone18-signal";
     if (/李飞飞称十年后只剩两类劳动/i.test(t)) return "cluster:li-feifei-labor";
     if (/argentina vs burkina faso|阿根廷7比0布基纳法索/i.test(t)) return "cluster:arg-bfa";
-    if (/東盟盃|东盟盃|香港對柬埔寨/i.test(t)) return "cluster:asean-cup-hk";
+    if (/東盟盃|东盟盃|東盟志|香港對柬埔寨/i.test(t)) return "cluster:asean-cup-hk";
     if (/胆固醇/i.test(t)) return "cluster:cholesterol";
     if (/外傭最低工資|外佣最低工资/i.test(t)) return "cluster:fdh-wage";
     if (/一国两制.?台湾方案|解放军报评论员：推进祖国统一/i.test(t))
