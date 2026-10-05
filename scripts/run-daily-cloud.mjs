@@ -17,12 +17,12 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { Agent, Cursor, CursorAgentError } from "@cursor/sdk";
 import {
-  DEFAULT_CLOUD_MODEL_ID,
   isRateLimitError,
   isTransientCloudStartupError,
   printIntegrationHelp,
 } from "./cloud-sdk-errors.mjs";
 import {
+  DEFAULT_CLOUD_MODEL_ID,
   listModelIds,
   logSdkError,
   normalizeRepoUrl,
