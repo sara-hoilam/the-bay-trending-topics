@@ -7,6 +7,7 @@
     "daily:cloud": "node scripts/run-daily-cloud.mjs",
     "daily:post": "node scripts/run-daily-post.mjs",
     "daily:diagnose": "node scripts/diagnose-cloud.mjs",
+    "daily:cloud-test": "node --test scripts/cloud-sdk-utils.test.mjs",
     "daily:verify": "node scripts/verify-daily-capture.mjs && node scripts/verify-daily-brief.mjs && node scripts/verify-happenings.mjs && node scripts/verify-new-hotels.mjs && node scripts/verify-hotel-press.mjs",
     "editor:install-local": "npm install jszip --omit=optional",
     "editor:import": "node scripts/sync-editor-comparisons.mjs --import-dir=GBA Pulse Feedback",

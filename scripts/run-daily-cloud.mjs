@@ -19,10 +19,13 @@ import { Agent, Cursor, CursorAgentError } from "@cursor/sdk";
 import {
   DEFAULT_CLOUD_MODEL_ID,
   isRateLimitError,
+  isTransientCloudStartupError,
+  printIntegrationHelp,
+} from "./cloud-sdk-errors.mjs";
+import {
   listModelIds,
   logSdkError,
   normalizeRepoUrl,
-  printIntegrationHelp,
   resolveCloudModelId,
   TARGET_REPO,
 } from "./cloud-sdk-utils.mjs";
@@ -126,7 +129,8 @@ async function runStep(step, apiKey, modelId, { optional = false, retries = 0 } 
         logSdkError(err, `Cloud Run ${step} startup failed`);
         printIntegrationHelp(err);
         const rateLimited = isRateLimitError(err);
-        const maxAttempts = rateLimited ? rateLimitRetries : retries;
+        const transient = isTransientCloudStartupError(err);
+        const maxAttempts = transient ? rateLimitRetries : retries;
         if (attempt < maxAttempts) continue;
         if (optional) {
           console.warn(
@@ -137,6 +141,10 @@ async function runStep(step, apiKey, modelId, { optional = false, retries = 0 } 
         if (rateLimited) {
           console.error(
             "\nAborting: Cursor returned resource_exhausted (429). API key/GitHub are OK — check Usage / on-demand spend, then re-run the workflow."
+          );
+        } else if (transient) {
+          console.error(
+            "\nAborting: Cursor agent create failed with a retryable network error after retries. API key/GitHub are OK — re-run the workflow or --run=2."
           );
         } else {
           console.error("\nRun: npm run daily:diagnose");
