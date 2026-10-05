@@ -1,8 +1,8 @@
 {
   "generatedFrom": "Lifestyle (8) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 72,
+  "highlightedCount": 71,
   "events": [
     {
       "title": "Conserving Neon Culture at M+",
@@ -325,18 +325,6 @@
       "sourceDomain": "westk.hk",
       "highlightScore": 20,
       "highlighted": false,
-      "sourceCategory": "Lifestyle"
-    },
-    {
-      "title": "Shenzhen Educational Equipment Expo 2026",
-      "start": "2026-09-18",
-      "end": "2026-09-20",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/e1kk-4rx6-h5k9",
-      "sourceDomain": "10times.com",
-      "highlightScore": 26,
-      "highlighted": true,
       "sourceCategory": "Lifestyle"
     },
     {
@@ -2240,18 +2228,6 @@
       "sourceCategory": "Lifestyle"
     },
     {
-      "title": "Start-up Express International 2026",
-      "start": "2026-11-19",
-      "end": "2026-11-20",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://hkstartupsociety.hktdc.com/en/events/start-express-international-2026",
-      "sourceDomain": "hkstartupsociety.hktdc.com",
-      "sourceCategory": "Entrepreneur",
-      "highlightScore": 10,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Entrepreneur Day (E-DAY)",
       "start": "2026-11-19",
       "end": "2026-11-20",
@@ -2261,6 +2237,18 @@
       "sourceDomain": "hkstartupsociety.hktdc.com",
       "sourceCategory": "Entrepreneur",
       "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Start-up Express International 2026",
+      "start": "2026-11-19",
+      "end": "2026-11-20",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://hkstartupsociety.hktdc.com/en/events/start-express-international-2026",
+      "sourceDomain": "hkstartupsociety.hktdc.com",
+      "sourceCategory": "Entrepreneur",
+      "highlightScore": 10,
       "highlighted": false
     },
     {
