@@ -1,9 +1,9 @@
 {
-  "capturedAt": "2026-10-06",
-  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. sassyhongkong 92,881 verified from Instagram embed followers_count on 2026-10-06.",
+  "capturedAt": "2026-10-07",
+  "notes": "Followers-only fallback when Instagram web_profile_info returns schema HTTP 400 (ig_business_category_subvertical) for some business profiles. sassyhongkong 92,905 verified from Instagram embed followers_count on 2026-10-07.",
   "accounts": {
     "sassyhongkong": {
-      "followers": 92881
+      "followers": 92905
     }
   }
 }
