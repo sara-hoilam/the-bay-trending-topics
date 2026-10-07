@@ -1,19 +1,32 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-06",
-  "refreshedAt": "2026-10-06T11:33:56+08:00",
+  "updatedAt": "2026-10-07",
+  "refreshedAt": "2026-10-07T11:03:11+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-22",
-  "windowEnd": "2026-10-06",
+  "windowStart": "2026-09-23",
+  "windowEnd": "2026-10-07",
   "count": 5,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
       "listingUrl": "https://ir.melco-resorts.com/press-releases",
-      "error": "The operation was aborted due to timeout"
+      "error": "HTTP 403 for https://ir.melco-resorts.com/news-releases"
     }
   ],
   "articles": [
+    {
+      "title": "Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/20261006-SRM-Wins-Best-Integrated-Resort-Asia_EN.pdf",
+      "posted": "2026-10-06",
+      "rawDate": "Oct.6 Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "award",
+      "summary": "Sands Resorts Macao, the integrated resort city developed by Sands China Ltd., was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026, voted by travel and hospitality industry professionals.",
+      "rank": 1
+    },
     {
       "title": "Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards",
       "url": "https://assets.sandsresortsmacao.cn/press-release/2026/0925-londoner-grand-named-best-hotel-macao-at-ttg-travel-awards-2026_en.pdf",
@@ -24,8 +37,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards.",
-      "rank": 1
+      "summary": "Londoner Grand has again been awarded “Best Hotel – Macao” at the TTG Travel Awards. The 2026 winners are voted by readers of TTG Travel Trade Publishing’s major publications as top Asia-Pacific travel sector performers.",
+      "rank": 2
     },
     {
       "title": "Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally",
@@ -37,8 +50,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally.",
-      "rank": 2
+      "summary": "For the second consecutive year, The Londoner Hotel, Four Seasons Hotel Macao and The St. Regis Macao have each been awarded One Michelin Key in the 2026 global hotel selection.",
+      "rank": 3
     },
     {
       "title": "‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises",
@@ -50,8 +63,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises.",
-      "rank": 3
+      "summary": "Sands China announced 24 enterprises selected for its Community Revitalization Programme for Rua das Estalagens 2026, covering Entrepreneurship Recruitment Programme 2.0 and a new Shop Rebranding Programme. An award presentation ceremony was held at The Londoner Macao.",
+      "rank": 4
     },
     {
       "title": "Melco’s Morpheus becomes Macau’s first hotel to receive Three MICHELIN Keys",
@@ -64,19 +77,6 @@
       "sourceUrl": "https://ir.melco-resorts.com/press-releases",
       "kind": "award",
       "summary": "Melco Resorts & Entertainment announces that Morpheus at City of Dreams has been awarded Three MICHELIN Keys in the MICHELIN Guide’s 2026 global hotel selection, becoming the first hotel in Macau to receive the distinction. Morpheus was promoted from Two Keys, which it held in the 2025 selection.",
-      "rank": 4
-    },
-    {
-      "title": "Celebrating Two Michelin Keys for Four Seasons Hotel Hong Kong",
-      "url": "https://press.fourseasons.com/hongkong/hotel-news/2026/two-michelin-keys",
-      "posted": "2026-09-22",
-      "rawDate": "September 22, 2026, Hong Kong, China",
-      "hotelGroup": "Four Seasons",
-      "sourceName": "Four Seasons Hong Kong",
-      "sourceDomain": "press.fourseasons.com",
-      "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
-      "kind": "award",
-      "summary": "Four Seasons Hotel Hong Kong has been elevated from One Michelin Key to Two Michelin Keys in the Michelin Guide’s 2026 hotel selection, marking a significant milestone just one year after the Michelin Key distinction was first introduced in Hong Kong.",
       "rank": 5
     }
   ]
