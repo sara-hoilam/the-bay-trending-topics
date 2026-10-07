@@ -316,18 +316,6 @@
       "sourceCategory": "Lifestyle"
     },
     {
-      "title": "Rediscoveries at M+",
-      "start": "2026-10-25",
-      "end": "2026-12-12",
-      "region": "hk",
-      "location": "M+ Cinema, West Kowloon",
-      "url": "https://www.mplus.org.hk/en/cinema/rediscoveries/",
-      "sourceDomain": "westk.hk",
-      "highlightScore": 20,
-      "highlighted": false,
-      "sourceCategory": "Lifestyle"
-    },
-    {
       "title": "New HK exhibition marks Leslie Cheung's 70th birthday",
       "start": "2026-09-18",
       "end": "2026-11-17",
@@ -1580,6 +1568,18 @@
       "highlighted": false
     },
     {
+      "title": "WestK × LEGO Hero-ween",
+      "start": "2026-10-15",
+      "end": "2026-10-31",
+      "region": "hk",
+      "location": "Art Park, West Kowloon",
+      "url": "https://www.westk.hk/en/event/westk-lego-heroween",
+      "sourceDomain": "westk.hk",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "SJM Macao Open 2026",
       "start": "2026-10-15",
       "end": "2026-10-18",
@@ -1590,18 +1590,6 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 4,
-      "highlighted": false
-    },
-    {
-      "title": "WestK × LEGO Hero-ween",
-      "start": "2026-10-15",
-      "end": "2026-10-31",
-      "region": "hk",
-      "location": "Art Park, West Kowloon",
-      "url": "https://www.westk.hk/en/event/westk-lego-heroween",
-      "sourceDomain": "westk.hk",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 20,
       "highlighted": false
     },
     {
@@ -1932,6 +1920,18 @@
       "highlighted": false
     },
     {
+      "title": "Rediscoveries at M+",
+      "start": "2026-10-25",
+      "end": "2026-12-12",
+      "region": "hk",
+      "location": "M+ Cinema, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/cinema/rediscoveries/",
+      "sourceDomain": "westk.hk",
+      "highlightScore": 20,
+      "highlighted": false,
+      "sourceCategory": "Lifestyle"
+    },
+    {
       "title": "2026 MODYSSEY FAN CONCERT TOUR <HOW WE BLOOM> IN MACAU",
       "start": "2026-10-25",
       "end": "2026-10-25",
@@ -2228,18 +2228,6 @@
       "sourceCategory": "Lifestyle"
     },
     {
-      "title": "Start-up Express International 2026",
-      "start": "2026-11-19",
-      "end": "2026-11-20",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://hkstartupsociety.hktdc.com/en/events/start-express-international-2026",
-      "sourceDomain": "hkstartupsociety.hktdc.com",
-      "sourceCategory": "Entrepreneur",
-      "highlightScore": 10,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Entrepreneur Day (E-DAY)",
       "start": "2026-11-19",
       "end": "2026-11-20",
@@ -2249,6 +2237,18 @@
       "sourceDomain": "hkstartupsociety.hktdc.com",
       "sourceCategory": "Entrepreneur",
       "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Start-up Express International 2026",
+      "start": "2026-11-19",
+      "end": "2026-11-20",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://hkstartupsociety.hktdc.com/en/events/start-express-international-2026",
+      "sourceDomain": "hkstartupsociety.hktdc.com",
+      "sourceCategory": "Entrepreneur",
+      "highlightScore": 10,
       "highlighted": false
     },
     {
@@ -2422,6 +2422,18 @@
       "sourceCategory": "Lifestyle"
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -2443,18 +2455,6 @@
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -2702,6 +2702,18 @@
       "sourceCategory": "Lifestyle"
     },
     {
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
+      "start": "2027-07-14",
+      "end": "2027-07-20",
+      "region": "hk",
+      "location": "Other Mainland cities,Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 32,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC World of Snacks 2027 (HKCEC)",
       "start": "2027-07-14",
       "end": "2027-07-20",
@@ -2723,18 +2735,6 @@
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 58,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Sports and Leisure Expo 2027 (HKCEC)",
-      "start": "2027-07-14",
-      "end": "2027-07-20",
-      "region": "hk",
-      "location": "Other Mainland cities,Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hksportsleisureexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 32,
       "highlighted": true
     },
     {
