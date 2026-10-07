@@ -117,6 +117,44 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/argentina vs benin|^argentina$|^阿根廷$|阿根廷队长完美谢幕|阿根廷國家足球隊|阿根廷踢家足球隊/i.test(t))
+      return "cluster:arg-benin-messi";
+    if (/何\s*麥|何麥/i.test(t)) return "cluster:mark-houghton";
+    if (/劉澤星|刘泽星/i.test(t)) return "cluster:lau-chak-sing";
+    if (/吴奇隆/i.test(t)) return "cluster:wu-qilong-flag";
+    if (/卡点下高速|别为省钱冒险卡点|千万别卡点下高速/i.test(t))
+      return "cluster:nday-highway-cutoff";
+    if (/高速上堵成腊肠|提前返程游客称高速堵成停车场|国庆返程高峰来了/i.test(t))
+      return "cluster:nday-return-jam";
+    if (/大国工程重器/i.test(t)) return "cluster:mega-projects";
+    if (/C罗重磅声明|C罗自请重罚|C罗公开离开国家队|C罗表态热苏斯|莫德里奇回应C罗/i.test(t))
+      return "cluster:ronaldo-squad";
+    if (/诺贝尔物理学|冰立方中微子|幽灵粒子|南极深冰里捕获|为啥今年的诺贝尔物理学|诺奖评委解密中微子/i.test(t))
+      return "cluster:nobel-physics-2026";
+    if (/缅北赚钱|缅北白家|16条人命|白俄女模特|白俄罗斯模特被诱骗|缅北电诈团伙窝点/i.test(t))
+      return "cluster:myanmar-scam-cctv";
+    if (/华为也扛不住了|余承东：不得不涨价|余承东回应内存压力/i.test(t))
+      return "cluster:huawei-memory-price";
+    if (/余承东称考虑把鸿蒙推向全球/i.test(t)) return "cluster:harmonyos-global";
+    if (/一粥麵|一\s*粥\s*麵/i.test(t)) return "cluster:super-super";
+    if (/hkexpress|hk express/i.test(t)) return "cluster:hk-express";
+    if (/SpaceX拟斥400亿美元购买英伟达/i.test(t)) return "cluster:spacex-nvidia";
+    if (/高通回应与华为达成专利/i.test(t)) return "cluster:qualcomm-huawei-patent";
+    if (/国内航线燃油附加费/i.test(t)) return "cluster:fuel-surcharge";
+    if (/向新图强|创新潮涌神州大地/i.test(t)) return "cluster:innovation-15th";
+    if (/只要在导弹射程内/i.test(t)) return "cluster:zunyi-destroyer";
+    if (/克羅埃西亞對西班牙|croatia vs spain/i.test(t)) return "cluster:cro-esp";
+    if (/法國對比利時|france vs belgium/i.test(t)) return "cluster:fra-bel";
+    if (/england vs czechia/i.test(t)) return "cluster:eng-cze";
+    if (/劉松仁|刘松仁/i.test(t)) return "cluster:damian-lau";
+    if (/夏竹欣/i.test(t)) return "cluster:ha-chuk-yan";
+    if (/邓萃雯|鄧萃雯/i.test(t)) return "cluster:sheren-tang";
+    if (/黄百鸣|黃百鳴/i.test(t)) return "cluster:wong-pak-ming";
+    if (/租者置其屋/i.test(t)) return "cluster:tps";
+    if (/clockenflap/i.test(t)) return "cluster:clockenflap";
+    if (/逃票/i.test(t)) return "cluster:fare-evasion";
+    if (/^乒乓\s*球$|^乒乓球$/i.test(t)) return "cluster:table-tennis";
+    if (/杨利伟透露我国月球|中国空间站将成开放/i.test(t)) return "cluster:cms-open-lab";
     if (/蔡康永|零跑汽车下线蔡康永|大量网友抵制蔡康永/i.test(t)) return "cluster:kevin-tsai-leapmotor";
     if (/超10万份孕妇血样|孕妇血样被偷运/i.test(t)) return "cluster:pregnant-blood-smuggle";
     if (/^天文台$|香港天文台|天文台時間|\bhko\b|hk observatory/i.test(t))
