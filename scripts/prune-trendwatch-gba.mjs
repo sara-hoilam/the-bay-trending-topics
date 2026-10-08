@@ -117,7 +117,42 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/argentina vs benin|^argentina$|^阿根廷$|阿根廷队长完美谢幕|阿根廷國家足球隊|阿根廷踢家足球隊/i.test(t))
+    if (/david silva|大衛施華|大衞施華|至尊沙田/i.test(t))
+      return "cluster:david-silva-sha-tin";
+    if (/無綫集團|无线集团/i.test(t)) return "cluster:tvb-group";
+    if (/衛蘭演唱會|janice 演唱會|^衛蘭$/i.test(t)) return "cluster:janice-vidal-concert";
+    if (/富泰邨|屯門女童/i.test(t)) return "cluster:futai-estate-girl";
+    if (/楊何蓓/i.test(t)) return "cluster:yeung-ho-pui-yan";
+    if (/安\s*柏\s*苑|安柏苑/i.test(t)) return "cluster:on-pak-court";
+    if (/尊界V800|尊界 懂车帝|懂车帝 脚力|刹车踏板国标|刹车踏板支架/i.test(t))
+      return "cluster:luxeed-v800-brake";
+    if (/彭玉去世|彭玉/i.test(t)) return "cluster:peng-yu-obit";
+    if (/粤J2888T/i.test(t)) return "cluster:yuej-2888t";
+    if (/OpenAI全面上线GPT-?6|OpenAI全面上线GPT6|\bchatgpt\b/i.test(t))
+      return "cluster:gpt6-oct8";
+    if (/核光钟/i.test(t)) return "cluster:nuclear-optical-clock";
+    if (/余承东.*霍英东|霍英东集团总裁交车/i.test(t)) return "cluster:yu-fok-delivery";
+    if (/华强北内存/i.test(t)) return "cluster:huaqiangbei-ram";
+    if (/高通买下华为部分美国专利/i.test(t)) return "cluster:qualcomm-huawei-patent";
+    if (/^寒露$|今日寒露|寒露是第1个|寒露 贴秋膘|用AI打开寒露/i.test(t))
+      return "cluster:hanlu-2026";
+    if (/国庆高速免费最后1分钟|男子最后1分钟卡点下高速|卡点下高速/i.test(t))
+      return "cluster:nday-highway-cutoff";
+    if (/白俄罗斯女歌手在缅甸|王星4天被卖|缅北明家|小四爷 缅北|网红小四爷/i.test(t))
+      return "cluster:myanmar-scam-cctv";
+    if (/金镯子断货|金银再度直线跳水/i.test(t)) return "cluster:gold-price";
+    if (/多家在港中资券商/i.test(t)) return "cluster:hk-broker-accounts";
+    if (/央行将开展12000亿/i.test(t)) return "cluster:pboc-oro";
+    if (/新能源汽车.“续航焦虑”|新能源车辆出行占比|中国新能源跑出四个/i.test(t))
+      return "cluster:china-nev";
+    if (/中国为什么一定要搞航天|从太空行李箱看中国航天|中国航天把路修到/i.test(t))
+      return "cluster:cn-space-70";
+    if (/余承东称国内正研发EUV/i.test(t)) return "cluster:huawei-euv";
+    if (/幸福都是奋斗出来的|总书记谈家国同心/i.test(t)) return "cluster:xi-strive";
+    if (/小米澎程首月|雷军谈小米澎程/i.test(t)) return "cluster:xiaomi-pengcheng";
+    if (/俄罗斯鼠疫|俄向世卫通报不明原因肺炎|俄罗斯不明病因肺炎|俄罗斯现不明原因肺炎|^鼠疫$|鼠疫与新冠/i.test(t))
+      return "cluster:russia-plague";
+    if (/argentina vs benin|^argentina$|^阿根廷$|阿根廷队长完美谢幕|阿根廷國家足球隊|阿根廷踢家足球隊|C罗回应阿根廷队长/i.test(t))
       return "cluster:arg-benin-messi";
     if (/何\s*麥|何麥/i.test(t)) return "cluster:mark-houghton";
     if (/劉澤星|刘泽星/i.test(t)) return "cluster:lau-chak-sing";
