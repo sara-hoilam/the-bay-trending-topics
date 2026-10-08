@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-07",
-  "refreshedAt": "2026-10-07T11:08:43+08:00",
+  "updatedAt": "2026-10-08",
+  "refreshedAt": "2026-10-08T11:43:51+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-23",
-  "windowEnd": "2026-10-07",
-  "count": 5,
+  "windowStart": "2026-09-24",
+  "windowEnd": "2026-10-08",
+  "count": 4,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -14,6 +14,19 @@
     }
   ],
   "articles": [
+    {
+      "title": "Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1007-NBA-cares-sands-cares-community-impact-week-2026_EN.pdf",
+      "posted": "2026-10-07",
+      "rawDate": "Oct.7 Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "With The NBA China Games 2026 set to take place in Macao, Sands China has partnered with NBA Cares for the five-day “NBA Cares x Sands Cares Community Impact Week 2026” from Oct. 7 to 11. Opening-day Youth Day at the Macao East Asian Games Dome brought together 200 young players from Macao and the Greater Bay Area for training led by NBA legend Ray Allen and Ding Yanyuhang.",
+      "rank": 1
+    },
     {
       "title": "Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026",
       "url": "https://assets.sandsresortsmacao.cn/press-release/2026/20261006-SRM-Wins-Best-Integrated-Resort-Asia_EN.pdf",
@@ -24,8 +37,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.",
-      "rank": 1
+      "summary": "Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026, voted by travel and hospitality industry professionals. The integrated resort city comprises The Venetian Macao, The Parisian Macao and The Londoner Macao.",
+      "rank": 2
     },
     {
       "title": "Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards",
@@ -37,8 +50,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards.",
-      "rank": 2
+      "summary": "Londoner Grand has again been named “Best Hotel – Macao” at the TTG Travel Awards, organised annually by TTG Asia, with 2026 winners voted by readers of TTG Travel Trade Publishing. The accolade recognises the hotel’s distinctive guest experiences for a second consecutive year.",
+      "rank": 3
     },
     {
       "title": "Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally",
@@ -50,34 +63,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Michelin Keys 2026 Recognises Three of Sands China's Esteemed Properties as Among the Best Globally.",
-      "rank": 3
-    },
-    {
-      "title": "‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises",
-      "url": "https://assets.sandsresortsmacao.cn/content/venetianmacao/press-release/2026/09-23_erp-2-result_en.pdf",
-      "posted": "2026-09-23",
-      "rawDate": "Sep.23 ‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "Sands China press: ‘Sands China’s Community Revitalization Programme for Rua das Estalagens 2026’ Unveils 24 Selected Enterprises.",
+      "summary": "For the second consecutive year, The Londoner Hotel, Four Seasons Hotel Macao and The St. Regis Macao have each been awarded One Michelin Key in the 2026 selection. Michelin Keys are the Guide’s hotel distinction, judged on architecture and design, service, character, value and contribution to the neighbourhood.",
       "rank": 4
-    },
-    {
-      "title": "Melco’s Morpheus becomes Macau’s first hotel to receive Three MICHELIN Keys",
-      "url": "https://www.globenewswire.com/news-release/2026/09/23/3367155/0/en/melco-s-morpheus-becomes-macau-s-first-hotel-to-receive-three-michelin-keys.html",
-      "posted": "2026-09-23",
-      "rawDate": "Sep 23, 2026",
-      "hotelGroup": "Melco",
-      "sourceName": "Melco Resorts",
-      "sourceDomain": "ir.melco-resorts.com",
-      "sourceUrl": "https://ir.melco-resorts.com/press-releases",
-      "kind": "award",
-      "summary": "Melco Resorts & Entertainment announces that Morpheus at City of Dreams has been awarded Three MICHELIN Keys in the MICHELIN Guide’s 2026 global hotel selection, becoming the first hotel in Macau to receive the distinction. Morpheus was promoted from Two Keys, which it held in the 2025 selection.",
-      "rank": 5
     }
   ]
 }
