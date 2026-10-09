@@ -11,12 +11,13 @@ Sands China (3):
 
 2. **Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1007-NBA-cares-sands-cares-community-impact-week-2026_EN.pdf
-(Macao, Oct. 7, 2026) – With The NBA China Games 2026 set to take place in Macao, Sands China has again partnered with NBA Cares for the five-day “NBA Cares x Sands Cares Community Impact Week 2026” from Oct. 7 to 11. Opening-day Youth Day at the Macao East Asian Games Dome brought together 200 young players from Macao and the Greater Bay Area, with NBA legend Ray Allen and Ding Yanyuhang leading the activities.
+Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.
 
 3. **Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/20261006-SRM-Wins-Best-Integrated-Resort-Asia_EN.pdf
-(Macao, Oct. 6, 2026) – Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026, in recognition of its world-class hospitality and experiences for business and leisure travellers. Winners are voted by travel and hospitality industry professionals.
+Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.
 
 4. **Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/0925-londoner-grand-named-best-hotel-macao-at-ttg-travel-awards-2026_en.pdf
-(Macao, Sept. 25, 2026) – Londoner Grand has again been awarded “Best Hotel - Macao” at the TTG Travel Awards for its distinctive guest experiences. The 2026 winners are voted by readers of TTG Travel Trade Publishing’s major publications.
+Sands China press: Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards.
+
