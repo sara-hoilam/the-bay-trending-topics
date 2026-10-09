@@ -119,6 +119,37 @@ function pruneData(data) {
     const t = String(title).trim().toLowerCase();
     if (/david silva|大衛施華|大衞施華|至尊沙田/i.test(t))
       return "cluster:david-silva-sha-tin";
+    if (/吳卓羲|张曦雯|張曦雯|璀璨之城/i.test(t)) return "cluster:ron-ng-drama";
+    if (/周啟豪|周启豪/i.test(t)) return "cluster:wtt-zhou-qihao";
+    if (/安達臣|安德臣道|长实首置|長實首置/i.test(t)) return "cluster:anderson-road";
+    if (/萬寧88|万宁88/i.test(t)) return "cluster:mannings-88";
+    if (/嚴秉泉|严秉泉/i.test(t)) return "cluster:yim-ping-chuen";
+    if (/郭晶晶|霍启刚：特别骄傲|岭南大学荣誉院士/i.test(t))
+      return "cluster:guo-jingjing-lingnan";
+    if (/花开宫宴|佛山.*食源性疾病|广东佛山：发生食源性/i.test(t))
+      return "cluster:foshan-foodborne";
+    if (/3000万黄金|黄金变30公斤柔顺剂/i.test(t)) return "cluster:kt-gold-swap";
+    if (/广州南站|全国最忙高铁站/i.test(t)) return "cluster:gz-south-station";
+    if (/创业板指|北证50|^A股$/i.test(t)) return "cluster:a-share-selloff";
+    if (/国际油价深夜大涨/i.test(t)) return "cluster:oil-overnight";
+    if (/GPT-?6\.1 Sol|OpenAI发布可交互|GPT6推出智能交互|GPT6付费版Sol|OpenAI推出GPT-6\.1/i.test(t))
+      return "cluster:gpt6-sol";
+    if (/庞清方/i.test(t)) return "cluster:pang-qingfang-ice";
+    if (/金与正/i.test(t)) return "cluster:kim-yo-jong-border";
+    if (/周星驰退出内地影院/i.test(t)) return "cluster:stephen-chow-cinemas";
+    if (/高市早苗/i.test(t)) return "cluster:takaichi-mfa";
+    if (/仁爱礁|菲方转运一名伤员|中方允许菲方转运/i.test(t))
+      return "cluster:second-thomas-shoal";
+    if (/探索浩瀚宇宙|发展航天事业/i.test(t)) return "cluster:cn-space-70";
+    if (/China Haul|老外.*行李箱来中国|“老外”人均三个行李箱/i.test(t))
+      return "cluster:china-haul";
+    if (/刚果.*撤离|中使馆提醒：中国公民尽快撤离/i.test(t))
+      return "cluster:drc-evacuate";
+    if (/小米17Ultra/i.test(t)) return "cluster:xiaomi-17ultra";
+    if (/苹果欢迎回家发布会/i.test(t)) return "cluster:apple-welcome-home";
+    if (/东山精密|光芯片采购限制/i.test(t)) return "cluster:dsbj-optical";
+    if (/伯特利|岚图董事长卢放|懂车帝尊界|懂车帝不认同极端|尊界V800 速成车|尊界V800 车主|尊界V800车主自测/i.test(t))
+      return "cluster:luxeed-v800-brake";
     if (/無綫集團|无线集团/i.test(t)) return "cluster:tvb-group";
     if (/衛蘭演唱會|janice 演唱會|^衛蘭$/i.test(t)) return "cluster:janice-vidal-concert";
     if (/富泰邨|屯門女童/i.test(t)) return "cluster:futai-estate-girl";
