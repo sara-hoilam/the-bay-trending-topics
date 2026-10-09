@@ -1,44 +1,44 @@
 {
-  "capturedAt": "2026-10-08",
+  "capturedAt": "2026-10-09",
   "notes": [
-    "scmpnews: 708,000 followers (instagram-api)",
-    "tatlerhongkong: 283,125 followers (instagram-api)",
-    "the_trip_addict: 98,587 followers (instagram-api)",
+    "scmpnews: 708,373 followers (instagram-api)",
+    "tatlerhongkong: 283,308 followers (instagram-api)",
+    "the_trip_addict: 98,596 followers (instagram-api)",
     "sassyhongkong: fetch failed (HTTP 400) — Asset asset://laser.provider/ig_business_category_subvertical has been deleted. You cannot use this schema",
-    "thebayasia: 50,981 followers (instagram-api)",
-    "greaterbayvibes: 20,178 followers (instagram-api)",
-    "thebeatasia: 2,003 followers (instagram-api)",
-    "o.cultmag: 54,112 followers (instagram-api)",
-    "lifestyleasiahk: 133,737 followers (instagram-api)",
-    "timeouthk: 205,853 followers (instagram-api)"
+    "thebayasia: 51,128 followers (instagram-api)",
+    "greaterbayvibes: 20,193 followers (instagram-api)",
+    "thebeatasia: 2,001 followers (instagram-api)",
+    "o.cultmag: 54,165 followers (instagram-api)",
+    "lifestyleasiahk: 133,814 followers (instagram-api)",
+    "timeouthk: 205,863 followers (instagram-api)"
   ],
   "accounts": {
     "scmpnews": {
-      "followers": 708000
+      "followers": 708373
     },
     "tatlerhongkong": {
-      "followers": 283125
+      "followers": 283308
     },
     "the_trip_addict": {
-      "followers": 98587
+      "followers": 98596
     },
     "thebayasia": {
-      "followers": 50981
+      "followers": 51128
     },
     "greaterbayvibes": {
-      "followers": 20178
+      "followers": 20193
     },
     "thebeatasia": {
-      "followers": 2003
+      "followers": 2001
     },
     "o.cultmag": {
-      "followers": 54112
+      "followers": 54165
     },
     "lifestyleasiahk": {
-      "followers": 133737
+      "followers": 133814
     },
     "timeouthk": {
-      "followers": 205853
+      "followers": 205863
     }
   }
 }
