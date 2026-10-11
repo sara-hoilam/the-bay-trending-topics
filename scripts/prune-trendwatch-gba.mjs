@@ -117,6 +117,38 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/梅艳芳|梅艷芳|名人骨灰被盗|骨灰盗窃案/i.test(t))
+      return "cluster:anita-mui-ashes";
+    if (/施永青/i.test(t)) return "cluster:shih-wing-ching-condom";
+    if (/林詩棟|林诗栋/i.test(t)) return "cluster:lin-shidong";
+    if (/曼聯對熱刺|曼联.*热刺|premier league/i.test(t))
+      return "cluster:epl-manutd-spurs";
+    if (/^arsenal$|^阿仙奴$/i.test(t)) return "cluster:arsenal-leeds";
+    if (/切爾西對伯恩茅斯|chelsea vs bournemouth/i.test(t))
+      return "cluster:chelsea-bournemouth";
+    if (/^西甲$|^la liga$/i.test(t)) return "cluster:la-liga";
+    if (/利雅得|沙特.*机场|沙特首都机场|胡塞武装犯下|美国有可能加入沙特|美强烈谴责对沙特|驻沙特大使馆|中国旅客：在机场/i.test(t))
+      return "cluster:riyadh-airport";
+    if (/台湾民众.*统一|台北街头高喊/i.test(t)) return "cluster:tw-reunification";
+    if (/公积金/i.test(t)) return "cluster:housing-fund";
+    if (/华为整体成本涨了1400|华为也扛不住了|余承东：不得不涨价|余承东回应内存压力/i.test(t))
+      return "cluster:huawei-memory-price";
+    if (/李兆熊/i.test(t)) return "cluster:lee-siu-hung";
+    if (/單車節/i.test(t)) return "cluster:hk-cyclothon";
+    if (/以创新赢未来|新质生产力/i.test(t)) return "cluster:nqp-opinions";
+    if (/郑钦文|鄭欽文/i.test(t)) return "cluster:zheng-qinwen-china-open";
+    if (/四部门终结速成车|速成车乱象|车企跟风推新拟迎严管|汽车不得夸大宣传/i.test(t))
+      return "cluster:auto-rush-rules";
+    if (/袁文杰|袁文傑/i.test(t)) return "cluster:vincent-wan";
+    if (/雅思考试取消/i.test(t)) return "cluster:ielts-cancel";
+    if (/人社部：全面推进|未来五年推进就业|退休预服务/i.test(t))
+      return "cluster:mohrss-15th";
+    if (/特朗普：建议乌克兰|泽连斯基最凶险|泽连斯基与多个欧洲/i.test(t))
+      return "cluster:trump-zelensky";
+    if (/在曼谷失联|泰国警方回应大概率|两名中国男子国庆赴泰/i.test(t))
+      return "cluster:thailand-missing";
+    if (/AI把数学干废了/i.test(t)) return "cluster:ai-math";
+    if (/香港公務員事務|楊何蓓/i.test(t)) return "cluster:yeung-ho-pui-yan";
     if (/david silva|大衛施華|大衞施華|至尊沙田/i.test(t))
       return "cluster:david-silva-sha-tin";
     if (/吳卓羲|张曦雯|張曦雯|璀璨之城/i.test(t)) return "cluster:ron-ng-drama";
