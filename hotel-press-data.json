@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-09",
-  "refreshedAt": "2026-10-09T11:37:12+08:00",
+  "updatedAt": "2026-10-11",
+  "refreshedAt": "2026-10-11T10:10:18+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-25",
-  "windowEnd": "2026-10-09",
-  "count": 4,
+  "windowStart": "2026-09-27",
+  "windowEnd": "2026-10-11",
+  "count": 6,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -15,17 +15,43 @@
   ],
   "articles": [
     {
-      "title": "Wynn Officially Unveils the Highly Acclaimed 2027 Wynn Signature Chinese Wine Awards in November",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-officially-unveils-the-highly-acclaimed---2027-wynn-signature-chinese-wine-awards-in-november/s/f909c3e8-0ef6-479c-bea5-1ea136c5a61f",
-      "posted": "2026-10-08",
-      "rawDate": "08 Oct 2026",
-      "hotelGroup": "Wynn",
-      "sourceName": "Wynn Macau Newsroom",
-      "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
-      "kind": "award",
-      "summary": "Macao, October 8, 2026 — “Wynn Signature” will unveil the 2027 Wynn Signature Chinese Wine Awards calendar on November 9, 2026, with entries opening March 1, 2027. In a first for the awards, Beijing will host Judging Week from August 21 to 25, 2027, and the Awards Ceremony will be held in Macao on October 29, 2027.",
+      "title": "Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf",
+      "posted": "2026-10-10",
+      "rawDate": "Oct.10 Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Oct. 10, 2026) – Coinciding with World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day, the fourth event of NBA Cares x Sands Cares Community Impact Week 2026, at Fuhong Society of Macau’s Happy Kitchen Social Enterprise. NBA legends Stephon Marbury and Cuttino Mobley joined Sands executives and Fuhong members to assemble and distribute boxed lunches benefiting 1,500 local elderly residents and community members in need.",
       "rank": 1
+    },
+    {
+      "title": "Sands China Extends ‘Impact Week’ Reach, Bringing NBA Legend and Coaches to Macao School",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1009-NBA-cares-sands-cares-community-impact-week-school-day-2026_EN.pdf",
+      "posted": "2026-10-09",
+      "rawDate": "Oct.9 Sands China Extends ‘Impact Week’ Reach, Bringing NBA Legend and Coaches to Macao School",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Oct. 9, 2026) – Sands China and NBA Cares presented School Day, the third event of NBA Cares x Sands Cares Community Impact Week, at Yuet Wah College, Macau. NBA legend Mitch Richmond and NBA coaches led a campus clinic for local youth basketball players, with around 600 participants including students from Yuet Wah College and Colégio Dom Bosco (Yuet Wah).",
+      "rank": 2
+    },
+    {
+      "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1008-NBA-cares-sands-cares-community-impact-week-tip-off-2026_EN.pdf",
+      "posted": "2026-10-08",
+      "rawDate": "Oct.8 ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "(Macao, Oct. 8, 2026) – Ahead of The NBA China Games 2026, Sands China and NBA Cares held Tip-Off Day of Community Impact Week 2026 at The Venetian Arena, bringing together around 400 participants including current Dallas Mavericks and Houston Rockets players. Players mentored local school basketball teams and led a clinic on the NBA court.",
+      "rank": 3
     },
     {
       "title": "Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’",
@@ -37,8 +63,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.",
-      "rank": 2
+      "summary": "(Macao, Oct. 7, 2026) – With The NBA China Games 2026 set to take place in Macao, Sands China has partnered with NBA Cares to present the five-day “NBA Cares x Sands Cares Community Impact Week 2026” from Oct. 7 to 11. Youth Day opened the week at the Macao East Asian Games Dome, bringing together 150 young basketball players from eight Macao schools and 50 from Hong Kong and mainland Greater Bay Area cities.",
+      "rank": 4
     },
     {
       "title": "Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026",
@@ -50,21 +76,21 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.",
-      "rank": 3
+      "summary": "(Macao, Oct. 6, 2026) – Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026, in recognition of its world-class hospitality and experiences for business and leisure travellers. The interconnected destination comprises The Venetian Macao, The Parisian Macao and The Londoner Macao.",
+      "rank": 5
     },
     {
-      "title": "Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards",
-      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/0925-londoner-grand-named-best-hotel-macao-at-ttg-travel-awards-2026_en.pdf",
-      "posted": "2026-09-25",
-      "rawDate": "Sep.25 Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "title": "Wynn Officially Unveils the Highly Acclaimed 2027 Wynn Signature Chinese Wine Awards in November",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-officially-unveils-the-highly-acclaimed---2027-wynn-signature-chinese-wine-awards-in-november/s/f909c3e8-0ef6-479c-bea5-1ea136c5a61f",
+      "posted": "2026-10-08",
+      "rawDate": "08 Oct 2026",
+      "hotelGroup": "Wynn",
+      "sourceName": "Wynn Macau Newsroom",
+      "sourceDomain": "newsroom.wynnresorts.com",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
-      "summary": "Sands China press: Londoner Grand Secures ‘Best Hotel – Macao’ Award for Second Consecutive Year at TTG Travel Awards.",
-      "rank": 4
+      "summary": "Macao, October 8, 2026 — “Wynn Signature” will unveil the 2027 Wynn Signature Chinese Wine Awards calendar on November 9, 2026, with entries opening March 1, 2027. In a first for the awards, Beijing will host Judging Week from August 21 to 25, 2027, and the Awards Ceremony will be held in Macao on October 29, 2027.",
+      "rank": 6
     }
   ]
 }
