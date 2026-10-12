@@ -15,16 +15,17 @@ Sands China (4):
 
 3. **Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf
-(Macao, Oct. 10, 2026) – Coinciding with World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day, the fourth event of NBA Cares x Sands Cares Community Impact Week 2026, at the Fuhong Society of Macau’s Happy Kitchen Social Enterprise. NBA legends Stephon Marbury and Cuttino Mobley joined Sands executives and ambassadors to assemble and distribute boxed lunches that will benefit 1,500 people in need.
+Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.
 
 4. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1008-NBA-cares-sands-cares-community-impact-week-tip-off-2026_EN.pdf
-(Macao, Oct. 8, 2026) – Ahead of The NBA China Games 2026, Sands China and NBA Cares held Tip-Off Day of Community Impact Week 2026 at The Venetian Arena with about 400 participants, including current Dallas Mavericks and Houston Rockets players. The NBA players mentored local championship school teams and led a basketball clinic on the NBA court.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.
 
 5. **Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1007-NBA-cares-sands-cares-community-impact-week-2026_EN.pdf
-(Macao, Oct. 7, 2026) – Sands China partnered with NBA Cares to present the five-day NBA Cares x Sands Cares Community Impact Week 2026 from Oct. 7 to 11 alongside The NBA China Games 2026. Youth Day at the Macao East Asian Games Dome brought together 150 young players from eight Macao schools and 50 from Hong Kong and mainland Greater Bay Area cities for training led by NBA legend Ray Allen and Ding Yanyuhang.
+Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.
 
 6. **Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/20261006-SRM-Wins-Best-Integrated-Resort-Asia_EN.pdf
-(Macao, Oct. 6, 2026) – Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026. The interconnected Venetian, Parisian and Londoner destination includes seven Forbes Five-Star hotels.
+Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.
+

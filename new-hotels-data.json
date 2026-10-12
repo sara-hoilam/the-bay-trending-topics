@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-10-11",
-  "refreshedAt": "2026-10-11T10:15:22+08:00",
+  "updatedAt": "2026-10-12",
+  "refreshedAt": "2026-10-12T12:05:26+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-04-11",
-  "windowEnd": "2027-04-12",
-  "count": 107,
+  "windowStart": "2026-04-12",
+  "windowEnd": "2027-04-13",
+  "count": 109,
   "countries": [
     "Bangladesh",
     "China",
@@ -152,6 +152,23 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
+      "name": "The Halcyon Private Isles Maldives",
+      "location": "Gaafu Alifu Atoll, Maldives",
+      "country": "Maldives",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-05-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/the-halcyon-private-isles-maldives",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "V Villas Maldives",
       "location": "Alifu Dhaalu Atoll, Maldives",
       "country": "Maldives",
@@ -268,6 +285,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/varel-singapore",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Mandarin Oriental, Bali",
+      "location": "Uluwatu, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Mandarin Oriental",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "2026",
+      "openDatePrecision": "year",
+      "openDateSort": "2026-07-01",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/mandarin-oriental-bali",
       "sourceName": "The Opening List"
     },
     {
