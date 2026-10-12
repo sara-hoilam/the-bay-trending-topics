@@ -20,7 +20,7 @@ export const AWARD_RE =
   /\b(award|awards|honou?rs?|honou?red|recognized|recognised|certif(?:y|ied|ication|ies)|ranked?|ranking|debut|wins?\b|won\b|winner|named|earns?|earned|great place to work|green hotel|50 best|stella|forbes|michelin|iso\s*\d+|share award|employee experience|best hotel|world'?s\s+\d+|gold award|platinum|five-star|five star|carbon[-\s]?neutral)\b/i;
 
 export const GOOD_NEWS_RE =
-  /\b(donat(?:e|es|ed|ion)|relief|community|cares|team members?|anniversary|first in|launches?|launching)\b/i;
+  /\b(donat(?:e|es|ed|ion)|relief|community|cares|welfare|team members?|anniversary|first in|launches?|launching)\b/i;
 
 export const DROP_RE =
   /\b(earnings|unaudited|financial results|q[1-4]\s+20\d{2}|ticket(?:s)?\s+(?:for|to go on sale)|shopping carnival kicks off|exhibition to nov|menu to highlight|stand-?up comedy)\b/i;

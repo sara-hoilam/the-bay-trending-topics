@@ -69,6 +69,12 @@ test("classifyHeadline keeps awards and drops earnings", () => {
     classifyHeadline("Wynn Donates MOP5 Million to Support Relief and Recovery Efforts in Gyirong, Xizang"),
     "good-news",
   );
+  assert.equal(
+    classifyHeadline(
+      "Wynn Supports Welfare Shop Project of Macau Holy House of Mercy for 14th Consecutive Year",
+    ),
+    "good-news",
+  );
 });
 
 test("parseWynnNewsroomHtml extracts title, url, date", () => {

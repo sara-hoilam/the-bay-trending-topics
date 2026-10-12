@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-11",
-  "refreshedAt": "2026-10-11T10:16:25+08:00",
+  "updatedAt": "2026-10-12",
+  "refreshedAt": "2026-10-12T12:03:05+08:00",
   "windowDays": 14,
-  "windowStart": "2026-09-27",
-  "windowEnd": "2026-10-11",
-  "count": 5,
+  "windowStart": "2026-09-28",
+  "windowEnd": "2026-10-12",
+  "count": 6,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -14,6 +14,19 @@
     }
   ],
   "articles": [
+    {
+      "title": "Wynn Supports Welfare Shop Project of Macau Holy House of Mercy for 14th Consecutive Year",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-supports-welfare-shop-project-of-macau-holy-house-of-mercy-for-14th-consecutive-year/s/71598297-e1e3-409a-b6fe-ee455c65e945",
+      "posted": "2026-10-12",
+      "rawDate": "12 Oct 2026",
+      "hotelGroup": "Wynn",
+      "sourceName": "Wynn Macau Newsroom",
+      "sourceDomain": "newsroom.wynnresorts.com",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
+      "kind": "good-news",
+      "summary": "Macao, October 10, 2026 – Wynn continued its 14th consecutive year of support for the Welfare Shop Project of Macau Holy House of Mercy, donating MOP300,000 and sponsoring food hampers for 371 underprivileged families. Around 40 Wynn volunteers helped distribute rice, noodles, canned food, edible oil and other daily necessities at the SCMM Welfare Shop.",
+      "rank": 1
+    },
     {
       "title": "Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community",
       "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf",
@@ -24,8 +37,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.",
-      "rank": 1
+      "summary": "(Macao, Oct. 10, 2026) – Coinciding with World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day, the fourth event of NBA Cares x Sands Cares Community Impact Week 2026, at the Fuhong Society of Macau’s Happy Kitchen Social Enterprise. NBA legends Stephon Marbury and Cuttino Mobley joined Sands executives and ambassadors to assemble and distribute boxed lunches that will benefit 1,500 people in need.",
+      "rank": 2
     },
     {
       "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off",
@@ -37,8 +50,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.",
-      "rank": 2
+      "summary": "(Macao, Oct. 8, 2026) – Ahead of The NBA China Games 2026, Sands China and NBA Cares held Tip-Off Day of Community Impact Week 2026 at The Venetian Arena with about 400 participants, including current Dallas Mavericks and Houston Rockets players. The NBA players mentored local championship school teams and led a basketball clinic on the NBA court.",
+      "rank": 3
     },
     {
       "title": "Wynn Officially Unveils the Highly Acclaimed 2027 Wynn Signature Chinese Wine Awards in November",
@@ -51,7 +64,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Macao, October 8, 2026 — “Wynn Signature” will unveil the 2027 Wynn Signature Chinese Wine Awards calendar on November 9, 2026, with entries opening March 1, 2027. In a first for the awards, Beijing will host Judging Week from August 21 to 25, 2027, and the Awards Ceremony will be held in Macao on October 29, 2027.",
-      "rank": 3
+      "rank": 4
     },
     {
       "title": "Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’",
@@ -63,8 +76,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.",
-      "rank": 4
+      "summary": "(Macao, Oct. 7, 2026) – Sands China partnered with NBA Cares to present the five-day NBA Cares x Sands Cares Community Impact Week 2026 from Oct. 7 to 11 alongside The NBA China Games 2026. Youth Day at the Macao East Asian Games Dome brought together 150 young players from eight Macao schools and 50 from Hong Kong and mainland Greater Bay Area cities for training led by NBA legend Ray Allen and Ding Yanyuhang.",
+      "rank": 5
     },
     {
       "title": "Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026",
@@ -76,8 +89,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.",
-      "rank": 5
+      "summary": "(Macao, Oct. 6, 2026) – Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026. The interconnected Venetian, Parisian and Londoner destination includes seven Forbes Five-Star hotels.",
+      "rank": 6
     }
   ]
 }
