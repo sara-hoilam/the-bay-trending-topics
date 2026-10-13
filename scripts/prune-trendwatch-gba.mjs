@@ -117,6 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/尊界|韩路谈尊界|^懂车帝$/i.test(t) && /踏板|制动|v800|汽研|三问|^尊界$|^懂车帝$|升级方案/i.test(t))
+      return "cluster:luxeed-v800-brake";
+    if (/国考|2027国考|2027年度国考/i.test(t)) return "cluster:guokao-2027";
+    if (/珠海航展|空军一批成熟主战|首次开放海上展区/i.test(t))
+      return "cluster:zhuhai-airshow";
+    if (/新皇崗口岸|新皇岗口岸/i.test(t)) return "cluster:hk-border";
+    if (/利物浦對曼城|liverpool vs man city/i.test(t))
+      return "cluster:liverpool-mancity";
+    if (/土特产|金扁担/i.test(t)) return "cluster:specialty-agri-15th";
+    if (/29万亿应收账款|应收账款该怎么清欠/i.test(t))
+      return "cluster:receivables-29tn";
+    if (/陌生电话先沉默|国安部提醒/i.test(t)) return "cluster:mss-silence";
+    if (/又一.“中国造”全球爆单|深圳税则.*机器人/i.test(t))
+      return "cluster:sz-robot-export";
+    if (/俄乌能源停火/i.test(t)) return "cluster:trump-energy-ceasefire";
+    if (/蔡堅|蔡坚/i.test(t)) return "cluster:choi-kin";
+    if (/^adidas$/i.test(t)) return "cluster:adidas-hk";
+    if (/rj mitte|绝命毒师.*儿子|老白儿子/i.test(t)) return "cluster:rj-mitte";
+    if (/天眼核心区|住酒店可进天眼|中国科学院通报付费进天眼/i.test(t))
+      return "cluster:fast-hotel";
+    if (/韩股|韩国股市遭遇外资|韩股直线跳水/i.test(t)) return "cluster:kr-stocks";
+    if (/两款燃油车重回销量|9月销量前10有8款电车/i.test(t))
+      return "cluster:sep-auto-sales";
+    if (/DeepSeek或下场做机器人/i.test(t)) return "cluster:deepseek-robot";
+    if (/领克10翻下/i.test(t)) return "cluster:lynk-cliff";
+    if (/C罗和马宁|马宁亚冠/i.test(t)) return "cluster:ronaldo-ma-ning";
+    if (/卢伟国|盧偉國|余仲欣/i.test(t)) return "cluster:lo-wai-kwok-wedding";
     if (/梅艳芳|梅艷芳|名人骨灰被盗|骨灰盗窃案/i.test(t))
       return "cluster:anita-mui-ashes";
     if (/施永青/i.test(t)) return "cluster:shih-wing-ching-condom";
