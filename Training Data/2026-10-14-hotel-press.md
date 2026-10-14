@@ -5,7 +5,7 @@ Four Seasons (1):
 
 1. **Argo at Four Seasons Hotel Hong Kong Celebrates Its Highest-Ever Ranking at No. 25 in the World’s 50 Best Bars 2026** — Four Seasons Hong Kong
 https://press.fourseasons.com/hongkong/hotel-news/2026/worlds-best-bars
-ARGO at Four Seasons Hotel Hong Kong has been ranked No. 25 in The World’s 50 Best Bars 2026, marking its highest-ever position on the list. ARGO is one of only four bars in Hong Kong in the top 50 and the only hotel bar in the city to receive this honour.
+ARGO at Four Seasons Hotel Hong Kong has been ranked No. 25 in The World’s 50 Best Bars 2026, marking its highest-ever position on the prestigious global list. ARGO is one of only four bars in Hong Kong recognized in the top 50 and the only hotel bar in the city to receive this honour.
 
 Wynn (3):
 
@@ -25,33 +25,33 @@ MGM China (1):
 
 5. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-[October 12, 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, their second consecutive year on the list. The recognition reflects both restaurants’ continued pursuit of culinary standards and MGM’s commitment to preserving and promoting Chinese culinary culture.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
 
 Sands China (5):
 
 6. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1011-NBA-cares-sands-cares-community-impact-week-community-carnival-2026_EN.pdf
-(Macao, Oct. 11, 2026) – The five-day NBA Cares x Sands Cares Community Impact Week 2026 closed with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao. NBA legend Chris Bosh and Sands Global Ambassador Sir David Beckham joined about 200 participants, including Macau Special Olympics members and families from social service organisations.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.
 
 7. **Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf
-(Macao, Oct. 10, 2026) – On Health and Wellness Day, coinciding with World Mental Health Day, Sands China and NBA Cares held an event at the Fuhong Society of Macau’s Happy Kitchen Social Enterprise. NBA legends Stephon Marbury and Cuttino Mobley joined executives and Fuhong members to assemble and distribute boxed lunches that will benefit 1,500 people.
+Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.
 
 8. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1008-NBA-cares-sands-cares-community-impact-week-tip-off-2026_EN.pdf
-(Macao, Oct. 8, 2026) – Ahead of The NBA China Games 2026, Sands China and NBA Cares held Tip-Off Day at The Venetian Arena with about 400 participants, including current Dallas Mavericks and Houston Rockets players. The players mentored local school basketball teams through sharing sessions, a clinic, and goodie-bag packing.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.
 
 9. **Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1007-NBA-cares-sands-cares-community-impact-week-2026_EN.pdf
-(Macao, Oct. 7, 2026) – Sands China partnered with NBA Cares to present the five-day NBA Cares x Sands Cares Community Impact Week 2026 from Oct. 7 to 11. Youth Day at the Macao East Asian Games Dome brought together 150 young players from eight Macao schools and 50 from Hong Kong and mainland GBA cities for training led by NBA legend Ray Allen.
+Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.
 
 10. **Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/20261006-SRM-Wins-Best-Integrated-Resort-Asia_EN.pdf
-(Macao, Oct. 6, 2026) – Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026, in recognition of its hospitality and experiences for business and leisure travellers. The destination comprises The Venetian Macao, The Parisian Macao and The Londoner Macao, including seven Forbes Five-Star hotels.
+Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.
 
 SJM (1):
 
 11. **SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/2026-10-09-03-53-23.pdf
-(Macau, 8 October 2026) — SJM hosted a National Day reception at Grand Lisboa Palace Resort Macau with over 2,000 team members to celebrate the 77th anniversary of the founding of the People’s Republic of China. The reception opened with a flag-raising ceremony; Chairman Dr. Timothy Fok and Managing Director Ms. Daisy Ho were among those attending.
+SJM press: SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China.
 

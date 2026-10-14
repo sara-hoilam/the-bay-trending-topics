@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-10-13",
-  "refreshedAt": "2026-10-13T12:09:57+08:00",
+  "updatedAt": "2026-10-14",
+  "refreshedAt": "2026-10-14T10:52:14+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-04-13",
-  "windowEnd": "2027-04-14",
-  "count": 107,
+  "windowStart": "2026-04-14",
+  "windowEnd": "2027-04-15",
+  "count": 113,
   "countries": [
     "Bangladesh",
     "China",
@@ -24,12 +24,6 @@
     "Sri Lanka",
     "Thailand",
     "Vietnam"
-  ],
-  "sourceErrors": [
-    {
-      "domain": "ihg.com",
-      "error": "IHG page unreachable (bot protection)"
-    }
   ],
   "hotels": [
     {
@@ -594,6 +588,23 @@
       "sourceName": "The Opening List"
     },
     {
+      "name": "Songtsam Linka Kunming",
+      "location": "Kunming, China",
+      "country": "China",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-08-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/songtsam-linka-kunming",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "The Barai Hua Hin",
       "location": "Hua Hin, Thailand",
       "country": "Thailand",
@@ -778,6 +789,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/nomad-singapore",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Vojara",
+      "location": "Rajasthan, India",
+      "country": "India",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-10-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/vojara-ranthambore",
       "sourceName": "The Opening List"
     },
     {
@@ -1849,6 +1877,74 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/rosewood-seoul",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Capella Nanjing",
+      "location": "Nanjing, China",
+      "country": "China",
+      "region": "asia",
+      "hotelGroup": "Capella",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-04-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/capella-nanjing",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Four Seasons Hanoi at Hoan Kiem Lake",
+      "location": "Hanoi, Vietnam",
+      "country": "Vietnam",
+      "region": "asia",
+      "hotelGroup": "Four Seasons",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-04-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/four-seasons-hotel-hanoi-hoan-kiem-lake",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Four Seasons Okinawa",
+      "location": "Okinawa, Japan",
+      "country": "Japan",
+      "region": "asia",
+      "hotelGroup": "Four Seasons",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-04-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/four-seasons-okinawa",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "The Standard Lisbon",
+      "location": "Lisbon, Portugal",
+      "country": "Portugal",
+      "region": "portugal",
+      "hotelGroup": "The Standard",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-04-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/the-standard-lisbon",
       "sourceName": "The Opening List"
     }
   ]
