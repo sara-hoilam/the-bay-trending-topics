@@ -117,6 +117,26 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/洪金寶|洪金宝/i.test(t)) return "cluster:sammo-hung";
+    if (/藍田站|蓝田站|kwun tong line|藍田.*火警/i.test(t)) return "cluster:lam-tin-mtr";
+    if (/黄奇帆|黃奇帆/i.test(t)) return "cluster:huang-qifan";
+    if (/apple homeview|苹果发布HomeView|苹果正式进军智能家居|苹果发布3款新品|苹果 智能家居|苹果智能家居|苹果发布会|苹果又一波新品|^apple$/i.test(t))
+      return "cluster:apple-homeview";
+    if (/Gemini ?4|谷歌发布Gemini4/i.test(t)) return "cluster:gemini-4";
+    if (/习近平同博茨瓦纳|中多命运共同体|博科会谈/i.test(t)) return "cluster:xi-botswana";
+    if (/馬德里競技對曼聯|马德里竞技对曼联|atlético vs man utd|曼联利马|manchester united/i.test(t))
+      return "cluster:ucl-atletico-utd";
+    if (/赛力斯起诉AI造谣|问界者索赔百万/i.test(t)) return "cluster:seres-aito-rumour";
+    if (/尊界V800|懂车帝 尊界|尊界检测|尊界汽车回应制动|尊界公布检测|尊界销售将与用户|懂车帝封存三辆尊界|懂车帝测试人回应尊界|懂车帝辟谣被立案|知情人回应尊界V800/i.test(t))
+      return "cluster:luxeed-v800-brake";
+    if (/電壓驟降|电压骤降|慈雲山/i.test(t)) return "cluster:tsz-wan-shan-voltage";
+    if (/微信上线绿泡泡/i.test(t)) return "cluster:wechat-green-drama";
+    if (/老干妈陶华碧用AI|老干妈用AI替代/i.test(t)) return "cluster:laoganma-ai";
+    if (/台退役中将|中国必将统一/i.test(t)) return "cluster:tw-reunification";
+    if (/奥利塞扔球|維京對拜仁|维京对拜仁/i.test(t)) return "cluster:ucl-olise-red";
+    if (/深圳宝安一人行道/i.test(t)) return "cluster:sz-baoan-sidewalk";
+    if (/居\s*屋\s*2025|居屋2025/i.test(t)) return "cluster:hos-2025";
+    if (/銀髮\s*經濟|银发经济/i.test(t)) return "cluster:silver-economy";
     if (/尊界|韩路谈尊界|^懂车帝$/i.test(t) && /踏板|制动|v800|汽研|三问|^尊界$|^懂车帝$|升级方案/i.test(t))
       return "cluster:luxeed-v800-brake";
     if (/国考|2027国考|2027年度国考/i.test(t)) return "cluster:guokao-2027";
