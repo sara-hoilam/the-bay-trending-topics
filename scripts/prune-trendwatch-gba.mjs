@@ -117,6 +117,24 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/进出口商品交易会|广交会|第140届中国进出口/i.test(t)) return "cluster:canton-fair-140";
+    if (/绿泡泡|红果果|绿泡泡对标红果|微信上线绿泡泡/i.test(t)) return "cluster:wechat-green-drama";
+    if (/国行iPhone接入通义|通义千问|苹果国行AI有望12月/i.test(t)) return "cluster:iphone-tongyi-ai";
+    if (/美AI科技股暴跌|日韩股市跌到刹不住车|美股科技题材全线下挫|\bkospi\b/i.test(t))
+      return "cluster:ai-tech-selloff";
+    if (/21小时23分|第一个中国人上太空|杨利伟首飞|23年前的今天.*太空|神州五号|神舟五号|100秒回顾神州/i.test(t))
+      return "cluster:yang-liwei-23y";
+    if (/香港香烟包装/i.test(t)) return "cluster:hk-cigarette-pack";
+    if (/周生生.*香港|香港门店发生珠宝劫案/i.test(t)) return "cluster:chow-sang-sang-taipo";
+    if (/女子小区坠井|广州增城.*坠井/i.test(t)) return "cluster:gz-zengcheng-well";
+    if (/王毅会见拉夫罗夫/i.test(t)) return "cluster:wang-yi-lavrov";
+    if (/看病请人陪|陪诊服务/i.test(t)) return "cluster:escort-care-gb";
+    if (/把保障人民健康融入各项政策/i.test(t)) return "cluster:health-in-all-policies";
+    if (/今年双11告别算数题/i.test(t)) return "cluster:double11-pricing";
+    if (/办退休只需一张身份证|退休一件事|退休预服务/i.test(t)) return "cluster:retire-id-card";
+    if (/champions league|uefa champions league|man city vs psg|曼城2比4巴黎|大巴黎终结曼城/i.test(t))
+      return "cluster:ucl-psg-mancity";
+    if (/roma vs real madrid|皇马7分43秒|皇马1.3亿巨星/i.test(t)) return "cluster:ucl-roma-madrid";
     if (/洪金寶|洪金宝/i.test(t)) return "cluster:sammo-hung";
     if (/藍田站|蓝田站|kwun tong line|藍田.*火警/i.test(t)) return "cluster:lam-tin-mtr";
     if (/黄奇帆|黃奇帆/i.test(t)) return "cluster:huang-qifan";
