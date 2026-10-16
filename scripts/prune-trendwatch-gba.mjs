@@ -117,6 +117,26 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/深圳全市全天禁鸣喇叭|全市全天禁鸣喇叭/i.test(t)) return "cluster:sz-horn-ban";
+    if (/美科技股惊天大逆转|美科技股一夜反转/i.test(t)) return "cluster:us-tech-reversal";
+    if (/11月1日起社保缴费|社保缴费有新变化/i.test(t)) return "cluster:social-insurance-nov";
+    if (/总书记强调这个关键词|坚定实施健康优先|预防是最经济/i.test(t))
+      return "cluster:health-first-15th";
+    if (/又一个千万人口大市|佛山计划到2030|佛山市公安局发布户口/i.test(t))
+      return "cluster:foshan-10m";
+    if (/粤芯半导体|台积电看不上的生意跑出了千亿/i.test(t)) return "cluster:yuexin-semi";
+    if (/北上广深楼市新政全部落地/i.test(t)) return "cluster:tier1-home-sales";
+    if (/佳\s*宝\s*食品|佳\s*寶\s*食品|kai ?bo/i.test(t)) return "cluster:kai-bo";
+    if (/九頭鳥米線|九头鸟米线/i.test(t)) return "cluster:nine-head-bird";
+    if (/臺日電梯|台日電梯|台日电梯/i.test(t)) return "cluster:taizoom-lifts";
+    if (/中央援港應急醫院|中央援港应急医院/i.test(t)) return "cluster:cgaeh";
+    if (/中国外贸何以/i.test(t)) return "cluster:cn-trade-sprint";
+    if (/全球智能手机出货量暴跌/i.test(t)) return "cluster:phone-shipments";
+    if (/马斯克称中国将生产大量内存|马斯克为何关注中国内存|中国内存突破让韩国/i.test(t))
+      return "cluster:cn-memory-musk";
+    if (/中建七局拖欠农民工工资/i.test(t)) return "cluster:cscec7-wages";
+    if (/iPhone Duo由中国独家制造|库克连连点赞爱奇艺Duo|库克称非常期待iPhoneDuo/i.test(t))
+      return "cluster:iphone-duo";
     if (/进出口商品交易会|广交会|第140届中国进出口/i.test(t)) return "cluster:canton-fair-140";
     if (/绿泡泡|红果果|绿泡泡对标红果|微信上线绿泡泡/i.test(t)) return "cluster:wechat-green-drama";
     if (/国行iPhone接入通义|通义千问|苹果国行AI有望12月/i.test(t)) return "cluster:iphone-tongyi-ai";
