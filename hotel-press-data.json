@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-16",
-  "refreshedAt": "2026-10-16T09:38:04+08:00",
+  "updatedAt": "2026-10-17",
+  "refreshedAt": "2026-10-17T09:42:12+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-02",
-  "windowEnd": "2026-10-16",
-  "count": 11,
+  "windowStart": "2026-10-03",
+  "windowEnd": "2026-10-17",
+  "count": 12,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -14,6 +14,19 @@
     }
   ],
   "articles": [
+    {
+      "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf",
+      "posted": "2026-10-15",
+      "rawDate": "Oct.15 ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "Macao, Oct. 15, 2026 – The NBA Cares x Sands Cares Community Impact Week 2026, organised by Sands China and NBA Cares from Oct. 7–11, engaged more than 2,900 participants including NBA legends, GBA students and Macao community groups. The five-day programme used basketball-themed activities to support youth development and social inclusion.",
+      "rank": 1
+    },
     {
       "title": "Argo at Four Seasons Hotel Hong Kong Celebrates Its Highest-Ever Ranking at No. 25 in the World’s 50 Best Bars 2026",
       "url": "https://press.fourseasons.com/hongkong/hotel-news/2026/worlds-best-bars",
@@ -25,7 +38,7 @@
       "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
       "kind": "award",
       "summary": "ARGO at Four Seasons Hotel Hong Kong has been ranked No. 25 in The World’s 50 Best Bars 2026, marking its highest-ever position on the prestigious global list. ARGO is one of only four bars in Hong Kong recognized in the top 50 and the only hotel bar in the city to receive this honour.",
-      "rank": 1
+      "rank": 2
     },
     {
       "title": "Five Wynn Restaurants Recognized in the 2027 LA LISTE The World's Best Restaurant Selection",
@@ -38,7 +51,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Macao, October 12, 2026 – Five Wynn restaurants were included in the 2027 LA LISTE The World's Best Restaurant Selection: Chef Tam's Seasons, Lakeview Palace, Mizumi and SW Steakhouse at Wynn Palace, and Wing Lei at Wynn Macau. They were recognised at the Greater China Region Awards Ceremony in Changzhou, China.",
-      "rank": 2
+      "rank": 3
     },
     {
       "title": "MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027",
@@ -50,8 +63,8 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…",
-      "rank": 3
+      "summary": "[October 12, 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the list. The recognition reflects both restaurants’ culinary standards and MGM’s commitment to preserving Chinese culinary culture.",
+      "rank": 4
     },
     {
       "title": "Wynn Supports Welfare Shop Project of Macau Holy House of Mercy for 14th Consecutive Year",
@@ -64,7 +77,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "good-news",
       "summary": "Macao, October 10, 2026 – Wynn continued its 14th consecutive year of support for the Welfare Shop Project of Macau Holy House of Mercy (SCMM), donating MOP300,000 and sponsoring food hampers for 371 underprivileged families. Around 40 Wynn volunteers helped distribute rice, noodles, canned food, edible oil and other daily necessities at the SCMM Welfare Shop.",
-      "rank": 4
+      "rank": 5
     },
     {
       "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes",
@@ -76,8 +89,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.",
-      "rank": 5
+      "summary": "Macao, Oct. 11, 2026 – The five-day NBA Cares x Sands Cares Community Impact Week 2026 closed with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao. Around 200 participants, including NBA legend Chris Bosh, Sir David Beckham and members of Macau Special Olympics, joined basketball-themed carnival activities.",
+      "rank": 6
     },
     {
       "title": "Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community",
@@ -89,8 +102,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.",
-      "rank": 6
+      "summary": "Macao, Oct. 10, 2026 – Sands China and NBA Cares held Health and Wellness Day at Fuhong Society of Macau’s Happy Kitchen Social Enterprise, where NBA legends Stephon Marbury and Cuttino Mobley helped assemble and distribute boxed lunches. The initiative will benefit 1,500 elderly residents and community members in need.",
+      "rank": 7
     },
     {
       "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off",
@@ -102,8 +115,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.",
-      "rank": 7
+      "summary": "Macao, Oct. 8, 2026 – Sands China and NBA Cares held Tip-Off Day at The Venetian Arena with around 400 participants, including Dallas Mavericks and Houston Rockets players, NBA legends and local school basketball teams. Players mentored championship teams from the Macao Inter-School Basketball Competition and led a clinic on the NBA court.",
+      "rank": 8
     },
     {
       "title": "SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China",
@@ -115,8 +128,8 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "SJM press: SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China.",
-      "rank": 8
+      "summary": "Macau, 8 October 2026 — SJM hosted a National Day reception at Grand Lisboa Palace Resort Macau with over 2,000 team members to mark the 77th anniversary of the founding of the People’s Republic of China. Chairman Dr. Timothy Fok, Managing Director Daisy Ho and other directors joined a flag-raising ceremony to celebrate the occasion.",
+      "rank": 9
     },
     {
       "title": "Wynn Officially Unveils the Highly Acclaimed 2027 Wynn Signature Chinese Wine Awards in November",
@@ -129,7 +142,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Macao, October 8, 2026 — “Wynn Signature” will unveil the full-year calendar for the 2027 Wynn Signature Chinese Wine Awards on November 9, 2026, with entries opening March 1, 2027. In a first for the awards, Beijing will host Judging Week from August 21 to 25, 2027, and the Awards Ceremony will be held in Macao on October 29, 2027.",
-      "rank": 9
+      "rank": 10
     },
     {
       "title": "Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’",
@@ -141,8 +154,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.",
-      "rank": 10
+      "summary": "Macao, Oct. 7, 2026 – Sands China partnered with NBA Cares to launch the five-day NBA Cares x Sands Cares Community Impact Week 2026 (Oct. 7–11), coinciding with The NBA China Games 2026. Youth Day at the Macao East Asian Games Dome brought together 150 young players from eight Macao schools and 50 from Hong Kong and mainland GBA cities for training with NBA legend Ray Allen.",
+      "rank": 11
     },
     {
       "title": "Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026",
@@ -154,8 +167,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "award",
-      "summary": "Sands China press: Sands Resorts Macao Wins ‘Best Integrated Resort (Asia)’ at Travel Weekly Asia Readers’ Choice Awards 2026.",
-      "rank": 11
+      "summary": "Macao, Oct. 6, 2026 – Sands Resorts Macao was named Best Integrated Resort (Asia) at the Travel Weekly Asia Readers’ Choice Awards 2026. The destination comprises The Venetian Macao, The Parisian Macao and The Londoner Macao and includes seven Forbes Five-Star hotels.",
+      "rank": 12
     }
   ]
 }
