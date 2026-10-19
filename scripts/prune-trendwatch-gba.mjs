@@ -117,6 +117,24 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/法國示威|法国示威|欧洲多国爆发示威|马克龙就法国抗议|马克龙谴责暴力|动乱之际马克龙/.test(t))
+      return "cluster:france-protests-2026";
+    if (/旭日旗/.test(t)) return "cluster:rising-sun-flag";
+    if (/钓鱼式举报|不能惯着钓鱼/.test(t)) return "cluster:fishing-whistleblow";
+    if (/美日今起联合演习/.test(t)) return "cluster:keen-sword-2026";
+    if (/统筹区域发展|token之都|从“薯都”/.test(t)) return "cluster:ulanchab-tokens";
+    if (/^金$|^货币$/.test(t)) return "cluster:gold-price";
+    if (/\btyphoon\b/.test(t)) return "cluster:hk-storm";
+    if (/本西蒙斯|ben simmons/i.test(t)) return "cluster:ben-simmons";
+    if (/A股调整/.test(t)) return "cluster:a-share-selloff";
+    if (/iPhone\s*Duo/i.test(t)) return "cluster:iphone-duo";
+    if (/货轮沉没.*iphone|泡水iphone|iphone漂浮/i.test(t)) return "cluster:hormuz";
+    if (/吴越.*花姐|吴越质问|伪造演员吴越|打击AI假冒/i.test(t)) return "cluster:ai-fraud-wu-yue";
+    if (/广交会/i.test(t)) return "cluster:canton-fair-140";
+    if (/皇崗口岸|皇岗口岸/i.test(t)) return "cluster:hk-border";
+    if (/梅艷芳|梅艳芳/i.test(t)) return "cluster:anita-mui-ashes";
+    if (/高市政权|高市早苗|靖国神社/i.test(t)) return "cluster:takaichi-mfa";
+    if (/银发经济|銀髮經濟/i.test(t)) return "cluster:silver-economy";
     if (/^tesla$|特斯拉飞行|特斯拉市值|马斯克飞行|特斯拉roadster|tesla roadster|花33.2万订特斯拉|当你买了新款特斯拉|特斯拉新车内部|韩国半导体工程师指控特斯拉|特斯拉飞行跑车/i.test(t))
       return "cluster:tesla-roadster-fly";
     if (/居者有其屋/i.test(t)) return "cluster:hos-2025";
