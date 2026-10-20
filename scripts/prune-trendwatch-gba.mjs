@@ -117,8 +117,26 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/法國示威|法国示威|欧洲多国爆发示威|马克龙就法国抗议|马克龙谴责暴力|动乱之际马克龙/.test(t))
+    if (/法國|法国示威|法国多城|法国骚乱|法国多地宵禁|中国驻米兰|情侣无视火焰|欧洲多国爆发示威|马克龙就法国抗议|马克龙谴责暴力|动乱之际马克龙/.test(t))
       return "cluster:france-protests-2026";
+    if (/把黄旗海保护好|总书记为何关注这项新基建|黄旗海/.test(t))
+      return "cluster:xi-ulanchab-compute";
+    if (/C罗主动承认|葡萄牙足协宣布禁赛C罗|C罗禁赛30天|C罗致电葡足协|C罗遭葡萄牙足协/.test(t))
+      return "cluster:ronaldo-ban";
+    if (/全\s*紅\s*嬋|全红婵/.test(t)) return "cluster:quan-hongchan";
+    if (/蒙古国草原大火|蒙古国草原火灾/.test(t)) return "cluster:mongolia-grassfire";
+    if (/世界最轻无线介观显微镜|清华研发最小超级显微镜|airscope/i.test(t))
+      return "cluster:airscope-microscope";
+    if (/苹果本月第2场发布会|苹果这场发布会有哪些新品/.test(t))
+      return "cluster:apple-oct-event2";
+    if (/张雪.*电摩/.test(t)) return "cluster:zhangxue-emoto";
+    if (/医保钱包/.test(t)) return "cluster:yibao-wallet";
+    if (/成都游客觉得香港/.test(t)) return "cluster:chengdu-hk-rules";
+    if (/^金正恩$|kim jong un/.test(t)) return "cluster:kim-jong-un";
+    if (/圆通深夜致歉|圆通浙江省区/.test(t)) return "cluster:yto-apology";
+    if (/小天才手表/.test(t)) return "cluster:xiaotiancai-watch";
+    if (/^01$|共濟會/.test(t)) return "cluster:hk01-freemasonry";
+    if (/读懂中国经济的韧性|六个字读懂中国经济/.test(t)) return "cluster:china-economy-q3";
     if (/旭日旗/.test(t)) return "cluster:rising-sun-flag";
     if (/钓鱼式举报|不能惯着钓鱼/.test(t)) return "cluster:fishing-whistleblow";
     if (/美日今起联合演习/.test(t)) return "cluster:keen-sword-2026";
