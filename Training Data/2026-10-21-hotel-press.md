@@ -5,23 +5,23 @@ Sands China (5):
 
 1. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf
-Macao, Oct. 15, 2026 – The five-day NBA Cares x Sands Cares Community Impact Week 2026, organised by Sands China and NBA Cares, wrapped up after attracting more than 2,900 participants from Oct. 7–11. NBA legends, GBA students and teachers, and Macao community groups took part in basketball-anchored activities promoting youth development and social inclusion.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.
 
 2. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1011-NBA-cares-sands-cares-community-impact-week-community-carnival-2026_EN.pdf
-Macao, Oct. 11, 2026 – Sands China and NBA Cares closed Community Impact Week 2026 with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao. NBA legend Chris Bosh, Sir David Beckham and around 200 participants, including Macau Special Olympics members, joined the concluding event.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.
 
 3. **Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf
-Macao, Oct. 10, 2026 – On Health and Wellness Day of Community Impact Week, Sands China and NBA Cares joined NBA legends Stephon Marbury and Cuttino Mobley at Fuhong Society of Macau’s Happy Kitchen to assemble and distribute boxed lunches that will benefit 1,500 people. A plaque unveiling marked the official launch of the social enterprise’s new service.
+Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.
 
 4. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1008-NBA-cares-sands-cares-community-impact-week-tip-off-2026_EN.pdf
-Macao, Oct. 8, 2026 – Sands China and NBA Cares held Tip-Off Day of Community Impact Week at The Venetian Arena with around 400 participants, including Dallas Mavericks and Houston Rockets players, NBA legends and Macao school basketball teams. Players mentored local championship teams and led a basketball clinic on the NBA court.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.
 
 5. **Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1007-NBA-cares-sands-cares-community-impact-week-2026_EN.pdf
-Macao, Oct. 7, 2026 – Sands China launched the five-day NBA Cares x Sands Cares Community Impact Week 2026 (Oct. 7–11) with Youth Day at the Macao East Asian Games Dome. The opening event brought together 150 young players from eight Macao schools and 50 from Hong Kong and mainland GBA cities for training led by NBA legend Ray Allen.
+Sands China press: Sands China Launches ‘NBA Cares x Sands Cares Community Impact Week 2026’.
 
 Four Seasons (1):
 
@@ -47,10 +47,11 @@ MGM China (1):
 
 10. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-October 12, 2026, Macau – MGM’s Imperial Court and Five Foot Road were again named among La Liste’s Top 1,000 World’s Best Restaurants 2027, their second consecutive year on the list. The restaurants specialise in Lingnan and Chengdu-style Sichuan cuisine respectively.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
 
 SJM (1):
 
 11. **SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/2026-10-09-03-53-23.pdf
-Macau, 8 October 2026 – SJM hosted a National Day reception at Grand Lisboa Palace Resort Macau with over 2,000 team members to mark the 77th anniversary of the founding of the People’s Republic of China. The event opened with a flag-raising ceremony and remarks from Managing Director Daisy Ho and SWCC Chairman Angela Leong.
+SJM press: SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China.
+
