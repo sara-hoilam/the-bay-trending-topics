@@ -117,7 +117,75 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/法國|法国示威|法国多城|法国骚乱|法国多地宵禁|中国驻米兰|情侣无视火焰|欧洲多国爆发示威|马克龙就法国抗议|马克龙谴责暴力|动乱之际马克龙/.test(t))
+    if (/伟大远征|长征胜利90|小红军的长征|红军传单|夹金山|局部打光了/.test(t))
+      return "cluster:long-march-90";
+    if (/国家癌症中心公布发病前五|胃癌与食管癌跌出发病前五/.test(t))
+      return "cluster:cancer-top5-2026";
+    if (/医保个人账户跨省共济|医保钱包2\.0/.test(t))
+      return "cluster:yibao-wallet";
+    if (/华为带火阔直板|阔直板/.test(t))
+      return "cluster:huawei-wide-bar";
+    if (/仙宾礁|美舰冲闯|美舰首次在仙宾礁|菲媒：若驱逐中国大使/.test(t))
+      return "cluster:sabina-shoal-2026";
+    if (/前三季度中国经济|中国经济“成绩单”|前三季度国内生产总值/.test(t))
+      return "cluster:china-economy-q3";
+    if (/屍皮針|尸皮针|elravie re2o/i.test(t))
+      return "cluster:hk-corpse-filler";
+    if (/商务部回应.?美方制裁中国5家|美方制裁中国5家企业/.test(t))
+      return "cluster:mofcom-ai-sanctions";
+    if (/巴黎聖日耳曼對巴塞隆納|psg vs barcelona|大巴黎4-2|巴黎圣日耳曼4比2巴萨|巴黎圣日耳曼4比2巴萨/.test(t))
+      return "cluster:ucl-psg-barca";
+    if (/曼城對aek|曼城对aek|man city vs aek/i.test(t))
+      return "cluster:ucl-city-aek";
+    if (/liverpool vs villarreal/i.test(t))
+      return "cluster:ucl-liverpool-villarreal";
+    if (/詹姆斯76人|尼克對76人|knicks vs 76ers|乔治凯尔特人|活塞22分逆转|\bnba直播\b|\bnba線上看\b|^nba$/.test(t))
+      return "cluster:nba-open-2026";
+    if (/理想汽车发布电池保障|连山电池|科技新一谈理想汽车电池/.test(t))
+      return "cluster:li-auto-battery";
+    if (/DeepSeek全面开源DeepInfer|DeepSeek每卡每小时|曝DeepSeek今年底用华为升腾/.test(t))
+      return "cluster:deepseek-infer";
+    if (/宁德时代三季报|科技新一说宁德时代利润/.test(t))
+      return "cluster:catl-q3";
+    if (/SpaceX三季度业绩|SpaceX特斯拉成立委员会讨论合并/i.test(t))
+      return "cluster:spacex-q3";
+    if (/广东人.“最不爱接电话”|广东人最不爱接电话/.test(t))
+      return "cluster:gd-phone-scam";
+    if (/钟南山不老秘诀/.test(t))
+      return "cluster:zhong-nanshan";
+    if (/樊振东发文抵制偷拍/.test(t))
+      return "cluster:fan-zhendong";
+    if (/油车电车10年成本账/.test(t))
+      return "cluster:ev-ice-cost";
+    if (/德国盾构机卖印度/.test(t))
+      return "cluster:tbm-india";
+    if (/国家数据集团成立/.test(t))
+      return "cluster:national-data-group";
+    if (/微信聊天记录才能当证据/.test(t))
+      return "cluster:wechat-evidence";
+    if (/完美恋人.?背后的陷阱/.test(t))
+      return "cluster:romance-scam-ai";
+    if (/西太平洋战鼓|中美日排兵布阵/.test(t))
+      return "cluster:keen-sword-2026";
+    if (/工信部称确有部分车企产品验证|汽车可靠性测试验证不低于3万公里/.test(t))
+      return "cluster:auto-rush-rules";
+    if (/比亚迪第二代海鸥/.test(t))
+      return "cluster:byd-seagull2";
+    if (/问界计划明年秋季进入欧洲/.test(t))
+      return "cluster:aito-seres";
+    if (/世界乱成一锅粥.?中国安心过日子/.test(t))
+      return "cluster:world-chaos-china";
+    if (/OLED触屏版Mac价格/.test(t))
+      return "cluster:mac-oled";
+    if (/黄仁勋称看到德国落后/.test(t))
+      return "cluster:nvidia-huang";
+    if (/蔡天凤前公公买绞肉机/.test(t))
+      return "cluster:nancy-kwan";
+    if (/趙心童遭逆转|赵心童遭逆转/.test(t))
+      return "cluster:zhao-xintong";
+    if (/最强厄尔尼诺|赤道太平洋由绿变蓝/.test(t))
+      return "cluster:elnino-2026";
+    if (/法國|法国示威|法国多城|法国骚乱|法国多地宵禁|中国驻米兰|情侣无视火焰|欧洲多国爆发示威|马克龙就法国抗议|马克龙谴责暴力|动乱之际马克龙|法国乱成一锅粥|法国将部署军队/.test(t))
       return "cluster:france-protests-2026";
     if (/把黄旗海保护好|总书记为何关注这项新基建|黄旗海/.test(t))
       return "cluster:xi-ulanchab-compute";
