@@ -5,19 +5,19 @@ Sands China (4):
 
 1. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf
-As an initiative of The NBA China Games 2026, the NBA Cares x Sands Cares Community Impact Week wrapped up after five days of community activities. The Oct. 7–11 programme engaged more than 2,900 participants, including NBA legends, GBA students and teachers, and Macao social-service organisations.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.
 
 2. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1011-NBA-cares-sands-cares-community-impact-week-community-carnival-2026_EN.pdf
-The five-day NBA Cares x Sands Cares Community Impact Week closed with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao. About 200 participants, including NBA legend Chris Bosh, Sir David Beckham and Macau Special Olympics members, joined basketball-themed carnival activities.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.
 
 3. **Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf
-Sands China and NBA Cares marked Health and Wellness Day at the Fuhong Society of Macau’s Happy Kitchen Social Enterprise, unveiling a plaque for the new community canteen service. NBA legends Stephon Marbury and Cuttino Mobley joined staff to assemble and distribute boxed lunches that will benefit 1,500 people.
+Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.
 
 4. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1008-NBA-cares-sands-cares-community-impact-week-tip-off-2026_EN.pdf
-Ahead of The NBA China Games 2026, Sands China and NBA Cares held Tip-Off Day of Community Impact Week at The Venetian Arena. Around 400 participants, including current Mavericks and Rockets players, NBA legends and local school basketball teams, joined a clinic and goodie-bag packing.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.
 
 Four Seasons (1):
 
@@ -43,10 +43,11 @@ MGM China (1):
 
 9. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the list. The restaurants specialise in Lingnan and Chengdu-style Sichuan cuisine respectively.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
 
 SJM (1):
 
 10. **SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/2026-10-09-03-53-23.pdf
-SJM Resorts hosted a National Day reception on 8 October at Grand Lisboa Palace Resort Macau with over 2,000 team members to mark the 77th anniversary of the founding of the People’s Republic of China. The reception opened with a flag-raising ceremony and remarks from SJM leadership including Managing Director Daisy Ho.
+SJM press: SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China.
+
