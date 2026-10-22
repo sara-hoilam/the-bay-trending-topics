@@ -117,6 +117,60 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/走好新时代的长征路|它们为什么都叫.“长征”|我想记住你的名字 走你所走的长路|今天再唱《七律·长征》|400多件长征文物|把我撂得高高的|我们的长征路|^长征$|伟大远征|长征胜利90|小红军的长征|红军传单|夹金山|局部打光了/.test(t))
+      return "cluster:long-march-90";
+    if (/科莫對曼聯|como vs man utd|^como$|曼联1比4惨负科莫|曼联1比4惨败科莫|曼联主帅回应不敌科莫|科莫vs曼联/i.test(t))
+      return "cluster:ucl-como-utd";
+    if (/拜仁慕尼黑對兵工廠|bayern vs arsenal|^arsenal$/i.test(t))
+      return "cluster:ucl-bayern-arsenal";
+    if (/^php$|php 問題|php出现严重漏洞|cve-2026-109618/i.test(t))
+      return "cluster:php-cve-2026";
+    if (/皇家馬德里對萊比錫|皇马4比1大胜莱比锡/i.test(t))
+      return "cluster:ucl-madrid-leipzig";
+    if (/中国这一冠 等了20年|中国体操女队终结美国7连冠|中国体操姑娘们哭了|中国体操女团时隔20年夺冠|中国体操女团12套全顺|中国体操女队锁定洛杉矶|邱祺缘 体操世锦赛/.test(t))
+      return "cluster:gymnastics-wch-2026";
+    if (/地铁站内看书5小时被扣15元/.test(t))
+      return "cluster:gz-metro-timeout";
+    if (/广东一小区疑现大量骨灰房/.test(t))
+      return "cluster:taishan-ashes";
+    if (/问界回应车辆起火|问界m9起火|问界m9事故|问界称起火车辆/i.test(t))
+      return "cluster:aito-m9-fire";
+    if (/这台世界顶尖大科学装置首次出光|shine|硬x射线自由电子激光/i.test(t))
+      return "cluster:shine-fel";
+    if (/宇树机器人展示举起汽车救人/.test(t))
+      return "cluster:unitree-car-rescue";
+    if (/小米成立独立汽车安全研究中心/.test(t))
+      return "cluster:xiaomi-auto-safety";
+    if (/泽连斯基重大转变|泽连斯基：乌方支持尽快启动三方会谈/.test(t))
+      return "cluster:zelensky-talks";
+    if (/红果把观众的时间标好了价|红果短剧自砍摇钱树|红果短剧暂无全面收费|红果短剧回应金币|红果短剧 金币/.test(t))
+      return "cluster:hongguo-drama";
+    if (/14家银行叫停或限制个人异地存款/.test(t))
+      return "cluster:bank-remote-deposit";
+    if (/牙膏分类新规来了/.test(t))
+      return "cluster:toothpaste-rules";
+    if (/星巴克的沙发不养闲人/.test(t))
+      return "cluster:starbucks-seat";
+    if (/全国流行.“拼大学”/.test(t))
+      return "cluster:merge-universities";
+    if (/全球首款乙肝功能性治愈药物/.test(t))
+      return "cluster:hep-b-cure";
+    if (/^羅文$/.test(t))
+      return "cluster:roman-tam";
+    if (/^琵 眼$|超强台风蔷琵逼近中国/.test(t))
+      return "cluster:hk-storm";
+    if (/马斯克建议太空芯片|马斯克公布重大利好/.test(t))
+      return "cluster:musk-space-chip";
+    if (/黄仁勋谈智力变成商品|黄仁勋称不能监管不存在的东西/.test(t))
+      return "cluster:nvidia-huang";
+    if (/中国飞行汽车交付阿联酋/.test(t))
+      return "cluster:flying-car-uae";
+    if (/雷军参观小米汽车北京设计中心/.test(t))
+      return "cluster:xiaomi-pengcheng";
+    if (/诺奖得主称ai不会替代医生/i.test(t))
+      return "cluster:nobel-ai-doctors";
+    if (/五部门发布骗局风险提示/.test(t))
+      return "cluster:soe-job-scam";
     if (/伟大远征|长征胜利90|小红军的长征|红军传单|夹金山|局部打光了/.test(t))
       return "cluster:long-march-90";
     if (/国家癌症中心公布发病前五|胃癌与食管癌跌出发病前五/.test(t))
