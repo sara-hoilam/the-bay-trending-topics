@@ -5,15 +5,15 @@ Sands China (3):
 
 1. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf
-(Macao, Oct. 15, 2026) – The NBA Cares x Sands Cares Community Impact Week 2026 wrapped up after five days (Oct. 7–11), engaging more than 2,900 participants including NBA legends, GBA students and teachers, and Macao community groups. Organised by Sands China and NBA Cares as part of The NBA China Games 2026, the programme used basketball activities to promote youth development and social inclusion.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.
 
 2. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1011-NBA-cares-sands-cares-community-impact-week-community-carnival-2026_EN.pdf
-(Macao, Oct. 11, 2026) – The five-day NBA Cares x Sands Cares Community Impact Week 2026 closed with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao, drawing around 200 participants. NBA legend Chris Bosh, Sands Global Ambassador Sir David Beckham, Zhang Ziyu and Olympic gold medallist Wang Meng joined Macau Special Olympics members and families from social service organisations.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.
 
 3. **Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf
-(Macao, Oct. 10, 2026) – On World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day at the Fuhong Society of Macau’s Happy Kitchen Social Enterprise, where NBA legends Stephon Marbury and Cuttino Mobley helped assemble and distribute boxed lunches. The initiative will benefit 1,500 people and marked the launch of Happy Kitchen’s new community canteen service, supported by Sands China.
+Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.
 
 Four Seasons (1):
 
@@ -35,5 +35,5 @@ MGM China (1):
 
 7. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-[October 12, 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving and promoting Chinese culinary culture.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
 
