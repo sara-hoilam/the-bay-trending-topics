@@ -1,16 +1,21 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-22",
-  "refreshedAt": "2026-10-22T09:51:53+08:00",
+  "updatedAt": "2026-10-23",
+  "refreshedAt": "2026-10-23T10:21:33+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-08",
-  "windowEnd": "2026-10-22",
-  "count": 10,
+  "windowStart": "2026-10-09",
+  "windowEnd": "2026-10-23",
+  "count": 7,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
       "listingUrl": "https://ir.melco-resorts.com/press-releases",
       "error": "The operation was aborted due to timeout"
+    },
+    {
+      "domain": "shangri-la.com",
+      "listingUrl": "https://www.shangri-la.com/group/media/",
+      "error": "HTTP 403 for Shangri-La loadArticles"
     }
   ],
   "articles": [
@@ -24,7 +29,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.",
+      "summary": "(Macao, Oct. 15, 2026) – The NBA Cares x Sands Cares Community Impact Week 2026 wrapped up after five days (Oct. 7–11), engaging more than 2,900 participants including NBA legends, GBA students and teachers, and Macao community groups. Organised by Sands China and NBA Cares as part of The NBA China Games 2026, the programme used basketball activities to promote youth development and social inclusion.",
       "rank": 1
     },
     {
@@ -63,7 +68,7 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…",
+      "summary": "[October 12, 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving and promoting Chinese culinary culture.",
       "rank": 4
     },
     {
@@ -89,7 +94,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.",
+      "summary": "(Macao, Oct. 11, 2026) – The five-day NBA Cares x Sands Cares Community Impact Week 2026 closed with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao, drawing around 200 participants. NBA legend Chris Bosh, Sands Global Ambassador Sir David Beckham, Zhang Ziyu and Olympic gold medallist Wang Meng joined Macau Special Olympics members and families from social service organisations.",
       "rank": 6
     },
     {
@@ -102,47 +107,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.",
+      "summary": "(Macao, Oct. 10, 2026) – On World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day at the Fuhong Society of Macau’s Happy Kitchen Social Enterprise, where NBA legends Stephon Marbury and Cuttino Mobley helped assemble and distribute boxed lunches. The initiative will benefit 1,500 people and marked the launch of Happy Kitchen’s new community canteen service, supported by Sands China.",
       "rank": 7
-    },
-    {
-      "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off",
-      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1008-NBA-cares-sands-cares-community-impact-week-tip-off-2026_EN.pdf",
-      "posted": "2026-10-08",
-      "rawDate": "Oct.8 ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Celebrates Tip-Off.",
-      "rank": 8
-    },
-    {
-      "title": "SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/2026-10-09-03-53-23.pdf",
-      "posted": "2026-10-08",
-      "rawDate": "08 Oct 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "good-news",
-      "summary": "SJM press: SJM Hosts National Day Reception with Over 2,000 Team Members to Celebrate the 77th Anniversary of the Founding of the People’s Republic of China.",
-      "rank": 9
-    },
-    {
-      "title": "Wynn Officially Unveils the Highly Acclaimed 2027 Wynn Signature Chinese Wine Awards in November",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-officially-unveils-the-highly-acclaimed---2027-wynn-signature-chinese-wine-awards-in-november/s/f909c3e8-0ef6-479c-bea5-1ea136c5a61f",
-      "posted": "2026-10-08",
-      "rawDate": "08 Oct 2026",
-      "hotelGroup": "Wynn",
-      "sourceName": "Wynn Macau Newsroom",
-      "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
-      "kind": "award",
-      "summary": "Macao, October 8, 2026 — “Wynn Signature” will unveil the full-year calendar for the 2027 Wynn Signature Chinese Wine Awards on November 9, 2026, with entries opening March 1, 2027. In a first for the awards, Beijing will host Judging Week from August 21 to 25, 2027, and the Awards Ceremony will be held in Macao on October 29, 2027.",
-      "rank": 10
     }
   ]
 }
