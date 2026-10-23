@@ -117,13 +117,44 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/走好新时代的长征路|它们为什么都叫.“长征”|我想记住你的名字 走你所走的长路|今天再唱《七律·长征》|400多件长征文物|把我撂得高高的|我们的长征路|^长征$|伟大远征|长征胜利90|小红军的长征|红军传单|夹金山|局部打光了/.test(t))
+    if (/西藏.*地震|那曲地震|巴青|余震413|地震已致|地震亲历|牦牛同时奔跑|驰援西藏|西部战区.*西藏|西藏启动自然灾害|地震后巴青|震区酒店/.test(t))
+      return "cluster:tibet-quake-2026";
+    if (/^朱振國$/.test(t)) return "cluster:chu-chun-kwok";
+    if (/縉庭山|婿麻山|陳 浩文|陈浩文/.test(t)) return "cluster:the-pavilia-inspector";
+    if (/^八達通$|^八达通$/.test(t)) return "cluster:octopus-card";
+    if (/^工資$|^工會$/.test(t)) return "cluster:hk-wages";
+    if (/定期\s*存款/.test(t)) return "cluster:hk-time-deposit";
+    if (/解放军三面围台|围台演习/.test(t)) return "cluster:pla-taiwan-drill";
+    if (/芯片人才百万年薪/.test(t)) return "cluster:chip-talent-pay";
+    if (/苹果办公三件套下架/.test(t)) return "cluster:apple-iwork-delist";
+    if (/奥迪中国|曝奥迪华为合作开发a8/.test(t)) return "cluster:audi-china-huawei";
+    if (/时速400公里|cr450/.test(t)) return "cluster:cr450-400kmh";
+    if (/利雅得传出爆炸/.test(t)) return "cluster:riyadh-explosions";
+    if (/奔赴香港假日狂欢/.test(t)) return "cluster:hk-holiday-carnival";
+    if (/ai裁员越来越普遍/.test(t)) return "cluster:ai-layoffs";
+    if (/76人對騎士|76ers vs cavaliers|76人vs骑士|骑士vs76人|76人快攻/.test(t))
+      return "cluster:nba-76ers-cavs";
+    if (/^赛马$|^拳馬$/.test(t)) return "cluster:hk-racing";
+    if (/张志超案改判无罪/.test(t)) return "cluster:zhang-zhichao";
+    if (/土耳其新教材虚构新疆/.test(t)) return "cluster:turkey-xinjiang-textbook";
+    if (/全球超八成新船订单/.test(t)) return "cluster:china-shipbuilding";
+    if (/^chiikawa$/.test(t)) return "cluster:chiikawa-ana";
+    if (/^郭晶晶$/.test(t)) return "cluster:guo-jingjing";
+    if (/^黃得生$/.test(t)) return "cluster:wong-tak-sang";
+    if (/^葉蒨文$/.test(t)) return "cluster:sally-yeh";
+    if (/特朗普痛批詹姆斯/.test(t)) return "cluster:trump-lebron";
+    if (/国乒女团2比3|国乒男团夺亚锦赛|林诗栋回应国乒|国乒女团 桥本|张本智和/.test(t))
+      return "cluster:attc-2026";
+    if (/anthropic推出个人智能体/.test(t)) return "cluster:anthropic-agent";
+    if (/伯恩茅斯對ac米蘭|伯恩茅斯對托里夫/.test(t)) return "cluster:uel-bournemouth-milan";
+    if (/亞布洛內茨對布萊頓|亚布洛内茨/.test(t)) return "cluster:uel-jablonec-brighton";
+    if (/走好新时代的长征路|它们为什么都叫.“长征”|我想记住你的名字 走你所走的长路|今天再唱《七律·长征》|400多件长征文物|把我撂得高高的|我们的长征路|^长征$|伟大远征|长征胜利90|小红军的长征|红军传单|夹金山|局部打光了|长征是刻在大国重器|让总书记驻足的长征|红军为何总能绝处逢生|大力弘扬伟大长征/.test(t))
       return "cluster:long-march-90";
     if (/科莫對曼聯|como vs man utd|^como$|曼联1比4惨负科莫|曼联1比4惨败科莫|曼联主帅回应不敌科莫|科莫vs曼联/i.test(t))
       return "cluster:ucl-como-utd";
     if (/拜仁慕尼黑對兵工廠|bayern vs arsenal|^arsenal$/i.test(t))
       return "cluster:ucl-bayern-arsenal";
-    if (/^php$|php 問題|php出现严重漏洞|cve-2026-109618/i.test(t))
+    if (/^php$|php 問題|php出现严重漏洞|cve-2026-109618|全球70%网站都危险了/i.test(t))
       return "cluster:php-cve-2026";
     if (/皇家馬德里對萊比錫|皇马4比1大胜莱比锡/i.test(t))
       return "cluster:ucl-madrid-leipzig";
@@ -133,7 +164,7 @@ function pruneData(data) {
       return "cluster:gz-metro-timeout";
     if (/广东一小区疑现大量骨灰房/.test(t))
       return "cluster:taishan-ashes";
-    if (/问界回应车辆起火|问界m9起火|问界m9事故|问界称起火车辆/i.test(t))
+    if (/问界回应车辆起火|问界m9起火|问界m9事故|问界称起火车辆|三问问界神木|问界m9 aeb/i.test(t))
       return "cluster:aito-m9-fire";
     if (/这台世界顶尖大科学装置首次出光|shine|硬x射线自由电子激光/i.test(t))
       return "cluster:shine-fel";
@@ -267,7 +298,8 @@ function pruneData(data) {
     if (/\btyphoon\b/.test(t)) return "cluster:hk-storm";
     if (/本西蒙斯|ben simmons/i.test(t)) return "cluster:ben-simmons";
     if (/A股调整/.test(t)) return "cluster:a-share-selloff";
-    if (/iPhone\s*Duo/i.test(t)) return "cluster:iphone-duo";
+    if (/iPhone\s*Duo|iphone duo|苹果内屏磨砂膜|苹果折叠屏首批体验|苹果多门店大排长龙/i.test(t))
+      return "cluster:iphone-duo";
     if (/货轮沉没.*iphone|泡水iphone|iphone漂浮/i.test(t)) return "cluster:hormuz";
     if (/吴越.*花姐|吴越质问|伪造演员吴越|打击AI假冒/i.test(t)) return "cluster:ai-fraud-wu-yue";
     if (/广交会/i.test(t)) return "cluster:canton-fair-140";
@@ -318,7 +350,7 @@ function pruneData(data) {
     if (/进出口商品交易会|广交会|第140届中国进出口/i.test(t)) return "cluster:canton-fair-140";
     if (/绿泡泡|红果果|绿泡泡对标红果|微信上线绿泡泡/i.test(t)) return "cluster:wechat-green-drama";
     if (/国行iPhone接入通义|通义千问|苹果国行AI有望12月/i.test(t)) return "cluster:iphone-tongyi-ai";
-    if (/美AI科技股暴跌|日韩股市跌到刹不住车|美股科技题材全线下挫|\bkospi\b/i.test(t))
+    if (/美AI科技股暴跌|日韩股市跌到刹不住车|美股科技题材全线下挫|\bkospi\b|美股科技股大跌|美股收盘：spacex|^美股$|a股 科技股/i.test(t))
       return "cluster:ai-tech-selloff";
     if (/21小时23分|第一个中国人上太空|杨利伟首飞|23年前的今天.*太空|神州五号|神舟五号|100秒回顾神州/i.test(t))
       return "cluster:yang-liwei-23y";
