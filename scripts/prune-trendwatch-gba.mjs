@@ -117,8 +117,35 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/西藏.*地震|那曲地震|巴青|余震413|地震已致|地震亲历|牦牛同时奔跑|驰援西藏|西部战区.*西藏|西藏启动自然灾害|地震后巴青|震区酒店/.test(t))
+    if (/西藏.*地震|那曲地震|巴青|余震413|地震已致|地震亲历|牦牛同时奔跑|驰援西藏|西部战区.*西藏|西藏启动自然灾害|地震后巴青|震区酒店|警惕涉西藏巴青|西藏地震灾区卫星|拉张型破裂/.test(t))
       return "cluster:tibet-quake-2026";
+    if (/减缓人工智能|国办发文减缓人工智能/.test(t)) return "cluster:ai-jobs-policy";
+    if (/中共中央政治局10月23|政治局10月23日召开/.test(t)) return "cluster:politburo-oct23";
+    if (/孤儿车|维修经济性纳入新车/.test(t)) return "cluster:nev-orphan-cars";
+    if (/kimi k3\.1|月之暗面发布最强/.test(t)) return "cluster:kimi-k31";
+    if (/遥感五十号|火箭云|长征六号|一抬头看见中国航天|北京天空飞过火箭云|^火箭云$|绝美“火箭云”/.test(t))
+      return "cluster:cz6-rocket-cloud";
+    if (/deepseek完成1000亿|deepseek完成千亿/.test(t)) return "cluster:deepseek-funding";
+    if (/lol worlds|lol 世界賽|\blpl\b|s16|blg|tes不敌|al输给kc|ig被gen|瑞士轮/.test(t))
+      return "cluster:lol-worlds-2026";
+    if (/娃哈哈.*辞职|许思敏/.test(t)) return "cluster:wahaha-chair";
+    if (/普京三问/.test(t)) return "cluster:putin-ukraine-q";
+    if (/白宫称第一夫人促成俄乌|俄乌局部停火/.test(t)) return "cluster:melania-ceasefire";
+    if (/特朗普称可能对伊/.test(t)) return "cluster:trump-iran-strike";
+    if (/俄开始对美供应柴油/.test(t)) return "cluster:ru-us-diesel";
+    if (/寒武纪/.test(t)) return "cluster:cambricon-q3";
+    if (/仰望hu|仰望超豪轿车/.test(t)) return "cluster:yangwang-hu";
+    if (/居民用电量10年来首次/.test(t)) return "cluster:power-use-drop";
+    if (/订单排到2031|重量级国货爆单|全球超八成新船|造船业三大指标/.test(t))
+      return "cluster:china-shipbuilding";
+    if (/国际油价飙涨/.test(t)) return "cluster:oil-overnight";
+    if (/两未成年人向火锅小便/.test(t)) return "cluster:hotpot-spit-case";
+    if (/独行侠步行者/.test(t)) return "cluster:nba-mavs-pacers";
+    if (/\bkddi\b/.test(t)) return "cluster:kddi-outage";
+    if (/^fraud$|^詐騙$|^诈骗$/.test(t)) return "cluster:hk-fraud";
+    if (/ai短剧公司几乎不需要/.test(t)) return "cluster:ai-short-drama-jobs";
+    if (/红星照耀青春长征路|党和人民军队铿锵前进/.test(t))
+      return "cluster:long-march-90";
     if (/^朱振國$/.test(t)) return "cluster:chu-chun-kwok";
     if (/縉庭山|婿麻山|陳 浩文|陈浩文/.test(t)) return "cluster:the-pavilia-inspector";
     if (/^八達通$|^八达通$/.test(t)) return "cluster:octopus-card";
