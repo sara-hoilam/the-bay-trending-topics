@@ -1,10 +1,10 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-23",
-  "refreshedAt": "2026-10-23T10:26:35+08:00",
+  "updatedAt": "2026-10-24",
+  "refreshedAt": "2026-10-24T09:58:30+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-09",
-  "windowEnd": "2026-10-23",
+  "windowStart": "2026-10-10",
+  "windowEnd": "2026-10-24",
   "count": 7,
   "sourceErrors": [
     {
@@ -29,7 +29,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.",
+      "summary": "The five-day NBA Cares x Sands Cares Community Impact Week 2026, organised by Sands China and NBA Cares, engaged more than 2,900 participants from 7–11 October. NBA legends, GBA students and teachers, and Macao community groups took part in basketball-led activities promoting youth development and social inclusion.",
       "rank": 1
     },
     {
@@ -55,7 +55,7 @@
       "sourceDomain": "newsroom.wynnresorts.com",
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
-      "summary": "Macao, October 12, 2026 – Five Wynn restaurants were included in the 2027 LA LISTE The World's Best Restaurant Selection: Chef Tam's Seasons, Lakeview Palace, Mizumi and SW Steakhouse at Wynn Palace, and Wing Lei at Wynn Macau. They were recognised at the Greater China Region Awards Ceremony in Changzhou, China.",
+      "summary": "Five Wynn restaurants were included in the 2027 LA LISTE The World's Best Restaurant Selection: Chef Tam's Seasons, Lakeview Palace, Mizumi and SW Steakhouse at Wynn Palace, and Wing Lei at Wynn Macau. They were recognised at the Greater China Region Awards Ceremony in Changzhou, China.",
       "rank": 3
     },
     {
@@ -68,7 +68,7 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…",
+      "summary": "Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the list. The restaurants specialise in Lingnan and Chengdu-style Sichuan cuisine respectively.",
       "rank": 4
     },
     {
@@ -81,7 +81,7 @@
       "sourceDomain": "newsroom.wynnresorts.com",
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "good-news",
-      "summary": "Macao, October 10, 2026 – Wynn continued its 14th consecutive year of support for the Welfare Shop Project of Macau Holy House of Mercy (SCMM), donating MOP300,000 and sponsoring food hampers for 371 underprivileged families. Around 40 Wynn volunteers helped distribute rice, noodles, canned food, edible oil and other daily necessities at the SCMM Welfare Shop.",
+      "summary": "Wynn continued its 14th consecutive year of support for the Welfare Shop Project of Macau Holy House of Mercy (SCMM), donating MOP300,000 and sponsoring food hampers for 371 underprivileged families. Around 40 Wynn volunteers helped distribute rice, noodles, canned food, edible oil and other daily necessities at the SCMM Welfare Shop.",
       "rank": 5
     },
     {
@@ -94,7 +94,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.",
+      "summary": "The NBA Cares x Sands Cares Community Impact Week 2026 closed on 11 October with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao. NBA legend Chris Bosh, Sir David Beckham and around 200 participants, including members of Macau Special Olympics, joined the concluding event.",
       "rank": 6
     },
     {
@@ -107,7 +107,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.",
+      "summary": "On World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day at Fuhong Society of Macau’s Happy Kitchen Social Enterprise. NBA legends Stephon Marbury and Cuttino Mobley helped assemble and distribute boxed lunches that will benefit 1,500 people in the Macao community.",
       "rank": 7
     }
   ]
