@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle (8) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
   "updatedAt": "2026-10-24",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 83,
+  "highlightedCount": 85,
   "events": [
     {
       "title": "Conserving Neon Culture at M+",
@@ -353,6 +353,32 @@
       "highlighted": false
     },
     {
+      "title": "Pedestrian Zones during National Day Golden Week holiday",
+      "start": "2026-10-01",
+      "end": "2026-10-06",
+      "region": "macao",
+      "location": "Rua de Nossa Senhora do Amparo",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": true,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 44,
+      "highlighted": true
+    },
+    {
+      "title": "34th Macao International Fireworks Display Contest",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "region": "macao",
+      "location": "Sea area in front of the Macau Tower",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": true,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 50,
+      "highlighted": true
+    },
+    {
       "title": "An Interstellar Dream with Le Petit Prince",
       "start": "2026-10-01",
       "end": "2026-10-11",
@@ -389,6 +415,58 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "2026 National Day and World Walking Day Fun Run",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "region": "macao",
+      "location": "Lotus Square",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Commemorative Performance of the 77th Anniversary of the National Day of the People’s Rep…",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "region": "macao",
+      "location": "The Londoner Theatre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "105 Fiesta",
+      "start": "2026-10-01",
+      "end": "2026-10-08",
+      "region": "macao",
+      "location": "Rua de Cinco de Outubro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "Cotai Water Jet – Macau Cruise Fireworks Route",
+      "start": "2026-10-01",
+      "end": "2026-10-01",
+      "region": "macao",
+      "location": "Taipa Ferry Terminal",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -532,6 +610,19 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Hong Kung Night Market",
+      "start": "2026-10-01",
+      "end": "2026-10-06",
+      "region": "macao",
+      "location": "Rua de Cinco de Outubro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
       "highlighted": false
     },
     {
@@ -769,6 +860,45 @@
       "highlighted": false
     },
     {
+      "title": "The Adventures of ALICE @ Grand Lisboa Palace Resort Macau",
+      "start": "2026-10-01",
+      "end": "2026-10-06",
+      "region": "macao",
+      "location": "Grand Lisboa Palace Resort Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "Exploring Macao’s History",
+      "start": "2026-10-01",
+      "end": "2026-10-07",
+      "region": "macao",
+      "location": "Rua de D. Belchior Carneiro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "Art Everywhere – Cultural vibes at the weekend",
+      "start": "2026-10-01",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "Anim’Arte NAM VAN",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
       "title": "38th Macao International Music Festival",
       "start": "2026-10-02",
       "end": "2026-11-29",
@@ -780,6 +910,45 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 116,
       "highlighted": true
+    },
+    {
+      "title": "O.O.O. MARKET VOL.2｜CHILL TIPSY",
+      "start": "2026-10-02",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "Ponte 16",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "NBA China Games 2026 Drone Show",
+      "start": "2026-10-02",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "The Parisian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "The 3rd Macao Vegetarian Carnival",
+      "start": "2026-10-03",
+      "end": "2026-10-08",
+      "region": "macao",
+      "location": "Kun Iam Temple",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 16,
+      "highlighted": false
     },
     {
       "title": "“SMALL FORMAT ’26” – “UNEXPECTED MACAU”",
@@ -795,6 +964,32 @@
       "highlighted": false
     },
     {
+      "title": "René [Final Call] 2026 Live Tour - Macau",
+      "start": "2026-10-03",
+      "end": "2026-10-03",
+      "region": "macao",
+      "location": "Galaxy Arena, Galaxy Macau™",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Taste the Streets: Urban Awakening",
+      "start": "2026-10-03",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "Largo do Pagode do Bazar",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "Exhibition “Macao Coastline”",
       "start": "2026-10-03",
       "end": "2026-11-01",
@@ -805,6 +1000,58 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Broadway Weekend Local Market",
+      "start": "2026-10-03",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "Broadway Food Street",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "220 & The Londoner Macao Proudly Present: – Sara Landry: Chapter I, Macau",
+      "start": "2026-10-04",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "The Londoner Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "TEETEEPOR FAN MEETING IN MACAU 2026",
+      "start": "2026-10-04",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "Broadway Theatre, Broadway Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "“Mak Mak” Interactive Theatre",
+      "start": "2026-10-04",
+      "end": "2026-10-04",
+      "region": "macao",
+      "location": "Barra Pier",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -954,6 +1201,19 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 20,
+      "highlighted": false
+    },
+    {
+      "title": "After Party – DJ Mustard & Guest Artist KeyNG",
+      "start": "2026-10-09",
+      "end": "2026-10-09",
+      "region": "macao",
+      "location": "The Londoner Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202610",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -2022,6 +2282,18 @@
       "highlighted": true
     },
     {
+      "title": "Qin-Rong Relics of the Western Frontier",
+      "start": "2026-10-28",
+      "end": "2027-02-28",
+      "region": "shenzhen",
+      "location": "Shenzhen Museum (Ancient Art), Tongxin Road",
+      "url": "https://shenzhenmuseum.com/exhlist",
+      "sourceDomain": "shenzhenmuseum.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
       "title": "Oktoberfest Macau at MGM 2026",
       "start": "2026-10-28",
       "end": "2026-11-08",
@@ -2032,18 +2304,6 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 8,
-      "highlighted": false
-    },
-    {
-      "title": "Qin-Rong Relics of the Western Frontier",
-      "start": "2026-10-28",
-      "end": "2027-02-28",
-      "region": "shenzhen",
-      "location": "Shenzhen Museum (Ancient Art), Tongxin Road",
-      "url": "https://shenzhenmuseum.com/exhlist",
-      "sourceDomain": "shenzhenmuseum.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -2173,6 +2433,18 @@
       "highlighted": true
     },
     {
+      "title": "DMP China — Mould, Metalworking & Plastics 2026",
+      "start": "2026-11-04",
+      "end": "2026-11-07",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/china-dmp-international-mould-metalworking-plastic",
+      "sourceDomain": "10times.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "Qing Court in Four Seasons — HK Palace Museum",
       "start": "2026-11-04",
       "end": "2027-08-04",
@@ -2196,18 +2468,6 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 28,
       "highlighted": true
-    },
-    {
-      "title": "DMP China — Mould, Metalworking & Plastics 2026",
-      "start": "2026-11-04",
-      "end": "2026-11-07",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/china-dmp-international-mould-metalworking-plastic",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
     },
     {
       "title": "HKTDC Hong Kong International Wine and Spirits Fair 2026 (HKCEC)",
@@ -2890,30 +3150,6 @@
       "sourceCategory": "Lifestyle"
     },
     {
-      "title": "HKTDC Home Delights Expo 2027 (HKCEC)",
-      "start": "2027-08-12",
-      "end": "2027-08-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Beauty & Wellness Expo 2027 (HKCEC)",
-      "start": "2027-08-12",
-      "end": "2027-08-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Food Expo PRO 2027 (HKCEC)",
       "start": "2027-08-12",
       "end": "2027-08-14",
@@ -2944,6 +3180,30 @@
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkfoodexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Home Delights Expo 2027 (HKCEC)",
+      "start": "2027-08-12",
+      "end": "2027-08-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Beauty & Wellness Expo 2027 (HKCEC)",
+      "start": "2027-08-12",
+      "end": "2027-08-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 28,

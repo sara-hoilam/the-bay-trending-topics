@@ -5,15 +5,15 @@ Sands China (3):
 
 1. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf
-The five-day NBA Cares x Sands Cares Community Impact Week 2026, organised by Sands China and NBA Cares, engaged more than 2,900 participants from 7–11 October. NBA legends, GBA students and teachers, and Macao community groups took part in basketball-led activities promoting youth development and social inclusion.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.
 
 2. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1011-NBA-cares-sands-cares-community-impact-week-community-carnival-2026_EN.pdf
-The NBA Cares x Sands Cares Community Impact Week 2026 closed on 11 October with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao. NBA legend Chris Bosh, Sir David Beckham and around 200 participants, including members of Macau Special Olympics, joined the concluding event.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.
 
 3. **Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf
-On World Mental Health Day, Sands China and NBA Cares held Health and Wellness Day at Fuhong Society of Macau’s Happy Kitchen Social Enterprise. NBA legends Stephon Marbury and Cuttino Mobley helped assemble and distribute boxed lunches that will benefit 1,500 people in the Macao community.
+Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.
 
 Four Seasons (1):
 
@@ -35,5 +35,5 @@ MGM China (1):
 
 7. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the list. The restaurants specialise in Lingnan and Chengdu-style Sichuan cuisine respectively.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
 
