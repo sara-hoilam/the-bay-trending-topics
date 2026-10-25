@@ -5,11 +5,11 @@ Sands China (2):
 
 1. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf
-Sands China and NBA Cares wrapped the five-day NBA Cares x Sands Cares Community Impact Week 2026, an NBA China Games initiative that engaged more than 2,900 participants from 7–11 October. NBA legends, GBA students and teachers, and Macao social-service groups joined community activities promoting youth development and social inclusion.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.
 
 2. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1011-NBA-cares-sands-cares-community-impact-week-community-carnival-2026_EN.pdf
-Sands China and NBA Cares closed Community Impact Week 2026 with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao, attended by around 200 participants. NBA legend Chris Bosh, Sands Global Ambassador Sir David Beckham, Zhang Ziyu and Wang Meng joined Macau Special Olympics members and social-service families.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.
 
 Four Seasons (1):
 
@@ -31,4 +31,5 @@ MGM China (1):
 
 6. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving and promoting Chinese culinary culture.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
+
