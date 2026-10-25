@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-24",
-  "refreshedAt": "2026-10-24T10:03:18+08:00",
+  "updatedAt": "2026-10-25",
+  "refreshedAt": "2026-10-25T09:27:27+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-10",
-  "windowEnd": "2026-10-24",
-  "count": 7,
+  "windowStart": "2026-10-11",
+  "windowEnd": "2026-10-25",
+  "count": 6,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -29,7 +29,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.",
+      "summary": "Sands China and NBA Cares wrapped the five-day NBA Cares x Sands Cares Community Impact Week 2026, an NBA China Games initiative that engaged more than 2,900 participants from 7–11 October. NBA legends, GBA students and teachers, and Macao social-service groups joined community activities promoting youth development and social inclusion.",
       "rank": 1
     },
     {
@@ -68,7 +68,7 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…",
+      "summary": "Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving and promoting Chinese culinary culture.",
       "rank": 4
     },
     {
@@ -94,21 +94,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Successfully Concludes.",
+      "summary": "Sands China and NBA Cares closed Community Impact Week 2026 with a Community Basketball Carnival at NBA HOUSE at The Venetian Macao, attended by around 200 participants. NBA legend Chris Bosh, Sands Global Ambassador Sir David Beckham, Zhang Ziyu and Wang Meng joined Macau Special Olympics members and social-service families.",
       "rank": 6
-    },
-    {
-      "title": "Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community",
-      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1010-NBA-cares-sands-cares-community-impact-week-health-wellness-day-2026_EN.pdf",
-      "posted": "2026-10-10",
-      "rawDate": "Oct.10 Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "Sands China press: Sands China Joins Hands with NBA Legend to Distribute Boxed Lunches to the Macao Community.",
-      "rank": 7
     }
   ]
 }
