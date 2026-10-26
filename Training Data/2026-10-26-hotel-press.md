@@ -5,7 +5,7 @@ Sands China (1):
 
 1. **‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf
-Sands China and NBA Cares closed Community Impact Week 2026 after five days of basketball-led activities that engaged more than 2,900 participants, including NBA legends, coaches and players, students from Macao, the Greater Bay Area and Hainan, and local social-service groups. The Oct. 7–11 programme used The NBA China Games 2026 to support youth development and social inclusion in Macao.
+Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.
 
 Four Seasons (1):
 
@@ -27,5 +27,5 @@ MGM China (1):
 
 5. **MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=863
-Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road, have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027, marking their second consecutive year on the list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving and promoting Chinese culinary culture.
+[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…
 
