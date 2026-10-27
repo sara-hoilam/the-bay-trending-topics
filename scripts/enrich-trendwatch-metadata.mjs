@@ -2206,6 +2206,9 @@ function applyMeta(it, candidate) {
   if (/[\u4e00-\u9fff]/.test(it.title) && it.titleEn === it.title) {
     delete it.titleEn;
   }
+  if (it.titleEn && !/[\u4e00-\u9fff]/.test(it.title)) {
+    delete it.titleEn;
+  }
   if (it.isGbaRelevant == null && !it.isGossip) it.isGbaRelevant = true;
   if (it.isNewsworthy == null && !it.isGossip) it.isNewsworthy = true;
   if (it.isGossip == null) it.isGossip = false;

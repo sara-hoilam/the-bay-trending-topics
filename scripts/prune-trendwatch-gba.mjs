@@ -117,6 +117,50 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/沈大師|沈大师|沈振盈|沈大師離世/.test(t)) return "cluster:master-shum";
+    if (/hkexpress|hong kong express|香港快運/.test(t)) return "cluster:hk-express";
+    if (/ballon d'or|金球獎|金球奖|凯恩获2026|凯恩荣膺金球|凯恩获金球|姆巴佩言论|^姆巴佩$/.test(t))
+      return "cluster:ballon-dor-2026";
+    if (/徽剑|柬埔寨电诈大佬|电诈大佬刘忍/.test(t)) return "cluster:huijian-scam";
+    if (/ios\s*27\.2|iOS27\.2/i.test(t)) return "cluster:ios27-2";
+    if (/iphone\s*duo|iphoneduo|富士康员工曝/i.test(t)) return "cluster:iphone-duo";
+    if (/anthropic|史上最大ipo|史上最亏ai|华尔街算力融资/i.test(t))
+      return "cluster:anthropic-ipo";
+    if (/华强北内存|内存条有价无市|内存条价格一年/.test(t)) return "cluster:huaqiangbei-ram";
+    if (/二十届五中全会|持之以恒推进全面从严治党/.test(t)) return "cluster:plenum-20-5";
+    if (/熱帶\s*氣旋|热带气旋/.test(t)) return "cluster:hk-storm";
+    if (/石鼓洲/.test(t)) return "cluster:shek-kwu-chau";
+    if (/皇\s*崗\s*口岸|皇岗口岸/.test(t)) return "cluster:hk-border";
+    if (/kimi致歉|kimi k3\.1/i.test(t)) return "cluster:kimi-k31";
+    if (/央行发公告 设立新工具|债市非银大额赎回|bnsf/i.test(t))
+      return "cluster:pboc-bnsf";
+    if (/国考报名确认/.test(t)) return "cluster:guokao-2027";
+    if (/减缓岗位替代|人工智能时代 如何减缓/.test(t)) return "cluster:ai-jobs-policy";
+    if (/医保钱包可为老家父母/.test(t)) return "cluster:yibao-wallet";
+    if (/德国总统抵达安徽|施泰因迈尔/.test(t)) return "cluster:steinmeier-china";
+    if (/看不见的外贸|数说中国外贸/.test(t)) return "cluster:cn-token-export";
+    if (/73名省部级/.test(t)) return "cluster:discipline-73";
+    if (/纯电小车变味|第二代海鸥/.test(t)) return "cluster:byd-seagull2";
+    if (/手机越卖越少越卖越贵/.test(t)) return "cluster:phone-shipments";
+    if (/上甘岭寄来的表情包|抗美援朝出国作战76/.test(t))
+      return "cluster:korean-war-76";
+    if (/俄警告日本：走复仇主义/.test(t)) return "cluster:ru-jp-revanchism";
+    if (/ipad mini/i.test(t)) return "cluster:ipad-mini-8";
+    if (/^ai bubble$/.test(t)) return "cluster:ai-bubble";
+    if (/^天文台$/.test(t)) return "cluster:hk-observatory";
+    if (/^業主$/.test(t)) return "cluster:hk-owners";
+    if (/樊振東|樊振东/.test(t)) return "cluster:fan-zhendong";
+    if (/多家A股半导体龙头/.test(t)) return "cluster:a-share-semis";
+    if (/中资网贷在印度/.test(t)) return "cluster:cn-npl-india";
+    if (/每个软件都搞AI/.test(t)) return "cluster:ai-app-fatigue";
+    if (/豆包手机二代/.test(t)) return "cluster:doubao-phone";
+    if (/在欧中国汽车季度销量/.test(t)) return "cluster:cn-eu-auto";
+    if (/DeepSeek为何开源/.test(t)) return "cluster:deepseek-oss";
+    if (/人造太阳正在变为现实/.test(t)) return "cluster:hefei-east";
+    if (/美股三大指数集体收涨/.test(t)) return "cluster:us-stocks";
+    if (/金价持续回落/.test(t)) return "cluster:gold-price";
+    if (/15个中央巡视组/.test(t)) return "cluster:inspection-round8";
+    if (/AI伪人广告/.test(t)) return "cluster:ai-fake-ads";
     if (/台湾光复|太空视角俯瞰台湾|这是中国台湾省|东部战区发布台湾光复|台湾光复这条战线/.test(t))
       return "cluster:taiwan-retrocession-81";
     if (/抗美援朝出国作战76|抗美援朝.*76周年/.test(t)) return "cluster:korean-war-76";
