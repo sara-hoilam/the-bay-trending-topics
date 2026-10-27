@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-26",
-  "refreshedAt": "2026-10-26T09:30:38+08:00",
+  "updatedAt": "2026-10-27",
+  "refreshedAt": "2026-10-27T10:34:58+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-12",
-  "windowEnd": "2026-10-26",
-  "count": 5,
+  "windowStart": "2026-10-13",
+  "windowEnd": "2026-10-27",
+  "count": 4,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -20,6 +20,32 @@
   ],
   "articles": [
     {
+      "title": "Sands China Co-organises Inclusive Community Event with UGAMM",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1021-sands-china-co-organises-inclusive-community-event-with-UGAMMs_EN.pdf",
+      "posted": "2026-10-21",
+      "rawDate": "Oct.21 Sands China Co-organises Inclusive Community Event with UGAMM",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "Sands China donated MOP240,000 to the Peng On Tung Charity Foundation at a Saturday event co-organised with UGAMM, its 17th consecutive annual gift. The donation supports tele-assistance for 850 financially disadvantaged seniors plus home-repair and elderly-haircut programmes; 200 seniors and young volunteers joined intergenerational activities.",
+      "rank": 1
+    },
+    {
+      "title": "SJM Macao Open 2026 Brings World-Class Golf to the Wider Community",
+      "url": "https://www.sjmholdings.com/resources/images/uploads/web-press-release_sjm-macao-open-2026-brings-world-class-golf-to-the-wider-community.pdf",
+      "posted": "2026-10-21",
+      "rawDate": "21 Oct 2026",
+      "hotelGroup": "SJM",
+      "sourceName": "SJM Holdings",
+      "sourceDomain": "sjmholdings.com",
+      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
+      "kind": "good-news",
+      "summary": "After the SJM Macao Open 2026 (15–18 October), SJM ran community golf activities that took the tournament beyond the course — Fun Days at Anim’Arte NAM VAN drew close to 1,200 people. SJM also hosted student clinics with touring professionals, university behind-the-scenes tours, and a Walk Like a Champion course walk for about 35 seniors from Caritas Macau.",
+      "rank": 2
+    },
+    {
       "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days",
       "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf",
       "posted": "2026-10-15",
@@ -29,8 +55,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.",
-      "rank": 1
+      "summary": "The NBA Cares x Sands Cares Community Impact Week 2026 (7–11 October) drew more than 2,900 participants, including NBA legends, Greater Bay Area students and Macao community groups. Organised by Sands China and NBA Cares around The NBA China Games 2026, the five-day programme used basketball clinics, school visits and a boxed-lunch distribution to promote youth development and inclusion.",
+      "rank": 3
     },
     {
       "title": "Argo at Four Seasons Hotel Hong Kong Celebrates Its Highest-Ever Ranking at No. 25 in the World’s 50 Best Bars 2026",
@@ -43,46 +69,7 @@
       "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
       "kind": "award",
       "summary": "ARGO at Four Seasons Hotel Hong Kong has been ranked No. 25 in The World’s 50 Best Bars 2026, marking its highest-ever position on the prestigious global list. ARGO is one of only four bars in Hong Kong recognized in the top 50 and the only hotel bar in the city to receive this honour.",
-      "rank": 2
-    },
-    {
-      "title": "Five Wynn Restaurants Recognized in the 2027 LA LISTE The World's Best Restaurant Selection",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/five-wynn-restaurants-recognized-in-the-2027-la-liste-the-world-s-best-restaurant-selection/s/f9869082-980f-42e4-b814-0c9373fadf6e",
-      "posted": "2026-10-12",
-      "rawDate": "12 Oct 2026",
-      "hotelGroup": "Wynn",
-      "sourceName": "Wynn Macau Newsroom",
-      "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
-      "kind": "award",
-      "summary": "Five Wynn restaurants were included in the 2027 LA LISTE The World's Best Restaurant Selection: Chef Tam's Seasons, Lakeview Palace, Mizumi and SW Steakhouse at Wynn Palace, and Wing Lei at Wynn Macau. They were recognised at the Greater China Region Awards Ceremony in Changzhou, China.",
-      "rank": 3
-    },
-    {
-      "title": "MGM’s Two Restaurants Again Named Among La Liste’s Top 1000 World’s Best Restaurants 2027",
-      "url": "https://en.mgmchinaholdings.com/media-releases?item=863",
-      "posted": "2026-10-12",
-      "rawDate": "Oct 12, 2026",
-      "hotelGroup": "MGM China",
-      "sourceName": "MGM China",
-      "sourceDomain": "en.mgmchinaholdings.com",
-      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
-      "kind": "award",
-      "summary": "[ October 12 , 2026, Macau] Two of MGM’s signature Chinese dining restaurants, Imperial Court and Five Foot Road , have once again been named among La Liste’s Top 1,000 World’s Best Restaurants 2027 , marking their second consecutive year on the prestigious global list. The recognition reflects both restaurants’ continued pursuit of exceptional culinary standards and MGM’s longstanding commitment to preserving…",
       "rank": 4
-    },
-    {
-      "title": "Wynn Supports Welfare Shop Project of Macau Holy House of Mercy for 14th Consecutive Year",
-      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-supports-welfare-shop-project-of-macau-holy-house-of-mercy-for-14th-consecutive-year/s/71598297-e1e3-409a-b6fe-ee455c65e945",
-      "posted": "2026-10-12",
-      "rawDate": "12 Oct 2026",
-      "hotelGroup": "Wynn",
-      "sourceName": "Wynn Macau Newsroom",
-      "sourceDomain": "newsroom.wynnresorts.com",
-      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
-      "kind": "good-news",
-      "summary": "Wynn continued its 14th consecutive year of support for the Welfare Shop Project of Macau Holy House of Mercy (SCMM), donating MOP300,000 and sponsoring food hampers for 371 underprivileged families. Around 40 Wynn volunteers helped distribute rice, noodles, canned food, edible oil and other daily necessities at the SCMM Welfare Shop.",
-      "rank": 5
     }
   ]
 }
