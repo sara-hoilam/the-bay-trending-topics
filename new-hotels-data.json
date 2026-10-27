@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-10-26",
-  "refreshedAt": "2026-10-26T09:29:21+08:00",
+  "updatedAt": "2026-10-27",
+  "refreshedAt": "2026-10-27T10:39:14+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-04-26",
-  "windowEnd": "2027-04-27",
-  "count": 113,
+  "windowStart": "2026-04-27",
+  "windowEnd": "2027-04-28",
+  "count": 117,
   "countries": [
     "Bangladesh",
     "China",
@@ -605,23 +605,6 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "Waldorf Astoria Kuala Lumpur",
-      "location": "Kuala Lumpur, Malaysia",
-      "country": "Malaysia",
-      "region": "asia",
-      "hotelGroup": "Waldorf Astoria",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q3 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-09-15",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/waldorf-astoria-kuala-lumpur",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "Crowne Plaza Dhaka Airport",
       "location": "Dhaka, Bangladesh",
       "country": "Bangladesh",
@@ -656,6 +639,23 @@
       "sourceName": "The Opening List"
     },
     {
+      "name": "Shilla Monogram Hanoi West Lake",
+      "location": "Hanoi, Vietnam",
+      "country": "Vietnam",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-10-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/shilla-monogram-hanoi-west-lake",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Vojara",
       "location": "Rajasthan, India",
       "country": "India",
@@ -670,6 +670,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/vojara-ranthambore",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Waldorf Astoria Kuala Lumpur",
+      "location": "Kuala Lumpur, Malaysia",
+      "country": "Malaysia",
+      "region": "asia",
+      "hotelGroup": "Waldorf Astoria",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-10-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/waldorf-astoria-kuala-lumpur",
       "sourceName": "The Opening List"
     },
     {
@@ -705,6 +722,23 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "Aso Retreat HONO by Onko Chishin",
+      "location": "Minami-Aso, Japan",
+      "country": "Japan",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-11-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/aso-retreat-hono",
+      "sourceName": "The Opening List"
     },
     {
       "name": "Bangalore Marriott Hotel International Airport​",
@@ -1098,6 +1132,23 @@
       "sourceName": "Accor 2026 Openings"
     },
     {
+      "name": "Mandarin Oriental Makati",
+      "location": "Manila, Philippines",
+      "country": "Philippines",
+      "region": "asia",
+      "hotelGroup": "Mandarin Oriental",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-11-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/mandarin-oriental-makati-manila",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Moxy Mumbai International Airport​",
       "location": "Mumbai, India",
       "country": "India",
@@ -1333,6 +1384,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/kaia-koh-phangan",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Kamaliss MontAzure",
+      "location": "Phuket, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-12-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/kamaliss-montazure-phuket",
       "sourceName": "The Opening List"
     },
     {
