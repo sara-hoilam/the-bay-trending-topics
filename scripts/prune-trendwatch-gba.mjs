@@ -117,6 +117,49 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/麥巴比|姆巴佩说了什么|姆巴佩说了啥|姆巴佩不当|姆巴佩言論|西媒就姆巴佩|皇马道歉|姆巴佩恐面临|姆巴佩的道歉|曝有皇马高管|皇马道歉完还须补课|皇马道歉姗姗来迟/.test(t))
+      return "cluster:mbappe-china-comments";
+    if (/劉延東|刘延东/.test(t)) return "cluster:liu-yandong";
+    if (/乔布斯嘲讽的触屏|苹果发布首款触控屏|macbook pro|^苹果发布会$|苹果发布会/.test(t))
+      return "cluster:apple-macbook-touch";
+    if (/巴基斯坦对台湾|对台湾地区航司关闭领空|对台湾航司关闭领空/.test(t))
+      return "cluster:pakistan-taiwan-airspace";
+    if (/三丽鸥致歉|三丽鸥将与抹黑/.test(t)) return "cluster:sanrio-apology";
+    if (/特大暴雪暴雨|新一轮冷空气将来袭/.test(t)) return "cluster:cn-cold-air-oct";
+    if (/^关键密码$/.test(t)) return "cluster:xi-cpc-105";
+    if (/99新手机成抢手货/.test(t)) return "cluster:sz-huaqiangbei-phones";
+    if (/微信新功能来了：只用动嘴|只用动嘴/.test(t)) return "cluster:wechat-voice-ai";
+    if (/cityline 陳奕迅|陳奕迅抽籤|eason chan 抽籤/.test(t)) return "cluster:eason-cityline";
+    if (/利物浦對切爾西|liverpool vs chelsea/.test(t)) return "cluster:efl-liverpool-chelsea";
+    if (/曼城對布萊頓|man city vs brighton/.test(t)) return "cluster:efl-city-brighton";
+    if (/阿维塔新车发布会取消/.test(t)) return "cluster:avatr-event-cancel";
+    if (/超十万人报名华为乾崑|华为乾崑智驾公开赛/.test(t)) return "cluster:huawei-qiankun-race";
+    if (/mona l05/i.test(t)) return "cluster:xpeng-mona-l05";
+    if (/一加ace7|一加Ace7/i.test(t)) return "cluster:oneplus-ace7";
+    if (/美联储宣布维持利率|美联储主席宣布将减少议息/.test(t)) return "cluster:fed-hold-oct28";
+    if (/西班牙高铁相撞|西班牙列车相撞/.test(t)) return "cluster:spain-hsr-crash";
+    if (/孙玉菡/.test(t)) return "cluster:chris-sun";
+    if (/^samsung$/.test(t)) return "cluster:samsung-hk";
+    if (/^奶茶$/.test(t)) return "cluster:hk-milk-tea";
+    if (/google stock|^goog$|^googl$/.test(t)) return "cluster:google-stock";
+    if (/灰狼對勇士|timberwolves vs warriors/.test(t)) return "cluster:nba-wolves-warriors";
+    if (/伯恩茅斯對阿斯頓維拉/.test(t)) return "cluster:efl-bournemouth-villa";
+    if (/^英聯盃$|^efl cup$/.test(t)) return "cluster:efl-cup";
+    if (/^银行$|^退休金$/.test(t)) return "cluster:hk-bank-pension";
+    if (/张本智和止步|张本智和爆冷|高茨生涯首次击败张本智和/.test(t))
+      return "cluster:harimoto-montpellier";
+    if (/ig时隔2565|ig从涅槃|ig战胜lyon|ig冠军相|ig抽到t1|ig拆迁|lyon对战ig/i.test(t))
+      return "cluster:ig-s16-quarters";
+    if (/多地以旧换新上新/.test(t)) return "cluster:tradein-subsidy-2026";
+    if (/中国“智造家”加速出海|第140届广交会第二期/.test(t))
+      return "cluster:canton-fair-140";
+    if (/华为“天才少年”杨玉雯|杨玉雯加盟南京大学/.test(t))
+      return "cluster:huawei-yang-yuwen";
+    if (/陌生电话接通量暴跌/.test(t)) return "cluster:stranger-calls";
+    if (/美股收盘：sk海力士|sk海力士涨超13/i.test(t)) return "cluster:sk-hynix-rally";
+    if (/李大钊诞辰137/.test(t)) return "cluster:li-dazhao-137";
+    if (/德国与日本将加强军事合作/.test(t)) return "cluster:de-jp-military";
+    if (/王腾今日宜休发布会/.test(t)) return "cluster:wang-teng-event";
     if (/沈大師|沈大师|沈振盈|沈大師離世/.test(t)) return "cluster:master-shum";
     if (/hkexpress|hong kong express|香港快運/.test(t)) return "cluster:hk-express";
     if (/ballon d'or|金球獎|金球奖|凯恩获2026|凯恩荣膺金球|凯恩获金球|姆巴佩言论|^姆巴佩$/.test(t))
