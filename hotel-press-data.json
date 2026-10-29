@@ -1,10 +1,10 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-27",
-  "refreshedAt": "2026-10-27T10:40:19+08:00",
+  "updatedAt": "2026-10-29",
+  "refreshedAt": "2026-10-29T10:36:11+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-13",
-  "windowEnd": "2026-10-27",
+  "windowStart": "2026-10-15",
+  "windowEnd": "2026-10-29",
   "count": 4,
   "sourceErrors": [
     {
@@ -15,10 +15,23 @@
     {
       "domain": "shangri-la.com",
       "listingUrl": "https://www.shangri-la.com/group/media/",
-      "error": "HTTP 403 for Shangri-La loadArticles"
+      "error": "Unexpected token '<', \"<html><scr\"... is not valid JSON"
     }
   ],
   "articles": [
+    {
+      "title": "POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List",
+      "url": "https://en.mgmchinaholdings.com/media-releases?item=873",
+      "posted": "2026-10-29",
+      "rawDate": "Oct 29, 2026",
+      "hotelGroup": "MGM China",
+      "sourceName": "MGM China",
+      "sourceDomain": "en.mgmchinaholdings.com",
+      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
+      "kind": "award",
+      "summary": "The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honour was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
+      "rank": 1
+    },
     {
       "title": "Sands China Co-organises Inclusive Community Event with UGAMM",
       "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1021-sands-china-co-organises-inclusive-community-event-with-UGAMMs_EN.pdf",
@@ -29,8 +42,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Co-organises Inclusive Community Event with UGAMM.",
-      "rank": 1
+      "summary": "Sands China donated MOP240,000 to the Peng On Tung Charity Foundation at the 2026 Sands China Charity Donation and opening of the ‘Love & Inclusivity for All Ages’ Activity Series, co-organised with UGAMM. It is Sands China’s 17th consecutive annual donation, backing tele-assistance and related elderly care services that have benefitted nearly 29,000 seniors.",
+      "rank": 2
     },
     {
       "title": "SJM Macao Open 2026 Brings World-Class Golf to the Wider Community",
@@ -42,8 +55,8 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "SJM press: SJM Macao Open 2026 Brings World-Class Golf to the Wider Community.",
-      "rank": 2
+      "summary": "The SJM Macao Open 2026, held 15–18 October at the Macau Golf & Country Club, paired championship golf with community programmes, including Community Golf Fun Days at Anim’Arte NAM VAN that attracted close to 1,200 participants. As title sponsor and co-organiser, SJM also ran student encounters with players and a course walk for seniors.",
+      "rank": 3
     },
     {
       "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days",
@@ -55,20 +68,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.",
-      "rank": 3
-    },
-    {
-      "title": "Argo at Four Seasons Hotel Hong Kong Celebrates Its Highest-Ever Ranking at No. 25 in the World’s 50 Best Bars 2026",
-      "url": "https://press.fourseasons.com/hongkong/hotel-news/2026/worlds-best-bars",
-      "posted": "2026-10-13",
-      "rawDate": "October 13, 2026, Hong Kong, China",
-      "hotelGroup": "Four Seasons",
-      "sourceName": "Four Seasons Hong Kong",
-      "sourceDomain": "press.fourseasons.com",
-      "sourceUrl": "https://press.fourseasons.com/hongkong/hotel-news/",
-      "kind": "award",
-      "summary": "ARGO at Four Seasons Hotel Hong Kong has been ranked No. 25 in The World’s 50 Best Bars 2026, marking its highest-ever position on the prestigious global list. ARGO is one of only four bars in Hong Kong recognized in the top 50 and the only hotel bar in the city to receive this honour.",
+      "summary": "NBA Cares x Sands Cares Community Impact Week 2026, organised by Sands China and NBA Cares from 7–11 October, engaged more than 2,900 participants including NBA legends, GBA students and teachers, and Macao community groups. The five-day programme used basketball-anchored activities to support youth development and social inclusion around The NBA China Games 2026.",
       "rank": 4
     }
   ]
