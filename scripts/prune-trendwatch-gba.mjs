@@ -117,17 +117,23 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/麥巴比|姆巴佩说了什么|姆巴佩说了啥|姆巴佩不当|姆巴佩言論|西媒就姆巴佩|皇马道歉|姆巴佩恐面临|姆巴佩的道歉|曝有皇马高管|皇马道歉完还须补课|皇马道歉姗姗来迟/.test(t))
+    if (/麥巴比|姆巴佩说了什么|姆巴佩说了啥|姆巴佩不当|姆巴佩言論|姆巴佩辱華|姆巴佩辱华|姆巴佩的“天价”|西媒就姆巴佩|皇马道歉|姆巴佩恐面临|姆巴佩的道歉|曝有皇马高管|皇马道歉完还须补课|皇马道歉姗姗来迟/.test(t))
       return "cluster:mbappe-china-comments";
     if (/劉延東|刘延东/.test(t)) return "cluster:liu-yandong";
-    if (/乔布斯嘲讽的触屏|苹果发布首款触控屏|macbook pro|^苹果发布会$|苹果发布会/.test(t))
+    if (/乔布斯嘲讽的触屏|苹果发布首款触控屏|macbook pro|macbookpro|触屏macbook|触控屏macbook|触控版苹果笔记本|苹果ceo回应做触屏|macbook发光logo|^苹果发布会$|苹果发布会/i.test(t))
       return "cluster:apple-macbook-touch";
     if (/巴基斯坦对台湾|对台湾地区航司关闭领空|对台湾航司关闭领空/.test(t))
       return "cluster:pakistan-taiwan-airspace";
-    if (/三丽鸥致歉|三丽鸥将与抹黑/.test(t)) return "cluster:sanrio-apology";
+    if (/三丽鸥致歉|三丽鸥将与抹黑|王者荣耀等游戏与三丽鸥/.test(t)) return "cluster:sanrio-apology";
     if (/特大暴雪暴雨|新一轮冷空气将来袭/.test(t)) return "cluster:cn-cold-air-oct";
-    if (/^关键密码$/.test(t)) return "cluster:xi-cpc-105";
-    if (/99新手机成抢手货/.test(t)) return "cluster:sz-huaqiangbei-phones";
+    if (/^关键密码$|全面从严治党为世界提供/.test(t)) return "cluster:xi-cpc-105";
+    if (/99新手机成抢手货|二手手机交易火爆/.test(t)) return "cluster:sz-huaqiangbei-phones";
+    if (/华为制药军团/.test(t)) return "cluster:huawei-pharma";
+    if (/华为阔直板|星芒新机为阔直板|子品牌首款新机疑似阔直板/.test(t))
+      return "cluster:huawei-wide-candybar";
+    if (/创业板指跌逾3%|^a股$|深赛格跌停/.test(t)) return "cluster:ashare-oct29";
+    if (/gemini 4 carbon|谷歌发布gemini 4/.test(t)) return "cluster:gemini-4-carbon";
+    if (/理想i6|2026款理想i6/.test(t)) return "cluster:li-auto-i6";
     if (/微信新功能来了：只用动嘴|只用动嘴/.test(t)) return "cluster:wechat-voice-ai";
     if (/cityline 陳奕迅|陳奕迅抽籤|eason chan 抽籤/.test(t)) return "cluster:eason-cityline";
     if (/利物浦對切爾西|liverpool vs chelsea/.test(t)) return "cluster:efl-liverpool-chelsea";
@@ -138,8 +144,8 @@ function pruneData(data) {
     if (/一加ace7|一加Ace7/i.test(t)) return "cluster:oneplus-ace7";
     if (/美联储宣布维持利率|美联储主席宣布将减少议息/.test(t)) return "cluster:fed-hold-oct28";
     if (/西班牙高铁相撞|西班牙列车相撞/.test(t)) return "cluster:spain-hsr-crash";
-    if (/孙玉菡/.test(t)) return "cluster:chris-sun";
-    if (/^samsung$/.test(t)) return "cluster:samsung-hk";
+    if (/孙玉菡|宏福苑/.test(t)) return "cluster:chris-sun";
+    if (/^samsung$|三星电子q3/i.test(t)) return "cluster:samsung-hk";
     if (/^奶茶$/.test(t)) return "cluster:hk-milk-tea";
     if (/google stock|^goog$|^googl$/.test(t)) return "cluster:google-stock";
     if (/灰狼對勇士|timberwolves vs warriors/.test(t)) return "cluster:nba-wolves-warriors";
