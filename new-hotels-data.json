@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-10-29",
-  "refreshedAt": "2026-10-29T11:25:15+08:00",
+  "updatedAt": "2026-10-31",
+  "refreshedAt": "2026-10-31T10:41:11+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-04-29",
-  "windowEnd": "2027-04-30",
-  "count": 103,
+  "windowStart": "2026-05-01",
+  "windowEnd": "2027-05-02",
+  "count": 110,
   "countries": [
     "Bangladesh",
     "China",
@@ -24,12 +24,6 @@
     "Sri Lanka",
     "Thailand",
     "Vietnam"
-  ],
-  "sourceErrors": [
-    {
-      "domain": "ihg.com",
-      "error": "IHG page unreachable (bot protection)"
-    }
   ],
   "hotels": [
     {
@@ -285,23 +279,6 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/jncquoi-house-lisbon",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Navera Phuket",
-      "location": "Phuket, Thailand",
-      "country": "Thailand",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "2026",
-      "openDatePrecision": "year",
-      "openDateSort": "2026-07-01",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/navera-phuket-mgallery",
       "sourceName": "The Opening List"
     },
     {
@@ -677,6 +654,23 @@
       "sourceDomain": "ihg.com",
       "sourceUrl": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
       "sourceName": "IHG New Hotels"
+    },
+    {
+      "name": "Navera Phuket",
+      "location": "Phuket, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-10-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/navera-phuket-mgallery",
+      "sourceName": "The Opening List"
     },
     {
       "name": "Shilla Monogram Hanoi West Lake",
@@ -1376,23 +1370,6 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
-      "name": "Experimental Porto",
-      "location": "Porto, Portugal",
-      "country": "Portugal",
-      "region": "portugal",
-      "hotelGroup": "Experimental",
-      "stars": null,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-12-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/experimental-porto",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "Grand Mercure Amritsar Airport Road",
       "location": "Amritsar, India",
       "country": "India",
@@ -1427,6 +1404,23 @@
       "sourceName": "The Opening List"
     },
     {
+      "name": "Kimpton Suntaya Bali Ubud",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Kimpton",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-12-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/kimpton-suntaya-bali-ubud",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "NoMad Hilton Singapore",
       "location": "NoMad Hilton, Singapore",
       "country": "Singapore",
@@ -1441,6 +1435,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/nomad-singapore",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Park Hyatt Phu Quoc",
+      "location": "Phu Quoc, Vietnam",
+      "country": "Vietnam",
+      "region": "asia",
+      "hotelGroup": "Park Hyatt",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-12-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/park-hyatt-phu-quoc",
       "sourceName": "The Opening List"
     },
     {
@@ -1475,6 +1486,57 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/the-mitsui-hakone",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Experimental Porto",
+      "location": "Porto, Portugal",
+      "country": "Portugal",
+      "region": "portugal",
+      "hotelGroup": "Experimental",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-01-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/experimental-porto",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Fivelements Samui",
+      "location": "Koh Samui, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Marriott",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-01-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/fivelements-samui",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "KAIA Koh Phangan",
+      "location": "Koh Phangan, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-01-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/kaia-koh-phangan",
       "sourceName": "The Opening List"
     },
     {
@@ -1716,6 +1778,23 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
+      "name": "Conrad Meia Praia Algarve",
+      "location": "Lagos, Portugal",
+      "country": "Portugal",
+      "region": "portugal",
+      "hotelGroup": "Conrad",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/conrad-meia-praia-algarve",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "ONE BANYAN Amaraa Faru",
       "location": "Kaafu Atoll, Maldives",
       "country": "Maldives",
@@ -1733,11 +1812,28 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "Park Hyatt Phu Quoc",
-      "location": "Phu Quoc, Vietnam",
-      "country": "Vietnam",
+      "name": "Quinta da Comporta",
+      "location": "Comporta, Portugal",
+      "country": "Portugal",
+      "region": "portugal",
+      "hotelGroup": "Experimental",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/experimental-comporta",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "The Hari Singapore",
+      "location": "The Hari, Singapore",
+      "country": "Singapore",
       "region": "asia",
-      "hotelGroup": "Park Hyatt",
+      "hotelGroup": "Independent",
       "stars": 5,
       "websiteUrl": null,
       "openDate": null,
@@ -1746,7 +1842,7 @@
       "openDateSort": "2027-03-15",
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/park-hyatt-phu-quoc",
+      "sourceUrl": "https://theopeninglist.com/hotels/the-hari-singapore",
       "sourceName": "The Opening List"
     },
     {
@@ -1764,6 +1860,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/seara-comporta",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "seven x seven Yufuin",
+      "location": "Yufuin, Japan",
+      "country": "Japan",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-04-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/seven-x-seven-yufuin",
       "sourceName": "The Opening List"
     },
     {

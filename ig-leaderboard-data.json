@@ -1,9 +1,9 @@
 {
   "generatedFrom": "references/ig-leaderboard-accounts.json",
   "updatedAt": "2026-10-31",
-  "refreshedAt": "2026-10-31T10:35:58+08:00",
+  "refreshedAt": "2026-10-31T10:42:14+08:00",
   "refreshedAtLabel": "Follower snapshot as of update date · 7d growth from Google Sheet history",
-  "captureMethod": "public-refresh",
+  "captureMethod": "agent-snapshot",
   "accounts": [
     {
       "handle": "scmpnews",
@@ -514,7 +514,7 @@
           "followers": 717599
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "tatlerhongkong",
@@ -1025,7 +1025,7 @@
           "followers": 287249
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "timeouthk",
@@ -1436,7 +1436,7 @@
           "followers": 206572
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "lifestyleasiahk",
@@ -1939,7 +1939,7 @@
           "followers": 134576
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "the_trip_addict",
@@ -2450,7 +2450,7 @@
           "followers": 98692
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "sassyhongkong",
@@ -2961,7 +2961,7 @@
           "followers": 93409
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "o.cultmag",
@@ -3464,7 +3464,7 @@
           "followers": 54923
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "thebayasia",
@@ -3975,7 +3975,7 @@
           "followers": 52302
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "greaterbayvibes",
@@ -4486,7 +4486,7 @@
           "followers": 20388
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     },
     {
       "handle": "thebeatasia",
@@ -4989,7 +4989,7 @@
           "followers": 1995
         }
       ],
-      "followersSource": "instagram-api"
+      "followersSource": "snapshot"
     }
   ]
 }
