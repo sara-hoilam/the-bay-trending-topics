@@ -117,6 +117,39 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/何永賢|房屋局局長|房屋署/.test(t)) return "cluster:winnie-ho-resign";
+    if (/\bbinance\b|binance hack|bitcoin price usd/i.test(t)) return "cluster:binance-hack";
+    if (/萬聖節|halloween|trick or treat/i.test(t)) return "cluster:halloween-2026";
+    if (/美酒佳餚/.test(t)) return "cluster:wine-dine-2026";
+    if (/英特尔创52|英特尔美股暴跌|英特尔暴跌|纳指收跌2\.9|英特尔暴跌28|^英特尔$|英特尔暴跌原因/.test(t))
+      return "cluster:intel-crash";
+    if (/蘋果反超英伟达|苹果反超英伟达/.test(t)) return "cluster:aapl-nvda-mcap";
+    if (/华尔街|華爾街|intel 股價/.test(t)) return "cluster:intel-crash";
+    if (/习近平同德国总统|施泰因迈尔/.test(t)) return "cluster:steinmeier-china";
+    if (/生娃基本不花钱/.test(t)) return "cluster:childbirth-free-2026";
+    if (/深圳小学生用流利英语/.test(t)) return "cluster:sz-apec-kids";
+    if (/香港警方捣毁涉黑/.test(t)) return "cluster:hk-triad-drugs";
+    if (/076型兩棲|076型两栖|四川舰/.test(t)) return "cluster:type-076";
+    if (/中方对此强烈不满|联邦通信委员会/.test(t)) return "cluster:mofcom-fcc";
+    if (/日本访华代表团鞠躬/.test(t)) return "cluster:murayama-apology";
+    if (/一次性内裤终于有了/.test(t)) return "cluster:disposable-underwear";
+    if (/钱学森逝世17/.test(t)) return "cluster:qian-xuesen-17";
+    if (/国安部披露.“黑飞”|黑飞”侵入军机/.test(t)) return "cluster:mss-drone";
+    if (/关系民生的大事”务必抓实|供电供热/.test(t)) return "cluster:winter-heating";
+    if (/中国爆款AI漫剧/.test(t)) return "cluster:ai-manhua";
+    if (/小区物业退场/.test(t)) return "cluster:property-mgmt";
+    if (/工资发到数币钱包/.test(t)) return "cluster:ecny-payroll";
+    if (/76人對尼克|76人vs尼克斯/.test(t)) return "cluster:nba-76ers-knicks";
+    if (/勒阿弗爾對巴黎聖日耳曼/.test(t)) return "cluster:ligue1-psg";
+    if (/cathay pacific/i.test(t)) return "cluster:cathay";
+    if (/开创新时代管党治党|不怕远征难|红军突围靠打不靠让|系列长征辟谣/.test(t))
+      return "cluster:long-march-90";
+    if (/阿维塔省钱|阿维塔摆拍/.test(t)) return "cluster:avatr-sales";
+    if (/赛力斯日赚|赛力斯第三季度净利润/.test(t)) return "cluster:aito-seres";
+    if (/小米新su7ultra|小米 宁德时代|小米入股欣旺达|欣旺达 宁德|理想 欣旺达|小米龙甲电池|小米 欣旺达/i.test(t))
+      return "cluster:xiaomi-sunwoda";
+    if (/长鑫科技q3/i.test(t)) return "cluster:cxmt-dram";
+    if (/金球奖公布投票/.test(t)) return "cluster:ballon-dor-2026";
     if (/麥巴比|姆巴佩说了什么|姆巴佩说了啥|姆巴佩不当|姆巴佩言論|姆巴佩辱華|姆巴佩辱华|姆巴佩的“天价”|西媒就姆巴佩|皇马道歉|姆巴佩恐面临|姆巴佩的道歉|曝有皇马高管|皇马道歉完还须补课|皇马道歉姗姗来迟/.test(t))
       return "cluster:mbappe-china-comments";
     if (/劉延東|刘延东/.test(t)) return "cluster:liu-yandong";
