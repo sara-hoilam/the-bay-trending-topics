@@ -1,10 +1,10 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-10-29",
-  "refreshedAt": "2026-10-29T11:26:20+08:00",
+  "updatedAt": "2026-10-31",
+  "refreshedAt": "2026-10-31T10:37:47+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-15",
-  "windowEnd": "2026-10-29",
+  "windowStart": "2026-10-17",
+  "windowEnd": "2026-10-31",
   "count": 4,
   "sourceErrors": [
     {
@@ -29,8 +29,21 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
+      "summary": "The POLY MGM MUSEUM, jointly established by Poly Culture Group and MGM, has been named to Fortune China’s 2026 Best Design list — the only Macau project recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony in Chengdu on October 22.",
       "rank": 1
+    },
+    {
+      "title": "Wynn Scoops 16 Accolades at \"China's Wine List of the Year Awards\" Reaffirming its Excellence in Gastronomy and Wine",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-scoops-16-accolades-at--china-s-wine-list-of-the-year-awards-----reaffirming-its-excellence-in-/s/acadd050-613f-4787-885a-e039297d774c",
+      "posted": "2026-10-29",
+      "rawDate": "29 Oct 2026",
+      "hotelGroup": "Wynn",
+      "sourceName": "Wynn Macau Newsroom",
+      "sourceDomain": "newsroom.wynnresorts.com",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
+      "kind": "award",
+      "summary": "Wynn secured 16 accolades at the 14th China's Wine List of the Year Awards, with eight signature restaurants earning the highest “3 Glasses” distinction. Chef Tam's Seasons at Wynn Palace scooped five awards, and Mizumi retained “China's Best Sake List” for a second consecutive year.",
+      "rank": 2
     },
     {
       "title": "Sands China Co-organises Inclusive Community Event with UGAMM",
@@ -42,8 +55,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Co-organises Inclusive Community Event with UGAMM.",
-      "rank": 2
+      "summary": "Sands China donated MOP 240,000 to the Peng On Tung Charity Foundation — its 17th consecutive annual gift — at the opening of the ‘Love & Inclusivity for All Ages’ series with UGAMM. The donation supports tele-assistance and elderly care that has so far benefited nearly 29,000 seniors; the event brought together 200 seniors and young volunteers.",
+      "rank": 3
     },
     {
       "title": "SJM Macao Open 2026 Brings World-Class Golf to the Wider Community",
@@ -55,20 +68,7 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "SJM press: SJM Macao Open 2026 Brings World-Class Golf to the Wider Community.",
-      "rank": 3
-    },
-    {
-      "title": "‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days",
-      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1015-NBA-cares-sands-cares-community-impact-week-attracts-over-2900-participants-across-five-days_EN.pdf",
-      "posted": "2026-10-15",
-      "rawDate": "Oct.15 ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "Sands China press: ‘NBA Cares x Sands Cares Community Impact Week 2026’ Attracts Over 2,900 Participants Across Five Days.",
+      "summary": "The SJM Macao Open 2026, held 15–18 October at the Macau Golf & Country Club, paired championship play with community golf days, student clinics and a course walk for seniors. Community Golf Fun Days at Anim’Arte NAM VAN attracted close to 1,200 participants over six days.",
       "rank": 4
     }
   ]
