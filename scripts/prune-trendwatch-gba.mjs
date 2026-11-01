@@ -117,6 +117,26 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/切爾西對曼聯|chelsea vs man utd|車路士對曼聯/i.test(t))
+      return "cluster:chelsea-manutd-2026";
+    if (/北都馬拉松|北部都會區馬拉松|北部都会区马拉松/i.test(t))
+      return "cluster:northern-metropolis-marathon";
+    if (/雷军回应小米汽车10月|李肖爽回应小米汽车10月|小米汽车10月交付/i.test(t))
+      return "cluster:xiaomi-oct-deliveries";
+    if (/不要加杠杆太吓人了/i.test(t)) return "cluster:ashare-leverage";
+    if (/巴塞隆納對艾拉維斯|barcelona vs alavés|barcelona vs alaves/i.test(t))
+      return "cluster:barca-alaves";
+    if (/熱刺對水晶宮/i.test(t)) return "cluster:spurs-palace";
+    if (/ac米蘭對國際米蘭/i.test(t)) return "cluster:milan-derby";
+    if (/内存涨价手机售价|内存涨价用户换机/i.test(t)) return "cluster:memory-price-hike";
+    if (/DeepSeek发布全新Agent/i.test(t)) return "cluster:deepseek-agent";
+    if (/梦舟揽月|中国人登月不是说说|载人月球探测|我国计划2030年前载人登月/i.test(t))
+      return "cluster:cn-moon-2030";
+    if (/蔡磊.*脑机|脑机接口拥抱儿子/i.test(t)) return "cluster:cai-lei-bci";
+    if (/近5000字公报|解读持之以恒推进全面从严治党|党的二十届五中全会侧记/i.test(t))
+      return "cluster:plenum-20-5";
+    if (/国乒男单全部出局|国乒男单连续三届|国乒男单无缘蒙彼利埃|国乒包揽女单四强|孙颖莎把早田希娜|蒯曼4比2淘汰张本美和|蒯曼说赢在有必胜信念|林诗栋3比4负莫雷加德/i.test(t))
+      return "cluster:wtt-montpellier-2026";
     if (/何永賢|房屋局局長|房屋署/.test(t)) return "cluster:winnie-ho-resign";
     if (/\bbinance\b|binance hack|bitcoin price usd/i.test(t)) return "cluster:binance-hack";
     if (/萬聖節|halloween|trick or treat/i.test(t)) return "cluster:halloween-2026";
