@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-01",
-  "refreshedAt": "2026-11-01T10:24:21+08:00",
+  "updatedAt": "2026-11-03",
+  "refreshedAt": "2026-11-03T12:16:07+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-02",
-  "windowEnd": "2027-05-03",
-  "count": 111,
+  "windowStart": "2026-05-04",
+  "windowEnd": "2027-05-05",
+  "count": 109,
   "countries": [
     "Bangladesh",
     "China",
@@ -271,12 +271,12 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "JNcQUOI House",
-      "location": "Lisbon, Portugal",
-      "country": "Portugal",
-      "region": "portugal",
-      "hotelGroup": "JNcQUOI",
-      "stars": null,
+      "name": "Navera Phuket",
+      "location": "Phuket, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 5,
       "websiteUrl": null,
       "openDate": null,
       "openDateLabel": "2026",
@@ -284,7 +284,7 @@
       "openDateSort": "2026-07-01",
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/jncquoi-house-lisbon",
+      "sourceUrl": "https://theopeninglist.com/hotels/navera-phuket-mgallery",
       "sourceName": "The Opening List"
     },
     {
@@ -677,23 +677,6 @@
       "sourceDomain": "ihg.com",
       "sourceUrl": "https://www.ihg.com/content/us/en/deals/hotel-offers/new-hotels",
       "sourceName": "IHG New Hotels"
-    },
-    {
-      "name": "Navera Phuket",
-      "location": "Phuket, Thailand",
-      "country": "Thailand",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-10-15",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/navera-phuket-mgallery",
-      "sourceName": "The Opening List"
     },
     {
       "name": "Shilla Monogram Hanoi West Lake",
@@ -1200,7 +1183,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "month",
       "openDateSort": "2026-11-15",
-      "status": "opened",
+      "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/mandarin-oriental-makati-manila",
       "sourceName": "The Opening List"
@@ -1393,6 +1376,23 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
+      "name": "Conrad Kuala Lumpur",
+      "location": "Kuala Lumpur, Malaysia",
+      "country": "Malaysia",
+      "region": "asia",
+      "hotelGroup": "Conrad",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-12-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/conrad-kuala-lumpur",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Grand Mercure Amritsar Airport Road",
       "location": "Amritsar, India",
       "country": "India",
@@ -1408,6 +1408,23 @@
       "sourceDomain": "group.accor.com",
       "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
+    },
+    {
+      "name": "JNcQUOI House",
+      "location": "Lisbon, Portugal",
+      "country": "Portugal",
+      "region": "portugal",
+      "hotelGroup": "JNcQUOI",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-12-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/jncquoi-house-lisbon",
+      "sourceName": "The Opening List"
     },
     {
       "name": "Kamaliss MontAzure",
@@ -1543,23 +1560,6 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/fivelements-samui",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "KAIA Koh Phangan",
-      "location": "Koh Phangan, Thailand",
-      "country": "Thailand",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q1 2027",
-      "openDatePrecision": "month",
-      "openDateSort": "2027-01-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/kaia-koh-phangan",
       "sourceName": "The Opening List"
     },
     {
@@ -1801,23 +1801,6 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
-      "name": "Conrad Meia Praia Algarve",
-      "location": "Lagos, Portugal",
-      "country": "Portugal",
-      "region": "portugal",
-      "hotelGroup": "Conrad",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q1 2027",
-      "openDatePrecision": "month",
-      "openDateSort": "2027-03-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/conrad-meia-praia-algarve",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "ONE BANYAN Amaraa Faru",
       "location": "Kaafu Atoll, Maldives",
       "country": "Maldives",
@@ -1849,23 +1832,6 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/experimental-comporta",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "The Hari Singapore",
-      "location": "The Hari, Singapore",
-      "country": "Singapore",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q1 2027",
-      "openDatePrecision": "month",
-      "openDateSort": "2027-03-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/the-hari-singapore",
       "sourceName": "The Opening List"
     },
     {

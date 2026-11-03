@@ -5,7 +5,7 @@ MGM China (1):
 
 1. **POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=873
-The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, the only project from Macau recognised this year. The honour was presented at the Fortune China Best Design 2026 Awards Ceremony in Chengdu on 22 October.
+[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.
 
 Wynn (1):
 
@@ -17,10 +17,11 @@ Sands China (1):
 
 3. **Sands China Co-organises Inclusive Community Event with UGAMM** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1021-sands-china-co-organises-inclusive-community-event-with-UGAMMs_EN.pdf
-Sands China donated MOP 240,000 to the Peng On Tung Charity Foundation at a ‘Love & Inclusivity for All Ages’ event co-organised with UGAMM, marking its 17th consecutive annual donation. The gift supports tele-assistance and elderly-care services that have so far reached nearly 29,000 seniors.
+Sands China press: Sands China Co-organises Inclusive Community Event with UGAMM.
 
 SJM (1):
 
 4. **SJM Macao Open 2026 Brings World-Class Golf to the Wider Community** — SJM Holdings
 https://www.sjmholdings.com/resources/images/uploads/web-press-release_sjm-macao-open-2026-brings-world-class-golf-to-the-wider-community.pdf
-The SJM Macao Open 2026 at the Macau Golf & Country Club paired championship play with community golf fun days, student clinics and senior course walks. The Community Golf Fun Days at Anim’Arte NAM VAN attracted close to 1,200 participants.
+SJM press: SJM Macao Open 2026 Brings World-Class Golf to the Wider Community.
+
