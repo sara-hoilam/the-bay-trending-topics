@@ -1,10 +1,10 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-11-01",
-  "refreshedAt": "2026-11-01T10:25:23+08:00",
+  "updatedAt": "2026-11-03",
+  "refreshedAt": "2026-11-03T12:12:39+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-18",
-  "windowEnd": "2026-11-01",
+  "windowStart": "2026-10-20",
+  "windowEnd": "2026-11-03",
   "count": 4,
   "sourceErrors": [
     {
@@ -29,7 +29,7 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
+      "summary": "The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, the only project from Macau recognised this year. The honour was presented at the Fortune China Best Design 2026 Awards Ceremony in Chengdu on 22 October.",
       "rank": 1
     },
     {
@@ -55,7 +55,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Co-organises Inclusive Community Event with UGAMM.",
+      "summary": "Sands China donated MOP 240,000 to the Peng On Tung Charity Foundation at a ‘Love & Inclusivity for All Ages’ event co-organised with UGAMM, marking its 17th consecutive annual donation. The gift supports tele-assistance and elderly-care services that have so far reached nearly 29,000 seniors.",
       "rank": 3
     },
     {
@@ -68,7 +68,7 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "SJM press: SJM Macao Open 2026 Brings World-Class Golf to the Wider Community.",
+      "summary": "The SJM Macao Open 2026 at the Macau Golf & Country Club paired championship play with community golf fun days, student clinics and senior course walks. The Community Golf Fun Days at Anim’Arte NAM VAN attracted close to 1,200 participants.",
       "rank": 4
     }
   ]
