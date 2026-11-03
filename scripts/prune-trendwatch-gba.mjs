@@ -117,6 +117,37 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/^天氣$|^weather$|明天的天氣|天氣預報|香港天文台|^天文台$/.test(t))
+      return "cluster:hk-weather-nov3";
+    if (/^fraud$|^詐騙$|^诈骗$/.test(t)) return "cluster:hk-fraud";
+    if (/iphone\s*duo|iphoneduo|特努斯回应|特努斯称iphone|一个成功的黄牛|duo屏幕/i.test(t))
+      return "cluster:iphone-duo";
+    if (/雷军误写小米yu7|雷军：小米yu7|雷军回应小米yu7|小米yu7保值|yu7一年期保值|yu7一年保值/i.test(t))
+      return "cluster:xiaomi-yu7-nov3";
+    if (/世界互联网大会乌镇|乌镇峰会|举报共治 护企远航/.test(t))
+      return "cluster:wuzhen-wic-2026";
+    if (/母亲河|黄河治理80年|让母亲河永续/.test(t)) return "cluster:yellow-river-80";
+    if (/最强厄尔尼诺|厄尔尼诺影响明显/.test(t)) return "cluster:elnino-2026";
+    if (/央行出手缓释人民币|外汇存款准备金率/.test(t)) return "cluster:pboc-fx-rrr-nov3";
+    if (/特朗普放话不在乎台海|没人在乎台海/.test(t)) return "cluster:trump-taiwan-strait";
+    if (/利物浦對兵工廠|liverpool vs arsenal|阿仙奴/.test(t))
+      return "cluster:liverpool-arsenal-nov3";
+    if (/gpt6不训练|gpt-6|gpt6/.test(t)) return "cluster:gpt6-weights";
+    if (/社保欠缴处罚/.test(t)) return "cluster:social-security-fine";
+    if (/国际油价大幅下跌|美袭击伊朗格什姆|美官员称美袭击伊朗/.test(t))
+      return "cluster:oil-iran-qeshm";
+    if (/美佛州坠机|美坠机遇难者/.test(t)) return "cluster:florida-jet-crash";
+    if (/張世華醫生|^張世華$/.test(t)) return "cluster:cheung-sai-wah";
+    if (/周慧賢|aqua chow/.test(t)) return "cluster:aqua-chow-trial";
+    if (/邱達根|曾俊華/.test(t)) return "cluster:chiu-tsang-crowd";
+    if (/佳宝食品|佳寶食品/.test(t)) return "cluster:kaibo-8off";
+    if (/港\s*漂|^港漂$/.test(t)) return "cluster:hk-drifters";
+    if (/紐卡索聯對艾佛頓|newcastle vs everton/.test(t)) return "cluster:newcastle-everton";
+    if (/勇士對太陽|warriors vs suns/.test(t)) return "cluster:warriors-suns";
+    if (/美國中期選舉|^中期選舉$/.test(t)) return "cluster:us-midterms-2026";
+    if (/kimi antonelli|\bf1\b|formula 1/.test(t)) return "cluster:f1-antonelli";
+    if (/陳奕迅演唱會抽籤|eason chan 抽籤|陳奕迅抽籤/.test(t))
+      return "cluster:eason-cityline";
     if (/切爾西對曼聯|chelsea vs man utd|車路士對曼聯/i.test(t))
       return "cluster:chelsea-manutd-2026";
     if (/北都馬拉松|北部都會區馬拉松|北部都会区马拉松/i.test(t))
