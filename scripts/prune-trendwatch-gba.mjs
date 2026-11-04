@@ -117,16 +117,34 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/苹果天气|iphone系统天气|iphone天气|气象局回应苹果|苹果客服回应天气|苹果已修复天气|天气bug|天气app预报极端/i.test(t))
+      return "cluster:iphone-weather-bug-nov4";
+    if (/美國中期選舉|美国中期选举|中期选举|^中期選舉$|midterm elections|us midterm|us election|democratic party|republican party|美媒预计民主党|美国举行中期选举|美国中期选举杀出/i.test(t))
+      return "cluster:us-midterms-2026";
+    if (/^fraud$|^詐騙$|^诈骗$|電信詐騙|电信诈骗|清华留英硕士|疑遇电诈|东南亚电诈/i.test(t))
+      return "cluster:hk-fraud";
+    if (/曼聯對羅馬|man utd vs roma/i.test(t)) return "cluster:manutd-roma-ucl";
+    if (/巴塞隆納對阿斯頓維拉|barcelona vs aston villa|巴萨3-0阿斯顿维拉/i.test(t))
+      return "cluster:barca-villa-ucl";
+    if (/上汽奥迪.*买一赠一|买一赠一.*立案/i.test(t)) return "cluster:saic-audi-promo";
+    if (/小鹏mona|mona l05/i.test(t)) return "cluster:xpeng-mona-l05";
+    if (/美的.*回购/i.test(t)) return "cluster:midea-buyback";
+    if (/王毅.*菲律宾|不可容忍.*菲律宾/i.test(t)) return "cluster:wangyi-philippines";
+    if (/10万亿元大产业|集成电路等6大/i.test(t)) return "cluster:ndrc-10tn-industries";
+    if (/deepseekv5|deepseek v5|昇腾训练/i.test(t)) return "cluster:deepseek-v5";
+    if (/百\s*佳\s*88|百佳超市|parknshop/i.test(t)) return "cluster:parknshop-88";
+    if (/小米su7u|su7u纽北/i.test(t)) return "cluster:xiaomi-su7u-nurb";
+    if (/贺兰山失联|深圳女孩/i.test(t)) return "cluster:sz-helan-missing";
+    if (/特朗普称年底结束对以色列/i.test(t)) return "cluster:trump-israel-aid";
     if (/^天氣$|^weather$|明天的天氣|天氣預報|香港天文台|^天文台$/.test(t))
       return "cluster:hk-weather-nov3";
-    if (/^fraud$|^詐騙$|^诈骗$/.test(t)) return "cluster:hk-fraud";
     if (/iphone\s*duo|iphoneduo|特努斯回应|特努斯称iphone|一个成功的黄牛|duo屏幕/i.test(t))
       return "cluster:iphone-duo";
     if (/雷军误写小米yu7|雷军：小米yu7|雷军回应小米yu7|小米yu7保值|yu7一年期保值|yu7一年保值/i.test(t))
       return "cluster:xiaomi-yu7-nov3";
-    if (/世界互联网大会乌镇|乌镇峰会|举报共治 护企远航/.test(t))
+    if (/世界互联网大会乌镇|乌镇峰会|举报共治 护企远航|9图看中国互联网|全球仍有约20亿人尚未接入互联网/.test(t))
       return "cluster:wuzhen-wic-2026";
-    if (/母亲河|黄河治理80年|让母亲河永续/.test(t)) return "cluster:yellow-river-80";
+    if (/母亲河|黄河治理80年|让母亲河永续|让这条母亲河/.test(t)) return "cluster:yellow-river-80";
     if (/最强厄尔尼诺|厄尔尼诺影响明显/.test(t)) return "cluster:elnino-2026";
     if (/央行出手缓释人民币|外汇存款准备金率/.test(t)) return "cluster:pboc-fx-rrr-nov3";
     if (/特朗普放话不在乎台海|没人在乎台海/.test(t)) return "cluster:trump-taiwan-strait";
