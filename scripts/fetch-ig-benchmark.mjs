@@ -141,28 +141,68 @@ async function fetchProfile(handle) {
   );
 }
 
+function parseEmbedFollowers(html) {
+  if (!html) return null;
+  const edge = html.match(/\\?"edge_followed_by\\?":\s*\{\\?"count\\?":(\d+)\}/);
+  if (edge) return Number.parseInt(edge[1], 10);
+  const fallback = html.match(/\\?"followers_count\\?":(\d+)/);
+  if (fallback) return Number.parseInt(fallback[1], 10);
+  return null;
+}
+
+async function fetchEmbedFollowers(handle) {
+  const url = `https://www.instagram.com/${encodeURIComponent(handle)}/embed/`;
+  try {
+    const raw = execFileSync(
+      "curl",
+      [
+        "-sS",
+        "-w",
+        "\n__CURL_STATUS__%{http_code}",
+        "-A",
+        BASE_HEADERS["User-Agent"],
+        url,
+      ],
+      { encoding: "utf8", maxBuffer: 10 * 1024 * 1024 }
+    );
+    const marker = "\n__CURL_STATUS__";
+    const markerIdx = raw.lastIndexOf(marker);
+    const status = Number.parseInt(raw.slice(markerIdx + marker.length), 10);
+    const body = raw.slice(0, markerIdx);
+    const followers = parseEmbedFollowers(body);
+    if (status === 200 && followers != null) {
+      return { handle, ok: true, followers, source: "instagram-embed" };
+    }
+    return { handle, ok: false, status, error: "embed missing follower count" };
+  } catch (err) {
+    return { handle, ok: false, status: null, error: err.message };
+  }
+}
+
 async function fetchHandle(handle) {
   const resp = await fetchProfile(handle);
-  if (resp.status !== 200 || !resp.json?.data?.user) {
-    return {
-      handle,
-      ok: false,
-      status: resp.status,
-      error: resp.json?.message || null,
-    };
-  }
-
-  const user = resp.json.data.user;
-  const followers = user.edge_followed_by?.count ?? null;
-  if (followers == null) {
+  if (resp.status === 200 && resp.json?.data?.user) {
+    const user = resp.json.data.user;
+    const followers = user.edge_followed_by?.count ?? null;
+    if (followers != null) {
+      return {
+        handle,
+        ok: true,
+        followers: Math.round(followers),
+        source: "instagram-api",
+      };
+    }
     return { handle, ok: false, status: resp.status, error: "missing follower count" };
   }
 
+  const embed = await fetchEmbedFollowers(handle);
+  if (embed.ok) return embed;
+
   return {
     handle,
-    ok: true,
-    followers: Math.round(followers),
-    source: "instagram-api",
+    ok: false,
+    status: resp.status,
+    error: resp.json?.message || embed.error || null,
   };
 }
 
