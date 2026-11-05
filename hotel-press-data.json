@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-11-04",
-  "refreshedAt": "2026-11-04T11:30:00+08:00",
+  "updatedAt": "2026-11-05",
+  "refreshedAt": "2026-11-05T11:49:22+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-21",
-  "windowEnd": "2026-11-04",
-  "count": 4,
+  "windowStart": "2026-10-22",
+  "windowEnd": "2026-11-05",
+  "count": 3,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -15,10 +15,23 @@
     {
       "domain": "shangri-la.com",
       "listingUrl": "https://www.shangri-la.com/group/media/",
-      "error": "Unexpected token '<', \"<html><scr\"... is not valid JSON"
+      "error": "HTTP 403 for Shangri-La loadArticles"
     }
   ],
   "articles": [
+    {
+      "title": "GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development",
+      "url": "https://www.galaxyentertainment.com/en/media/press-releases/1213/20261104",
+      "posted": "2026-11-04",
+      "rawDate": "Nov 04, 2026",
+      "hotelGroup": "Galaxy Entertainment",
+      "sourceName": "Galaxy Entertainment",
+      "sourceDomain": "galaxyentertainment.com",
+      "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
+      "kind": "award",
+      "summary": "GEG received eight accolades at the HR Excellence Awards 2026, including the Grand Winner Award. As the only integrated tourism and leisure enterprise in Macau among this year’s recipients, it also won five Gold awards for employee development, leadership development, internship recruitment, employee volunteerism, and ESG strategy.",
+      "rank": 1
+    },
     {
       "title": "POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List",
       "url": "https://en.mgmchinaholdings.com/media-releases?item=873",
@@ -29,8 +42,8 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
-      "rank": 1
+      "summary": "The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
+      "rank": 2
     },
     {
       "title": "Wynn Scoops 16 Accolades at \"China's Wine List of the Year Awards\" Reaffirming its Excellence in Gastronomy and Wine",
@@ -43,33 +56,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Wynn secured 16 accolades at the 14th China's Wine List of the Year Awards, with eight signature restaurants earning the highest “3 Glasses” distinction. Chef Tam's Seasons at Wynn Palace scooped five awards, and Mizumi retained “China's Best Sake List” for a second consecutive year.",
-      "rank": 2
-    },
-    {
-      "title": "Sands China Co-organises Inclusive Community Event with UGAMM",
-      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1021-sands-china-co-organises-inclusive-community-event-with-UGAMMs_EN.pdf",
-      "posted": "2026-10-21",
-      "rawDate": "Oct.21 Sands China Co-organises Inclusive Community Event with UGAMM",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "Sands China press: Sands China Co-organises Inclusive Community Event with UGAMM.",
       "rank": 3
-    },
-    {
-      "title": "SJM Macao Open 2026 Brings World-Class Golf to the Wider Community",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/web-press-release_sjm-macao-open-2026-brings-world-class-golf-to-the-wider-community.pdf",
-      "posted": "2026-10-21",
-      "rawDate": "21 Oct 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "good-news",
-      "summary": "SJM press: SJM Macao Open 2026 Brings World-Class Golf to the Wider Community.",
-      "rank": 4
     }
   ]
 }
