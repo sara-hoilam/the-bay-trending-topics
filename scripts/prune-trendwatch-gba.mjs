@@ -117,10 +117,31 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/美國中期選舉|美国中期选举|中期选举|^中期選舉$|midterm elections|us midterm|us election|democratic party|republican party|美媒预计民主党|美国举行中期选举|美国中期选举杀出|特朗普中期选举|中期选举的四个|民主党称数据中心|民主党ai监管/i.test(t))
+      return "cluster:us-midterms-2026";
+    if (/马兴瑞被提起公诉|^马兴瑞$/i.test(t)) return "cluster:ma-xingrui-indictment";
+    if (/^金价$|金价急涨买还是卖/i.test(t)) return "cluster:gold-price-nov5";
+    if (/^a股$|a股今天继续大涨|创业板指翻红|美股史诗级暴涨|美股收盘 中国资产爆发/i.test(t))
+      return "cluster:ashare-us-rebound-nov5";
+    if (/内存涨价|内存短缺|存储巨头预警|手机厂商囤货锁产能/i.test(t))
+      return "cluster:memory-price-hike";
+    if (/6g有啥不一样|6g来了能做啥|乌镇峰会解锁6g|重温习主席的乌镇/i.test(t))
+      return "cluster:wuzhen-6g-nov5";
+    if (/福建舰/i.test(t)) return "cluster:fujian-carrier-nov5";
+    if (/广东明确：手机|电话手表不得带入校/i.test(t)) return "cluster:gd-phone-ban-nov5";
+    if (/深圳禁鸣喇叭/i.test(t)) return "cluster:sz-horn-ban-nov5";
+    if (/第九届进博会|进博会亮点/i.test(t)) return "cluster:ciie-9-nov5";
+    if (/嫁金钗/i.test(t)) return "cluster:gilded-hairpin-ai";
+    if (/全面从严治党|全面从严治军/i.test(t)) return "cluster:plenum-party-pla";
+    if (/長者\s*日|百佳超級市場/i.test(t)) return "cluster:hk-senior-day";
+    if (/^立冬$/i.test(t)) return "cluster:lidong-2026";
+    if (/黃之鋒|黄之锋/i.test(t)) return "cluster:joshua-wong";
+    if (/布拉格斯拉維亞對兵工廠|slavia prague vs arsenal/i.test(t))
+      return "cluster:slavia-arsenal-ucl";
+    if (/萊比錫rb對曼城|leipzig.*man city/i.test(t)) return "cluster:leipzig-city-ucl";
+    if (/前claude code|cat wu|加入openai/i.test(t)) return "cluster:cat-wu-openai";
     if (/苹果天气|iphone系统天气|iphone天气|气象局回应苹果|苹果客服回应天气|苹果已修复天气|天气bug|天气app预报极端/i.test(t))
       return "cluster:iphone-weather-bug-nov4";
-    if (/美國中期選舉|美国中期选举|中期选举|^中期選舉$|midterm elections|us midterm|us election|democratic party|republican party|美媒预计民主党|美国举行中期选举|美国中期选举杀出/i.test(t))
-      return "cluster:us-midterms-2026";
     if (/^fraud$|^詐騙$|^诈骗$|電信詐騙|电信诈骗|清华留英硕士|疑遇电诈|东南亚电诈/i.test(t))
       return "cluster:hk-fraud";
     if (/曼聯對羅馬|man utd vs roma/i.test(t)) return "cluster:manutd-roma-ucl";
