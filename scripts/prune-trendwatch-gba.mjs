@@ -134,7 +134,42 @@ function pruneData(data) {
     if (/嫁金钗/i.test(t)) return "cluster:gilded-hairpin-ai";
     if (/全面从严治党|全面从严治军/i.test(t)) return "cluster:plenum-party-pla";
     if (/長者\s*日|百佳超級市場/i.test(t)) return "cluster:hk-senior-day";
-    if (/^立冬$/i.test(t)) return "cluster:lidong-2026";
+    if (/^立冬$|今日立冬|立冬 2026|立冬时节|立冬上淘宝|立冬了又可以看/i.test(t))
+      return "cluster:lidong-2026";
+    if (/t1 vs kc|t1战胜kc|t1淘汰kc|t1晋级半决赛|s16半决赛|faker说很可惜blg/i.test(t))
+      return "cluster:t1-s16-nov7";
+    if (/特朗普任命新白宫办公厅主任/i.test(t)) return "cluster:trump-chief-staff-nov7";
+    if (/特朗普称打伊朗不算战争/i.test(t)) return "cluster:trump-iran-nov7";
+    if (/谁在把女性隐私|人民日报评女厕偷拍|偷拍黑产/i.test(t))
+      return "cluster:hidden-camera-nov7";
+    if (/全过程人民民主的庄严一票/i.test(t)) return "cluster:xi-npc-vote-nov7";
+    if (/余艳红/i.test(t)) return "cluster:yu-yanhong-nov7";
+    if (/第三个4万亿城市|深圳gdp/i.test(t)) return "cluster:sz-4tn-gdp-nov7";
+    if (/鹏城花开共赴apec|康辉深圳拍视频/i.test(t)) return "cluster:sz-apec-flowers-nov7";
+    if (/小米澎程主驾车门/i.test(t)) return "cluster:xiaomi-pengcheng-crash-nov7";
+    if (/iphone20按键|苹果静音键将退幕/i.test(t)) return "cluster:iphone20-buttons-nov7";
+    if (/天宫.将迎首位外籍|中国空间站将迎来1名外籍|外籍航天员/i.test(t))
+      return "cluster:css-foreign-astronaut-nov7";
+    if (/触屏macbook|触控macbook|苹果首款触控|macbookpro 硬件/i.test(t))
+      return "cluster:macbook-touch-nov7";
+    if (/惠康88|百佳 88|屈臣氏88/i.test(t)) return "cluster:hk-88off-nov7";
+    if (/^八達通$|^八达通$/i.test(t)) return "cluster:octopus-nov7";
+    if (/^圍標$|^围标$/i.test(t)) return "cluster:hk-bid-rigging-nov7";
+    if (/^人民币$|^人民幣$/i.test(t)) return "cluster:rmb-nov7";
+    if (/艾佛頓對科芬特里|愛華頓 對 考文垂|everton.*coventry/i.test(t))
+      return "cluster:everton-coventry-nov7";
+    if (/中央气象台发布暴雪|暴雪黄色预警/i.test(t)) return "cluster:cma-blizzard-nov7";
+    if (/首套首条首台/i.test(t)) return "cluster:hardcore-tech-nov7";
+    if (/波尔津吉斯/i.test(t)) return "cluster:porzingis-nov7";
+    if (/^公仔麵$|^公仔面$/i.test(t)) return "cluster:doll-noodles-nov7";
+    if (/^楊受成$|^杨受成$/i.test(t)) return "cluster:yeung-sau-shing-nov7";
+    if (/神24载人飞行任务标识/i.test(t)) return "cluster:shenzhou24-logo-nov7";
+    if (/特斯拉将逐步停产cybertruck/i.test(t)) return "cluster:cybertruck-nov7";
+    if (/iphoneduo适配|苹果高管回应iphoneduo/i.test(t)) return "cluster:iphone-duo-adapt-nov7";
+    if (/谷神星二号/i.test(t)) return "cluster:ceres-2-nov7";
+    if (/微软收缩ai算力/i.test(t)) return "cluster:msft-gpu-lease-nov7";
+    if (/deepseek主动/i.test(t)) return "cluster:deepseek-cn-chips-nov7";
+    if (/收1\.98万误转账/i.test(t)) return "cluster:mistaken-transfer-nov7";
     if (/黃之鋒|黄之锋/i.test(t)) return "cluster:joshua-wong";
     if (/布拉格斯拉維亞對兵工廠|slavia prague vs arsenal/i.test(t))
       return "cluster:slavia-arsenal-ucl";
