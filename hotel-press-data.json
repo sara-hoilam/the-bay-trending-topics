@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-11-05",
-  "refreshedAt": "2026-11-05T11:54:05+08:00",
+  "updatedAt": "2026-11-07",
+  "refreshedAt": "2026-11-07T11:05:41+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-22",
-  "windowEnd": "2026-11-05",
-  "count": 3,
+  "windowStart": "2026-10-24",
+  "windowEnd": "2026-11-07",
+  "count": 4,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -20,6 +20,19 @@
   ],
   "articles": [
     {
+      "title": "Chef Tam's Seasons at Wynn Palace Once Again Ranks Among The 50 Best Restaurants 2026 51-100 List",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnpalace/wp-pressreleases/chef-tam-s-seasons-at-wynn-palace-once-again-ranks-among-the-50-best-restaurants-2026-51-100-list/s/754ce415-bcbf-4ba3-aa15-fd480b2b47ae",
+      "posted": "2026-11-05",
+      "rawDate": "05 Nov 2026",
+      "hotelGroup": "Wynn",
+      "sourceName": "Wynn Palace Newsroom",
+      "sourceDomain": "newsroom.wynnresorts.com",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
+      "kind": "award",
+      "summary": "Chef Tam's Seasons, the signature Cantonese restaurant at Wynn Palace, once again ranks among The 50 Best Restaurants 2026, taking the No.73 spot on the 51-100 list and remaining the only restaurant in Macao on the ranking. It also ranked No.7 in The 50 Best Restaurants Asia 2026, announced in March — the third consecutive year it has been the only Macao restaurant on that list.",
+      "rank": 1
+    },
+    {
       "title": "GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development",
       "url": "https://www.galaxyentertainment.com/en/media/press-releases/1213/20261104",
       "posted": "2026-11-04",
@@ -29,8 +42,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "award",
-      "summary": "November 4, 2026 – Galaxy Entertainment Group (“GEG”) continues to support the Macau SAR Government’s policy direction of “Building Macau Through Talent Development” through a diverse and holistic people development strategy aimed at nurturing the workforce needed for the future growth of the industry. Recently, GEG received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, a…",
-      "rank": 1
+      "summary": "Galaxy Entertainment Group received eight accolades at the HR Excellence Awards 2026, including the Grand Winner Award, organised by Human Resources Online. GEG also won five Gold awards for employee, leadership, internship, volunteerism and ESG programmes, plus Silver for employee care and Bronze for learning and development — the only integrated tourism and leisure enterprise in Macau among this year's recipients.",
+      "rank": 2
     },
     {
       "title": "POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List",
@@ -42,8 +55,8 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
-      "rank": 2
+      "summary": "Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
+      "rank": 3
     },
     {
       "title": "Wynn Scoops 16 Accolades at \"China's Wine List of the Year Awards\" Reaffirming its Excellence in Gastronomy and Wine",
@@ -56,7 +69,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Wynn secured 16 accolades at the 14th China's Wine List of the Year Awards, with eight signature restaurants earning the highest “3 Glasses” distinction. Chef Tam's Seasons at Wynn Palace scooped five awards, and Mizumi retained “China's Best Sake List” for a second consecutive year.",
-      "rank": 3
+      "rank": 4
     }
   ]
 }
