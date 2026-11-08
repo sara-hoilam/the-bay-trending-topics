@@ -117,6 +117,49 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/总书记投下庄严一票|全过程人民民主的庄严一票/i.test(t))
+      return "cluster:xi-npc-vote-nov7";
+    if (/暴雨暴雪大降温|8省份大到暴雪|大风\+寒潮|河北秦皇岛暴雪/i.test(t))
+      return "cluster:cn-blizzard-nov8";
+    if (/^earthquake$|日本地震|名古屋/i.test(t)) return "cluster:nagoya-quake-nov8";
+    if (/以色列总统没有选择内塔尼亚胡|对手获权组阁 内塔尼亚胡/i.test(t))
+      return "cluster:israel-eisenkot-nov8";
+    if (/消费[“”"]新故事|共赴进博之约|进博会上的硬核|进博会10项黑科技|中国餐桌把东南亚榴莲/i.test(t))
+      return "cluster:ciie-consumption-nov8";
+    if (/ig0比3不敌gen|gen战胜ig|theshy评分|jiaqi失误|jiaqi评论区|ig队史首次|chovy首次|chovy刷新|chovy悟道|ig输gen|ig对战gen|ig选手赛后|blg lpl最后的希望|ruler谈ig/i.test(t))
+      return "cluster:s16-ig-gen-nov8";
+    if (/国乒男单今年6站|国乒六站冠军赛仅孙颖莎|国乒女单连输|国乒法兰克福冠军赛全军覆没/i.test(t))
+      return "cluster:wtt-frankfurt-nov8";
+    if (/奔驰承认l3|未来自动驾驶汽车变健身房/i.test(t)) return "cluster:benz-l3-nov8";
+    if (/仰望鼎曜/i.test(t)) return "cluster:yangwang-altior-nov8";
+    if (/富士康印度工厂/i.test(t)) return "cluster:foxconn-india-nov8";
+    if (/人民网三评.?字节时间/i.test(t)) return "cluster:bytedance-time-nov8";
+    if (/諾丁漢森林對曼城|诺丁汉森林对曼城|曼城离谱崩盘/i.test(t))
+      return "cluster:forest-mancity-nov8";
+    if (/瓦倫西亞對皇家馬德里|瓦伦西亚对皇家马德里|皇马与瓦伦西亚爆发冲突/i.test(t))
+      return "cluster:valencia-madrid-nov8";
+    if (/今天第27个中国记者节|当影视名场面遇到记者|以《武林外传》的方式打开记者节/i.test(t))
+      return "cluster:journalists-day-nov8";
+    if (/歼-15dt|歼-15DT/i.test(t)) return "cluster:fujian-j15dt-nov8";
+    if (/^大衛施華$|^大卫施华$|至尊沙田/i.test(t)) return "cluster:david-silva-hk-nov8";
+    if (/不想打工.的人形机器人|人形机器人在仓库吃灰/i.test(t))
+      return "cluster:humanoid-robot-dust-nov8";
+    if (/梁文锋deepseek不止国运级/i.test(t)) return "cluster:deepseek-liang-nov8";
+    if (/黑客花15美元卷走币安/i.test(t)) return "cluster:binance-hack";
+    if (/anthropic估值预期骤降/i.test(t)) return "cluster:anthropic-ipo";
+    if (/苹果折叠屏铰链|iphone20外观|iphone18电池|史上电池容量最大标准iphone|网传18标准和18e|macbookneo系列|苹果披露机器人大脑/i.test(t))
+      return "cluster:apple-hw-nov8";
+    if (/多地官宣调整中小学上学时间/i.test(t)) return "cluster:school-time-nov8";
+    if (/赵心童吴宜泽包揽斯诺克/i.test(t)) return "cluster:zhao-xintong-nov8";
+    if (/我国新一代通信网重要突破/i.test(t)) return "cluster:cn-telecom-nov8";
+    if (/马斯克高度评价中国车企/i.test(t)) return "cluster:musk-cn-auto-nov8";
+    if (/苹果halo调用千问|宇树g1/i.test(t)) return "cluster:apple-qwen-unitree-nov8";
+    if (/华为畅享100/i.test(t)) return "cluster:huawei-enjoy100-nov8";
+    if (/美国大模型算力或搬中国/i.test(t)) return "cluster:us-compute-china-nov8";
+    if (/央视曝光.“免费鉴宝/i.test(t)) return "cluster:cctv-antique-scam-nov8";
+    if (/央企中国国新：将举报/i.test(t)) return "cluster:china-reform-holdings-nov8";
+    if (/^羅艷卿$|^罗艳卿$/i.test(t)) return "cluster:lo-yim-hing-100";
+    if (/^公仔 麵$|^公仔麵$|^公仔面$/i.test(t)) return "cluster:doll-noodles-nov7";
     if (/美國中期選舉|美国中期选举|中期选举|^中期選舉$|midterm elections|us midterm|us election|democratic party|republican party|美媒预计民主党|美国举行中期选举|美国中期选举杀出|特朗普中期选举|中期选举的四个|民主党称数据中心|民主党ai监管/i.test(t))
       return "cluster:us-midterms-2026";
     if (/马兴瑞被提起公诉|^马兴瑞$/i.test(t)) return "cluster:ma-xingrui-indictment";
@@ -1811,7 +1854,7 @@ function pruneData(data) {
     if (head.length < 20) head.push(c);
     else if (editorial) restEditorial.push(c);
   }
-  const GBA_PLACE = /香港|澳门|广州|深圳|珠海|佛山|东莞|富士康|横琴|前海|南沙|jupas|百 佳|雷暴|許家印|许家印/i;
+  const GBA_PLACE = /香港|澳门|广州|深圳|珠海|佛山|东莞|富士康|横琴|前海|南沙|jupas|百 佳|雷暴|許家印|许家印|沙田|至尊沙田|大衛施華|八達通|公仔|仰望|比亚迪|BYD/i;
   restEditorial.sort((a, b) => {
     const aLoc = GBA_PLACE.test(a.displayTitle + a.platformHits.map((h) => h.title).join()) ? 1 : 0;
     const bLoc = GBA_PLACE.test(b.displayTitle + b.platformHits.map((h) => h.title).join()) ? 1 : 0;
