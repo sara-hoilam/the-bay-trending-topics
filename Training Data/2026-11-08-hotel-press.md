@@ -15,10 +15,11 @@ Galaxy Entertainment (1):
 
 3. **GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1213/20261104
-Galaxy Entertainment Group received eight accolades at the HR Excellence Awards 2026, including the Grand Winner Award, as the only integrated tourism and leisure enterprise in Macau among this year's recipients. The haul included five Gold awards spanning employee, leadership, internship, volunteerism and ESG programmes, plus Silver for employee care and Bronze for learning and development.
+November 4, 2026 – Galaxy Entertainment Group (“GEG”) continues to support the Macau SAR Government’s policy direction of “Building Macau Through Talent Development” through a diverse and holistic people development strategy aimed at nurturing the workforce needed for the future growth of the industry. Recently, GEG received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, a…
 
 MGM China (1):
 
 4. **POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=873
-The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.
+[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.
+

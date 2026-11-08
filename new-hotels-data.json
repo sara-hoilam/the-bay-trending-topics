@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-07",
-  "refreshedAt": "2026-11-07T11:08:56+08:00",
+  "updatedAt": "2026-11-08",
+  "refreshedAt": "2026-11-08T10:48:30+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-08",
-  "windowEnd": "2027-05-09",
-  "count": 110,
+  "windowStart": "2026-05-09",
+  "windowEnd": "2027-05-10",
+  "count": 111,
   "countries": [
     "Bangladesh",
     "China",
@@ -183,6 +183,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/kiara-beachtown-nusa-dua",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Svara Boutique Residences by Mazari",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q2 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-06-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/svara-boutique-residences-bali",
       "sourceName": "The Opening List"
     },
     {
@@ -693,6 +710,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/sheratonjeju",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "The Kayon Gangga Resort",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-09-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/the-kayon-gangga-resort-bali",
       "sourceName": "The Opening List"
     },
     {
@@ -1393,23 +1427,6 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
-      "name": "Conrad Kuala Lumpur",
-      "location": "Kuala Lumpur, Malaysia",
-      "country": "Malaysia",
-      "region": "asia",
-      "hotelGroup": "Conrad",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-12-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/conrad-kuala-lumpur",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "Grand Mercure Amritsar Airport Road",
       "location": "Amritsar, India",
       "country": "India",
@@ -1563,23 +1580,6 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "Experimental Porto",
-      "location": "Porto, Portugal",
-      "country": "Portugal",
-      "region": "portugal",
-      "hotelGroup": "Experimental",
-      "stars": null,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q1 2027",
-      "openDatePrecision": "month",
-      "openDateSort": "2027-01-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/experimental-porto",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "Kamaliss MontAzure",
       "location": "Phuket, Thailand",
       "country": "Thailand",
@@ -1594,23 +1594,6 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/kamaliss-montazure-phuket",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Rixos Phu Quoc",
-      "location": "Phu Quoc, Vietnam",
-      "country": "Vietnam",
-      "region": "asia",
-      "hotelGroup": "Accor",
-      "stars": 4,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q1 2027",
-      "openDatePrecision": "month",
-      "openDateSort": "2027-01-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/rixos-phu-quoc-island",
       "sourceName": "The Opening List"
     },
     {
@@ -1646,6 +1629,23 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "Conrad Kuala Lumpur",
+      "location": "Kuala Lumpur, Malaysia",
+      "country": "Malaysia",
+      "region": "asia",
+      "hotelGroup": "Conrad",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-02-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/conrad-kuala-lumpur",
+      "sourceName": "The Opening List"
     },
     {
       "name": "Courtyard By Marriott Boracay, Philippines",
@@ -1782,6 +1782,23 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "Rixos Phu Quoc",
+      "location": "Phu Quoc, Vietnam",
+      "country": "Vietnam",
+      "region": "asia",
+      "hotelGroup": "Accor",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-02-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/rixos-phu-quoc-island",
+      "sourceName": "The Opening List"
     },
     {
       "name": "Shanti-Som Algarve",
