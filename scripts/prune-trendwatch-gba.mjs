@@ -117,6 +117,52 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/alice huang|黄仁勋承认出轨|黄仁勋出轨|我对妻子不忠|41年爱妻|黄仁勋曾称穿的都是妻子|出轨对象|出轨马斯克/i.test(t))
+      return "cluster:jensen-huang-affair-nov9";
+    if (/^nvda$|\bnvidia\b|^英伟达$|megaspeed|英伟达大劫案|专家解读英伟达/i.test(t))
+      return "cluster:nvidia-nov9";
+    if (/黃仁勳|^黄仁勋$|黄仁勋 megaspeed|黄仁勋我坚定/i.test(t))
+      return "cluster:jensen-huang-nov9";
+    if (/明天的天氣|hk weather|^天文台$|^天氣$|東北季風/i.test(t))
+      return "cluster:hk-weather-nov9";
+    if (/曼聯對阿斯頓維拉|man utd vs aston villa|曼联4-4维拉|曼联4-4维拉/i.test(t))
+      return "cluster:manutd-villa-nov9";
+    if (/電梯|电梯|人行天桥|便民扶梯|只建不养|建而不用|赣州连夜成立调查组/i.test(t))
+      return "cluster:unused-lifts-nov9";
+    if (/感悟五年规划|五年规划的中国智慧/i.test(t))
+      return "cluster:five-year-plan-nov9";
+    if (/光刻机|新一代光刻机/i.test(t))
+      return "cluster:cn-lithography-nov9";
+    if (/把想法带到中国就能实现|透过关键词解码进博会/i.test(t))
+      return "cluster:ciie-nov9";
+    if (/香港进口冷藏鸡腿|强力霉素超标/i.test(t))
+      return "cluster:hk-chicken-doxy-nov9";
+    if (/铁门.?特遣|特朗普威胁1小时炸38座桥|特遣行动正全面展开/i.test(t))
+      return "cluster:trump-irongate-nov9";
+    if (/油价一周暴跌超16%/i.test(t))
+      return "cluster:oil-crash-nov9";
+    if (/老人数量第一次比孩子多/i.test(t))
+      return "cluster:cn-ageing-nov9";
+    if (/双十一|雙十一|天猫双11/i.test(t))
+      return "cluster:double11-nov9";
+    if (/卫星互联网低轨29组/i.test(t))
+      return "cluster:leo-sat-nov9";
+    if (/新能源车电池面临脱保/i.test(t))
+      return "cluster:nev-battery-warranty-nov9";
+    if (/付鹏称ai浪潮全部亏损/i.test(t))
+      return "cluster:fupeng-ai-nov9";
+    if (/软银高杠杆押注ai|软银涡轮机订单违约/i.test(t))
+      return "cluster:softbank-ai-nov9";
+    if (/马斯克交棒孙正义|马斯克 openai|马斯克 OpenAI/i.test(t))
+      return "cluster:musk-openai-nov9";
+    if (/华为大折叠x9|荣耀700真机/i.test(t))
+      return "cluster:huawei-fold-nov9";
+    if (/claire liu|alexandra eala/i.test(t))
+      return "cluster:claire-liu-nov9";
+    if (/至尊沙田|大衛施華|大卫施华/i.test(t))
+      return "cluster:david-silva-hk-nov8";
+    if (/blg战胜t1|blg成首支|blg晋级s16|blg翻过了那座山|blg翻盘t1|blg对战t1|blg对战gen|faker告别s16|faker太夸张|faker尽力了|中国战队首次在世界赛bo5战胜t1|战胜t1 就在今天|xun艺高人胆大|bin 世一上|on萨勒芬妮|lpl终结t1|管泽元说blg|众解说回应blg|^t1$|lol 世界賽/i.test(t))
+      return "cluster:lol-worlds-2026";
     if (/总书记投下庄严一票|全过程人民民主的庄严一票/i.test(t))
       return "cluster:xi-npc-vote-nov7";
     if (/暴雨暴雪大降温|8省份大到暴雪|大风\+寒潮|河北秦皇岛暴雪/i.test(t))
