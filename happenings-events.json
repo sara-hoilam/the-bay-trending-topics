@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle (8) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "highlightScoreThreshold": 24,
   "highlightedCount": 73,
   "events": [
@@ -37,6 +37,19 @@
       "region": "hk",
       "location": "East Galleries, M+, West Kowloon",
       "url": "https://www.mplus.org.hk/en/exhibitions/things-spaces-interactions/",
+      "sourceDomain": "westk.hk",
+      "dateNote": "Ongoing",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
+      "title": "M+ Playscape",
+      "start": "2022-04-21",
+      "end": "2027-12-31",
+      "region": "hk",
+      "location": "North Roof Garden, L3, M+, West Kowloon",
+      "url": "https://www.mplus.org.hk/en/exhibitions/m-playscape/",
       "sourceDomain": "westk.hk",
       "dateNote": "Ongoing",
       "sourceCategory": "Lifestyle",
@@ -278,18 +291,6 @@
       "dateNote": "Ongoing",
       "sourceCategory": "Lifestyle",
       "highlightScore": 20,
-      "highlighted": false
-    },
-    {
-      "title": "10th Shenzhen Folk Crafts Exhibition",
-      "start": "2026-09-23",
-      "end": "2026-10-25",
-      "region": "shenzhen",
-      "location": "Shenzhen Museum (Ancient Art), Tongxin Road",
-      "url": "https://www.shenzhenmuseum.com/exhibitiondetail?clazzName=CmsExhibition&resId=7c5273da81514784a70b439fefd307ce&type=2",
-      "sourceDomain": "shenzhenmuseum.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -1506,6 +1507,18 @@
       "highlighted": false
     },
     {
+      "title": "DMP Greater Bay Area Industrial Expo 2026",
+      "start": "2026-11-04",
+      "end": "2026-11-07",
+      "region": "shenzhen",
+      "location": "Shenzhen World Exhibition & Convention Center",
+      "url": "https://10times.com/china-dmp-international-mould-metalworking-plastic",
+      "sourceDomain": "10times.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 34,
+      "highlighted": true
+    },
+    {
       "title": "Qing Court in Four Seasons — HK Palace Museum",
       "start": "2026-11-04",
       "end": "2028-11-03",
@@ -2660,18 +2673,6 @@
       "highlighted": true
     },
     {
-      "title": "DMP Greater Bay Area Industrial Expo 2026",
-      "start": "2026-12-03",
-      "end": "2026-12-06",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/china-dmp-international-mould-metalworking-plastic",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 34,
-      "highlighted": true
-    },
-    {
       "title": "Shenzhen International Ecological Agriculture and Food Expo",
       "start": "2026-12-03",
       "end": "2026-12-05",
@@ -2716,7 +2717,6 @@
       "url": "https://www.ticketflap.com/Clockenflap2026",
       "sourceDomain": "ticketflap.com",
       "featured": true,
-      "dateNote": "Dates TBD",
       "sourceCategory": "Lifestyle",
       "highlightScore": 72,
       "highlighted": true
@@ -2782,18 +2782,6 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -2815,6 +2803,18 @@
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -3146,7 +3146,7 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2027 (HKCEC)",
       "start": "2027-07-14",
       "end": "2027-07-20",
       "region": "hk",
