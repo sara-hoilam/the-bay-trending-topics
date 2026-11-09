@@ -2147,18 +2147,6 @@
       "highlighted": false
     },
     {
-      "title": "HKTDC Entrepreneur Day (E-DAY)",
-      "start": "2026-11-19",
-      "end": "2026-11-20",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://hkstartupsociety.hktdc.com/en/events/hktdc-entrepreneur-day-e-day",
-      "sourceDomain": "hkstartupsociety.hktdc.com",
-      "sourceCategory": "Entrepreneur",
-      "highlightScore": 0,
-      "highlighted": false
-    },
-    {
       "title": "Start-up Express International 2026",
       "start": "2026-11-19",
       "end": "2026-11-20",
@@ -2168,6 +2156,18 @@
       "sourceDomain": "hkstartupsociety.hktdc.com",
       "sourceCategory": "Entrepreneur",
       "highlightScore": 10,
+      "highlighted": false
+    },
+    {
+      "title": "HKTDC Entrepreneur Day (E-DAY)",
+      "start": "2026-11-19",
+      "end": "2026-11-20",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://hkstartupsociety.hktdc.com/en/events/hktdc-entrepreneur-day-e-day",
+      "sourceDomain": "hkstartupsociety.hktdc.com",
+      "sourceCategory": "Entrepreneur",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -2717,6 +2717,7 @@
       "url": "https://www.ticketflap.com/Clockenflap2026",
       "sourceDomain": "ticketflap.com",
       "featured": true,
+      "dateNote": "Dates TBD",
       "sourceCategory": "Lifestyle",
       "highlightScore": 72,
       "highlighted": true
@@ -2782,6 +2783,18 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hktoyfair",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Baby Products Fair 2027",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -2803,18 +2816,6 @@
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Other Mainland cities,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hktoyfair",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -3146,7 +3147,7 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Sports and Leisure Expo 2027 (HKCEC)",
+      "title": "HKTDC Hong Kong Sports and Leisure Expo 2026 (HKCEC)",
       "start": "2027-07-14",
       "end": "2027-07-20",
       "region": "hk",
