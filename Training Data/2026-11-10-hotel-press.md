@@ -5,11 +5,11 @@ Galaxy Entertainment (2):
 
 1. **Mr. Francis Lui Named Asia’s Most Influential Industry Leader for the 10th Time; Advancing Innovation and Industry Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1216/2026-11-06
-Mr. Francis Lui, Chairman of Galaxy Entertainment Group, has been named the most influential industry leader in the 2026 Asian Gaming Power 50 for the 10th time. GEG Chief Operating Officer – Macau Kevin Kelley was also named to the list this year.
+November 6, 2026 – Mr. Francis Lui, Chairman of Galaxy Entertainment Group (“GEG”) , has been named the most influential industry leader in the “2026 Asian Gaming Power 50” for the 10th time. This achievement underscores the leadership and strategic vision he has demonstrated in guiding the continued expansion of GEG’s world-class integrated resort footprint, as well as advancing innovation and high-quality…
 
 2. **GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1213/20261104
-Galaxy Entertainment Group received eight accolades at the HR Excellence Awards 2026, including the Grand Winner Award, as the only integrated tourism and leisure enterprise in Macau among this year’s recipients. The haul also included five Gold awards for employee development, leadership development, internship recruitment, volunteerism and ESG strategy.
+November 4, 2026 – Galaxy Entertainment Group (“GEG”) continues to support the Macau SAR Government’s policy direction of “Building Macau Through Talent Development” through a diverse and holistic people development strategy aimed at nurturing the workforce needed for the future growth of the industry. Recently, GEG received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, a…
 
 Wynn (2):
 
@@ -25,4 +25,5 @@ MGM China (1):
 
 5. **POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=873
-The POLY MGM MUSEUM, jointly established by Poly Culture Group and MGM, has been named to Fortune China’s 2026 Best Design list — the only project from Macau recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony in Chengdu on October 22.
+[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.
+
