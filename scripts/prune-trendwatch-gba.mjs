@@ -117,12 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/alice huang|黄仁勋承认出轨|黄仁勋出轨|我对妻子不忠|41年爱妻|黄仁勋曾称穿的都是妻子|出轨对象|出轨马斯克/i.test(t))
-      return "cluster:jensen-huang-affair-nov9";
+    if (/alice huang|黄仁勋婚外情|中方回应黄仁勋|黄仁勋承认出轨|黄仁勋出轨|我对妻子不忠|41年爱妻|黄仁勋曾称穿的都是妻子|出轨对象|出轨马斯克/i.test(t))
+      return "cluster:jensen-huang-affair-nov10";
+    if (/黄仁勋退出两场|谁能接管英伟达|英伟达除黄仁勋|英伟达接班人|失去黄仁勋英伟达|英伟达市值一夜蒸发|英伟达内部调查/i.test(t))
+      return "cluster:nvidia-succession-nov10";
     if (/^nvda$|\bnvidia\b|^英伟达$|megaspeed|英伟达大劫案|专家解读英伟达/i.test(t))
       return "cluster:nvidia-nov9";
     if (/黃仁勳|^黄仁勋$|黄仁勋 megaspeed|黄仁勋我坚定/i.test(t))
-      return "cluster:jensen-huang-nov9";
+      return "cluster:jensen-huang-affair-nov10";
+    if (/大\s*快活|大快活快餐/i.test(t)) return "cluster:fairwood-nov10";
+    if (/容祖兒演唱會|容祖儿演唱会/i.test(t)) return "cluster:joey-yung-concert-nov10";
+    if (/^長假$|悠長假期|悠长假期/i.test(t)) return "cluster:long-vacation-viutv-nov10";
+    if (/幻彩詠香江|幻彩咏香江/i.test(t)) return "cluster:symphony-of-lights-nov10";
+    if (/跨越山海的双向奔赴|进博会.“一米展台”|进博会「一米展台」|浦江潮涌共赴进博|第九届进博会|进博会亮点/i.test(t))
+      return "cluster:ciie-nov10";
+    if (/学龄人口已经达峰|改造2万间4人|鼓励用人单位办托/i.test(t))
+      return "cluster:ndrc-livelihood-nov10";
+    if (/华为推出全新小折叠|华为小折叠电脑|华为曝光全新小折|华为matebook|matebookfolds|余承东用魔术打开华为/i.test(t))
+      return "cluster:huawei-matebook-fold-nov10";
+    if (/特斯拉中国10月销量|特斯拉国内10月销量/i.test(t))
+      return "cluster:tesla-cn-oct-sales-nov10";
+    if (/立陶宛.*台湾代表处|台湾代表处.*改名/i.test(t))
+      return "cluster:lithuania-taiwan-office-nov10";
+    if (/小米四款车|小米4款车|小米澎程n70|雷军回应10月|雷军回应小米澎程/i.test(t))
+      return "cluster:xiaomi-auto-oct-nov10";
+    if (/问界m9断轴/i.test(t)) return "cluster:aito-m9-axle-nov10";
+    if (/勇士對鵜鶘|warriors vs pelicans/i.test(t)) return "cluster:gsw-pelicans-nov10";
+    if (/^weather$|香港天氣|特別天氣提示/i.test(t)) return "cluster:hk-weather-nov9";
     if (/明天的天氣|hk weather|^天文台$|^天氣$|東北季風/i.test(t))
       return "cluster:hk-weather-nov9";
     if (/曼聯對阿斯頓維拉|man utd vs aston villa|曼联4-4维拉|曼联4-4维拉/i.test(t))
