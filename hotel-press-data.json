@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-11-10",
-  "refreshedAt": "2026-11-10T13:01:07+08:00",
+  "updatedAt": "2026-11-12",
+  "refreshedAt": "2026-11-12T12:11:18+08:00",
   "windowDays": 14,
-  "windowStart": "2026-10-27",
-  "windowEnd": "2026-11-10",
-  "count": 5,
+  "windowStart": "2026-10-29",
+  "windowEnd": "2026-11-12",
+  "count": 7,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -20,6 +20,32 @@
   ],
   "articles": [
     {
+      "title": "Wynn Hosts 2027 Wynn Signature Chinese Wine Awards Kick-Off Event in Shanghai",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-hosts-2027-wynn-signature-chinese-wine-awards----kick-off-event-in-shanghai/s/39d0b1b9-2ee3-4af3-b6c9-4d194a2304bc",
+      "posted": "2026-11-12",
+      "rawDate": "12 Nov 2026",
+      "hotelGroup": "Wynn",
+      "sourceName": "Wynn Macau Newsroom",
+      "sourceDomain": "newsroom.wynnresorts.com",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
+      "kind": "award",
+      "summary": "On November 9 in Shanghai, Wynn hosted a kick-off event for the 2027 Wynn Signature Chinese Wine Awards, themed “Three Years in the Making, A New Chapter Begins.” Wynn announced the 2027 calendar, with judging week in Beijing from August 21–25 and the annual awards ceremony in Macao on October 29.",
+      "rank": 1
+    },
+    {
+      "title": "Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run",
+      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1110-donation-to-caritas_en.pdf",
+      "posted": "2026-11-10",
+      "rawDate": "Nov.10 Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run",
+      "hotelGroup": "Sands China",
+      "sourceName": "Sands China Press",
+      "sourceDomain": "en.sandsresortsmacao.com",
+      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
+      "kind": "good-news",
+      "summary": "Sands China donated funds and gifts valued at over MOP 400,000 to Caritas Macau to support the 2026 Charity Run and the 57th Caritas Macau Charity Bazaar, marking 23 consecutive years of such contributions. 150 Sands Cares Ambassadors also took part in both events.",
+      "rank": 2
+    },
+    {
       "title": "Mr. Francis Lui Named Asia’s Most Influential Industry Leader for the 10th Time; Advancing Innovation and Industry Development",
       "url": "https://www.galaxyentertainment.com/en/media/press-releases/1216/2026-11-06",
       "posted": "2026-11-06",
@@ -29,8 +55,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "award",
-      "summary": "November 6, 2026 – Mr. Francis Lui, Chairman of Galaxy Entertainment Group (“GEG”) , has been named the most influential industry leader in the “2026 Asian Gaming Power 50” for the 10th time. This achievement underscores the leadership and strategic vision he has demonstrated in guiding the continued expansion of GEG’s world-class integrated resort footprint, as well as advancing innovation and high-quality…",
-      "rank": 1
+      "summary": "Mr. Francis Lui, Chairman of Galaxy Entertainment Group, has been named the most influential industry leader in the 2026 Asian Gaming Power 50 for the 10th time. GEG Chief Operating Officer – Macau Kevin Kelley was also named to the list this year.",
+      "rank": 3
     },
     {
       "title": "Chef Tam's Seasons at Wynn Palace Once Again Ranks Among The 50 Best Restaurants 2026 51-100 List",
@@ -43,7 +69,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnpalace/newslisting?wynnpalace=wp-pressreleases",
       "kind": "award",
       "summary": "Chef Tam's Seasons, the signature Cantonese restaurant at Wynn Palace, once again ranks among The 50 Best Restaurants 2026, taking the No.73 spot on the 51-100 list and remaining the only restaurant in Macao on the ranking. It also ranked No.7 in The 50 Best Restaurants Asia 2026, announced in March — the third consecutive year it has been the only Macao restaurant on that list.",
-      "rank": 2
+      "rank": 4
     },
     {
       "title": "GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development",
@@ -55,8 +81,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "award",
-      "summary": "November 4, 2026 – Galaxy Entertainment Group (“GEG”) continues to support the Macau SAR Government’s policy direction of “Building Macau Through Talent Development” through a diverse and holistic people development strategy aimed at nurturing the workforce needed for the future growth of the industry. Recently, GEG received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, a…",
-      "rank": 3
+      "summary": "Galaxy Entertainment Group received eight accolades at the HR Excellence Awards 2026, organised by Human Resources Online, including the Grand Winner Award. As the only integrated tourism and leisure enterprise in Macau among this year's recipients, GEG also won five Gold awards covering employee development, leadership development, internship recruitment, employee volunteerism and ESG strategy.",
+      "rank": 5
     },
     {
       "title": "POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List",
@@ -68,8 +94,8 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
-      "rank": 4
+      "summary": "The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau recognised this year. The honour was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.",
+      "rank": 6
     },
     {
       "title": "Wynn Scoops 16 Accolades at \"China's Wine List of the Year Awards\" Reaffirming its Excellence in Gastronomy and Wine",
@@ -82,7 +108,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "Wynn secured 16 accolades at the 14th China's Wine List of the Year Awards, with eight signature restaurants earning the highest “3 Glasses” distinction. Chef Tam's Seasons at Wynn Palace scooped five awards, and Mizumi retained “China's Best Sake List” for a second consecutive year.",
-      "rank": 5
+      "rank": 7
     }
   ]
 }
