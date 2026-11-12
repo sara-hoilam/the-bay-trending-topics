@@ -117,8 +117,48 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/alice huang|黄仁勋婚外情|中方回应黄仁勋|黄仁勋承认出轨|黄仁勋出轨|我对妻子不忠|41年爱妻|黄仁勋曾称穿的都是妻子|出轨对象|出轨马斯克/i.test(t))
+    if (/alice huang|kimberly powell|黄仁勋婚外情|中方回应黄仁勋|黄仁勋承认出轨|黄仁勋出轨|我对妻子不忠|41年爱妻|黄仁勋曾称穿的都是妻子|出轨对象|出轨马斯克|黄仁勋闭门会/i.test(t))
       return "cluster:jensen-huang-affair-nov10";
+    if (/孙中山/i.test(t)) return "cluster:sun-yat-sen-160-nov12";
+    if (/\bapec\b|深圳准备好了/i.test(t)) return "cluster:sz-apec-nov12";
+    if (/^油价$|油价今晚/i.test(t)) return "cluster:cn-fuel-nov12";
+    if (/霍启刚|霍啟剛|郭晶晶/i.test(t)) return "cluster:fok-guo-14th-nov12";
+    if (/霍啟山|霍启山|^娜然$|娜然 霍|霍启山娜然/i.test(t))
+      return "cluster:fok-naran-wedding-nov12";
+    if (/李彦宏|百度世界2026/i.test(t)) return "cluster:baidu-world-nov12";
+    if (/比亚迪.*轮辋|轮辋装反|大唐轮辋/i.test(t)) return "cluster:byd-rim-nov12";
+    if (/claude.*封号/i.test(t)) return "cluster:claude-ban-nov12";
+    if (/iphone20pro|iphone 20 pro/i.test(t)) return "cluster:iphone20-pro-nov12";
+    if (/星芒|osta/i.test(t)) return "cluster:huawei-osta-nov12";
+    if (/mate x8/i.test(t)) return "cluster:huawei-mate-x8-nov12";
+    if (/奔驰.*中国|100%为中国|邓承浩|在中国车要大得惊人/i.test(t))
+      return "cluster:benz-china-nov12";
+    if (/冷鋒|cold front/i.test(t)) return "cluster:hk-cold-front-nov12";
+    if (/anthropic/i.test(t)) return "cluster:anthropic-amd-nov12";
+    if (/赵丽颖/i.test(t)) return "cluster:zhaoliying-hongguo-nov12";
+    if (/山姆.*羽绒服|羽绒服断货/i.test(t)) return "cluster:sams-down-nov12";
+    if (/大美|高迪/i.test(t)) return "cluster:damei-gaodi-nov12";
+    if (/后会友期/i.test(t)) return "cluster:houhuiyouqi-nov12";
+    if (/nba\s*直播/i.test(t)) return "cluster:nba-live-nov12";
+    if (/bigbang/i.test(t)) return "cluster:bigbang-hk-nov12";
+    if (/机械臂分拣/i.test(t)) return "cluster:robot-arm-nov12";
+    if (/domestic helper visa/i.test(t)) return "cluster:hk-fdh-visa-nov12";
+    if (/居者有其屋/i.test(t)) return "cluster:hos-nov12";
+    if (/小学生只上半天学/i.test(t)) return "cluster:half-day-primary-nov12";
+    if (/700号段/i.test(t)) return "cluster:miit-700-nov12";
+    if (/gemini decisions/i.test(t)) return "cluster:gemini-decisions-nov12";
+    if (/台积电十月营收/i.test(t)) return "cluster:tsmc-oct-nov12";
+    if (/脑机接口产品卖爆/i.test(t)) return "cluster:bci-sales-nov12";
+    if (/高市预设开战|高市早苗/i.test(t)) return "cluster:takaichi-nov12";
+    if (/12306回应外籍游客/i.test(t)) return "cluster:12306-smoking-nov12";
+    if (/黄金价格下跌|^黄金$/i.test(t)) return "cluster:gold-price";
+    if (/77万亿存款/i.test(t)) return "cluster:deposits-77tn-nov12";
+    if (/刚提车就降价|理想回应背刺/i.test(t)) return "cluster:li-auto-price-nov12";
+    if (/车辆召回谣言/i.test(t)) return "cluster:recall-rumour-nov12";
+    if (/现代人为什么越来越不敢接电话/i.test(t)) return "cluster:cn-phone-scam-nov12";
+    if (/决不能让一个梗毁掉/i.test(t)) return "cluster:jiahao-meme-nov12";
+    if (/双十一战绩/i.test(t)) return "cluster:double11-results-nov12";
+    if (/电脑双十一没降价/i.test(t)) return "cluster:pc-rental-d11-nov12";
     if (/黄仁勋退出两场|谁能接管英伟达|英伟达除黄仁勋|英伟达接班人|失去黄仁勋英伟达|英伟达市值一夜蒸发|英伟达内部调查/i.test(t))
       return "cluster:nvidia-succession-nov10";
     if (/^nvda$|\bnvidia\b|^英伟达$|megaspeed|英伟达大劫案|专家解读英伟达/i.test(t))
