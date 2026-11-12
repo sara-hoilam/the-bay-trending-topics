@@ -1,5 +1,5 @@
 THE BAY: Hotel Press
-Date: 12 November 2026 · 7 articles · method: hotel-press-agent-prompt (14-day awards & good news)
+Date: 12 November 2026 · 8 articles · method: hotel-press-agent-prompt (14-day awards & good news)
 
 Wynn (3):
 
@@ -15,25 +15,29 @@ Chef Tam's Seasons, the signature Cantonese restaurant at Wynn Palace, once agai
 https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-scoops-16-accolades-at--china-s-wine-list-of-the-year-awards-----reaffirming-its-excellence-in-/s/acadd050-613f-4787-885a-e039297d774c
 Wynn secured 16 accolades at the 14th China's Wine List of the Year Awards, with eight signature restaurants earning the highest “3 Glasses” distinction. Chef Tam's Seasons at Wynn Palace scooped five awards, and Mizumi retained “China's Best Sake List” for a second consecutive year.
 
-Sands China (1):
+Sands China (2):
 
 4. **Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1110-donation-to-caritas_en.pdf
-Sands China donated funds and gifts valued at over MOP 400,000 to Caritas Macau to support the 2026 Charity Run and the 57th Caritas Macau Charity Bazaar, marking 23 consecutive years of such contributions. 150 Sands Cares Ambassadors also took part in both events.
+Sands China press: Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run.
+
+5. **Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’** — Sands China Press
+https://assets.sandsresortsmacao.cn/press-release/2026/scl/1110-macau-band-30ann-concert_en.pdf
+Sands China press: Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’.
 
 Galaxy Entertainment (2):
 
-5. **Mr. Francis Lui Named Asia’s Most Influential Industry Leader for the 10th Time; Advancing Innovation and Industry Development** — Galaxy Entertainment
+6. **Mr. Francis Lui Named Asia’s Most Influential Industry Leader for the 10th Time; Advancing Innovation and Industry Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1216/2026-11-06
-Mr. Francis Lui, Chairman of Galaxy Entertainment Group, has been named the most influential industry leader in the 2026 Asian Gaming Power 50 for the 10th time. GEG Chief Operating Officer – Macau Kevin Kelley was also named to the list this year.
+November 6, 2026 – Mr. Francis Lui, Chairman of Galaxy Entertainment Group (“GEG”) , has been named the most influential industry leader in the “2026 Asian Gaming Power 50” for the 10th time. This achievement underscores the leadership and strategic vision he has demonstrated in guiding the continued expansion of GEG’s world-class integrated resort footprint, as well as advancing innovation and high-quality…
 
-6. **GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development** — Galaxy Entertainment
+7. **GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1213/20261104
-Galaxy Entertainment Group received eight accolades at the HR Excellence Awards 2026, organised by Human Resources Online, including the Grand Winner Award. As the only integrated tourism and leisure enterprise in Macau among this year's recipients, GEG also won five Gold awards covering employee development, leadership development, internship recruitment, employee volunteerism and ESG strategy.
+November 4, 2026 – Galaxy Entertainment Group (“GEG”) continues to support the Macau SAR Government’s policy direction of “Building Macau Through Talent Development” through a diverse and holistic people development strategy aimed at nurturing the workforce needed for the future growth of the industry. Recently, GEG received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, a…
 
 MGM China (1):
 
-7. **POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List** — MGM China
+8. **POLY MGM MUSEUM Named to Fortune China’s 2026 Best Design List** — MGM China
 https://en.mgmchinaholdings.com/media-releases?item=873
-The POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau recognised this year. The honour was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.
+[ October 2 8 , 2026, Macau] Jointly established by Poly Culture Group Corporation Limited and MGM, the POLY MGM MUSEUM has been named to Fortune China’s 2026 Best Design list, standing as the only project from Macau to be recognized this year. The honor was presented at the Fortune China Best Design 2026 Awards Ceremony held in Chengdu on October 22.
 

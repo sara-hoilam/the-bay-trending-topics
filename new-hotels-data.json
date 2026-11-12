@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-10",
-  "refreshedAt": "2026-11-10T13:00:02+08:00",
+  "updatedAt": "2026-11-12",
+  "refreshedAt": "2026-11-12T12:14:51+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-11",
-  "windowEnd": "2027-05-12",
-  "count": 108,
+  "windowStart": "2026-05-13",
+  "windowEnd": "2027-05-14",
+  "count": 110,
   "countries": [
     "Bangladesh",
     "China",
@@ -165,23 +165,6 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/jw-marriott-ranthambore",
-      "sourceName": "The Opening List"
-    },
-    {
-      "name": "Kiara Beachtown",
-      "location": "Bali, Indonesia",
-      "country": "Indonesia",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": null,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q2 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-06-15",
-      "status": "opened",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/kiara-beachtown-nusa-dua",
       "sourceName": "The Opening List"
     },
     {
@@ -369,6 +352,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/uga-ghiri",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "VELA Tianyar",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-07-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/vela-tianyar-bali",
       "sourceName": "The Opening List"
     },
     {
@@ -1103,6 +1103,23 @@
       "sourceName": "Marriott Bonvoy Openings"
     },
     {
+      "name": "Nivata Koh Samui",
+      "location": "Koh Samui, Thailand",
+      "country": "Thailand",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": 4,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-11-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/nivata-koh-samui",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Okinawa Marriott Rizzan",
       "location": "Okinawa, Japan",
       "country": "Japan",
@@ -1831,6 +1848,23 @@
       "status": "upcoming",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/experimental-comporta",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "The Hari Singapore",
+      "location": "The Hari, Singapore",
+      "country": "Singapore",
+      "region": "asia",
+      "hotelGroup": "The Hari",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/the-hari-singapore",
       "sourceName": "The Opening List"
     },
     {
