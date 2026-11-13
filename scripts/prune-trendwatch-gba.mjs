@@ -117,6 +117,31 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/outlook|微软.*宕机|microsoft outage|微软多项服务宕机|微软copilot|outlook 死機|outlook死機/i.test(t))
+      return "cluster:ms-outlook-outage-nov13";
+    if (/黄仁勋辞职|黃仁勳辭職|临时女CEO|临时CEO|英伟达市值蒸发|黄仁勋将失去|马斯克回应|nvidia 股價|辉达股价|輝達股價|英伟达临时CEO|黄仁勋4万美元|接替黄仁勋|黄仁勋离职后硅谷|未归属股权|王腾谈黄仁勋/i.test(t))
+      return "cluster:nvidia-huang-resign-nov13";
+    if (/凝心聚力铸伟业|这场大会释放的重要信号|共襄中华民族|实现孙中山/i.test(t))
+      return "cluster:sun-yat-sen-160-nov12";
+    if (/在深圳科技触手可及/i.test(t)) return "cluster:sz-apec-nov12";
+    if (/^新世界$|新世界停牌/i.test(t)) return "cluster:nwd-halt-nov13";
+    if (/收入中位數|收入 中 位 數/i.test(t)) return "cluster:hk-median-income-nov13";
+    if (/black friday|黑色星期五/i.test(t)) return "cluster:black-friday-nov13";
+    if (/hkexpress|hk express|hong kong express/i.test(t)) return "cluster:hkexpress-nov13";
+    if (/驟雨/i.test(t)) return "cluster:hk-weather-nov9";
+    if (/周生生/i.test(t)) return "cluster:chowsangsang-nov13";
+    if (/董明珠|格力技校/i.test(t)) return "cluster:gree-zhuhai-school-nov13";
+    if (/黄正利/i.test(t)) return "cluster:hwang-jung-lee-nov13";
+    if (/汪明荃/i.test(t)) return "cluster:liza-wang-foshan-nov13";
+    if (/金价再迎暴跌|^金价$/i.test(t)) return "cluster:gold-price";
+    if (/matex8|mate x8/i.test(t)) return "cluster:huawei-mate-x8-nov12";
+    if (/流感毒株/i.test(t)) return "cluster:flu-strain-nov13";
+    if (/控烟不能总让乘客忍着/i.test(t)) return "cluster:12306-smoking-nov12";
+    if (/台湾青年：我们的身份证/i.test(t)) return "cluster:taiwan-id-province-nov13";
+    if (/刘欢/i.test(t)) return "cluster:liu-huan-obit-nov13";
+    if (/英格兰對克羅埃西亞|england vs croatia|歐國聯|nations league/i.test(t))
+      return "cluster:england-croatia-nl-nov13";
+    if (/容祖兒演唱會|容祖儿演唱会/i.test(t)) return "cluster:joey-yung-concert-nov10";
     if (/alice huang|kimberly powell|黄仁勋婚外情|中方回应黄仁勋|黄仁勋承认出轨|黄仁勋出轨|我对妻子不忠|41年爱妻|黄仁勋曾称穿的都是妻子|出轨对象|出轨马斯克|黄仁勋闭门会/i.test(t))
       return "cluster:jensen-huang-affair-nov10";
     if (/孙中山/i.test(t)) return "cluster:sun-yat-sen-160-nov12";
