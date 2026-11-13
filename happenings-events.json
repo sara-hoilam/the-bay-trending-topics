@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle (8) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
   "updatedAt": "2026-11-13",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 75,
+  "highlightedCount": 73,
   "events": [
     {
       "title": "Conserving Neon Culture at M+",
@@ -1267,6 +1267,18 @@
       "highlighted": false
     },
     {
+      "title": "7 upcoming events at Shenzhen's two exhibition centers in November",
+      "start": "2026-11-03",
+      "end": "2027-01-02",
+      "region": "shenzhen",
+      "location": "Shenzhen",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "DMP Greater Bay Area Industrial Expo 2026",
       "start": "2026-11-04",
       "end": "2026-11-07",
@@ -1304,11 +1316,11 @@
       "highlighted": false
     },
     {
-      "title": "Guan Shanyue: Striving for Strength Towards the Sea",
+      "title": "Roaming the seas in Guan Shanyue's paintings",
       "start": "2026-11-04",
-      "end": "2026-11-26",
+      "end": "2026-11-18",
       "region": "shenzhen",
-      "location": "Guan Shanyue Art Museum, Futian",
+      "location": "Shenzhen",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-11/04/content_32208253.htm",
       "sourceDomain": "eyeshenzhen.com",
       "sourceCategory": "Lifestyle",
@@ -1725,6 +1737,18 @@
       "highlighted": false
     },
     {
+      "title": "Fine Art Asia to launch inaugural SZ fair",
+      "start": "2026-11-09",
+      "end": "2027-01-08",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/09/content_32211181.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "Treasures preserved, traditions passed on",
       "start": "2026-11-09",
       "end": "2027-01-08",
@@ -2022,7 +2046,7 @@
       "start": "2026-11-19",
       "end": "2026-11-22",
       "region": "macao",
-      "location": "Guia Circuit, Macao",
+      "location": "Tap Seac Square",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
@@ -2223,18 +2247,6 @@
       "highlighted": true
     },
     {
-      "title": "Fine Art Asia Shenzhen Fair 2026",
-      "start": "2026-11-26",
-      "end": "2026-11-29",
-      "region": "shenzhen",
-      "location": "Museum of Contemporary Art and Urban Planning, Futian",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/09/content_32211181.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
       "title": "China Hi-Tech Fair (CHTF) 2026",
       "start": "2026-11-26",
       "end": "2026-11-28",
@@ -2405,42 +2417,6 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 4,
       "highlighted": false
-    },
-    {
-      "title": "8th Wellbeing Expo Shenzhen",
-      "start": "2026-11-27",
-      "end": "2026-11-29",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center, Futian",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
-      "title": "11th Shenzhen International Tourism Industry Expo",
-      "start": "2026-11-27",
-      "end": "2026-11-29",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center, Futian",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 36,
-      "highlighted": true
-    },
-    {
-      "title": "Home China Expo Shenzhen (Winter) 2026",
-      "start": "2026-11-27",
-      "end": "2026-11-29",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center, Futian",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
-      "highlighted": true
     },
     {
       "title": "Starry Symphony at the Lawn",
@@ -2638,6 +2614,7 @@
       "url": "https://www.ticketflap.com/Clockenflap2026",
       "sourceDomain": "ticketflap.com",
       "featured": true,
+      "dateNote": "Dates TBD",
       "sourceCategory": "Lifestyle",
       "highlightScore": 72,
       "highlighted": true
