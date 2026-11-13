@@ -1,6 +1,6 @@
 {
   "generatedFrom": "Lifestyle (8) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "highlightScoreThreshold": 24,
   "highlightedCount": 75,
   "events": [
@@ -319,18 +319,6 @@
       "highlighted": true
     },
     {
-      "title": "Xu Bing: You Inhuman Thing at M+",
-      "start": "2026-10-05",
-      "end": "2026-10-29",
-      "region": "hk",
-      "location": "Grand Stair, M+, West Kowloon",
-      "url": "https://www.mplus.org.hk/en/exhibitions/xu-bing-you-inhuman-thing/",
-      "sourceDomain": "westk.hk",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 20,
-      "highlighted": false
-    },
-    {
       "title": "Stair in the Dark — Laughing Matters at M+",
       "start": "2026-10-09",
       "end": "2026-12-11",
@@ -412,150 +400,6 @@
       "sourceDomain": "westk.hk",
       "sourceCategory": "Lifestyle",
       "highlightScore": 20,
-      "highlighted": false
-    },
-    {
-      "title": "Automotive World China 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/automotive-world-china",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "C-Touch & Display 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/internationaltouch-screen-shenzhen",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "Connecting Expo Shenzhen 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen Convention & Exhibition Center",
-      "url": "https://10times.com/e1sz-ssz2-306g",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
-      "title": "CPCA Show Plus 2026 — AI PCB Expo",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/e1g1-4h0k-6hxk-s-cpca-showplus",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 34,
-      "highlighted": true
-    },
-    {
-      "title": "Highly-Functional Material Expo Shenzhen 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/e12x-zz9r-h0g6",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 34,
-      "highlighted": true
-    },
-    {
-      "title": "IC Packaging Fair (ICPF) 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/e1d4-02k9-dkxx-g",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 32,
-      "highlighted": true
-    },
-    {
-      "title": "Industrial Technology World Asia Shenzhen 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/e139-1hxf-sxkr-7-industrial-technology-world-asia",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "NEPCON Asia 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/nepconasia",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "S-Factory Expo Shenzhen 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/s-factory-expo-china",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 34,
-      "highlighted": true
-    },
-    {
-      "title": "Shenzhen International Film & Tape Exhibition 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/film-expo",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "SIC Show — Shenzhen Industrial Cleaning Expo 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/e1x0-4r01-fgfk",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 34,
-      "highlighted": true
-    },
-    {
-      "title": "Vision China Shenzhen 2026",
-      "start": "2026-10-27",
-      "end": "2026-10-29",
-      "region": "shenzhen",
-      "location": "Shenzhen World Exhibition & Convention Center",
-      "url": "https://10times.com/vision-china-shenzhen",
-      "sourceDomain": "10times.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
       "highlighted": false
     },
     {
@@ -1423,18 +1267,6 @@
       "highlighted": false
     },
     {
-      "title": "7 upcoming events at Shenzhen's two exhibition centers in November",
-      "start": "2026-11-03",
-      "end": "2027-01-02",
-      "region": "shenzhen",
-      "location": "Shenzhen",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
       "title": "DMP Greater Bay Area Industrial Expo 2026",
       "start": "2026-11-04",
       "end": "2026-11-07",
@@ -1472,11 +1304,11 @@
       "highlighted": false
     },
     {
-      "title": "Roaming the seas in Guan Shanyue's paintings",
+      "title": "Guan Shanyue: Striving for Strength Towards the Sea",
       "start": "2026-11-04",
-      "end": "2026-11-18",
+      "end": "2026-11-26",
       "region": "shenzhen",
-      "location": "Shenzhen",
+      "location": "Guan Shanyue Art Museum, Futian",
       "url": "https://www.amazingshenzhen.com.cn/content/2026-11/04/content_32208253.htm",
       "sourceDomain": "eyeshenzhen.com",
       "sourceCategory": "Lifestyle",
@@ -1893,18 +1725,6 @@
       "highlighted": false
     },
     {
-      "title": "Fine Art Asia to launch inaugural SZ fair",
-      "start": "2026-11-09",
-      "end": "2027-01-08",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/09/content_32211181.htm",
-      "sourceDomain": "eyeshenzhen.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 26,
-      "highlighted": true
-    },
-    {
       "title": "Treasures preserved, traditions passed on",
       "start": "2026-11-09",
       "end": "2027-01-08",
@@ -2174,18 +1994,6 @@
       "highlighted": true
     },
     {
-      "title": "Start-up Express International 2026",
-      "start": "2026-11-19",
-      "end": "2026-11-20",
-      "region": "hk",
-      "location": "Hong Kong",
-      "url": "https://hkstartupsociety.hktdc.com/en/events/start-express-international-2026",
-      "sourceDomain": "hkstartupsociety.hktdc.com",
-      "sourceCategory": "Entrepreneur",
-      "highlightScore": 10,
-      "highlighted": false
-    },
-    {
       "title": "HKTDC Entrepreneur Day (E-DAY)",
       "start": "2026-11-19",
       "end": "2026-11-20",
@@ -2198,11 +2006,23 @@
       "highlighted": false
     },
     {
+      "title": "Start-up Express International 2026",
+      "start": "2026-11-19",
+      "end": "2026-11-20",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://hkstartupsociety.hktdc.com/en/events/start-express-international-2026",
+      "sourceDomain": "hkstartupsociety.hktdc.com",
+      "sourceCategory": "Entrepreneur",
+      "highlightScore": 10,
+      "highlighted": false
+    },
+    {
       "title": "73rd Macau Grand Prix",
       "start": "2026-11-19",
       "end": "2026-11-22",
       "region": "macao",
-      "location": "Tap Seac Square",
+      "location": "Guia Circuit, Macao",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": true,
@@ -2224,7 +2044,7 @@
       "highlighted": true
     },
     {
-      "title": "Pulse of NAPE: Car Enthusiasts’ Culture and Sports Carnival",
+      "title": "Pulse NAPE · Sports & Consumption Carnival – Macau Grand Prix Fan Party",
       "start": "2026-11-19",
       "end": "2026-11-22",
       "region": "macao",
@@ -2233,8 +2053,8 @@
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
       "sourceCategory": "Lifestyle",
-      "highlightScore": 16,
-      "highlighted": false
+      "highlightScore": 44,
+      "highlighted": true
     },
     {
       "title": "LACRIMA at Xiqu Centre",
@@ -2401,6 +2221,18 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 26,
       "highlighted": true
+    },
+    {
+      "title": "Fine Art Asia Shenzhen Fair 2026",
+      "start": "2026-11-26",
+      "end": "2026-11-29",
+      "region": "shenzhen",
+      "location": "Museum of Contemporary Art and Urban Planning, Futian",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/09/content_32211181.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 18,
+      "highlighted": false
     },
     {
       "title": "China Hi-Tech Fair (CHTF) 2026",
@@ -2575,6 +2407,42 @@
       "highlighted": false
     },
     {
+      "title": "8th Wellbeing Expo Shenzhen",
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center, Futian",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
+      "title": "11th Shenzhen International Tourism Industry Expo",
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center, Futian",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 36,
+      "highlighted": true
+    },
+    {
+      "title": "Home China Expo Shenzhen (Winter) 2026",
+      "start": "2026-11-27",
+      "end": "2026-11-29",
+      "region": "shenzhen",
+      "location": "Shenzhen Convention & Exhibition Center, Futian",
+      "url": "https://www.amazingshenzhen.com.cn/content/2026-11/03/content_32206859.htm",
+      "sourceDomain": "eyeshenzhen.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
       "title": "Starry Symphony at the Lawn",
       "start": "2026-11-28",
       "end": "2026-11-28",
@@ -2624,6 +2492,19 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Guangdong Naamyam Concert (National Intangible Cultural Heritage)",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "region": "macao",
+      "location": "Orient Foundation",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
       "highlighted": false
     },
     {
@@ -2757,7 +2638,6 @@
       "url": "https://www.ticketflap.com/Clockenflap2026",
       "sourceDomain": "ticketflap.com",
       "featured": true,
-      "dateNote": "Dates TBD",
       "sourceCategory": "Lifestyle",
       "highlightScore": 72,
       "highlighted": true
@@ -2823,6 +2703,18 @@
       "highlighted": true
     },
     {
+      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
+      "start": "2027-01-11",
+      "end": "2027-01-14",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkstationeryfair",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 36,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Hong Kong Toys & Games Fair 2027 (HKCEC)",
       "start": "2027-01-11",
       "end": "2027-01-14",
@@ -2835,7 +2727,7 @@
       "highlighted": true
     },
     {
-      "title": "HKTDC Hong Kong Baby Products Fair 2027",
+      "title": "HKTDC Hong Kong Baby Products Fair 2027 (HKCEC)",
       "start": "2027-01-11",
       "end": "2027-01-14",
       "region": "hk",
@@ -2843,19 +2735,7 @@
       "url": "https://www.hktdc.com/event/hkbabyfair",
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
-      "highlightScore": 18,
-      "highlighted": false
-    },
-    {
-      "title": "Hong Kong International Stationery and School Supplies Fair 2027 (HKCEC)",
-      "start": "2027-01-11",
-      "end": "2027-01-14",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkstationeryfair",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 36,
+      "highlightScore": 26,
       "highlighted": true
     },
     {
@@ -3332,6 +3212,54 @@
       "dateNote": "Opening 25 Sept 2027",
       "highlightScore": 20,
       "highlighted": false
+    },
+    {
+      "title": "electronicAsia 2027 (HKCEC)",
+      "start": "2027-10-13",
+      "end": "2027-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/electronicasia",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "HKTDC Hong Kong Electronics Fair (Autumn Edition) 2027 (HKCEC)",
+      "start": "2027-10-13",
+      "end": "2027-10-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkelectronicsfairae",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 26,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong International Outdoor and Tech Light Expo 2027 (HKCEC)",
+      "start": "2027-10-27",
+      "end": "2027-10-30",
+      "region": "hk",
+      "location": "Hong Kong",
+      "url": "https://www.hktdc.com/event/hkotlexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 38,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Hong Kong International Lighting Fair (Autumn Edition) 2027 (HKCEC)",
+      "start": "2027-10-27",
+      "end": "2027-10-30",
+      "region": "hk",
+      "location": "Other Mainland cities,Guangdong 9 cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hklightingfairae/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 36,
+      "highlighted": true
     },
     {
       "title": "Sigg Prize 2027 at M+",
