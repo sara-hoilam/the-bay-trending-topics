@@ -117,10 +117,25 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/outlook|微软.*宕机|microsoft outage|微软多项服务宕机|微软copilot|outlook 死機|outlook死機/i.test(t))
+    if (/outlook|微软.*宕机|microsoft outage|微软多项服务宕机|微软copilot|outlook 死機|outlook死機|微软道歉|传真机时代|金融圈退回/i.test(t))
       return "cluster:ms-outlook-outage-nov13";
-    if (/黄仁勋辞职|黃仁勳辭職|临时女CEO|临时CEO|英伟达市值蒸发|黄仁勋将失去|马斯克回应|nvidia 股價|辉达股价|輝達股價|英伟达临时CEO|黄仁勋4万美元|接替黄仁勋|黄仁勋离职后硅谷|未归属股权|王腾谈黄仁勋/i.test(t))
+    if (/黄仁勋辞职|黃仁勳辭職|临时女CEO|临时CEO|英伟达市值蒸发|黄仁勋将失去|马斯克回应|nvidia 股價|辉达股价|輝達股價|英伟达临时CEO|黄仁勋4万美元|接替黄仁勋|黄仁勋离职后硅谷|未归属股权|王腾谈黄仁勋|英伟达创18|英伟达女员工|英伟达被微软|英伟达超97|黄仁勋留下|黄仁勋首次全中文|对英伟达亮匕首|最后几小时内幕|英伟达创18个月/i.test(t))
       return "cluster:nvidia-huang-resign-nov13";
+    if (/推动构建亚太共同体|一组数据读懂apec|深圳盛装喜迎亚太|亚太宾朋|apec“中国年|apec中国年|在深圳科技触手可及|\bapec\b/i.test(t))
+      return "cluster:sz-apec-nov14";
+    if (/全美航班|美国所有航班暂停|911后第二次全美|空管系统故障|地面停飞|美国发生了一件不该发生|\bfaa\b|美國停飛|美高官回应全美停飞|美全国范围实施地面停飞|特朗普说空管|欧航空安全组织|停飞赴美航班/i.test(t))
+      return "cluster:faa-ground-stop-nov14";
+    if (/阿根廷對烏拉圭|argentina vs uruguay/i.test(t))
+      return "cluster:arg-uru-nov14";
+    if (/weather tomorrow|^天氣$|^weather$|驟雨|明天的天氣|香港天氣/i.test(t))
+      return "cluster:hk-weather-nov14";
+    if (/王晶回应|麻将女王/i.test(t)) return "cluster:mahjong-queen-nov14";
+    if (/华强北爆款|销量飙涨150/i.test(t)) return "cluster:huaqiangbei-ai-nov14";
+    if (/deepseek开放全家桶/i.test(t)) return "cluster:deepseek-api-nov14";
+    if (/spacex星舰|星舰第15/i.test(t)) return "cluster:starship-15-nov14";
+    if (/openai解散机器人/i.test(t)) return "cluster:openai-robots-nov14";
+    if (/遇到这4种电话|700号段|号码保护服务/i.test(t)) return "cluster:miit-700-nov14";
+    if (/铁路部门通报外籍旅客高铁吸烟/i.test(t)) return "cluster:12306-smoking-nov14";
     if (/凝心聚力铸伟业|这场大会释放的重要信号|共襄中华民族|实现孙中山/i.test(t))
       return "cluster:sun-yat-sen-160-nov12";
     if (/在深圳科技触手可及/i.test(t)) return "cluster:sz-apec-nov12";
