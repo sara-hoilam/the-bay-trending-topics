@@ -1,0 +1,215 @@
+THE BAY: Daily Brief
+Date: 15 November 2026 · 40 articles · method: daily-brief-agent-prompt (live source scan)
+
+<!-- article count verified: 40 numbered blocks -->
+
+
+GBA News (3):
+
+1. **HZMB Hong Kong-section half marathon runs with three-phase road closures**
+https://news.rthk.hk/rthk/ch/component/k2/1877858-20261115.htm
+https://www.info.gov.hk/gia/general/202611/13/P2026111300323.htm
+The Hong Kong–Zhuhai–Macao Bridge (Hong Kong Section) Half Marathon started this morning, with a 10 km wave at 06:15 plus half-marathon challenge and open races. Secretary for Justice Paul Lam, Education Secretary Choi Yuk-lin and lawmaker Kenneth Fok ran the 2 km honour cup; police closed Zhuhai/Macao-bound lanes until about 14:00 and will keep Hong Kong-bound left and middle lanes shut until about 16:30.
+
+2. **GBA youth talent fair puts out 3,200 new-energy jobs**
+https://news.southcn.com/node_54a44f01a2/d084021ea2.shtml
+Seventy-six Guangdong new-energy and new-materials employers offered more than 3,200 posts at Friday’s Greater Bay Area youth talent session in Guangzhou, drawing nearly 1,400 candidates and more than 300 provisional job matches. Eighty-seven percent of roles sought master’s or doctoral graduates; doctoral posts averaged RMB370,000 a year. Five earlier 2026–27 fairs have already matched about 8,400 people.
+
+3. **Guangdong foreign trade is on course to top RMB11 trillion this year**
+https://info.newsgd.com/node_a42013034a/e9db0eec2a.shtml
+Officials at Saturday’s APEC week briefing said the province’s 2026 trade is heading past RMB11 trillion after RMB9.48 trillion in 2025. January–September trade with other APEC economies was RMB5.74 trillion, up 26.4% and 65.9% of the provincial total; inbound APEC capital was US$71.54 billion.
+
+
+Macao (8):
+
+4. **Grand Prix City Culture Festival opens at Tap Seac** — Macao SAR Government
+https://www.gov.mo/zh-hans/news/951104/
+The 73rd Macau Grand Prix and City Culture Festival opened at 15:00 on Saturday at Tap Seac Square, with an FR, GT and motorcycle car show through 17:00 today. The Forum Macao “Time Square” show “500 years of East–West exchange,” Historic Centre Open Days and a 22 November Chinese Orchestra concert at the Ruins of St Paul’s run until 22 November; racing is 19–22 November.
+
+5. **hush! beach concert and urban-sports festival opens at Hac Sa** — Macao SAR Government
+https://www.gov.mo/zh-hans/news/951118/
+https://www.gov.mo/zh-hant/news/1282083/
+DSCD and MGM opened the free 14–15 November “Energy Island” event on Saturday with seven zones, Omnipotent Youth Society, Branko and pianist Cheung Pui-chi, about 30 fitness coaches and more than 40 food stalls. Three complimentary shuttles run 08:30–23:59; a BBM music-industry forum follows on Monday at the old Inner Harbour slaughterhouse.
+
+6. **Free flu shots open to all residents from Monday** — Macao SAR Government
+https://www.gov.mo/zh-hant/news/1281401/
+https://macaudailytimes.com.mo/govt-to-offer-free-flu-shots-to-residents-from-nov-16.html
+The Health Bureau will extend 2026–27 seasonal influenza vaccine to every Macao resident from 16 November after about 106,000 people, mainly high-risk groups, had already been inoculated by 10 November. Priority groups can walk in; other residents may book via One Account or https://www.ssm.gov.mo/infrs.
+
+7. **Government will give up its 1% CTM stake** — Macau Daily Times
+https://macaudailytimes.com.mo/govt-plans-to-divest-ctm-stake-to-avoid-market-conflict.html
+Lawmaker Leong Sun Iok said officials told the Legislative Assembly’s Third Standing Committee they will relinquish the 1% CTM holding to avoid a conflict under a new Telecommunications Law that would replace a capped concession with an open licence. No timetable was given; CTT could order operators to change prices that harm competition.
+
+8. **Startup Fest Macao opens with 60 firms at Macau Tower** — Macau Post Daily
+https://www.macaupostdaily.com/news/29976
+The three-day inaugural expo, backed by DSEDT, IPIM and MGTO, brings 60 startups and companies from the mainland, Hong Kong, Macao, Taiwan, Malaysia, Thailand, the UK and the US, with 12 forums and about 50 speakers. Organisers expect more than 2,500 visits; themes track the “1+4” diversification plan, including low-altitude economy and smart hospitality.
+
+9. **Sun Yat-sen 160th-anniversary photo show runs through 27 November** — Macao SAR Government
+https://www.gov.mo/zh-hant/news/1281493/
+The government exhibition “Setting Out from Macao,” with more than 100 photos, documents and a Cantonese speech recording, is open 10:00–19:00 at the Macao Cultural Centre’s Dianyi space. Five chapters cover his 1879 departure via Macao, Kiang Wu Hospital practice and later revolutionary work.
+
+10. **CPLP prosecutors visit Shenzhen, Zhuhai and the University of Macau** — Macao SAR Government
+https://www.gov.mo/zh-hans/news/951026/
+Prosecutor-general Ip Son Sang led Brazilian, Cape Verdean, Equatorial Guinean, Timorese, Mozambican, Guinea-Bissau, São Tomé and Portuguese delegations to Shenzhen and Zhuhai procuratorates, Tencent, BYD, Yunzhou and Gree on 12–13 November, then to UM today. Talks covered digital prosecution, satellite legal-supervision models and AI.
+
+11. **Police have refused entry to more than 6,100 Chinese-passport arrivals this year** — Macau Daily Times
+https://macaudailytimes.com.mo/govt-refuses-entry-to-more-than-6100-chinese-passport-holders.html
+PSP said January–10 November refusals targeted travellers who lacked onward tickets, failed to continue a foreign journey, or used repeat crossings to stay on. The force is tightening HZMB checks ahead of APEC week and warned against social-media “how to beat immigration” posts.
+
+
+Hong Kong (9):
+
+12. **Disneyland suspends online tickets after 17,000 QR codes are stolen** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877834-20261114.htm
+https://news.rthk.hk/rthk/ch/component/k2/1877832-20261114.htm
+Hong Kong Disneyland halted website ticket and hotel sales after an IT alert found about 17,000 QR codes taken from the online ticketing system. Police listed the case as access to a computer with criminal or dishonest intent; Lantau Regional Crime is investigating, no one is in custody, and the park has tightened gate checks and will notify the Privacy Commissioner.
+
+13. **Sharp Eye CCTV will start AI face-matching on Monday** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877829-20261114.htm
+https://news.rthk.hk/rthk/ch/component/k2/1877794-20261114.htm
+Commissioner Chow Yat-ming said the Sharp Eye closed-circuit network will switch on artificial-intelligence facial recognition from Monday, calling it protection for law-abiding people and a deterrent. The same briefing said a bid-rigging task force has arrested dozens and taken nearly 100 calls on a 24-hour hotline.
+
+14. **Algernon Yau says September exports jumped 64.9% but AI trade may slow** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877864-20261115.htm
+The commerce secretary told a radio programme that September merchandise exports rose 64.9% year on year, the fastest monthly gain in more than 40 years, with imports up 57.8%, led by AI-related electronics. He said re-exports remain Hong Kong’s ballast, but global splits over AI mean the city cannot “wait for luck” and must find new trades.
+
+15. **Airport Authority deploys runway-painting robots, cutting job time by two-thirds** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877848-20261115.htm
+CAD-approved “auto spray robots” have marked the airport’s three runways, together more than 11 km, since September, the first such civil-aviation use worldwide. Chief operating officer Steven Yiu said a Shenzhen partner adapted pitch-lining kit; GNSS positioning cuts a 2-to-4-hour night job to 1–2 hours, and six machines will be in service.
+
+16. **MTR warns of a cash crunch even after Northern Link land grants** — SCMP
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374441/hong-kong-rail-giant-warns-cash-crunch-despite-northern-metropolis-land-grant
+Chief executive Jeny Yeung said on Saturday that MTR still faces heavy cash-flow pressure over the next few years because rail-plus-property returns come late, even though proceeds from eight newly granted Northern Link sites should cover that line and asset upgrades. Liber Research Community said about a third of 18 granted plots had sat idle after developers took cash instead.
+
+17. **Hong Kong sends a 54-strong business delegation to the APEC CEO Summit** — SCMP
+https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3374452/hong-kong-sending-whos-who-delegation-business-leaders-apec-ceo-summit
+SCMP reported that at least 54 company, chamber, bank and statutory-body executives, including Hong Kong’s ABAC members, will attend closed-door Shenzhen sessions on Tuesday and Wednesday. It is described as one of the city’s largest such groups; some CEOs not on the list will be kept out of those rooms.
+
+18. **Tin Tsun-ting and Nip Tsz-yin defend Victoria Harbour Race titles** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877860-20261115.htm
+https://news.rthk.hk/rthk/ch/component/k2/1877857-20261115.htm
+About 4,000 swimmers crossed from Golden Bauhinia Square to the Avenue of Stars; Tin won the men’s race for a seventh time in 15:35 and Nip the women’s in 16:55. A 60-year-old Shenzhen visitor joined the leisure waves; Star Ferry and water-taxi trips were suspended into late morning.
+
+19. **Clockenflap 2026 adds Turnstile, Cheer Chen and Sofi Tukker** — Hong Kong Free Press
+https://hongkongfp.com/2026/11/13/clockenflap-2026-final-line-up-turnstile-cheer-chen-sofi-tukker-jane-remover-n-y-p-d/
+Background: https://ticketflap.com/
+The 4–6 December Central Harbourfront festival completed its bill with Turnstile, Cheer Chen, Sofi Tukker, Jane Remover, N.Y.P.D. and Wu Tiao Ren, alongside earlier names Hayley Williams, Queens of the Stone Age and Slowdive. Weekend general admission is HK$2,180; single days are HK$1,380.
+
+20. **Customs seizes 3 kg of cocaine in an airport suitcase** — Hong Kong Government + RTHK
+https://www.info.gov.hk/gia/general/202611/14/P2026111400627.htm
+https://news.rthk.hk/rthk/ch/component/k2/1877837-20261114.htm
+Officers on Friday arrested a 57-year-old Indonesian man arriving from Bogotá via São Paulo and Doha after finding about 3 kg of suspected cocaine, worth about HK$1.8 million, in a false compartment of his checked bag. Trafficking carries a maximum of HK$5 million and life imprisonment.
+
+
+Zhuhai inc. Hengqin (2):
+
+21. **Fourth Guangdong–Macao flower festival opens on Hengqin** — Macao SAR Government
+https://www.gov.mo/zh-hans/news/951093/
+Hengqin’s livelihood bureau, DSCD and IAS opened the 14 November–6 December “Same Time, Guangdong and Macao” flower season at Station 1 of the Hengqin Flower Corridor, with Saturday–Sunday sessions 14:30–17:30. Week one is a parent-and-child programme; later weekends cover arts, health and reading.
+
+22. **Zhuhai’s overnight rainstorm averages 59 mm and lifts fire danger** — Zhuhai Daily
+https://pub-zhtb.hizh.cn/a/202611/14/AP6af79a7be4b04a6fc722e297.html
+https://pub-zhtb.hizh.cn/a/202611/14/AP6af7f11ae4b0303411f702b5.html
+The city weather office said Friday night to Saturday dawn brought 59.0 mm on average, 75.0 mm in Hengqin and a 109.6 mm peak in Jinwan, the third-highest November daily total at the national station in 20 years. All rainstorm signals and a month-long forest-fire orange warning were cancelled.
+
+
+Guangzhou (2):
+
+23. **Rare November rainstorm hits Guangzhou; El Niño points to a wet winter** — Southern Net
+https://news.southcn.com/node_54a44f01a2/06d924e4b0.shtml
+Nansha’s Wanqingsha recorded 58.1 mm from Friday into Saturday, a yellow rainstorm warning, and the city’s month-long forest-fire alert was lifted. November’s climate normal is only 37.4 mm; forecasters said the strongest El Niño on record may keep southern China wet through winter and spring.
+
+24. **Adora Flora City leaves Nansha on its second trial cruise to Hong Kong** — Southern Net
+https://news.southcn.com/node_54a44f01a2/d0188f6c5f.shtml
+China’s second large home-built cruise ship sailed from Nansha International Cruise Home Port on Saturday, due in Hong Kong today and back on 16 November to test the regional call. Commercial maiden voyage is 22 November: six days from Guangzhou to Hong Kong and Hue, Vietnam.
+
+
+Shenzhen (8):
+
+25. **APEC Business Advisory Council’s fourth meeting opens in Shenzhen** — Southern Net + Xinhua
+https://news.southcn.com/node_bdb9c3c1a4/904c8aedbc.shtml
+https://english.news.cn/20261114/0e48c78b2347440b9db801ee14c9cca3/c.html
+More than 200 ABAC members from 21 economies began a three-day closed session on Saturday on supply-chain resilience, the FTAAP and digital innovation; China and Canada will issue an Asia-Pacific “AI+” casebook. Vice-premier He Lifeng told the opening the leaders’ meeting should set direction; delegates will visit Qianhai firms.
+
+26. **Shenzhen’s January–October trade hits RMB5.25 trillion** — Xinhua
+https://english.news.cn/20261114/0176b4381ee740978ee0f7340e653549/c.html
+Shenzhen Customs told Saturday’s APEC briefing the city is the first on the Chinese mainland to pass RMB5 trillion in foreign trade, with 10-month imports and exports at RMB5.25 trillion, up 40.9%. Exports were RMB2.71 trillion, up 19.7%; imports RMB2.54 trillion, up 73.7%.
+
+27. **Nine ports, 7,000 AI translators and overseas-card metro gates for APEC week** — Xinhua
+https://english.news.cn/20261114/0176b4381ee740978ee0f7340e653549/c.html
+Mayor Li Yun said dedicated lanes will run at nine sea, land, air and rail ports, more than 100,000 foreign-language signs are standardised and over 7,000 AI translation devices are installed. Metro gates will take contactless overseas bank cards; 3,160 shops offer departure tax refunds, more than 1,000 of them instant.
+
+28. **Guangdong lists 218 APEC visitor sites and 43 routes** — NewsGD
+https://www.newsgd.com/node_99363c4f3b/9209807e89.shtml
+Wang Xi told the first international-media briefing that two of the 43 provincial routes showcase Qianhai and Nanshan, with green venues, Lingnan programming and AI navigation, translation and digital customs. Leaders meet 18–19 November; the CEO Summit is 17–18 November.
+
+29. **Skyscraper light shows dress Shenzhen for leaders’ week** — Xinhua
+https://english.news.cn/20261114/4d9c5a9730a348ff8a2bafbfd05d449a/c.html
+Xinhua’s Saturday dispatch showed themed night lighting on the Futian and Houhai skyline ahead of the 33rd APEC Economic Leaders’ Meeting.
+
+30. **Twelve APEC leaders will speak at the Qianhai CEO Summit** — Xinhua
+https://www.news.cn/world/20261115/5667a85ff3214962a5bbc18ba3b9fe13/c.html
+CCPIT vice-chair Li Qingshuang said today that Xi Jinping plus leaders from Australia, Canada, Chile, Hong Kong, Indonesia, South Korea, Malaysia, Mexico, Russia, Thailand and Vietnam will address the 17–18 November APEC CEO Summit at Qianhai International Conference Centre.
+
+31. **Shenzhen Art Museum opens Dunhuang and thangka shows** — NewsGD
+https://info.newsgd.com/node_ff52103c08/bd5e6da49c.shtml
+Longhua’s new museum has hung nearly 300 works in “Everlasting Beauty of Dunhuang,” tracing Chang Shana’s Mogao-inspired design through 13 December, including the “Forever Blooming Bauhinia” gifted to Hong Kong. Master Niangben’s 63 Regong thangkas run through 3 January 2027.
+
+32. **Shenzhen ports log a durian surge and a high-tech export lift** — NewsGD
+https://info.newsgd.com/node_a42013034a/e9db0eec2a.shtml
+The same APEC briefing said January–September Shenzhen imports jumped 70.1% to RMB2.24 trillion, with Malaysian and Vietnamese durian through city ports up 25.9%. Combined exports of 3D printers, digital cameras and smartphones rose 15.5%.
+
+
+Nation (4):
+
+33. **Li Qiang tells Thailand’s king China–Thai trade has grown against the grain** — RTHK + Xinhua
+https://news.rthk.hk/rthk/ch/component/k2/1877849-20261115.htm
+https://english.news.cn/20261114/0c56fb5c6aa8460a8eef9190d6ff27ae/c.html
+The premier met King Maha Vajiralongkorn in Bangkok on Saturday, calling “China and Thailand as close as one family” a unique advantage after trade rose despite global turbulence. With Prime Minister Anutin he urged firms to use the China–ASEAN FTA 3.0 upgrade, the railway and new work in AI, clean energy and biomedicine.
+
+34. **China and the US hold the first meeting of their trade council** — Xinhua
+https://english.news.cn/20261114/1a3cd956c57a41d78026ada36909ff25/c.html
+Commerce Ministry said Friday’s video session, under the economic and trade consultation mechanism, covered tariffs, the reciprocal cut on about US$30 billion of each other’s goods and farm trade. The council was agreed in May; September talks in New York and Washington set most of that package on a path to MFN rates.
+
+35. **China’s railways carry a record 4.13 billion trips in 10 months** — Xinhua
+https://english.news.cn/20261114/1e9a10bc346c41c3b1a2b035f58d31de/c.html
+China Railway said January–October passenger trips rose 4.7% to 4.13 billion, with 11,670 trains a day. The Guangzhou–Shenzhen–Hong Kong high-speed line carried 29.23 million cross-border passengers, up 11%; foreign travellers on the national network rose 32.9% to 22.52 million.
+
+36. **Xi will chair the APEC leaders’ meeting and open the CEO Summit** — Xinhua
+https://english.news.cn/20261113/4588d230c7304136995e0d9e80266a5d/c.html
+A foreign ministry spokesperson said the president will chair the 18–19 November meeting in Shenzhen under the theme “Building an Asia-Pacific Community to Prosper Together,” give a keynote at the CEO Summit on 17–18 November, host a welcome banquet and hold bilateral talks.
+
+
+Around the World (4):
+
+37. **FAA says US flights should be back to normal by Sunday night** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877852-20261115.htm
+https://news.rthk.hk/rthk/en/component/k2/1877854-20261115.htm
+Administrator Bryan Bedford apologised after Friday’s ~5-hour national ground stop, the longest since 11 September 2001, and said schedules should recover by close of business Sunday. Transport Secretary Duffy blamed a contractor swapping copper for fibre; Bedford put Friday cancellations at 12,000 and Saturday’s at 4,000–5,000.
+
+38. **Iran says two tankers hit mines after sailing dark through Hormuz** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877859-20261115.htm
+The IRGC navy said two oil tankers that switched off navigation and AIS while trying to transit the strait struck mines and caught fire; two more turned back to the Gulf. US Central Command said partners under US protection have already moved more than 1.7 billion barrels of crude through the waterway.
+
+39. **UN asks for five fertiliser ships a day through Hormuz** — RTHK
+https://news.rthk.hk/rthk/ch/component/k2/1877863-20261115.htm
+UNOPS executive director Jorge Moreira da Silva said Iran and the United States should immediately let fertiliser through; a third of global shipments used the strait before this year’s conflict and prices are up about 30%. He warned 45 million people could face severe food insecurity if planting seasons are missed, and said UN mechanisms could restart traffic in 7–10 days.
+
+40. **Microsoft says the 74-country outage is fully restored** — RTHK
+https://news.rthk.hk/rthk/en/component/k2/1877855-20261115.htm
+The company posted on Saturday that it had fixed the underlying fault and restored Outlook, Teams and Copilot after a Thursday–Friday capacity-load failure it said was not a cyberattack or AI incident. It also warned of phishing mails that mimic outage notices and tell users to click to “recover” blocked messages.
+
+<!-- DAILY BRIEF AUDIT
+Date: 2026-11-15 HKT
+Pool: 100 (target 100)
+Stories: 40 (maximum 40)
+Bands: HK 9/9 · SZ 8/8 · Macao 8/8 · Nation 4/4 · World 4/4 · GBA 3/3 · GZ 2/2 · Zhuhai 2/2
+Types: hard 34/34 · lifestyle 5/5 · award 1/1
+Bands short of target: none
+GBA filter drops: Chai Wan P6 school fight (hyper-local); Hung Hom 82-year-old van knock-down (traffic accident); Abby Choi trial day (court colour, 14 Nov already thin); Cannan Kindergarten head-bump (estate-level); San Po Kong subversion pleas (13 Nov, no new finding); Queen Mary lift (already referred to police, 13–14 Nov); Wang Fuk Court masses (anniversary colour); Filipino brawl / Laguna City CCTV (hyper-local); SKH Chai Wan classroom assault (hyper-local); Chow Sang Sang breach (HK01 only in aggregator, no approved live URL fetched); vegetable-storage feature (not news); Wynn wine-award commercial copy; Midea/HONGQI PR newswires.
+Single-source items: 2 GBA talent (southcn); 3 GD trade 11tn (NewsGD); 4 Grand Prix festival (gov.mo); 7 CTM (MDT); 8 Startup Fest (Macau Post Daily); 9 Sun Yat-sen show (gov.mo); 10 CPLP (gov.mo); 11 passport refusals (MDT); 14 Yau exports (RTHK); 15 runway robots (RTHK); 16 MTR cash (SCMP); 17 APEC 54 (SCMP); 19 Clockenflap (HKFP); 21 flower festival (gov.mo); 23 GZ rain (southcn); 24 Adora Flora (southcn); 26 SZ trade (Xinhua); 27 facilitation (same Xinhua briefing, distinct facts); 28 218 routes (NewsGD); 29 light shows (Xinhua); 30 12 leaders (Xinhua); 31 Art Museum (NewsGD); 32 SZ ports mix (same NewsGD briefing as 3, distinct Shenzhen product facts); 34 trade council (Xinhua); 35 railway (Xinhua); 36 Xi APEC (Xinhua); 38 Hormuz tankers (RTHK); 39 UN fertiliser (RTHK); 40 Microsoft (RTHK). Kept where the outlet is official, the sole approved live page, or a distinct briefing fact.
+Out of catalog: none
+Pool notes: 100-candidate sweep from gov.mo 13–14 Nov list, Macau Daily Times, Macau Post Daily, Macao Business, RTHK CH/EN 14–15 Nov, info.gov.hk 14–15 Nov GIA, SCMP HK page, HKFP, southcn Guangdong node, NewsGD/info.newsgd APEC and lifestyle pages, Xinhua EN/CN, english.news.cn, hizh Zhuhai weather, Reuters via RTHK. TDM homepage returned empty; sznews.com 514; hizh.cn 504 (pub-zhtb.hizh.cn weather pages worked). Stopped the pool at 100 before ranking; HK/Macao did not close the list. Did not recycle 14 Nov brief blocks (GDP forecast, HOS, bird flu, flu death, APEC no-fly, mediation, shop rents, UM GDP, Hengqin drone ban, APEC metro fares/road box, Wang Xi “ready”, green power, Mao Ning, White House trilateral, Xinjiang quake, Para Games) unless a new fact (hush/GP opening vs preview; Microsoft restored vs “not fully restored”; FAA Sunday recovery vs Friday stop).
+Editor tie-break inside bands (June digest, no quota change): society/policy/GBA integration favoured HZMB race, Sharp Eye, Yau exports, CTM/telecom bill, flu shots, CPLP GBA visit, GD/SZ trade, rain/fire-danger lifts over Catholic Centre opening, Sai Van sports ground, colourful bins, Iao Hon stall tender, Fanling pool closure, yellow fire danger, organ-donation day, fake airbag WhatsApps, Sikh temple lights (HK band already held Clockenflap as the lifestyle slot).
+Lifestyle (5): 4 Grand Prix/culture festival; 5 hush concert; 19 Clockenflap; 21 Hengqin flower festival; 31 Shenzhen Art Museum. Award (1): 18 Harbour Race titles. Hard (34): the rest. Dropped Australian Pingshan/library shows (NewsGD dateline 1 Nov) rather than a sixth lifestyle item.
+-->
