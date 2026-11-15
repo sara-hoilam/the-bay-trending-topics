@@ -117,11 +117,39 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/blg夺冠|blg捧杯|blg一穿四|s16总决赛|s16全球总决赛|中国战队时隔5年|bin成为lpl|bin 世一上|bin夺冠后哭了|bin熬过所有非议|knight s16|knight夺冠|on：24年失败|神bin天降|blg是不是史上|若blg未夺冠雷鸟|雷鸟这双眼睛|blg夺冠刷屏|blg夺冠 b站|blg夺冠b站|blg夺冠tim|viper炸弹人|bin 赛后采访|lol 世界賽 2026|^blg$|中国战队blg|英雄联盟》将全面升级|ruler回应blg|jackeylove谈blg|央视新闻祝贺blg|jdg决赛后发文|暖阳夺冠发文|冠军皮肤/i.test(t))
+      return "cluster:blg-s16-nov15";
+    if (/马斯克回应spacex|spacex首次实现筷子|星舰超重型助推器/i.test(t))
+      return "cluster:spacex-chopsticks-nov15";
+    if (/暴雨\s*警告|暴雨警告/i.test(t)) return "cluster:hk-rain-warning-nov15";
+    if (/长者日|長者日/i.test(t)) return "cluster:hk-senior-day";
+    if (/港珠澳大橋馬拉松|港珠澳半馬/i.test(t)) return "cluster:hzmb-marathon-nov15";
+    if (/維港泳/i.test(t)) return "cluster:harbour-swim-nov15";
+    if (/央视曝光假牛肉/i.test(t)) return "cluster:fake-beef-nov15";
+    if (/常州造全球最大无人货运飞机|国产纯电商用飞机/i.test(t))
+      return "cluster:cargo-plane-nov15";
+    if (/葡萄牙對丹麥|portugal vs denmark|葡萄牙1比4|后c罗时代首战/i.test(t))
+      return "cluster:por-den-nov15";
+    if (/北京天津等9省区市有浓雾|多地强浓雾/i.test(t)) return "cluster:fog-warning-nov15";
+    if (/20克金镯子/i.test(t)) return "cluster:gold-price";
+    if (/deepseek崩了|deepseek服务不可用|^deepseek$|deepseek开放|deepseek api|deepseek五大接口|deepseek开源聊天/i.test(t))
+      return "cluster:deepseek-nov15";
+    if (/boss直聘|拒请咖啡/i.test(t)) return "cluster:boss-coffee-nov15";
+    if (/华为嫡系超聚变/i.test(t)) return "cluster:xfusion-ipo-nov15";
+    if (/华为小米中低端机运存/i.test(t)) return "cluster:hw-mi-ram-nov15";
+    if (/金钟奖|金鐘獎/i.test(t)) return "cluster:golden-bell-nov15";
+    if (/啟欣苑/i.test(t)) return "cluster:kai-yan-court-nov15";
+    if (/巴基斯坦等17国/i.test(t)) return "cluster:gaza-17nations-nov15";
+    if (/本周多领域硬核成果/i.test(t)) return "cluster:hardcore-achievements-nov15";
+    if (/人民日报三问希望小学/i.test(t)) return "cluster:xingping-school-nov15";
+    if (/多部门暗访组调查/i.test(t)) return "cluster:fire-inspection-nov15";
+    if (/国足张玉宁|国足2比0/i.test(t)) return "cluster:cft-nov15";
+    if (/日本對巴西|巴西對日本/i.test(t)) return "cluster:jpn-bra-friendly-nov15";
     if (/outlook|微软.*宕机|microsoft outage|微软多项服务宕机|微软copilot|outlook 死機|outlook死機|微软道歉|传真机时代|金融圈退回/i.test(t))
       return "cluster:ms-outlook-outage-nov13";
-    if (/黄仁勋辞职|黃仁勳辭職|临时女CEO|临时CEO|英伟达市值蒸发|黄仁勋将失去|马斯克回应|nvidia 股價|辉达股价|輝達股價|英伟达临时CEO|黄仁勋4万美元|接替黄仁勋|黄仁勋离职后硅谷|未归属股权|王腾谈黄仁勋|英伟达创18|英伟达女员工|英伟达被微软|英伟达超97|黄仁勋留下|黄仁勋首次全中文|对英伟达亮匕首|最后几小时内幕|英伟达创18个月/i.test(t))
+    if (/黄仁勋辞职|黃仁勳辭職|黄仁勋卸任|黄仁勋一走|黄仁勋离场|黄仁勋离职|临时女CEO|临时CEO|英伟达市值蒸发|黄仁勋将失去|nvidia 股價|辉达股价|輝達股價|英伟达临时CEO|黄仁勋4万美元|接替黄仁勋|黄仁勋离职后硅谷|未归属股权|王腾谈黄仁勋|英伟达创18|英伟达女员工|英伟达被微软|英伟达超97|黄仁勋留下|黄仁勋首次全中文|对英伟达亮匕首|最后几小时内幕|英伟达创18个月|加速国产算力落地|英伟达的中枢瘫了|英伟达离职员工|考验英伟达ai增长|ai项目融资真空/i.test(t))
       return "cluster:nvidia-huang-resign-nov13";
-    if (/推动构建亚太共同体|一组数据读懂apec|深圳盛装喜迎亚太|亚太宾朋|apec“中国年|apec中国年|在深圳科技触手可及|\bapec\b/i.test(t))
+    if (/推动构建亚太共同体|一组数据读懂apec|深圳盛装喜迎亚太|亚太宾朋|apec“中国年|apec中国年|在深圳科技触手可及|\bapec\b|亚太合作之道|4分钟读懂apec|习近平主席妙论亚太/i.test(t))
       return "cluster:sz-apec-nov14";
     if (/全美航班|美国所有航班暂停|911后第二次全美|空管系统故障|地面停飞|美国发生了一件不该发生|\bfaa\b|美國停飛|美高官回应全美停飞|美全国范围实施地面停飞|特朗普说空管|欧航空安全组织|停飞赴美航班/i.test(t))
       return "cluster:faa-ground-stop-nov14";
