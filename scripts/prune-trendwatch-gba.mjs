@@ -117,6 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/习近平将同普京特朗普在深圳会晤|中俄美元首会晤将在深圳举行|习近平的深圳情缘/i.test(t))
+      return "cluster:xi-putin-trump-sz-nov16";
+    if (/世界目光聚焦中国/i.test(t)) return "cluster:sz-apec-nov14";
+    if (/苹果2027年计划发布|6款iphone/i.test(t)) return "cluster:apple-6iphone-2027-nov16";
+    if (/iphoneduo2|iphone duo/i.test(t)) return "cluster:iphone-duo2-nov16";
+    if (/苹果首款智能眼镜/i.test(t)) return "cluster:apple-glasses-nov16";
+    if (/美财长施压英伟达|黄仁勋考虑重返|李国庆说黄仁勋|曝黄仁勋亲自为英伟达|英伟达五千亿美元循环贷/i.test(t))
+      return "cluster:nvidia-huang-resign-nov13";
+    if (/西班牙對英格蘭|spain vs england|西班牙2比3英格兰|英格蘭對西班牙/i.test(t))
+      return "cluster:esp-eng-nov16";
+    if (/new world development|新世界供股|新世界股價/i.test(t)) return "cluster:nwd-halt-nov13";
+    if (/水贝商户|现货黄金回落/i.test(t)) return "cluster:gold-price";
+    if (/国产芯片融资/i.test(t)) return "cluster:cn-chip-financing-nov16";
+    if (/居家机器人/i.test(t)) return "cluster:home-robot-nov16";
+    if (/空气凤梨|深圳湾海关/i.test(t)) return "cluster:sz-air-plant-nov16";
+    if (/美火箭升空10分钟|美火箭未能将亚马逊卫星/i.test(t)) return "cluster:vulcan-amazon-nov16";
+    if (/鸿蒙装机量/i.test(t)) return "cluster:harmonyos-100m-nov16";
+    if (/创投资本撤离具身智能|回流半导体/i.test(t)) return "cluster:vc-embodied-ai-nov16";
+    if (/南北方大片地区气温将创新低/i.test(t)) return "cluster:china-cold-nov16";
+    if (/^a股$|创业板指再创新低/i.test(t)) return "cluster:ashares-nov16";
+    if (/在深圳解锁最酷黑科技/i.test(t)) return "cluster:sz-black-tech-nov16";
+    if (/新闻主播|新聞主播/i.test(t)) return "cluster:hk-news-anchor-nov16";
+    if (/^貧窮$|^贫穷$/i.test(t)) return "cluster:hk-poverty-nov16";
+    if (/肌少症/i.test(t)) return "cluster:sarcopenia-nov16";
+    if (/^折扣$/i.test(t)) return "cluster:hk-senior-day";
+    if (/blg庆功宴|业内谈blg夺冠/i.test(t)) return "cluster:blg-s16-nov15";
+    if (/因outlook故障受伤|因微软故障受伤/i.test(t)) return "cluster:ms-outlook-outage-nov13";
     if (/blg夺冠|blg捧杯|blg一穿四|s16总决赛|s16全球总决赛|中国战队时隔5年|bin成为lpl|bin 世一上|bin夺冠后哭了|bin熬过所有非议|knight s16|knight夺冠|on：24年失败|神bin天降|blg是不是史上|若blg未夺冠雷鸟|雷鸟这双眼睛|blg夺冠刷屏|blg夺冠 b站|blg夺冠b站|blg夺冠tim|viper炸弹人|bin 赛后采访|lol 世界賽 2026|^blg$|中国战队blg|英雄联盟》将全面升级|ruler回应blg|jackeylove谈blg|央视新闻祝贺blg|jdg决赛后发文|暖阳夺冠发文|冠军皮肤/i.test(t))
       return "cluster:blg-s16-nov15";
     if (/马斯克回应spacex|spacex首次实现筷子|星舰超重型助推器/i.test(t))
