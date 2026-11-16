@@ -15,22 +15,23 @@ Galaxy Entertainment (3):
 
 3. **GEG Donates MOP700,000 to Tung Sin Tong to Support Its Annual Fundraising Campaign for the 23rd Consecutive Year** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1217/20261111
-Galaxy Entertainment Group marked its 23rd consecutive year of support for Tung Sin Tong’s annual fundraising campaign with a MOP700,000 donation for the charity’s community services. Since 2004, GEG has donated more than MOP11 million to Tung Sin Tong.
+November 11, 2026 – Upholding its philosophy of “What is taken from the community is to be used for the good of the community”, Galaxy Entertainment Group (“GEG”) has actively supported and participated in various charitable and community initiatives over the years, contributing to the sustainable development of the Macau community. This year, GEG marked its 23rd consecutive year of support for Tung Sin Tong’s…
 
 4. **Mr. Francis Lui Named Asia’s Most Influential Industry Leader for the 10th Time; Advancing Innovation and Industry Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1216/2026-11-06
-Mr. Francis Lui, Chairman of Galaxy Entertainment Group, has been named the most influential industry leader in the 2026 Asian Gaming Power 50 for the 10th time. GEG COO – Macau Kevin Kelley was also named on this year’s list.
+November 6, 2026 – Mr. Francis Lui, Chairman of Galaxy Entertainment Group (“GEG”) , has been named the most influential industry leader in the “2026 Asian Gaming Power 50” for the 10th time. This achievement underscores the leadership and strategic vision he has demonstrated in guiding the continued expansion of GEG’s world-class integrated resort footprint, as well as advancing innovation and high-quality…
 
 5. **GEG Recognized as Top Winner at HR Excellence Awards 2026; Honored with the Grand Winner Award for its Excellence in Talent Development** — Galaxy Entertainment
 https://www.galaxyentertainment.com/en/media/press-releases/1213/20261104
-Galaxy Entertainment Group received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, including the Grand Winner Award. GEG was the only integrated tourism and leisure enterprise in Macau among this year’s recipients, taking five Gold awards plus Silver and Bronze honours covering talent development, employee wellbeing, volunteerism and ESG strategy.
+November 4, 2026 – Galaxy Entertainment Group (“GEG”) continues to support the Macau SAR Government’s policy direction of “Building Macau Through Talent Development” through a diverse and holistic people development strategy aimed at nurturing the workforce needed for the future growth of the industry. Recently, GEG received eight accolades at the HR Excellence Awards 2026, organized by Human Resources Online, a…
 
 Sands China (2):
 
 6. **Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1110-donation-to-caritas_en.pdf
-Sands China donated funds and gifts valued at over MOP 400,000 to Caritas Macau to support the 2026 Charity Run and the 57th Caritas Macau Charity Bazaar, marking 23 consecutive years of support. 150 Sands Cares Ambassadors also volunteered at both events.
+Sands China press: Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run.
 
 7. **Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’** — Sands China Press
 https://assets.sandsresortsmacao.cn/press-release/2026/scl/1110-macau-band-30ann-concert_en.pdf
-Sands China partnered with the Macau Band Directors Association to present the association’s 30th anniversary concert at The Parisian Theatre, coinciding with the 10th anniversary of The Parisian Macao. The events brought together over 550 musicians from Macao and France and drew more than 1,500 attendees.
+Sands China press: Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’.
+

@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-15",
-  "refreshedAt": "2026-11-15T10:54:19+08:00",
+  "updatedAt": "2026-11-16",
+  "refreshedAt": "2026-11-16T11:16:15+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-16",
-  "windowEnd": "2027-05-17",
+  "windowStart": "2026-05-17",
+  "windowEnd": "2027-05-18",
   "count": 129,
   "countries": [
     "Bangladesh",
@@ -843,7 +843,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -860,7 +860,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -894,7 +894,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -928,7 +928,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -945,7 +945,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -962,7 +962,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -979,7 +979,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -996,7 +996,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1013,7 +1013,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1030,7 +1030,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1047,7 +1047,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1064,7 +1064,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1081,7 +1081,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1098,7 +1098,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1115,7 +1115,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1132,7 +1132,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1149,7 +1149,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "group.accor.com",
       "sourceUrl": "https://press.accor.com/the-journey-continues-accors-most-anticipated-2026-openings?lang=eng",
       "sourceName": "Accor 2026 Openings"
@@ -1166,7 +1166,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1183,7 +1183,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1217,7 +1217,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1234,7 +1234,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1251,7 +1251,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1268,7 +1268,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1285,7 +1285,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1302,7 +1302,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1319,7 +1319,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1336,7 +1336,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1370,7 +1370,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
@@ -1387,7 +1387,7 @@
       "openDateLabel": "Q4 2026",
       "openDatePrecision": "quarter",
       "openDateSort": "2026-11-15",
-      "status": "upcoming",
+      "status": "opened",
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
