@@ -117,6 +117,65 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/apec|亚太经合|习近平主席引航亚太|俄美运输机|到访深圳的在任美总统|卡尼抵达深圳|苏林抵达深圳|智利总统.*深圳|智利总统夫人|王兴兴.*apec|apec现场王兴兴|王兴兴低调进入|雷军董明珠王传福李彦宏|华强北生意|华强北什么都能买到|俄记者惊叹深圳华强北|用24小时 看深圳的apec|打工者的拖鞋梳子|还得是深圳|中国办会 为什么连颜色|深圳apec主持人|数说apec|特朗普宣布将访华/i.test(t))
+      return "cluster:sz-apec-nov17";
+    if (/robert pattinson|蝙蝠侠转行当007|james bond|007/i.test(t))
+      return "cluster:pattinson-bond-nov17";
+    if (/巴菲特宣布捐赠|沃伦·巴菲特|^巴菲特$/i.test(t))
+      return "cluster:buffett-donate-nov17";
+    if (/小米辟谣汽车召回|徐洁云辟谣小米汽车召回/i.test(t))
+      return "cluster:xiaomi-recall-sms-nov17";
+    if (/中国超算再夺世界第一|灵晟/i.test(t))
+      return "cluster:sz-supercomputer-nov17";
+    if (/字节只差一个聊天软件/i.test(t))
+      return "cluster:bytedance-chat-nov17";
+    if (/李飞飞正式加入amd|李飞飞出任amd/i.test(t))
+      return "cluster:feifei-amd-nov17";
+    if (/英伟达发布rubin|英伟达推出高性能计算新平台/i.test(t))
+      return "cluster:nvidia-rubin-nov17";
+    if (/首饰金价格跌破|水贝商户|现货黄金回落/i.test(t))
+      return "cluster:gold-price";
+    if (/科创50指数涨超3%|芯片产业链反弹|a股芯片产业链/i.test(t))
+      return "cluster:ashares-chips-nov17";
+    if (/10月货物进出口同比增长/i.test(t))
+      return "cluster:cn-trade-oct-nov17";
+    if (/九部门：加强废旧动力电池|废旧动力电池回收/i.test(t))
+      return "cluster:nev-battery-recycle-nov17";
+    if (/360集团副总裁卜思南/i.test(t))
+      return "cluster:360-businan-nov17";
+    if (/超4500亿.“国家队”|国家队.*资金扫货a股/i.test(t))
+      return "cluster:national-team-ashares-nov17";
+    if (/yoasobi 香港演唱會|yoasobi 演唱會/i.test(t))
+      return "cluster:yoasobi-hk-nov17";
+    if (/大家\s*樂|^大家樂$/i.test(t))
+      return "cluster:cafedecoral-nov17";
+    if (/^將軍澳$/i.test(t)) return "cluster:tko-nov17";
+    if (/^胆固醇$/i.test(t)) return "cluster:cholesterol-nov17";
+    if (/伊隆·馬斯克/i.test(t)) return "cluster:musk-hk-nov17";
+    if (/張家輝演唱會|張家輝大娛樂騷/i.test(t))
+      return "cluster:nickcheung-concert-nov17";
+    if (/周润发组团跑山|乐施毅行者/i.test(t))
+      return "cluster:chow-yunfat-trailwalker-nov17";
+    if (/美国发布ai芯片远程访问|ai芯片1200万tpp|ai芯片新规拖累/i.test(t))
+      return "cluster:us-ai-chip-rule-nov17";
+    if (/17家车企被点名查账/i.test(t))
+      return "cluster:auto-audit-nov17";
+    if (/中核集团原总经理顾军/i.test(t))
+      return "cluster:gujun-cnecc-nov17";
+    if (/段永平减持英伟达/i.test(t))
+      return "cluster:duan-nvidia-nov17";
+    if (/黄仁勋x账号删除ceo|奥尔特曼谈黄仁勋离职/i.test(t))
+      return "cluster:nvidia-huang-resign-nov13";
+    if (/华为门店曝星芒|华为门店称星芒|华为osta|osta星芒/i.test(t))
+      return "cluster:huawei-osta-nov12";
+    if (/苹果2027年或推出18款|苹果2027年新品前瞻|苹果2027年计划发布/i.test(t))
+      return "cluster:apple-6iphone-2027-nov16";
+    if (/iphone20pro四微曲/i.test(t))
+      return "cluster:iphone20-pro-nov12";
+    if (/深圳一机器人6s店|脑控抓娃娃/i.test(t))
+      return "cluster:sz-bci-claw-nov17";
+    if (/ai漫剧看多了觉得真人变丑/i.test(t))
+      return "cluster:ai-manhua";
     if (/习近平将同普京特朗普在深圳会晤|中俄美元首会晤将在深圳举行|习近平的深圳情缘/i.test(t))
       return "cluster:xi-putin-trump-sz-nov16";
     if (/世界目光聚焦中国/i.test(t)) return "cluster:sz-apec-nov14";
