@@ -117,10 +117,24 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/apec|亚太经合|习近平主席引航亚太|俄美运输机|到访深圳的在任美总统|卡尼抵达深圳|苏林抵达深圳|智利总统.*深圳|智利总统夫人|王兴兴.*apec|apec现场王兴兴|王兴兴低调进入|雷军董明珠王传福李彦宏|华强北生意|华强北什么都能买到|俄记者惊叹深圳华强北|用24小时 看深圳的apec|打工者的拖鞋梳子|还得是深圳|中国办会 为什么连颜色|深圳apec主持人|数说apec|特朗普宣布将访华/i.test(t))
+    if (/apec|亚太经合|习近平主席引航亚太|俄美运输机|到访深圳的在任美总统|卡尼抵达深圳|苏林抵达深圳|智利总统.*深圳|智利总统夫人|王兴兴.*apec|apec现场王兴兴|王兴兴低调进入|雷军董明珠王传福李彦宏|华强北生意|华强北什么都能买到|俄记者惊叹深圳华强北|用24小时 看深圳的apec|打工者的拖鞋梳子|还得是深圳|中国办会 为什么连颜色|深圳apec主持人|数说apec|特朗普宣布将访华|元首外交|深圳时间|会见韩国总统李在明|李在明与夫人|李在明夫妇|凌晨接机|中国排面|特朗普将于18日晚抵达深圳|特朗普说去中国|普京抵华|伊尔96|文莱领导人|泰国总理阿努廷|马来西亚总理向三军|董明珠APEC|APEC晚宴|香蜜公园|红旗车全流程|亚太共同体|亚太新机遇|世界湾区经济合作联盟|雷军晒深圳|雷军APEC|王传福王兴雷军/i.test(t))
       return "cluster:sz-apec-nov17";
+    if (/黄仁勋|英伟达明确排除|英伟达员工吐槽|愿回归英伟达|黄仁勋辞职后首次发声/i.test(t))
+      return "cluster:huang-nvidia-nov18";
     if (/robert pattinson|蝙蝠侠转行当007|james bond|007/i.test(t))
       return "cluster:pattinson-bond-nov17";
+    if (/gpt6\.2|openai发布gpt6/i.test(t))
+      return "cluster:gpt62-astra-nov18";
+    if (/deepseek限额|deepseek用户呼吁取消7天/i.test(t))
+      return "cluster:deepseek-limit-nov18";
+    if (/蔚来高管回应爸爸我爱你/i.test(t))
+      return "cluster:nio-lightshow-nov18";
+    if (/供应商快被车企拖死/i.test(t))
+      return "cluster:auto-suppliers-nov18";
+    if (/41人没症状被ai查出早期肠癌/i.test(t))
+      return "cluster:ai-colon-cancer-nov18";
+    if (/金价一直下跌|^黄金$/i.test(t))
+      return "cluster:gold-price-nov18";
     if (/巴菲特宣布捐赠|沃伦·巴菲特|^巴菲特$/i.test(t))
       return "cluster:buffett-donate-nov17";
     if (/小米辟谣汽车召回|徐洁云辟谣小米汽车召回/i.test(t))
