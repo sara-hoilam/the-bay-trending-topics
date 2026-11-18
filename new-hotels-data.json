@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-17",
-  "refreshedAt": "2026-11-17T13:24:36+08:00",
+  "updatedAt": "2026-11-18",
+  "refreshedAt": "2026-11-18T12:37:55+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-18",
-  "windowEnd": "2027-05-19",
-  "count": 131,
+  "windowStart": "2026-05-19",
+  "windowEnd": "2027-05-20",
+  "count": 132,
   "countries": [
     "Bangladesh",
     "China",
@@ -1183,6 +1183,23 @@
       "sourceName": "Accor 2026 Openings"
     },
     {
+      "name": "Mandarin Oriental Makati, Manila",
+      "location": "Manila, Philippines",
+      "country": "Philippines",
+      "region": "asia",
+      "hotelGroup": "Mandarin Oriental",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q4 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-11-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/mandarin-oriental-makati-manila",
+      "sourceName": "The Opening List"
+    },
+    {
       "name": "Mumbai Fort",
       "location": "Mumbai, India",
       "country": "India",
@@ -1472,23 +1489,6 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "Mandarin Oriental Makati, Manila",
-      "location": "Manila, Philippines",
-      "country": "Philippines",
-      "region": "asia",
-      "hotelGroup": "Mandarin Oriental",
-      "stars": 5,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q4 2026",
-      "openDatePrecision": "month",
-      "openDateSort": "2026-12-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/mandarin-oriental-makati-manila",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "NANJU",
       "location": "Okinawa, Japan",
       "country": "Japan",
@@ -1674,6 +1674,23 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "Capella Nanjing",
+      "location": "Nanjing, China",
+      "country": "China",
+      "region": "asia",
+      "hotelGroup": "Capella",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-02-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/capella-nanjing",
+      "sourceName": "The Opening List"
     },
     {
       "name": "Conrad Kuala Lumpur",
