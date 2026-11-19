@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-18",
-  "refreshedAt": "2026-11-18T12:37:55+08:00",
+  "updatedAt": "2026-11-19",
+  "refreshedAt": "2026-11-19T12:26:14+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-19",
-  "windowEnd": "2027-05-20",
+  "windowStart": "2026-05-20",
+  "windowEnd": "2027-05-21",
   "count": 132,
   "countries": [
     "Bangladesh",
@@ -24,6 +24,12 @@
     "Sri Lanka",
     "Thailand",
     "Vietnam"
+  ],
+  "sourceErrors": [
+    {
+      "domain": "ihg.com",
+      "error": "IHG page unreachable (bot protection)"
+    }
   ],
   "hotels": [
     {
@@ -2054,7 +2060,7 @@
       "location": "Yufuin, Japan",
       "country": "Japan",
       "region": "asia",
-      "hotelGroup": "Independent",
+      "hotelGroup": "seven x seven",
       "stars": 5,
       "websiteUrl": null,
       "openDate": null,
