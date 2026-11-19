@@ -117,8 +117,32 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
-    if (/apec|亚太经合|习近平主席引航亚太|俄美运输机|到访深圳的在任美总统|卡尼抵达深圳|苏林抵达深圳|智利总统.*深圳|智利总统夫人|王兴兴.*apec|apec现场王兴兴|王兴兴低调进入|雷军董明珠王传福李彦宏|华强北生意|华强北什么都能买到|俄记者惊叹深圳华强北|用24小时 看深圳的apec|打工者的拖鞋梳子|还得是深圳|中国办会 为什么连颜色|深圳apec主持人|数说apec|特朗普宣布将访华|元首外交|深圳时间|会见韩国总统李在明|李在明与夫人|李在明夫妇|凌晨接机|中国排面|特朗普将于18日晚抵达深圳|特朗普说去中国|普京抵华|伊尔96|文莱领导人|泰国总理阿努廷|马来西亚总理向三军|董明珠APEC|APEC晚宴|香蜜公园|红旗车全流程|亚太共同体|亚太新机遇|世界湾区经济合作联盟|雷军晒深圳|雷军APEC|王传福王兴雷军/i.test(t))
-      return "cluster:sz-apec-nov17";
+    if (/gta\s*6|gta6|《gta 6》/i.test(t)) return "cluster:gta6-launch-nov19";
+    if (/張德康|张德康/i.test(t)) return "cluster:cuhk-cheung-tak-hong-nov19";
+    if (/mate90air|mate 90 air|华为最薄mate|华为将发布新款轻薄|华为mate90air|90air或刷新|何刚官宣两款超薄|华为将发布首款超薄智能手表|watchair|watch air|数码闲聊站称华为watch|数码闲聊站曝华为mate90/i.test(t))
+      return "cluster:huawei-mate90-air-nov19";
+    if (/deepseek算力|deepseek适配华为cann/i.test(t))
+      return "cluster:deepseek-compute-nov19";
+    if (/格力电器成被执行人|格力业绩下滑/i.test(t))
+      return "cluster:gree-zhuhai-nov19";
+    if (/微软6万员工|自愿离职资格/i.test(t))
+      return "cluster:msft-vsp-nov19";
+    if (/mega召回|宁德曾建议大事化小/i.test(t))
+      return "cluster:nio-mega-recall-nov19";
+    if (/英伟达承诺12月加薪/i.test(t))
+      return "cluster:nvidia-raise-nov19";
+    if (/马斯克现身特朗普车队|马斯克已到深圳/i.test(t))
+      return "cluster:musk-sz-apec-nov19";
+    if (/领克07gt/i.test(t)) return "cluster:lynxk-07gt-nov19";
+    if (/微信及wechat月活|微信比qq多/i.test(t)) return "cluster:wechat-mau-nov19";
+    if (/雷军称真正挣钱的ai|雷军在深圳回答/i.test(t)) return "cluster:leijun-sz-apec-nov19";
+    if (/芦玉菲/i.test(t)) return "cluster:lu-yufei-pension-nov19";
+    if (/豆包画13个鸡蛋|豆包画不对13个鸡蛋|豆包工作日活/i.test(t))
+      return "cluster:doubao-eggs-nov19";
+    if (/apec机器人咖啡师|apec会议礼宾车|apec礼宾车|外交跑腿天团/i.test(t))
+      return "cluster:sz-apec-nov19";
+    if (/apec|亚太经合|与时偕行|共创亚太|习近平主持apec|中俄美元首|普京沿红毯|普京笔不离手|特朗普谈欢迎仪式|特朗普和普京握手|特朗普晚宴后回酒店|白宫发布特朗普访华|特朗普在车内|特朗普感激中国|特朗普普京等步入会场|特朗普在车内向民众挥手|外媒记者点赞深圳|从一枚车厘子读懂亚太|世纪晚宴菜单|apec欢迎晚宴|集体合影前外宾|全世界都在等中俄美|围观特朗普不耽误深圳|希望我的祖国也能有一个深圳|习近平主席引航亚太|俄美运输机|到访深圳的在任美总统|卡尼抵达深圳|苏林抵达深圳|智利总统.*深圳|智利总统夫人|王兴兴.*apec|apec现场王兴兴|王兴兴低调进入|雷军董明珠王传福李彦宏|华强北生意|华强北什么都能买到|俄记者惊叹深圳华强北|用24小时 看深圳的apec|打工者的拖鞋梳子|还得是深圳|中国办会 为什么连颜色|深圳apec主持人|数说apec|特朗普宣布将访华|元首外交|深圳时间|会见韩国总统李在明|李在明与夫人|李在明夫妇|凌晨接机|中国排面|特朗普将于18日晚抵达深圳|特朗普说去中国|普京抵华|伊尔96|文莱领导人|泰国总理阿努廷|马来西亚总理向三军|董明珠APEC|APEC晚宴|香蜜公园|红旗车全流程|亚太共同体|亚太新机遇|世界湾区经济合作联盟|雷军晒深圳|雷军APEC|王传福王兴雷军/i.test(t))
+      return "cluster:sz-apec-nov19";
     if (/黄仁勋|英伟达明确排除|英伟达员工吐槽|愿回归英伟达|黄仁勋辞职后首次发声/i.test(t))
       return "cluster:huang-nvidia-nov18";
     if (/robert pattinson|蝙蝠侠转行当007|james bond|007/i.test(t))
