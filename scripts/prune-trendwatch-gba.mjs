@@ -117,6 +117,32 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/看看人家深圳|特朗普说看看深圳|特朗普说深圳干净整洁|特朗普称赞深圳|深圳人又开始原装出街/i.test(t))
+      return "cluster:trump-praises-sz-nov21";
+    if (/黎曼猜想|riemann hypothesis|ai疑证明黎曼|ai证明黎曼|陶哲轩回应ai证明/i.test(t))
+      return "cluster:riemann-ai-nov21";
+    if (/anthropic/i.test(t)) return "cluster:anthropic-ipo-nov21";
+    if (/寒冷天氣警告|降雨、暴雪、大风|新一轮冷空气/i.test(t))
+      return "cluster:hk-cold-weather-nov21";
+    if (/金价银价大跳水|黄金跌到7字头|金价下跌花同样的钱|金市风险|菜百金条/i.test(t))
+      return "cluster:gold-silver-nov21";
+    if (/华尔街上演|美股崩跌|纳指今年涨幅|美股 ai泡沫|美股ai股遭抛售|英伟达市值掉了|大空头.*英伟达|英伟达遭sec|但斌称纳指/i.test(t))
+      return "cluster:us-ai-stocks-nov21";
+    if (/特朗普称不支持.“台独”|特朗普称不支持“台独”/i.test(t))
+      return "cluster:trump-taiwan-nov21";
+    if (/澳門賽車2026|macau grand prix/i.test(t)) return "cluster:macau-gp-nov21";
+    if (/不允许美企海外建数据中心/i.test(t)) return "cluster:trump-datacenter-nov21";
+    if (/高市搭讪特朗普|高市早苗拍特朗普|日网民吐槽高市/i.test(t))
+      return "cluster:takaichi-apec-nov21";
+    if (/腾讯姚顺雨|混元任何问题/i.test(t)) return "cluster:tencent-hunyuan-nov21";
+    if (/比亚迪折叠方向盘/i.test(t)) return "cluster:byd-yoke-nov21";
+    if (/问界m9车主开辅助驾驶熟睡|余承东纠正l3|余承东称l3|余承东称现在l2|余承东称现在还是l2|享界v8/i.test(t))
+      return "cluster:huawei-l3-sleep-nov21";
+    if (/像大鹏一样展翅高飞|多国领导人感谢中国|apec欢迎晚宴大厨|特朗普：中俄美元首会晤|特朗普涉中俄美最新表态/i.test(t))
+      return "cluster:sz-apec-nov19";
+    if (/世界首个、蝉联榜首|多领域捷报频传/i.test(t))
+      return "cluster:sz-supercomputer-nov17";
+    if (/袁记云饺|中国最大饺子店要上市/i.test(t)) return "cluster:yuanji-hkipo-nov21";
     if (/gta\s*6|gta6|《gta 6》/i.test(t)) return "cluster:gta6-launch-nov19";
     if (/張德康|张德康/i.test(t)) return "cluster:cuhk-cheung-tak-hong-nov19";
     if (/mate90air|mate 90 air|华为最薄mate|华为将发布新款轻薄|华为mate90air|90air或刷新|何刚官宣两款超薄|华为将发布首款超薄智能手表|watchair|watch air|数码闲聊站称华为watch|数码闲聊站曝华为mate90/i.test(t))
