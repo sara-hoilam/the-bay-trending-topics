@@ -1,12 +1,12 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-19",
-  "refreshedAt": "2026-11-19T12:26:14+08:00",
+  "updatedAt": "2026-11-21",
+  "refreshedAt": "2026-11-21T12:18:39+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-20",
-  "windowEnd": "2027-05-21",
-  "count": 132,
+  "windowStart": "2026-05-22",
+  "windowEnd": "2027-05-23",
+  "count": 134,
   "countries": [
     "Bangladesh",
     "China",
@@ -24,12 +24,6 @@
     "Sri Lanka",
     "Thailand",
     "Vietnam"
-  ],
-  "sourceErrors": [
-    {
-      "domain": "ihg.com",
-      "error": "IHG page unreachable (bot protection)"
-    }
   ],
   "hotels": [
     {
@@ -744,6 +738,23 @@
       "status": "opened",
       "sourceDomain": "theopeninglist.com",
       "sourceUrl": "https://theopeninglist.com/hotels/banyan-tree-guangzhou-jiulong-lake",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Moxy Niseko Village",
+      "location": "Niseko, Japan",
+      "country": "Japan",
+      "region": "asia",
+      "hotelGroup": "Moxy",
+      "stars": 2,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q3 2026",
+      "openDatePrecision": "month",
+      "openDateSort": "2026-09-15",
+      "status": "opened",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/moxy-niseko-village",
       "sourceName": "The Opening List"
     },
     {
@@ -1614,23 +1625,6 @@
       "sourceName": "The Opening List"
     },
     {
-      "name": "KARV Jimbaran",
-      "location": "Bali, Indonesia",
-      "country": "Indonesia",
-      "region": "asia",
-      "hotelGroup": "Independent",
-      "stars": null,
-      "websiteUrl": null,
-      "openDate": null,
-      "openDateLabel": "Q1 2027",
-      "openDatePrecision": "month",
-      "openDateSort": "2027-01-15",
-      "status": "upcoming",
-      "sourceDomain": "theopeninglist.com",
-      "sourceUrl": "https://theopeninglist.com/hotels/karv-jimbaran-bali",
-      "sourceName": "The Opening List"
-    },
-    {
       "name": "A Luxury Collection Resort & Spa",
       "location": "Jimbaran, Bali, Indonesia",
       "country": "Indonesia",
@@ -2003,6 +1997,40 @@
       "sourceDomain": "marriott.com",
       "sourceUrl": "https://www.marriott.com/en-us/marriott-brands/portfolio/openings.mi",
       "sourceName": "Marriott Bonvoy Openings"
+    },
+    {
+      "name": "KARV Jimbaran Bali",
+      "location": "Bali, Indonesia",
+      "country": "Indonesia",
+      "region": "asia",
+      "hotelGroup": "Independent",
+      "stars": null,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/karv-jimbaran-bali",
+      "sourceName": "The Opening List"
+    },
+    {
+      "name": "Mandarin Oriental Hangzhou",
+      "location": "Hangzhou, China",
+      "country": "China",
+      "region": "asia",
+      "hotelGroup": "Mandarin Oriental",
+      "stars": 5,
+      "websiteUrl": null,
+      "openDate": null,
+      "openDateLabel": "Q1 2027",
+      "openDatePrecision": "month",
+      "openDateSort": "2027-03-15",
+      "status": "upcoming",
+      "sourceDomain": "theopeninglist.com",
+      "sourceUrl": "https://theopeninglist.com/hotels/mandarin-oriental-hangzhou",
+      "sourceName": "The Opening List"
     },
     {
       "name": "ONE BANYAN Amaraa Faru",
