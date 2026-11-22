@@ -117,6 +117,35 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/claude lean|25万页ai黎曼|机构认证：claude证明|邓煜谈ai证明黎曼|邓煜回应ai证明黎曼|ai证明黎曼猜想传闻/i.test(t))
+      return "cluster:riemann-ai-nov21";
+    if (/特朗普回应深圳乘车|特朗普深圳不拉窗帘/i.test(t))
+      return "cluster:trump-sz-curtains-nov22";
+    if (/为推动亚太合作行稳致远|apec“中国年”留下这些珍贵瞬间/i.test(t))
+      return "cluster:sz-apec-nov19";
+    if (/金价跌势凌厉|金饰克价年内大跌|金价连跌想买想卖|国际金价为何持续下跌/i.test(t))
+      return "cluster:gold-silver-nov21";
+    if (/方力申/i.test(t)) return "cluster:alex-fong-swim-nov22";
+    if (/華倫·巴菲特|^巴菲特$/i.test(t)) return "cluster:buffett-donate-nov17";
+    if (/羽绒服生意变天了|羽绒服越来越像时装|399元和3万元羽绒服/i.test(t))
+      return "cluster:down-jacket-nov22";
+    if (/习近平总书记广东行/i.test(t)) return "cluster:xi-guangdong-nov22";
+    if (/菲律宾总统涉华/i.test(t)) return "cluster:ph-president-china-nov22";
+    if (/特斯拉在美推出fsd/i.test(t)) return "cluster:tesla-fsd-nov22";
+    if (/英伟达被曝会计/i.test(t)) return "cluster:nvidia-accounting-nov22";
+    if (/原价129万一针的药/i.test(t)) return "cluster:cart-yibao-nov22";
+    if (/中方回应美拟禁止中国企业获取美号码/i.test(t))
+      return "cluster:us-phone-ban-nov22";
+    if (/宇树机器人打了6分钟/i.test(t)) return "cluster:unitree-boxing-nov22";
+    if (/墨西哥总统迷上八段锦/i.test(t)) return "cluster:sz-apec-nov19";
+    if (/从琼崖烽火到开放自贸港/i.test(t)) return "cluster:hainan-ftp-nov22";
+    if (/深圳高清卫星影像/i.test(t)) return "cluster:sz-satellite-nov22";
+    if (/假deepseek网站/i.test(t)) return "cluster:fake-deepseek-nov22";
+    if (/神舟二十四号|神二十四|神24发射/i.test(t)) return "cluster:shenzhou-24-nov22";
+    if (/日媒逐帧解析特朗普无视高市/i.test(t)) return "cluster:takaichi-apec-nov21";
+    if (/特朗普：将与伊朗达成|特朗普施压停战泽连斯基/i.test(t))
+      return "cluster:trump-iran-ukraine-nov22";
+    if (/央视揭秘网络女主播/i.test(t)) return "cluster:cctv-livestream-nov22";
     if (/看看人家深圳|特朗普说看看深圳|特朗普说深圳干净整洁|特朗普称赞深圳|深圳人又开始原装出街/i.test(t))
       return "cluster:trump-praises-sz-nov21";
     if (/黎曼猜想|riemann hypothesis|ai疑证明黎曼|ai证明黎曼|陶哲轩回应ai证明/i.test(t))
