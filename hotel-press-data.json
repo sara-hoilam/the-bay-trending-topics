@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
   "updatedAt": "2026-11-22",
-  "refreshedAt": "2026-11-22T11:17:19+08:00",
+  "refreshedAt": "2026-11-22T11:22:36+08:00",
   "windowDays": 14,
   "windowStart": "2026-11-08",
   "windowEnd": "2026-11-22",
-  "count": 10,
+  "count": 6,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -29,7 +29,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China unveiled The Hall of Glory – Iec Long Firecracker Factory, a new permanent attraction on the former factory site as part of its community revitalization work with the Macao SAR government. Developed with new media artists Professors Jeffrey Shaw and Sarah Kenderdine plus local academics, the interactive exhibition preserves Macao’s century-old firecracker heritage as a community tourism landmark.",
+      "summary": "Sands China press: Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’.",
       "rank": 1
     },
     {
@@ -42,7 +42,7 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "Galaxy Entertainment Group is working with Macau’s Labour Affairs Bureau (DSAL) and local organizations on professional training and certification for team members. Since the start of 2026, about 1,500 local team members have completed more than 16,000 training hours, including Macau’s first advanced Chinese cuisine chef occupational skill assessment at an integrated resort.",
+      "summary": "November 12, 2026 – Galaxy Entertainment Group (“GEG”) has long supported the Macau SAR Government’s policy direction of “Building Macau through Talent Training”. Through continued investment in local talent development, systematic training, skills enhancement and professional qualification certification, GEG supports team members in expanding their career development opportunities. GEG has maintained close…",
       "rank": 2
     },
     {
@@ -68,34 +68,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "Galaxy Entertainment Group donated MOP700,000 to Tung Sin Tong’s annual fundraising campaign, its 23rd consecutive year of support. Since 2004, GEG has donated more than MOP11 million to the charity.",
+      "summary": "November 11, 2026 – Upholding its philosophy of “What is taken from the community is to be used for the good of the community”, Galaxy Entertainment Group (“GEG”) has actively supported and participated in various charitable and community initiatives over the years, contributing to the sustainable development of the Macau community. This year, GEG marked its 23rd consecutive year of support for Tung Sin Tong’s…",
       "rank": 4
-    },
-    {
-      "title": "Sands China Supports Tung Sin Tong’s Annual Fundraising Campaign for 23rd Consecutive Year",
-      "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1111-tst-cheque_en.pdf",
-      "posted": "2026-11-11",
-      "rawDate": "Nov.11 Sands China Supports Tung Sin Tong’s Annual Fundraising Campaign for 23rd Consecutive Year",
-      "hotelGroup": "Sands China",
-      "sourceName": "Sands China Press",
-      "sourceDomain": "en.sandsresortsmacao.com",
-      "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
-      "kind": "good-news",
-      "summary": "Sands China donated MOP 700,000 to the Macau Tung Sin Tong Charitable Society at The Venetian Macao, marking 23 consecutive years of support for the charity’s annual fundraising campaign.",
-      "rank": 5
-    },
-    {
-      "title": "MGM Learning Festival 2026 Opens to Advance Government–Academia–Industry Collaboration in Talent Development",
-      "url": "https://en.mgmchinaholdings.com/media-releases?item=878",
-      "posted": "2026-11-10",
-      "rawDate": "Nov 10, 2026",
-      "hotelGroup": "MGM China",
-      "sourceName": "MGM China",
-      "sourceDomain": "en.mgmchinaholdings.com",
-      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
-      "kind": "good-news",
-      "summary": "MGM, DSEDJ and DSAL opened the MGM Learning Festival 2026 at MGM COTAI on November 5, bringing together more than 30 government departments, professional bodies and schools to expand learning pathways for team members. MGM, the Macau Institute of Management and Zhejiang University signed an MoU, and three talent programmes were introduced covering academic advancement, professional skills and Chinese cultural literacy.",
-      "rank": 6
     },
     {
       "title": "Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run",
@@ -107,8 +81,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China donated funds and gifts valued at over MOP 400,000 to Caritas Macau for the 2026 Charity Run and 57th Charity Bazaar, its 23rd consecutive year of support. 150 Sands Cares Ambassadors volunteered at both events.",
-      "rank": 7
+      "summary": "Sands China press: Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run.",
+      "rank": 5
     },
     {
       "title": "Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’",
@@ -120,34 +94,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China partnered with the Macau Band Directors Association to present the association’s 30th Anniversary Concert at The Parisian Theatre, also marking The Parisian Macao’s 10th anniversary. More than 550 musicians from Macao and France performed for an audience of over 1,500.",
-      "rank": 8
-    },
-    {
-      "title": "MGM Supports Tung Sin Tong’s Annual Charity Event for the 19th Consecutive Year",
-      "url": "https://en.mgmchinaholdings.com/media-releases?item=877",
-      "posted": "2026-11-09",
-      "rawDate": "Nov 09, 2026",
-      "hotelGroup": "MGM China",
-      "sourceName": "MGM China",
-      "sourceDomain": "en.mgmchinaholdings.com",
-      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
-      "kind": "good-news",
-      "summary": "MGM donated MOP700,000 to Tung Sin Tong’s annual fundraising campaign, its 19th consecutive year of support, bringing cumulative donations to MOP10 million.",
-      "rank": 9
-    },
-    {
-      "title": "SJM Successfully Hosts the 2026 World Alba White Truffle Charity Auction",
-      "url": "https://www.sjmholdings.com/resources/images/uploads/web-press-release_sjm-sucessfully-hosts-the-2026-world-alba-white-truffle-charity-auction.pdf",
-      "posted": "2026-11-09",
-      "rawDate": "09 Nov 2026",
-      "hotelGroup": "SJM",
-      "sourceName": "SJM Holdings",
-      "sourceDomain": "sjmholdings.com",
-      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
-      "kind": "good-news",
-      "summary": "SJM hosted the 2026 World Alba White Truffle Charity Auction at Don Alfonso 1890 at Grand Lisboa Palace, with a live link to the World Alba White Truffle Auction in Piedmont. An 850g white truffle sold for €100,000; proceeds will benefit the Charity Fund from the Readers of Macao Daily News (43rd Walk for a Million) and Tung Sin Tong’s 2026 fundraising campaign.",
-      "rank": 10
+      "summary": "Sands China press: Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’.",
+      "rank": 6
     }
   ]
 }
