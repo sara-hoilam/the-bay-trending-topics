@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-11-22",
-  "refreshedAt": "2026-11-22T11:22:36+08:00",
+  "updatedAt": "2026-11-23",
+  "refreshedAt": "2026-11-23T12:03:06+08:00",
   "windowDays": 14,
-  "windowStart": "2026-11-08",
-  "windowEnd": "2026-11-22",
-  "count": 6,
+  "windowStart": "2026-11-09",
+  "windowEnd": "2026-11-23",
+  "count": 8,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -29,7 +29,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’.",
+      "summary": "Since joining the Macao SAR government’s historic-district revitalisation effort in 2023, Sands China has unveiled The Hall of Glory – Iec Long Firecracker Factory, a new permanent attraction on the original site. Developed with digital heritage experts Professor Jeffrey Shaw and Professor Sarah Kenderdine plus local academics, the interactive exhibition focuses on passing down Macao’s century-old firecracker culture.",
       "rank": 1
     },
     {
@@ -42,7 +42,7 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "November 12, 2026 – Galaxy Entertainment Group (“GEG”) has long supported the Macau SAR Government’s policy direction of “Building Macau through Talent Training”. Through continued investment in local talent development, systematic training, skills enhancement and professional qualification certification, GEG supports team members in expanding their career development opportunities. GEG has maintained close…",
+      "summary": "Galaxy Entertainment Group has long supported Macau’s “Building Macau through Talent Training” policy; since the beginning of 2026, around 1,500 local team members have completed over 16,000 training hours. Through the GEG Chef Development Program, GEG became the first integrated tourism and leisure enterprise in Macau to run DSAL and FAOM advanced Chinese cuisine chef occupational skill assessments for team members.",
       "rank": 2
     },
     {
@@ -68,7 +68,7 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "November 11, 2026 – Upholding its philosophy of “What is taken from the community is to be used for the good of the community”, Galaxy Entertainment Group (“GEG”) has actively supported and participated in various charitable and community initiatives over the years, contributing to the sustainable development of the Macau community. This year, GEG marked its 23rd consecutive year of support for Tung Sin Tong’s…",
+      "summary": "Galaxy Entertainment Group marked its 23rd consecutive year of support for Tung Sin Tong’s annual fundraising campaign with a donation of MOP700,000. Since 2004, GEG has donated more than MOP11 million to Tung Sin Tong.",
       "rank": 4
     },
     {
@@ -81,7 +81,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Donates Over MOP 400,000 in Funds and Prizes to Support Caritas Macau Bazaar and Charity Run.",
+      "summary": "Sands China donated funds and gifts valued at over MOP 400,000 to Caritas Macau for the Charity Run of Caritas Macau 2026 and the 57th Caritas Macau Charity Bazaar, marking 23 consecutive years of support. 150 Sands Cares Ambassador volunteers also took part in both events.",
       "rank": 5
     },
     {
@@ -94,8 +94,34 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Performing Arts Programme Presents: ‘Macau Band Directors Association 30th Anniversary Concert’.",
+      "summary": "Sands China partnered with the Macau Band Directors Association to present the association’s 30th anniversary concert at The Parisian Theatre, marking the 10th anniversary of The Parisian Macao. The two events brought together over 550 musicians from Macao and France and drew a total audience of over 1,500.",
       "rank": 6
+    },
+    {
+      "title": "MGM Supports Tung Sin Tong’s Annual Charity Event for the 19th Consecutive Year",
+      "url": "https://en.mgmchinaholdings.com/media-releases?item=877",
+      "posted": "2026-11-09",
+      "rawDate": "Nov 09, 2026",
+      "hotelGroup": "MGM China",
+      "sourceName": "MGM China",
+      "sourceDomain": "en.mgmchinaholdings.com",
+      "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
+      "kind": "good-news",
+      "summary": "MGM donated MOP700,000 this year to support Tung Sin Tong’s annual fundraising campaign, marking the 19th consecutive year of support and bringing cumulative donations to MOP10 million.",
+      "rank": 7
+    },
+    {
+      "title": "SJM Successfully Hosts the 2026 World Alba White Truffle Charity Auction",
+      "url": "https://www.sjmholdings.com/resources/images/uploads/web-press-release_sjm-sucessfully-hosts-the-2026-world-alba-white-truffle-charity-auction.pdf",
+      "posted": "2026-11-09",
+      "rawDate": "09 Nov 2026",
+      "hotelGroup": "SJM",
+      "sourceName": "SJM Holdings",
+      "sourceDomain": "sjmholdings.com",
+      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
+      "kind": "good-news",
+      "summary": "SJM hosted the 2026 World Alba White Truffle Charity Auction at Don Alfonso 1890 at Grand Lisboa Palace, with a live link to the World Alba White Truffle Auction in Piedmont. An 850g white truffle sold for €100,000, and proceeds will benefit the Charity Fund from the Readers of Macao Daily News (43rd Walk for a Million) and Macau Tung Sin Tong’s 2026 annual fundraising campaign.",
+      "rank": 8
     }
   ]
 }
