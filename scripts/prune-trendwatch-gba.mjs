@@ -117,6 +117,36 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/^omart$|omart megabox|omart hk/i.test(t)) return "cluster:omart-megabox-nov22";
+    if (/寶勒巷|尖沙咀車禍|尖沙咀宝勒巷/i.test(t)) return "cluster:bowrington-crash-nov22";
+    if (/利物浦對曼聯|曼聯對利物浦|馬泰斯·德里赫特|liverpool vs man|matthijs de ligt/i.test(t))
+      return "cluster:liv-mun-nov22";
+    if (/陳健波|陈健波/i.test(t)) return "cluster:chan-kin-por-ha-nov23";
+    if (/小一自行分配學位|自行分配學位|小一派位/i.test(t)) return "cluster:poa-discretionary-nov23";
+    if (/张雪回应给外卖员做电摩|张雪称外卖电摩|张雪计划推出外卖骑手电摩|张雪将推外卖骑手电摩/i.test(t))
+      return "cluster:zhangxue-emoto-zhuhai-nov22";
+    if (/小鹏ngp率先开放欧洲|小鹏汇天a868|a868飞行汽车/i.test(t))
+      return "cluster:xpeng-ngp-a868-nov23";
+    if (/三个时间坐标 读懂apec|特朗普深圳行照片14张|日本网友对比石破茂与高市apec/i.test(t))
+      return "cluster:sz-apec-nov19";
+    if (/某部委机关干部因犯间谍罪|某部委员工与间谍合作泄密/i.test(t))
+      return "cluster:spy-death-sentence-nov23";
+    if (/129万一支抗癌药进医保|原价129万一针的药/i.test(t)) return "cluster:cart-yibao-nov22";
+    if (/上交所、深交所、北交所打出重磅组合拳|上交所推动修订科创板做市规则|A股迎来三大利好|^a股$/i.test(t))
+      return "cluster:exchange-combo-nov22";
+    if (/余承东回应问界m7|余承东官宣问界新m7|问界新m8大规模交付|华为mate90air/i.test(t))
+      return "cluster:huawei-wenjie-nov23";
+    if (/金银价格双双上涨|华尔街：黄金已跌入超卖区域/i.test(t)) return "cluster:gold-silver-nov21";
+    if (/用魔力擦洗碗的人天塌了/i.test(t)) return "cluster:sz-magic-eraser-nov23";
+    if (/幼儿园要招2岁孩子了/i.test(t)) return "cluster:toddler-kindergarten-nov23";
+    if (/石破茂就中日关系再批高市早苗/i.test(t)) return "cluster:takaichi-apec-nov21";
+    if (/特朗普：美股下跌100%怪民主党|特朗普对菲开条件/i.test(t))
+      return "cluster:trump-markets-ph-nov23";
+    if (/赖清德沈伯洋穿日本祭祀服/i.test(t)) return "cluster:lai-shen-nov23";
+    if (/首次！055大驱向公众开放/i.test(t)) return "cluster:zhuhai-airshow-055-nov23";
+    if (/陶哲轩称没从ai证明中学到数学|黎曼猜想/i.test(t)) return "cluster:riemann-ai-nov21";
+    if (/fsdv15|特斯拉fsdv15|特斯拉在美推出fsd/i.test(t)) return "cluster:tesla-fsd-nov22";
+    if (/贝森特要求英伟达说明合规文化/i.test(t)) return "cluster:nvidia-bessent-nov23";
     if (/claude lean|25万页ai黎曼|机构认证：claude证明|邓煜谈ai证明黎曼|邓煜回应ai证明黎曼|ai证明黎曼猜想传闻/i.test(t))
       return "cluster:riemann-ai-nov21";
     if (/特朗普回应深圳乘车|特朗普深圳不拉窗帘/i.test(t))
