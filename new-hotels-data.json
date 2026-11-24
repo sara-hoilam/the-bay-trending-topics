@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (New Hotels)",
   "scope": "Asia and Portugal only",
-  "updatedAt": "2026-11-23",
-  "refreshedAt": "2026-11-23T12:07:53+08:00",
+  "updatedAt": "2026-11-24",
+  "refreshedAt": "2026-11-24T15:15:57+08:00",
   "windowMonths": 6,
-  "windowStart": "2026-05-24",
-  "windowEnd": "2027-05-25",
+  "windowStart": "2026-05-25",
+  "windowEnd": "2027-05-26",
   "count": 137,
   "countries": [
     "Bangladesh",
