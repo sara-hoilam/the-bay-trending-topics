@@ -117,6 +117,33 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/陈吉宁|陳吉寧/i.test(t)) return "cluster:chen-jining-nov25";
+    if (
+      /神舟二十四|神舟24|神24发射|神24与空间站|巴基斯坦航天|巴基斯坦人齐唱|中国空间站第1次|中国人上太空从不足|中国航天.“神图”|神23神24航天员|巴航天官员|汤洪波母亲|神舟二十四号发射成功/i.test(
+        t,
+      )
+    )
+      return "cluster:shenzhou-24-nov25";
+    if (/国台办回应|特朗普称不支持台独|高市早苗最新涉台|高市别在世界舞台/i.test(t))
+      return "cluster:tao-takaichi-nov25";
+    if (/一老一小|护卫银发与童心|警惕针对一老一小/i.test(t))
+      return "cluster:old-young-care-nov25";
+    if (/港怡醫院/i.test(t)) return "cluster:gleneagles-leak-nov25";
+    if (/^水位$/i.test(t)) return "cluster:hk-water-level-nov25";
+    if (/六合彩/i.test(t)) return "cluster:marksix-nov25";
+    if (/欧冠|歐冠|champions league|阿仙奴對多蒙特|曼城對拿坡里/i.test(t))
+      return "cluster:ucl-nov25";
+    if (/可口可乐不再标生产日期/i.test(t)) return "cluster:coke-date-nov25";
+    if (/舒某某/i.test(t)) return "cluster:shu-extradition-nov25";
+    if (/^黄金$|黄金历史上最大的几次暴跌/i.test(t)) return "cluster:gold-nov25";
+    if (/港漂/i.test(t)) return "cluster:hk-gangpiao-nov25";
+    if (/伊朗\s*婦女|伊朗婦女/i.test(t)) return "cluster:iran-women-nov25";
+    if (/小米汽车利润/i.test(t)) return "cluster:xiaomi-auto-profit-nov25";
+    if (/两年近30家机器人/i.test(t)) return "cluster:robot-startups-nov25";
+    if (/个人养老金/i.test(t)) return "cluster:personal-pension-nov25";
+    if (/马斯克说上海跳舞/i.test(t)) return "cluster:musk-shanghai-ai-nov25";
+    if (/nio in 2026|蔚来创新科技日/i.test(t)) return "cluster:nio-in-2026-nov25";
+    if (/德国外长震惊|从未见过这样的干预/i.test(t)) return "cluster:huang-nvidia-nov18";
     if (/^omart$|omart megabox|omart hk/i.test(t)) return "cluster:omart-megabox-nov22";
     if (/寶勒巷|尖沙咀車禍|尖沙咀宝勒巷/i.test(t)) return "cluster:bowrington-crash-nov22";
     if (/利物浦對曼聯|曼聯對利物浦|馬泰斯·德里赫特|liverpool vs man|matthijs de ligt/i.test(t))
