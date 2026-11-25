@@ -1,0 +1,34 @@
+THE BAY: Hotel Press
+Date: 25 November 2026 · 6 articles · method: hotel-press-agent-prompt (14-day awards & good news)
+
+Sands China (2):
+
+1. **Sands China Hosts Community Events to Support 73rd Macau Grand Prix** — Sands China Press
+https://assets.sandsresortsmacao.cn/press-release/2026/scl/1122-macau-gp_en.pdf
+Sands China was a major sponsor of the 73rd Macau Grand Prix (Nov. 19–22) and organized community activities around event week, inviting members of local social service organizations to share in the races. Through the Sands Cares programme, families from Caritas Macau visited the Macao Grand Prix Museum, previewed the Street Steel bike gallery at Sands Macao, and attended the Guia Circuit.
+
+2. **Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’** — Sands China Press
+https://assets.sandsresortsmacao.cn/press-release/2026/scl/1117-the-hall-of-glory-opening_en.pdf
+Sands China has unveiled The Hall of Glory – Iec Long Firecracker Factory, a new permanent attraction on the original site of the former factory, as part of its community revitalization work with the Macao SAR government since 2023. The interactive exhibition, developed with new media artists Professor Jeffrey Shaw and Professor Sarah Kenderdine plus local and international teams, focuses on passing down Macao’s century-old firecracker culture.
+
+MGM China (1):
+
+3. **MGM Wins Gold and Silver at CIHAPB Community Intelligent Housing Award (Greater Bay Area) 2026** — MGM China
+https://en.mgmchinaholdings.com/media-releases?item=880
+MGM COTAI and MGM MACAU have been honored with the Gold Award and Silver Award, respectively, in the Hospitality Category of the CIHAPB Community Intelligent Housing Award (Greater Bay Area) 2026, organized by the Chartered Institute of Housing Asian Pacific Branch. MGM was the only one of Macau’s six integrated resort operators to receive an award.
+
+Galaxy Entertainment (2):
+
+4. **GEG Collaborates with DSAL and Local Organizations to Support the Professional Growth of Local Team Members** — Galaxy Entertainment
+https://www.galaxyentertainment.com/en/media/press-releases/1218/2026-11-12
+Galaxy Entertainment Group has worked with DSAL, local associations and higher education institutions on talent training; since the beginning of 2026, around 1,500 local team members have taken part in training and certification, completing over 16,000 training hours. Through the GEG Chef Development Program, GEG became the first integrated tourism and leisure enterprise in Macau to run the advanced Chinese cuisine chef occupational skill level assessment with DSAL and FAOM.
+
+5. **GEG Donates MOP700,000 to Tung Sin Tong to Support Its Annual Fundraising Campaign for the 23rd Consecutive Year** — Galaxy Entertainment
+https://www.galaxyentertainment.com/en/media/press-releases/1217/20261111
+Galaxy Entertainment Group marked its 23rd consecutive year of support for Tung Sin Tong’s annual fundraising campaign with a donation of MOP700,000. Since 2004, GEG has donated more than MOP11 million to Tung Sin Tong.
+
+Wynn (1):
+
+6. **Wynn Hosts 2027 Wynn Signature Chinese Wine Awards Kick-Off Event in Shanghai** — Wynn Macau Newsroom
+https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-hosts-2027-wynn-signature-chinese-wine-awards----kick-off-event-in-shanghai/s/39d0b1b9-2ee3-4af3-b6c9-4d194a2304bc
+On November 9 in Shanghai, Wynn hosted a kick-off event for the 2027 Wynn Signature Chinese Wine Awards, themed “Three Years in the Making, A New Chapter Begins.” Wynn announced the 2027 calendar, with judging week in Beijing from August 21–25 and the annual awards ceremony in Macao on October 29.
