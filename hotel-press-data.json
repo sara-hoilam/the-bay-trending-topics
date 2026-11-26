@@ -1,11 +1,11 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
-  "updatedAt": "2026-11-25",
-  "refreshedAt": "2026-11-25T13:50:32+08:00",
+  "updatedAt": "2026-11-26",
+  "refreshedAt": "2026-11-26T13:11:08+08:00",
   "windowDays": 14,
-  "windowStart": "2026-11-11",
-  "windowEnd": "2026-11-25",
-  "count": 6,
+  "windowStart": "2026-11-12",
+  "windowEnd": "2026-11-26",
+  "count": 7,
   "sourceErrors": [
     {
       "domain": "ir.melco-resorts.com",
@@ -20,6 +20,19 @@
   ],
   "articles": [
     {
+      "title": "Wynn Supports \"Walk for a Million\" with MOP 700,000 Donation",
+      "url": "https://www.newsroom.wynnresorts.com/en/wynnmacau/wm-pressreleases/wynn-supports--walk-for-a-million--with-mop-700-000-donation/s/05be8e80-d576-4765-89bd-42efebdb54ab",
+      "posted": "2026-11-24",
+      "rawDate": "24 Nov 2026",
+      "hotelGroup": "Wynn",
+      "sourceName": "Wynn Macau Newsroom",
+      "sourceDomain": "newsroom.wynnresorts.com",
+      "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
+      "kind": "good-news",
+      "summary": "Wynn donated MOP 700,000 to the Charity Fund from the Readers of Macao Daily News for Walk for a Million, and more than 1,000 team members and their families will join the 13 December walk. A cheque presentation was held on 24 November at Wynn Palace as Wynn marks 20 years in Macao.",
+      "rank": 1
+    },
+    {
       "title": "Sands China Hosts Community Events to Support 73rd Macau Grand Prix",
       "url": "https://assets.sandsresortsmacao.cn/press-release/2026/scl/1122-macau-gp_en.pdf",
       "posted": "2026-11-22",
@@ -29,8 +42,21 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China Hosts Community Events to Support 73rd Macau Grand Prix.",
-      "rank": 1
+      "summary": "Sands China was a major sponsor of the 73rd Macau Grand Prix (19–22 November) and, through Sands Cares, invited families from Caritas Macau to the Grand Prix Museum, a Street Steel bike-gallery preview, and race day at the Guia Circuit. The community programme supports Macao’s “tourism + sport” development and social inclusion around the event.",
+      "rank": 2
+    },
+    {
+      "title": "SJM Donates MOP700,000 to Support the 43rd Walk for a Million",
+      "url": "https://www.sjmholdings.com/resources/images/uploads/2026-11-25-07-56-28.pdf",
+      "posted": "2026-11-21",
+      "rawDate": "21 Nov 2026",
+      "hotelGroup": "SJM",
+      "sourceName": "SJM Holdings",
+      "sourceDomain": "sjmholdings.com",
+      "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
+      "kind": "good-news",
+      "summary": "SJM donated MOP 700,000 to the 43rd Walk for a Million, including proceeds from the Macau satellite of the 2026 World Alba White Truffle Charity Auction, and will field 3,000 staff, families and friends on 13 December. A cheque presentation was held at Grand Lisboa Macau for the Charity Fund from the Readers of Macao Daily News.",
+      "rank": 3
     },
     {
       "title": "MGM Wins Gold and Silver at CIHAPB Community Intelligent Housing Award (Greater Bay Area) 2026",
@@ -42,8 +68,8 @@
       "sourceDomain": "en.mgmchinaholdings.com",
       "sourceUrl": "https://en.mgmchinaholdings.com/media-releases",
       "kind": "award",
-      "summary": "[ November 17 , 2026, Macau] MGM COTAI and MGM MACAU have been honored with the Gold Award and Silver Award, respectively, in the Hospitality Category of the CIHAPB Community Intelligent Housing Award (Greater Bay Area) 2026, organized by the Chartered Institute of Housing Asian Pacific Branch (CIHAPB). MGM was the only one of Macau’s six integrated resort operators to receive an award. Widely recognized for its…",
-      "rank": 2
+      "summary": "MGM COTAI and MGM MACAU won Gold and Silver respectively in the Hospitality Category of the CIHAPB Community Intelligent Housing Award (Greater Bay Area) 2026. MGM was the only one of Macau’s six integrated resort operators to receive an award.",
+      "rank": 4
     },
     {
       "title": "Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’",
@@ -55,8 +81,8 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China press: Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’.",
-      "rank": 3
+      "summary": "Sands China unveiled The Hall of Glory at the former Iec Long Firecracker Factory, a permanent interactive attraction on the original site developed with Professors Jeffrey Shaw and Sarah Kenderdine. The three-year, cross-sector project preserves Macao’s century-old firecracker heritage as a community-tourism landmark.",
+      "rank": 5
     },
     {
       "title": "GEG Collaborates with DSAL and Local Organizations to Support the Professional Growth of Local Team Members",
@@ -68,8 +94,8 @@
       "sourceDomain": "galaxyentertainment.com",
       "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
       "kind": "good-news",
-      "summary": "November 12, 2026 – Galaxy Entertainment Group (“GEG”) has long supported the Macau SAR Government’s policy direction of “Building Macau through Talent Training”. Through continued investment in local talent development, systematic training, skills enhancement and professional qualification certification, GEG supports team members in expanding their career development opportunities. GEG has maintained close…",
-      "rank": 4
+      "summary": "Galaxy Entertainment Group became the first Macau integrated tourism and leisure operator to work with DSAL and FAOM on an advanced Chinese cuisine chef occupational skill assessment. Since the start of 2026, around 1,500 local team members have completed more than 16,000 training hours across F&B, facilities management and security.",
+      "rank": 6
     },
     {
       "title": "Wynn Hosts 2027 Wynn Signature Chinese Wine Awards Kick-Off Event in Shanghai",
@@ -82,20 +108,7 @@
       "sourceUrl": "https://www.newsroom.wynnresorts.com/en/wynnmacau/newslisting?wynnmacau=wm-pressreleases",
       "kind": "award",
       "summary": "On November 9 in Shanghai, Wynn hosted a kick-off event for the 2027 Wynn Signature Chinese Wine Awards, themed “Three Years in the Making, A New Chapter Begins.” Wynn announced the 2027 calendar, with judging week in Beijing from August 21–25 and the annual awards ceremony in Macao on October 29.",
-      "rank": 5
-    },
-    {
-      "title": "GEG Donates MOP700,000 to Tung Sin Tong to Support Its Annual Fundraising Campaign for the 23rd Consecutive Year",
-      "url": "https://www.galaxyentertainment.com/en/media/press-releases/1217/20261111",
-      "posted": "2026-11-11",
-      "rawDate": "Nov 11, 2026",
-      "hotelGroup": "Galaxy Entertainment",
-      "sourceName": "Galaxy Entertainment",
-      "sourceDomain": "galaxyentertainment.com",
-      "sourceUrl": "https://www.galaxyentertainment.com/en/media/press-releases?year=all",
-      "kind": "good-news",
-      "summary": "November 11, 2026 – Upholding its philosophy of “What is taken from the community is to be used for the good of the community”, Galaxy Entertainment Group (“GEG”) has actively supported and participated in various charitable and community initiatives over the years, contributing to the sustainable development of the Macau community. This year, GEG marked its 23rd consecutive year of support for Tung Sin Tong’s…",
-      "rank": 6
+      "rank": 7
     }
   ]
 }
