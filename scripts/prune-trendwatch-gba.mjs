@@ -117,6 +117,31 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/开放是深圳|习近平在深圳的这四个比喻|深圳与生俱来的基因/i.test(t))
+      return "cluster:xi-shenzhen-apec-nov26";
+    if (/普京打包深圳|普京爱吃粤菜/i.test(t)) return "cluster:putin-sz-cantonese-nov26";
+    if (/深圳给特朗普|特朗普念念不忘的帽子菜|帽子菜破案/i.test(t))
+      return "cluster:trump-hat-dish-nov26";
+    if (/APEC礼宾车/i.test(t)) return "cluster:apec-motorcade-nov26";
+    if (/6G啥时候能用上|6G要来了|8省市能用上6G|新一代通信网建设实施方案/i.test(t))
+      return "cluster:6g-plan-nov26";
+    if (/潘國靈|潘国灵/i.test(t)) return "cluster:poon-kwok-ling-nov26";
+    if (/宏福苑/i.test(t)) return "cluster:wang-fuk-court-anniv-nov26";
+    if (/護照|遣返|护照漏页|将军澳/i.test(t)) return "cluster:hksar-passport-nov26";
+    if (/蔡磊/i.test(t)) return "cluster:cai-lei-als-nov26";
+    if (/医保上线新功能/i.test(t)) return "cluster:yibao-cloud-nov26";
+    if (/立陶宛：希望台当局|民进党造势现场播放大陆爱国歌曲/i.test(t))
+      return "cluster:cross-strait-nov26";
+    if (/奧璇璧/i.test(t)) return "cluster:osullivan-hkjc-nov26";
+    if (/梁文锋/i.test(t)) return "cluster:liang-wenfeng-deepseek-nov26";
+    if (/神秘万吨大驱/i.test(t)) return "cluster:zhuhai-055-nov26";
+    if (/遇事就举报/i.test(t)) return "cluster:pd-malicious-reports-nov26";
+    if (/小学生只上半天学/i.test(t)) return "cluster:pd-half-day-school-nov26";
+    if (/黃錦輝|黄锦辉/i.test(t)) return "cluster:wong-kam-fai-nov26";
+    if (/黃永幟|黄永帜/i.test(t)) return "cluster:wong-wing-chi-nov26";
+    if (/詹姆斯刷新最老三双|众球星谈詹姆斯三双/i.test(t)) return "cluster:lebron-td-nov26";
+    if (/勇士對國王|warriors vs kings/i.test(t)) return "cluster:gsw-sac-nov26";
+    if (/thanksgiving 2026|感恩节/i.test(t)) return "cluster:thanksgiving-2026";
     if (/陈吉宁|陳吉寧/i.test(t)) return "cluster:chen-jining-nov25";
     if (
       /神舟二十四|神舟24|神24发射|神24与空间站|巴基斯坦航天|巴基斯坦人齐唱|中国空间站第1次|中国人上太空从不足|中国航天.“神图”|神23神24航天员|巴航天官员|汤洪波母亲|神舟二十四号发射成功/i.test(
@@ -131,7 +156,7 @@ function pruneData(data) {
     if (/港怡醫院/i.test(t)) return "cluster:gleneagles-leak-nov25";
     if (/^水位$/i.test(t)) return "cluster:hk-water-level-nov25";
     if (/六合彩/i.test(t)) return "cluster:marksix-nov25";
-    if (/欧冠|歐冠|champions league|阿仙奴對多蒙特|曼城對拿坡里/i.test(t))
+    if (/欧冠|歐冠|champions league|阿仙奴對多蒙特|曼城對拿坡里|布魯日對利物浦|布鲁日對利物浦/i.test(t))
       return "cluster:ucl-nov25";
     if (/可口可乐不再标生产日期/i.test(t)) return "cluster:coke-date-nov25";
     if (/舒某某/i.test(t)) return "cluster:shu-extradition-nov25";
@@ -2272,7 +2297,21 @@ function pruneData(data) {
     if (aLoc !== bLoc) return bLoc - aLoc;
     return b.compositeScore - a.compositeScore;
   });
-  data.topicCandidates = [...head, ...restEditorial].slice(0, 40);
+  const picked = [...head, ...restEditorial];
+  const pickedTitles = new Set(
+    picked.flatMap((c) => [c.displayTitle, ...(c.platformHits || []).map((h) => h.title)].map((t) =>
+      String(t || "").trim().toLowerCase(),
+    )),
+  );
+  const googleHkLeftovers = topicCandidates.filter((c) => {
+    const titles = [c.displayTitle, ...(c.platformHits || []).map((h) => h.title)].map((t) =>
+      String(t || "").trim().toLowerCase(),
+    );
+    if (titles.some((t) => pickedTitles.has(t))) return false;
+    if (c.isGossip) return false;
+    return (c.platformHits || []).some((h) => h.platform === "google_trends" && GBA_GOOGLE_GEOS.has(h.geo));
+  });
+  data.topicCandidates = [...picked, ...googleHkLeftovers].slice(0, 45);
 
   for (const secId of ["baidu", "weibo"]) {
     const sec = data.sections.find((s) => s.id === secId);
