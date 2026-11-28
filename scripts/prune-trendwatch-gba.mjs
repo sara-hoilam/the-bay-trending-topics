@@ -117,9 +117,49 @@ function pruneData(data) {
 
   function clusterKey(title) {
     const t = String(title).trim().toLowerCase();
+    if (/董明珠|魏建军|跳槽不是.?偷人|车企亏本走量|当魏建军面训斥|现场发火魏建军/i.test(t))
+      return "cluster:dong-wei-gree-nov28";
+    if (/歼-?35a|歼35a|珠海航展|中国航展陆军|六爷.?来了/i.test(t))
+      return "cluster:zhuhai-airshow-j35-nov28";
+    if (/澳门居民珠海养老/i.test(t)) return "cluster:mo-zhuhai-elderly-nov28";
+    if (/普京打包粤菜|普京打包深圳|普京爱吃粤菜/i.test(t))
+      return "cluster:putin-sz-cantonese-nov26";
+    if (/apec结束深圳人/i.test(t)) return "cluster:sz-apec-factory-reset-nov28";
+    if (/本周中国多领域捷报|神舟二十四|巴基斯坦航天/i.test(t))
+      return "cluster:shenzhou-24-nov25";
+    if (/iphone20pro|曝苹果器重/i.test(t)) return "cluster:iphone20pro-nov28";
+    if (/金饰克价|金价真的大涨/i.test(t)) return "cluster:gold-nov28";
+    if (/沈伯洋|台灣選舉|台北市長選舉|美国资助沈伯洋/i.test(t))
+      return "cluster:taiwan-election-nov28";
+    if (/馬刺對湖人|spurs vs lakers|湖人\s*马刺/i.test(t))
+      return "cluster:sas-lal-nov28";
+    if (/八达通|八達通/i.test(t)) return "cluster:octopus-nov28";
+    if (/護照|遣返|护照漏页|将军澳|^passport$|大律師/i.test(t))
+      return "cluster:hksar-passport-nov26";
+    if (/广州车展|宋茜现身广州|东风日产nx7/i.test(t))
+      return "cluster:gz-autoshow-nov28";
+    if (/华为matex8/i.test(t)) return "cluster:huawei-matex8-nov28";
+    if (/问界汽车发布整车一体l3/i.test(t)) return "cluster:wenjie-l3-nov28";
+    if (/小鹏x9/i.test(t)) return "cluster:xpeng-x9-nov28";
+    if (/梁靖崑/i.test(t)) return "cluster:liang-jingkun-nov28";
+    if (/冯骥后ai时代/i.test(t)) return "cluster:fengji-ai-nov28";
+    if (/国考公共科目/i.test(t)) return "cluster:guokao-nov28";
+    if (/河湖安澜/i.test(t)) return "cluster:river-chief-nov28";
+    if (/中纪委：决不让腐败/i.test(t)) return "cluster:ccdi-nov28";
+    if (/彭文正/i.test(t)) return "cluster:peng-wenzheng-nov28";
+    if (/日本可能发生大规模地震/i.test(t)) return "cluster:japan-quake-alert-nov28";
+    if (/不是霸总就是重生|刷来刷去怎么还是这几张脸/i.test(t))
+      return "cluster:ai-shortdrama-nov28";
+    if (/于东来/i.test(t)) return "cluster:yu-donglai-sz-nov28";
+    if (/超級市場|佳宝食品/i.test(t)) return "cluster:kaibo-supermarket-nov28";
+    if (/非法集會|混合團體/i.test(t)) return "cluster:unlawful-assembly-nov28";
+    if (/^chelsea$|車路士|諾丁漢森林/i.test(t)) return "cluster:chelsea-nffc-nov28";
+    if (/拓荒者對勇士|trail blazers vs warriors/i.test(t))
+      return "cluster:por-gsw-nov28";
+    if (/^smartone$/i.test(t)) return "cluster:smartone-outage-nov28";
+    if (/月球上盖房子|太阳窑炉在月球/i.test(t)) return "cluster:lunar-bricks-nov28";
     if (/开放是深圳|习近平在深圳的这四个比喻|深圳与生俱来的基因/i.test(t))
       return "cluster:xi-shenzhen-apec-nov26";
-    if (/普京打包深圳|普京爱吃粤菜/i.test(t)) return "cluster:putin-sz-cantonese-nov26";
     if (/深圳给特朗普|特朗普念念不忘的帽子菜|帽子菜破案/i.test(t))
       return "cluster:trump-hat-dish-nov26";
     if (/APEC礼宾车/i.test(t)) return "cluster:apec-motorcade-nov26";
