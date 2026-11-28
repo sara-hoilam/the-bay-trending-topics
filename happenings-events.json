@@ -2,7 +2,7 @@
   "generatedFrom": "Lifestyle (8) + Entrepreneur (1) source links · source-links-data.json happeningsFetch",
   "updatedAt": "2026-11-28",
   "highlightScoreThreshold": 24,
-  "highlightedCount": 74,
+  "highlightedCount": 75,
   "events": [
     {
       "title": "Conserving Neon Culture at M+",
@@ -382,6 +382,19 @@
       "highlighted": false
     },
     {
+      "title": "China Macau Distinguished Gathering",
+      "start": "2026-10-30",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Cotai Expo, The Venetian Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 20,
+      "highlighted": false
+    },
+    {
       "title": "M+ Restored Festival 2026",
       "start": "2026-11-01",
       "end": "2026-12-27",
@@ -407,6 +420,19 @@
       "highlighted": true
     },
     {
+      "title": "Cheers, Macau! Oktoberfest Macau at MGM 2026",
+      "start": "2026-11-01",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "MGM Cotai",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
       "title": "Macau Contemporary Puppet Festival",
       "start": "2026-11-01",
       "end": "2026-11-15",
@@ -418,6 +444,19 @@
       "sourceCategory": "Lifestyle",
       "highlightScore": 30,
       "highlighted": true
+    },
+    {
+      "title": "Studio Creepy 3",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Studio City Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
     },
     {
       "title": "Mak Mak-themed LRT",
@@ -472,6 +511,32 @@
       "highlighted": true
     },
     {
+      "title": "Flowscape – Macao Theatre Documents Exhibition 2026",
+      "start": "2026-11-01",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Pin-to Livros & Musica ",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 14,
+      "highlighted": false
+    },
+    {
+      "title": "Millennium’s Serenity – Watercolour Exhibition of Sichuan Grottos by Tatyana Ieong",
+      "start": "2026-11-01",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "10 Fantasia-A Creative Industries Incubator",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 14,
+      "highlighted": false
+    },
+    {
       "title": "Dream Voyage @ Galaxy Resort: Gao Xiaowu’s Art Exhibition",
       "start": "2026-11-01",
       "end": "2026-11-17",
@@ -511,6 +576,19 @@
       "highlighted": false
     },
     {
+      "title": "Air Supply – A Matter of Time Tour",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Broadway Theatre, Broadway Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "2026 Ferreira de Almeida Festival",
       "start": "2026-11-01",
       "end": "2026-11-29",
@@ -537,6 +615,45 @@
       "highlighted": false
     },
     {
+      "title": "W GALA · Macau, China",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Galaxy Arena, Galaxy Macau™",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "2026 San Kio Traditional Market Tour",
+      "start": "2026-11-01",
+      "end": "2026-11-03",
+      "region": "macao",
+      "location": "Lin Kai Temple",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
+      "title": "Lai Chi Vun Island Festival",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Lai Chi Vun Shipyards",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
       "title": "BARRA HOUSE",
       "start": "2026-11-01",
       "end": "2026-12-19",
@@ -547,6 +664,19 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Broadway Weekend Local Market",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Broadway Food Street",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -563,6 +693,19 @@
       "highlighted": false
     },
     {
+      "title": "2026 Temple Tracking Culture & Creative Market",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Largo do Pagode do Bazar",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "Things I Can’t Forget 2026 – Ocean of Memories",
       "start": "2026-11-01",
       "end": "2026-11-27",
@@ -573,6 +716,19 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "O.O.O. MARKET VOL.2｜CHILL TIPSY",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Ponte 16",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -589,6 +745,97 @@
       "highlighted": false
     },
     {
+      "title": "Maritime Festival 2026",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Government Dockyard",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Studio City Presents: Disney Palette of Happiness",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Studio City Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "26th Southeast Asia Food Carnival",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Rotunda de Carlos da Maia",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Taste the Streets: Urban Awakening",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Largo do Pagode do Bazar",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Hong Kung Night Market",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Rua de Cinco de Outubro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "“Natural Habitat” themed flower exhibition",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Taipa Houses",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 6,
+      "highlighted": false
+    },
+    {
+      "title": "Lucidity in a Prosperous Era: Guangdong Paintings of the Qing Dynasty",
+      "start": "2026-11-01",
+      "end": "2026-11-02",
+      "region": "macao",
+      "location": "Macao Museum of Art",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "East-West Contemplations: A Retrospective of Mio Pang Fei",
       "start": "2026-11-01",
       "end": "2026-11-29",
@@ -602,6 +849,19 @@
       "highlighted": false
     },
     {
+      "title": "Chinese Design Week 2026",
+      "start": "2026-11-01",
+      "end": "2026-11-04",
+      "region": "macao",
+      "location": "Mandarin's House",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
+      "highlighted": false
+    },
+    {
       "title": "SJM Presents “Legacy of Light and Craft” Lantern Art Exhibition",
       "start": "2026-11-01",
       "end": "2026-11-15",
@@ -612,6 +872,19 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Celebrating the 45th Anniversary of the University of Macau - An Artistic Ode to the Bay …",
+      "start": "2026-11-01",
+      "end": "2026-11-06",
+      "region": "macao",
+      "location": "University of Macau Wu Yee Sun Library (E2)",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
       "highlighted": false
     },
     {
@@ -706,6 +979,19 @@
       "highlighted": false
     },
     {
+      "title": "Studio City Water Park",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Studio City Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "Fly you to Macao",
       "start": "2026-11-01",
       "end": "2026-12-31",
@@ -719,6 +1005,32 @@
       "highlighted": false
     },
     {
+      "title": "2026 PLAVE World Tour [KEEP IT MANIC] in Macao",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "The Londoner Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "2026 EUNHYUK PRE-DEBUT FANCON ‘be: WARE OF THE RABBIT’ in MACAO",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "The Londoner Theatre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "Macao・In the Global Spotlight",
       "start": "2026-11-01",
       "end": "2027-07-31",
@@ -729,6 +1041,45 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Exploring Macao’s History",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Rua de D. Belchior Carneiro",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Travessa do Armazém Velho Festival 2026",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Rua dos Ervanários",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "Art Everywhere – Cultural vibes at the weekend",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "region": "macao",
+      "location": "Anim’Arte NAM VAN",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
       "highlighted": false
     },
     {
@@ -823,11 +1174,37 @@
       "highlighted": true
     },
     {
+      "title": "HOMETOWN Carnival",
+      "start": "2026-11-05",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Macau Fisherman’s Wharf",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 16,
+      "highlighted": false
+    },
+    {
       "title": "100 Best Posters in Macao",
       "start": "2026-11-06",
       "end": "2026-12-06",
       "region": "macao",
       "location": "Grand Lisboa Palace Resort Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Exotic Odyssey 2026: Kawo’s inner world",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Macao Cultural Centre",
       "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
       "sourceDomain": "macaotourism.gov.mo",
       "featured": false,
@@ -846,6 +1223,32 @@
       "featured": false,
       "sourceCategory": "Lifestyle",
       "highlightScore": 18,
+      "highlighted": false
+    },
+    {
+      "title": "The Unfettered Hour",
+      "start": "2026-11-06",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "Macao Cultural Centre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "MACAU CHOCOLATE MARKET",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Lisboeta Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 4,
       "highlighted": false
     },
     {
@@ -874,6 +1277,175 @@
       "highlighted": false
     },
     {
+      "title": "“Cantonese Rhythms, Han Melodies” Concert of Lingnan Intangible Cultural Heritage Music",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "Macau Tower Convention & Entertainment Centre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Rophé and Skride Perform 20th-century Masterpieces",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "Macao Cultural Centre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "Arts Accessibility Theatre – 《Mid-life lost in the Tech》",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Macao Cultural Centre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 8,
+      "highlighted": false
+    },
+    {
+      "title": "57th Caritas Macau Charity Bazaar",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Nam Van Lake Nautical Centre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "2026 GONG YOO ASIA FANMEETING TOUR 〈THE LONG TAKE〉 IN MACAU",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "Studio City Event Center",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "JX 2026 TOUR CONCERT <CORE> in MACAU",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "The Londoner Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "2026 LE SSERAFIM TOUR ‘PUREFLOW’ IN MACAU",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Galaxy Arena, Galaxy Macau™",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "TWO OF US – Pooh & Pavel 2026 Macau Fan Meeting",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "Galaxy Macau™ Integrated Resort",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "PAKHO CHAU．THE BLOOMING CHAPTER Fan Meeting Concert – Macau – Birthday Exclusive Special",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "The Venetian Arena",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "2026 Beidi Trend Market – Creative Gathering Weekends",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Square of Pak Tai Temple",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Sands China Performing Arts Programme Presents – Macau Band Directors Association 30th An…",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "The Parisian Macao - The Parisian Theatre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "2026 HWANG MIN HYUN FANMEETING [PEACH-BLOSSOM] – MACAU",
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "region": "macao",
+      "location": "Grand Lisboa Palace Resort Macau",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "Saboroso! Macanese Culinary Cultural Experience",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Belos Tempos ",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "Tai O Impressions – Exhibition of Wong Chi-chuen’s Sketching",
       "start": "2026-11-07",
       "end": "2026-11-29",
@@ -887,6 +1459,19 @@
       "highlighted": false
     },
     {
+      "title": "ARTS & CULTURE FIESTA @ PÁTIO DA CLARIDADE 2026",
+      "start": "2026-11-07",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "R/C, No. 10, Pátio da Claridade, Macao",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
       "title": "Student art takes center stage at Century Place",
       "start": "2026-11-08",
       "end": "2027-01-07",
@@ -896,6 +1481,45 @@
       "sourceDomain": "eyeshenzhen.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 12,
+      "highlighted": false
+    },
+    {
+      "title": "Red Boat 1866: Martial Arts Secrets",
+      "start": "2026-11-08",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Barra Pier",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "DIWALI 2026",
+      "start": "2026-11-08",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "V STUDIO MACAU – ARTS AND CULTURE",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 0,
+      "highlighted": false
+    },
+    {
+      "title": "“A Collection of Songs and Melodies”: Tribute Concert to the Masters",
+      "start": "2026-11-08",
+      "end": "2026-11-08",
+      "region": "macao",
+      "location": "Macao Cultural Centre",
+      "url": "https://www.macaotourism.gov.mo/en/events/whatson?month=202611",
+      "sourceDomain": "macaotourism.gov.mo",
+      "featured": false,
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 20,
       "highlighted": false
     },
     {
@@ -2378,6 +3002,30 @@
       "highlighted": true
     },
     {
+      "title": "HKTDC Home Delights Expo 2027 (HKCEC)",
+      "start": "2027-08-12",
+      "end": "2027-08-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/homedelights/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
+      "title": "HKTDC Beauty & Wellness Expo 2027 (HKCEC)",
+      "start": "2027-08-12",
+      "end": "2027-08-16",
+      "region": "hk",
+      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
+      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
+      "sourceDomain": "event.hktdc.com",
+      "sourceCategory": "Lifestyle",
+      "highlightScore": 28,
+      "highlighted": true
+    },
+    {
       "title": "HKTDC Food Expo PRO 2027 (HKCEC)",
       "start": "2027-08-12",
       "end": "2027-08-14",
@@ -2408,30 +3056,6 @@
       "region": "hk",
       "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
       "url": "https://www.hktdc.com/event/hkfoodexpo/en",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Home Delights Expo 2027 (HKCEC)",
-      "start": "2027-08-12",
-      "end": "2027-08-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/homedelights/en",
-      "sourceDomain": "event.hktdc.com",
-      "sourceCategory": "Lifestyle",
-      "highlightScore": 28,
-      "highlighted": true
-    },
-    {
-      "title": "HKTDC Beauty & Wellness Expo 2027 (HKCEC)",
-      "start": "2027-08-12",
-      "end": "2027-08-16",
-      "region": "hk",
-      "location": "Guangdong 9 cities,Other Mainland cities,Nansha New Area,Qianhai Shekou,Hengqin New Area",
-      "url": "https://www.hktdc.com/event/hkbeautyexpo/en",
       "sourceDomain": "event.hktdc.com",
       "sourceCategory": "Lifestyle",
       "highlightScore": 28,

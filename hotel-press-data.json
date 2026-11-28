@@ -1,7 +1,7 @@
 {
   "generatedFrom": "source-links-data.json (Hotels)",
   "updatedAt": "2026-11-28",
-  "refreshedAt": "2026-11-28T12:56:27+08:00",
+  "refreshedAt": "2026-11-28T13:00:54+08:00",
   "windowDays": 14,
   "windowStart": "2026-11-14",
   "windowEnd": "2026-11-28",
@@ -47,7 +47,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China was a major sponsor of the 73rd Macau Grand Prix (19–22 November) and, through Sands Cares, hosted community activities for local social-service families, including a Grand Prix Museum visit and a Guia Circuit race day. The programme supports Macao’s integrated ‘tourism + sport’ development and its positioning as a City of Sports.",
+      "summary": "Sands China press: Sands China Hosts Community Events to Support 73rd Macau Grand Prix.",
       "rank": 2
     },
     {
@@ -60,7 +60,7 @@
       "sourceDomain": "sjmholdings.com",
       "sourceUrl": "https://www.sjmholdings.com/en/media-center/press-release",
       "kind": "good-news",
-      "summary": "SJM Resorts donated MOP 700,000 to the Charity Fund from the Readers of Macao Daily News for the 43rd Walk for a Million, including proceeds from the Macau satellite of the 2026 World Alba White Truffle Charity Auction. The company will field a team of 3,000 staff, families and friends for the 13 December walk, with a cheque presentation at Grand Lisboa Macau.",
+      "summary": "SJM press: SJM Donates MOP700,000 to Support the 43rd Walk for a Million.",
       "rank": 3
     },
     {
@@ -86,7 +86,7 @@
       "sourceDomain": "en.sandsresortsmacao.com",
       "sourceUrl": "https://en.sandsresortsmacao.com/sands-lifestyle/press-release.html",
       "kind": "good-news",
-      "summary": "Sands China unveiled The Hall of Glory at the former Iec Long Firecracker Factory, a permanent community-tourism attraction developed with new-media artists Professors Jeffrey Shaw and Sarah Kenderdine. The project preserves Macao’s century-old firecracker heritage on its original site through research, conservation and immersive technology.",
+      "summary": "Sands China press: Sands China’s Community Revitalization Programme Unveils ‘The Hall of Glory – Iec Long Firecracker Factory’.",
       "rank": 5
     }
   ]
